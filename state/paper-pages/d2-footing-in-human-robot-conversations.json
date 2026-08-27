@@ -1,0 +1,49 @@
+{
+  "id": "D2",
+  "slug": "d2-footing-in-human-robot-conversations",
+  "title": "Footing in Human-Robot Conversations: How Robots Might Shape Participant Roles Using Gaze Cues",
+  "authors": [
+    "Bilge Mutlu",
+    "Toshiyuki Shiwa",
+    "Takayuki Kanda",
+    "Hiroshi Ishiguro",
+    "Norihiro Hagita"
+  ],
+  "year": 2009,
+  "venue": "HRI 2009, 61–68",
+  "source_url": "https://pages.cs.wisc.edu/~bilge/pubs/2009/HRI09-Mutlu-Footing.pdf",
+  "doi": "10.1145/1514095.1514109",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "gaze 不只是 attention marker，还可以组织 social roles 和 conversational participation。",
+  "problem": null,
+  "method": null,
+  "findings": [],
+  "real_contribution": null,
+  "biggest_weakness": null,
+  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "why_researcher_should_care": "gaze 不只是 attention marker，还可以组织 social roles 和 conversational participation。",
+  "amsc": {
+    "mainline_fit": 8.1,
+    "buckets": [
+      "D"
+    ],
+    "stages": [
+      "Embodied Communication"
+    ],
+    "mechanisms": [
+      "legibility",
+      "nonverbal communication"
+    ],
+    "gap_ids": [],
+    "master_list_decision": "Baseline v1.0 — retained"
+  },
+  "evidence_notes": [
+    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+  ],
+  "source_list_id": "D2",
+  "provenance": "user_baseline_v1.0",
+  "investigation_status": "bibliographic_verification_only",
+  "updated_at": "2026-08-26"
+}

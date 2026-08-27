@@ -1,0 +1,52 @@
+{
+  "id": "X5",
+  "slug": "x5-social-context-of-hri",
+  "title": "The Social Context of Human–Robot Interactions",
+  "authors": [
+    "Sophie Thompson",
+    "Katherine Candon",
+    "Marynel Vázquez"
+  ],
+  "year": 2026,
+  "venue": "Annual Review of Control, Robotics, and Autonomous Systems, 9, 1–25",
+  "source_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-control-030623-015506",
+  "doi": "10.1146/annurev-control-030623-015506",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "梳理 HRI 中含混的 social context 用法，并提出可操作的 conceptual model 与 context attributes。",
+  "claim_boundary": "后续 AMSC 研究不应笼统声称 context-aware，而应区分 social situation、participants/roles、interaction scenario 与 history。",
+  "amsc": {
+    "mainline_fit": 8.4,
+    "buckets": [
+      "F",
+      "D",
+      "E"
+    ],
+    "stages": [
+      "Meaning",
+      "Adaptation",
+      "Embodied Communication"
+    ],
+    "mechanisms": [
+      "social context",
+      "context operationalization"
+    ],
+    "gap_ids": [
+      "GAP-03"
+    ],
+    "master_list_decision": "Candidate — Important"
+  },
+  "problem": null,
+  "method": null,
+  "findings": [],
+  "real_contribution": null,
+  "biggest_weakness": null,
+  "why_researcher_should_care": "梳理 HRI 中含混的 social context 用法，并提出可操作的 conceptual model 与 context attributes。",
+  "evidence_notes": [
+    "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
+    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。"
+  ],
+  "provenance": "missing_paper_attack_2026-08-26",
+  "investigation_status": "source_verified_candidate",
+  "updated_at": "2026-08-26"
+}

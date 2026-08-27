@@ -1,0 +1,48 @@
+{
+  "id": "C4",
+  "slug": "c4-repeated-reference-games",
+  "title": "Characterizing the Dynamics of Learning in Repeated Reference Games",
+  "authors": [
+    "Robert D. Hawkins",
+    "Michael C. Frank",
+    "Noah D. Goodman"
+  ],
+  "year": 2020,
+  "venue": "Cognitive Science, 44(6), e12845",
+  "source_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12845",
+  "doi": "10.1111/cogs.12845",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "直接研究 repeated interaction 中表达如何逐渐变短、稳定且具有 dyad-specificity，是你未来 longitudinal convention experiment 的方法学模板之一。",
+  "problem": null,
+  "method": null,
+  "findings": [],
+  "real_contribution": null,
+  "biggest_weakness": null,
+  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "why_researcher_should_care": "直接研究 repeated interaction 中表达如何逐渐变短、稳定且具有 dyad-specificity，是你未来 longitudinal convention experiment 的方法学模板之一。",
+  "amsc": {
+    "mainline_fit": 9.6,
+    "buckets": [
+      "C"
+    ],
+    "stages": [
+      "Grounding",
+      "Convention"
+    ],
+    "mechanisms": [
+      "common ground",
+      "convention formation"
+    ],
+    "gap_ids": [],
+    "master_list_decision": "Baseline v1.0 — retained"
+  },
+  "evidence_notes": [
+    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+  ],
+  "source_list_id": "C4",
+  "provenance": "user_baseline_v1.0",
+  "investigation_status": "bibliographic_verification_only",
+  "updated_at": "2026-08-26"
+}

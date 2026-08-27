@@ -1,6 +1,7 @@
-version: v1.0
+version: v1.1
 baseline_count: 41
-note: "The 41-paper baseline is user-defined. Populate actual papers from the user's existing list; do not invent entries."
+verified_at: 2026-08-26
+note: "The 41-paper baseline is user-defined; five search-discovered candidates are tracked separately."
 categories:
   A: "Social / Multimodal / Informal Expression"
   B: "Pragmatics / Representation / Communicative Efficiency"
@@ -9,5 +10,194 @@ categories:
   E: "Adaptation / Personalization / Long-Term HRI"
   F: "Social / Cultural / Relational / Appropriation"
   G: "Situated / AR / Embodied Output"
-papers: []
-change_log: []
+papers:
+  - id: A1
+    slug: a1-ai-mediated-communication
+    title: "AI-Mediated Communication: Definition, Research Agenda, and Ethical Considerations"
+    decision: "Baseline v1.0 — retained"
+  - id: A2
+    slug: a2-textual-paralanguage
+    title: "Textual Paralanguage and Its Implications for Marketing Communications"
+    decision: "Baseline v1.0 — retained"
+  - id: A3
+    slug: a3-interpreting-emoji-pragmatics
+    title: "Interpreting Emoji Pragmatics"
+    decision: "Baseline v1.0 — retained"
+  - id: A4
+    slug: a4-a-visual-lexicon
+    title: "A Visual Lexicon"
+    decision: "Baseline v1.0 — retained"
+  - id: A5
+    slug: a5-multimodal-parallel-architecture
+    title: "A Multimodal Parallel Architecture: A Cognitive Framework for Multimodal Interactions"
+    decision: "Baseline v1.0 — retained"
+  - id: A6
+    slug: a6-puppetchat
+    title: "PuppetChat: Fostering Intimate Communication through Bidirectional Actions and Micronarratives"
+    decision: "Baseline v1.0 — retained"
+  - id: B1
+    slug: b1-pragmatic-language-interpretation
+    title: "Pragmatic Language Interpretation as Probabilistic Inference"
+    decision: "Baseline v1.0 — retained"
+  - id: B2
+    slug: b2-rational-speech-act-framework
+    title: "The Rational Speech Act Framework"
+    decision: "Baseline v1.0 — retained"
+  - id: B3
+    slug: b3-pragmatic-inference-visual-abstraction
+    title: "Pragmatic Inference and Visual Abstraction Enable Contextual Flexibility During Visual Communication"
+    decision: "Baseline v1.0 — retained"
+  - id: B4
+    slug: b4-when-redundancy-is-useful
+    title: "When Redundancy Is Useful: A Bayesian Approach to ‘Overinformative’ Referring Expressions"
+    decision: "Baseline v1.0 — retained"
+  - id: C1
+    slug: c1-referring-as-collaborative-process
+    title: "Referring as a Collaborative Process"
+    decision: "Baseline v1.0 — retained"
+  - id: C2
+    slug: c2-grounding-in-communication
+    title: "Grounding in Communication"
+    decision: "Baseline v1.0 — retained"
+  - id: C3
+    slug: c3-conceptual-pacts
+    title: "Conceptual Pacts and Lexical Choice in Conversation"
+    decision: "Baseline v1.0 — retained"
+  - id: C4
+    slug: c4-repeated-reference-games
+    title: "Characterizing the Dynamics of Learning in Repeated Reference Games"
+    decision: "Baseline v1.0 — retained"
+  - id: C5
+    slug: c5-graphical-convention-formation
+    title: "Graphical Convention Formation During Visual Communication"
+    decision: "Baseline v1.0 — retained"
+  - id: C6
+    slug: c6-visual-resemblance-interaction-history
+    title: "Visual Resemblance and Interaction History Jointly Constrain Pictorial Meaning"
+    decision: "Baseline v1.0 — retained"
+  - id: C7
+    slug: c7-shared-procedural-abstractions
+    title: "Learning to Communicate about Shared Procedural Abstractions"
+    decision: "Baseline v1.0 — retained"
+  - id: C8
+    slug: c8-gesturing-toward-abstraction
+    title: "Gesturing Toward Abstraction: Multimodal Convention Formation in Collaborative Physical Tasks"
+    decision: "Baseline v1.0 — retained"
+  - id: D1
+    slug: d1-nonverbal-teamwork
+    title: "Effects of Nonverbal Communication on Efficiency and Robustness in Human-Robot Teamwork"
+    decision: "Baseline v1.0 — retained"
+  - id: D2
+    slug: d2-footing-in-human-robot-conversations
+    title: "Footing in Human-Robot Conversations: How Robots Might Shape Participant Roles Using Gaze Cues"
+    decision: "Baseline v1.0 — retained"
+  - id: D3
+    slug: d3-nonverbal-leakage
+    title: "Nonverbal Leakage in Robots: Communication of Intentions through Seemingly Unintentional Behavior"
+    decision: "Baseline v1.0 — retained"
+  - id: D4
+    slug: d4-expressing-thought
+    title: "Expressing Thought: Improving Robot Readability with Animation Principles"
+    decision: "Baseline v1.0 — retained"
+  - id: D5
+    slug: d5-legibility-and-predictability
+    title: "Legibility and Predictability of Robot Motion"
+    decision: "Baseline v1.0 — retained"
+  - id: D6
+    slug: d6-designing-robots-with-movement
+    title: "Designing Robots with Movement in Mind"
+    decision: "Baseline v1.0 — retained"
+  - id: D7
+    slug: d7-social-eye-gaze-review
+    title: "Social Eye Gaze in Human-Robot Interaction: A Review"
+    decision: "Baseline v1.0 — retained"
+  - id: D8
+    slug: d8-legible-multimodal-state-intent
+    title: "Legible and Intuitive Multi-modal Robot State and Intent Communication Validated in Online and Real-world Studies"
+    decision: "Baseline v1.0 — retained"
+  - id: D9
+    slug: d9-anatomy-of-uncertainty
+    title: "Anatomy of Uncertainty: Expressive Descriptors of Robotic Manipulator Motion for Non-verbal Communication in Human-Robot Collaboration"
+    decision: "Baseline v1.0 — retained"
+  - id: E1
+    slug: e1-long-term-social-robots-survey
+    title: "Social Robots for Long-Term Interaction: A Survey"
+    decision: "Baseline v1.0 — retained"
+  - id: E2
+    slug: e2-human-robot-mutual-adaptation
+    title: "Human-Robot Mutual Adaptation in Collaborative Tasks: Models and Experiments"
+    decision: "Baseline v1.0 — retained"
+  - id: E3
+    slug: e3-continual-adaptation-machine-communication
+    title: "Continual Adaptation for Efficient Machine Communication"
+    decision: "Baseline v1.0 — retained"
+  - id: E4
+    slug: e4-designing-robots-long-term
+    title: "Designing Robots for Long-Term Social Interaction"
+    decision: "Baseline v1.0 — retained"
+  - id: F1
+    slug: f1-emergence-social-norms-conventions
+    title: "The Emergence of Social Norms and Conventions"
+    decision: "Baseline v1.0 — retained"
+  - id: F2
+    slug: f2-robots-in-society
+    title: "Robots in Society, Society in Robots: Mutual Shaping of Society and Technology as a Framework for Social Robot Design"
+    decision: "Baseline v1.0 — retained"
+  - id: F3
+    slug: f3-robotic-products-social-products
+    title: "How Robotic Products Become Social Products: An Ethnographic Study of Cleaning in the Home"
+    decision: "Baseline v1.0 — retained"
+  - id: F4
+    slug: f4-my-roomba-is-rambo
+    title: "“My Roomba Is Rambo”: Intimate Home Appliances"
+    decision: "Baseline v1.0 — retained"
+  - id: F5
+    slug: f5-robots-in-the-wild
+    title: "Robots in the Wild: A Time for More Robust Theories of Human-Robot Interaction"
+    decision: "Baseline v1.0 — retained"
+  - id: F6
+    slug: f6-generative-encounters-robin
+    title: "Generative Encounters with Robin: Design through Adaptation and Appropriation of a Social Robot in Four Eldercare Facilities"
+    decision: "Baseline v1.0 — retained"
+  - id: G1
+    slug: g1-robot-motion-intent-ar
+    title: "Communicating Robot Motion Intent with Augmented Reality"
+    decision: "Baseline v1.0 — retained"
+  - id: G2
+    slug: g2-visualisation-disambiguating-verbal-requests
+    title: "A Comparison of Visualisation Methods for Disambiguating Verbal Requests in Human-Robot Interaction"
+    decision: "Baseline v1.0 — retained"
+  - id: G3
+    slug: g3-explainable-oohri
+    title: "Explainable OOHRI: Communicating Robot Capabilities and Limitations as Augmented Reality Affordances"
+    decision: "Baseline v1.0 — retained"
+  - id: G4
+    slug: g4-context-aware-expressive-motion
+    title: "Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models"
+    decision: "Baseline v1.0 — retained"
+candidates:
+  - id: X1
+    slug: x1-spotter-human-robot-conventions
+    title: "SPOTTER: A Framework for Investigating Convention Formation in a Visually Grounded Human-Robot Reference Task"
+    decision: "Candidate — Must Read"
+  - id: X2
+    slug: x2-lvlms-humans-ground-differently
+    title: "LVLMs and Humans Ground Differently in Referential Communication"
+    decision: "Candidate — Important"
+  - id: X3
+    slug: x3-seeing-eye-to-eye
+    title: "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human–AI Collaboration"
+    decision: "Candidate — Important"
+  - id: X4
+    slug: x4-making-memories-together
+    title: "Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction"
+    decision: "Candidate — Important / Preliminary"
+  - id: X5
+    slug: x5-social-context-of-hri
+    title: "The Social Context of Human–Robot Interactions"
+    decision: "Candidate — Important"
+change_log:
+  - date: 2026-08-26
+    change: "Imported and source-verified the 41-paper user baseline; corrected B3 year, C7 author order, and E4 first author."
+  - date: 2026-08-26
+    change: "Added five separately labeled candidates from a bounded Missing Paper Attack; GAP-02 and GAP-03 should be treated as partially addressed."

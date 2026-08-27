@@ -1,0 +1,46 @@
+{
+  "id": "A5",
+  "slug": "a5-multimodal-parallel-architecture",
+  "title": "A Multimodal Parallel Architecture: A Cognitive Framework for Multimodal Interactions",
+  "authors": [
+    "Neil Cohn"
+  ],
+  "year": 2016,
+  "venue": "Cognition, 146, 304–323",
+  "source_url": "https://www.visuallanguagelab.com/P/NC_multimodality.pdf",
+  "doi": "10.1016/j.cognition.2015.10.007",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "非常适合你的 multimodal framing。它不是把 language、gesture、graphics 简单相加，而是讨论不同 representational structures 如何共同构成 multimodal meaning。",
+  "problem": null,
+  "method": null,
+  "findings": [],
+  "real_contribution": null,
+  "biggest_weakness": null,
+  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "why_researcher_should_care": "非常适合你的 multimodal framing。它不是把 language、gesture、graphics 简单相加，而是讨论不同 representational structures 如何共同构成 multimodal meaning。",
+  "amsc": {
+    "mainline_fit": 7.8,
+    "buckets": [
+      "A"
+    ],
+    "stages": [
+      "Meaning",
+      "Embodied Communication"
+    ],
+    "mechanisms": [
+      "social meaning",
+      "multimodal expression"
+    ],
+    "gap_ids": [],
+    "master_list_decision": "Baseline v1.0 — retained"
+  },
+  "evidence_notes": [
+    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+  ],
+  "source_list_id": "A5",
+  "provenance": "user_baseline_v1.0",
+  "investigation_status": "bibliographic_verification_only",
+  "updated_at": "2026-08-26"
+}

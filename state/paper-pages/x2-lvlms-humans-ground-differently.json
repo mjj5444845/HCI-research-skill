@@ -1,0 +1,60 @@
+{
+  "id": "X2",
+  "slug": "x2-lvlms-humans-ground-differently",
+  "title": "LVLMs and Humans Ground Differently in Referential Communication",
+  "authors": [
+    "Peter Zeng",
+    "Weiling Li",
+    "Amie J. Paige",
+    "Zhengxiang Wang",
+    "Panagiotis Kaliosis",
+    "Dimitris Samaras",
+    "Gregory Zelinsky",
+    "Susan E. Brennan",
+    "Owen Rambow"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026, 9061–9087",
+  "source_url": "https://aclanthology.org/2026.acl-long.410/",
+  "doi": "10.18653/v1/2026.acl-long.410",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "通过 human–human、human–AI、AI–human 与 AI–AI 的 repeated reference 对照，检验 LVLM 是否形成 human-like interactive common ground。",
+  "findings": [
+    "论文报告 LVLM 与人类在 referential communication 中的 grounding 方式不同。",
+    "现有模型尚不能像人一样交互式建立和解析 referring expressions。"
+  ],
+  "claim_boundary": "结果细化了 GAP-02/GAP-04：问题不只是保存 interaction history，还在于更新机制是否产生 human-like grounding。",
+  "amsc": {
+    "mainline_fit": 9.2,
+    "buckets": [
+      "B",
+      "C"
+    ],
+    "stages": [
+      "Grounding",
+      "Convention"
+    ],
+    "mechanisms": [
+      "referential grounding",
+      "LVLM"
+    ],
+    "gap_ids": [
+      "GAP-02",
+      "GAP-04"
+    ],
+    "master_list_decision": "Candidate — Important"
+  },
+  "problem": "LVLM 是否能够在多轮 repeated referential communication 中建立、更新并使用与人类相似的 common ground？",
+  "method": "Factorial director–matcher design 比较 human–human、human–AI、AI–human 与 AI–AI；89 对参与者/Agent 完成四轮互动，共形成 356 段 dialogues，并分析 accuracy、efficiency 与 lexical overlap。",
+  "real_contribution": "把模型的 common-ground deficit 放进与 human baseline 可比的多轮实验，而不只检验单轮视觉问答能力。",
+  "biggest_weakness": "任务使用难以直接 lexicalize 的对象图片；结果说明这一范式中的 grounding failure，但不能自动外推到所有 LVLM 或 embodied settings。",
+  "investigation_status": "abstract_reviewed",
+  "why_researcher_should_care": "通过 human–human、human–AI、AI–human 与 AI–AI 的 repeated reference 对照，检验 LVLM 是否形成 human-like interactive common ground。",
+  "evidence_notes": [
+    "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
+    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。"
+  ],
+  "provenance": "missing_paper_attack_2026-08-26",
+  "updated_at": "2026-08-26"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "X4",
+  "slug": "x4-making-memories-together",
+  "title": "Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction",
+  "authors": [
+    "Eline Malnatsky",
+    "Shiqi Wang",
+    "Koen Hindriks",
+    "Mike E. U. Ligthart"
+  ],
+  "year": 2026,
+  "venue": "HRI Companion 2026, 1125–1129",
+  "source_url": "https://research.utwente.nl/en/publications/making-memories-together-toward-transparent-and-co-constructed-ro/",
+  "doi": "10.1145/3776734.3794570",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "以 transparent、co-constructed robot memory 回应长期 Child–Robot Interaction 中的 relationship decay、informational decay 与 opaque memory。",
+  "biggest_weakness": "这是 5 页 HRI Companion paper，证据应标记为 preliminary，不能把概念建议当作 gap 已解决。",
+  "claim_boundary": "Personalization memory 不是 convention formation，但 co-constructed memory 可成为 convention-aware Agent 的前置机制。",
+  "amsc": {
+    "mainline_fit": 8.8,
+    "buckets": [
+      "E",
+      "C",
+      "F"
+    ],
+    "stages": [
+      "Grounding",
+      "Adaptation"
+    ],
+    "mechanisms": [
+      "co-constructed memory",
+      "long-term HRI"
+    ],
+    "gap_ids": [
+      "GAP-04"
+    ],
+    "master_list_decision": "Candidate — Important / Preliminary"
+  },
+  "problem": null,
+  "method": null,
+  "findings": [],
+  "real_contribution": null,
+  "why_researcher_should_care": "以 transparent、co-constructed robot memory 回应长期 Child–Robot Interaction 中的 relationship decay、informational decay 与 opaque memory。",
+  "evidence_notes": [
+    "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
+    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。"
+  ],
+  "provenance": "missing_paper_attack_2026-08-26",
+  "investigation_status": "source_verified_candidate",
+  "updated_at": "2026-08-26"
+}

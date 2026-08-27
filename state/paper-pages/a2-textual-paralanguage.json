@@ -1,0 +1,48 @@
+{
+  "id": "A2",
+  "slug": "a2-textual-paralanguage",
+  "title": "Textual Paralanguage and Its Implications for Marketing Communications",
+  "authors": [
+    "Andrea Webb Luangrath",
+    "Joann Peck",
+    "Victor A. Barger"
+  ],
+  "year": 2017,
+  "venue": "Journal of Consumer Psychology, 27(1), 98–107",
+  "source_url": "https://arxiv.org/abs/1605.06799",
+  "doi": "10.1016/j.jcps.2016.05.002",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "与你的“花字”关系极强。文章把文字、符号、图片、标点等定义为能够补充或替代传统 verbal prose 的 textual paralanguage。你以后需要思考如何把这一概念从 CMC 推进到 embodied agents。",
+  "problem": null,
+  "method": null,
+  "findings": [],
+  "real_contribution": null,
+  "biggest_weakness": null,
+  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "why_researcher_should_care": "与你的“花字”关系极强。文章把文字、符号、图片、标点等定义为能够补充或替代传统 verbal prose 的 textual paralanguage。你以后需要思考如何把这一概念从 CMC 推进到 embodied agents。",
+  "amsc": {
+    "mainline_fit": 7.8,
+    "buckets": [
+      "A"
+    ],
+    "stages": [
+      "Meaning",
+      "Embodied Communication"
+    ],
+    "mechanisms": [
+      "social meaning",
+      "multimodal expression"
+    ],
+    "gap_ids": [],
+    "master_list_decision": "Baseline v1.0 — retained"
+  },
+  "evidence_notes": [
+    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+  ],
+  "source_list_id": "A2",
+  "provenance": "user_baseline_v1.0",
+  "investigation_status": "bibliographic_verification_only",
+  "updated_at": "2026-08-26"
+}

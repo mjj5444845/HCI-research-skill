@@ -9,25 +9,58 @@ gaps:
     history: []
   - id: GAP-02
     statement: "Designer-defined vocabulary -> emergent convention"
-    status: HIGH_PRIORITY
+    status: PARTIALLY_ADDRESSED
     priority: high
-    evidence: []
-    skeptic_challenge: null
-    history: []
+    evidence:
+      - paper_slug: x1-spotter-human-robot-conventions
+        evidence_level: MODERATE
+        supports: "Repeated human–robot reference interaction can produce stable task-specific linguistic conventions."
+        boundary: "Controlled Dutch pilots with verbal referring expressions do not establish open-ended, jointly negotiated, transferable multimodal convention."
+    skeptic_challenge: "如果 task-induced lexical stabilization 已被称为 emergent convention，剩余贡献必须证明双方可发起和修订约定、partner-specificity、跨情境保持或适当迁移，以及 multimodal embodied consequences。"
+    history:
+      - date: 2026-08-26
+        from: HIGH_PRIORITY
+        to: PARTIALLY_ADDRESSED
+        reason: "SPOTTER directly studies convention formation in a visually grounded human–robot reference task; the broader multimodal and longitudinal problem remains open."
   - id: GAP-03
-    statement: "Context-aware -> history-aware communication"
-    status: HIGH_PRIORITY
+    statement: "History-aware communication -> detecting, maintaining, repairing, and retiring shared multimodal conventions"
+    status: REDEFINED
     priority: high
-    evidence: []
-    skeptic_challenge: null
-    history: []
+    evidence:
+      - paper_slug: x3-seeing-eye-to-eye
+        evidence_level: MODERATE
+        supports: "A situated AR assistant can combine gaze, gesture, revisable memory, and accumulated common ground."
+        boundary: "System-maintained contextual memory is not equivalent to mutual belief or dyad-specific convention formation."
+      - paper_slug: x1-spotter-human-robot-conventions
+        evidence_level: MODERATE
+        supports: "Repeated interaction history already appears in a human–robot convention-formation task."
+        boundary: "The controlled reference-game history does not show general convention detection or repair policy."
+    skeptic_challenge: "研究必须用可证伪标准区分 log retrieval、user modeling、mutual belief 与 shared convention，并证明 Agent 能检测约定何时形成、失效以及何时应主动 repair。"
+    history:
+      - date: 2026-08-26
+        from: HIGH_PRIORITY
+        to: REDEFINED
+        reason: "Eye2Eye makes a generic absence-of-history claim untenable; the defensible gap concerns convention inference and lifecycle management."
   - id: GAP-04
     statement: "Personalization != convention formation"
-    status: ACTIVE
+    status: UNCHANGED
     priority: null
-    evidence: []
-    skeptic_challenge: null
-    history: []
+    evidence:
+      - paper_slug: x4-making-memories-together
+        evidence_level: PRELIMINARY
+        supports: "Transparent, co-constructed robot memory may provide infrastructure for negotiated personalization."
+        boundary: "A five-page companion paper does not show that shared memory produces, stabilizes, or transfers a communicative convention."
+      - paper_slug: x1-spotter-human-robot-conventions
+        evidence_level: MODERATE
+        supports: "Stable conventions can emerge in a human–robot reference task."
+        boundary: "The study does not causally compare personalization-only and convention-aware mechanisms."
+    evidence_trend: STRENGTHENED
+    skeptic_challenge: "Co-constructed profile 或 transparent memory 仍可能只是 personalization database；除非 signal–meaning mapping 被双方协商、彼此预期并改变后续 communication，否则不能称为 convention formation。"
+    history:
+      - date: 2026-08-26
+        from: ACTIVE
+        to: UNCHANGED
+        reason: "Recent memory and convention papers strengthen the distinction but do not bridge it empirically."
   - id: GAP-05
     statement: "Informal visual language lacks systematic embodied communication theory"
     status: ACTIVE

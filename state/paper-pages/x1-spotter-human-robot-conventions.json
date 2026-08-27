@@ -1,0 +1,57 @@
+{
+  "id": "X1",
+  "slug": "x1-spotter-human-robot-conventions",
+  "title": "SPOTTER: A Framework for Investigating Convention Formation in a Visually Grounded Human-Robot Reference Task",
+  "authors": [
+    "Jaap Kruijt",
+    "Peggy van Minkelen",
+    "Lucia Donatelli",
+    "Piek T.J.M. Vossen",
+    "Elly Konijn",
+    "Thomas Baier"
+  ],
+  "year": 2024,
+  "venue": "LREC-COLING 2024, 15202–15215",
+  "source_url": "https://aclanthology.org/2024.lrec-main.1322/",
+  "doi": null,
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "直接研究 visually grounded human–robot reference task 中的 common ground、repeated interaction 与 convention formation，是原 41 篇清单中最明显的主线遗漏。",
+  "problem": "人和机器人在重复的视觉指称任务中能否形成稳定的 referring conventions？",
+  "findings": [
+    "论文提供约 5,000 条 utterances 的研究资源。",
+    "表达长度没有像典型 human–human repeated reference interaction 那样缩短，且 convention 稳定性受到 distractors 影响。"
+  ],
+  "real_contribution": "把 convention formation 直接放进 human–robot visually grounded reference task，并提供可复用 framework 与语料。",
+  "biggest_weakness": "单一任务范式的结果不能代表所有 multimodal embodied convention；也不能据此认为 GAP-02 已完全解决。",
+  "claim_boundary": "支持把 GAP-02 标为 partially addressed，但 human–robot shared convention 的机制、跨模态扩展与长期稳定性仍开放。",
+  "amsc": {
+    "mainline_fit": 9.8,
+    "buckets": [
+      "C",
+      "E"
+    ],
+    "stages": [
+      "Grounding",
+      "Convention",
+      "Adaptation"
+    ],
+    "mechanisms": [
+      "human–robot convention formation",
+      "repeated reference"
+    ],
+    "gap_ids": [
+      "GAP-02"
+    ],
+    "master_list_decision": "Candidate — Must Read"
+  },
+  "method": "SPOTTER 以可调整的 visually grounded reference game 比较 human–human 与 human–robot interaction；两项 Dutch exploratory pilots 操作 familiar inner circle 与 unfamiliar outer circle，并发布约 5,000 条 utterances。",
+  "investigation_status": "abstract_reviewed",
+  "why_researcher_should_care": "直接研究 visually grounded human–robot reference task 中的 common ground、repeated interaction 与 convention formation，是原 41 篇清单中最明显的主线遗漏。",
+  "evidence_notes": [
+    "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
+    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。"
+  ],
+  "provenance": "missing_paper_attack_2026-08-26",
+  "updated_at": "2026-08-26"
+}

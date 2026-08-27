@@ -1,0 +1,50 @@
+{
+  "id": "E3",
+  "slug": "e3-continual-adaptation-machine-communication",
+  "title": "Continual Adaptation for Efficient Machine Communication",
+  "authors": [
+    "Robert Hawkins",
+    "Minae Kwon",
+    "Dorsa Sadigh",
+    "Noah Goodman"
+  ],
+  "year": 2020,
+  "venue": "CoNLL 2020, 408–419",
+  "source_url": "https://aclanthology.org/2020.conll-1.33/",
+  "doi": "10.18653/v1/2020.conll-1.33",
+  "access_status": "full_text",
+  "investigation_status": "abstract_reviewed",
+  "problem": "人工沟通 Agent 能否在 repeated reference interaction 中像人一样，针对新伙伴与新语境持续形成高效 convention？",
+  "method": "提出 interactive repeated reference task 与 regularized continual learning framework，并在 COCO simulations 和真实 human-partner reference games 中评估。",
+  "findings": [
+    "来源摘要报告：该框架使以通用语言模型初始化的 Agent 能随互动更准确、更高效地与伙伴沟通。"
+  ],
+  "real_contribution": "把 on-the-fly partner adaptation 变成可比较的机器沟通 benchmark 与 continual-learning 问题。",
+  "biggest_weakness": "公开摘要不足以支持对所有实验条件、效应量与失败模式的完整审计；页面当前不作更强结论。",
+  "claim_boundary": "证据针对 repeated linguistic reference communication；不能直接推出 multimodal embodied conventions 已被解决。",
+  "priority": "Must Read",
+  "one_sentence": "目前整个 list 中与你“agent 随着 interaction history 学习 partner-specific convention”最接近的 computational work 之一。它直接让 artificial agent 在 repeated reference interaction 中持续适应沟通伙伴。",
+  "why_researcher_should_care": "目前整个 list 中与你“agent 随着 interaction history 学习 partner-specific convention”最接近的 computational work 之一。它直接让 artificial agent 在 repeated reference interaction 中持续适应沟通伙伴。",
+  "amsc": {
+    "mainline_fit": 8.8,
+    "buckets": [
+      "E"
+    ],
+    "stages": [
+      "Adaptation"
+    ],
+    "mechanisms": [
+      "mutual adaptation",
+      "long-term interaction"
+    ],
+    "gap_ids": [],
+    "master_list_decision": "Baseline v1.0 — retained"
+  },
+  "evidence_notes": [
+    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+  ],
+  "source_list_id": "E3",
+  "provenance": "user_baseline_v1.0",
+  "updated_at": "2026-08-26"
+}

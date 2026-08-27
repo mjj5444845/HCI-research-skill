@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = path.resolve("site");
-const port = Number(process.env.PORT || 4173);
+const port = Number(process.argv[2] || process.env.PORT || 4173);
 const types = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".svg": "image/svg+xml", ".json": "application/json; charset=utf-8" };
 
 const server = http.createServer((request, response) => {

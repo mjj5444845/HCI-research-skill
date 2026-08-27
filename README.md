@@ -167,7 +167,9 @@ npm run test:site
 npm run preview
 ```
 
-站点包含 Skill/Agent 独立详情页、TOML 与 orchestration 架构可视化，以及由 `state/paper-pages/*.json` 驱动的一篇论文一个页面。论文 JSON 必须符合 `schemas/paper-page.schema.json`；没有真实证据时保持空状态，不创建演示论文。
+站点包含 Skill/Agent 独立详情页、TOML 与 orchestration 架构可视化，以及由 `state/paper-pages/*.json` 驱动的一篇论文一个页面。论文 JSON 必须符合 `schemas/paper-page.schema.json`；没有足够证据时明确显示 `Insufficient Evidence`，不从标题推断 findings。
+
+AMSC 的 41 篇 `Master Literature List v1.0` 原文保存在 `research-programs/amsc/imports/`。运行 `npm run import:literature` 会重建 41 个 baseline 记录及 5 个独立标记的 search candidates，并同步 `research-programs/amsc/state/master_literature.yaml`。候选不会静默并入用户定义的 baseline。
 
 推送 `main` 后，`.github/workflows/pages.yml` 会构建并发布 GitHub Pages。
 

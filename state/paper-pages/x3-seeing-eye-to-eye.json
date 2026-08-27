@@ -1,0 +1,60 @@
+{
+  "id": "X3",
+  "slug": "x3-seeing-eye-to-eye",
+  "title": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human–AI Collaboration",
+  "authors": [
+    "Zhuyu Teng",
+    "Pei Chen",
+    "Yichen Cai",
+    "Ruoqing Lu",
+    "Zhaoqu Jiang",
+    "Jiayang Li",
+    "Weitao You",
+    "Lingyun Sun"
+  ],
+  "year": 2026,
+  "venue": "CHI 2026, Article 19, 1–19",
+  "source_url": "https://arxiv.org/abs/2603.12701",
+  "doi": "10.1145/3772318.3791059",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "把 gaze、gesture、AR highlights、revisable memory 与 accumulated common ground 整合进共享第一人称视角的 Human–AI collaboration。",
+  "claim_boundary": "GAP-03 应标为 partially addressed；仅增加 history-aware memory 已不足以构成 novelty，但 persistent memory 仍不等于 jointly negotiated convention。",
+  "amsc": {
+    "mainline_fit": 9.3,
+    "buckets": [
+      "C",
+      "E",
+      "G"
+    ],
+    "stages": [
+      "Grounding",
+      "Adaptation",
+      "Embodied Communication"
+    ],
+    "mechanisms": [
+      "shared perspective",
+      "accumulated common ground"
+    ],
+    "gap_ids": [
+      "GAP-03"
+    ],
+    "master_list_decision": "Candidate — Important"
+  },
+  "problem": "视觉型 AI assistant 如何减少用户把丰富 embodied intent 压缩为 verbal commands 的 communication gulf，并弥补 Agent 对细微 cues 的 understanding gulf？",
+  "method": "Eye2Eye AR prototype 整合 joint attention coordination、revisable memory 与 reflective feedback，通过 user study 和 post-hoc pipeline evaluation 评估。",
+  "findings": [
+    "来源摘要报告系统降低 task completion time 与 interaction load，并提高 trust。",
+    "三个组件共同用于维护 evolving common ground，但该 memory 是否形成 jointly negotiated convention 仍需单独检验。"
+  ],
+  "real_contribution": "把 first-person perspective、joint attention 与可修订 memory 组合为 Human–AI cognitive alignment framework。",
+  "biggest_weakness": "evolving common ground 的系统实现不等同于已证明 partner-specific convention formation；当前页面只依据公开摘要校准结论。",
+  "investigation_status": "abstract_reviewed",
+  "why_researcher_should_care": "把 gaze、gesture、AR highlights、revisable memory 与 accumulated common ground 整合进共享第一人称视角的 Human–AI collaboration。",
+  "evidence_notes": [
+    "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
+    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。"
+  ],
+  "provenance": "missing_paper_attack_2026-08-26",
+  "updated_at": "2026-08-26"
+}

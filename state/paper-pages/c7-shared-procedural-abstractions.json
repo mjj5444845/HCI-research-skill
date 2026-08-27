@@ -1,0 +1,52 @@
+{
+  "id": "C7",
+  "slug": "c7-shared-procedural-abstractions",
+  "title": "Learning to Communicate about Shared Procedural Abstractions",
+  "authors": [
+    "William P. McCarthy",
+    "Robert D. Hawkins",
+    "Haoliang Wang",
+    "Cameron Holdaway",
+    "Judith E. Fan"
+  ],
+  "year": 2021,
+  "venue": "Proceedings of the 43rd Annual Meeting of the Cognitive Science Society, 77–83",
+  "source_url": "https://repositories.cdlib.org/uc/item/3vs8285x",
+  "doi": null,
+  "access_status": "full_text",
+  "correction_note": "原清单将 Holdaway 列在 Wang 之前；本页按论文标题页与会议记录纠正作者顺序。",
+  "priority": "Must Read",
+  "one_sentence": "repeated physical assembly 中，人会建立更高级的 procedural abstraction，并通过交流协调这些 abstraction。是你进入 physical collaboration 的关键桥梁。",
+  "problem": null,
+  "method": null,
+  "findings": [],
+  "real_contribution": null,
+  "biggest_weakness": null,
+  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "why_researcher_should_care": "repeated physical assembly 中，人会建立更高级的 procedural abstraction，并通过交流协调这些 abstraction。是你进入 physical collaboration 的关键桥梁。",
+  "amsc": {
+    "mainline_fit": 9.6,
+    "buckets": [
+      "C"
+    ],
+    "stages": [
+      "Grounding",
+      "Convention"
+    ],
+    "mechanisms": [
+      "common ground",
+      "convention formation"
+    ],
+    "gap_ids": [],
+    "master_list_decision": "Baseline v1.0 — retained"
+  },
+  "evidence_notes": [
+    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "原清单将 Holdaway 列在 Wang 之前；本页按论文标题页与会议记录纠正作者顺序。"
+  ],
+  "source_list_id": "C7",
+  "provenance": "user_baseline_v1.0",
+  "investigation_status": "bibliographic_verification_only",
+  "updated_at": "2026-08-26"
+}

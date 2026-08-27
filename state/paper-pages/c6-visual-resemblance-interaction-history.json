@@ -1,0 +1,52 @@
+{
+  "id": "C6",
+  "slug": "c6-visual-resemblance-interaction-history",
+  "title": "Visual Resemblance and Interaction History Jointly Constrain Pictorial Meaning",
+  "authors": [
+    "Robert D. Hawkins",
+    "Megumi Sano",
+    "Noah D. Goodman",
+    "Judith E. Fan"
+  ],
+  "year": 2023,
+  "venue": "Nature Communications, 14, Article 2199",
+  "source_url": "https://www.nature.com/articles/s41467-023-37737-w",
+  "doi": "10.1038/s41467-023-37737-w",
+  "access_status": "full_text",
+  "investigation_status": "abstract_and_full_page_reviewed",
+  "problem": "图像意义究竟主要来自 visual resemblance，还是来自互动中形成的 socially mediated conventions？",
+  "method": "三项实验与一次完整 replication 使用 repeated drawing reference game；研究操纵 shared interaction history，并结合 model-based image analyses 与 crowdsourced annotations。",
+  "findings": [
+    "参与者随重复互动形成 object-specific 与 interaction-specific 的高效表达策略，变化不能仅由任务练习或纯 resemblance account 解释。",
+    "图画并未简单漂移为任意符号，而是继续保留能区分 referent 的 diagnostic visual features。"
+  ],
+  "real_contribution": "把 resemblance-based 与 convention-based 解释整合为可检验的 pictorial meaning account，显示视觉信息与 shared history 共同约束 graphical conventions。",
+  "biggest_weakness": "实验聚焦受控的视觉对象 reference game；对抽象概念、真实协作与具身 Agent 的外推仍需新证据。",
+  "claim_boundary": "证据支持特定 repeated visual communication 范式中的 dyad-specific convention formation，不等同于已证明机器人可学习或生成同类约定。",
+  "priority": "Must Read",
+  "one_sentence": "尤其值得你关注“视觉相似性”与“shared history”怎样共同决定图像 meaning，而不是把 visual symbol 意义看作 universal。",
+  "why_researcher_should_care": "尤其值得你关注“视觉相似性”与“shared history”怎样共同决定图像 meaning，而不是把 visual symbol 意义看作 universal。",
+  "amsc": {
+    "mainline_fit": 9.6,
+    "buckets": [
+      "C"
+    ],
+    "stages": [
+      "Grounding",
+      "Convention"
+    ],
+    "mechanisms": [
+      "common ground",
+      "convention formation"
+    ],
+    "gap_ids": [],
+    "master_list_decision": "Baseline v1.0 — retained"
+  },
+  "evidence_notes": [
+    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+  ],
+  "source_list_id": "C6",
+  "provenance": "user_baseline_v1.0",
+  "updated_at": "2026-08-26"
+}

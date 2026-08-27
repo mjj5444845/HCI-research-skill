@@ -144,6 +144,9 @@ h3 { font-size: 1.35rem; }
 .paper-year { padding-top: 5px; color: var(--orange); font: 800 1.5rem/1 monospace; }
 .paper-meta { color: var(--muted); font-size: .83rem; }
 .priority { display: inline-flex; margin-top: 16px; padding: 6px 10px; border-radius: 999px; color: var(--ink); background: rgba(244,197,83,.35); font-size: .74rem; font-weight: 800; }
+.tag-row .priority { margin-top: 0; }
+.paper-collection-head { margin-top: 76px; padding-top: 26px; border-top: 1px solid var(--line); }
+.toolbar + .paper-collection-head { margin-top: 38px; }
 .metric { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; }
 .metric-bar { height: 7px; border-radius: 999px; overflow: hidden; background: var(--paper-deep); }
 .metric-bar i { display: block; width: var(--value); height: 100%; background: var(--teal); }

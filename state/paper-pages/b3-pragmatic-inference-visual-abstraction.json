@@ -1,0 +1,52 @@
+{
+  "id": "B3",
+  "slug": "b3-pragmatic-inference-visual-abstraction",
+  "title": "Pragmatic Inference and Visual Abstraction Enable Contextual Flexibility During Visual Communication",
+  "authors": [
+    "Judith E. Fan",
+    "Robert D. Hawkins",
+    "Mike Wu",
+    "Noah D. Goodman"
+  ],
+  "year": 2020,
+  "venue": "Computational Brain & Behavior, 3(1), 86–101",
+  "source_url": "https://cogtoolslab.github.io/pdf/fan_cbb_2019.pdf",
+  "doi": "10.1007/s42113-019-00058-7",
+  "access_status": "full_text",
+  "online_first_year": 2019,
+  "correction_note": "原清单使用 online-first 年份 2019；本页采用正式卷期年份 2020。",
+  "priority": "Must Read",
+  "one_sentence": "你的理论核心之一。人会根据 communication context 选择更简单或更详细的 drawing；关键不是最大化 detail，而是 **contextually sufficient representation**。",
+  "problem": null,
+  "method": null,
+  "findings": [],
+  "real_contribution": null,
+  "biggest_weakness": null,
+  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "why_researcher_should_care": "你的理论核心之一。人会根据 communication context 选择更简单或更详细的 drawing；关键不是最大化 detail，而是 **contextually sufficient representation**。",
+  "amsc": {
+    "mainline_fit": 8.5,
+    "buckets": [
+      "B"
+    ],
+    "stages": [
+      "Meaning",
+      "Grounding"
+    ],
+    "mechanisms": [
+      "pragmatic inference",
+      "representation"
+    ],
+    "gap_ids": [],
+    "master_list_decision": "Baseline v1.0 — retained"
+  },
+  "evidence_notes": [
+    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "原清单使用 online-first 年份 2019；本页采用正式卷期年份 2020。"
+  ],
+  "source_list_id": "B3",
+  "provenance": "user_baseline_v1.0",
+  "investigation_status": "bibliographic_verification_only",
+  "updated_at": "2026-08-26"
+}
