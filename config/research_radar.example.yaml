@@ -1,0 +1,80 @@
+enabled: true
+schedule:
+  timezone: America/New_York
+  cron: 0 8 * * 1
+  human_label: Every Monday at 08:00
+lookback_days: 7
+max_candidates: 100
+deep_read_limit: 5
+normal_read_limit: 10
+interests:
+  primary:
+  - HCI
+  - CSCW
+  - Human-AI Interaction
+  - Human-Robot Interaction
+  - Cross-cultural HCI
+  - Cultural AI
+  - AI Policy
+  semantic_descriptions:
+  - social and cultural mechanisms in human interaction with AI and embodied agents
+  - non-obvious social phenomena enabled or reshaped by AI systems
+  - cross-cultural variation, diaspora, identity, language, and cultural interpretation
+    in AI-mediated interaction
+  - AI-era HCI research methods, computational evidence, digital trace data, simulation-to-human
+    validation
+  exclusions:
+  - pure application papers with no meaningful research contribution
+  - AI wrapper papers with only obvious user preference outcomes
+venues:
+  prioritize:
+  - CHI
+  - CSCW
+  - UIST
+  - HRI
+  - FAccT
+  - ACL
+  - EMNLP
+  - NeurIPS
+  - ICML
+  - ICLR
+output:
+  primary_language: zh
+  include_english_executive_summary: true
+  report_directory: reports/radar
+quality:
+  require_source_traceability: true
+  preserve_uncertainty: true
+  run_missing_paper_attack_when_landscape_changes: true
+  never_invent_fulltext: true
+active_research_program: amsc
+program_sources:
+  program_file: research-programs/amsc/program.yaml
+  master_literature: research-programs/amsc/state/master_literature.yaml
+  gap_registry: research-programs/amsc/state/gap_registry.yaml
+  state_of_field: research-programs/amsc/state/state_of_field.yaml
+  exam_kb: research-programs/amsc/state/comprehensive_exam.yaml
+  research_graph: research-programs/amsc/state/research_graph.yaml
+amsc:
+  mechanism_based_search: true
+  track_anchor_researchers: true
+  track_students_postdocs_collaborators: true
+  tier1_venues:
+  - CHI
+  - CSCW
+  - HRI
+  - UIST
+  - CogSci
+  tier2_venues:
+  - RO-MAN
+  - ICRA
+  - IROS
+  - ACM THRI
+  - International Journal of Social Robotics
+  preprints:
+  - arXiv
+  reject_keyword_only_overlap: true
+  weekly_fixed_sections:
+  - 本周论文及其总结分析
+  - Master Literature List 更新
+  - 当前研究现状与 Gap 更新

@@ -1,0 +1,14 @@
+version: 0.1
+nodes: []
+edges: []
+edge_policy:
+  verified:
+    - coauthored
+    - affiliated_with
+    - member_of
+    - cites
+  inferred:
+    - extends
+    - contradicts
+    - intellectual_lineage
+human_corrections: []

@@ -1,0 +1,26 @@
+{
+  "name": "senior-researcher-os-starter",
+  "version": "0.1",
+  "skills": [
+    "comprehensive-exam",
+    "idea-development",
+    "literature-investigation",
+    "paper-investigation",
+    "research-program-guardrail",
+    "research-radar",
+    "senior-researcher-core",
+    "study-design"
+  ],
+  "future": [
+    "proposal-development",
+    "paper-development",
+    "review-and-revision",
+    "venue-adapters",
+    "cross-cultural-methods",
+    "ai-era-hci-methods"
+  ],
+  "active_research_program": "amsc",
+  "research_programs": [
+    "amsc"
+  ]
+}

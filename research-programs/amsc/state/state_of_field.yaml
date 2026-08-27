@@ -1,0 +1,13 @@
+version: 0.1
+claims: []
+claim_statuses:
+  - ESTABLISHED
+  - EMERGING
+  - CONTESTED
+  - UNDEREXPLORED
+  - OPEN
+evidence_strength:
+  - STRONG
+  - MODERATE
+  - PRELIMINARY
+  - SPECULATIVE

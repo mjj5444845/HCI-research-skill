@@ -1,0 +1,13 @@
+version: v1.0
+baseline_count: 41
+note: "The 41-paper baseline is user-defined. Populate actual papers from the user's existing list; do not invent entries."
+categories:
+  A: "Social / Multimodal / Informal Expression"
+  B: "Pragmatics / Representation / Communicative Efficiency"
+  C: "Common Ground / Grounding / Convention Formation"
+  D: "HRI Communication / Legibility / Uncertainty / Capability"
+  E: "Adaptation / Personalization / Long-Term HRI"
+  F: "Social / Cultural / Relational / Appropriation"
+  G: "Situated / AR / Embodied Output"
+papers: []
+change_log: []

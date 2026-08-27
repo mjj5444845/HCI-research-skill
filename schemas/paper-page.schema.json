@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mjj5444845.github.io/HCI-research-skill/schemas/paper-page.schema.json",
+  "title": "Senior Researcher OS paper page",
+  "type": "object",
+  "required": ["slug", "title", "authors", "year", "source_url", "access_status", "priority", "one_sentence"],
+  "properties": {
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "title": {"type": "string", "minLength": 1},
+    "authors": {"type": "array", "items": {"type": "string"}},
+    "year": {"type": ["integer", "string"]},
+    "venue": {"type": ["string", "null"]},
+    "source_url": {"type": "string", "format": "uri"},
+    "doi": {"type": ["string", "null"]},
+    "access_status": {"enum": ["full_text", "abstract_only", "metadata_only", "inaccessible"]},
+    "priority": {"enum": ["Skip", "Track", "Worth Reading", "Important", "Must Read"]},
+    "one_sentence": {"type": "string"},
+    "problem": {"type": ["string", "null"]},
+    "method": {"type": ["string", "null"]},
+    "findings": {"type": "array", "items": {"type": "string"}},
+    "real_contribution": {"type": ["string", "null"]},
+    "biggest_weakness": {"type": ["string", "null"]},
+    "claim_boundary": {"type": ["string", "null"]},
+    "why_researcher_should_care": {"type": ["string", "null"]},
+    "amsc": {
+      "type": "object",
+      "properties": {
+        "mainline_fit": {"type": ["number", "null"], "minimum": 0, "maximum": 10},
+        "buckets": {"type": "array", "items": {"type": "string"}},
+        "stages": {"type": "array", "items": {"type": "string"}},
+        "mechanisms": {"type": "array", "items": {"type": "string"}},
+        "gap_ids": {"type": "array", "items": {"type": "string"}},
+        "master_list_decision": {"type": ["string", "null"]}
+      }
+    },
+    "evidence_notes": {"type": "array", "items": {"type": "string"}},
+    "updated_at": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

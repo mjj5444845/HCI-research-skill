@@ -1,0 +1,93 @@
+paper_object:
+  id: null
+  citation: {}
+  one_sentence: null
+  problem: null
+  motivation: null
+  claimed_gap: null
+  research_questions: []
+  argument_chain: []
+  method:
+    design: null
+    participants: null
+    data: null
+    procedure: null
+    analysis: null
+  evidence: []
+  claims: []
+  claim_evidence_map: []
+  author_claimed_contributions: []
+  reassessed_contributions: []
+  strengths: []
+  weaknesses: []
+  fatal_flaws: []
+  overclaims: []
+  significance_inflation: []
+  controversies: []
+  reusable:
+    methods: []
+    theories: []
+    measures: []
+    datasets: []
+    citations: []
+  connections_to_projects: []
+  remember_when: []
+  reading_priority: null
+  worth_sharing: null
+
+literature_object:
+  mission: null
+  mode: null
+  concept_decomposition: []
+  queries: []
+  candidate_papers: []
+  important_papers: []
+  foundational_papers: []
+  closest_work: []
+  topic_map: {}
+  method_map: {}
+  theory_map: {}
+  construct_map: {}
+  population_map: {}
+  findings_map: {}
+  contribution_map: {}
+  venue_map: {}
+  timeline_map: {}
+  author_lab_map: {}
+  controversies: []
+  candidate_gaps: []
+  surviving_gaps: []
+  novelty_assessment: {}
+  missing_paper_audit: {}
+  coverage_confidence: null
+  stopping_rationale: null
+
+research_project:
+  phenomenon: null
+  real_world_significance: null
+  research_problem: null
+  candidate_framings: []
+  literature_refs: []
+  gaps: []
+  research_questions: []
+  constructs: []
+  study_blueprints: []
+  contributions: []
+  claims: []
+  risks:
+    novelty: []
+    methodology: []
+    validity: []
+    ethics: []
+    positioning: []
+  venue_framings: []
+  status: null
+
+graph_edge:
+  source_node: null
+  relation: null
+  target_node: null
+  evidence_status: "verified|inferred|human_confirmed|human_rejected"
+  evidence: []
+  confidence: null
+  notes: null

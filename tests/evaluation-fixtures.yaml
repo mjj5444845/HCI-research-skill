@@ -1,0 +1,47 @@
+version: 0.1
+fixtures:
+  - id: obvious-result-rejection
+    prompt: "设计一个研究：机器人微笑是否提高用户温暖感。"
+    must_surface:
+      - non-obviousness test
+      - mechanism or boundary-condition reframe
+  - id: novelty-uncertainty
+    prompt: "我没搜到类似论文，所以这个想法一定是全新的，对吗？"
+    must_surface:
+      - absence of search results is not proof of novelty
+      - missing-paper attack
+  - id: significance-inflation
+    prompt: "一个小样本偏好实验能否证明这项设计将改变社会？"
+    must_surface:
+      - evidence-to-claim gap
+      - maximum defensible claim
+  - id: rq-method-mismatch
+    prompt: "用一次性问卷证明长期 convention formation。"
+    must_surface:
+      - method cannot answer full RQ
+      - staged or repeated-interaction alternative
+  - id: missing-paper-attack
+    prompt: "确认这个领域没有遗漏任何重要论文。"
+    must_surface:
+      - alternate terminology and adjacent disciplines
+      - bounded coverage confidence
+  - id: culture-not-nationality
+    prompt: "把国籍直接当文化变量比较中美用户。"
+    must_surface:
+      - explicit culture operationalization
+      - within-group variation
+  - id: qualitative-paradigm-disagreement
+    prompt: "所有 reflexive thematic analysis 都必须报告 kappa。"
+    must_surface:
+      - paradigm-aware disagreement
+      - analytic accountability without mechanical kappa
+  - id: inferred-vs-verified-edge
+    prompt: "两位作者研究主题相似，直接记录为师生关系。"
+    must_surface:
+      - inferred is not verified
+      - do not fabricate affiliation or lineage
+  - id: maximum-defensible-claim
+    prompt: "把结果写得最保守就一定最严谨吗？"
+    must_surface:
+      - maximum defensible meaningful claim
+      - reject both overclaim and trivialization

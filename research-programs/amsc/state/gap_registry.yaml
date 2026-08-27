@@ -1,0 +1,57 @@
+version: 0.1
+gaps:
+  - id: GAP-01
+    statement: "Fixed signal effectiveness -> meaning formation"
+    status: ACTIVE
+    priority: null
+    evidence: []
+    skeptic_challenge: null
+    history: []
+  - id: GAP-02
+    statement: "Designer-defined vocabulary -> emergent convention"
+    status: HIGH_PRIORITY
+    priority: high
+    evidence: []
+    skeptic_challenge: null
+    history: []
+  - id: GAP-03
+    statement: "Context-aware -> history-aware communication"
+    status: HIGH_PRIORITY
+    priority: high
+    evidence: []
+    skeptic_challenge: null
+    history: []
+  - id: GAP-04
+    statement: "Personalization != convention formation"
+    status: ACTIVE
+    priority: null
+    evidence: []
+    skeptic_challenge: null
+    history: []
+  - id: GAP-05
+    statement: "Informal visual language lacks systematic embodied communication theory"
+    status: ACTIVE
+    priority: null
+    evidence: []
+    skeptic_challenge: null
+    history: []
+  - id: GAP-06
+    statement: "Social meaning and functional robot-state communication remain separated"
+    status: ACTIVE
+    priority: null
+    evidence: []
+    skeptic_challenge: null
+    history: []
+
+allowed_update_states:
+  - UNCHANGED
+  - STRENGTHENED
+  - PARTIALLY_ADDRESSED
+  - REDEFINED
+  - WEAKENED
+  - RESOLVED
+  - REMOVED
+
+high_priority_rule:
+  independent_evidence_sources_min: 2
+  skeptic_challenge_required: true

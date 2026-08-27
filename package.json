@@ -1,0 +1,12 @@
+{
+  "name": "hci-research-skill",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "preview": "node scripts/serve-site.mjs",
+    "test:site": "node scripts/validate-site.mjs",
+    "validate": "powershell -ExecutionPolicy Bypass -File scripts/validate-install.ps1"
+  }
+}
