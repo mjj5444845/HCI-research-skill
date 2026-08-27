@@ -1,5 +1,63 @@
-version: 0.1
-claims: []
+version: 0.2
+updated_at: 2026-08-27
+evidence_snapshot:
+  total_papers: 46
+  bibliographic_only: 39
+  abstract_reviewed: 4
+  abstract_and_full_page_reviewed: 1
+  source_verified_candidate: 2
+  full_paper_investigations: 0
+  strongest_available_level: MODERATE
+  warning: "书目覆盖、Agent 调查深度与研究者阅读进度是三件不同的事。"
+claims:
+  - id: SOF-01
+    statement: "在 repeated human-human drawing reference game 中，visual resemblance 与 interaction history 共同约束 pictorial meaning，且互动形成的表达仍保留 diagnostic visual features。"
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [c6-visual-resemblance-interaction-history]
+    boundary: "仅支持受控的人类 repeated drawing 范式；不能外推为 embodied AI 已能学习同类 convention。"
+    cumulative_change: STILL_HOLDS
+  - id: SOF-02
+    statement: "Artificial communicator 可在 repeated linguistic reference interaction 中进行 partner adaptation，并提高摘要所报告的准确性与效率。"
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [e3-continual-adaptation-machine-communication]
+    boundary: "当前页面只完成摘要调查，且证据不覆盖 multimodal embodied convention。"
+    cumulative_change: STRENGTHENED
+  - id: SOF-03
+    statement: "Controlled human-robot visual reference tasks 能产生稳定的 task-specific linguistic conventions，但其效率轨迹与 human-human interaction 不完全相同。"
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [x1-spotter-human-robot-conventions]
+    boundary: "受控 Dutch pilots 与 verbal referring expressions 不证明开放式、跨模态或长期 convention。"
+    cumulative_change: PARTIALLY_ADDRESSED
+  - id: SOF-04
+    statement: "在一个 factorial repeated-reference study 中，LVLM grounding pattern 与人类不同；task success 不能被直接当成 human-like common ground。"
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [x2-lvlms-humans-ground-differently]
+    boundary: "不能由一个模型与任务范式外推到所有 LVLM。"
+    cumulative_change: STRENGTHENED
+  - id: SOF-05
+    statement: "一个 AR collaboration prototype 表明 first-person perspective、gaze、gesture 与 revisable memory 可以组合为 history-aware interaction infrastructure。"
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [x3-seeing-eye-to-eye]
+    boundary: "System memory 不等于 mutual belief 或 jointly negotiated convention。"
+    cumulative_change: NO_LONGER_CLAIMABLE
+  - id: SOF-06
+    statement: "History-aware memory、partner adaptation、task performance 与 shared convention 需要不同的 evidence standard。"
+    claim_kind: agent_synthesis
+    status: OPEN
+    evidence_strength: MODERATE
+    evidence: [c6-visual-resemblance-interaction-history, e3-continual-adaptation-machine-communication, x1-spotter-human-robot-conventions, x2-lvlms-humans-ground-differently, x3-seeing-eye-to-eye]
+    boundary: "这是跨论文综合判断，不是任何单篇论文的原始结论。"
+    cumulative_change: NEW_CORE
 claim_statuses:
   - ESTABLISHED
   - EMERGING

@@ -173,3 +173,5 @@ Always determine whether new work changes:
 - Convention
 - Adaptation
 - Embodied Communication
+
+After an AMSC run changes the literature landscape, synchronize the evidence-backed changes and temporal update entry in `research-programs/amsc/state/workflow_dashboard.json`. Claims lacking finding-level evidence belong in the exam synthesis queue or `CANNOT_CLAIM`, not in the public field-known set.

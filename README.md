@@ -169,7 +169,11 @@ npm run preview
 
 站点包含 Skill/Agent 独立详情页、TOML 与 orchestration 架构可视化，以及由 `state/paper-pages/*.json` 驱动的一篇论文一个页面。论文 JSON 必须符合 `schemas/paper-page.schema.json`；没有足够证据时明确显示 `Insufficient Evidence`，不从标题推断 findings。
 
+AMSC 还有三个数据驱动页面：`/field-map/` 展示 cumulative field claims 与 Gap Registry，`/exam/` 展示 comprehensive exam 的六主题、Top 20 与写作准备，`/program/` 展示 Meaning → Grounding → Convention → Adaptation → Embodied Communication 研究主线及反馈关系。它们读取 `research-programs/amsc/state/workflow_dashboard.json`；相关 research workflow 完成后必须同步这一状态，但不得自动推断研究者已经阅读或掌握论文。
+
 AMSC 的 41 篇 `Master Literature List v1.0` 原文保存在 `research-programs/amsc/imports/`。运行 `npm run import:literature` 会重建 41 个 baseline 记录及 5 个独立标记的 search candidates，并同步 `research-programs/amsc/state/master_literature.yaml`。候选不会静默并入用户定义的 baseline。
+
+一次性的 `AMSC Top 20 Paper Investigation` Codex Automation 安排在 America/New_York 2026-08-27 03:00。它只更新 Agent investigation readiness；`researcher_progress` 为受保护字段。
 
 推送 `main` 后，`.github/workflows/pages.yml` 会构建并发布 GitHub Pages。
 

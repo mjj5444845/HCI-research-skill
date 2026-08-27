@@ -59,7 +59,9 @@ $requiredPaths = @(
     'research-programs\amsc\state\gap_registry.yaml',
     'research-programs\amsc\state\state_of_field.yaml',
     'research-programs\amsc\state\comprehensive_exam.yaml',
+    'research-programs\amsc\state\workflow_dashboard.json',
     'research-programs\amsc\state\research_graph.yaml',
+    'schemas\workflow-dashboard.schema.json',
     'tests\evaluation-fixtures.yaml'
 )
 foreach ($relativePath in $requiredPaths) {

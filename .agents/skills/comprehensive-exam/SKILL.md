@@ -67,3 +67,7 @@ A new core paper must update the exam knowledge base if it:
 - introduces a major theory/method;
 - changes a high-priority gap;
 - becomes an anchor for one of the six exam themes.
+
+## Dashboard update contract
+
+After every AMSC exam workflow, update `research-programs/amsc/state/comprehensive_exam.yaml` and `research-programs/amsc/state/workflow_dashboard.json`. Keep source availability, Agent investigation readiness, and researcher reading/mastery as separate dimensions. Automation may update the first two; researcher progress changes only from explicit user actions or answers. Append a provenance-bearing `workflow_runs` entry and mark dependent questions/claims stale when upstream evidence changes.

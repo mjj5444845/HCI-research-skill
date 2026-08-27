@@ -35,7 +35,7 @@ for (const file of htmlFiles) {
 }
 
 const catalog = JSON.parse(fs.readFileSync(path.join(site, "data", "catalog.json"), "utf8"));
-const expectedHtml = 5 + catalog.skills.length + catalog.agents.length + catalog.papers.length + 1;
+const expectedHtml = 8 + catalog.skills.length + catalog.agents.length + catalog.papers.length + 1;
 if (htmlFiles.length !== expectedHtml) failures.push(`Expected ${expectedHtml} HTML files; found ${htmlFiles.length}.`);
 
 if (failures.length) {

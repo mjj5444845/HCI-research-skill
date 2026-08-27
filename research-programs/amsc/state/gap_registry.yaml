@@ -1,19 +1,27 @@
-version: 0.1
+version: 0.2
 gaps:
   - id: GAP-01
-    statement: "Fixed signal effectiveness -> meaning formation"
-    status: ACTIVE
-    priority: null
-    evidence: []
-    skeptic_challenge: null
-    history: []
+    statement: "How interaction feedback and shared history change partner-specific meaning, and how an embodied agent detects that change"
+    status: REDEFINED
+    priority: high
+    evidence:
+      - paper_slug: c6-visual-resemblance-interaction-history
+        evidence_level: MODERATE
+        supports: "Interaction history changes pictorial meaning within a repeated human-human drawing paradigm."
+        boundary: "Does not establish embodied-agent detection of meaning change."
+    skeptic_challenge: "Meaning formation is already studied in psycholinguistics and experimental semiotics; the contribution must be embodied-agent detection/repair, not rediscovering that context affects meaning."
+    history:
+      - date: 2026-08-27
+        from: ACTIVE
+        to: REDEFINED
+        reason: "C6 and X1 make a generic absence-of-meaning-formation claim too broad."
   - id: GAP-02
     statement: "Designer-defined vocabulary -> emergent convention"
     status: PARTIALLY_ADDRESSED
     priority: high
     evidence:
       - paper_slug: x1-spotter-human-robot-conventions
-        evidence_level: MODERATE
+        evidence_level: PRELIMINARY
         supports: "Repeated human–robot reference interaction can produce stable task-specific linguistic conventions."
         boundary: "Controlled Dutch pilots with verbal referring expressions do not establish open-ended, jointly negotiated, transferable multimodal convention."
     skeptic_challenge: "如果 task-induced lexical stabilization 已被称为 emergent convention，剩余贡献必须证明双方可发起和修订约定、partner-specificity、跨情境保持或适当迁移，以及 multimodal embodied consequences。"
@@ -28,11 +36,11 @@ gaps:
     priority: high
     evidence:
       - paper_slug: x3-seeing-eye-to-eye
-        evidence_level: MODERATE
+        evidence_level: PRELIMINARY
         supports: "A situated AR assistant can combine gaze, gesture, revisable memory, and accumulated common ground."
         boundary: "System-maintained contextual memory is not equivalent to mutual belief or dyad-specific convention formation."
       - paper_slug: x1-spotter-human-robot-conventions
-        evidence_level: MODERATE
+        evidence_level: PRELIMINARY
         supports: "Repeated interaction history already appears in a human–robot convention-formation task."
         boundary: "The controlled reference-game history does not show general convention detection or repair policy."
     skeptic_challenge: "研究必须用可证伪标准区分 log retrieval、user modeling、mutual belief 与 shared convention，并证明 Agent 能检测约定何时形成、失效以及何时应主动 repair。"
@@ -42,8 +50,8 @@ gaps:
         to: REDEFINED
         reason: "Eye2Eye makes a generic absence-of-history claim untenable; the defensible gap concerns convention inference and lifecycle management."
   - id: GAP-04
-    statement: "Personalization != convention formation"
-    status: UNCHANGED
+    statement: "Operational criteria are needed to distinguish user modeling, memory retrieval, adaptation, grounding, mutual belief, and convention formation"
+    status: REDEFINED
     priority: null
     evidence:
       - paper_slug: x4-making-memories-together
@@ -51,7 +59,7 @@ gaps:
         supports: "Transparent, co-constructed robot memory may provide infrastructure for negotiated personalization."
         boundary: "A five-page companion paper does not show that shared memory produces, stabilizes, or transfers a communicative convention."
       - paper_slug: x1-spotter-human-robot-conventions
-        evidence_level: MODERATE
+        evidence_level: PRELIMINARY
         supports: "Stable conventions can emerge in a human–robot reference task."
         boundary: "The study does not causally compare personalization-only and convention-aware mechanisms."
     evidence_trend: STRENGTHENED
@@ -61,20 +69,56 @@ gaps:
         from: ACTIVE
         to: UNCHANGED
         reason: "Recent memory and convention papers strengthen the distinction but do not bridge it empirically."
+      - date: 2026-08-27
+        from: UNCHANGED
+        to: REDEFINED
+        reason: "The original distinction was a warning, not an operational gap; the revised form requires falsifiable diagnostic criteria."
   - id: GAP-05
     statement: "Informal visual language lacks systematic embodied communication theory"
-    status: ACTIVE
+    status: UNCHANGED
     priority: null
     evidence: []
     skeptic_challenge: null
-    history: []
+    history:
+      - date: 2026-08-27
+        from: ACTIVE
+        to: UNCHANGED
+        reason: "Status vocabulary normalized; claim remains unverified because relevant pages are bibliographic-only."
+    claimability: CANNOT_CLAIM
+    evidence_readiness: BIBLIOGRAPHIC_ONLY
   - id: GAP-06
     statement: "Social meaning and functional robot-state communication remain separated"
-    status: ACTIVE
+    status: UNCHANGED
     priority: null
     evidence: []
     skeptic_challenge: null
-    history: []
+    history:
+      - date: 2026-08-27
+        from: ACTIVE
+        to: UNCHANGED
+        reason: "Status vocabulary normalized; current corpus cannot yet support the field-separation claim."
+    claimability: CANNOT_CLAIM
+    evidence_readiness: BIBLIOGRAPHIC_ONLY
+  - id: GAP-07
+    statement: "Grounding / Convention Diagnostic Benchmark: distinguish memory, task success, adaptation, mutual expectation, and genuine convention formation"
+    status: UNCHANGED
+    priority: high-potential-candidate
+    evidence:
+      - paper_slug: c6-visual-resemblance-interaction-history
+        evidence_level: MODERATE
+        supports: "Provides controls for separating resemblance, task practice, and interaction-specific history."
+        boundary: "Human-human drawing paradigm only."
+      - paper_slug: x2-lvlms-humans-ground-differently
+        evidence_level: PRELIMINARY
+        supports: "Shows task performance alone does not establish human-like grounding."
+        boundary: "Abstract-level investigation; broader benchmark landscape not yet attacked."
+    skeptic_challenge: "Psycholinguistics, dialogue, and common-ground evaluation may already contain mature diagnostics; do not elevate this candidate until C1-C4, E3, X1-X3 and a Missing Paper Attack are complete."
+    history:
+      - date: 2026-08-27
+        from: null
+        to: UNCHANGED
+        reason: "Added as a high-potential candidate, not yet a high-priority established gap."
+    claimability: CANDIDATE_ONLY
 
 allowed_update_states:
   - UNCHANGED

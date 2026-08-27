@@ -1,6 +1,28 @@
-version: 0.1
+version: 0.2
+updated_at: 2026-08-27
 title: "Adaptive Multimodal Social Communication for Embodied AI: From Social Meaning and Shared Representations to Situated Adaptation"
 core_review_question: "How do socially meaningful multimodal signals become grounded, conventionalized, and adaptive in human–embodied AI interaction?"
+source_plan: research-programs/amsc/imports/comprehensive-exam-plan-v1.md
+target_pages:
+  min: 8
+  max: 10
+readiness:
+  source_availability:
+    baseline_verified: 41
+    top20_full_text_available: 20
+  agent_evidence:
+    bibliographic_only: 39
+    abstract_reviewed: 4
+    abstract_and_full_page_reviewed: 1
+    source_verified_candidate: 2
+    full_paper_investigation: 0
+  researcher:
+    top20_read: null
+    top20_mastered: null
+    status: UNTRACKED
+  warnings:
+    - "Agent investigation status does not imply researcher reading or mastery."
+    - "Comprehensive exam framing is a candidate synthesis, not paper evidence."
 themes:
   - Social & Multimodal Communication
   - Representation & Pragmatics
@@ -8,6 +30,7 @@ themes:
   - Embodied / Situated Robot Communication
   - Adaptation & Long-Term HRI
   - Social / Cultural / Relational Context
+top20_order: [C1, C2, C3, B1, B2, B3, C4, C5, C6, C7, C8, A5, A2, A1, D5, D6, D7, E1, E2, E3]
 reading_matrix: []
 oral_question_types:
   - Definition
@@ -15,3 +38,18 @@ oral_question_types:
   - Critical
   - Connection
   - Research
+update_policy:
+  dashboard_source: research-programs/amsc/state/workflow_dashboard.json
+  workflow_rules:
+    - "Paper Investigation upserts the Exam Card and Agent readiness, but never edits researcher progress."
+    - "Literature Investigation updates theme landscape, controversies, and evidence-backed writing claims."
+    - "Research Radar adds candidates to a queue; only accepted anchors enter the core exam corpus."
+    - "Gap or State-of-Field changes mark dependent exam claims/questions stale rather than silently rewriting them."
+    - "Comprehensive Exam sessions update researcher progress only from explicit researcher actions or answers."
+  protected_fields: [human_notes, human_answers, researcher_progress, scores]
+workflow_history:
+  - id: baseline-import-2026-08-26
+    status: COMPLETE
+  - id: top20-2026-08-27
+    status: SCHEDULED
+    scheduled_for: 2026-08-27T03:00:00-04:00

@@ -116,6 +116,8 @@ Populate:
 
 For every paper accepted for persistent display, create or update one evidence-traceable JSON record under `state/paper-pages/<slug>.json` using `schemas/paper-page.schema.json`. The `slug` must be stable and URL-safe. Record the real access status and use explicit uncertainty or empty arrays for unavailable content; never fill a web page by inventing methods, findings, or contributions. The website build generates one independent page per JSON record.
 
+When the active program is AMSC, also update `research-programs/amsc/state/workflow_dashboard.json`: refresh affected field claims/gaps, the paper's Agent investigation readiness, and `workflow_runs`. Never infer or overwrite researcher reading/mastery progress.
+
 ### 11. Communication gate
 Only if explicitly judged `worth_sharing: true`:
 - offer a Xiaohongshu post;

@@ -70,6 +70,19 @@ document.querySelectorAll('[data-copy]').forEach(button => {
   });
 });
 
+document.querySelectorAll('[data-program-map]').forEach(programMap => {
+  const buttons = [...programMap.querySelectorAll('[data-program-node]')];
+  const details = [...programMap.querySelectorAll('[data-program-detail]')];
+  const select = id => {
+    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.programNode === id)));
+    details.forEach(detail => { detail.hidden = detail.dataset.programDetail !== id; });
+  };
+  buttons.forEach(button => button.addEventListener('click', () => select(button.dataset.programNode)));
+  programMap.addEventListener('keydown', event => {
+    if (event.key === 'Escape') select(buttons[0]?.dataset.programNode);
+  });
+});
+
 function initArchitectureCanvas(canvas) {
   const context = canvas.getContext('2d');
   const palette = { ink: '#14233a', orange: '#f06f44', teal: '#18a999', yellow: '#f4c553', paper: '#f7f1e8', line: 'rgba(20,35,58,.16)' };

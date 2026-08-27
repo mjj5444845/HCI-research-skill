@@ -170,6 +170,8 @@ A meaningful run must evaluate updates to:
 - Comprehensive Exam KB
 - Research Graph
 
+For AMSC, also synchronize affected claims, gaps, exam readiness, and the provenance-bearing workflow history in `research-programs/amsc/state/workflow_dashboard.json`. Never infer researcher reading or mastery from Agent investigation status.
+
 ### Weekly fixed output
 
 # 【本周论文及其总结分析】

@@ -1,0 +1,211 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-08-27T00:30:00-04:00",
+  "update_contract": "Paper Investigation、Literature Investigation、Research Radar 与 Comprehensive Exam workflow 在产生持久化研究更新后，必须同步更新本文件的 affected claims、gaps、exam progress 与 workflow_runs。",
+  "next_scheduled_run": {
+    "name": "AMSC Top 20 Paper Investigation",
+    "scheduled_for": "2026-08-27T03:00:00-04:00",
+    "scope": "按考试优先级完成 20 篇 baseline Paper Investigation，并更新 cumulative field map、Gap Registry 与 Exam KB。",
+    "automation_id": "amsc-top-20-paper-investigation",
+    "status": "SCHEDULED"
+  },
+  "field_map": {
+    "coverage_note": "当前 cumulative map 只使用具有 finding-level 或 abstract-level 内容的 C6、E3、X1–X3；X4/X5 只能确认来源身份。其余 baseline 在 03:00 workflow 完成前只作为 bibliographic anchors，不用于推出 findings。",
+    "status_definitions": {
+      "STILL_HOLDS": "新证据没有推翻原结论，且其边界仍可辩护。",
+      "STRENGTHENED": "新增独立证据提高了结论可信度或扩展了适用范围。",
+      "CONTESTED": "存在合理的理论、方法或实证冲突。",
+      "PARTIALLY_ADDRESSED": "已有工作直接回答部分问题，但核心机制或范围仍开放。",
+      "NO_LONGER_CLAIMABLE": "旧表述已被明确反例或领域进展削弱，不能继续作为 novelty claim。",
+      "NEW_CORE": "新增证据使某一问题成为研究主线的核心，而非边缘 future work。"
+    },
+    "claims": [
+      {
+        "id": "FM-01",
+        "status": "STILL_HOLDS",
+        "statement": "Pictorial meaning 既受 visual resemblance 约束，也会随 shared interaction history 形成 interaction-specific conventions。",
+        "evidence_strength": "MODERATE",
+        "evidence": ["c6-visual-resemblance-interaction-history"],
+        "boundary": "证据来自 repeated drawing reference games；不能直接外推为 embodied AI 已能学习这种 convention。",
+        "updated_at": "2026-08-26"
+      },
+      {
+        "id": "FM-02",
+        "status": "STRENGTHENED",
+        "statement": "Human–robot repeated reference interaction 可以出现稳定的 task-specific referring conventions，但现有 AI/LVLM grounding 仍不呈现完整的 human-like interactive adaptation。",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": ["x1-spotter-human-robot-conventions", "x2-lvlms-humans-ground-differently", "e3-continual-adaptation-machine-communication"],
+        "boundary": "三项工作使用不同 Agent、任务与 evaluation；不能合并成单一效应量或声称所有模型都失败。",
+        "updated_at": "2026-08-26"
+      },
+      {
+        "id": "FM-03",
+        "status": "NO_LONGER_CLAIMABLE",
+        "statement": "不能再笼统声称 situated AI communication 很少使用 interaction history 或 accumulated common ground。",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": ["x3-seeing-eye-to-eye", "x1-spotter-human-robot-conventions"],
+        "boundary": "history-conditioned memory 不等于 mutual belief 或 shared convention；失效的是旧 gap wording，不是整个研究方向。",
+        "updated_at": "2026-08-26"
+      },
+      {
+        "id": "FM-04",
+        "status": "STILL_HOLDS",
+        "statement": "Personalization、shared memory 与 convention formation 必须保持概念区分。",
+        "evidence_strength": "AGENT_SYNTHESIS",
+        "evidence": ["e3-continual-adaptation-machine-communication", "x1-spotter-human-robot-conventions", "x2-lvlms-humans-ground-differently", "x3-seeing-eye-to-eye"],
+        "boundary": "现有工作尚未通过 causal comparison 证明 personalization-only 与 convention-aware mechanisms 的差异。",
+        "updated_at": "2026-08-26"
+      },
+      {
+        "id": "FM-05",
+        "status": "PARTIALLY_ADDRESSED",
+        "statement": "Human–robot emergent convention 已有直接研究，但开放式、跨模态、长期且双方可协商的 embodied convention 仍未被这些证据解决。",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": ["x1-spotter-human-robot-conventions", "c8-gesturing-toward-abstraction"],
+        "boundary": "C8 尚待 03:00 full investigation；当前不能用它推出具体 findings。",
+        "updated_at": "2026-08-26"
+      },
+      {
+        "id": "FM-06",
+        "status": "NEW_CORE",
+        "statement": "Convention lifecycle——formation、detection、repair、retention、forgetting 与 transfer——应成为 AMSC 的核心研究问题。",
+        "evidence_strength": "SYNTHESIS_REQUIRES_VALIDATION",
+        "evidence": ["x1-spotter-human-robot-conventions", "x3-seeing-eye-to-eye", "c6-visual-resemblance-interaction-history"],
+        "boundary": "这是 agent synthesis / research opportunity，不是任何单篇论文的原始结论。",
+        "updated_at": "2026-08-26"
+      }
+    ],
+    "gaps": [
+      {
+        "id": "GAP-01",
+        "status": "REDEFINED",
+        "statement": "互动反馈与 shared history 如何改变 embodied signal 的 partner-specific meaning，以及 Agent 如何检测这种 meaning change。",
+        "priority": "HIGH",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "研究重点应是 meaning formation mechanism，而不是再做单一 cue 是否有效的问卷比较。"
+      },
+      {
+        "id": "GAP-02",
+        "status": "PARTIALLY_ADDRESSED",
+        "statement": "从 designer-defined vocabulary 推进到双方能够形成、修订并迁移 emergent convention。",
+        "priority": "HIGH",
+        "evidence_strength": "MODERATE",
+        "research_implication": "新研究必须超越 task-induced lexical stabilization，展示 partner-specificity、协商与跨情境行为后果。"
+      },
+      {
+        "id": "GAP-03",
+        "status": "REDEFINED",
+        "statement": "从是否使用 history，转向 Agent 如何检测、维护、repair 与放弃 shared multimodal convention。",
+        "priority": "HIGH",
+        "evidence_strength": "MODERATE",
+        "research_implication": "需要区分 log retrieval、user model、mutual belief 与 convention，并建立可证伪检测标准。"
+      },
+      {
+        "id": "GAP-04",
+        "status": "REDEFINED",
+        "statement": "需要可操作判据区分 user modeling、memory retrieval、adaptation、grounding、mutual belief 与 convention formation。",
+        "priority": "MEDIUM_HIGH",
+        "evidence_strength": "SYNTHESIS",
+        "research_implication": "比较 personalization-only、history-aware 与 convention-aware policies。"
+      },
+      {
+        "id": "GAP-05",
+        "status": "UNCHANGED",
+        "statement": "Informal visual language 尚缺作为 adaptive、situated、socially negotiated embodied communication resource 的系统框架。",
+        "priority": "HIGH",
+        "evidence_strength": "BIBLIOGRAPHIC_ONLY",
+        "claimability": "CANNOT_CLAIM",
+        "research_implication": "当前只能作为考试命题；不能 claim field 缺乏系统理论。03:00 后需由 A2–A5 与 D/G full investigations 重新审查。"
+      },
+      {
+        "id": "GAP-06",
+        "status": "UNCHANGED",
+        "statement": "Social meaning 与 functional robot-state communication 仍需在同一 signal 中联合建模。",
+        "priority": "HIGH",
+        "evidence_strength": "BIBLIOGRAPHIC_ONLY",
+        "claimability": "CANNOT_CLAIM",
+        "research_implication": "当前只能作为待验证 synthesis；需先完成 A/D/F/G finding-level investigation，不能作为 field absence claim。"
+      },
+      {
+        "id": "GAP-07",
+        "status": "NEW_CORE_CANDIDATE",
+        "statement": "缺少 convention lifecycle 的可操作定义与测量：何时形成、何时需要 repair、何时应该遗忘或迁移。",
+        "priority": "CANDIDATE",
+        "evidence_strength": "SYNTHESIS_REQUIRES_SECOND_SOURCE",
+        "research_implication": "03:00 Top 20 investigation 后由 Gap Red Team 决定是否升级为 HIGH_PRIORITY。"
+      }
+    ]
+  },
+  "exam": {
+    "title": "Adaptive Multimodal Social Communication for Embodied AI: From Social Meaning and Shared Representations to Situated Adaptation",
+    "core_question": "人类与具身智能体如何利用多模态、社会化和非正式表达建立共享意义，并随着互动历史、用户和情境变化形成自适应交流？",
+    "written_target": "8–10 pages；正文使用约 25–30 篇，核心 corpus 30–35 篇，extended oral corpus 50–70 篇。",
+    "top20": [
+      {"order": 1, "id": "C1", "slug": "c1-referring-as-collaborative-process", "theme": 3},
+      {"order": 2, "id": "C2", "slug": "c2-grounding-in-communication", "theme": 3},
+      {"order": 3, "id": "C3", "slug": "c3-conceptual-pacts", "theme": 3},
+      {"order": 4, "id": "B1", "slug": "b1-pragmatic-language-interpretation", "theme": 2},
+      {"order": 5, "id": "B2", "slug": "b2-rational-speech-act-framework", "theme": 2},
+      {"order": 6, "id": "B3", "slug": "b3-pragmatic-inference-visual-abstraction", "theme": 2},
+      {"order": 7, "id": "C4", "slug": "c4-repeated-reference-games", "theme": 3},
+      {"order": 8, "id": "C5", "slug": "c5-graphical-convention-formation", "theme": 3},
+      {"order": 9, "id": "C6", "slug": "c6-visual-resemblance-interaction-history", "theme": 3},
+      {"order": 10, "id": "C7", "slug": "c7-shared-procedural-abstractions", "theme": 3},
+      {"order": 11, "id": "C8", "slug": "c8-gesturing-toward-abstraction", "theme": 3},
+      {"order": 12, "id": "A5", "slug": "a5-multimodal-parallel-architecture", "theme": 1},
+      {"order": 13, "id": "A2", "slug": "a2-textual-paralanguage", "theme": 1},
+      {"order": 14, "id": "A1", "slug": "a1-ai-mediated-communication", "theme": 1},
+      {"order": 15, "id": "D5", "slug": "d5-legibility-and-predictability", "theme": 4},
+      {"order": 16, "id": "D6", "slug": "d6-designing-robots-with-movement", "theme": 4},
+      {"order": 17, "id": "D7", "slug": "d7-social-eye-gaze-review", "theme": 4},
+      {"order": 18, "id": "E1", "slug": "e1-long-term-social-robots-survey", "theme": 5},
+      {"order": 19, "id": "E2", "slug": "e2-human-robot-mutual-adaptation", "theme": 5},
+      {"order": 20, "id": "E3", "slug": "e3-continual-adaptation-machine-communication", "theme": 5}
+    ],
+    "themes": [
+      {"id": 1, "name": "Social and Multimodal Communication", "question": "多模态 signal 如何同时承载 information 与 social meaning？", "concepts": ["multimodal communication", "social signaling", "textual paralanguage", "visual language", "emoji pragmatics"], "anchors": ["Jeffrey Hancock", "Neil Cohn", "Guy Hoffman", "Bilge Mutlu"]},
+      {"id": 2, "name": "Representation and Pragmatics", "question": "为什么 communication 追求 contextually sufficient，而不是最大化 detail？", "concepts": ["pragmatic inference", "communicative efficiency", "abstraction", "Rational Speech Act", "informativeness"], "anchors": ["Judith Fan", "Noah Goodman", "Michael Frank", "Judith Degen"]},
+      {"id": 3, "name": "Common Ground, Grounding, and Convention Formation", "question": "双方如何从 repeated interaction 形成 shared shorthand，并确认彼此理解？", "concepts": ["common ground", "grounding", "conceptual pact", "collaborative reference", "convention formation"], "anchors": ["Herbert Clark", "Judith Fan", "Noah Goodman"]},
+      {"id": 4, "name": "Embodied and Situated Robot Communication", "question": "Robot 如何通过 motion、gaze、gesture、speech 与 visual signals 表达 intent、state、uncertainty 与 capability？", "concepts": ["legibility", "predictability", "intent communication", "uncertainty", "situated interaction"], "anchors": ["Anca Dragan", "Henny Admoni", "Bilge Mutlu", "Parastoo Abtahi"]},
+      {"id": 5, "name": "Adaptation, Personalization, and Long-Term HRI", "question": "Communication 如何随 user、relationship 与 interaction history 共同适应？", "concepts": ["personalization", "mutual adaptation", "co-adaptation", "longitudinal HRI", "interaction history"], "anchors": ["Stefanos Nikolaidis", "Iolanda Leite", "Malte Jung"]},
+      {"id": 6, "name": "Social, Cultural, and Relational Context", "question": "Communicative priors 如何经由 interaction 被强化、修订或替换为 personal convention？", "concepts": ["social meaning-making", "appropriation", "cultural prior", "relationship", "community practices"], "anchors": ["Zhicong Lu", "Selma Šabanović", "Kerstin Fischer"]}
+    ],
+    "writing_plan": [
+      {"section": "Introduction", "pages": "0.75–1", "goal": "定义 embodied AI、multimodal social communication、informal visual language 与 adaptive communication，并提出总问题。"},
+      {"section": "Multimodal Social Communication", "pages": "1–1.25", "goal": "建立 communication = information + social meaning，避免 modality catalogue。"},
+      {"section": "Pragmatics, Grounding, and Shared Representation", "pages": "1.5–2", "goal": "解释 pragmatics、common ground、abstraction、shared representation 与 convention。"},
+      {"section": "Multimodal Communication in HRI", "pages": "1.5", "goal": "连接 motion、gaze、gesture、visual signals、legibility 与 predefined semantics。"},
+      {"section": "Adaptation and Long-Term Interaction", "pages": "1–1.25", "goal": "区分 behavior adaptation 与 communication co-development。"},
+      {"section": "Social and Cultural Meaning", "pages": "1", "goal": "解释 social context、appropriation、relationship 与 cultural priors。"},
+      {"section": "Open Problems and Research Agenda", "pages": "1.5–2", "goal": "收束 emergent convention、adaptive visual communication、longitudinal grounding 与 social + instrumental meaning。"}
+    ],
+    "checklists": [
+      {"name": "边界", "items": ["固定总题目与一句 RQ", "明确 scope / out of scope", "不吞并整个 social robotics、affective computing 或 multimodal AI"]},
+      {"name": "文献地图", "items": ["覆盖六个主题与十个机制 cluster", "每个核心 claim 有可追踪 evidence", "运行 Missing Paper Attack"]},
+      {"name": "每篇论文", "items": ["RQ / theory / modality / meaning", "fixed vs emergent / context / history / adaptation", "method / findings / limitations / remaining gap"]},
+      {"name": "Critical synthesis", "items": ["区分 established / proof-of-concept / short-term", "检查 designer-defined semantics", "区分 personalization、co-adaptation 与 convention"]},
+      {"name": "写作", "items": ["不是 paper-by-paper summary", "每节都有 known / boundary / unknown", "不使用无系统证据的 few studies / nobody claims"]},
+      {"name": "口试", "items": ["能定义、比较、批判和迁移核心理论", "能解释与 social HRI、affective computing、multimodal LLM 的区别", "能说明 informal visual language 是 scientific probe 而非 gimmick"]}
+    ]
+  },
+  "research_line": {
+    "identity": "我研究人类与具身 AI Agent 如何通过 situated interaction，发展 adaptive、socially meaningful 的 multimodal communication。",
+    "core_question": "How do socially meaningful multimodal signals become grounded, conventionalized, and adaptive in human–embodied AI interaction?",
+    "nodes": [
+      {"id": "meaning", "label": "Meaning", "question": "Signal 表达什么 social / instrumental meaning？", "detail": "Informal visual expression、speech、gaze、gesture、motion 与 AR cue 不只是信息通道，也表达 stance、rapport、uncertainty 与 identity。", "buckets": ["A", "F"], "gaps": ["GAP-01", "GAP-05", "GAP-06"]},
+      {"id": "grounding", "label": "Grounding", "question": "双方如何确认彼此理解？", "detail": "Pragmatic inference、joint attention、feedback 与 common ground 让 signal 在当前 context 中获得可接受解释。", "buckets": ["B", "C"], "gaps": ["GAP-01", "GAP-03"]},
+      {"id": "convention", "label": "Convention", "question": "Repeated interaction 如何生成 shared shorthand？", "detail": "研究 conceptual pact、partner-specific convention、abstraction、repair、retention、forgetting 与 transfer。", "buckets": ["C"], "gaps": ["GAP-02", "GAP-07"]},
+      {"id": "adaptation", "label": "Adaptation", "question": "Communication 如何随 user 与 history 改变？", "detail": "区分 personalization、user modeling、mutual adaptation、co-adaptation 与真正共同生成的 convention。", "buckets": ["E", "F"], "gaps": ["GAP-03", "GAP-04"]},
+      {"id": "embodied", "label": "Embodied Communication", "question": "WHAT / WHEN / WHERE / HOW 应如何进入 physical world？", "detail": "把 motion、gaze、gesture、speech、visual display 与 spatial AR 作为可协调的 situated communication resources。", "buckets": ["D", "G"], "gaps": ["GAP-05", "GAP-06"]}
+    ],
+    "scope": {
+      "core": ["Interaction-specific meaning formation", "Common Ground / Grounding", "Convention formation", "Partner-specific co-adaptation", "Situated multimodal communication"],
+      "adjacent": ["Affective computing when it reveals mechanism", "Cross-cultural HRI as communicative priors", "Multimodal foundation models as enabling infrastructure"],
+      "out_of_scope": ["只比较单一视觉效果是否更可爱", "按国籍做静态 preference ranking", "没有 meaning / grounding / adaptation 机制的 AI wrapper"]
+    }
+  },
+  "workflow_runs": [
+    {"id": "baseline-import-2026-08-26", "workflow": "Literature Investigation", "status": "COMPLETE", "date": "2026-08-26", "summary": "核验并导入 41 篇 baseline，新增 5 篇独立候选，生成 46 个论文页面。"},
+    {"id": "top20-2026-08-27", "workflow": "Paper Investigation + Comprehensive Exam", "status": "SCHEDULED", "date": "2026-08-27T03:00:00-04:00", "summary": "计划按优先级处理 Top 20 baseline，并更新四类持久状态。"}
+  ]
+}

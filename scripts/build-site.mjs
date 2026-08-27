@@ -145,6 +145,7 @@ const agents = fs.readdirSync(path.join(root, ".codex", "agents"), { withFileTyp
 const papers = readPapers();
 const configToml = fs.readFileSync(path.join(root, ".codex", "config.toml"), "utf8").trim();
 const manifest = JSON.parse(fs.readFileSync(path.join(root, "manifest.json"), "utf8"));
+const dashboard = JSON.parse(fs.readFileSync(path.join(root, "research-programs", "amsc", "state", "workflow_dashboard.json"), "utf8"));
 
 const skillTags = {
   "comprehensive-exam": ["AMSC", "knowledge base", "oral exam"],
@@ -197,7 +198,7 @@ const rel = (depth, target = "") => `${"../".repeat(depth)}${target}`;
 
 function nav(depth, current) {
   const links = [
-    ["home", "", "首页"], ["skills", "skills/", "Skills"], ["agents", "agents/", "Agents"], ["architecture", "architecture/", "架构"], ["papers", "papers/", "论文"]
+    ["home", "", "首页"], ["papers", "papers/", "论文"], ["field-map", "field-map/", "Field Map"], ["exam", "exam/", "考试"], ["program", "program/", "研究主线"], ["skills", "skills/", "Skills"], ["agents", "agents/", "Agents"], ["architecture", "architecture/", "架构"]
   ];
   return `
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -356,6 +357,86 @@ const architecture = page({
 });
 write("architecture/index.html", architecture);
 
+const paperBySlug = new Map(papers.map(paper => [paper.slug, paper]));
+const fieldStatusZh = {
+  STILL_HOLDS: "仍然成立",
+  STRENGTHENED: "证据增强",
+  CONTESTED: "存在争议",
+  PARTIALLY_ADDRESSED: "部分解决",
+  NO_LONGER_CLAIMABLE: "不能再这样 claim",
+  NEW_CORE: "上升为核心",
+  REDEFINED: "已重新定义",
+  UNCHANGED: "尚未改变",
+  NEW_CORE_CANDIDATE: "核心 Gap 候选"
+};
+const statusClass = value => `status-${slugify(value)}`;
+const evidenceLinks = slugs => (slugs || []).map(slug => {
+  const paper = paperBySlug.get(slug);
+  return paper ? `<a class="evidence-chip" href="../papers/${escapeHtml(slug)}/">${escapeHtml(paper.source_list_id || paper.id || paper.year)} · ${escapeHtml(paper.title)}</a>` : `<span class="evidence-chip muted">${escapeHtml(slug)}</span>`;
+}).join("");
+
+const investigationCounts = papers.reduce((counts, paper) => {
+  const key = paper.investigation_status || "untracked";
+  counts[key] = (counts[key] || 0) + 1;
+  return counts;
+}, {});
+const fieldClaims = dashboard.field_map.claims;
+const dashboardGaps = dashboard.field_map.gaps;
+
+write("field-map/index.html", page({
+  title: "Cumulative Field Map",
+  description: "持续维护 AMSC 领域结论、证据强度、Gap 演化与当前不可声称内容。",
+  current: "field-map",
+  depth: 1,
+  body: `<section class="page-hero"><div class="container"><span class="eyebrow">Cumulative Field Map</span><h1>不是静态综述，而是会改变的领域判断。</h1><p>这里把书目覆盖、阅读深度与结论强度分开：每次 Paper Investigation、Literature Investigation、Research Radar 或 Comprehensive Exam workflow 运行后，更新仍成立、被增强、被部分解决、不能再 claim 与新上升为核心的问题。</p></div></section>
+  <section class="section compact"><div class="container">
+    <div class="evidence-health" data-reveal>
+      <div><span class="eyebrow">证据健康度</span><h2>46 篇 ≠ 46 篇已精读</h2><p>${escapeHtml(dashboard.field_map.coverage_note)}</p></div>
+      <div class="health-grid"><div><strong>${investigationCounts.bibliographic_verification_only || 0}</strong><span>仅书目核验</span></div><div><strong>${investigationCounts.abstract_reviewed || 0}</strong><span>摘要调查</span></div><div><strong>${investigationCounts.abstract_and_full_page_reviewed || 0}</strong><span>全文页面调查</span></div><div><strong>${investigationCounts.source_verified_candidate || 0}</strong><span>候选来源核验</span></div></div>
+    </div>
+    <div class="section-head field-section-head"><div><span class="eyebrow">Current synthesis</span><h2>结论如何变化</h2></div><p>每条结论同时展示 evidence strength 与 claim boundary。标为 Agent synthesis 的内容不是任何单篇论文的原始结论。</p></div>
+    <div class="field-claim-list">${fieldClaims.map(claim => `<article class="field-claim ${statusClass(claim.status)}" data-reveal><div class="claim-rail"><span>${escapeHtml(claim.id)}</span><i></i></div><div><div class="claim-top"><span class="status-pill">${escapeHtml(fieldStatusZh[claim.status] || claim.status)}</span><span class="evidence-level">${escapeHtml(claim.evidence_strength)}</span></div><h3>${escapeHtml(claim.statement)}</h3><p><strong>边界：</strong>${escapeHtml(claim.boundary)}</p><div class="evidence-links">${evidenceLinks(claim.evidence)}</div></div></article>`).join("")}</div>
+  </div></section>
+  <section class="section dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">Gap Registry</span><h2>Gap 是可争议的版本化 claim</h2></div><p>Gap 不等于“没搜到论文”。状态必须随 closest work 改变；claimability 不足时，页面明确显示当前不能作为 novelty 使用。</p></div><div class="gap-grid">${dashboardGaps.map(gap => `<article id="${slugify(gap.id)}" class="gap-card ${statusClass(gap.status)}" data-reveal><div class="gap-symbol" aria-hidden="true"></div><div class="claim-top"><strong>${escapeHtml(gap.id)}</strong><span class="status-pill">${escapeHtml(fieldStatusZh[gap.status] || gap.status)}</span></div><h3>${escapeHtml(gap.statement)}</h3><p>${escapeHtml(gap.research_implication)}</p><dl><dt>优先级</dt><dd>${escapeHtml(gap.priority)}</dd><dt>证据</dt><dd>${escapeHtml(gap.evidence_strength)}</dd>${gap.claimability ? `<dt>Claimability</dt><dd>${escapeHtml(gap.claimability)}</dd>` : ""}</dl></article>`).join("")}</div></div></section>
+  <section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Update trail</span><h2>每次 workflow 留下什么</h2></div><p>最新状态不会覆盖历史；自动化只能更新 Agent evidence readiness，不能替研究者标记“已读”或“已掌握”。</p></div><div class="timeline">${dashboard.workflow_runs.map(run => `<article><time>${escapeHtml(run.date)}</time><div><span class="status-pill">${escapeHtml(run.status)}</span><h3>${escapeHtml(run.workflow)}</h3><p>${escapeHtml(run.summary)}</p></div></article>`).join("")}</div></div></section>`
+}));
+
+const top20 = dashboard.exam.top20.map(item => ({ ...item, paper: paperBySlug.get(item.slug) })).filter(item => item.paper);
+const sourceAvailable = top20.filter(item => item.paper.access_status === "full_text").length;
+const agentReady = top20.filter(item => item.paper.investigation_status !== "bibliographic_verification_only").length;
+const investigationLabel = status => ({
+  bibliographic_verification_only: "待 First Read",
+  abstract_reviewed: "已读摘要；待全文审计",
+  abstract_and_full_page_reviewed: "已有 finding-level 页面；待 Deep Investigation",
+  source_verified_candidate: "仅核验来源"
+}[status] || "未追踪");
+
+write("exam/index.html", page({
+  title: "Comprehensive Exam",
+  description: "AMSC comprehensive exam 的六主题、Top 20、8–10 页写作计划、口试能力与更新状态。",
+  current: "exam",
+  depth: 1,
+  body: `<section class="page-hero exam-hero"><div class="container"><span class="eyebrow">Comprehensive Exam · AMSC</span><h1>把阅读，推进到可综合、可批判、可迁移。</h1><p>${escapeHtml(dashboard.exam.core_question)}</p><div class="schedule-banner"><span>下一次证据升级</span><strong>今天 03:00 · Top 20 Paper Investigation</strong><small>Automation: ${escapeHtml(dashboard.next_scheduled_run.status)}</small></div></div></section>
+  <section class="section compact"><div class="container"><div class="readiness-grid" data-reveal><article><strong>${sourceAvailable}/20</strong><span>全文来源可访问</span></article><article><strong>${agentReady}/20</strong><span>已有摘要或更深 Agent 调查</span></article><article><strong>未记录</strong><span>研究者阅读进度</span></article><article><strong>8–10</strong><span>目标页数</span></article></div><p class="readiness-warning">Agent investigation readiness 不等于研究者已经阅读或掌握。网站不会从自动化状态推断你的个人进度。</p>
+  <div class="section-head field-section-head"><div><span class="eyebrow">Six themes</span><h2>六个主题，一条论证链</h2></div><p>Theme 不是六篇独立 mini-survey。它们依次回答 signal 的意义、推断、grounding、convention、embodiment 与长期适应。</p></div><div class="grid three">${dashboard.exam.themes.map(theme => `<article class="motion-card theme-card" data-reveal><div class="card-index"><span>T${theme.id}</span><i class="dot"></i></div><h3>${escapeHtml(theme.name)}</h3><p>${escapeHtml(theme.question)}</p><div class="tag-row">${theme.concepts.slice(0, 4).map(item => `<span class="tag">${escapeHtml(item)}</span>`).join("")}</div><small>Anchors · ${escapeHtml(theme.anchors.join(" · "))}</small></article>`).join("")}</div>
+  </div></section>
+  <section class="section dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">Written exam</span><h2>8–10 页论证结构</h2></div><p>${escapeHtml(dashboard.exam.written_target)}</p></div><div class="writing-plan">${dashboard.exam.writing_plan.map((item, index) => `<article data-reveal><span>${String(index + 1).padStart(2, "0")}</span><div><h3>${escapeHtml(item.section)}</h3><p>${escapeHtml(item.goal)}</p></div><strong>${escapeHtml(item.pages)} 页</strong></article>`).join("")}</div></div></section>
+  <section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Priority corpus</span><h2>Top 20 证据准备队列</h2></div><p>顺序来自考试计划。03:00 workflow 会更新 Agent 调查层级和 Exam Card；研究者 progress 仍由你明确记录。</p></div><div class="paper-table" role="table" aria-label="Top 20 阅读准备"><div class="paper-table-head" role="row"><span>#</span><span>论文</span><span>Theme</span><span>Agent readiness</span><span>Researcher</span></div>${top20.map(item => `<a class="paper-table-row" role="row" href="../papers/${escapeHtml(item.slug)}/"><span>${item.order}</span><span><strong>${escapeHtml(item.id)}</strong>${escapeHtml(item.paper.title)}</span><span>T${item.theme}</span><span>${escapeHtml(investigationLabel(item.paper.investigation_status))}</span><span>未记录</span></a>`).join("")}</div></div></section>
+  <section class="section compact"><div class="container"><div class="section-head"><div><span class="eyebrow">Readiness checklist</span><h2>从文献到考试能力</h2></div><p>Definition、Comparison、Critical、Connection 与 Research question 五类口试能力必须分别练习；背诵摘要不等于掌握。</p></div><div class="grid three">${dashboard.exam.checklists.map(group => `<article class="checklist-card" data-reveal><h3>${escapeHtml(group.name)}</h3><ul>${group.items.map(item => `<li><i aria-hidden="true"></i>${escapeHtml(item)}</li>`).join("")}</ul></article>`).join("")}</div></div></section>`
+}));
+
+const programNodes = dashboard.research_line.nodes;
+write("program/index.html", page({
+  title: "AMSC 研究主线",
+  description: "AMSC 从 Meaning、Grounding、Convention、Adaptation 到 Embodied Communication 的研究主线、反馈关系与范围边界。",
+  current: "program",
+  depth: 1,
+  body: `<section class="page-hero"><div class="container"><span class="eyebrow">AMSC Research Program</span><h1>意义不是被贴上去的；它在互动中被建立、修订和具身化。</h1><p>${escapeHtml(dashboard.research_line.identity)}</p></div></section>
+  <section class="section compact"><div class="container"><div class="program-map" data-program-map data-reveal><svg viewBox="0 0 1200 360" role="img" aria-label="Meaning 到 Embodied Communication 的五阶段主线，包含从具身互动返回意义与 Grounding 的反馈"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z"></path></marker></defs><path class="main-edge" d="M140 120 H1050" marker-end="url(#arrow)"></path><path class="feedback-edge" d="M1080 175 C990 320 290 320 135 175" marker-end="url(#arrow)"></path><text x="600" y="306">Situated feedback / repair / reinterpretation</text></svg><div class="program-node-row">${programNodes.map((node, index) => `<button type="button" class="program-node" data-program-node="${escapeHtml(node.id)}" aria-pressed="${index === 0 ? "true" : "false"}"><span>0${index + 1}</span><strong>${escapeHtml(node.label)}</strong><small>${escapeHtml(node.question)}</small></button>`).join("")}</div><div class="program-detail-stack">${programNodes.map((node, index) => `<article data-program-detail="${escapeHtml(node.id)}" ${index === 0 ? "" : "hidden"}><div><span class="eyebrow">${escapeHtml(node.label)}</span><h2>${escapeHtml(node.question)}</h2><p>${escapeHtml(node.detail)}</p></div><dl><dt>Buckets</dt><dd>${escapeHtml(node.buckets.join(" · "))}</dd><dt>Related gaps</dt><dd>${node.gaps.map(gap => `<a href="../field-map/#${slugify(gap)}">${escapeHtml(gap)}</a>`).join(" · ")}</dd></dl></article>`).join("")}</div></div><p class="map-caveat">这是一条分析 progression，不是单向时间线或已经证实的 causal model。Embodiment 从一开始就约束 grounding；situated feedback 也会反过来改变 Meaning 与 Convention。</p></div></section>
+  <section class="section dark-section"><div class="container"><div class="section-head"><div><span class="eyebrow">Theme × Stage</span><h2>六主题不是外围目录</h2></div><p>Social / Cultural / Relational Context 直接改变 communicative priors、appropriation 与 relationship history，而不是放在主线之外的背景变量。</p></div><div class="crosswalk" role="table"><div class="crosswalk-head"><span>Exam Theme</span>${programNodes.map(node => `<span>${escapeHtml(node.label)}</span>`).join("")}</div>${dashboard.exam.themes.map(theme => { const marks = [["●","◐","·","·","◐"],["●","●","·","·","·"],["·","●","●","◐","·"],["·","◐","·","◐","●"],["·","·","◐","●","◐"],["●","·","◐","●","·"]][theme.id - 1]; return `<div class="crosswalk-row"><span>T${theme.id} · ${escapeHtml(theme.name)}</span>${marks.map(mark => `<span aria-label="${mark === "●" ? "直接关系" : mark === "◐" ? "桥接关系" : "无主要关系"}">${mark}</span>`).join("")}</div>`; }).join("")}</div><div class="crosswalk-legend"><span>● 直接关系</span><span>◐ 桥接关系</span><span>· 无主要关系</span></div></div></section>
+  <section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Research boundary</span><h2>主线、邻近与非主线</h2></div><p>关键词重叠不构成 relevance。主线项目通常至少连接两个相邻阶段，并对应一个仍存活的 Gap。</p></div><div class="grid three scope-grid"><article><span>MAINLINE</span><h3>直接更新共享沟通机制</h3><ul>${dashboard.research_line.scope.core.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article><article><span>ADJACENT</span><h3>提供明确的 substantive bridge</h3><ul>${dashboard.research_line.scope.adjacent.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article><article><span>NON-MAINLINE</span><h3>只有 artifact 或关键词重叠</h3><ul>${dashboard.research_line.scope.out_of_scope.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article></div><div class="empty-state project-empty"><div class="empty-mark">0</div><h3>当前没有已登记的 active research project</h3><p>Gap Registry 是 opportunity map，不自动等于 project。只有形成明确 phenomenon、RQ、evidence plan 与 gap linkage 后，项目节点才会出现。</p></div></div></section>`
+}));
+
 function paperCard(paper) {
   const collection = paper.provenance === "user_baseline_v1.0" ? `Baseline ${paper.source_list_id}` : "搜索候选";
   return `<article class="motion-card paper-card" data-reveal data-searchable><div class="paper-year">${escapeHtml(paper.year)}</div><div><div class="paper-meta">${escapeHtml((paper.authors || []).join(", "))}${paper.venue ? ` · ${escapeHtml(paper.venue)}` : ""}</div><h3>${escapeHtml(paper.title)}</h3><p>${escapeHtml(paper.one_sentence)}</p><div class="tag-row"><span class="priority">${escapeHtml(paper.priority)}</span><span class="tag">${escapeHtml(collection)}</span></div><a class="card-link" href="${escapeHtml(paper.slug)}/">打开论文界面</a></div></article>`;
@@ -399,10 +480,11 @@ write("404.html", page({
   body: `<section class="page-hero"><div class="container"><span class="eyebrow">404 / 缺失节点</span><h1>这个研究节点还不存在。</h1><p>链接可能已改变，或对应论文尚未进入持久知识状态。</p><div class="button-row"><a class="button primary" href="./">返回首页</a><a class="button" href="papers/">查看论文</a></div></div></section>`
 }));
 
-write("data/catalog.json", JSON.stringify({ version: manifest.version, generated_at: new Date().toISOString(), skills: skills.map(({ body, ...skill }) => skill), agents: agents.map(({ instructions, ...agent }) => agent), papers }, null, 2));
+write("data/catalog.json", JSON.stringify({ version: manifest.version, generated_at: new Date().toISOString(), skills: skills.map(({ body, ...skill }) => skill), agents: agents.map(({ instructions, ...agent }) => agent), papers, dashboard }, null, 2));
 write("schemas/paper-page.schema.json", fs.readFileSync(path.join(root, "schemas", "paper-page.schema.json"), "utf8"));
+write("schemas/workflow-dashboard.schema.json", fs.readFileSync(path.join(root, "schemas", "workflow-dashboard.schema.json"), "utf8"));
 write("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${canonicalBase}sitemap.xml\n`);
-const urls = ["", "skills/", "agents/", "architecture/", "papers/", ...skills.map(item => `skills/${item.slug}/`), ...agents.map(item => `agents/${item.slug}/`), ...papers.map(item => `papers/${item.slug}/`)];
+const urls = ["", "skills/", "agents/", "architecture/", "papers/", "field-map/", "exam/", "program/", ...skills.map(item => `skills/${item.slug}/`), ...agents.map(item => `agents/${item.slug}/`), ...papers.map(item => `papers/${item.slug}/`)];
 write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(url => `<url><loc>${canonicalBase}${url}</loc></url>`).join("")}</urlset>`);
 write(".nojekyll", "");
 

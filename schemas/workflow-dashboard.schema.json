@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mjj5444845.github.io/HCI-research-skill/schemas/workflow-dashboard.schema.json",
+  "title": "AMSC workflow dashboard",
+  "type": "object",
+  "required": ["version", "last_updated", "field_map", "exam", "research_line", "workflow_runs"],
+  "properties": {
+    "version": {"type": "string"},
+    "last_updated": {"type": "string"},
+    "next_scheduled_run": {"type": ["object", "null"]},
+    "field_map": {
+      "type": "object",
+      "required": ["claims", "gaps"],
+      "properties": {
+        "claims": {"type": "array"},
+        "gaps": {"type": "array"}
+      }
+    },
+    "exam": {
+      "type": "object",
+      "required": ["title", "core_question", "top20", "themes", "writing_plan", "checklists"]
+    },
+    "research_line": {
+      "type": "object",
+      "required": ["identity", "core_question", "nodes", "scope"]
+    },
+    "workflow_runs": {"type": "array"}
+  },
+  "additionalProperties": true
+}
