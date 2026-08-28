@@ -1,7 +1,7 @@
 {
   "id": "C5",
   "slug": "c5-graphical-convention-formation",
-  "title": "Graphical Convention Formation During Visual Communication",
+  "title": "Disentangling contributions of visual information and interaction history in the formation of graphical conventions",
   "authors": [
     "Robert X. D. Hawkins",
     "Megumi Sano",
@@ -10,40 +10,79 @@
   ],
   "year": 2019,
   "venue": "Proceedings of the 41st Annual Meeting of the Cognitive Science Society",
-  "source_url": "https://cognitivesciencesociety.org/cogsci-2019/",
+  "source_url": "https://escholarship.org/uc/item/6408z76h",
   "doi": null,
   "access_status": "full_text",
-  "priority": "Must Read",
+  "priority": "Important",
   "one_sentence": "把 convention formation 从 verbal communication 推向 graphical communication；与你的 visual convention 路线直接相连。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "graphical meaning 可来自 resemblance 或 shared history，既有工作未分离 repeated-item learning、task practice 与 visual recognizability。",
+  "method": "138 AMT participants/69 dyads，固定 sketcher/viewer；4 repeated ShapeNet chairs×8 次、4 control chairs pre/post。245 naive recognizers，223 retained，比较 yoked same-sketcher sequence 与 shuffled sequence；mixed models、BIS 与 VGG-19 similarity。",
+  "findings": [
+    "repeated objects 的 efficiency/accuracy improvement 大于 controls；yoked recognition improvement 大于 shuffled，stroke count 下降。",
+    "drawings 偏离各自初始形式、within interaction 更一致，并在不同 interactions 间适度分化。"
+  ],
+  "real_contribution": "用 repeated/control 与 yoked/shuffled history controls 建立后来 C6 的核心方法骨架。",
+  "biggest_weakness": "yoked observers 不是原 partner；manipulation 隔离的是 same-producer sequence continuity，不是 reciprocal common ground。单一 chair category、固定角色，部分结果在 C6 replication 中修正。",
+  "claim_boundary": "不能据此声称 arbitrary symbols、mutual negotiation、internal shared belief 或 embodied AI；C5 是 C6 明示的早期 findings subset，不应计为独立 evidence source。",
   "why_researcher_should_care": "把 convention formation 从 verbal communication 推向 graphical communication；与你的 visual convention 路线直接相连。",
   "amsc": {
-    "mainline_fit": 9.6,
+    "mainline_fit": 9.1,
     "buckets": [
       "C"
     ],
     "stages": [
+      "Grounding / Common Ground",
+      "Convention Formation"
+    ],
+    "mechanisms": [
+      "Meaning",
       "Grounding",
       "Convention"
     ],
-    "mechanisms": [
-      "common ground",
-      "convention formation"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-02",
+      "GAP-07"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "master_list_decision": "Baseline v1.0 — retained / PARTIALLY_SUPERSEDED by C6"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "C5",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "alternate_titles": [
+    "Graphical Convention Formation During Visual Communication"
+  ],
+  "claimed_gap_rq": "重复绘图是否产生 object-/interaction-specific efficiency，same-producer history sequence 是否优于 shuffled sequence，drawings 是否 within-pair 稳定并 across-pair 分化？",
+  "theory": [
+    "graphical convention",
+    "experimental semiotics",
+    "visual resemblance",
+    "socially mediated history"
+  ],
+  "partially_superseded_by": "c6-visual-resemblance-interaction-history",
+  "supersession_note": "C6 states that a subset of its findings was published in the 2019 CogSci paper and adds replication plus diagnostic-feature evidence.",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://escholarship.org/uc/item/6408z76h",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

@@ -1,69 +1,177 @@
-version: 0.2
+version: 0.4
 gaps:
   - id: GAP-01
-    statement: "How interaction feedback and shared history change partner-specific meaning, and how an embodied agent detects that change"
+    statement: "How an embodied agent detects and updates interaction-history-dependent multimodal meaning across dyad and population levels"
     status: REDEFINED
     priority: high
     evidence:
       - paper_slug: c6-visual-resemblance-interaction-history
         evidence_level: MODERATE
         supports: "Interaction history changes pictorial meaning within a repeated human-human drawing paradigm."
-        boundary: "Does not establish embodied-agent detection of meaning change."
-    skeptic_challenge: "Meaning formation is already studied in psycholinguistics and experimental semiotics; the contribution must be embodied-agent detection/repair, not rediscovering that context affects meaning."
+        boundary: "Controlled human drawing; yoked-vs-shuffled isolates same-producer sequence exposure, not mutual common ground or embodied-agent detection."
+      - paper_slug: x12-partners-to-populations
+        evidence_level: MODERATE
+        supports: "CHAI models how partner-specific common ground and population conventions coexist and transfer."
+        boundary: "Human linguistic coordination and simulation; no embodied human–AI agent."
+      - paper_slug: c8-gesturing-toward-abstraction
+        evidence_level: MODERATE
+        supports: "Human physical dyads develop and reuse speech/gesture abstractions with diverging dyad vocabularies."
+        boundary: "No Agent, partner swap, history severing or transfer."
+      - paper_slug: e3-continual-adaptation-machine-communication
+        evidence_level: MODERATE
+        supports: "An artificial listener updates linguistic reference expectations online from interaction history."
+        boundary: "One-sided visual-reference adaptation; non-embodied and no dyad/population transfer."
+    skeptic_challenge: "Human meaning formation, multimodal physical convention and partner-to-population transfer already have direct precedents; novelty must be counterfactual embodied-agent detection, repair and validated transfer rather than rediscovery."
     history:
       - date: 2026-08-27
         from: ACTIVE
         to: REDEFINED
         reason: "C6 and X1 make a generic absence-of-meaning-formation claim too broad."
+      - date: 2026-08-27
+        from: REDEFINED
+        to: REDEFINED
+        reason: "CHAI removes generic transfer-theory absence; residual opportunity is embodied human–AI inference across dyad and population levels."
   - id: GAP-02
-    statement: "Designer-defined vocabulary -> emergent convention"
+    statement: "Mutual human–AI conventions whose formation is counterfactually dependent on shared interaction history, followed by repair and transfer tests"
     status: PARTIALLY_ADDRESSED
     priority: high
     evidence:
       - paper_slug: x1-spotter-human-robot-conventions
         evidence_level: PRELIMINARY
         supports: "Repeated human–robot reference interaction can produce stable task-specific linguistic conventions."
-        boundary: "Controlled Dutch pilots with verbal referring expressions do not establish open-ended, jointly negotiated, transferable multimodal convention."
-    skeptic_challenge: "如果 task-induced lexical stabilization 已被称为 emergent convention，剩余贡献必须证明双方可发起和修订约定、partner-specificity、跨情境保持或适当迁移，以及 multimodal embodied consequences。"
+        boundary: "Controlled Dutch pilots do not establish reciprocal, history-dependent multimodal convention."
+      - paper_slug: x8-success-cost-convention-formation
+        evidence_level: MODERATE
+        supports: "Success×cost post-training yields convention-like efficiency gains with human listeners."
+        boundary: "Fixed model-speaker role; no mutual negotiation, history ablation, repair, or embodiment."
+      - paper_slug: x9-aligned-not-partner-specific
+        evidence_level: MODERATE
+        supports: "Pseudo-dyad controls show that high overlap and success can persist after partner history is severed."
+        boundary: "Preprint and AI–AI dyads; does not rule out partner-specificity under other regimes."
+      - paper_slug: x12-partners-to-populations
+        evidence_level: MODERATE
+        supports: "Dyad-originated conventions can later transfer toward population expectations."
+        boundary: "Partner-specific origin must not be defined as permanent non-transferability."
+      - paper_slug: c3-conceptual-pacts
+        evidence_level: MODERATE
+        supports: "A classic human partner-switch experiment shows partner-specific lexical history changes later reference choice."
+        boundary: "Only four key items; item-level partner effect was marginal and not multimodal or human–AI."
+      - paper_slug: c8-gesturing-toward-abstraction
+        evidence_level: MODERATE
+        supports: "Human dyads form multimodal abstractions in repeated physical collaboration."
+        boundary: "No human–AI reciprocity or counterfactual history manipulation."
+      - paper_slug: e3-continual-adaptation-machine-communication
+        evidence_level: MODERATE
+        supports: "Human speakers and an adaptive listener achieve convention-like online efficiency gains."
+        boundary: "One-sided model adaptation without partner swap, repair or embodiment."
+    skeptic_challenge: "Do not preserve novelty through adjectives. C3, C8 and E3 cover human partner history, physical multimodality and machine adaptation separately. Demonstrate counterfactual shared-history dependence, then separately test reciprocity, repair and appropriate transfer."
     history:
       - date: 2026-08-26
         from: HIGH_PRIORITY
         to: PARTIALLY_ADDRESSED
         reason: "SPOTTER directly studies convention formation in a visually grounded human–robot reference task; the broader multimodal and longitudinal problem remains open."
+      - date: 2026-08-27
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: "Vaduguru weakens generic AI-incapacity claims; Wang and CHAI require history-dependence and transfer to be tested separately."
   - id: GAP-03
-    statement: "History-aware communication -> detecting, maintaining, repairing, and retiring shared multimodal conventions"
-    status: REDEFINED
+    statement: "Convention lifecycle: establishment, maintenance, repair/revision, context-sensitive retirement, partner/context transfer, and renegotiation after breakdown"
+    status: PARTIALLY_ADDRESSED
     priority: high
     evidence:
       - paper_slug: x3-seeing-eye-to-eye
         evidence_level: PRELIMINARY
         supports: "A situated AR assistant can combine gaze, gesture, revisable memory, and accumulated common ground."
-        boundary: "System-maintained contextual memory is not equivalent to mutual belief or dyad-specific convention formation."
-      - paper_slug: x1-spotter-human-robot-conventions
+        boundary: "System-maintained contextual memory is not equivalent to mutual belief or convention."
+      - paper_slug: x11-common-ground-benchmark
+        evidence_level: MODERATE
+        supports: "Human–AI joint-action and repair benchmark components already exist."
+        boundary: "Single-model text/puzzle preprint without partner-history ablation or transfer."
+      - paper_slug: x6-beyond-local-surprise
         evidence_level: PRELIMINARY
-        supports: "Repeated interaction history already appears in a human–robot convention-formation task."
-        boundary: "The controlled reference-game history does not show general convention detection or repair policy."
-    skeptic_challenge: "研究必须用可证伪标准区分 log retrieval、user modeling、mutual belief 与 shared convention，并证明 Agent 能检测约定何时形成、失效以及何时应主动 repair。"
+        supports: "Provides an explicit computational preserve/revise policy comparison."
+        boundary: "No human validation; selective policy does not outperform conservative retrieval baselines."
+      - paper_slug: x12-partners-to-populations
+        evidence_level: MODERATE
+        supports: "Provides theory and evidence for partner-to-population transfer."
+        boundary: "No embodied Agent or multimodal repair."
+      - paper_slug: c4-repeated-reference-games
+        evidence_level: MODERATE
+        supports: "Directly measures establishment, maintenance and feedback-contingent revision in repeated human reference."
+        boundary: "No retirement, transfer, partner swap or embodiment."
+      - paper_slug: c8-gesturing-toward-abstraction
+        evidence_level: MODERATE
+        supports: "Covers establishment and reuse of multimodal abstractions in human physical collaboration."
+        boundary: "Natural corrections are not controlled repair; no retirement, transfer or Agent."
+      - paper_slug: e3-continual-adaptation-machine-communication
+        evidence_level: MODERATE
+        supports: "Covers online establishment, local rehearsal and forgetting regularization for an artificial listener."
+        boundary: "No reciprocal repair, retirement, partner/context transfer or embodiment."
+      - paper_slug: e4-designing-robots-long-term
+        evidence_level: MODERATE
+        supports: "Provides nine-month deployment instrumentation and separates persistent traffic from identifiable repeat visitors."
+        boundary: "No causal comparison, shared-meaning measure or convention lifecycle probe."
+      - paper_slug: f5-robots-in-the-wild
+        evidence_level: MODERATE
+        supports: "Shows that roles, practices, third-party effects and time are boundary conditions for long-term HRI theory."
+        boundary: "Research agenda and case synthesis, not a tested lifecycle mechanism."
+      - paper_slug: f6-generative-encounters-robin
+        evidence_level: PRELIMINARY
+        supports: "Abstract-level evidence identifies organizational adaptation and appropriation across four eldercare facilities."
+        boundary: "Full text was unavailable; no autonomous learning or convention evidence."
+    skeptic_challenge: "Lifecycle components are genuinely partially addressed across settings. Residual novelty is causal integration of repair, retirement, transfer, reciprocity and counterfactual shared history in embodied human–AI interaction."
     history:
       - date: 2026-08-26
         from: HIGH_PRIORITY
         to: REDEFINED
         reason: "Eye2Eye makes a generic absence-of-history claim untenable; the defensible gap concerns convention inference and lifecycle management."
+      - date: 2026-08-27
+        from: REDEFINED
+        to: REDEFINED
+        reason: "First-run recovery narrows lifecycle novelty from generic history/repair/transfer to integrated embodied human–AI convention control."
+      - date: 2026-08-27
+        from: REDEFINED
+        to: PARTIALLY_ADDRESSED
+        reason: "Top-20 audit finds direct component evidence for establishment/maintenance in human verbal, graphical and physical tasks and one-sided machine adaptation; repair, retirement, transfer, reciprocity and counterfactual history remain open."
   - id: GAP-04
-    statement: "Operational criteria are needed to distinguish user modeling, memory retrieval, adaptation, grounding, mutual belief, and convention formation"
-    status: REDEFINED
-    priority: null
+    statement: "Integrate and validate existing diagnostics that separate memory, adaptation, task success, alignment, mutual belief, and interaction-history-dependent convention"
+    status: PARTIALLY_ADDRESSED
+    priority: medium-high
     evidence:
       - paper_slug: x4-making-memories-together
         evidence_level: PRELIMINARY
         supports: "Transparent, co-constructed robot memory may provide infrastructure for negotiated personalization."
-        boundary: "A five-page companion paper does not show that shared memory produces, stabilizes, or transfers a communicative convention."
-      - paper_slug: x1-spotter-human-robot-conventions
+        boundary: "Shared memory does not demonstrate convention."
+      - paper_slug: x9-aligned-not-partner-specific
+        evidence_level: MODERATE
+        supports: "Pseudo-dyads operationalize whether alignment depends on partner history."
+        boundary: "Preprint and AI–AI only."
+      - paper_slug: x11-common-ground-benchmark
+        evidence_level: MODERATE
+        supports: "A human–AI puzzle benchmark separates task, communication, and object-level grounding evidence."
+        boundary: "Single model and no embodied multimodal lifecycle."
+      - paper_slug: x7-embodied-world-model-alignment
+        evidence_level: MODERATE
+        supports: "Embodied agent metrics separate action conflict, task success, information novelty, and belief-sensitive messaging."
+        boundary: "AI–AI simulation cannot establish human–AI common ground."
+      - paper_slug: c3-conceptual-pacts
+        evidence_level: MODERATE
+        supports: "Provides a human partner-switch precedent for distinguishing lexical history from partner-independent reuse."
+        boundary: "Lexical entrainment remains an imperfect proxy for shared representation."
+      - paper_slug: e3-continual-adaptation-machine-communication
+        evidence_level: MODERATE
+        supports: "Pragmatic, rehearsal and KL ablations separate components of online adaptation."
+        boundary: "Does not distinguish partner specificity, mutual belief or convention."
+      - paper_slug: d9-anatomy-of-uncertainty
         evidence_level: PRELIMINARY
-        supports: "Stable conventions can emerge in a human–robot reference task."
-        boundary: "The study does not causally compare personalization-only and convention-aware mechanisms."
-    evidence_trend: STRENGTHENED
-    skeptic_challenge: "Co-constructed profile 或 transparent memory 仍可能只是 personalization database；除非 signal–meaning mapping 被双方协商、彼此预期并改变后续 communication，否则不能称为 convention formation。"
+        supports: "Separates intended category recognition from descriptor-level intensity judgments for expressive uncertainty motion."
+        boundary: "Preprint video study; no calibration to live uncertainty, task outcome or shared history."
+      - paper_slug: g3-explainable-oohri
+        evidence_level: PRELIMINARY
+        supports: "Separates encoded capability, limitation, explanation and actionable repair channels in an AR architecture."
+        boundary: "Small no-control study with authored tasks and substantial human setup; no longitudinal grounding."
+    evidence_trend: PARTIALLY_ADDRESSED
+    skeptic_challenge: "C2/C3 and E2/E3 show that positive evidence, partner switching, task adaptation and semantic adaptation already have diagnostics. A unified battery is a design opportunity; test discriminant validity rather than claiming generic diagnostic absence."
     history:
       - date: 2026-08-26
         from: ACTIVE
@@ -73,52 +181,160 @@ gaps:
         from: UNCHANGED
         to: REDEFINED
         reason: "The original distinction was a warning, not an operational gap; the revised form requires falsifiable diagnostic criteria."
+      - date: 2026-08-27
+        from: REDEFINED
+        to: PARTIALLY_ADDRESSED
+        reason: "Pseudo-dyad, common-ground benchmark, and world-model metrics resolve generic diagnostic absence; integration and embodied validation remain open."
   - id: GAP-05
-    statement: "Informal visual language lacks systematic embodied communication theory"
-    status: UNCHANGED
-    priority: null
-    evidence: []
-    skeptic_challenge: null
+    statement: "Operationally connect informal/graphic paralanguage and multimodal structural relations to interaction-history-dependent, adaptive embodied human–AI communication"
+    status: REDEFINED
+    priority: medium-high
+    evidence:
+      - paper_slug: a2-textual-paralanguage
+        evidence_level: PRELIMINARY
+        supports: "Provides a broad, context-sensitive construct and coding vocabulary for textual/graphic paralanguage."
+        boundary: "Descriptive marketing/CMC samples; no causal receiver effects, embodiment, history or Agent."
+      - paper_slug: a5-multimodal-parallel-architecture
+        evidence_level: PRELIMINARY
+        supports: "Provides structural relations across verbal, bodily and graphic modalities."
+        boundary: "Static theoretical architecture; no grounding, adaptation or Agent validation."
+      - paper_slug: c8-gesturing-toward-abstraction
+        evidence_level: MODERATE
+        supports: "Shows history-evolving speech/gesture abstractions in controlled human physical collaboration."
+        boundary: "No informal graphic paralanguage, human–AI dyad or counterfactual history test."
+      - paper_slug: d6-designing-robots-with-movement
+        evidence_level: PRELIMINARY
+        supports: "Shows embodied movement already has a mature communicative design vocabulary."
+        boundary: "Designer-authored mappings, not jointly negotiated or history-dependent."
+      - paper_slug: a3-interpreting-emoji-pragmatics
+        evidence_level: MODERATE
+        supports: "Empirically shows that local discourse context changes perceived emoji pragmatic function."
+        boundary: "Third-party Facebook interpretation, not dyadic emergence or robot-authored signals."
+      - paper_slug: a4-a-visual-lexicon
+        evidence_level: PRELIMINARY
+        supports: "Provides a cross-granularity representation vocabulary for conventional and productive visual forms."
+        boundary: "Conceptual analysis without behavioral validation or interactive formation."
+      - paper_slug: a6-puppetchat
+        evidence_level: PRELIMINARY
+        supports: "Shows close dyads can appropriate editable embodied actions and micronarratives over a short deployment."
+        boundary: "Eleven dyads, no causal control and no stable-convention test."
+    skeptic_challenge: "A2, A5, C8 and D6 already provide construct, architecture, physical-convention and embodied-design building blocks. Novelty cannot be a new umbrella framework; it must operationalize a cross-layer mechanism and show causal behavioral gain. A3/A4/D/F/G closest-work audit remains required."
     history:
       - date: 2026-08-27
         from: ACTIVE
         to: UNCHANGED
-        reason: "Status vocabulary normalized; claim remains unverified because relevant pages are bibliographic-only."
-    claimability: CANNOT_CLAIM
-    evidence_readiness: BIBLIOGRAPHIC_ONLY
+        reason: "Status vocabulary normalized; claim remained unverified because relevant pages were bibliographic-only."
+      - date: 2026-08-27
+        from: UNCHANGED
+        to: REDEFINED
+        reason: "Top-20 full-text audit rejects a generic theory-absence claim and reframes the residual as an operational integration problem."
+    claimability: OPEN_INTEGRATION_PROBLEM
+    evidence_readiness: FULL_TEXT_BASELINE_COMPLETE
   - id: GAP-06
-    statement: "Social meaning and functional robot-state communication remain separated"
-    status: UNCHANGED
-    priority: null
-    evidence: []
-    skeptic_challenge: null
+    statement: "How embodied agents jointly optimize and evaluate instrumental state/intent legibility and socially situated or relational meaning as multimodal signals adapt over interaction history"
+    status: REDEFINED
+    priority: medium-high
+    evidence:
+      - paper_slug: d5-legibility-and-predictability
+        evidence_level: MODERATE
+        supports: "Formally and behaviorally separates intent legibility from expected motion."
+        boundary: "Goal-directed video trajectories; no social meaning, history or convention."
+      - paper_slug: d6-designing-robots-with-movement
+        evidence_level: PRELIMINARY
+        supports: "Robot movement can expose task intent and affective/personality state in the same design material."
+        boundary: "Design synthesis with fixed mappings; no common ground or longitudinal adaptation."
+      - paper_slug: d7-social-eye-gaze-review
+        evidence_level: MODERATE
+        supports: "Gaze can coordinate reference, attention and turn-taking while also carrying rapport, emotion and social agency."
+        boundary: "Non-systematic heterogeneous review; no partner-specific or history-conditioned convention."
+      - paper_slug: a2-textual-paralanguage
+        evidence_level: PRELIMINARY
+        supports: "Social signal meaning is context-dependent and can supplement or replace prose."
+        boundary: "CMC/marketing construct, not robot-state communication evidence."
+      - paper_slug: d8-legible-multimodal-state-intent
+        evidence_level: MODERATE
+        supports: "Compares fixed gesture+speech and LED mappings across online and live settings for five state/intent messages."
+        boundary: "Accepted/presented preprint with proceedings DOI pending; modality package is confounded."
+      - paper_slug: d9-anatomy-of-uncertainty
+        evidence_level: PRELIMINARY
+        supports: "Provides a parameterized motion vocabulary for perceived uncertainty category and intensity."
+        boundary: "Preprint, animator-authored video trajectories, no live uncertainty calibration."
+      - paper_slug: g1-robot-motion-intent-ar
+        evidence_level: MODERATE
+        supports: "Demonstrates spatially registered future-action previews and distinct environment/robot/interface cue locations."
+        boundary: "Single short aerial-robot task with fixed cues; no history-dependent adaptation."
+      - paper_slug: g3-explainable-oohri
+        evidence_level: PRELIMINARY
+        supports: "Connects WHAT/WHERE/HOW capability communication to in-situ repair options."
+        boundary: "Preliminary no-control study; no autonomous open-world assessment or convention."
+      - paper_slug: f2-robots-in-society
+        evidence_level: PRELIMINARY
+        supports: "Frames social meaning and robot design as mutually shaped through deployment and appropriation."
+        boundary: "Conceptual/ethnographic framework, not signal-level causal evidence."
+    skeptic_challenge: "Top-20 evidence shows single motion and gaze signals can already carry functional and social meanings, so novelty cannot be first integration. The residual is history-dependent joint optimization, trade-off measurement and grounding across modalities; D/F/G closest-work attack is required before a field-separation claim."
     history:
       - date: 2026-08-27
         from: ACTIVE
         to: UNCHANGED
-        reason: "Status vocabulary normalized; current corpus cannot yet support the field-separation claim."
-    claimability: CANNOT_CLAIM
-    evidence_readiness: BIBLIOGRAPHIC_ONLY
+        reason: "Status vocabulary normalized; current corpus could not support the field-separation claim."
+      - date: 2026-08-27
+        from: UNCHANGED
+        to: REDEFINED
+        reason: "D5–D7 refute a clean social-versus-functional separation; the residual is adaptive joint optimization and evaluation."
+    claimability: RESEARCH_OPPORTUNITY_NOT_FIELD_ABSENCE
+    evidence_readiness: FULL_TEXT_BASELINE_COMPLETE_WITH_F6_ABSTRACT_ONLY
   - id: GAP-07
-    statement: "Grounding / Convention Diagnostic Benchmark: distinguish memory, task success, adaptation, mutual expectation, and genuine convention formation"
-    status: UNCHANGED
-    priority: high-potential-candidate
+    statement: "Unified embodied human–agent diagnostic protocol combining history-severed pseudo-dyads, role reversal, repair perturbation, partner swap, transfer, and multimodal physical consequences"
+    status: PARTIALLY_ADDRESSED
+    priority: high
     evidence:
       - paper_slug: c6-visual-resemblance-interaction-history
         evidence_level: MODERATE
-        supports: "Provides controls for separating resemblance, task practice, and interaction-specific history."
+        supports: "Separates resemblance, task practice, and interaction-specific history in human drawing."
         boundary: "Human-human drawing paradigm only."
       - paper_slug: x2-lvlms-humans-ground-differently
         evidence_level: PRELIMINARY
-        supports: "Shows task performance alone does not establish human-like grounding."
-        boundary: "Abstract-level investigation; broader benchmark landscape not yet attacked."
-    skeptic_challenge: "Psycholinguistics, dialogue, and common-ground evaluation may already contain mature diagnostics; do not elevate this candidate until C1-C4, E3, X1-X3 and a Missing Paper Attack are complete."
+        supports: "Provides factorial dyads and shows task performance alone does not establish human-like grounding."
+        boundary: "Single task/model family."
+      - paper_slug: x9-aligned-not-partner-specific
+        evidence_level: MODERATE
+        supports: "Provides a constrained history-severed pseudo-dyad diagnostic."
+        boundary: "Preprint, AI–AI only."
+      - paper_slug: x11-common-ground-benchmark
+        evidence_level: MODERATE
+        supports: "Provides an existing human–AI common-ground benchmark with repair and situation-awareness manipulation."
+        boundary: "No pseudo-dyad, partner swap, transfer, or embodiment."
+      - paper_slug: x7-embodied-world-model-alignment
+        evidence_level: MODERATE
+        supports: "Adds embodied world-state and belief-sensitive messaging metrics."
+        boundary: "AI–AI simulation."
+      - paper_slug: c3-conceptual-pacts
+        evidence_level: MODERATE
+        supports: "Classic human partner-switch logic provides a direct history-sensitive diagnostic precedent."
+        boundary: "Spoken card matching, not embodied human–AI."
+      - paper_slug: c4-repeated-reference-games
+        evidence_level: MODERATE
+        supports: "Provides feedback-sensitive establishment and maintenance metrics."
+        boundary: "No history severing, partner swap or physical consequence."
+      - paper_slug: c8-gesturing-toward-abstraction
+        evidence_level: MODERATE
+        supports: "Provides a physical multimodal human protocol with repeated targets, natural correction and dyad divergence."
+        boundary: "No Agent, role reversal, controlled repair or transfer."
+      - paper_slug: e3-continual-adaptation-machine-communication
+        evidence_level: MODERATE
+        supports: "Provides online adaptation, rehearsal, forgetting and component ablations."
+        boundary: "No pseudo-dyad, reciprocal roles, repair or embodiment."
+    skeptic_challenge: "Partner-switch logic and component diagnostics are not new. HIGH priority applies only to integrated causal validation; C5/C6 count as one lineage and no single audited protocol yet covers history severing, reciprocity, repair, transfer and embodiment."
     history:
       - date: 2026-08-27
         from: null
         to: UNCHANGED
         reason: "Added as a high-potential candidate, not yet a high-priority established gap."
-    claimability: CANDIDATE_ONLY
+      - date: 2026-08-27
+        from: UNCHANGED
+        to: PARTIALLY_ADDRESSED
+        reason: "Existing benchmark components resolve generic absence; no audited single protocol integrates history ablation, reciprocity, repair, transfer, and embodiment."
+    claimability: OPEN_RESIDUAL
 
 allowed_update_states:
   - UNCHANGED

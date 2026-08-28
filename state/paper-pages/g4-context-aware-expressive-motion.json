@@ -2,46 +2,64 @@
   "id": "G4",
   "slug": "g4-context-aware-expressive-motion",
   "title": "Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models",
-  "authors": [
-    "Till Hielscher",
-    "Fabio Scaparro",
-    "Kai O. Arras"
-  ],
+  "authors": ["Till Hielscher", "Fabio Scaparro", "Kai O. Arras"],
   "year": 2026,
-  "venue": "HRI 2026, 438–446",
+  "venue": "HRI 2026, 938–946",
   "source_url": "https://gen-mod-expressive-motion-behavior.github.io/",
   "doi": "10.1145/3757279.3785635",
   "access_status": "full_text",
   "priority": "Must Read",
-  "one_sentence": "处理 expressive behavior 的 **what / when / how**，并根据 multimodal context 自动生成行为。对你未来构建 adaptive multimodal communication policy 很关键。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "处理 expressive behavior 的 **what / when / how**，并根据 multimodal context 自动生成行为。对你未来构建 adaptive multimodal communication policy 很关键。",
+  "one_sentence": "该系统把 multimodal context 映射为可解释、可组合的 gesture sequence 与 motion modulation；视频研究支持 perceived context alignment，但并未检验真实互动中的共同理解或 history-aware adaptation。",
+  "problem": "Expressive robot motion 的设计空间近乎开放：robot 既要决定做什么 gesture、何时执行、如何调节力度与节奏，又要把 speech、environment 与 interaction context 纳入考虑；现有 rule-based、joint-level generation 或单一 morphology 方法难以同时兼顾 general context understanding、physical execution、interpretability 与低延迟。",
+  "method": "系统把预录 gesture library 编码为 Dynamic Movement Primitives (DMPs)，由 multimodal foundation model 根据 context 选择/排序 gestures，并沿 Principles of Animation（Anticipation、Arcs、Exaggeration、Follow Through、Slow In Slow Out、Timing）生成 modulation parameters；timeline controller 支持连续执行与实时目标更新，knowledge distillation 用 100+ context traces 把 gpt-4.1 multi-step pipeline 蒸馏到 gpt-4.1-nano。评价包括：38 人在线/视频 within-subject study（30 人完成，年龄 21–84）比较 modulated、non-modulated 与 API-level Pepper motions，以及 distilled 与 multi-step output；三类 context 各 100 次 latency test；Pepper、Go2、Gen3 Lite 的 cross-morphology demonstrations；audio/video/text scenarios 的 qualitative demonstrations。",
+  "findings": [
+    "生成条件显著影响 perceived context alignment：modulated Ours 高于 non-modulated，non-modulated 又高于 API-level（两组 Bonferroni-corrected comparisons 均 p<.001）；generation-condition effect 远大于 context interaction effect。",
+    "Distilled model 在三个 context 上对 multi-step pipeline 达到预设 10% margin 的 non-inferiority，且评分均略偏向 distilled version；平均 inference 从 12.87 秒降至 2.39 秒，约 5.4× speedup / 81.5% latency reduction。",
+    "Qualitative demonstrations 表明同一 framework 可在 Pepper、Go2、Gen3 Lite 上选择/调节现有 gestures，并对敲门声等 multimodal cue 产生不同 sequence；较小 gesture libraries 出现更明显的重复模式。"
+  ],
+  "real_contribution": "论文把高层 gesture selection/timing 与低维、physics-grounded DMP expressivity modulation 接到同一 continuous-control pipeline，并通过 distillation 降低响应延迟。对 AMSC 的真实价值是一个可复用的 WHAT/WHEN/HOW motion policy substrate；它不是 partner-specific communication 或 convention-learning system。",
+  "biggest_weakness": "主要人类证据来自观看 Pepper 视频并按给定 context description 评价 alignment，而不是 live HRI、理解准确率、协调行为或长期使用；30 人完成样本、少量手工情境与 library-dependent outputs 无法证明 open-world generality。Cross-morphology 与 multimodal claims 主要是 qualitative demonstrations，且所谓 familiar person / prior encounter 只是 prompt 中预先给定的 context，不是 episodic memory 推断。",
+  "claim_boundary": "支持在受控 scenarios 中自动选择并调节预录动作，使观察者认为 motion 更符合显式 context，并支持低延迟与跨 morphology 的初步技术展示。不支持 motion meaning 被双方 grounded、真实对话协调改善、cultural/social appropriateness、在线学习、interaction-history inference、partner-specific adaptation、common ground 或 convention formation。",
+  "why_researcher_should_care": "G4 使 adaptive multimodal communication policy 的 motion output layer 具体化：可把 context 转换为 gesture choice、timing 与 intensity。但 AMSC 下一步应把它接到 interaction history、repair 与 partner feedback，而不是把 prompt-conditioned context alignment 误称为共同适应。",
+  "claimed_gap_rq": "如何从 text/audio/video context 自动决定 expressive robot motion 的 WHAT、WHEN 与 HOW，并以可解释、可组合、跨 morphology 且低延迟的方式连续执行？",
+  "theory": ["Principles of Animation", "Dynamic Movement Primitives", "context-aware expressive behavior", "hierarchical continuous control", "knowledge distillation"],
   "amsc": {
-    "mainline_fit": 8.4,
-    "buckets": [
-      "G"
-    ],
-    "stages": [
-      "Embodied Communication"
-    ],
-    "mechanisms": [
-      "situated communication",
-      "augmented reality"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "mainline_fit": 8.3,
+    "buckets": ["G", "D", "E"],
+    "stages": ["Social Meaning / Pragmatics", "Personalization / Co-adaptation", "Situated Adaptive Communication"],
+    "mechanisms": ["Meaning", "Adaptation", "Embodied Communication"],
+    "gap_ids": ["GAP-02", "GAP-03", "GAP-04", "GAP-06"],
+    "gap_impact": {
+      "GAP-02": "进一步凸显 designer-defined vocabulary 与 emergent convention 的差异：系统重组/调节预录 gesture library，但不协商新信号。",
+      "GAP-03": "PARTIALLY_ADDRESSES context awareness 与实时目标更新，同时直接强化 history-aware 缺口；作者把 episodic memory 留作 future work。",
+      "GAP-04": "强化 adaptation 不等于 convention formation：prompt-conditioned modulation 是 system adaptation，并非双方形成稳定 shared shorthand。",
+      "GAP-06": "PARTIALLY_ADDRESSES social expressivity 与 embodied output 的技术桥接，但没有把 expressive social meaning 与 robot functional-state communication 放在同一研究中。"
+    },
+    "master_list_decision": "Baseline v1.0 — retained / adaptive motion-generation substrate",
+    "mainline_role": "重要 technical substrate，非 grounding/convention evidence",
+    "next_project_priority_change": "提高将 episodic interaction history、partner feedback 与 repair signals 接入 motion policy 的优先级；评价应从 video alignment 转向 live coordination 与 meaning calibration。",
+    "exam_update": "可进入 Theme 4/5 的 emerging method reading；不应作为 Common Ground 或 convention anchor。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 完整审计 University of Stuttgart 官方 PDF、project page 与 code repository；书目信息、system architecture、experiments、results、discussion 均来自全文。",
+    "研究招募 38 人，但 8 人未完成；定量 user-study evidence 的有效样本为 30，且是 video-based ratings，不是实体互动。",
+    "论文中的 online adaptive 主要指 DMP goal/motion parameter 的实时更新；不得外推为 user-specific learning 或 co-adaptation。",
+    "Cross-morphology 与 multimodal results 是少量 qualitative demonstrations；不能当作大规模 robustness benchmark。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者保持未追踪。"
   ],
   "source_list_id": "G4",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {"source_availability": "full_text", "agent_investigation": "full_paper_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "official_university_repository_full_text_plus_project_and_code",
+    "source_urls": ["https://www.ki.uni-stuttgart.de/departments/sir/sir-data/sir-pdf/hielscher2026hri.pdf", "https://gen-mod-expressive-motion-behavior.github.io/", "https://github.com/TillHielscher/gen-mod-expressive-motion-behavior"],
+    "evidence_scope": "argument_system_method_user_study_latency_tests_demonstrations_discussion_and_claim_boundaries_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

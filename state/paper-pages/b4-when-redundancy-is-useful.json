@@ -15,36 +15,78 @@
   "doi": "10.1037/rev0000186",
   "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "提醒你不要简单假设“越少越好”。communication 需要权衡 information cost 与 robustness；未来研究 multimodal redundancy 时非常重要。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "one_sentence": "把 RSA 的 Boolean semantics 放宽为 continuous/noisy semantics 后，看似 overinformative 的 modifiers 与 specific nouns 可被解释为在语义不确定、scene complexity 与 typicality 下提高 referential robustness 的理性冗余。",
+  "problem": "Gricean/rational accounts 通常把足以唯一指称目标之外的信息视为不必要成本，却难以统一解释 speakers 系统性地更常 redundant-use color 而非 size、在复杂场景中增加修饰、为 atypical objects 明示属性，以及偏好 basic-level nouns。问题不是人是否违背 rationality，而是传统 RSA 的 deterministic Boolean lexicon 是否把实际有噪声、graded 的 semantic fit 错当成确定真值。",
+  "method": "理论+实验+Bayesian computational modeling。作者提出 continuous-semantics RSA（cs-RSA），speaker 在 utterance cost 与相对于 noisy/graded literal-listener semantics 的 informativeness 间优化。三个 interactive web reference-game datasets：Exp.1 用 MTurk 58 个有偿 pairs（另纳入 7 个中途退出 pairs 的已有 data），自由文本指称同类但 color/size 不同的 arrays；36 critical+36 filler trials，操纵 sufficient feature、2–4 distractors 与 scene variation，2076 critical cases 入分析。Exp.2 用 61 pairs、42 trials、7 类 color-diagnostic foods 的 typical/mid/atypical colors，1827 utterances 入分析，并以三个独立 norming studies 获得 utterance–object typicality。Exp.3 使用 Exp.1 同一 58 pairs 的另外 36 filler trials作为 nominal-choice critical data，跨 9 domains 操纵 subordinate/basic/superordinate sufficiency，1872 cases 入分析，另做 typicality norms。Behavior 用 mixed-effects models；cs-RSA 以 Bayesian inference、posterior predictive fit 与 Bayes-factor/marginal-likelihood model comparisons 评估不同 semantics/cost specifications。",
+  "findings": [
+    "Exp.1 replicated redundant color > redundant size，并复现 scene variation 增加 redundant color；同时发现 scene variation 也增加 redundant size，但幅度较小。cs-RSA 通过把 size 估为比 color 更 noisy（MAP semantic value .79 vs .88）拟合该不对称；modifier cost posterior 接近零。",
+    "Exp.2 replicated color-typicality effect：对象越不符合 unmodified noun 的典型性，speaker 越可能加 color；contextual utility 仍有独立作用。整合 type-level noise 与独立 elicited object-level typicality、且无 cost term 的模型最佳，其 item-level predicted 与 empirical proportions correlation 为 r=.94（in-sample fit）。",
+    "Exp.2 还显示典型性可强到使 speaker 在 color 原则上有辨别价值时仍把典型 yellow banana 简称 banana，而 atypical blue banana 的 color 会被明示；这说明‘必要信息’本身依赖 graded semantic expectations。",
+    "Exp.3 replicated basic-level preference：superordinate mentions 少于 2%，subordinate terms 主要在必须区分同 basic-category distractor 时占优；即便 subordinate necessary，仍有 28% basic-level expressions（其中多数含额外 modifying material）。context、typicality 与 word length共同预测 choice，cs-RSA 延伸到 nominal abstraction level。",
+    "作者的最大可辩护结论是：在受控英文视觉指称任务中，continuous semantic fit 使多个看似 overinformative patterns 能在同一 rational production architecture 下被解释为 useful redundancy；模型仍对真实心理算法及是否显式以 listener needs 为导向保持 agnostic。"
+  ],
+  "real_contribution": "不是简单证明‘冗余有用’，而是重定义 informativeness：当词项到对象的适用性有噪声/graded 时，额外 feature 能降低误指风险，因此 minimal Boolean sufficiency 不是 communicative sufficiency。该形式化统一 modifier type、scene variation、typicality 与 taxonomic-level choice，为 AMSC 设计 WHAT/how-much-to-signal 的 robustness–cost baseline。",
+  "biggest_weakness": "实证域集中在短时、英语、屏幕静态 objects 的 referential production；没有 multimodal signal、embodiment、social meaning、interaction history 或 convention learning。三个 best models 为不同 datasets 调整 lexicon/alternative set/semantics/cost，主要以同一 production data 的 posterior fit/marginal likelihood 评估，未展示 held-out cross-domain prediction；因此 unified architecture 的心理过程与跨模态外推仍未被建立。",
+  "claim_boundary": "可支持：在这些 reference games 中，graded semantics+context/typicality能解释 speakers 的系统性 redundancy 与 abstraction choices。不可支持：所有冗余都提升理解；cost 在一般 communication 中不重要；cs-RSA 是实际 cognitive algorithm；verbal object reference 的参数可直接规定 robot multimodal output；该研究解释 shared meaning/conventions 如何随互动形成。",
   "why_researcher_should_care": "提醒你不要简单假设“越少越好”。communication 需要权衡 information cost 与 robustness；未来研究 multimodal redundancy 时非常重要。",
   "amsc": {
-    "mainline_fit": 8.5,
+    "mainline_fit": 9.0,
     "buckets": [
       "B"
     ],
     "stages": [
+      "Social meaning / pragmatics",
+      "Grounding / common ground"
+    ],
+    "mechanisms": [
       "Meaning",
       "Grounding"
     ],
-    "mechanisms": [
-      "pragmatic inference",
-      "representation"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-03",
+      "GAP-06"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "master_list_decision": "Master Literature v1.0 保留；作为核心 pragmatics-and-efficiency theory"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 审读作者实验室托管的 82 页 manuscript，并以已记录的 arXiv 与 Psychological Review metadata 核对 title/authors/DOI。",
+    "methods、behavioral results、model specifications/comparisons 与 discussion boundaries 均从全文重建；旧 baseline relevance note 未作为证据。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；后两者保持未追踪。"
   ],
   "source_list_id": "B4",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "把确定性的 Boolean semantics 改为 continuous/noisy semantics 后，Rational Speech Act production model 能否统一量化解释 modifier-type 与 scene-variation redundancy、atypical-feature mention，以及 taxonomic-level choice？",
+  "theory": [
+    "理性言语行为框架（Rational Speech Act）",
+    "Gricean informativeness 与 cost",
+    "连续/有噪语义（continuous/noisy semantics）",
+    "典型性与 basic-level categorization",
+    "Bayesian pragmatics 建模"
+  ],
+  "gap_impact": [
+    "GAP-01 在 efficiency layer 被重构：fixed-signal effectiveness 应结合 graded semantic fit 与 communicative robustness 评价，但本文没有观察 meaning formation 本身。",
+    "GAP-03 作为 boundary 被强化：模型高度 current-context-aware，却没有 interaction history、partner-model update 或 learned convention。",
+    "GAP-06 在概念上被部分处理：论文为 informative/robust signaling 提供共同 utility language，但 social meaning 与 embodied robot-state communication 尚未整合。"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text method-and-model audit",
+    "source_type": "author_lab_manuscript",
+    "source_url": "https://alpslab.stanford.edu/papers/2020DegenHawkinsEtAl.pdf",
+    "metadata_url": "https://arxiv.org/abs/1903.08237",
+    "evidence_scope": "problem_theory_three_experiments_norming_behavioral_results_model_comparisons_general_discussion",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

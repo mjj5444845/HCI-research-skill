@@ -1,0 +1,36 @@
+{
+  "id": "X6",
+  "slug": "x6-beyond-local-surprise",
+  "title": "Beyond Local Surprise: Grounded Dialogue as Selective Belief Revision under Referential Uncertainty",
+  "authors": ["Ziming Liu", "Bhanu Chaitanya Jasti", "Ziyang Xu", "Hongyu Wu", "Yi Wu", "Jiqun Liu"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2608.26035",
+  "doi": "10.48550/arXiv.2608.26035",
+  "access_status": "full_text",
+  "publication_status": "preprint_only",
+  "priority": "Important",
+  "one_sentence": "把 grounded dialogue 的 preserve-or-revise 决策显式化为可比较的计算策略，但只提供待人类验证的机制假说。",
+  "problem": "当新 utterance 与累积理解不一致时，grounding system 应何时保留既有解释、何时修订？",
+  "method": "在 PhotoChat 上固定 CLIP perception 与 interaction data，比较四种 turn-level revision policies，并联合报告 retrieval 与 intrinsic grounding dynamics。",
+  "findings": [
+    "仅由 local mismatch 驱动的 DCP-B policy 出现剧烈更新并显著损害 retrieval。",
+    "MULTI-C 产生较有结构的 selective revision，但 retrieval 与 PURE-CORR/FIXED 简单基线处于同一误差范围，不能据此确认其更优。"
+  ],
+  "real_contribution": "将 mismatch、accumulated uncertainty、preservation 与 revision 分离为可操纵的 grounding-system design assumptions。",
+  "biggest_weakness": "无新 human experiment；PhotoChat repair 稀疏，selectivity 又部分由强 rate regularization 和 target revision rate 设定。",
+  "claim_boundary": "只能作为 uncertainty-gated revision 的计算假说；不证明人类 listener 使用该机制，也不构成 conceptual-pact theory 的新实证确认。",
+  "why_researcher_should_care": "为 convention lifecycle 中的 maintain/revise 决策提供可实现组件，也示范 task retrieval 与 grounding dynamics 应分开评估。",
+  "amsc": {
+    "mainline_fit": 7.2,
+    "buckets": ["C", "E"],
+    "stages": ["Grounding", "Adaptation"],
+    "mechanisms": ["belief revision", "grounding maintenance"],
+    "gap_ids": ["GAP-03", "GAP-04"],
+    "master_list_decision": "Candidate — Important / Computational hypothesis"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": ["arXiv v1 submitted 2026-08-26; inside the configured seven-day window.", "Full-text claims audited against Table 1 and the stated experimental setup."],
+  "provenance": "amsc_radar_2026-08-27",
+  "updated_at": "2026-08-27"
+}

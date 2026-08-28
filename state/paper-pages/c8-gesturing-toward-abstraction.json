@@ -19,35 +19,78 @@
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "目前与你未来方向最接近的 anchor paper。它把 repeated collaboration、speech、gesture、physical assembly、AR 和 convention model 连起来，并明确指向 **convention-aware situated intelligent agents**。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "重复的实体协作会同时使用 speech 与 gesture，但既有 convention 研究多为单模态或 2D 任务，尚不能解释 multimodal abstraction 如何演化，以及信息如何在不同 modality 之间重新分配。",
+  "method": "Study 1 招募 146 名 MTurkers（73 dyads）；排除后为 98 人（49 dyads），完成 3 组 tower pair、每组 4 次 text repetition。Study 2 由 40 人（20 dyads）在彼此隔离的 Meta Quest 3 AR 房间中完成 12 次实体 LEGO 协作，记录 speech 与 24-joint hand keypoints。分析包括 mixed models、permutation tests、speech/gesture coding，以及 DSL 与 multimodal RSA simulation。",
+  "findings": [
+    "Online task 的 F1 从 .88 升至 .98，同时每条消息的词数下降；block references 从 7.3 降至 3.6，tower references 从 .6 升至 1.1，dyad 之间的 vocabulary divergence 增加。",
+    "Lab task success 从 74.03% 升至 98.36%；instruction/build time 下降，tower abstraction 更早出现。Gestural abstraction 从第一轮就存在，后期 redundancy 常用于标记 position/orientation 的变化。",
+    "拟合后的 simulation 在描述层面复现了 instruction 缩短与 modality shift；它是 computational scaffold，不是独立的因果验证。"
+  ],
+  "real_contribution": "提供受控 human–human physical task 中 multimodal abstraction/convention evidence、公开 dataset/tool 与可扩展 computational scaffold，是 AMSC 最接近的 baseline anchor。",
+  "biggest_weakness": "human–human only；无 partner swap/pseudo-dyad/history ablation、role reversal、controlled breakdown/repair 或 transfer。小 tower domain、four repetitions、fixed roles，模型部分参数 in-sample fitted 且假设 perfect alignment/uniform priors。",
+  "claim_boundary": "支持 controlled human–human physical assembly 中 multimodal abstractions 的形成与复用；不证明 mutually negotiated human–AI convention、counterfactual history dependence 或 open-world lifelong interaction。",
   "why_researcher_should_care": "目前与你未来方向最接近的 anchor paper。它把 repeated collaboration、speech、gesture、physical assembly、AR 和 convention model 连起来，并明确指向 **convention-aware situated intelligent agents**。",
   "amsc": {
-    "mainline_fit": 9.6,
+    "mainline_fit": 9.8,
     "buckets": [
-      "C"
+      "C",
+      "G",
+      "E"
     ],
     "stages": [
-      "Grounding",
-      "Convention"
+      "Grounding / Common Ground",
+      "Convention Formation",
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "common ground",
-      "convention formation"
+      "Meaning",
+      "Grounding",
+      "Convention",
+      "Adaptation",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-02",
+      "GAP-03",
+      "GAP-04",
+      "GAP-07"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / CORE closest anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "C8",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "How do multimodal signals, procedural abstractions, and modality allocation evolve across repeated collaborative physical tasks, and can a multimodal pragmatic model reproduce those dynamics?",
+  "theory": [
+    "ad-hoc convention",
+    "common ground",
+    "procedural abstraction and chunking",
+    "multimodal redundancy and complementarity",
+    "multimodal RSA"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://arxiv.org/abs/2602.08914",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

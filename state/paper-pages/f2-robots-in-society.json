@@ -2,45 +2,79 @@
   "id": "F2",
   "slug": "f2-robots-in-society",
   "title": "Robots in Society, Society in Robots: Mutual Shaping of Society and Technology as a Framework for Social Robot Design",
-  "authors": [
-    "Selma Šabanović"
-  ],
+  "authors": ["Selma Šabanović"],
   "year": 2010,
   "venue": "International Journal of Social Robotics, 2(4), 439–450",
   "source_url": "https://homes.luddy.indiana.edu/selmas/Sabanovic-IJSR2010.pdf",
   "doi": "10.1007/s12369-010-0066-7",
   "access_status": "full_text",
+  "investigation_status": "full_paper_investigation",
+  "claimed_gap_rq": "social robotics 常以 technological capabilities→社会 impact→用户 acceptance 的线性叙事处理社会问题，掩盖设计中的社会选择、差异影响与用户的 active role。论文问：robotics researchers 如何叙述 robots 与 society 的关系；mutual shaping/co-production 是否能提供更合适的 social-robot design/evaluation framework；哪些 contextual/participatory methods 与之相容？",
+  "theory": [
+    "技术决定论（technological determinism）",
+    "作为社会话语的自主技术（autonomous technology）",
+    "技术与社会的相互塑造（mutual shaping）",
+    "共同生产（co-production）",
+    "技术的社会建构（social construction of technology）",
+    "棘手问题（wicked problems）",
+    "情境化、参与式与 outside-in design"
+  ],
+  "problem": "社会机器人以解决 care、education、companionship 等社会问题为动机，却常把社会 context 推迟到技术完成后的 acceptance/evaluation 阶段；这会把 designers 的文化假设伪装为中性技术选择，并使受影响者只成为 subjects 而不是 shaping participants。",
+  "method": "Empirical discourse analysis plus conceptual/design synthesis。作者在 2005 年分别作为 visiting scholar 进入日本 AIST 与美国 CMU Robotics Institute，并于 2005–2007 年参加 robotics exhibitions/conferences、访谈美日共 40 位 robotics researchers；访谈均以英语进行、引用匿名。论文从 observation/interview discourse 中分析 autonomy、progress、technological fixes 与 acceptance narratives，再用 STS 的 mutual shaping/co-production 文献重释，并综述 situated evaluation、ethnography/outside-in design 与 participatory design 方法。论文未充分报告 interview sampling frame、时长、coding procedure、reflexivity 或 saturation。",
+  "findings": [
+    "研究材料中占主导的 discourse 把 robots 的社会结果主要归因于 technological capabilities，并假设 society 最终会 accept/adapt；社会因素常在 design 前期被当作 externality。",
+    "技术乐观叙事把 robot development 与 social progress 写成近乎必然的线性关系，较少讨论对不同群体的 differential effects、替代方案或技术介入如何重构问题本身。",
+    "social applications 常以 care、aging、education 等 nontechnical problems 为 technological fixes 的正当性，但 problem definition、受影响者的 meanings 与潜在负面后果未获得同等分析。",
+    "作者提出 mutual shaping 替代框架：social/cultural norms 与 values 会进入技术选择，robot deployment 又会改变 practice、meaning 与 social order；因此这一关系应在整个 design process 中反复质询，而非只在末端测 acceptance。",
+    "真实 use context 可能暴露 designers 的 implicit assumptions；social robot 的成功不能只由 task time/technical function 定义，还依赖场景、其他 participants、engagement 与多方 interpretation。",
+    "与该框架一致的方法包括 situated/field evaluation、ethnographic or outside-in analysis，以及让 users/domain stakeholders 早期参与的 participatory design；这些是设计主张与方法建议，不是本文比较实验验证的效果。"
+  ],
+  "claim_evidence_audit": [
+    {"claim": "robotics discourse 由 linear technological determinism 主导。", "evidence": "40 位美日 roboticists 的 interviews、participant observation、公开 exhibits/speeches 与文献中的反复 narrative。", "boundary": "sample construction 与 coding 不透明，不能估计 prevalence，且 2005–2007 的特定 institutions/venues 不代表今日整个 HRI field。"},
+    {"claim": "mutual shaping 比 impact/acceptance model 更适合作为 design framework。", "evidence": "STS theory 与 concrete robotics examples 显示 social assumptions 进入 problem/design/use，deployment 反过来改变 practice。", "boundary": "这是有经验材料支撑的 normative/conceptual argument，不是两个 framework 的 outcome trial。"},
+    {"claim": "participatory/contextual methods 会产生 socially robust robots。", "evidence": "作者连接 existing design cases 与 mutual-shaping logic。", "boundary": "本文没有实施或比较这些方法，不能声称它们必然改善 effectiveness、equity 或 acceptance。"}
+  ],
+  "real_contribution": "把 HRI 的“社会影响/接受度”问题改写为 co-production：机器人不是进入一个固定 culture 后被接受或拒绝，而是在 design、deployment 与 appropriation 中与 norms、values、roles 和 practices 互相塑造。它为 AMSC 提供 anti-essentialist cultural framing 和 stakeholder/context method rationale。",
+  "biggest_weakness": "经验审计的可复核性不足：没有系统呈现 40 人 sample、访谈协议、coding/analysis、研究者 positionality 或反例，因而“field 中占主导”的强度难以判断；同时 proposed methods 的 superiority 未在本文被实证比较。",
+  "attack": [
+    {"severity": "major_concern", "issue": "跨美国/日本材料被用于整体 field discourse critique，但论文不做 country comparison，也不能据此推断 national culture differences。"},
+    {"severity": "minor_concern", "issue": "对 controlled experiment 的批评有时过宽；实验与 field/participatory work 可互补，不应构成方法二选一。"},
+    {"severity": "possible_gap_exposed", "issue": "需要追踪具体 robot signal/behavior 的 meaning 如何被 stakeholders 与 designers 在 repeated use 中共同修订，而非只测 pre/post acceptance。"}
+  ],
+  "claim_boundary": "本文支持：在所观察的 2005–2007 robotics settings 中存在显著 technological-determinist discourse，并提供 mutual shaping 的有力框架。本文不支持：量化这种 discourse 在整个 HRI 的比例、美国与日本的文化差异、participatory design 必然改善 outcomes，或任何具体 multimodal convention 已形成。",
   "priority": "Must Read",
-  "one_sentence": "非常重要的社会技术 framing。不是“culture 对 robot preference 有影响”，而是机器人和社会实践是相互塑造的。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "非常重要的社会技术 framing。不是“culture 对 robot preference 有影响”，而是机器人和社会实践是相互塑造的。",
+  "one_sentence": "F2 把“society 接受 robot”反转为 robot、design institutions 与 social practice 持续 co-produce meaning 的问题。",
+  "why_researcher_should_care": "它防止 AMSC 落入“Chinese vs American preference”或“robot feature 造成 attitude”的浅层模型：更好的单位是 interaction history、institutional setting、communicative priors、stakeholder roles 与可被重新协商的 meaning。",
   "amsc": {
-    "mainline_fit": 7.9,
-    "buckets": [
-      "F"
-    ],
-    "stages": [
-      "Meaning",
-      "Adaptation"
-    ],
-    "mechanisms": [
-      "social context",
-      "appropriation"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "mainline_fit": 8.1,
+    "buckets": ["F"],
+    "stages": ["Social Meaning / Pragmatics", "Personalization / Co-adaptation", "Situated Adaptive Communication"],
+    "mechanisms": ["Meaning", "Adaptation", "Embodied Communication"],
+    "gap_ids": ["GAP-01", "GAP-06"],
+    "gap_impact": "强化 GAP-01 与 GAP-06 的情境及制度 boundary：meaning/adaptation 应被研究为 situated practice 中的 co-production，不能化约为固定 culture variable 或 designer-authored signal。本文不提供 convention diagnostic，也不关闭任一缺口。",
+    "master_list_decision": "Baseline v1.0 — 保留；CORE sociotechnical/cultural framing",
+    "exam_impact": "建议过滤进入 STS/culture framing 题：比较 technological determinism/acceptance 与 mutual shaping，并指出该框架对 convention formation 仍未操作化的部分。",
+    "next_project_priority": "将 stakeholder roles 与 institutional context 纳入 study design，同时用可证伪的 interaction-level meaning-change measures 配合 mutual-shaping framing。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 审读 author manuscript 全文：摘要/引言 pp.1–2；经验语料 footnote 与 technology-discourse analysis pp.2–7；mutual-shaping/design-method argument pp.7–11；结论 p.11。",
+    "论文结合原创 qualitative material 与 theoretical/design synthesis；本记录没有把 recommendations 重标为 empirical findings。",
+    "论文对姓名与引语匿名；本记录不推断受访者身份或国家差异。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；未推断或修改 researcher progress。"
   ],
   "source_list_id": "F2",
-  "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "provenance": "user_baseline_v1.0 + full_text_primary_source_audit",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {"source_availability": "full_text", "agent_investigation": "full_paper_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text qualitative-and-conceptual audit",
+    "source_type": "author_institutional_repository_full_text",
+    "source_url": "https://homes.luddy.indiana.edu/selmas/Sabanovic-IJSR2010.pdf",
+    "metadata_crosscheck": ["https://doi.org/10.1007/s12369-010-0066-7"],
+    "evidence_scope": "full_empirical_corpus_discourse_analysis_theory_design_methods_and_conclusion",
+    "degraded": false
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

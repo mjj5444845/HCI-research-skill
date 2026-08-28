@@ -1,7 +1,7 @@
-version: v1.1
+version: v1.3
 baseline_count: 41
-verified_at: 2026-08-26
-note: "The 41-paper baseline is user-defined; five search-discovered candidates are tracked separately."
+verified_at: 2026-08-27
+note: "The 41-paper baseline is user-defined; twelve evidence-audited candidates are tracked separately. Top-20 Agent investigation is complete, while researcher reading/mastery remains untracked."
 categories:
   A: "Social / Multimodal / Informal Expression"
   B: "Pragmatics / Representation / Communicative Efficiency"
@@ -14,11 +14,15 @@ papers:
   - id: A1
     slug: a1-ai-mediated-communication
     title: "AI-Mediated Communication: Definition, Research Agenda, and Ethical Considerations"
-    decision: "Baseline v1.0 — retained"
+    decision: "Baseline v1.0 — retained / Important background; definition excludes direct HAI"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: A2
     slug: a2-textual-paralanguage
     title: "Textual Paralanguage and Its Implications for Marketing Communications"
-    decision: "Baseline v1.0 — retained"
+    decision: "Baseline v1.0 — retained / Supplementary construct anchor"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: A3
     slug: a3-interpreting-emoji-pragmatics
     title: "Interpreting Emoji Pragmatics"
@@ -31,6 +35,8 @@ papers:
     slug: a5-multimodal-parallel-architecture
     title: "A Multimodal Parallel Architecture: A Cognitive Framework for Multimodal Interactions"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: A6
     slug: a6-puppetchat
     title: "PuppetChat: Fostering Intimate Communication through Bidirectional Actions and Micronarratives"
@@ -39,14 +45,20 @@ papers:
     slug: b1-pragmatic-language-interpretation
     title: "Pragmatic Language Interpretation as Probabilistic Inference"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: B2
     slug: b2-rational-speech-act-framework
     title: "The Rational Speech Act Framework"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: B3
     slug: b3-pragmatic-inference-visual-abstraction
     title: "Pragmatic Inference and Visual Abstraction Enable Contextual Flexibility During Visual Communication"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: B4
     slug: b4-when-redundancy-is-useful
     title: "When Redundancy Is Useful: A Bayesian Approach to ‘Overinformative’ Referring Expressions"
@@ -55,34 +67,53 @@ papers:
     slug: c1-referring-as-collaborative-process
     title: "Referring as a Collaborative Process"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: C2
     slug: c2-grounding-in-communication
     title: "Grounding in Communication"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: C3
     slug: c3-conceptual-pacts
     title: "Conceptual Pacts and Lexical Choice in Conversation"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: C4
     slug: c4-repeated-reference-games
     title: "Characterizing the Dynamics of Learning in Repeated Reference Games"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: C5
     slug: c5-graphical-convention-formation
-    title: "Graphical Convention Formation During Visual Communication"
-    decision: "Baseline v1.0 — retained"
+    title: "Disentangling contributions of visual information and interaction history in the formation of graphical conventions"
+    decision: "Baseline v1.0 — retained / EMPIRICALLY_SUPERSEDED_BY C6"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+    alternate_title: "Graphical Convention Formation During Visual Communication"
+    evidence_independence: dependent_on_c6
+    counts_as_independent_source: false
   - id: C6
     slug: c6-visual-resemblance-interaction-history
     title: "Visual Resemblance and Interaction History Jointly Constrain Pictorial Meaning"
-    decision: "Baseline v1.0 — retained"
+    decision: "Baseline v1.0 — retained / canonical visual-convention anchor"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: C7
     slug: c7-shared-procedural-abstractions
     title: "Learning to Communicate about Shared Procedural Abstractions"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: C8
     slug: c8-gesturing-toward-abstraction
     title: "Gesturing Toward Abstraction: Multimodal Convention Formation in Collaborative Physical Tasks"
-    decision: "Baseline v1.0 — retained"
+    decision: "Baseline v1.0 — retained / CORE closest multimodal-physical anchor"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: D1
     slug: d1-nonverbal-teamwork
     title: "Effects of Nonverbal Communication on Efficiency and Robustness in Human-Robot Teamwork"
@@ -103,14 +134,20 @@ papers:
     slug: d5-legibility-and-predictability
     title: "Legibility and Predictability of Robot Motion"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: D6
     slug: d6-designing-robots-with-movement
     title: "Designing Robots with Movement in Mind"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: D7
     slug: d7-social-eye-gaze-review
     title: "Social Eye Gaze in Human-Robot Interaction: A Review"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: D8
     slug: d8-legible-multimodal-state-intent
     title: "Legible and Intuitive Multi-modal Robot State and Intent Communication Validated in Online and Real-world Studies"
@@ -123,14 +160,20 @@ papers:
     slug: e1-long-term-social-robots-survey
     title: "Social Robots for Long-Term Interaction: A Survey"
     decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: E2
     slug: e2-human-robot-mutual-adaptation
     title: "Human-Robot Mutual Adaptation in Collaborative Tasks: Models and Experiments"
-    decision: "Baseline v1.0 — retained"
+    decision: "Baseline v1.0 — retained / adjacent computational adaptation anchor"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: E3
     slug: e3-continual-adaptation-machine-communication
     title: "Continual Adaptation for Efficient Machine Communication"
-    decision: "Baseline v1.0 — retained"
+    decision: "Baseline v1.0 — retained / CORE cross-theme bridge"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
   - id: E4
     slug: e4-designing-robots-long-term
     title: "Designing Robots for Long-Term Social Interaction"
@@ -196,8 +239,41 @@ candidates:
     slug: x5-social-context-of-hri
     title: "The Social Context of Human–Robot Interactions"
     decision: "Candidate — Important"
+  - id: X6
+    slug: x6-beyond-local-surprise
+    title: "Beyond Local Surprise: Grounded Dialogue as Selective Belief Revision under Referential Uncertainty"
+    decision: "Candidate — Important / Computational hypothesis"
+  - id: X7
+    slug: x7-embodied-world-model-alignment
+    title: "Embodied Multi-Agent Coordination by Aligning World Models Through Dialogue"
+    decision: "Candidate — Important / Embodied method"
+  - id: X8
+    slug: x8-success-cost-convention-formation
+    title: "Success and Cost Elicit Convention Formation for Efficient Communication"
+    decision: "Candidate — Must Read / First-run recovery"
+  - id: X9
+    slug: x9-aligned-not-partner-specific
+    title: "Aligned but Not Partner-Specific: Distinguishing How Multimodal LLM Agents Succeed in Reference Games Without Human-Like Conventions"
+    decision: "Candidate — Must Read / First-run recovery"
+  - id: X10
+    slug: x10-llms-people-conventions
+    title: "LLMs and People Both Learn to Form Conventions—Just Not with Each Other"
+    decision: "Candidate — Must Read / First-run recovery"
+  - id: X11
+    slug: x11-common-ground-benchmark
+    title: "A Benchmark to Assess Common Ground in Human-AI Collaboration"
+    decision: "Candidate — Important / First-run recovery"
+  - id: X12
+    slug: x12-partners-to-populations
+    title: "From Partners to Populations: A Hierarchical Bayesian Account of Coordination and Convention"
+    decision: "Candidate — Must Read / Recovered theory anchor"
 change_log:
   - date: 2026-08-26
     change: "Imported and source-verified the 41-paper user baseline; corrected B3 year, C7 author order, and E4 first author."
   - date: 2026-08-26
     change: "Added five separately labeled candidates from a bounded Missing Paper Attack; GAP-02 and GAP-03 should be treated as partially addressed."
+  - date: 2026-08-27
+    change: "Research Radar v1.2 added two in-window candidates and five first-run recovery candidates after DOI/title/arXiv deduplication and full-text evidence audit; no baseline paper was removed or reprioritized."
+
+  - date: 2026-08-27
+    change: "Top-20 baseline full-text investigation completed for C1, C2, C3, B1, B2, B3, C4, C5, C6, C7, C8, A5, A2, A1, D5, D6, D7, E1, E2, and E3; C5 was marked empirically dependent on C6 and readiness was kept separate from researcher mastery."

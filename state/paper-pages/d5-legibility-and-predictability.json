@@ -14,34 +14,68 @@
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "必须掌握 legibility 与 predictability 的区别；它是“机器人如何通过行为帮助人推断 intent”的基础。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "HRI 常把 predictable motion 与 legible intent 混为一谈；两者可能来自相反的 inference direction 并发生冲突。",
+  "method": "为 point robot、HERB 与 human reaching 制作 predictable/legible videos；432 US MTurk recruits，含 predictability ratings/path drawing 与 fully-between legibility stop-time/accuracy subexperiments；另 exploratory local n=5 HERB expectation study。",
+  "findings": [
+    "predictable trajectory overall 更符合 expectation，F(1,310)=21.88,p<.001，但 character interaction 存在；HERB 不支持该 effect，human post-hoc adjusted p=.28 与正文叙述不一致。",
+    "legible trajectory 带来更早且更正确的 goal inference，F(1,241)=5.62,p=.019；HERB expectations variation 显示 cost model observer-dependent。"
+  ],
+  "real_contribution": "建立 enduring conceptual/formal distinction，并以行为证据显示 motion optimized for goal inference need not be the expected trajectory。",
+  "biggest_weakness": "video、hand-designed two-goal trajectories、无真实 collaboration/longitudinal adaptation；cost model 对 HERB misspecified，且 human post-hoc reporting 有不一致。",
+  "claim_boundary": "支持受控 goal-directed motion 中 legibility/predictability 区分；不覆盖 social meaning、gaze/gesture、history-based learning 或 convention formation。",
   "why_researcher_should_care": "必须掌握 legibility 与 predictability 的区别；它是“机器人如何通过行为帮助人推断 intent”的基础。",
   "amsc": {
-    "mainline_fit": 8.1,
+    "mainline_fit": 8.5,
     "buckets": [
-      "D"
+      "D",
+      "E"
     ],
     "stages": [
-      "Embodied Communication"
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "legibility",
-      "nonverbal communication"
+      "Meaning",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-03",
+      "GAP-04",
+      "GAP-06"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / CORE legibility anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "D5",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "goal→trajectory expectation 与 partial trajectory→goal inference 是否 distinct/conflicting，并可被形式化和行为验证？",
+  "theory": [
+    "rational action and inverse planning",
+    "predictability P(trajectory|goal)",
+    "legibility P(goal|partial trajectory)",
+    "observer cost model"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://publications.ri.cmu.edu/legibility-and-predictability-of-robot-motion",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

@@ -12,42 +12,89 @@
     "Bernhard Johannes Schmitt"
   ],
   "year": 2026,
-  "venue": "arXiv preprint",
+  "venue": "arXiv preprint v1 (no peer-reviewed venue stated or verified as of 2026-08-27)",
   "source_url": "https://arxiv.org/abs/2607.13696",
   "doi": "10.48550/arXiv.2607.13696",
   "access_status": "full_text",
-  "publication_status": "preprint_only",
-  "last_verified": "2026-08-26",
+  "publication_status": "preprint_only; no acceptance_peer_review_or_venue_claim_verified",
+  "last_verified": "2026-08-27",
+  "arxiv_version": "v1",
+  "arxiv_submitted_at": "2026-07-15",
+  "publication_doi": null,
   "priority": "Important",
-  "one_sentence": "把 uncertainty 转化为系统化 expressive motion vocabulary。非常适合与你未来的 **informal visual vocabulary** 做理论和实验比较。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "把 uncertainty 转化为系统化 expressive motion vocabulary。非常适合与你未来的 **informal visual vocabulary** 做理论和实验比较。",
+  "one_sentence": "该 preprint 把 robot perceptual uncertainty 编码为 Commitment–Vigilance、5 种 motion primitives 与 11 个 descriptors，但人类证据只验证了 animator-authored videos 的 label recognition/intensity，尚未连接真实 uncertainty 或协作后果。",
+  "problem": "Human collaborators 不仅需知道 robot intent，还需判断它对环境是 confident、information-seeking、hesitant 还是 fearful；现有 expressive-motion 工作缺少一个把 perceptual uncertainty、Laban movement quality、motion primitives 和可计算 kinematic descriptors 连起来的统一框架。",
+  "method": "理论层面以 Laban Movement Analysis 的 Weight/Time/Space/Flow 建立 2D Commitment–Vigilance state space，推导 confident、curious、hesitant、fearful、inactive 状态，再用 approach、pause、retreat、exploration、oscillation 五 primitives 和 11 个可计算 descriptors 表示。IRB-approved remote video survey 共 74 responses，排除 18 incomplete+1 inconsistent 后 N=55。Part A 同时循环呈现 4 个 animator-designed base trajectories，先自由描述，再从 confident/curious/hesitant/fearful/none/other 中选择并评 5-point intensity；Part B 将每个 relevant descriptor 一次只改一个，side-by-side 选更高 intensity variant。主要使用 chi-square goodness-of-fit 与 standardized residuals。",
+  "findings": [
+    "四个 base trajectories 的 6-category response distributions 均偏离 uniform chance（各 p<.001,Cohen's w=1.05–1.87）；post-hoc residual 对每个 trajectory 只找到一个 dominant intended label：confident、curious、hesitant、fearful。",
+    "更短 pause 与更高 approach acceleration 被判为更 confident；更长 pause、更多/更远 retreats 和更慢 approach 被判为更 hesitant/fearful，说明 temporal-spatial cue 组合是主要 perceptual carriers。",
+    "Curiosity intensity 随更大 tilt amplitude、horizontal/vertical gaze angle 与更快 approach 而增加；这些结果与 information-seeking/exploration 的设计解释一致。",
+    "H2 只部分支持：curiosity 的 pause duration/tilt speed、hesitance/fear 的 retreat acceleration，fear 的 shiver amplitude 以及 hesitance 的 tilt amplitude 没有产生清晰 dominant intensity judgment，显示不是每个 descriptor 都可单独可感知。"
+  ],
+  "real_contribution": "它的真正价值是一个可操作的 motion-vocabulary scaffold：把抽象 Laban factors 经 Commitment–Vigilance 映射到 primitives 与 measurable descriptors，并用 one-descriptor-at-a-time 视频比较初步鉴别哪些参数能改变感知 intensity。这是 design/parameterization contribution，还不是 autonomous uncertainty communication system。",
+  "biggest_weakness": "论文以手工、animator-authored trajectory 的 intended-label recognition 来支持“perceptual uncertainty communication”，但没有操作或测量 robot 真实 perceptual uncertainty，也没有 live/closed-loop collaboration、task decision、safety 或信任后果。参与者可循环观看并并排比较，加上大量 chi-square/post-hoc tests 未见 multiplicity correction，效果容易高估。",
+  "claim_boundary": "支持 N=55 remote video observers 可区分本研究手工设计的四种 manipulator-motion profiles，并对部分 descriptor changes 给出一致 intensity judgments；不支持 framework 可从 live uncertainty 自动生成安全动作、human interpretation 校准了真实 uncertainty，或结果可迁移到不同 robots/tasks/cultures 及 history-adaptive conventions。",
+  "why_researcher_should_care": "D9 为 AMSC 提供了一个可与 informal visual vocabulary 对话的 embodied parameter vocabulary，同时迫使主线区分三层：designer-intended label、observer-perceived meaning、与真实 internal uncertainty 校准的 functional meaning。只完成前两层不等于 grounding 或 adaptive communication。",
+  "gap_impact": {
+    "GAP-04": "PARTIALLY_ADDRESSED 的 descriptor-level 先例：研究分开 category recognition 与 intensity，并尝试 one-at-a-time parameter tests；但仍未区分 perceived label、true uncertainty calibration、task success 和 shared convention。",
+    "GAP-06": "REDEFINED 证据：functional uncertainty 已可用 affect-like expressive motion vocabulary 传达，所以 social/functional 并非绝对分离；残余问题是校准、权衡、interaction history 与 partner-specific adaptation。"
+  },
   "amsc": {
-    "mainline_fit": 8.1,
+    "mainline_fit": 8.4,
     "buckets": [
       "D"
     ],
     "stages": [
-      "Embodied Communication"
+      "Social Meaning / Pragmatics",
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "legibility",
-      "nonverbal communication"
+      "Meaning",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-04",
+      "GAP-06"
+    ],
+    "master_list_decision": "Baseline v1.0 保留 — emerging preprint method anchor；venue status 必须保持 provisional"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "2026-08-27 审计 arXiv v1 全文；arXiv 显示 Submitted on 2026-07-15，Comments 仅记录 11 pages, 8 figures，未声称 acceptance 或 peer-reviewed venue。",
+    "作者 Souravik Dutta 的官方 publications page 截至本次核验将该文列于 Preprints；截至 2026-08-27 未核验到另一 venue 或 publication DOI。",
+    "当前 DOI 10.48550/arXiv.2607.13696 是 arXiv 由 DataCite 签发的 DOI，不是 peer-reviewed publication DOI。",
+    "方法、结果、null descriptor effects、limitations 与 AMSC 影响均从 v1 全文重建，未把标题或旧 relevance note 当作证据。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者仍为未跟踪。"
   ],
   "source_list_id": "D9",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "能否用 Laban-derived Commitment–Vigilance 模型、motion primitives 与可计算 descriptors 表达多种 perceptual-uncertainty states，并让观察者识别类别与强度？",
+  "theory": [
+    "Laban Movement Analysis 的 Effort factors",
+    "Commitment–Vigilance 二维行为状态空间",
+    "appraisal theory 中的 certainty 与 coping potential",
+    "approach–avoidance 与 active perception",
+    "expressive motion 与 robot uncertainty communication"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED_PREPRINT",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "official_repository_preprint_v1_plus_author_publication_page",
+    "source_url": "https://arxiv.org/abs/2607.13696",
+    "secondary_primary_source_url": "https://www.souravikdutta.com/publications",
+    "evidence_scope": "从 v1 全文重建 argument、framework、method、results、null descriptor effects、limitations 与 time-sensitive bibliographic status",
+    "degraded": false,
+    "status_caveat": "只核验到 arXiv preprint v1 与作者页 Preprints 列表；未核验 acceptance、peer review、venue 或 publication DOI。"
+  },
+  "worth_sharing": false
 }

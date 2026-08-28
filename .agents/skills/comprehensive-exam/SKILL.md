@@ -70,4 +70,6 @@ A new core paper must update the exam knowledge base if it:
 
 ## Dashboard update contract
 
-After every AMSC exam workflow, update `research-programs/amsc/state/comprehensive_exam.yaml` and `research-programs/amsc/state/workflow_dashboard.json`. Keep source availability, Agent investigation readiness, and researcher reading/mastery as separate dimensions. Automation may update the first two; researcher progress changes only from explicit user actions or answers. Append a provenance-bearing `workflow_runs` entry and mark dependent questions/claims stale when upstream evidence changes.
+The exam is a short-term downstream view of the long-term AMSC research program. It does not own paper facts, field claims, gaps, or the research trajectory. Read those upstream objects and select only what serves the current exam scope.
+
+After every AMSC exam workflow, update `research-programs/amsc/state/comprehensive_exam.yaml` and the exam projection in `research-programs/amsc/state/workflow_dashboard.json`. Keep source availability, Agent investigation readiness, and researcher reading/mastery as separate dimensions. Automation may update the first two; researcher progress changes only from explicit user actions or answers. Append provenance and mark dependent questions/claims stale when upstream evidence changes; never rewrite upstream research state merely to make the exam narrative cleaner.

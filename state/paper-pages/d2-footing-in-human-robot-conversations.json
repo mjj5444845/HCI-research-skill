@@ -15,35 +15,71 @@
   "doi": "10.1145/1514095.1514109",
   "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "gaze 不只是 attention marker，还可以组织 social roles 和 conversational participation。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "gaze 不只是 attention marker，还可以组织 social roles 和 conversational participation。",
+  "one_sentence": "Robovie 只用 gaze allocation 与 turn-yielding cues 就使人们按 addressee、bystander 或 overhearer 身份参与，并改变 groupness 与 liking。",
+  "problem": "Robot gaze 已被用于 turn-taking 和 listening，但实体 robot 能否用 gaze 建立不同 conversational participant roles，并产生 participation、person-perception 和 group-formation 后果，尚未被直接验证。",
+  "method": "先观察 4 个 all-male human triads 在三种 footing 结构中的 gaze，但只详细分析最流畅的 1 组，据此设计 Robovie R2 的 greeting/body/turn-yielding gaze。随后进行 3-condition between-subjects laboratory study：72 名 18–24 岁日本男大学生组成 36 dyads，robot 扮演 scripted travel agent，通过 gaze 分配两人为 addressee+overhearer、addressee+bystander 或 two addressees。用 speaking turns/time、8-item recall、7-point self-report 及录像观察评估，主要使用含 dyad ID random effect 与 partner covariate 的 ANCOVA/pairwise tests。",
+  "findings": [
+    "Participants 正确解读 307/311（98.71%）turn-yielding gaze signals，并有 302/311（97.11%）次按 cue 接话；addressees 比 bystanders/overhearers 接更多 turns 且说得更久（分别 F(1,30)=17.58,p<.01 与 F(1,30)=7.41,p=.01）。",
+    "Participant role 未显著改变 8-item information recall，但 addressees 报告更高 attentiveness（F(1,29)=12.90,p<.01）；conversation topic 而非 role 显著影响 recall。",
+    "Acknowledged addressees/bystanders 比 ignored overhearers 更喜欢 robot（F(1,30)=7.35,p=.01）；addressees 比非参与者报告更强 groupness（F(1,30)=8.95,p<.01），但 3 trials 中 addressees 因 robot 忽略同伴而主动转交 turns，显示人也会修复 robot 施加的 footing。"
+  ],
+  "real_contribution": "将 Goffman footing 与 human conversational gaze 观察转化为实体 robot 可执行的 gaze design，并以行为数据证明 robot gaze 不只标记 attention，还能因果性地组织 conversational participation 和 relational inclusion。",
+  "biggest_weakness": "Gaze design 只精细取自 4 个观察 triads 中被主观选为最流畅的 1 个，验证样本又是单一文化、全男、年龄狭窄的 36 dyads；scripted Wizard-of-Oz turn control 和有限 interactivity 使结果不能外推到 fluent mixed-gender/cross-cultural conversation。",
+  "claim_boundary": "支持在受控三人旅行咨询情境中，fixed designer-authored gaze cues 能分配 conversational roles 并影响 participation、liking 与 groupness；不支持信息学习改善，也未测试模态组合、partner-specific learning、shared-history dependence、convention formation 或 longitudinal adaptation。",
+  "why_researcher_should_care": "D2 是 GAP-06 的重要边界证据：同一 gaze system 同时承担 functional participation control 与 social inclusion meaning，所以 AMSC 不应把 robot-state legibility 与 relational meaning 描绘成两个从未相交的领域。",
+  "gap_impact": {
+    "GAP-06": "REDEFINED 证据：gaze 在同一交互中既分配 functional participation role，又改变 liking/groupness，因而 social meaning 与 functional communication 并非绝对分离；未解的是它们如何随 shared history 共同适应。"
+  },
   "amsc": {
-    "mainline_fit": 8.1,
+    "mainline_fit": 8.4,
     "buckets": [
       "D"
     ],
     "stages": [
-      "Embodied Communication"
+      "Social Meaning / Pragmatics",
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "legibility",
-      "nonverbal communication"
+      "Meaning",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-06"
+    ],
+    "master_list_decision": "Baseline v1.0 保留 — CORE gaze-footing anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "2026-08-27 已审计作者主页托管的 HRI'09 全文。",
+    "方法、结果、recall null result 与 limitations 均从全文重建；未把 baseline relevance note 当作证据。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者仍为未跟踪。"
   ],
   "source_list_id": "D2",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "实体 robot 能否用理论支撑的 gaze cues 分配 addressee、bystander 与 overhearer footing，且这些角色是否改变 participation、recall、liking 与 groupness？",
+  "theory": [
+    "Goffman 的 footing 与 participation structure",
+    "conversational gaze 与 turn-yielding",
+    "person perception 与 group formation",
+    "social acknowledgement 与 ostracism"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "author_hosted_full_text",
+    "source_url": "https://pages.cs.wisc.edu/~bilge/pubs/2009/HRI09-Mutlu-Footing.pdf",
+    "evidence_scope": "从全文重建 argument、method、results、nulls、limitations 与 AMSC mapping",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

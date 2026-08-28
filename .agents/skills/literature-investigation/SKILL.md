@@ -174,4 +174,4 @@ Always determine whether new work changes:
 - Adaptation
 - Embodied Communication
 
-After an AMSC run changes the literature landscape, synchronize the evidence-backed changes and temporal update entry in `research-programs/amsc/state/workflow_dashboard.json`. Claims lacking finding-level evidence belong in the exam synthesis queue or `CANNOT_CLAIM`, not in the public field-known set.
+After an AMSC run changes the literature landscape, synchronize evidence-backed changes to the long-term research program, Current State of Field, Gap Registry, Research Graph, next-question priority, and the public projection in `research-programs/amsc/state/workflow_dashboard.json`. The exam knowledge base is a downstream filtered view: update it only when the changed landscape directly affects an exam theme, anchor, or synthesis claim. Claims lacking finding-level evidence belong in a validation queue or `CANNOT_CLAIM`, not in the public field-known set.

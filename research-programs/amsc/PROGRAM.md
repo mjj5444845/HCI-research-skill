@@ -360,14 +360,16 @@ Reject papers with only superficial keyword overlap.
 
 # Persistent Research Intelligence Objects
 
-The program maintains four synchronized objects:
+The long-term research program maintains four primary synchronized objects:
 
 1. **Master Literature List**
 2. **Current State of the Field**
 3. **Research Gap Registry**
-4. **Comprehensive Exam Knowledge Base**
+4. **Research Graph and next-question priority**
 
-Every meaningful new paper should update these objects instead of producing only a one-off summary.
+Every meaningful new paper should evaluate updates to these primary objects instead of producing only a one-off summary.
+
+The **Comprehensive Exam Knowledge Base** is a short-term downstream projection. It selects from the long-term program state when a paper, claim, gap, or theory directly affects the current exam scope. It must not become the organizing center of Research Radar, Paper Investigation, Literature Investigation, Idea Development, or Study Design.
 
 ## Master Literature List
 
@@ -446,6 +448,8 @@ Every synthesis statement should carry evidence strength:
 Never present speculative synthesis as established fact.
 
 ## Comprehensive Exam
+
+The exam is one time-bounded use of the research program. Paper facts, field claims, gaps, and research priorities remain owned by their upstream persistent objects; the exam view filters them into reading, writing, and oral-preparation structures.
 
 Exam title:
 

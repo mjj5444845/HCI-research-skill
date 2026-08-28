@@ -8,39 +8,74 @@
   ],
   "year": 2014,
   "venue": "Journal of Human-Robot Interaction, 3(1), 91–122",
-  "source_url": "https://doi.org/10.5898/JHRI.3.1.Hoffman",
+  "source_url": "https://hrc2.io/assets/pdfs/papers/HoffmanJuJHRI14.pdf",
   "doi": "10.5898/JHRI.3.1.Hoffman",
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "把 movement 本身理解成 expressive / communicative design material。你的视觉语言以后必须与 motion literature 对话，而不是单独悬浮在机器人身上。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "HRI 设计常把 motion 当作物理执行，expressivity 被后加或忽视，但使用者持续从运动推断 intent、state、attention、mood、personality 与 capability。",
+  "method": "movement-centric design synthesis，使用 animation、skeletal/Wizard-of-Oz prototypes、video 与 interactive DoF exploration，综合 Shimon、Travis、telepresence robot 与 PR2/service-robot cases；不是统一预注册实验。",
+  "findings": [
+    "少量 strategic DoF 可让非拟人机器人通过 beat、eye contact、breathing/blinking 等表达 turn-taking、attention 与 engagement。",
+    "telepresence 中 gesture 与 proxy motion 一致可改善理解；PR2 video studies 报告 anticipation 提高 intent readability/approachability，reaction movement 提高 perceived smartness/confidence。"
+  ],
+  "real_contribution": "建立 movement-first HRI design repertoire，论证 robot motion 同时是 task action 与 social/communicative signal。",
+  "biggest_weakness": "总体论点无统一因果检验；部分效果来自 component/video studies，PR2 未完成实体部署，对 acceptance/real-world adoption 的外推较强。",
+  "claim_boundary": "支持 designer-authored expressive motion 与 prototyping；不证明 partner-specific meaning、grounding、common ground、convention、co-adaptation 或 longitudinal learning。",
   "why_researcher_should_care": "把 movement 本身理解成 expressive / communicative design material。你的视觉语言以后必须与 motion literature 对话，而不是单独悬浮在机器人身上。",
   "amsc": {
-    "mainline_fit": 8.1,
+    "mainline_fit": 7.9,
     "buckets": [
       "D"
     ],
     "stages": [
-      "Embodied Communication"
+      "Social Meaning / Pragmatics",
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "legibility",
-      "nonverbal communication"
+      "Meaning",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-05",
+      "GAP-06"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / embodied design-method anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "D6",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "如何把 movement 与 morphology、interaction、physical affordance 同步设计为 communicative material？",
+  "theory": [
+    "kinesics",
+    "proxemics",
+    "physical and socially constructed affordance",
+    "animacy and intent attribution",
+    "character-animation principles",
+    "Theory of Mind"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://hrc2.io/assets/pdfs/papers/HoffmanJuJHRI14.pdf",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

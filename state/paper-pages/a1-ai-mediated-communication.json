@@ -12,37 +12,68 @@
   "source_url": "https://academic.oup.com/jcmc/article/25/1/89/5714020",
   "doi": "10.1093/jcmc/zmz022",
   "access_status": "full_text",
-  "priority": "Must Read",
+  "priority": "Important",
   "one_sentence": "建立 AI 与 communication research 的大框架。虽然原始 AI-MC 主要讨论 AI 介入 human–human communication，但非常适合成为你从 social computing 走向 human–AI communication 的理论起点。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "传统 CMC 假定 technology 传递 message 且 human 保留 agency；AI 代表 communicator 修改、增强或生成 message，改变 agency 与 mediation assumptions。",
+  "method": "概念 definition 与 narrative agenda synthesis；没有原创 empirical study。定义聚焦 human–human interpersonal communication where AI acts on behalf of a communicator，并明确排除 direct human–agent HMC 与 feed/ranking algorithms。",
+  "findings": [
+    "该文没有原创 findings；它整理 agency/autonomy/orientation、disclosure、alignment/adaptation、trust、relationship、bias 等研究问题。"
+  ],
+  "real_contribution": "提供 AI-MC 边界词汇与 multi-level agenda，帮助区分 AI mediation 与 direct human–agent communication。",
+  "biggest_weakness": "不属于 direct embodied HAI/HRI，且是 pre-generative-AI landscape；illustrative synthesis 不能作为 specific effects 或 current field gaps 的证据。",
+  "claim_boundary": "只能作为 boundary/agenda paper；其 AI-MC 定义明确排除 AMSC 的核心 direct human–embodied-AI interaction。",
   "why_researcher_should_care": "建立 AI 与 communication research 的大框架。虽然原始 AI-MC 主要讨论 AI 介入 human–human communication，但非常适合成为你从 social computing 走向 human–AI communication 的理论起点。",
   "amsc": {
-    "mainline_fit": 7.8,
+    "mainline_fit": 5.4,
     "buckets": [
-      "A"
+      "A",
+      "F"
     ],
     "stages": [
-      "Meaning",
-      "Embodied Communication"
+      "Social Meaning / Pragmatics"
     ],
     "mechanisms": [
-      "social meaning",
-      "multimodal expression"
+      "Meaning"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-06"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / supplementary background"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "A1",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "如何定义 AI-mediated communication，并组织其 design、language、interpersonal、relational 与 ethical research agenda？",
+  "theory": [
+    "AI-mediated communication",
+    "agency",
+    "autonomy",
+    "orientation",
+    "disclosure",
+    "alignment and adaptation"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://academic.oup.com/jcmc/article/25/1/89/5714020",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

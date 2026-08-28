@@ -134,7 +134,7 @@ New components:
 - persistent Master Literature List state
 - persistent Gap Registry
 - persistent Current State of Field
-- persistent Comprehensive Exam KB
+- downstream Comprehensive Exam KB (filtered from the long-term program state)
 - persistent Research Graph
 - `research-program-guardrail`
 - `comprehensive-exam`
@@ -171,7 +171,7 @@ npm run preview
 
 AMSC 还有三个数据驱动页面：`/field-map/` 展示 cumulative field claims 与 Gap Registry，`/exam/` 展示 comprehensive exam 的六主题、Top 20 与写作准备，`/program/` 展示 Meaning → Grounding → Convention → Adaptation → Embodied Communication 研究主线及反馈关系。它们读取 `research-programs/amsc/state/workflow_dashboard.json`；相关 research workflow 完成后必须同步这一状态，但不得自动推断研究者已经阅读或掌握论文。
 
-AMSC 的 41 篇 `Master Literature List v1.0` 原文保存在 `research-programs/amsc/imports/`。运行 `npm run import:literature` 会重建 41 个 baseline 记录及 5 个独立标记的 search candidates，并同步 `research-programs/amsc/state/master_literature.yaml`。候选不会静默并入用户定义的 baseline。
+AMSC 的长期研究主线是 source of truth：Research Radar、Paper/Literature Investigation、Idea Development 与 Study Design 先更新论文、领域状态、Gap、Research Graph 和下一步研究问题；Comprehensive Exam 只筛选与当前六主题、anchor、写作或口试直接相关的部分。41 篇 `Master Literature List v1.0` 原文保存在 `research-programs/amsc/imports/`。运行 `npm run import:literature` 会重建 baseline 与独立标记的 search candidates；候选不会静默并入用户定义的 baseline。
 
 一次性的 `AMSC Top 20 Paper Investigation` Codex Automation 安排在 America/New_York 2026-08-27 03:00。它只更新 Agent investigation readiness；`researcher_progress` 为受保护字段。
 

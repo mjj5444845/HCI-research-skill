@@ -167,10 +167,10 @@ A meaningful run must evaluate updates to:
 - Master Literature List
 - Current State of Field
 - Gap Registry
-- Comprehensive Exam KB
 - Research Graph
+- Long-term research trajectory and next-question priority
 
-For AMSC, also synchronize affected claims, gaps, exam readiness, and the provenance-bearing workflow history in `research-programs/amsc/state/workflow_dashboard.json`. Never infer researcher reading or mastery from Agent investigation status.
+For AMSC, the long-term research program is the source of truth. Synchronize affected papers, claims, gaps, graph edges, next questions, and provenance-bearing workflow history in `research-programs/amsc/state/workflow_dashboard.json`. Then evaluate whether any accepted change directly affects an exam theme, anchor, writing claim, or oral question; only that filtered subset may update the Comprehensive Exam KB. Never infer researcher reading or mastery from Agent investigation status.
 
 ### Weekly fixed output
 

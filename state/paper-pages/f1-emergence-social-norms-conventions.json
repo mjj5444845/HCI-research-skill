@@ -2,47 +2,80 @@
   "id": "F1",
   "slug": "f1-emergence-social-norms-conventions",
   "title": "The Emergence of Social Norms and Conventions",
-  "authors": [
-    "Robert X. D. Hawkins",
-    "Noah D. Goodman",
-    "Robert L. Goldstone"
-  ],
+  "authors": ["Robert X. D. Hawkins", "Noah D. Goodman", "Robert L. Goldstone"],
   "year": 2019,
   "venue": "Trends in Cognitive Sciences, 23(2), 158–169",
   "source_url": "https://rdhawkins.com/wp-content/uploads/2018/12/normemergence.pdf",
   "doi": "10.1016/j.tics.2018.11.003",
   "access_status": "full_text",
-  "priority": "Important",
-  "one_sentence": "把 dyadic convention 放到更大 social norm / population context 中；尤其适合你以后讨论 cultural priors 与 local conventions 的区别。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "把 dyadic convention 放到更大 social norm / population context 中；尤其适合你以后讨论 cultural priors 与 local conventions 的区别。",
+  "investigation_status": "full_paper_investigation",
+  "claimed_gap_rq": "不同 literatures 各自解释 individual learning、dyadic coordination 或 population diffusion，但缺少一个说明这些空间与时间尺度如何共同塑造 norm/convention 内容、分布、稳定与变化的整合视角。核心问题是：局部 partner-specific adaptation 如何嵌入已有 population norms、network structure、institutions 与 intergenerational transmission，并反过来改变它们？",
+  "theory": [
+    "Lewis 式 convention：重复协调问题中相对任意但稳定的解决方案",
+    "描述性规范、规约/命令性规范与 conventions 的区分",
+    "Bayesian/语用社会推理（pragmatic social inference）",
+    "互动历史与伙伴特定 convention",
+    "文化传递（cultural transmission）",
+    "社会网络扩散（social-network diffusion）",
+    "制度连续性（institutional continuity）",
+    "基于 agent 的 convention emergence models"
+  ],
+  "problem": "社会行为既呈现 community 内稳定、community 间差异，又能在 dyad 中快速调整并在 population 中传播；只用个人 cognition、dyadic interaction 或群体 diffusion 任一层级，都难解释 norm/convention 的完整 emergence dynamics。",
+  "method": "Narrative/theoretical review，综合 philosophy、cognitive science、social psychology、linguistics、cultural evolution、network science 与 agent-based modeling。作者以 functional account 开始，将影响组织为 individual（priors、learning/memory、social reasoning）、dyad（joint goals、coordination、interaction history）和 population（network structure、cultural transmission、institutional continuity）三个层级，并用语言、graphical communication、实验 coordination games、历史/网络案例与 simulations 说明跨尺度机制。文中没有 systematic-search protocol、纳排标准或 meta-analysis。",
+  "findings": [
+    "作者综合认为 conventions 的核心功能是为 repeated coordination problem 提供相对 arbitrary 但 self-reinforcing 的稳定解；共享 form–meaning expectations 是语言与其他 signaling systems 高效运作的基础。",
+    "局部 interaction 并非简单复制 population norm：partner priors、intent inference、feedback、memory 与 repeated history 支持快速的 dyad-specific adaptation；graphical communication studies 显示 feedback 与 repetition 可使表示更高效且形成 dyad-divergent systems。",
+    "population-level distribution 不等于大量独立 dyads 的平均：network topology 决定信息暴露与局部 convergence，institutions 延续规范，intergenerational turnover 与 transmission biases 使规范改变或扩散。",
+    "norms 同时是 social interaction 的结果与基础设施：形成后的 expectation 会约束后续 interaction、重塑 network/communication channels，并影响下一轮 norm formation。",
+    "综述指出 minimal-agent models 与 rich social-reasoning accounts 的张力：简单 feedback、anti-ambiguity bias 与 forgetting 可以生成 population conventions，但不足以自动解释人类在复杂、flexible、partner-sensitive situations 中的 inference；跨尺度理论仍未解决。",
+    "conventional/descriptive patterns 有时会获得 prescriptive force；这些类别的边界与 group membership 如何参与这一转换仍是 open question，而非已定论。"
+  ],
+  "claim_evidence_audit": [
+    {"claim": "norm emergence 必须跨 individual–dyad–population 三层解释。", "evidence": "多领域 empirical/simulation literatures 分别显示 priors/social reasoning、interaction history/feedback、network/transmission effects。", "boundary": "本文提出的是 evidence-informed synthesis，没有统一 formal model 或直接实验比较三层 causal contribution。"},
+    {"claim": "简单 agents 也可形成 shared convention。", "evidence": "reviewed agent-based language-game literature 识别 feedback、ambiguity avoidance 与 forgetting 等 sufficiency ingredients。", "boundary": "simulation sufficiency 不证明人类不用 richer representations，也不证明这些 ingredients 对 embodied human–AI interaction 足够。"},
+    {"claim": "dyadic conventions 与 population norms 动态互相塑造。", "evidence": "partner adaptation、cultural transmission、network/institution cases 的并置与理论连接。", "boundary": "跨尺度方向、transfer conditions 与 timescale interaction 仍被作者列为 outstanding questions。"}
+  ],
+  "real_contribution": "将 convention formation 从单一 repeated dyad 扩展为可累积的 multi-level research program：既保留 partner-specific social inference，又明确 population priors、network structure、institutions 与 transmission 是 local convention 的条件和后果。对 AMSC 最关键的不是“社会规范很重要”，而是要求分别建模 local adaptation、population regularization 与二者的 transfer。",
+  "biggest_weakness": "整合是 narrative 而非 systematic：不同领域证据的 selection、质量与兼容性没有可复核 protocol，三层框架也没有 formalized causal model 或统一 measurement，因此不能由本文判断各机制的必要性、相对权重或在何种 boundary 下占优。",
+  "attack": [
+    {"severity": "major_concern", "issue": "“三个层级都重要”是有用 organizer，但如果不指定跨层 prediction，容易成为包容一切而难以证伪的框架。"},
+    {"severity": "unresolved_question", "issue": "何时 partner-specific solution 应 transfer 给新 partner，何时 population convention 应被局部 override，仍无操作性判据。"},
+    {"severity": "possible_gap_exposed", "issue": "embodied agents 如何同时维护 population prior、partner model 与 context-specific repair/retirement policy。"}
+  ],
+  "claim_boundary": "本文支持一个跨尺度 synthesis：individual cognition、dyadic history 与 population structure 都有独立 literature 证明其可影响 norm/convention。它不证明三层模型已完成、不提供 embodied AI evidence，也不允许把 macro community regularity 直接写成 individual culture trait 或把 local alignment 自动写成 mutual convention。",
+  "priority": "Must Read",
+  "one_sentence": "F1 是 AMSC 从 dyadic convention 走向 population convention 的理论桥：local history、population priors 与 network/transmission 必须被分开并联合解释。",
+  "why_researcher_should_care": "它为 AMSC 提供最直接的 multiscale guardrail：partner-specific adaptation 既不能被 population norm 吞没，也不能被定义成永不 transfer；未来实验应操纵 prior、history、network/partner exposure 与 transfer destination。",
   "amsc": {
-    "mainline_fit": 7.9,
-    "buckets": [
-      "F"
-    ],
-    "stages": [
-      "Meaning",
-      "Adaptation"
-    ],
-    "mechanisms": [
-      "social context",
-      "appropriation"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "mainline_fit": 9.0,
+    "buckets": ["B", "C", "F"],
+    "stages": ["Social Meaning / Pragmatics", "Grounding / Common Ground", "Convention Formation", "Personalization / Co-adaptation"],
+    "mechanisms": ["Meaning", "Grounding", "Convention", "Adaptation"],
+    "gap_ids": ["GAP-01", "GAP-02", "GAP-03", "GAP-04"],
+    "gap_impact": "重定义 GAP-01/02，使其不再声称 generic convention emergence 缺失；可辩护的剩余问题是 embodied human–AI interaction 中跨 partner、context 与 population 的因果推断及 lifecycle control。并强化 GAP-03 的 transfer/retirement 与 GAP-04 的区分测量要求。",
+    "master_list_decision": "Baseline v1.0 — 保留；CORE multiscale convention synthesis",
+    "exam_impact": "建议过滤进入考试，作为跨主题 convention anchor：定义 convention 与 descriptive/prescriptive norm；比较 dyadic 与 population emergence；批判其向 embodied AI 的迁移。",
+    "next_project_priority": "将 partner↔population transfer 提升为主线设计轴，但必须提出明确的 cross-level predictions，不能仅以三层图充当解释。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 审读 author manuscript 全文：摘要/三层框架 pp.1–2；功能性/Lewis account pp.3–4；population/network/transmission 与 minimal-agent box pp.5–7；dyadic graphical/linguistic convention evidence pp.7–9；结论与 outstanding questions pp.9–10。",
+    "本文是 narrative review；findings 中的条目是作者报告的 literature-level synthesis，不是 F1 新做的实验。",
+    "旧 baseline relevance note 未被用作 method 或 findings 的证据。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；未推断或修改 researcher progress。"
   ],
   "source_list_id": "F1",
-  "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "provenance": "user_baseline_v1.0 + full_text_primary_source_audit",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {"source_availability": "full_text", "agent_investigation": "full_paper_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text narrative-review audit",
+    "source_type": "author_manuscript_full_text",
+    "source_url": "https://rdhawkins.com/wp-content/uploads/2018/12/normemergence.pdf",
+    "metadata_crosscheck": ["https://doi.org/10.1016/j.tics.2018.11.003"],
+    "evidence_scope": "complete_argument_theory_evidence_synthesis_boxes_conclusion_and_outstanding_questions",
+    "degraded": false
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

@@ -150,6 +150,8 @@ For mainline work, every meaningful paper/research update should consider update
 1. Master Literature List
 2. Current State of the Field
 3. Gap Registry
-4. Comprehensive Exam Knowledge Base
+4. Research Graph and next-question priority
+
+The long-term research program is the source of truth. Research workflows serve and update that program. The Comprehensive Exam Knowledge Base is a short-term downstream view: update it only when an upstream change directly affects an exam theme, anchor, writing claim, or oral question. Do not bind all workflow output to the exam.
 
 The research program is a persistent model of the user's field position. It must evolve when new evidence weakens or resolves old gaps.

@@ -9,39 +9,75 @@
   ],
   "year": 2011,
   "venue": "HRI 2011, 69–76",
-  "source_url": "https://doi.org/10.1145/1957656.1957674",
+  "source_url": "https://www.leilatakayama.org/downloads/Takayama.Animation_HRI2011_prepress.pdf",
   "doi": "10.1145/1957656.1957674",
-  "access_status": "metadata_only",
+  "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "anticipation / reaction 等动画原则如何让机器人内部状态和即将行动更加 readable；与你未来 impact-caption/visual-effect 与 action timing 的结合特别相关。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "anticipation / reaction 等动画原则如何让机器人内部状态和即将行动更加 readable；与你未来 impact-caption/visual-effect 与 action timing 的结合特别相关。",
+  "one_sentence": "Animation-style forethought 未让观众更准确命中 robot intent，但提高了解读确信度、appeal 与 approachability；goal-oriented reaction 则提高 perceived smartness/confidence。",
+  "problem": "Robot 的 planning、intent 与 outcome evaluation 往往难从 functional motion 看出；animation 领域的 anticipation/follow-through 能否作为 robot forethought/reaction 设计原则，提高 action readability 与 social evaluation，需要实验检验。",
+  "method": "2 forethought（between）×2 reaction-to-outcome（between）×2 success/failure（within）online animated-video experiment，N=273 adult volunteers（local mailing lists+MTurk）。Professional animator 用 PR2 model 制作 opening door、delivering drink、ushering person、requesting charging help 四个 tasks；forethought/reaction 是 engagement translation、torso confidence cue、eye/head lead 与 timing 的组合，部分运动超出真 PR2 kinematic constraints。每人看 4 pre-action+4 post-action clips，开放回答以 task-specific keyword match 编码，另测 sureness 和 7 个 1–7 adjective ratings；repeated-measures ANOVA，主观评价用 Bonferroni p<.0071。",
+  "findings": [
+    "Forethought 没有提高 open-ended intent keyword accuracy（F(1,271)=0.65,p=.42）；task/scenario 差异极大（door .84、power .78、drink .64、ushering .29），说明 scene affordances 比该组合 cue 更影响 objective readability。",
+    "Forethought 组对自己的 intent interpretation 更确信（M=5.69 vs 5.20，F(1,255)=15.95,p<.00001），并给 robot 更高 appeal（F(1,265)=16.51,p<.0001）和 approachability（F(1,262)=12.48,p<.0001），但其他 adjective ratings 无显著 effect。",
+    "Task success 显著提高 perceived smartness 与 confidence；在控制 success/failure 后，goal-oriented happiness/disappointment reaction 仍提高 smartness（M=4.72 vs 3.86，F(1,267)=28.12,p<.00001）与 confidence（M=4.53 vs 4.14，F(1,267)=7.51,p<.007）。"
+  ],
+  "real_contribution": "建立 animation-as-prototyping 与 anticipation/reaction-as-robot-signal 的影响力很强的 HRI design precedent，同时用 null keyword result 提醒后续工作：“感觉更能看懂”不等于真正提高 intent decoding accuracy。",
+  "biggest_weakness": "Forethought manipulation 把 engagement、confidence motion、eye/head lead 和 timing 捆绑，无法识别有效成分；animated observer study 不是 live HRI，且部分 motion 超出 PR2 constraints。更关键的是 objective intent keyword match 为 null，所以标题中“improving readability”只在主观 sureness/perception 层面获得支持。",
+  "claim_boundary": "支持四个受控 PR2 animation scenarios 中，designer-authored forethought/reaction packages 改变 interpretation confidence 与 social/intellectual ratings；不支持更高 objective intent-recognition accuracy、实体交互中的 safety/performance gains、具体 animation component 的独立因果效应，或 history-dependent/emergent meaning。",
+  "why_researcher_should_care": "D4 将 WHAT 之前的 WHEN（pre-action anticipation）与 outcome 之后的 HOW（reaction）变成 embodied signal design variables，但也是 AMSC 必须避免的“new effect→questionnaire”范例：未来应同时测 objective inference、task consequence、social meaning 与 interaction-history dependence。",
+  "gap_impact": {
+    "GAP-06": "REDEFINED 证据：同一套 pre/post-action expressive motions 已能同时表示 functional planning/outcome 与 appeal/approachability/smartness，因而残余 gap 是 objective decoding、social-functional trade-off 与 history adaptation，而非首次将二者并置。"
+  },
   "amsc": {
-    "mainline_fit": 8.1,
+    "mainline_fit": 7.8,
     "buckets": [
       "D"
     ],
     "stages": [
-      "Embodied Communication"
+      "Social Meaning / Pragmatics",
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "legibility",
-      "nonverbal communication"
+      "Meaning",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-06"
+    ],
+    "master_list_decision": "Baseline v1.0 保留 — animation-readability design anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "2026-08-27 已审计作者主页托管的 HRI'11 prepress 全文；access status 从 metadata_only 升级为 full_text。",
+    "方法、objective null、subjective effects、manipulations 与 limitations 均从全文重建，而非来自 baseline relevance note。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者仍为未跟踪。"
   ],
   "source_list_id": "D4",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "Animation 中的 anticipation 与 reaction 原则能否让 robot action 更 readable，并在 task success/failure 下改善人对 robot 的感知？",
+  "theory": [
+    "animation 的 anticipation 与 follow-through 原则",
+    "action readability 理论",
+    "nonverbal communication 与 emotive actuation",
+    "functional motion 与 expressive motion 的区分"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "author_hosted_prepress_full_text",
+    "source_url": "https://www.leilatakayama.org/downloads/Takayama.Animation_HRI2011_prepress.pdf",
+    "evidence_scope": "从全文重建 argument、factorial method、objective null、subjective effects 与 limitations",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

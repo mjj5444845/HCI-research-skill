@@ -12,36 +12,75 @@
   "doi": "10.1075/pbns.318.04dai",
   "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "证明 emoji 的意义不能只从 emotion/semantics 理解，而必须从 **context-dependent pragmatic function** 理解；这直接支持你不要把机器人 emoji 做成固定 emotion mapping。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "one_sentence": "在带局部 Facebook discourse context 的 emoji-in-use 判断中，参与者最常把 emoji 解释为 tone modifier，但同一 rendering 随语境可承担不同 pragmatic functions。",
+  "problem": "既有 receiver-interpretation 研究多把意义定位在孤立 emoji 的 sentiment/semantics；Herring 与 Dainas 的 graphicon-function taxonomy 又主要来自研究者编码，因此尚需检验普通社交媒体用户是否在真实话语片段中区分这些 pragmatic functions、彼此是否一致，以及是否与研究者判断一致。",
+  "method": "在线 Understanding Emoji Survey。作者从 14 个 graphicon-rich public Facebook groups 选取 46 个自然发生的 emoji-containing comments 及其最相关的先行话语；有目的地纳入先前难编码案例，再补齐 13 类 emoji 与功能覆盖，并对消息匿名化、简化，部分 multimodal prompts 改为文字描述。14 人 pilot 后，以 Qualtrics 发布四个平衡版本：每人先做 sample，再评 12 个 items；原 45 个非 sample messages 中有 3 个难例重复一次，合计 49 item instances。658 份问卷中，523 份满足最低纳入标准；样本平均 28.6 岁，74.2% native English、75% 居住美国。参与者从基于 Herring & Dainas (2017) taxonomy 的功能选项中选择；作者比较 function frequencies、emoji-type patterns、inter-respondent agreement 与 user–researcher agreement，并粗略 content-analyze open responses。",
+  "findings": [
+    "Tone modification 占全部功能选择的 52.6%，并在 49 个 item instances 中的 39 个成为首选；virtual action 为第二常见功能（13.4%），其后是 mention（7.8%）、softening（6.3%）与 reaction（5.5%）。",
+    "同一 rendering（如三个 heart items）在不同 local discourse contexts 中分别以 action、tone、mention 为首选；相反，一些 rendering 有变化的 emoji types 仍一致以 tone 为首选，支持 context 对 function interpretation 的作用可超过 rendering，且有时超过孤立 semantics。",
+    "用户首选功能的一致性高于随机水平，但总体 agreement 未超过 60%，且随 emoji type/function 变化；tone 的一致性最高，reaction 与 mention 最低，因此提供 local context 并未消除 ambiguity/misconstrual。",
+    "当把用户第一与第二常见选择都计入时，用户对研究者的多数分类达成一致；结果总体支持原 taxonomy，但显示 lay users 比研究者更强烈地默认选择 tone modification。",
+    "作者据此主张 emoji 是 online language 的 pragmatic component / illocutionary-force marker，但明确不主张 emoji 构成独立完整语言。"
+  ],
+  "real_contribution": "把 emoji 研究从孤立 icon semantics 推进到 contextualized pragmatic-function interpretation，并以 523 人 receiver survey 对研究者提出的 graphicon taxonomy 做外部效度检验；对 AMSC 最有价值的是证明 signal rendering 不能单独决定 communicative function。",
+  "biggest_weakness": "刺激是研究者有目的挑选且多为难编码案例，并经过 context truncation、multimodal-to-text substitution 与文本简化；样本和场景又集中于 public Facebook、英语使用者和美国居民。研究测量的是第三方接收者对重构片段的分类，不是原 sender intention、dyadic negotiation 或 interaction-specific convention。",
+  "claim_boundary": "可支持：在这组 contextualized public-Facebook examples 中，emoji 常被解释为 tone modifier，且 local discourse context 会改变 perceived pragmatic function。不可支持：所有平台/文化/关系中的 emoji 都以 tone 为基本功能；context 保证正确理解；该研究观察到共同意义如何形成；这些结果可直接迁移到 robot-authored signals。",
   "why_researcher_should_care": "证明 emoji 的意义不能只从 emotion/semantics 理解，而必须从 **context-dependent pragmatic function** 理解；这直接支持你不要把机器人 emoji 做成固定 emotion mapping。",
   "amsc": {
-    "mainline_fit": 7.8,
+    "mainline_fit": 8.1,
     "buckets": [
       "A"
     ],
     "stages": [
-      "Meaning",
-      "Embodied Communication"
+      "Social meaning / pragmatics"
     ],
     "mechanisms": [
-      "social meaning",
-      "multimodal expression"
+      "Meaning"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-05",
+      "GAP-06"
+    ],
+    "master_list_decision": "Master Literature v1.0 保留；作为重要 pragmatics bridge"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 审读作者主页托管的 34 页全文，并以 John Benjamins DOI landing page 交叉核对书目信息。",
+    "method 与 findings 均从章节全文重建；旧 baseline relevance note 未作为证据。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；后两者保持未追踪。"
   ],
   "source_list_id": "A3",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "社交媒体用户如何在 discourse context 中解释 emoji 的 pragmatic functions？具体追问哪些功能对应哪些 emoji types、用户彼此同意到什么程度，以及 lay interpretations 与 researcher codes 多大程度一致。",
+  "theory": [
+    "语用学与言外之力（pragmatics / illocutionary force）",
+    "Graphicon pragmatic-function taxonomy（图形符号语用功能分类）",
+    "副语言（paralanguage）",
+    "语境依赖意义（context-dependent meaning）"
+  ],
+  "gap_impact": [
+    "GAP-01 被强化：effectiveness/meaning 不能简化为固定 icon-to-emotion mapping；但论文没有 longitudinally 观察 meaning formation。",
+    "GAP-05 获得部分支持：informal visual signals 已有 contextual pragmatic account，但仍缺少系统的 embodied-communication theory。",
+    "GAP-06 作为 transfer gap 被强化：本文实证刻画 social-pragmatic signal functions，而 functional robot-state communication 不在其范围内。"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "author_manuscript_plus_publisher_metadata",
+    "source_url": "https://homes.luddy.indiana.edu/herring/Interpreting_Emoji_Pragmatics.pdf",
+    "publisher_url": "https://www.benjamins.com/catalog/pbns.318.04dai",
+    "evidence_scope": "problem_rqs_methods_results_discussion_limitations",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

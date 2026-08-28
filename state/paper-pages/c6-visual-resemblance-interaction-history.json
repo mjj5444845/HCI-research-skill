@@ -13,40 +13,71 @@
   "source_url": "https://www.nature.com/articles/s41467-023-37737-w",
   "doi": "10.1038/s41467-023-37737-w",
   "access_status": "full_text",
-  "investigation_status": "abstract_and_full_page_reviewed",
-  "problem": "图像意义究竟主要来自 visual resemblance，还是来自互动中形成的 socially mediated conventions？",
-  "method": "三项实验与一次完整 replication 使用 repeated drawing reference game；研究操纵 shared interaction history，并结合 model-based image analyses 与 crowdsourced annotations。",
+  "investigation_status": "full_paper_investigation",
+  "problem": "纯 resemblance 与纯 convention/arbitrariness accounts 都不足解释 pictorial meaning。",
+  "method": "主 communication study 138 participants/69 dyads；internal replication 130/66 dyads。4 repeated ShapeNet chairs×8 与 4 controls；recognition 主样本 223、replication 225，比较 yoked same-producer sequences 与 shuffled；VGG-19 analyses，443 annotators 映射 strokes，117 annotators 提供 diagnosticity heatmaps。",
   "findings": [
-    "参与者随重复互动形成 object-specific 与 interaction-specific 的高效表达策略，变化不能仅由任务练习或纯 resemblance account 解释。",
-    "图画并未简单漂移为任意符号，而是继续保留能区分 referent 的 diagnostic visual features。"
+    "communication efficiency/accuracy 提高且 repeated>control；within-dyad drawings 稳定、between-dyad 同物 drawings 分歧；yoked sequence improvement > shuffled，replication 排除 viewer interrupt confound。",
+    "repeated drawings 变稀疏，但相对 controls 更集中于 object-diagnostic regions，反驳纯 arbitrary-symbol reading。"
   ],
-  "real_contribution": "把 resemblance-based 与 convention-based 解释整合为可检验的 pictorial meaning account，显示视觉信息与 shared history 共同约束 graphical conventions。",
-  "biggest_weakness": "实验聚焦受控的视觉对象 reference game；对抽象概念、真实协作与具身 Agent 的外推仍需新证据。",
-  "claim_boundary": "证据支持特定 repeated visual communication 范式中的 dyad-specific convention formation，不等同于已证明机器人可学习或生成同类约定。",
+  "real_contribution": "整合 object repetition、producer-history continuity、visual feature dynamics、replication 与 diagnostic annotations，显示 resemblance 与 history 共同约束 pictorial meaning。",
+  "biggest_weakness": "yoked-vs-shuffled 仍主要操作 same-producer exposure，不是在原 dyad 做 partner swap；style familiarity 可能是机制之一。单一 chairs、fixed roles、AMT 与 post-hoc exclusions 限制泛化。",
+  "claim_boundary": "支持受控 human drawing 中 history-sensitive recognition 与 diagnostic conventions；不证明 mutual belief、human–robot、abstract social meaning、cross-modal、long-term 或 transferable convention。",
   "priority": "Must Read",
   "one_sentence": "尤其值得你关注“视觉相似性”与“shared history”怎样共同决定图像 meaning，而不是把 visual symbol 意义看作 universal。",
   "why_researcher_should_care": "尤其值得你关注“视觉相似性”与“shared history”怎样共同决定图像 meaning，而不是把 visual symbol 意义看作 universal。",
   "amsc": {
-    "mainline_fit": 9.6,
+    "mainline_fit": 9.8,
     "buckets": [
       "C"
     ],
     "stages": [
+      "Grounding / Common Ground",
+      "Convention Formation"
+    ],
+    "mechanisms": [
+      "Meaning",
       "Grounding",
       "Convention"
     ],
-    "mechanisms": [
-      "common ground",
-      "convention formation"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-02",
+      "GAP-07"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "master_list_decision": "Baseline v1.0 — retained / definitive visual-convention anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "C6",
   "provenance": "user_baseline_v1.0",
-  "updated_at": "2026-08-26"
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "如何分离 task practice、item repetition、same-producer history 与 diagnostic visual content，并检验 resemblance 和 history 如何联合约束 meaning？",
+  "theory": [
+    "icon–symbol continuum",
+    "visual resemblance",
+    "graphical convention",
+    "interaction history"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://www.nature.com/articles/s41467-023-37737-w",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

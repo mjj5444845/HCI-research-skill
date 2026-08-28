@@ -12,35 +12,73 @@
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "系统理解 RSA、informativeness、cost、context、prior belief，以及这一框架目前的局限。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "RSA 快速扩展后需要系统阐明其核心 commitments、extensions、empirical successes 与 generalization limits。",
+  "method": "Annual Review narrative/tutorial synthesis，以 scalar implicature 为主例，重建 equations、classic-vs-RSA comparison、extensions 与 empirical/modeling work；不是 systematic review/meta-analysis，无原创实验。",
+  "findings": [
+    "RSA 将 interpretation、informativeness、alternatives 与 world knowledge 形式化为概率化、context-sensitive components。",
+    "已有 extensions 覆盖 reference、social meaning、adaptation、convention formation 与 repeated exposure；主要挑战是 scalability、bounded cognition、incrementality/compositionality。"
+  ],
+  "real_contribution": "提供截至 2023 年的 RSA state-of-framework anchor，同时记录 convention/adaptation extensions 与模型边界。",
+  "biggest_weakness": "非系统综述且以 scalar implicature 组织；开放式 multimodal joint action 距离大，alternative set、prior、utility 与 linking hypothesis 存在 underidentification。",
+  "claim_boundary": "证明 RSA 是有生产力的 formal hypothesis framework；不证明 embodied agent 具有人类式 pragmatics/common ground，也不能把 computational fit 当作 process mechanism。",
   "why_researcher_should_care": "系统理解 RSA、informativeness、cost、context、prior belief，以及这一框架目前的局限。",
   "amsc": {
-    "mainline_fit": 8.5,
+    "mainline_fit": 9,
     "buckets": [
-      "B"
+      "B",
+      "C",
+      "E"
     ],
     "stages": [
-      "Meaning",
-      "Grounding"
+      "Social Meaning / Pragmatics",
+      "Grounding / Common Ground",
+      "Convention Formation"
     ],
     "mechanisms": [
-      "pragmatic inference",
-      "representation"
+      "Meaning",
+      "Grounding",
+      "Convention"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-02",
+      "GAP-03",
+      "GAP-04"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / current RSA synthesis anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Full author/official-repository manuscript audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "B2",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "RSA 如何整合 linguistic knowledge、communicative pressures、context 与 subjective priors；哪些机制成功，哪些问题仍未解决？",
+  "theory": [
+    "Rational Speech Act",
+    "gradient informativeness",
+    "contextual alternatives",
+    "joint inference over QUD, lexicon and common-ground variables"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "author_or_official_repository_full_text",
+    "source_url": "https://alpslab.stanford.edu/papers/2023Degen.pdf",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

@@ -2,50 +2,64 @@
   "id": "G2",
   "slug": "g2-visualisation-disambiguating-verbal-requests",
   "title": "A Comparison of Visualisation Methods for Disambiguating Verbal Requests in Human-Robot Interaction",
-  "authors": [
-    "Elena Sibirtseva",
-    "Dimosthenis Kontogiorgos",
-    "Oscar Nykvist",
-    "Hakan Karaoguz",
-    "Iolanda Leite",
-    "Joakim Gustafson",
-    "Danica Kragic"
-  ],
+  "authors": ["Elena Sibirtseva", "Dimosthenis Kontogiorgos", "Olov Nykvist", "Hakan Karaoguz", "Iolanda Leite", "Joakim Gustafson", "Danica Kragic"],
   "year": 2018,
   "venue": "IEEE RO-MAN 2018, 43–50",
   "source_url": "https://arxiv.org/abs/1801.08760",
   "doi": "10.1109/ROMAN.2018.8525554",
   "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "研究 visual augmentation 如何帮助解决 verbal ambiguity；非常适合连接 speech 与 situated visual representation。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "研究 visual augmentation 如何帮助解决 verbal ambiguity；非常适合连接 speech 与 situated visual representation。",
+  "one_sentence": "论文通过 highlight candidate objects 外显 robot 持续更新的 referential hypothesis；在受限 object-grounding task 中，situated projection 最受偏好且干扰最小，而 head-worn MR 更 engaging 却更易出错。",
+  "problem": "Ambiguous verbal object requests 在 shared human–robot workspace 中难以 grounded；反复 clarification questions 增加 task time 与 speech-recognition risk，而把 robot 当前 referential hypothesis 就地 visualized 的比较效果此前未知。",
+  "method": "10 人 human–human pilot 识别出 color 与 shape 是常用 descriptors，并促成 Wizard-of-Oz language-understanding module。主实验招募 29 名 fluent-English adults（12 women、17 men；22–50 岁），以 within-subjects design 完成三组 counterbalanced YuMi/Lego trials：side monitor (MO)、overhead projection（论文标作 AR）与 Microsoft HoloLens（MR）。每个约八分钟 trial 含 15 个交替 requests；users 只能用 color/shape 口头请求八块积木，YuMi 通过 highlights 请求七块。Kinect/object database 持续更新 candidate sets 与 highlights，直至只剩一个 referent。Outcomes 包括 request time、normalized error rate、engagement、observability、display interference、preferences 与 open responses；分析使用 repeated-measures ANOVA/Bonferroni 与 chi-square tests。",
+  "findings": [
+    "Visualization modality 不影响 verbal request time；更明显的是 trial-order/learning effect，requests 随 trial 推进而缩短。",
+    "Error rate 随 condition 改变：projected AR 最低 (.01)，monitor 次之 (.02)，HoloLens MR 最高 (.04)，但整体都低；论文 AR–MR post-hoc 句子内部不一致，因为文字称 'significantly lower'，却同时报告 p=1.0。",
+    "MR 被评为更 engaging，但 projected AR 带来更高 observability、更低 display interference 与压倒性偏好（25/29 prefer；20/28 认为 easiest；23/29 愿意 use again）。"
+  ],
+  "real_contribution": "系统把 hidden intermediate state——当前与 robot interpretation 相容的 objects——转化为 shared、incrementally updated spatial representation。研究把 objective grounding performance 与 monitor、projection、head-worn visualization 的 experience/deployment trade-offs 分开，说明 novelty/engagement 不一定与 accuracy 或 usability 同向。",
+  "biggest_weakness": "Language understanding 由 wizard 操作且限制为 color/shape，candidate attributes 来自 known database，scene 是 flat、low-occlusion tabletop；实验没有 pointing、follow-up-question 或 no-visualization comparator，participants 也未在正式 trial 前练习 HoloLens。这些选择显著限制关于 autonomous language grounding 与 real-world ambiguity 的主张。",
+  "claim_boundary": "证据支持单一 tabletop task 中对受限 references 的 immediate visual disambiguation 与 modality trade-offs；不支持 autonomous speech understanding、natural-dialogue repair、跨 episodes 保留 common ground、partner-specific conceptual pacts、emergent convention 或 history-aware adaptation。论文 error-rate pairwise significance 在报告矛盾解决前不得传播。",
+  "why_researcher_should_care": "G2 是 AMSC 把 agent uncertain interpretation 可视化为 manipulable grounding resource 的直接 precedent。它也提供重要 evaluation lesson：accuracy、timing、interference 与 preference 应分别测量，因为 engagement 可能偏好 objective performance 更弱的 interface。",
+  "claimed_gap_rq": "当系统 visualized robot 当前认为与 ambiguous verbal request 匹配的 objects 时，monitor、projected AR 与 head-worn MR 的效果与 trade-offs 如何？",
+  "theory": ["common ground", "language grounding", "incremental reference resolution", "multimodal disambiguation", "shared spatial representation"],
   "amsc": {
-    "mainline_fit": 8.4,
-    "buckets": [
-      "G"
-    ],
-    "stages": [
-      "Embodied Communication"
-    ],
-    "mechanisms": [
-      "situated communication",
-      "augmented reality"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "mainline_fit": 8.8,
+    "buckets": ["G", "C", "B"],
+    "stages": ["Grounding / Common Ground", "Situated Adaptive Communication"],
+    "mechanisms": ["Meaning", "Grounding", "Embodied Communication"],
+    "gap_ids": ["GAP-01", "GAP-02", "GAP-03", "GAP-06"],
+    "gap_impact": {
+      "GAP-01": "PARTIALLY_ADDRESSES：通过 iterative verbal refinement 与 task errors，把研究从 fixed-signal ratings 推向 interaction；但 visual semantics 仍由 designer 固定。",
+      "GAP-02": "STRENGTHENS：系统只接受 predefined color/shape descriptors 与 assigned IDs，而不协商 convention，因而凸显 vocabulary/emergence gap。",
+      "GAP-03": "STRENGTHENS：candidate sets 随 current scene/request 更新，却不保留 interaction history，进一步区分 context 与 history。",
+      "GAP-06": "PARTIALLY_ADDRESSES：在 shared space 中外显 robot interpretive state，触及 functional/social separation；social meaning 不在研究范围。"
+    },
+    "master_list_decision": "Baseline v1.0 — 保留；situated grounding-method anchor",
+    "mainline_role": "核心 grounding 与 evaluation precedent",
+    "next_project_priority_change": "提高 visualizing agent belief/ambiguity 与 testing interactive repair 的优先级，并进一步检验 negotiated referents 能否跨 repeated episodes 持续。",
+    "exam_update": "直接映射 Theme 3/4；适合作为 grounding vs. one-shot transparency、projection vs. head-worn AR 的口试比较案例。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 已完整审计八页 arXiv author manuscript，并用 DOI/venue metadata 交叉核验书目信息。",
+    "Baseline 中的作者名 'Oscar Nykvist' 已依据论文与 arXiv metadata 更正为 'Olov Nykvist'。",
+    "全文对 AR-vs-MR error-rate post-hoc result 的报告内部矛盾：'significantly lower' 与 p=1.0 同时出现；本对象保留矛盾，不自行推断 corrected p-value。",
+    "尽管 errors 有 condition effect 且 subjective differences 清晰，作者有时仍称三种 methods equally effective；因此 agent reassessment 的 contribution 比该 design-implication sentence 更窄。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者保持未追踪。"
   ],
   "source_list_id": "G2",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {"source_availability": "full_text", "agent_investigation": "full_paper_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "official_arxiv_author_manuscript",
+    "source_url": "https://arxiv.org/pdf/1801.08760",
+    "evidence_scope": "argument_system_pilot_method_results_discussion_limitations_and_claim_boundaries_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

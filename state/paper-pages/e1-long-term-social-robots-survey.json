@@ -14,34 +14,68 @@
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "long-term HRI 的经典综述。帮助你避免所有 convention formation 都停留在 20–30 分钟 lab interaction。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "早期 HRI 多为 single encounter；novelty 消退后 engagement、attitude 与 interaction trajectories 可能改变，而长期部署昂贵脆弱。",
+  "method": "检索 Google Scholar、Microsoft Academic Search、CiteSeer 与主要 HRI venues；45 papers screened，排除设计细节不足与仅 lab studies，保留 24 real-world deployments。缺少完整 strings/dates、dual screening 与 quality appraisal。",
+  "findings": [
+    "早期 long-term HRI 多 exploratory、小样本；novelty 后应按 function 定义 long term，而非固定天数。",
+    "continuity/routines、past-activity memory、new behaviors、affect response、identification 与 personalization 被反复提出；应分析 multi-session trajectories，而非只比较 first/last。",
+    "文中 memory/adaptation nearly unexplored 仅描述 2013 corpus，不能当作 2026 current-state claim。"
+  ],
+  "real_contribution": "建立 post-novelty、trajectory-based longitudinal HRI design/measurement agenda，并把 continuity、memory、personalization 放入长期互动问题。",
+  "biggest_weakness": "2013 descriptive heterogeneous corpus，不能代表 2026 field；无 formal quality appraisal/meta-analysis，且对 control conditions 的保留意见会削弱因果识别。",
+  "claim_boundary": "支持 historical landscape 与 longitudinal principles；不证明何种 feature 因果维持 engagement，也不证明 memory、personalization、adaptation 与 convention 等价。",
   "why_researcher_should_care": "long-term HRI 的经典综述。帮助你避免所有 convention formation 都停留在 20–30 分钟 lab interaction。",
   "amsc": {
-    "mainline_fit": 8.8,
+    "mainline_fit": 7.8,
     "buckets": [
       "E"
     ],
     "stages": [
-      "Adaptation"
+      "Personalization / Co-adaptation",
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "mutual adaptation",
-      "long-term interaction"
+      "Adaptation",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-03",
+      "GAP-04"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / historical-method anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "E1",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "截至 2013 的 long-term social-robot studies 覆盖哪些 contexts、designs 与 measures，如何操作化 long term？",
+  "theory": [
+    "novelty and habituation",
+    "relationship continuity",
+    "expectation–capability fit",
+    "memory and personalization"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://viterbik12.usc.edu/wp-content/uploads/2018/06/Social-Robots-for-Long-Term-Interaction-A-Survey.pdf",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

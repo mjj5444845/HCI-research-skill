@@ -2,47 +2,71 @@
   "id": "F6",
   "slug": "f6-generative-encounters-robin",
   "title": "Generative Encounters with Robin: Design through Adaptation and Appropriation of a Social Robot in Four Eldercare Facilities",
-  "authors": [
-    "Nan Hu",
-    "Selma Šabanović"
-  ],
+  "authors": ["Nan Hu", "Selma Šabanović"],
   "year": 2026,
   "venue": "HRI 2026, 306–315",
-  "source_url": "https://humanrobotinteraction.org/2026/schedule/",
+  "source_url": "https://doi.org/10.1145/3757279.3785575",
   "doi": "10.1145/3757279.3785575",
-  "access_status": "metadata_only",
-  "last_verified": "2026-08-26",
+  "access_status": "abstract_only",
+  "last_verified": "2026-08-27",
   "priority": "Must Read",
-  "one_sentence": "当前非常值得关注的 field evidence：robot 实际部署后，meaning 和 use 会通过 adaptation / appropriation 持续生成。你的下一步问题可以是：**robot 能否识别这种 emerging social convention 并反过来适应？**",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "当前非常值得关注的 field evidence：robot 实际部署后，meaning 和 use 会通过 adaptation / appropriation 持续生成。你的下一步问题可以是：**robot 能否识别这种 emerging social convention 并反过来适应？**",
+  "one_sentence": "Abstract-level evidence 表明，Robin 的实际使用与持续设计受到机构情境、员工实践、开发者沟通及用户 appropriation 的共同塑造；由于全文不可得，目前不能完成完整 method 与 claim audit。",
+  "problem": "Socially assistive robot 往往在部署时被当作已经完成的 artifact，因而遮蔽了不同 eldercare institutions、住民、员工与开发者如何在实践中持续重塑 robot use 与 design。",
+  "method": "可访问摘要报告了一项覆盖四家 eldercare facilities 的 multi-site ethnographic study，包含对 robot developers 与 care-facility staff 的访谈，以及对 older adults、staff 与 robot 互动的现场观察。由于全文不可访问，participant counts、recruitment、facility selection、deployment duration、observation hours、interview protocol、analytic procedure 与 negative cases 均无法审计。",
+  "findings": [
+    "摘要报告四类影响 perception 与 use 的 contextual factors：各机构的 resident types、staff 对 robot 的 mental models、staff 与 developers 的沟通实践，以及 users 对 remote teleoperators 的知情程度。",
+    "作者把真实世界中的 resident/staff encounters 视为推动持续 adaptation 与 appropriation 的 feedback，而不是把 design 视为部署时已经完成；这只是 abstract-level author claim，尚未用底层 qualitative evidence 独立核验。"
+  ],
+  "real_contribution": "在摘要证据范围内，论文把 eldercare-robot design 重构为跨机构持续发生的 iterative engagement，并指出 users 与 developers 共同调整 deployed robot 的组织性与解释性条件。其对 AMSC 的价值是说明 communicative meaning 与 use 具有 institutionally situated 性，而不是证明 robot 会学习 partner-specific conventions。",
+  "biggest_weakness": "全文不可得，使 sampling、duration、analytic rigor、evidence traceability、alternative interpretations，以及四项因素究竟反映 sustained appropriation 还是对成功使用的选择性叙述，都无法评估。",
+  "claim_boundary": "可访问证据只支持作者关于四家机构 contextual adaptation 与 appropriation 的摘要级论述；它不能建立 causal effects，不能外推到其他机构，也不能证明 autonomous robot adaptation、dyadic grounding、convention formation，或厂商所称持续数月/数年的 acceptance。",
+  "why_researcher_should_care": "F6 为 AMSC 提供重要的 sociotechnical boundary condition：adaptive embodied communication 嵌入 staff routines、organizational interpretations、teleoperation awareness 与 developer feedback loops。它促使后续研究追问 agent 如何识别 emerging local practices，同时避免把 appropriation 等同于 shared convention。",
+  "claimed_gap_rq": "异质 eldercare facilities 的 contextual factors 如何塑造 socially assistive robot 部署后的 use、appropriation 与 collaborative adaptation？",
+  "theory": ["iterative engagement", "generative encounters", "appropriation", "socially situated robot design"],
   "amsc": {
     "mainline_fit": 7.9,
-    "buckets": [
-      "F"
-    ],
-    "stages": [
-      "Meaning",
-      "Adaptation"
-    ],
-    "mechanisms": [
-      "social context",
-      "appropriation"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "buckets": ["F", "E"],
+    "stages": ["Social Meaning / Pragmatics", "Personalization / Co-adaptation", "Situated Adaptive Communication"],
+    "mechanisms": ["Meaning", "Adaptation", "Embodied Communication"],
+    "gap_ids": ["GAP-03", "GAP-04", "GAP-06"],
+    "gap_impact": {
+      "GAP-03": "STRENGTHENS：需要区分 contextual/deployment adaptation 与 interaction-history-aware communication；摘要识别了 context 与 feedback loops，但没有展示 history-aware robot signaling。",
+      "GAP-04": "STRENGTHENS：进一步区分 appropriation/personalization 与 convention formation；users 与 developers 可以调整 use，却没有 mutually grounded signal system 的证据。",
+      "GAP-06": "PARTIALLY_ADDRESSES：通过说明 organizational practices 如何塑造 use，触及 social meaning 与 robot function 的连接；但没有 functional-state signals 的 finding-level evidence。"
+    },
+    "master_list_decision": "Baseline v1.0 — 保留；高优先级获取全文",
+    "mainline_role": "相邻的 sociotechnical field evidence",
+    "next_project_priority_change": "Abstract-only evidence 不足以立即调整优先级；后续主线研究应把 organizational appropriation 与 teleoperation awareness 保留为 boundary conditions。",
+    "exam_update": "只有完成 full-text audit 后才可考虑作为 Theme 5/6 case；不得依据摘要证据提升为 exam anchor。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "HRI 2026 官方 schedule 与 awards pages 确认 title、authors、Full Paper status、pages，以及 User Studies track Honourable Mention。",
+    "DOI 与 DBLP 确认书目身份；DBLP 标记 access closed，ResearchGate 明确报告没有可用全文。",
+    "Indexed abstract/summary 提供所报告的 ethnographic method 与四项 contextual factors；这里只将其用于边界明确的 abstract-level reconstruction。",
+    "2026-08-27 已穷尽 official proceedings、DOI route、author/lab pages、institutional repositories、project/vendor pages、DBLP/Unpaywall leads 及 title/DOI PDF search，仍未找到可访问 author manuscript 或 proceedings PDF。",
+    "Vendor 关于 30+ observation hours 及持续数月/数年的 acceptance 声称未被当作论文证据，因为无法核验 primary text。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者保持未追踪。"
   ],
   "source_list_id": "F6",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "abstract_evidence_investigation",
+  "agent_readiness": "ABSTRACT_ONLY_AUDITED_FULL_TEXT_BLOCKED",
+  "readiness": {"source_availability": "abstract_only", "agent_investigation": "abstract_evidence_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "normal/abstract-only",
+    "source_type": "official_conference_and_bibliographic_metadata_plus_indexed_abstract",
+    "source_urls": [
+      "https://humanrobotinteraction.org/2026/schedule/",
+      "https://humanrobotinteraction.org/2026/award-nominees/",
+      "https://doi.org/10.1145/3757279.3785575",
+      "https://dblp.org/rec/conf/hri/HuS26",
+      "https://www.researchgate.net/publication/402209360_Generative_Encounters_with_Robin_Design_through_Adaptation_and_Appropriation_of_a_Social_Robot_in_Four_Eldercare_Facilities"
+    ],
+    "evidence_scope": "bibliographic_identity_and_abstract_level_problem_method_and_reported_themes_only",
+    "degraded": true,
+    "degradation_reason": "未找到可访问的 publisher PDF、official repository copy 或 author manuscript。"
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

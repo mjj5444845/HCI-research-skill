@@ -2,45 +2,77 @@
   "id": "F3",
   "slug": "f3-robotic-products-social-products",
   "title": "How Robotic Products Become Social Products: An Ethnographic Study of Cleaning in the Home",
-  "authors": [
-    "Jodi Forlizzi"
-  ],
+  "authors": ["Jodi Forlizzi"],
   "year": 2007,
   "venue": "HRI 2007, 129–136",
   "source_url": "https://hcii.s3.amazonaws.com/ppr/papers/p129-forlizzi.pdf",
   "doi": "10.1145/1228716.1228734",
   "access_status": "full_text",
+  "investigation_status": "full_paper_investigation",
+  "claimed_gap_rq": "当时对 domestic robots 的社会影响缺少家庭实践中的 longitudinal comparison。论文问：与功能相近的 non-robotic vacuum 相比，Roomba 如何改变 household members、清洁活动、既有产品与产品意义；elder/non-elder 与 gendered household roles 是否出现不同 experience？",
+  "theory": [
+    "产品生态（product ecology）：人、产品、活动与使用情境的动态关系",
+    "意义建构（sensemaking）",
+    "社会产品（social products）",
+    "产品的功能、美学、象征、情绪与社会归因五个维度",
+    "家庭劳动与技术的社会塑造"
+  ],
+  "problem": "家用机器人不仅完成任务，也可能重新分配劳动、改变 routine、挤出或重组其他产品，并获得 social/symbolic meanings；只测 usability 或短期 attitude 无法观察这些系统性变化。",
+  "method": "比较性家庭 ethnography：一个美国西部城市的 6 个家庭、共 21 名成人与儿童（10–90 岁），其中 3 个以 elders 为中心、3 个非 elders；每个家庭中心人物均为负责家务的女性，且先前未用过研究产品。3 家获得 Roomba Discovery，3 家获得 Hoover Flair stick vacuum（论文未说明随机分配）。四阶段包括 baseline conversational interviews/home tours、12 张图像的 visual story diary、家庭自行设置并使用新产品、第二轮 diary 与 family follow-up interviews；初始访谈/diary 跨 1 个月，并在 3/6/9/12 个月做 30 分钟电话 follow-up。约 20 小时录音、150+ annotated images；transcripts、field notes、diaries 全量 thematic coding，产品提及按功能/美学/象征/情绪/社会归因编码，报告 coder Kappa=.92、分歧由第三 coder 解决。",
+  "findings": [
+    "Flair 基本没有持续改变家庭 cleaning ecology；Roomba 家庭则报告谁清洁、何时/如何清洁、与哪些产品搭配都发生变化，但这是三对三家庭的 pattern，不是 population effect estimate。",
+    "Roomba 的 autonomy 支持 multitasking 与 opportunistic cleaning，也产生 pre-cleaning、监控、救援和维护等新工作；因此“自动化=减少劳动”并不成立。",
+    "有家庭出现劳动角色变化，例如孩子开始负责自己房间；两户包含 elders 的家庭用 Roomba 取代原有 floor-cleaning product system，一户购买第二台。",
+    "Roomba 不只被谈为 function：家庭也从美学、象征、情绪与社会维度进行 sensemaking；相较之下 Flair 主要触发功能与部分象征评价。",
+    "三户 Roomba 家庭都记录了 paired/social use；两户命名机器人、两位 household heads 对它说话，并围绕 pets 与机器人建立 social/emotional narratives。",
+    "家庭会改变空间与 routine 来适配 Roomba，例如先清空地面、安排 charging location，并发明寻找被吸入小物等新用途；这说明 adoption 是 artifact 与 household practice 的双向调整。"
+  ],
+  "claim_evidence_audit": [
+    {"claim": "Roomba 的 autonomous/semi-intelligent capabilities 导致 household ecology 改变。", "evidence": "Roomba 三家与 Flair 三家的 longitudinal contrast，且两类产品都用于地面清洁。", "boundary": "产品不是仅 autonomy 不同：suction、form、mobility、novelty、price/status 与 interaction affordances 都成束变化；无法隔离 autonomy 因果效应。"},
+    {"claim": "robotic product 会成为 social product。", "evidence": "diaries/interviews 中 paired use、naming、talking、pet stories 与多维 sensemaking。", "boundary": "只有三户 Roomba 家庭；social attribution 不是 mutual relationship、shared meaning 或 convention 的充分证据。"},
+    {"claim": "变化持续超越 novelty。", "evidence": "3/6/9/12 个月 follow-ups 与部分持续使用/产品替代。", "boundary": "论文没有逐时间点完整呈现 attrition、每户轨迹或 negative cases，长期证据方向明确但粒度有限。"}
+  ],
+  "real_contribution": "以一年 follow-up 的家庭 ethnography 证明评估 domestic robot 应以 product ecology 为单位：真正的影响包括劳动分配、routine、空间、其他产品、symbolic meaning 与 interpersonal activity 的共同变化。它为 AMSC 提供 appropriation/meaning-in-practice 的证据，而非 convention-formation 证据。",
+  "biggest_weakness": "只有 6 个家庭、每种产品 3 家，且中心 participant 全是女性 housekeepers；Roomba 与 Flair 的 bundled differences 以及缺少随机分配使 autonomy 的因果归因过强。论文也没有展示 longitudinal coding matrix、attrition 或 deviant cases。",
+  "attack": [
+    {"severity": "major_concern", "issue": "“功能相同”不足以构成 autonomy-only comparison；论文自身也报告 Flair suction 不足，产品体验存在实质差异。"},
+    {"severity": "major_concern", "issue": "gender/elder differences 的 cell size 极小，不能形成稳定 group comparison。"},
+    {"severity": "possible_gap_exposed", "issue": "需要在 repeated interaction 中追踪 family members 如何协商 robot signals、roles 与 partner-specific meanings，并用 comparison 识别 history effect。"}
+  ],
+  "claim_boundary": "本文支持：在这 6 个家庭中，Roomba 比 Flair 更广泛地重组了 cleaning ecology 并触发 social/symbolic attributions，部分变化在一年 follow-up 中持续。本文不支持：autonomy 是唯一原因、所有家庭/文化会如此、命名等同 relationship/common ground，或这些 meanings 已成为可识别的 communication convention。",
   "priority": "Important",
-  "one_sentence": "展示 robot 如何进入生活以后被重新理解、赋予社会意义、改变实践；是 appropriation / meaning-making 的很好起点。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "展示 robot 如何进入生活以后被重新理解、赋予社会意义、改变实践；是 appropriation / meaning-making 的很好起点。",
+  "one_sentence": "F3 显示家用机器人会与家庭劳动、空间、产品和 social meaning 一起被重新组织，但小样本产品对比不能隔离 autonomy 的因果作用。",
+  "why_researcher_should_care": "它提供 AMSC 的 situated outcome model：除了 task success，应测人、routine、space、role 与 product ecology 如何随 history 改变；同时避免把 anthropomorphic attribution 当成 convention。",
   "amsc": {
-    "mainline_fit": 7.9,
-    "buckets": [
-      "F"
-    ],
-    "stages": [
-      "Meaning",
-      "Adaptation"
-    ],
-    "mechanisms": [
-      "social context",
-      "appropriation"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "mainline_fit": 7.8,
+    "buckets": ["F"],
+    "stages": ["Social Meaning / Pragmatics", "Personalization / Co-adaptation", "Situated Adaptive Communication"],
+    "mechanisms": ["Meaning", "Adaptation", "Embodied Communication"],
+    "gap_ids": ["GAP-01", "GAP-03", "GAP-06"],
+    "gap_impact": "为 GAP-01 提供 situated meaning/appropriation 的中等强度前例，为 GAP-03 提供 maintenance 与 household adaptation 的背景证据，并强化 GAP-06 必须同时评估 instrumental function 与 social meaning；它没有识别 interaction-history-dependent convention，也不关闭这些缺口。",
+    "master_list_decision": "Baseline v1.0 — retained / domestic appropriation and longitudinal ecology anchor",
+    "exam_impact": "建议仅作为 situated/appropriation 方法例证进入筛选投影；不替代 grounding/convention 核心 anchor。",
+    "next_project_priority": "在 field deployment 中加入 per-partner meaning trajectories、negative cases、history interruption 与 matched non-social/autonomy controls。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 审读作者托管全文：研究问题与 framing pp.129–130；四阶段 longitudinal method、sample、follow-up 与 coding pp.130–131；product ecology 与 findings pp.131–135；结论 p.135。",
+    "Kappa=.92、约 20 小时访谈、150+ images、3/6/9/12 月 follow-ups 均来自全文 methods；未从旧 relevance note 推断。",
+    "论文把 autonomy 写作主要解释，但本审计按产品 bundle confound 下调为关联性/比较性证据。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；未推断或修改 researcher progress。"
   ],
   "source_list_id": "F3",
-  "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "provenance": "user_baseline_v1.0 + full_text_primary_source_audit",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {"source_availability": "full_text", "agent_investigation": "full_paper_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text qualitative longitudinal audit",
+    "source_type": "author_institutional_repository_full_text",
+    "source_url": "https://hcii.s3.amazonaws.com/ppr/papers/p129-forlizzi.pdf",
+    "metadata_crosscheck": ["https://doi.org/10.1145/1228716.1228734"],
+    "evidence_scope": "完整审计研究设计、样本、编码、纵向追踪、发现、设计推论与 claim boundary",
+    "degraded": false
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

@@ -2,56 +2,71 @@
   "id": "E4",
   "slug": "e4-designing-robots-long-term",
   "title": "Designing Robots for Long-Term Social Interaction",
-  "authors": [
-    "Rachel Gockley",
-    "Allison Bruce",
-    "Jodi Forlizzi",
-    "Marek Michalowski",
-    "Anne Mundell",
-    "Stephanie Rosenthal",
-    "Brennan Sellner",
-    "Reid Simmons",
-    "Kevin Snipes",
-    "Alan C. Schultz",
-    "Jue Wang"
-  ],
+  "authors": ["Rachel Gockley", "Allison Bruce", "Jodi Forlizzi", "Marek Michalowski", "Anne Mundell", "Stephanie Rosenthal", "Brennan Sellner", "Reid Simmons", "Kevin Snipes", "Alan C. Schultz", "Jue Wang"],
   "year": 2005,
-  "venue": "IROS 2005, 1338–1343",
+  "venue": "2005 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 1338–1343",
   "source_url": "https://www.cs.cmu.edu/afs/cs/usr/reids/www/papers/Valerie-IROS2005-final.pdf",
   "doi": "10.1109/IROS.2005.1545303",
   "access_status": "full_text",
-  "correction_note": "原清单误写为 Kirby, R., et al.；依据论文标题页与 IEEE DOI metadata，纠正为 Gockley, R., et al.",
+  "correction_note": "原清单误写为 Kirby, R., et al.；论文标题页、CMU author bibliography 与 DOI-linked metadata 均以 Rachel Gockley 为第一作者，且标题页列出全部 11 位作者。",
+  "investigation_status": "full_paper_investigation",
+  "claimed_gap_rq": "当时的 social-robot work 多为短期或结构化 interaction；作者问的是，兼具实用服务、character/personality 与随时间展开的故事，能否让公共空间中的机器人在数月尺度持续吸引重复 interaction，以及部署数据暗示哪些 redesign。论文没有预注册或明确编号 RQ。",
+  "theory": ["长期人机互动（long-term HRI）", "新奇效应（novelty effect）", "角色与人格设计（character/personality design）", "连续剧式叙事（episodic/soap-opera storytelling）", "基于注意状态的互动分区（attentional-state interaction zones）", "共同基础（common ground；仅用于 future-work 设计推理，未被操作化或检验）"],
+  "problem": "多数早期 social-robot studies 只能说明短期 engagement；要理解长期关系与 novelty 消退后的 interaction，需要可长期运行、对自然来访者开放且能记录 repeated use 的部署。",
+  "method": "Valerie Roboceptionist 固定部署在 Carnegie Mellon Newell–Simon Hall 入口。系统以 laser range finder 将路人分为 present/attending/engaged/interacting，使用键盘+pattern-matching chatbot、TTS/animated face、实用查询与每两周更新的连续故事；自愿刷磁卡可提供 hash identity。论文分析首 9 个月、超过 180 个运行日（约每周 5 天、每天 8 小时）的 interaction logs：至少输入一行计为 interaction，zone dwell time 作为故事暴露/停留 proxy，刷卡记录识别部分 repeat visitors。研究是 observational deployment，无随机条件、无 baseline robot、无用户访谈。",
+  "findings": [
+    "9 个月中记录超过 16,000 次至少一行输入的 interaction，日均超过 88 人；约第 120 天后的下降与暑假人流下降同时发生。",
+    "首周存在明显 novelty effect；随后每周 median interaction duration 稳定在略低于 30 秒，足够问路或简单寒暄，但不能证明形成关系。",
+    "每周平均约 254 人在 monologue 附近停留至少 20 秒，但典型 2–3 分钟故事的 weekly median exposure 约 12 秒；长故事并未如设计者预期普遍维持注意。",
+    "753 人至少刷卡一次，233 人后来再次刷卡；可识别 repeat visitors 日均约 7 人，通常 interaction 超过 1 分钟、听故事接近 1 分钟，但刷卡麻烦且硬件间歇故障使重复访问被低估并产生选择偏差。",
+    "28.1% 的输入触发 default non-understanding response；52.9% 的 interaction 至少遇到一次，而其中 74.9% 仍再输入一轮、57.3% 再输入至少两轮。该留存不能说明 default response 无害，因为没有对照和满意度测量。"
+  ],
+  "claim_evidence_audit": [
+    {"claim": "Valerie 在 novelty 消退后仍能获得持续 interaction。", "evidence": "180+ 日流量与 duration logs 显示访问持续、duration 在早期下降后趋稳。", "boundary": "建筑人流、实用 receptionist 功能、story/personality 与机器人形态纠缠，无法因果归因哪项设计维持访问。"},
+    {"claim": "repeat visitors 更投入。", "evidence": "自愿刷卡用户中的 repeat group 停留和听故事时间更长。", "boundary": "刷卡收益有限且麻烦，已投入的用户更可能自我识别；这是 selection，不是 repeated interaction 导致 engagement 的估计。"},
+    {"claim": "长期关系需要 identification、personalization 与 shared history。", "evidence": "作者由刷卡局限与 repeat-use pattern 推导的 redesign proposal。", "boundary": "这是合理的设计假设，不是本文已检验的 common-ground、personalization 或 relationship finding。"}
+  ],
+  "real_contribution": "提供早期、长达 9 个月的公共空间 social-robot deployment evidence，并把 novelty、短 interaction、story exposure、repeat identification 与 conversational breakdown 转化为可操作的长期 HRI redesign 问题。其真正价值是 field-observation/method precedent，而不是证明 character、故事或 personalization 建立了长期关系。",
+  "biggest_weakness": "核心构念“long-term relationship”没有被直接测量：身份覆盖不全、刷卡硬件失败、听故事以 proximity/dwell proxy、没有访谈或比较条件，因此无法区分持续人流、实用需求、个人重复访问与关系形成，也无法把结果归因于 personality/storytelling。",
+  "attack": [
+    {"severity": "major_concern", "issue": "大部分 interaction 无可靠 person identity；aggregate persistence 不能替代 individual longitudinal trajectory。"},
+    {"severity": "major_concern", "issue": "故事、character、utility、location 与 novelty 同时存在，没有 counterfactual comparison。"},
+    {"severity": "missed_opportunity", "issue": "没有分析同一访客的语义/repair/expectation 如何随 shared history 改变。"}
+  ],
+  "claim_boundary": "本文支持：一个实用+角色化 receptionist robot 可在单一大学入口运行九个月并持续获得短 interaction，且可识别 repeat users 更久停留。本文不支持：personality 或 evolving stories 因果维持兴趣、产生 common ground、形成 partner-specific convention，或代表一般家庭/工作场所中的长期 HRI。",
   "priority": "Worth Reading",
-  "one_sentence": "早期长期部署案例，为“novelty 后 interaction 怎么变化”以及 longitudinal HRI design 提供历史背景。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "早期长期部署案例，为“novelty 后 interaction 怎么变化”以及 longitudinal HRI design 提供历史背景。",
+  "one_sentence": "Valerie 的九个月 field logs 是 novelty 后持续使用与 longitudinal instrumentation 的早期基准，但 aggregate visits 不能被写成长期 relationship 证据。",
+  "why_researcher_should_care": "它提醒 AMSC 长期研究必须用稳定身份、individual trajectories 与 interaction-history counterfactuals，把“持续有人来”“同一人重复来”“shared meaning 改变”分开测量。",
   "amsc": {
-    "mainline_fit": 8.8,
-    "buckets": [
-      "E"
-    ],
-    "stages": [
-      "Adaptation"
-    ],
-    "mechanisms": [
-      "mutual adaptation",
-      "long-term interaction"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "mainline_fit": 7.2,
+    "buckets": ["E", "F"],
+    "stages": ["Personalization / Co-adaptation", "Situated Adaptive Communication"],
+    "mechanisms": ["Adaptation", "Embodied Communication"],
+    "gap_ids": ["GAP-01", "GAP-03", "GAP-04"],
+    "gap_impact": "强化 GAP-04 对诊断区分与纵向身份 instrumentation 的需求；仅为 GAP-03 提供初步 maintenance 证据，不关闭 interaction-history-dependent meaning 或 convention 缺口。",
+    "master_list_decision": "Baseline v1.0 — 保留；作为纵向 field-method 背景，不作为 convention anchor",
+    "exam_impact": "除非考试新增 longitudinal-HRI 方法题，否则不建议直接投影；它不是 AMSC grounding/convention anchor。",
+    "next_project_priority": "在声称 relationship 或 convention 前，必须加入持续身份、逐人轨迹、history-severed controls、repair events 与直接 meaning measures。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
-    "原清单误写为 Kirby, R., et al.；依据论文标题页与 IEEE DOI metadata，纠正为 Gockley, R., et al."
+    "2026-08-27 审读 CMU 托管的 IROS author manuscript 全文；锚点为标题/摘要 p.1、设计 pp.2–3、结果 pp.4–5、讨论与未来工作 pp.5–6。",
+    "E4 书目纠正依据 PDF 标题页（Rachel Gockley 第一作者，共 11 位作者）、DOI 10.1109/IROS.2005.1545303 与 Reid Simmons 的 CMU bibliography；Kirby 不是本文作者。",
+    "所有数值发现均按 descriptive deployment logs 表述；本审计主动删除无对照支持的因果措辞。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；未推断或修改 researcher progress。"
   ],
   "source_list_id": "E4",
-  "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "provenance": "user_baseline_v1.0 + full_text_primary_source_audit",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {"source_availability": "full_text", "agent_investigation": "full_paper_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "author_institutional_repository_full_text",
+    "source_url": "https://www.cs.cmu.edu/afs/cs/usr/reids/www/papers/Valerie-IROS2005-final.pdf",
+    "metadata_crosscheck": ["https://doi.org/10.1109/IROS.2005.1545303", "https://www.cs.cmu.edu/~reids/bibliography.html"],
+    "evidence_scope": "title_page_methods_results_discussion_and_limitations_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

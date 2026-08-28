@@ -13,34 +13,72 @@
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "系统理解 gaze 如何承担 social、referential、attention 和 collaborative functions，也能帮助你建立“不同 modality 分别擅长表达什么”的比较框架。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "psychology、virtual-agent、AI 与 robotics gaze work 分散，HRI 缺少 gaze effects、design、technical models 与 open questions 的统一组织。",
+  "method": "narrative review，按 human-focused、design-focused、technology-focused 组织 human-human background、virtual/physical embodiment、morphology、lab/field studies 与 measures；未报告 systematic-review search/selection/quality workflow。",
+  "findings": [
+    "人通常可识别 robot gaze target，但 animacy、contingency 与 engagement 改变解释；micro automatic cueing 中 robot gaze 可能更像 arrow，而 macro interaction 可支持 reference 与 turn-taking。",
+    "mutual gaze/gaze aversion 可调节 conversation，speech plus deictic gaze 常优于 speech-only；gaze 还可表达 mental state、emotion、rapport 并影响 cooperation/learning。",
+    "biological、empirical、heuristic gaze generation 在 realism、data cost 与 design control 间有 trade-off；embodiment 与 multimodal integration remain open。"
+  ],
+  "real_contribution": "把 gaze 确立为同时协调 attention/reference/task 与 rapport/affect/turn-taking 的 context-sensitive embodied resource。",
+  "biggest_weakness": "非系统综述且样本、platform、task、metric 高度异质；morphology 与 virtual/physical differences 妨碍因果汇总。",
+  "claim_boundary": "支持 gaze 的多功能与 context contingency；不支持 partner-specific gaze convention、interaction-history learning 或 long-term adaptive gaze。",
   "why_researcher_should_care": "系统理解 gaze 如何承担 social、referential、attention 和 collaborative functions，也能帮助你建立“不同 modality 分别擅长表达什么”的比较框架。",
   "amsc": {
-    "mainline_fit": 8.1,
+    "mainline_fit": 8.4,
     "buckets": [
       "D"
     ],
     "stages": [
-      "Embodied Communication"
+      "Social Meaning / Pragmatics",
+      "Grounding / Common Ground",
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "legibility",
-      "nonverbal communication"
+      "Meaning",
+      "Grounding",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-06",
+      "GAP-07"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / review anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "D7",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "social gaze 在 HRI 中承担哪些功能，人如何处理 robot gaze，怎样设计/生成 gaze，哪些 embodiment 与 multimodal 问题仍开放？",
+  "theory": [
+    "mutual gaze",
+    "deictic gaze",
+    "joint attention",
+    "gaze aversion",
+    "turn-taking",
+    "social agency and animacy"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://www.ri.cmu.edu/app/uploads/2018/01/admoni2017jhri.pdf",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

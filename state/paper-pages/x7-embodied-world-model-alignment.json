@@ -1,0 +1,32 @@
+{
+  "id": "X7",
+  "slug": "x7-embodied-world-model-alignment",
+  "title": "Embodied Multi-Agent Coordination by Aligning World Models Through Dialogue",
+  "authors": ["Vardhan Dongre", "Dilek Hakkani-Tur"],
+  "year": 2026,
+  "venue": "SIGDIAL 2026, 293–306",
+  "source_url": "https://aclanthology.org/2026.sigdial-1.21/",
+  "doi": null,
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "在 embodied agent-agent household collaboration 中把 task coordination 与 world-model alignment 分离测量。",
+  "problem": "Embodied agents 的 dialogue 是否真的对齐彼此 evolving world models，而不只是减少表面 action conflict？",
+  "method": "为 PARTNR 增加 natural-language dialogue，在 partial observability 下比较三类 LLM，并用 per-agent world graphs 测 observation convergence、information novelty 与 belief-sensitive messaging。",
+  "findings": ["Dialogue 将 action conflicts 降低 40–83 percentage points。", "与此同时 task success 低于 silent coordination，说明局部协调收益不等于整体任务或 belief alignment。"],
+  "real_contribution": "提供 embodied communication 中区分 task outcome、message utility 与 partner-belief sensitivity 的指标组合。",
+  "biggest_weakness": "纯 AI–AI simulation，无 human participant；world-graph alignment 也不等于 socially negotiated convention。",
+  "claim_boundary": "支持 embodied coordination 与 shared-state evidence 必须分层评估，不能直接外推 human–AI common ground。",
+  "why_researcher_should_care": "把 AMSC 的 diagnostic problem 带入 household embodiment，并给出 belief-sensitive messaging 的可操作 precedent。",
+  "amsc": {
+    "mainline_fit": 8.5,
+    "buckets": ["C", "G"],
+    "stages": ["Grounding", "Embodied Communication"],
+    "mechanisms": ["world-model alignment", "belief-sensitive messaging"],
+    "gap_ids": ["GAP-04", "GAP-07"],
+    "master_list_decision": "Candidate — Important / Embodied method"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": ["ACL Anthology lists an August 2026 SIGDIAL publication; inside the configured monthly publication date and retrieved in the seven-day run.", "No DOI is listed on the authoritative ACL page."],
+  "provenance": "amsc_radar_2026-08-27",
+  "updated_at": "2026-08-27"
+}

@@ -11,36 +11,79 @@
   "doi": "10.37693/pjos.2007.1.8814",
   "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "建立“视觉表达也可以存在 lexical units”的理论基础，对 emoji、impact symbols、emanata、漫画视觉符号尤其重要。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "one_sentence": "Cohn 将 visual lexical item 定义为可生产或非生产的 form–meaning pairing，并论证视觉表达的储存单位可小于、等于或大于 panel，而 panel 更适合作为 attention unit 而非视觉“word”。",
+  "problem": "comics 分析常把 panel 当作最基本表达单位，或以表层信息量把 image/panel 类比为 verbal sentence；这种一对一类比无法解释 panel 内可复用的 productive schemata、conventional symbols、跨 panel 的 constituents，以及大于单个 panel 的 entrenched patterns。论文因此追问：在不把视觉结构机械等同于 verbal words/morphemes 的前提下，什么构成 visual lexical item？",
+  "method": "理论建模与比较性 semiotic/linguistic analysis，没有原创实验或系统 corpus。作者借用 Jackendoff 的 Parallel Architecture、construction grammar、morphology、open/closed lexical classes、Figure/Ground 与 windowing of attention，以自绘例子和选取的 comics、Australian sand narratives、Wally Wood panel schemas、heart/speed-line/balloon conventions、advertising strips 作 analytical illustrations；提出 Lexical Representational Matrix（Polymorphic/Macro/Mono/Micro/Amorphic）、attention units、E-Conjunction、visual morphology 与 possible constructions。",
+  "findings": [
+    "该文没有原创 empirical findings；以下是其理论论证与 illustrative analyses。",
+    "Panel 是 visual sequence 中聚焦信息的 attention unit，而不是稳定、可直接等同于 word/sentence 的最小 lexical 或 syntactic unit：多个 panels 可通过 E-Conjunction 形成一个 constituent，一个 Polymorphic panel 也可容纳完整事件结构。",
+    "多数 panel representations 在线组合自较小的、储存在 long-term memory 的 productive schemata；与此同时，hearts、speed lines、thought balloons 等较封闭且 conventionalized 的 signs 可作为 visual morphology 依附、替换或修改 productive roots。",
+    "Visual lexical items 可跨多个粒度：小于 panel 的 productive/conventional signs、某些稳定 panel schemas，以及大于 panel 的 potential constructions；决定性标准是 form–meaning pairing，而非与 verbal word 的表层相似性。",
+    "媒介与 interaction ecology 可能塑造 visual lexicon：作者对比实时、沙地绘制的 Arrernte signs 与非实时 print comics，提出速度/材料约束与 conventionality/productivity 的关系，但这只是理论性解释而非经检验因果结果。"
+  ],
+  "real_contribution": "提供一个跨粒度 visual lexicon vocabulary，尤其把 conventional visual symbols 与 productive iconic schemata 区分，并把 panel 从“视觉词/句子”重构为 attention window。对 AMSC 的真实价值是为 signal inventory、compositionality 与 conventionalization 提供表示层框架，而不是直接证明任何 shared convention 如何形成。",
+  "biggest_weakness": "核心分类主要由作者挑选的 examples 与 linguistic analogy 推导；没有预注册的 corpus sampling、coder reliability、behavioral comprehension/production data 或跨文化比较来验证 LRM、morphological status 与 construction entrenchment。作者也承认尚不知道足够多的 visual grammar 来确认 visual-only constructions。",
+  "claim_boundary": "可作为 visual-language representation 的 conceptual framework 与可检验 hypotheses 来源；不可把其 categories 当作已验证的 cognitive universals、把 comics/sand narratives 的对比当作媒介因果证据，或据此声称 emoji/robot signals 已构成 lexicon、grammar 或共同 convention。",
   "why_researcher_should_care": "建立“视觉表达也可以存在 lexical units”的理论基础，对 emoji、impact symbols、emanata、漫画视觉符号尤其重要。",
   "amsc": {
-    "mainline_fit": 7.8,
+    "mainline_fit": 7.3,
     "buckets": [
-      "A"
+      "A",
+      "B"
     ],
     "stages": [
-      "Meaning",
-      "Embodied Communication"
+      "Informal visual expression",
+      "Social meaning / pragmatics",
+      "Convention formation"
     ],
     "mechanisms": [
-      "social meaning",
-      "multimodal expression"
+      "Meaning",
+      "Convention"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-02",
+      "GAP-05"
+    ],
+    "master_list_decision": "Master Literature v1.0 保留；作为 foundational representation background"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 审读期刊官网 22 页全文，并在 journal landing page 核对 DOI 与 citation。",
+    "本记录将 theoretical claims、illustrative analyses 与 empirical findings 明确分开；旧 baseline relevance note 未作为证据。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；后两者保持未追踪。"
   ],
   "source_list_id": "A4",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "当有意义的 form–meaning pairings 可大于或小于 panel 时，什么构成 visual lexical item？如何依据功能结构而非表层等同，把 visual language 与 verbal lexicon、morphology、syntax、constructions 比较？",
+  "theory": [
+    "视觉语言理论（Visual Language Theory）",
+    "Jackendoff 的平行架构（Parallel Architecture）",
+    "构式语法（Construction Grammar）",
+    "形态学与开放/封闭词类（morphology; open/closed lexical classes）",
+    "图形/背景（Figure/Ground）",
+    "注意窗口化（windowing of attention）"
+  ],
+  "gap_impact": [
+    "GAP-02 被强化并重构：visual vocabulary 可包含 conventional units 与更大 constructions，但论文不解释 interactive emergence 或 partner-specific stabilization。",
+    "GAP-05 在 representation layer 被部分处理：论文给出系统的 visual-lexicon framework，但 embodied communication、social-pragmatic use 与 adaptation 仍不在范围内。"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text conceptual audit",
+    "source_type": "official_journal_full_text",
+    "source_url": "https://journals.lub.lu.se/pjos/article/download/8814/7895/22573",
+    "publisher_url": "https://journals.lub.lu.se/pjos/article/view/8814",
+    "evidence_scope": "problem_theoretical_framework_analytic_examples_conclusion_limitations",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

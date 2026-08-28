@@ -2,48 +2,79 @@
   "id": "F4",
   "slug": "f4-my-roomba-is-rambo",
   "title": "“My Roomba Is Rambo”: Intimate Home Appliances",
-  "authors": [
-    "Ja-Young Sung",
-    "Lan Guo",
-    "Rebecca E. Grinter",
-    "Henrik I. Christensen"
-  ],
+  "authors": ["Ja-Young Sung", "Lan Guo", "Rebecca E. Grinter", "Henrik I. Christensen"],
   "year": 2007,
   "venue": "UbiComp 2007, LNCS 4717, 145–162",
   "source_url": "https://faculty.cc.gatech.edu/~beki/c35.pdf",
   "doi": "10.1007/978-3-540-74853-3_9",
   "access_status": "full_text",
+  "investigation_status": "full_paper_investigation",
+  "claimed_gap_rq": "domestic robots 已进入家庭，但除少量 Roomba ethnography 外，人们如何在 natural ownership 中与 service robot 形成所谓 intimacy、这种 bond 如何表现、又如何关联 adoption 与对 unreliability 的容忍仍不清楚。论文聚焦已经自发建立强联系的 enthusiasts，而非估计一般 owner prevalence。",
+  "theory": [
+    "人与技术的亲密性（intimacy）",
+    "对技术的情感依附（emotional attachment）",
+    "拟人化与拟动物化（anthropomorphism/zoomorphism）",
+    "游戏式参与（ludic engagement）",
+    "含混性作为设计资源（ambiguity as a resource）",
+    "可问责性/过程可见性（accountability）",
+    "家庭技术驯化与技术谱系（technology genealogy）"
+  ],
+  "problem": "service robot 的价值可能不只来自 task performance；owners 会围绕 movement、breakdown、naming、maintenance 与 household routines 形成 relationship-like practices。若只研究 lab interaction 或 acceptance score，就会错过这些从长期使用中产生的 meaning 与 accommodation。",
+  "method": "两阶段 purposive qualitative study。第一阶段收集公开 Roombareview.com 的 137 个 threads、760 条 messages，其中 188 条依作者扩展 Norman emotional-attachment framework 被判定含至少一种 intimacy 描述；论坛内容也用于挑选自发表达强 bond 的受访者。第二阶段访谈 30 位美国、英国、芬兰与奥地利现有 owners（18 次电话、12 份 email questionnaire），平均 ownership 10 个月、范围一周至五年；16 男14女，27–76 岁，26 人有 college degree，technology/engineering 背景较多。两位 researchers 从 AIBO 的五类关系 coding 出发做 top-down analysis，再为 Roomba 扩展类别并迭代形成 themes；主要引语来自信息更丰富的电话访谈，email 资料补充 frequency counts。",
+  "findings": [
+    "participants 将清洁从 drudgery 重新描述为较愉快、甚至像“playing with a robot”的活动；更清洁的家、家庭成员参与与 watching/rescue 提供 pleasure，但 Roomba 同时增加 pre-cleaning、monitoring、rescue 与每次约 15 分钟 maintenance。",
+    "随机式 movement、beeps、重复卡住与 breakdown 被解释为 personality/intent/illness；18/30 认为自己的 Roomba 有 intentions、feelings 或独特 traits，21/30 给它 name/nickname，但 naming 并非 intimacy 的必要或充分指标。",
+    "部分 owners 把 Roomba 称为 assistant、pet-like being 或 family member，向它 greeting、praise、reprimand；这些是 owner attributions 与 practices，不证明机器人拥有 reciprocal representation。",
+    "所有受访者都曾向 visitors 展示 Roomba，并通过口碑推荐；27/30 households 调整住宅以适配它（Roombarization），包括移线、移动/抬高家具、处理地毯，极端案例甚至更换 refrigerator。",
+    "owners 会主动维护与重构环境来管理 unreliability，有人即使机器故障/更换仍继续购买；作者据此提出 intimacy 可能帮助 adoption persistence，但研究没有比较 non-intimate owners。",
+    "论文导出四组设计含义：非 humanoid/animal form 也可触发 attachment；behavioral ambiguity 可刺激 exploration；可见的 dust/state 支持 accountability；robot use 可能重配家庭 support 与 independence。"
+  ],
+  "claim_evidence_audit": [
+    {"claim": "Roomba owners 能形成 intimate relationship。", "evidence": "enthusiast forum 与 30 名 purposively selected owners 的 naming、care、grief、promotion、accommodation narratives。", "boundary": "sample 被刻意筛选为已表达强 ties 者；只能刻画 manifestation，不能估计一般 owners 是否或多常形成 intimacy。"},
+    {"claim": "intimacy 促进 adoption 并提高对 unreliability 的容忍。", "evidence": "participants 愿意维护、Roombarize、替换故障机器并持续拥有。", "boundary": "cross-sectional retrospective accounts 无 comparator；product utility、enthusiasm、sunk cost 与 community identity 都是替代解释，方向性也可能相反。"},
+    {"claim": "ambiguity 是促进 intimacy 的设计资源。", "evidence": "owners 对不可预测 movement 进行观察、实验与 personality attribution。", "boundary": "这是从既有 product/sampled enthusiasts 推导的设计 hypothesis；论文没有操纵 ambiguity，且安全/理解成本未测。"}
+  ],
+  "real_contribution": "不是证明“人会爱机器人”这一显见命题，而是细化 attachment 在 service-robot use 中通过劳动重构、attribution、naming、repair/maintenance、promotion 与 Roombarization 被实践出来，并把 form、ambiguity、accountability、support 变成可研究的设计维度。",
+  "biggest_weakness": "研究先在 enthusiast forum 寻找 intimacy posts，再选择自发表达 strong ties 的 owners，随后以 intimacy framework 编码；这一 purposive/confirmatory design 很适合机制发现，却不能支持 prevalence、adoption causality 或一般化。概念也较宽，容易把 utility、enthusiasm、anthropomorphism 与 relationship 合并。",
+  "attack": [
+    {"severity": "major_concern", "issue": "selection on the outcome：sample 定义已经包含 strong attachment，因此不能用它证明 attachment 普遍或导致 persistence。"},
+    {"severity": "major_concern", "issue": "email 与 phone data richness 不同，coding reliability/negative-case procedure 未量化报告。"},
+    {"severity": "unresolved_question", "issue": "哪些 signals 的 meaning 真正由同一 household 随 history 协商，哪些只是个人 projection 或广泛 cultural script？"}
+  ],
+  "claim_boundary": "本文支持：enthusiastic natural owners 会通过 naming、lifelike attribution、care、promotion 与 home modification 实践 relationship-like engagement。本文不支持：多数 owners 如此、intimacy 因果提高 adoption/reliability tolerance、ambiguity 应普遍增加，或这些 practices 已构成 reciprocal grounding、partner-specific convention 或 mutual adaptation。",
   "priority": "Important",
-  "one_sentence": "用户会命名、解释、重新定位 robot，说明 relationship 和 meaning 会从 actual use 中出现，而不是完全由 designer 决定。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "用户会命名、解释、重新定位 robot，说明 relationship 和 meaning 会从 actual use 中出现，而不是完全由 designer 决定。",
+  "one_sentence": "F4 细化了 Roomba intimacy 如何在真实 ownership 中被做出来，但因刻意选择 enthusiasts，只能说明机制形态，不能说明普遍性或因果。",
+  "why_researcher_should_care": "它为 AMSC 提供 meaning-in-use 与 maintenance/repair 的丰富行为指标，同时给出关键警戒：naming、anthropomorphism、tolerance 与 persistent adoption 都不能单独证明 shared meaning 或 convention。",
   "amsc": {
-    "mainline_fit": 7.9,
-    "buckets": [
-      "F"
-    ],
-    "stages": [
-      "Meaning",
-      "Adaptation"
-    ],
-    "mechanisms": [
-      "social context",
-      "appropriation"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "mainline_fit": 7.4,
+    "buckets": ["F"],
+    "stages": ["Social Meaning / Pragmatics", "Personalization / Co-adaptation", "Situated Adaptive Communication"],
+    "mechanisms": ["Meaning", "Adaptation", "Embodied Communication"],
+    "gap_ids": ["GAP-01", "GAP-03", "GAP-04", "GAP-06"],
+    "gap_impact": "为 GAP-01/06 提供 social meaning 与 instrumental performance 在 situated use 中交织的前例，也为 GAP-03 的 maintenance/breakdown lifecycle 提供背景；但它同时强化 GAP-04：attribution、attachment、alignment 与 convention 必须分开测量，本文不关闭任何 history-dependent communication gap。",
+    "master_list_decision": "Baseline v1.0 — retained / natural-ownership meaning and appropriation anchor",
+    "exam_impact": "建议作为 appropriation/anthropomorphism 的批判案例进入过滤投影；口试可问为什么 naming 与 persistence 不足以证明 common ground。",
+    "next_project_priority": "把 intimacy practices 转成可观察 secondary outcomes，但主检验仍应使用 partner swap、history ablation、repair 与 transfer 来识别 convention。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 审读 Georgia Tech author manuscript 全文：研究动机/理论 pp.145–148；论坛与访谈 methods/sample pp.148–150；三类 findings pp.150–156；discussion、reliability 与 design implications pp.156–160；结论 p.160。",
+    "137 threads、760 messages、188 intimacy messages、30 participants、18 phone/12 email、21 naming、18 personality attribution 与 27 Roombarized households 均来自全文。",
+    "本审计保留作者的 purposive goal（理解 enthusiasts），但删除从该 sample 推向一般 owner prevalence 或 causal adoption 的过度推论。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；未推断或修改 researcher progress。"
   ],
   "source_list_id": "F4",
-  "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "provenance": "user_baseline_v1.0 + full_text_primary_source_audit",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {"source_availability": "full_text", "agent_investigation": "full_paper_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text qualitative audit",
+    "source_type": "author_institutional_repository_full_text",
+    "source_url": "https://faculty.cc.gatech.edu/~beki/c35.pdf",
+    "metadata_crosscheck": ["https://doi.org/10.1007/978-3-540-74853-3_9"],
+    "evidence_scope": "完整审计理论、论坛筛选、访谈、编码、findings、design implications 与 generalization boundary",
+    "degraded": false
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

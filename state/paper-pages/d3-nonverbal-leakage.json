@@ -15,35 +15,75 @@
   "doi": "10.1145/1514095.1514110",
   "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "很好地展示“本来不是明确 message 的行为，也可能被人读取成 communicative signal”。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "很好地展示“本来不是明确 message 的行为，也可能被人读取成 communicative signal”。",
+  "one_sentence": "两次各 400 ms、被设计成“似乎无意”的 object-directed robot glances 使人在 guessing game 中用更少问题和更短时间找到目标，但这不等于证明了 unconscious mind attribution。",
+  "problem": "Human nonverbal leakage 会无意透露 mental state/intention，但人是否会把同类微小 cue 从 robot 行为中读出，用于任务，以及 robot humanlikeness 是否影响该解读，仍缺直接行为证据。",
+  "method": "先让 2 个 all-male human dyads 交换 picker/guesser 角色完成 14-object yes/no guessing game，frame-by-frame 观察 picker 回答前的快速目标视线；再为 Geminoid 与 Robovie R-2 设计每 trial 在前 3 个问题中两次 400 ms target glances（含移动共 1200 ms）。26 名 18–24 岁日本大学生被随机分配到其中一种 robot，每人完成 1 practice+8 counterbalanced trials（4 gaze、4 no-gaze）；主要指标为 questions 数与 identification time，配合 questionnaire、open-ended manipulation check、interview 与 mixed-effects ANOVA。附加 n=12 within-person study比较两种 robot 与 human 的 gaze-direction accuracy。",
+  "findings": [
+    "Across robots，gaze-cue trials 需要更少 questions（F(1,164)=4.30,p=.04）且 identification time 更短（F(1,150)=5.49,p=.02）；结果与“微小 gaze 可作为任务相关信息”一致。",
+    "Time improvement 在 Geminoid 内达到显著（F(1,149)=3.93,p=.05），Robovie 内不显著（F(1,151)=1.75,ns）；然而总体任务表现反而是 Robovie 快于 Geminoid，且 open-ended report 中更少 Geminoid participants 明确报告 gaze cue。",
+    "是否报告发现 gaze cue 不预测表现（F(1,22)=1.68,ns）；宠物所有权与 cue effect 存在 exploratory interaction，但样本小且不支持因果性“pet experience 训练 sensitivity”故事。",
+    "Follow-up n=12 中 Robovie、Geminoid 与 human confederate 的 gaze-target accuracy 均高于 1/14 chance baseline，但三者差异不显著（F(2,20)=0.51,ns），因而无法用基本 gaze-direction perceptibility 差异解释 robot interaction。"
+  ],
+  "real_contribution": "用受控任务证明极小、非显式声明的 robot gaze 就可改变人的行为推断与任务效率，并将“seemingly unintentional behavior as signal”建立为 HRI design space；其最稳健贡献是 cue-use effect，而非对无意识心智归因的证明。",
+  "biggest_weakness": "作者从更快 guessing 和未自报 cue awareness 推到 unconscious intentionality/mind attribution，但 object-directed glance 本身就提供直接 visuospatial clue；open-ended recall 不是 awareness 或 Theory-of-Mind measure。此外 n=26、多重 subgroup/exploratory tests、大量 time outlier 排除（13/206 usable trials）以及小样本 pet-ownership 故事限制结论。",
+  "claim_boundary": "支持在受控 14-object guessing game 中，two brief designer-authored robot glances 可作为有用 cue 并改善任务表现；不证明 cue 真的被视为 unintentional，不证明 unconscious processing、mental-state attribution、shared attention/common ground 或对 humanlikeness 的一般性效应。",
+  "why_researcher_should_care": "D3 同时展示 AMSC 的机会与诊断风险：非显式 embodied behavior 可以承载 meaning，但 task success 不能自动被当作 intentionality、grounding 或 convention 证据，这直接支持 GAP-04/GAP-06 的区分性测量需求。",
+  "gap_impact": {
+    "GAP-04": "STRENGTHENED 诊断警示：task-performance gain 与未主动报告 cue 不足以证明 unconscious intentionality attribution、grounding 或 convention，需要独立的 awareness/mental-state 测量。",
+    "GAP-06": "REDEFINED 证据：似乎无意的 gaze 既可传达 task-relevant hidden state，又依赖 humanlikeness 与 social interpretation；残余问题是 functional inference 与 social meaning 如何被分离验证并随 history 适应。"
+  },
   "amsc": {
-    "mainline_fit": 8.1,
+    "mainline_fit": 7.9,
     "buckets": [
       "D"
     ],
     "stages": [
-      "Embodied Communication"
+      "Social Meaning / Pragmatics",
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "legibility",
-      "nonverbal communication"
+      "Meaning",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-04",
+      "GAP-06"
+    ],
+    "master_list_decision": "Baseline v1.0 保留 — nonverbal implicit-signal anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "2026-08-27 已审计作者主页托管的 HRI'09 全文。",
+    "方法、objective/null results、exploratory moderation、follow-up gaze-perception study 与 inference boundary 均从全文重建。",
+    "论文从 task performance 推到 unconscious intentionality attribution 的说法被记为作者解释，而非 established evidence。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者仍为未跟踪。"
   ],
   "source_list_id": "D3",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "人能否利用 robot 似乎无意的 gaze leakage 推断其 hidden choice，且 near-human 与 stylized embodiment 是否改变该 effect？",
+  "theory": [
+    "nonverbal leakage 与 deception cues",
+    "intentionality 与 mind attribution",
+    "shared attention 机制",
+    "humanlikeness 与 social-signal interpretation"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "author_hosted_full_text",
+    "source_url": "https://pages.cs.wisc.edu/~bilge/pubs/2009/HRI09-Mutlu-Leakage.pdf",
+    "evidence_scope": "从全文重建 argument、method、results、nulls、exploratory effects、follow-up 与 claim boundary",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

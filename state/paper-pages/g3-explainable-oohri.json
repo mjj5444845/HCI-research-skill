@@ -2,46 +2,64 @@
   "id": "G3",
   "slug": "g3-explainable-oohri",
   "title": "Explainable OOHRI: Communicating Robot Capabilities and Limitations as Augmented Reality Affordances",
-  "authors": [
-    "Linda W. Wang",
-    "Mohamed Kari",
-    "Parastoo Abtahi"
-  ],
+  "authors": ["Lauren W. Wang", "Mohamed Kari", "Parastoo Abtahi"],
   "year": 2026,
   "venue": "HRI 2026, 427–437",
   "source_url": "https://xoohri.github.io/",
   "doi": "10.1145/3757279.3785569",
   "access_status": "full_text",
   "priority": "Must Read",
-  "one_sentence": "现在与你“visual representation of robot internal/capability state”最接近的 system paper 之一。它已经解决“能不能把 capability / limitation visually situated in space”，但还没有解决长期 shared shorthand / convention。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "现在与你“visual representation of robot internal/capability state”最接近的 system paper 之一。它已经解决“能不能把 capability / limitation visually situated in space”，但还没有解决长期 shared shorthand / convention。",
+  "one_sentence": "X-OOHRI 通过 AR virtual twins 使 robot action possibilities 与 constraints 可被 spatially inspected；但其 preliminary、no-control user study 测试的是 authored task sequences，而非现实中不断变化的 capabilities 或 longitudinal common ground。",
+  "problem": "Nontechnical users 往往无法发现 robot 能做什么、instruction 为什么 infeasible、以及如何 repair；textual explanations 与 AR instruction/visualization systems 很少把 context-sensitive explanation 与围绕 physical objects 的 direct、bidirectional instruction 结合起来。",
+  "method": "研究由 system implementation、technical evaluation 与 exploratory user evaluation 组成。X-OOHRI 把 physical objects 与 robots 表示为 VLM-generated object-oriented classes，结合 Unity world model 与 robot limits 检查 reachability/graspability/manipulability，并通过五种 AR channels 呈现信息：signifiers、radial action menus、red color coding、explanation tags 与 animated resolution previews。Meta Quest 3 interface 用于操控 spatially aligned GhostObjects，Stretch 3 执行确认后的 ROS2 actions。Technical tests 覆盖 20 个 objects 与 20 次 AR-instructed pick/place trials。另一个 14 人 study（12 men、2 women；18–25 岁）在 AR 中完成两组 tutorial-led task sequences，并使用 think-aloud、factual/self-report understanding questions、NASA-TLX、SUS 与 interviews；study 中没有实体 robot execution，也没有 comparator。",
+  "findings": [
+    "Technical evaluation 在 20 个 objects 上报告 98.7% categorical OO-affordance accuracy；20 次 pick/place trials 的 robot execution success 为 80%，mean pose error 4.5 cm，initial AR alignment error 7.48 cm（约 13 秒完成 correction），end-to-end latency 0.23 秒；study 中的 VLM outputs 经 manual verification。",
+    "14 名 participants 均完成 authored task sequences，并报告 interaction 帮助其理解 robot capabilities、limitations 与需要 assistance 的时机；可回忆的 limitations/resolutions 包括 occlusion、reach、stack、opening a door、moving objects 与 selecting an alternative。",
+    "Participants 整体认为 visualizations clear/helpful、workload 较低、usability 'good'（SUS 79.3）；部分人仍需要 technical support，作者也观察到 object-level abstraction 可能遮蔽 individual robots 之间的 capability differences。"
+  ],
+  "real_contribution": "X-OOHRI 围绕 spatially aligned object affordances 整合 instruction、explanation 与 mixed-initiative repair，把 interface locus 从 robot-centric command panel 转向 task-relevant objects。对 AMSC 而言，其最强贡献是 WHAT/WHERE/HOW capability communication 与 actionable repair 的具体 architecture，而非 emergent shared meaning 的证据。",
+  "biggest_weakness": "User evaluation 属于 preliminary study，样本小、年轻、gender-skewed、tutorial-driven，且缺少 comparison、autonomous execution、surprise failures 或 changing capabilities。High-fidelity scene meshes、grasp poses、decision tree、resolution sequences 与 experimental VLM outputs 均有人工作者/核验，限制了 generality 与 end-to-end autonomy claims。",
+  "claim_boundary": "证据支持 constrained scenes 中 explicitly encoded、in-situ capability/constraint explanations 的 feasibility 与初步 usability/mental-model evidence；不支持相对 text/panels/other AR 的 comparative benefit、calibrated trust/reliance、robust open-world self-assessment、autonomous repair、从 interaction history 学习、partner-specific adaptation、grounding accumulation 或 convention formation。",
+  "why_researcher_should_care": "G3 是最接近 AMSC situated visualization target 的 systems 之一，因为它把 robot capability、limitation、explanation 与 resolution 绑定到 physical referents。下一步不应只是另一个 fixed AR overlay，而应检验 representations 与 repair strategies 如何在 repeated interaction 中被共同理解、压缩与调整。",
+  "claimed_gap_rq": "AR interface 如何在 direct instruction 中外显 object-specific robot capabilities/limitations、就地解释 infeasibility，并让 users preview 与选择 mixed-initiative resolutions？",
+  "theory": ["affordances", "shared mental models", "common ground", "object-oriented abstraction", "situated visualization", "mixed-initiative interaction"],
   "amsc": {
-    "mainline_fit": 8.4,
-    "buckets": [
-      "G"
-    ],
-    "stages": [
-      "Embodied Communication"
-    ],
-    "mechanisms": [
-      "situated communication",
-      "augmented reality"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "mainline_fit": 9.1,
+    "buckets": ["G", "D", "B"],
+    "stages": ["Grounding / Common Ground", "Situated Adaptive Communication"],
+    "mechanisms": ["Grounding", "Adaptation", "Embodied Communication"],
+    "gap_ids": ["GAP-01", "GAP-03", "GAP-04", "GAP-06"],
+    "gap_impact": {
+      "GAP-01": "PARTIALLY_ADDRESSES：通过 tasks 与 factual recall 检验 functional interpretation，但 channels 由 designer authored，没有研究 meaning formation。",
+      "GAP-03": "PARTIALLY_ADDRESSES：object/world-state constraints 提供 context awareness；同时 STRENGTHENS 剩余 history-aware gap，capability updates 只是 architecture 上可行，未被 longitudinally studied。",
+      "GAP-04": "STRENGTHENS：direct manipulation 可指定 preferences，却没有协商 shared signal system，因而强化 personalization/convention distinction。",
+      "GAP-06": "PARTIALLY_ADDRESSES：赋予 capability/limitation signals spatial、actionable form，推进 functional side；social meaning 基本缺席。"
+    },
+    "master_list_decision": "Baseline v1.0 — 保留；最接近的 situated capability-communication system",
+    "mainline_role": "closest technical precedent 与 design substrate",
+    "next_project_priority_change": "提高 repeated-use study 的优先级：让 capability/constraint explanations、repair strategies 与 shorthand 从 interaction history 中调整；避免重复 one-shot situated overlays。",
+    "exam_update": "直接对应 Theme 4 的 anchor/closest-work candidate；口试问题应区分 explainability、grounding 与 convention formation。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 已审计 official project camera-ready PDF/arXiv full text、project page、implementation description、technical evaluation、user study、discussion 与 limitations。",
+    "Baseline 中的作者 'Linda W. Wang' 已依据 official paper、project page 与 ACM reference 更正为 'Lauren W. Wang'。",
+    "Technical robot execution 与 14 人 user study 是两类分离的证据：study 明确没有 physical robot execution，因此 user understanding 不能归因于观察到的 robot outcomes。",
+    "Accurate mental models claims 受 authored tasks 与 no-comparator design 限制；factual recall 与 completion 只表明 task-specific understanding，不等于与独立测量的 open-world robot model 完成 calibration。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者保持未追踪。"
   ],
   "source_list_id": "G3",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {"source_availability": "full_text", "agent_investigation": "full_paper_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "official_project_camera_ready_and_arxiv_full_text",
+    "source_urls": ["https://xoohri.github.io/", "https://xoohri.github.io/static/pdf/X-OOHRI_camera_ready.pdf", "https://arxiv.org/abs/2601.14587"],
+    "evidence_scope": "argument_system_architecture_technical_evaluation_user_study_results_discussion_limitations_and_claim_boundaries_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

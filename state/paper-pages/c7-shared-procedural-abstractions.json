@@ -17,36 +17,72 @@
   "correction_note": "原清单将 Holdaway 列在 Wang 之前；本页按论文标题页与会议记录纠正作者顺序。",
   "priority": "Must Read",
   "one_sentence": "repeated physical assembly 中，人会建立更高级的 procedural abstraction，并通过交流协调这些 abstraction。是你进入 physical collaboration 的关键桥梁。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "collaboration 需要协调的不只是词语，也包括 task-appropriate procedural abstractions；convention 与 program-learning models 分别忽略其中一半。",
+  "method": "98 AMT participants/49 architect–builder dyads 完成 12 online block-assembly trials，3 towers×4 repetitions；Architect 发送不超过 100 字符的 stepwise messages，Builder 不可回话。测 F1、words/messages、block-vs-tower references、JSD；DSL/library learner 做定性 simulation。",
+  "findings": [
+    "初始 F1=.876 并继续提高，words/messages 下降；language 从 block-level 转向 tower-level terms，dyads 的 lexical solutions 分化。",
+    "library learner 可发现 tower fragments，并在中等 cost 下定性再现 abstraction shift。"
+  ],
+  "real_contribution": "把 reference/convention formation 连接到 hierarchical action structure，提供 assembly paradigm 与 computational vocabulary。",
+  "biggest_weakness": "shared procedural abstraction 未直接测量；Builder 无语言反馈，model 假设双方同速学习同一 DSL，未 fit individual trajectories；coding 无 reliability，初始 high accuracy 弱化 necessity claim。",
+  "claim_boundary": "支持 constrained online human assembly 中 repetition、简短 tower-level talk 与 performance 的关联；不证明相同 internal representation、causal abstraction、mutual grounding 或 embodied AI transfer。",
   "why_researcher_should_care": "repeated physical assembly 中，人会建立更高级的 procedural abstraction，并通过交流协调这些 abstraction。是你进入 physical collaboration 的关键桥梁。",
   "amsc": {
-    "mainline_fit": 9.6,
+    "mainline_fit": 9.3,
     "buckets": [
-      "C"
+      "C",
+      "G"
     ],
     "stages": [
-      "Grounding",
-      "Convention"
+      "Grounding / Common Ground",
+      "Convention Formation",
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "common ground",
-      "convention formation"
+      "Grounding",
+      "Convention",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-03",
+      "GAP-04",
+      "GAP-07"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / CORE procedural bridge"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
     "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
-    "原清单将 Holdaway 列在 Wang 之前；本页按论文标题页与会议记录纠正作者顺序。"
+    "原清单将 Holdaway 列在 Wang 之前；本页按论文标题页与会议记录纠正作者顺序。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "C7",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "lexical mappings 与 hierarchical procedural abstractions 能否在 repeated physical assembly 中共同形成？",
+  "theory": [
+    "Bayesian program and library learning",
+    "minimum description length",
+    "RSA-like lexical inference",
+    "efficiency–informativity trade-off"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://repositories.cdlib.org/uc/item/3vs8285x",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

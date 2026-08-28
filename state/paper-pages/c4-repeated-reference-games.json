@@ -14,35 +14,73 @@
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "直接研究 repeated interaction 中表达如何逐渐变短、稳定且具有 dyad-specificity，是你未来 longitudinal convention experiment 的方法学模板之一。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "经典 repeated-reference work 只显示 descriptions 会缩短，粒度不足以约束 formal learning theories。",
+  "method": "480 AMT participants；free-matching pilot 218 人、confirmatory 262 人；exclusions 后 56 pilot games 与 83 dyads/7,867 messages。12 tangrams×6 blocks，双向 text chat 与即时 feedback；confirmatory analyses preregistered，结合 dependency parsing、mixed models、GloVe/token analyses 与 permutation checks。",
+  "findings": [
+    "descriptions 缩短，matcher backchannel 从首 block 75% 的 matchers 发言降到末 block 4%。",
+    "speaker 按同一 tangram 上轮正负 feedback 调节下一次长度；closed-class words 更易被成簇删除，initially distinctive words 更可能保留。",
+    "within-dyad successive expressions 更相似，between-dyad 表达更分歧且逐渐稳定。"
+  ],
+  "real_contribution": "提供开放 repeated-reference corpus 与高分辨率 measurement，把 convention dynamics 描述为 path-dependent、feedback-sensitive、locally informative 的 pruning process。",
+  "biggest_weakness": "把一 trial 内多轮 dialogue collapse 为单 utterance，丢失 grounding/repair sequence；人工清洗与 GloVe 表示有偏差；无 partner swap/history ablation。",
+  "claim_boundary": "支持 human text Tangram reference 六次重复中的 feedback-sensitive stabilization；不能外推 multimodal/embodied/long-term，也不独立证明 partner-specific transfer。",
   "why_researcher_should_care": "直接研究 repeated interaction 中表达如何逐渐变短、稳定且具有 dyad-specificity，是你未来 longitudinal convention experiment 的方法学模板之一。",
   "amsc": {
-    "mainline_fit": 9.6,
+    "mainline_fit": 9.5,
     "buckets": [
       "C"
     ],
     "stages": [
-      "Grounding",
-      "Convention"
+      "Grounding / Common Ground",
+      "Convention Formation",
+      "Personalization / Co-adaptation"
     ],
     "mechanisms": [
-      "common ground",
-      "convention formation"
+      "Grounding",
+      "Convention",
+      "Adaptation"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-02",
+      "GAP-03",
+      "GAP-04",
+      "GAP-07"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / CORE dynamics anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "C4",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "reduction 的 syntax/feedback dynamics、convention 的 stability/arbitrariness 与 context discriminability 如何随重复互动变化？",
+  "theory": [
+    "collaborative reference",
+    "common ground",
+    "stability and arbitrariness",
+    "Gricean informativity",
+    "cross-situational distinctiveness"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12845",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

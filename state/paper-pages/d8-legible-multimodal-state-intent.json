@@ -10,42 +10,90 @@
     "Achim J. Lilienthal"
   ],
   "year": 2026,
-  "venue": "RO-MAN 2026 (accepted/presented; proceedings DOI pending)",
+  "venue": "IEEE RO-MAN 2026 (arXiv author note says accepted; official program lists an Aug 25, 2026 slot; proceedings DOI not verified as of 2026-08-27)",
   "source_url": "https://arxiv.org/abs/2606.24445",
   "doi": "10.48550/arXiv.2606.24445",
   "access_status": "full_text",
-  "publication_status": "accepted_with_preprint",
-  "last_verified": "2026-08-26",
+  "publication_status": "author_reported_accepted_and_official_program_listed; arxiv_preprint_v2_available; presentation_completion_and_ieee_proceedings_publication_not_verified",
+  "last_verified": "2026-08-27",
+  "arxiv_version": "v2",
+  "arxiv_submitted_at": "2026-06-23",
+  "arxiv_last_revised_at": "2026-08-06",
+  "official_program_slot": "2026-08-25 15:00–15:20 (TuB08.4, Trust & Explainability I)",
+  "proceedings_doi": null,
   "priority": "Must Read",
-  "one_sentence": "直接比较低表达 LED 和 gaze + gesture + voice multimodal strategy，证明 multimodal state communication 的 legibility 优势，同时暴露 virtual-to-real gap。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "直接比较低表达 LED 和 gaze + gesture + voice multimodal strategy，证明 multimodal state communication 的 legibility 优势，同时暴露 virtual-to-real gap。",
+  "one_sentence": "对 mobile robot 的 fixed messages，gaze+gesture+speech 组合策略总体比 LED 更易读，但 live museum 的 legibility 远低于 online video，且设计无法把优势归因于“multimodality”本身。",
+  "problem": "Non-humanoid service robots 需要传达 intent、attention request、error、obstruction 与 idle state，但 robot 模态限制、recipient interpretation 差异，以及 online-video 结果能否迁移到 physical public setting，使传播策略的 legibility/intuitiveness 缺少系统比较。",
+  "method": "在 Robotnik RB-Kairos base 上对比两个 holistic strategies：S_low 仅用 built-in LED stripe，S_high 额外搭载 NAO，用 posture/head orientation/gesture/speech。两策略分别编码 idle、attention、left turn、error、obstacle/help 五类 fixed messages。Online survey 招募 100 人，排除 attention-check 失败后 N=97，观看 5–20 s randomized videos；Deutsches Museum live Wizard-of-Oz replication 为 N=139，5–30 人一组在围合展区观看 robot。每个 message 测 forced-choice correct interpretation 和 5-point difficulty，聚合为 legibility/intuitiveness scores，用 2 data-source×2 strategy mixed ANOVA，再对 attention/error/turn 用 χ² 与 Mann–Whitney tests，Bonferroni correction。",
+  "findings": [
+    "Legibility 在 online 为 M=.65、live 为 M=.35（data-source F(1,404)=262.83,p<.001,ηp²=.39）；intuitiveness 也从 3.33 降到 2.95，表明 video 结果不能直接代表 public-space physical legibility。",
+    "S_high 总体比 S_low 更 legible（.55 vs .42，F(1,404)=53.97,p<.001,ηp²=.12）且更 intuitive（3.55 vs 2.70，F(1,404)=105,p<.001,ηp²=.25），但这是 NAO morphology+gesture+speech 对 LED-only 的整体对比。",
+    "Attention 正确解读为 S_high 85% vs S_low 39%；turn 为 77% vs 33%；error 则两者都较高但仍有显著差异（91% vs 77%,p<.001）。因此论文 conclusion 中“equally effective for errors”与其显著性分析并不完全一致。",
+    "Obstacle 的 exploratory channel analysis 中，移除 S_high 的 speech 后，将信息解读为 error 的比例从 54% 降到 28%，而 red LED 为 77%；这表明 familiar conventional color 对简单 state 可能比无语言 social gesture 更稳健。"
+  ],
+  "real_contribution": "将 robot-state/intent communication 从单一 cue 示例推到五类 message、两个表达带宽极端与 online/live 双场景比较，给出一个对 AMSC 很有用的设计原则候选：simple conventional status 和 spatially complex intent 可能需要不同 channel mix，且 physical validation 不可省略。",
+  "biggest_weakness": "S_high 与 S_low 同时在 embodiment（NAO mounted vs base only）、模态数、semantic explicitness、speech content、gesture 与 salience 上不同，因此无法把 effect 归因于 expressive bandwidth 或 multimodality。Online/live 也是不同招募样本、video vs live、个人 vs group-session 的 bundle，所以“virtual-to-real gap”是描述差异而非被隔离的因果。",
+  "claim_boundary": "支持在本研究的 fixed five-message set 中，explicit NAO gesture+speech package 比本研究的 LED mappings 更容易被正确命名，且 live museum 总体低于 online video；不支持“multimodality本身”的独立因果优势、真实 collision avoidance/safety/trust 改善、任何 partner-specific grounding/convention 或跨文化一般性。",
+  "why_researcher_should_care": "D8 直接覆盖 AMSC 的 WHAT/WHERE/HOW robot-state communication 设计，但它也使 novelty boundary 更严格：不能再主张“multimodal state/intent communication 未在 physical setting 验证”；真正未解的是 component-level trade-off、history-aware adaptation 与 social/relational meaning 的联合评估。",
+  "gap_impact": {
+    "GAP-04": "PARTIALLY_ADDRESSED 的新方法边界：论文分开 legibility/intuitiveness 与 online/live，但 holistic bundle 不能诊断具体 modality 或 grounding mechanism。",
+    "GAP-06": "REDEFINED 证据：fixed functional state/intent 的 multimodal physical validation 已存在，残余问题是与 social meaning 的 history-dependent joint optimization，而非“两类信号从未结合”。"
+  },
   "amsc": {
-    "mainline_fit": 8.1,
+    "mainline_fit": 8.7,
     "buckets": [
       "D"
     ],
     "stages": [
-      "Embodied Communication"
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "legibility",
-      "nonverbal communication"
+      "Meaning",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-04",
+      "GAP-06"
+    ],
+    "master_list_decision": "Baseline v1.0 保留 — contemporary physical multimodal-state anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "2026-08-27 审计 arXiv v2 全文；arXiv 记录 v1=2026-06-23、v2=2026-08-06，并在 Comments 中由作者声称 accepted for publication at IEEE RO-MAN 2026。",
+    "2026-08-27 核验 RO-MAN 2026 官方 program，该文列于 2026-08-25 15:00–15:20 TuB08.4；这证明 program listing，但不单独证明实际 presentation 已发生。",
+    "截至 2026-08-27 未核验到 IEEE proceedings DOI；当前 doi 字段是 arXiv 由 DataCite 签发的 DOI，不是 conference proceedings DOI。",
+    "方法、结果、null/boundary 与 AMSC 影响均从 v2 全文重建，未把旧 relevance note 当作证据。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者仍为未跟踪。"
   ],
   "source_list_id": "D8",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "低表达 LED 与高表达 gaze/gesture/speech 组合策略，在 online video 与 live public-space 中传达五类 robot state/intent 时，legibility 与 intuitiveness 如何不同？",
+  "theory": [
+    "robot transparency 与 state/intent communication",
+    "legibility 与 predictability 区分",
+    "multimodal redundancy、semantic specificity 与 expressive bandwidth",
+    "cultural convention 与 context-sensitive signal transfer",
+    "virtual-to-real evaluation gap"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "official_repository_preprint_v2_plus_official_conference_program",
+    "source_url": "https://arxiv.org/abs/2606.24445",
+    "secondary_primary_source_url": "https://ro-man2026.org/program-at-a-glance/",
+    "evidence_scope": "从 v2 全文重建 argument、method、results、claim boundaries 与 time-sensitive bibliographic status",
+    "degraded": false,
+    "status_caveat": "已核验 arXiv author-reported acceptance 与 official program listing；未核验实际 presentation completion 或 IEEE proceedings DOI/publication。"
+  },
+  "worth_sharing": false
 }

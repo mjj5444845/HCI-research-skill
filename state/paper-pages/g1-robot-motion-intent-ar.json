@@ -2,47 +2,62 @@
   "id": "G1",
   "slug": "g1-robot-motion-intent-ar",
   "title": "Communicating Robot Motion Intent with Augmented Reality",
-  "authors": [
-    "Michael Walker",
-    "Hooman Hedayati",
-    "Jennifer Lee",
-    "Daniela Szafir"
-  ],
+  "authors": ["Michael Walker", "Hooman Hedayati", "Jennifer Lee", "Daniela Szafir"],
   "year": 2018,
   "venue": "HRI 2018, 316–324",
   "source_url": "https://www.cs.columbia.edu/~allen/S19/Student_Papers/robot_intent_AR.pdf",
   "doi": "10.1145/3171221.3171253",
   "access_status": "full_text",
   "priority": "Must Read",
-  "one_sentence": "AR 如何 externalize robot intent 的经典工作。对你“花字在哪里出现”这个问题非常重要：机器人身体本身并不是唯一 communication surface。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "AR 如何 externalize robot intent 的经典工作。对你“花字在哪里出现”这个问题非常重要：机器人身体本身并不是唯一 communication surface。",
+  "one_sentence": "Controlled HRI study 表明，把 aerial robot 的 future motion 外显为空间 AR cues 可以减少 interruption time，但不同 cue designs 在 clarity 与 usefulness 上差异明显。",
+  "problem": "Aerial robot 等 appearance-constrained robots 难以可靠使用 anthropomorphic gaze、gesture 或 speech，因此附近的人可能无法推断其何时、向哪里、以何种方式移动，进而损害 coordination、safety 与 task efficiency。",
+  "method": "研究先进行 iterative AR design，再开展 60 人 between-subjects laboratory experiment（University of Colorado Boulder；40 men、20 women；平均年龄 20.7），平均分配到 NavPoints、Arrow、Gaze、Utilities 与 no-AR baseline。所有条件均佩戴 Microsoft HoloLens；participants 在六个工作台进行八分钟 bead-string task，与按固定随机 waypoint sequence 飞行的 AscTec Hummingbird 共享空间。四种 cues 分别外显未来 3D waypoints/timing、提前 15 秒的 trajectory arrow、virtual gaze proxy，或 user-centric radar。Outcomes 包括 interruption time、clarity/teammate/usability multi-item scales 与 open-ended responses；使用 one-way ANOVA、Dunnett 与 Tukey post-hoc tests 比较条件。",
+  "findings": [
+    "Interface condition 显著影响 interruption time，F(4,55)=12.56, p<.001：NavPoints、Arrow 与 Gaze 相比 baseline 减少 lost time，Utilities 则没有。",
+    "只有 NavPoints 在 perceived communication clarity 以及 personal/other teammate judgments 上显著高于 baseline；NavPoints、Arrow 与 Gaze 在理解 intent 的 usefulness 上均高于 Utilities。",
+    "这种对比表明，future destinations 与 timing cues 支持 anticipatory coordination，而以 current relative position 为中心的 display 在该任务中不足；participants 仍认为部分 velocity/timing encodings 带来 mental demand 或不够清晰。"
+  ],
+  "real_contribution": "论文开辟并实证抽样了一个 design space：robot-to-human communication 可以位于 augmented environment、robot 或 user-interface layers，而不必让 robot body 承载全部 cues。结果说明 spatially registered future-action previews 能改善局部 coordination，且 richer explicit content 不能被 generic status visualization 替代。",
+  "biggest_weakness": "样本规模有限且年轻，participants 只完成一个八分钟、固定 trajectory 的 single-drone bead-string task，并接受 tutorial。各条件同时捆绑 content、visual form、information amount 与 spatial locus，因此无法隔离具体 causal visual property，也不能建立在真实 workplace、longer interaction、multi-user setting 或 heterogeneous robots 中的 safety/coordination benefits。",
+  "claim_boundary": "证据支持多种 designer-authored AR motion-intent cues 在单一 collocated aerial-robot task 中的短期效果；不支持 mutual grounding、common-ground development、emergent/partner-specific convention、longitudinal adaptation、对 WHAT/WHEN/WHERE 的 autonomous choice，或 AR 相对其他 modalities 的普遍优越性。",
+  "why_researcher_should_care": "G1 把 WHERE 提升为 AMSC 的一等 design variable：communicative content 可被 situated 在 environment 或 interface 中，不必只 embodied on the robot。其 condition trade-offs 为后续检验 representation 是否支持 prediction 与 coordination（而非仅提高 rating）提供强 precedent。",
+  "claimed_gap_rq": "当 robot 缺乏 anthropomorphic/zoomorphic cues 时，see-through ARHMD 能否提供可用的 hands-free spatial motion-intent cues？Explicit/implicit visualization designs 在 task efficiency、clarity、teammate perception 与 usability 上如何权衡？",
+  "theory": ["common ground", "interpredictability", "motion inference", "gulf of evaluation", "augmented-reality design space"],
   "amsc": {
-    "mainline_fit": 8.4,
-    "buckets": [
-      "G"
-    ],
-    "stages": [
-      "Embodied Communication"
-    ],
-    "mechanisms": [
-      "situated communication",
-      "augmented reality"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "mainline_fit": 8.5,
+    "buckets": ["G", "D"],
+    "stages": ["Grounding / Common Ground", "Situated Adaptive Communication"],
+    "mechanisms": ["Grounding", "Embodied Communication"],
+    "gap_ids": ["GAP-01", "GAP-03", "GAP-06"],
+    "gap_impact": {
+      "GAP-01": "PARTIALLY_ADDRESSES：比较四种 designed representations 与 objective coordination，但没有检验 meaning formation。",
+      "GAP-03": "STRENGTHENS：突出 context-aware/history-aware 的区分；cues 使用 current robot plan 与 spatial context，却从未使用 interaction history。",
+      "GAP-06": "PARTIALLY_ADDRESSES：通过 situated visual signals 外显 motion intent，推进 functional-state communication，但没有研究 social meaning。"
+    },
+    "master_list_decision": "Baseline v1.0 — 保留；situated robot-intent anchor",
+    "mainline_role": "核心 method 与 embodied-output precedent",
+    "next_project_priority_change": "提高在 situated communication 中实验分离 WHAT、WHERE 与 temporal preview horizon 的优先级，并以 coordination behavior 为主要 outcome。",
+    "exam_update": "直接对应 Theme 4 的 anchor candidate；适合与 legibility-through-motion、projection/display approaches 做口试比较。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 已端到端审计可访问的 author/course-hosted camera-ready PDF；DOI 与 ACM reference information 和 baseline record 一致。",
+    "Problem、design framework、sample、task、measures、analyses、results、discussion 与 limitations 均从全文重建，而非沿用旧 relevance note。",
+    "论文对 common ground 的使用属于 conceptual motivation；实验测量 immediate inference/coordination，不是 common-ground accumulation。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者保持未追踪。"
   ],
   "source_list_id": "G1",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {"source_availability": "full_text", "agent_investigation": "full_paper_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "author_or_course_repository_camera_ready_full_text",
+    "source_url": "https://www.cs.columbia.edu/~allen/S19/Student_Papers/robot_intent_AR.pdf",
+    "evidence_scope": "argument_method_results_discussion_and_claim_boundaries_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

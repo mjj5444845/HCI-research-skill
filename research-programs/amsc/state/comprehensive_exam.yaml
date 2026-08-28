@@ -1,4 +1,4 @@
-version: 0.2
+version: 0.4
 updated_at: 2026-08-27
 title: "Adaptive Multimodal Social Communication for Embodied AI: From Social Meaning and Shared Representations to Situated Adaptation"
 core_review_question: "How do socially meaningful multimodal signals become grounded, conventionalized, and adaptive in human–embodied AI interaction?"
@@ -11,11 +11,12 @@ readiness:
     baseline_verified: 41
     top20_full_text_available: 20
   agent_evidence:
-    bibliographic_only: 39
-    abstract_reviewed: 4
-    abstract_and_full_page_reviewed: 1
+    bibliographic_only: 0
+    abstract_reviewed: 3
+    abstract_evidence_investigation: 1
     source_verified_candidate: 2
-    full_paper_investigation: 0
+    radar_full_text_audit: 7
+    full_paper_investigation: 40
   researcher:
     top20_read: null
     top20_mastered: null
@@ -23,6 +24,7 @@ readiness:
   warnings:
     - "Agent investigation status does not imply researcher reading or mastery."
     - "Comprehensive exam framing is a candidate synthesis, not paper evidence."
+    - "41 baseline pages are evidence-audited, but F6 remains abstract-only because no full text was accessible."
 themes:
   - Social & Multimodal Communication
   - Representation & Pragmatics
@@ -31,7 +33,464 @@ themes:
   - Adaptation & Long-Term HRI
   - Social / Cultural / Relational Context
 top20_order: [C1, C2, C3, B1, B2, B3, C4, C5, C6, C7, C8, A5, A2, A1, D5, D6, D7, E1, E2, E3]
-reading_matrix: []
+second_round_evidence:
+  theme_6:
+    status: READY_FOR_SYNTHESIS
+    investigated_anchors: [F1, F2, F5]
+    supporting_cases: [F3, F4]
+    degraded_case: F6
+    synthesis_boundary: "Culture / relation 应以 norms、roles、practice、appropriation 与 institutional context 组织，不能写成静态国别 preference；F6 只能按 abstract-level evidence 使用。"
+  embodied_methods:
+    investigated_support: [D1, D2, D3, D4, D8, D9, G1, G2, G3, G4]
+    synthesis_boundary: "这些论文强化 fixed-cue 与 AR/motion design precedents，但不建立 history-dependent mutual convention。"
+candidate_anchor_review:
+  theme_3:
+    candidates: [X8, X9, X10, X11, X12]
+    status: REVIEW_BEFORE_CORE_PROMOTION
+    rationale: "这些论文直接改变 common-ground / convention 的 gap 与 diagnostic map，但仍需研究者决定是否进入考试 core corpus。"
+  methods_only: [X6, X7]
+  guardrail: "Radar candidate 不因 Agent 调查完成而自动成为 exam anchor；researcher reading/mastery 保持未记录。"
+reading_matrix:
+  - id: C1
+    citation: "Herbert H. Clark, Deanna Wilkes-Gibbs (1986). Referring as a Collaborative Process. Cognition, 22(1), 1–39"
+    source_url: "https://web.stanford.edu/~clark/1980s/Clark%2C%20H.H.%20_%20Wilkes-Gibbs%2C%20D.%20_Referring%20as%20a%20collaborative%20process_%201986.pdf"
+    exam_theme: 3
+    rq: "speaker 与 addressee 如何协作完成 reference，并以当前目的所需的充分理解为 grounding criterion？"
+    theory: ["collaborative model", "presentation–acceptance cycle", "mutual responsibility", "principle of least collaborative effort"]
+    method: "8 对 Stanford undergraduate dyads 在 opaque screen 两侧完成 12 个 Tangram 排列任务，共 6 trials；固定 director/matcher，可自由交谈；分析 576 placements、9,792 transcript words 及 exchange/repair/acceptance 结构。"
+    finding: "每图 director words 从 trial 1 约 41 降至 trial 6 约 8，director turns 从约 3.7 降至约 1。 basic exchanges 从早期 18% 升至后期约 84%；reference 常经 presentation、verdict、repair/expansion/replacement 的递归 acceptance cycle。"
+    limitation: "仅 8 对学生、单一 spoken Tangram task、固定角色；无 partner swap、history ablation、非语言或具身条件，表达缩短本身不足以证明 partner-specific convention。"
+    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation; mechanisms: Meaning, Grounding, Convention"
+    gap_supported_challenged: [GAP-01, GAP-02, GAP-03, GAP-04, GAP-07]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define collaborative model and state its observable evidence."
+      comparison: "How does this paper differ from literary one-way encoding model?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: C2
+    citation: "Herbert H. Clark, Susan E. Brennan (1991). Grounding in Communication. Perspectives on Socially Shared Cognition, 127–149"
+    source_url: "https://www.cs.cmu.edu/~illah/CLASSDOCS/Clark91.pdf"
+    exam_theme: 3
+    rq: "如何统一描述 contribution、evidence of understanding、grounding criterion，以及 purpose/medium 对 grounding techniques 的约束？"
+    theory: ["common ground", "grounding criterion", "presentation plus acceptance", "positive evidence", "principle of least collaborative effort", "medium constraints"]
+    method: "理论/概念综合，使用自然会话例子与既有 face-to-face、telephone、keyboard、email 研究；没有新招募样本或原创实验。"
+    finding: "该文没有新的单一实验 finding；其综合主张是 grounding technique 随 purpose 与 medium 改变。 medium 的 copresence、visibility、audibility、cotemporality、simultaneity、sequentiality、reviewability 与 revisability 会改变 formulation、reception、delay、fault 与 repair 成本。"
+    limitation: "mutual belief 难以直接观测；框架依赖 cooperative coordination，媒介 taxonomy 源自 1991 年 ecology，且无 embodied AI 或 causal comparison。"
+    relation_to_mainline: "Stages: Grounding / Common Ground → Situated Adaptive Communication; mechanisms: Grounding, Embodied Communication"
+    gap_supported_challenged: [GAP-03, GAP-04, GAP-06, GAP-07]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define common ground and state its observable evidence."
+      comparison: "How does this paper differ from system memory or task success?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: C3
+    citation: "Susan E. Brennan, Herbert H. Clark (1996). Conceptual Pacts and Lexical Choice in Conversation. Journal of Experimental Psychology: Learning, Memory, and Cognition, 22(6), 1482–1493"
+    source_url: "https://web.stanford.edu/~clark/1990s/Brennan%2C%20S.E.%20_%20Clark%2C%20H.H.%20_Conceptual%20pacts%20and%20lexical%20choice%20in%20conversation_%201996.pdf"
+    exam_theme: 3
+    rq: "lexical reuse 是否由当前 informativeness、frequency/recency history、provisionality 与 partner identity 共同决定？"
+    theory: ["conceptual pact", "lexical entrainment", "partner-specific precedent", "provisionality and hedging"]
+    method: "三个 human picture-card matching experiments：Exp1 48 students/24 pairs；Exp2 72/36 pairs 并交替角色；Exp3 50 students，比较 10 same-partner 与 10 switch-partner groups。测 lexical/verbatim equivalence、basic-level terms 与 hedging。"
+    finding: "frequency 加 recency 比 recency 或当前 informativeness 更好解释 lexical reuse；谁最初提出 conceptualization 不决定后续 entrainment。 uncertainty 较高时 hedging 更多，随 grounding 增强而消失。 Exp3 同一 terms 的 B4→C1 保留为 same partner 48% vs switch partner 18%；关键 item-level test 仅 marginal，p=.08，switch condition 也更常回退至 basic-level terms。"
+    limitation: "只有四个关键 target items，关键 partner effect 的 item-level test marginal；partner switch 同时改变 memory cue、feedback 与 expectations，不能单独识别内部 representation。"
+    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation → Personalization / Co-adaptation; mechanisms: Grounding, Convention, Adaptation"
+    gap_supported_challenged: [GAP-02, GAP-03, GAP-04, GAP-07]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define conceptual pact and state its observable evidence."
+      comparison: "How does this paper differ from population convention or lexical alignment?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: B1
+    citation: "Noah D. Goodman, Michael C. Frank (2016). Pragmatic Language Interpretation as Probabilistic Inference. Trends in Cognitive Sciences, 20(11), 818–829"
+    source_url: "https://langcog.stanford.edu/papers_new/goodman-2016-tics.pdf"
+    exam_theme: 2
+    rq: "如何形式化 speaker goals、context、world beliefs、utterance alternatives 与 listener inference？"
+    theory: ["Rational Speech Act", "uncertain RSA", "probabilistic inverse planning", "speaker utility and utterance cost"]
+    method: "非系统性理论综述与计算建模综合；重建 basic RSA，并汇总 signaling-game、judgment、reference、figurative language 与 vagueness 研究；没有原创实验样本。"
+    finding: "RSA 在若干受限 signaling/reference tasks 中可量化拟合 human judgments，并可纳入 utterance cost、speaker uncertainty 与不同 utilities。 深层 social recursion 的 evidence mixed；论文把 dialogue、partner utilities/goals、social goals、learning/language change 与 scalability 列为开放问题。"
+    limitation: "narrative review 来自框架主要提出者；basic RSA 常预设 alternatives、utility、literal semantics 与 rational speaker，主要解释受限 listener judgments，而非在线 production/repair。"
+    relation_to_mainline: "Stages: Social Meaning / Pragmatics → Grounding / Common Ground; mechanisms: Meaning, Grounding"
+    gap_supported_challenged: [GAP-01, GAP-02, GAP-03, GAP-04]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define Rational Speech Act and state its observable evidence."
+      comparison: "How does this paper differ from Clarkian grounding?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: B2
+    citation: "Judith Degen (2023). The Rational Speech Act Framework. Annual Review of Linguistics, 9, 519–540"
+    source_url: "https://alpslab.stanford.edu/papers/2023Degen.pdf"
+    exam_theme: 2
+    rq: "RSA 如何整合 linguistic knowledge、communicative pressures、context 与 subjective priors；哪些机制成功，哪些问题仍未解决？"
+    theory: ["Rational Speech Act", "gradient informativeness", "contextual alternatives", "joint inference over QUD, lexicon and common-ground variables"]
+    method: "Annual Review narrative/tutorial synthesis，以 scalar implicature 为主例，重建 equations、classic-vs-RSA comparison、extensions 与 empirical/modeling work；不是 systematic review/meta-analysis，无原创实验。"
+    finding: "RSA 将 interpretation、informativeness、alternatives 与 world knowledge 形式化为概率化、context-sensitive components。 已有 extensions 覆盖 reference、social meaning、adaptation、convention formation 与 repeated exposure；主要挑战是 scalability、bounded cognition、incrementality/compositionality。"
+    limitation: "非系统综述且以 scalar implicature 组织；开放式 multimodal joint action 距离大，alternative set、prior、utility 与 linking hypothesis 存在 underidentification。"
+    relation_to_mainline: "Stages: Social Meaning / Pragmatics → Grounding / Common Ground → Convention Formation; mechanisms: Meaning, Grounding, Convention"
+    gap_supported_challenged: [GAP-01, GAP-02, GAP-03, GAP-04]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define Rational Speech Act and state its observable evidence."
+      comparison: "How does this paper differ from the 2016 canonical RSA entry?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: B3
+    citation: "Judith E. Fan, Robert D. Hawkins, Mike Wu, Noah D. Goodman (2020). Pragmatic Inference and Visual Abstraction Enable Contextual Flexibility During Visual Communication. Computational Brain & Behavior, 3(1), 86–101"
+    source_url: "https://cogtoolslab.github.io/pdf/fan_cbb_2019.pdf"
+    exam_theme: 2
+    rq: "能否用 algorithmically explicit account 联结 visual abstraction、pragmatic diagnosticity 与 production cost，并检验 context、cost、visual features 是否都必要？"
+    theory: ["Gricean informativeness", "Rational Speech Act", "decision-theoretic utility", "visual abstraction as context-relative diagnosticity"]
+    method: "192 AMT participants/96 pairs 完成 online drawing reference game，32 objects/4 categories，close vs far distractors；另 112 人做 naive recognition。human recognition 与 VGG-19 features 进入 probabilistic sketcher model，使用 5-fold CV 与 Bayes-factor lesion comparisons。"
+    finding: "viewer overall accuracy 93.8%；far context 以更少 time/strokes/ink 达到近 ceiling，close sketches 的 out-of-context recognition 为 54.2% vs far 37.5%。 full human-recognition model 优于 no-context 与 no-cost lesions；high-level visual features 优于 mid/low features。"
+    limitation: "模型只在参与者已生成的 prototype sketch categories 中选择，不生成 strokes；visual encoder 需 supervision，drawing time 只是 cost proxy；无 repeated history/convention manipulation。"
+    relation_to_mainline: "Stages: Social Meaning / Pragmatics → Grounding / Common Ground; mechanisms: Meaning, Grounding"
+    gap_supported_challenged: [GAP-01, GAP-05]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define Gricean informativeness and state its observable evidence."
+      comparison: "How does this paper differ from resemblance-only visual communication?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: C4
+    citation: "Robert D. Hawkins, Michael C. Frank, Noah D. Goodman (2020). Characterizing the Dynamics of Learning in Repeated Reference Games. Cognitive Science, 44(6), e12845"
+    source_url: "https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12845"
+    exam_theme: 3
+    rq: "reduction 的 syntax/feedback dynamics、convention 的 stability/arbitrariness 与 context discriminability 如何随重复互动变化？"
+    theory: ["collaborative reference", "common ground", "stability and arbitrariness", "Gricean informativity", "cross-situational distinctiveness"]
+    method: "480 AMT participants；free-matching pilot 218 人、confirmatory 262 人；exclusions 后 56 pilot games 与 83 dyads/7,867 messages。12 tangrams×6 blocks，双向 text chat 与即时 feedback；confirmatory analyses preregistered，结合 dependency parsing、mixed models、GloVe/token analyses 与 permutation checks。"
+    finding: "descriptions 缩短，matcher backchannel 从首 block 75% 的 matchers 发言降到末 block 4%。 speaker 按同一 tangram 上轮正负 feedback 调节下一次长度；closed-class words 更易被成簇删除，initially distinctive words 更可能保留。 within-dyad successive expressions 更相似，between-dyad 表达更分歧且逐渐稳定。"
+    limitation: "把一 trial 内多轮 dialogue collapse 为单 utterance，丢失 grounding/repair sequence；人工清洗与 GloVe 表示有偏差；无 partner swap/history ablation。"
+    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation → Personalization / Co-adaptation; mechanisms: Grounding, Convention, Adaptation"
+    gap_supported_challenged: [GAP-02, GAP-03, GAP-04, GAP-07]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define collaborative reference and state its observable evidence."
+      comparison: "How does this paper differ from one-shot pragmatic inference?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: C5
+    citation: "Robert X. D. Hawkins, Megumi Sano, Noah D. Goodman, Judith E. Fan (2019). Disentangling contributions of visual information and interaction history in the formation of graphical conventions. Proceedings of the 41st Annual Meeting of the Cognitive Science Society"
+    source_url: "https://escholarship.org/uc/item/6408z76h"
+    exam_theme: 3
+    rq: "重复绘图是否产生 object-/interaction-specific efficiency，same-producer history sequence 是否优于 shuffled sequence，drawings 是否 within-pair 稳定并 across-pair 分化？"
+    theory: ["graphical convention", "experimental semiotics", "visual resemblance", "socially mediated history"]
+    method: "138 AMT participants/69 dyads，固定 sketcher/viewer；4 repeated ShapeNet chairs×8 次、4 control chairs pre/post。245 naive recognizers，223 retained，比较 yoked same-sketcher sequence 与 shuffled sequence；mixed models、BIS 与 VGG-19 similarity。"
+    finding: "repeated objects 的 efficiency/accuracy improvement 大于 controls；yoked recognition improvement 大于 shuffled，stroke count 下降。 drawings 偏离各自初始形式、within interaction 更一致，并在不同 interactions 间适度分化。"
+    limitation: "yoked observers 不是原 partner；manipulation 隔离的是 same-producer sequence continuity，不是 reciprocal common ground。单一 chair category、固定角色，部分结果在 C6 replication 中修正。"
+    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation; mechanisms: Meaning, Grounding, Convention"
+    gap_supported_challenged: [GAP-01, GAP-02, GAP-07]
+    priority: "Important"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define graphical convention and state its observable evidence."
+      comparison: "How does this paper differ from C6 definitive journal extension?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: C6
+    citation: "Robert D. Hawkins, Megumi Sano, Noah D. Goodman, Judith E. Fan (2023). Visual Resemblance and Interaction History Jointly Constrain Pictorial Meaning. Nature Communications, 14, Article 2199"
+    source_url: "https://www.nature.com/articles/s41467-023-37737-w"
+    exam_theme: 3
+    rq: "如何分离 task practice、item repetition、same-producer history 与 diagnostic visual content，并检验 resemblance 和 history 如何联合约束 meaning？"
+    theory: ["icon–symbol continuum", "visual resemblance", "graphical convention", "interaction history"]
+    method: "主 communication study 138 participants/69 dyads；internal replication 130/66 dyads。4 repeated ShapeNet chairs×8 与 4 controls；recognition 主样本 223、replication 225，比较 yoked same-producer sequences 与 shuffled；VGG-19 analyses，443 annotators 映射 strokes，117 annotators 提供 diagnosticity heatmaps。"
+    finding: "communication efficiency/accuracy 提高且 repeated>control；within-dyad drawings 稳定、between-dyad 同物 drawings 分歧；yoked sequence improvement > shuffled，replication 排除 viewer interrupt confound。 repeated drawings 变稀疏，但相对 controls 更集中于 object-diagnostic regions，反驳纯 arbitrary-symbol reading。"
+    limitation: "yoked-vs-shuffled 仍主要操作 same-producer exposure，不是在原 dyad 做 partner swap；style familiarity 可能是机制之一。单一 chairs、fixed roles、AMT 与 post-hoc exclusions 限制泛化。"
+    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation; mechanisms: Meaning, Grounding, Convention"
+    gap_supported_challenged: [GAP-01, GAP-02, GAP-07]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define icon–symbol continuum and state its observable evidence."
+      comparison: "How does this paper differ from pure resemblance and pure arbitrariness accounts?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: C7
+    citation: "William P. McCarthy, Robert D. Hawkins, Haoliang Wang, Cameron Holdaway, Judith E. Fan (2021). Learning to Communicate about Shared Procedural Abstractions. Proceedings of the 43rd Annual Meeting of the Cognitive Science Society, 77–83"
+    source_url: "https://repositories.cdlib.org/uc/item/3vs8285x"
+    exam_theme: 3
+    rq: "lexical mappings 与 hierarchical procedural abstractions 能否在 repeated physical assembly 中共同形成？"
+    theory: ["Bayesian program and library learning", "minimum description length", "RSA-like lexical inference", "efficiency–informativity trade-off"]
+    method: "98 AMT participants/49 architect–builder dyads 完成 12 online block-assembly trials，3 towers×4 repetitions；Architect 发送不超过 100 字符的 stepwise messages，Builder 不可回话。测 F1、words/messages、block-vs-tower references、JSD；DSL/library learner 做定性 simulation。"
+    finding: "初始 F1=.876 并继续提高，words/messages 下降；language 从 block-level 转向 tower-level terms，dyads 的 lexical solutions 分化。 library learner 可发现 tower fragments，并在中等 cost 下定性再现 abstraction shift。"
+    limitation: "shared procedural abstraction 未直接测量；Builder 无语言反馈，model 假设双方同速学习同一 DSL，未 fit individual trajectories；coding 无 reliability，初始 high accuracy 弱化 necessity claim。"
+    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation → Situated Adaptive Communication; mechanisms: Grounding, Convention, Embodied Communication"
+    gap_supported_challenged: [GAP-03, GAP-04, GAP-07]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define Bayesian program and library learning and state its observable evidence."
+      comparison: "How does this paper differ from lexical convention without shared conceptual primitives?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: C8
+    citation: "Kiyosu Maeda, William P. McCarthy, Ching-Yi Tsai, Jeffrey Mu, Haoliang Wang, Robert D. Hawkins, Judith E. Fan, Parastoo Abtahi (2026). Gesturing Toward Abstraction: Multimodal Convention Formation in Collaborative Physical Tasks. CHI 2026"
+    source_url: "https://arxiv.org/abs/2602.08914"
+    exam_theme: 3
+    rq: "How do multimodal signals, procedural abstractions, and modality allocation evolve across repeated collaborative physical tasks, and can a multimodal pragmatic model reproduce those dynamics?"
+    theory: ["ad-hoc convention", "common ground", "procedural abstraction and chunking", "multimodal redundancy and complementarity", "multimodal RSA"]
+    method: "Study 1 recruited 146 MTurkers/73 dyads; after exclusions 98 people/49 dyads completed 3 tower pairs×4 text repetitions. Study 2 used 40 people/20 dyads in separated Meta Quest 3 AR rooms with speech and 24-joint hand keypoints across 12 physical LEGO trials. Mixed models, permutation tests, coded speech/gesture, and a DSL plus multimodal RSA simulation were used."
+    finding: "Online task F1 rose .88→.98 while words/messages declined; block references fell 7.3→3.6 and tower references rose .6→1.1; between-dyad vocabulary divergence increased. Lab success rose 74.03%→98.36%; instruction/build time fell, tower abstractions appeared earlier, gestural abstractions were already present from round 1, and later redundancy often marked changed position/orientation. A fitted simulation descriptively reproduced shorter instructions and modality shifts."
+    limitation: "human–human only；无 partner swap/pseudo-dyad/history ablation、role reversal、controlled breakdown/repair 或 transfer。小 tower domain、four repetitions、fixed roles，模型部分参数 in-sample fitted 且假设 perfect alignment/uniform priors。"
+    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation → Situated Adaptive Communication; mechanisms: Meaning, Grounding, Convention, Adaptation, Embodied Communication"
+    gap_supported_challenged: [GAP-01, GAP-02, GAP-03, GAP-04, GAP-07]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define ad-hoc convention and state its observable evidence."
+      comparison: "How does this paper differ from C6/C7 verbal-graphical and procedural precedents?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: A5
+    citation: "Neil Cohn (2016). A Multimodal Parallel Architecture: A Cognitive Framework for Multimodal Interactions. Cognition, 146, 304–323"
+    source_url: "https://www.visuallanguagelab.com/P/NC_multimodality.pdf"
+    exam_theme: 1
+    rq: "How can grammatical and conceptual structures be integrated across verbal, bodily, and graphic domains without treating every multimodal combination as equivalent?"
+    theory: ["Jackendoff parallel architecture", "phonological, bodily and graphic structures", "syntax and narrative grammar", "Autonomous/Dominant/Assertive relations", "semantic dominance"]
+    method: "理论 architecture paper，以 deletion、substitution 与 framing diagnostics 分析 multimodal examples；包含 16 superhero comics/1,744 panels 的 illustrative coding，two-coder ICC(2,2)=.930，但并非对整个 architecture 的 confirmatory experiment。"
+    finding: "该文提出可按 modality presence、combinatorial grammar 与 semantic dominance 区分 multimodal interactions。 illustrative coding 支持该分类可被一致应用，但不验证整个 architecture 的 cognitive truth。"
+    limitation: "类型 coarse/discrete，偏 comics/visual narrative 且结构静态；component-level interactions 未充分指定，无 history、grounding、social negotiation、agent 或 causal test。"
+    relation_to_mainline: "Stages: Informal Visual Expression → Social Meaning / Pragmatics; mechanisms: Meaning"
+    gap_supported_challenged: [GAP-05]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define Jackendoff parallel architecture and state its observable evidence."
+      comparison: "How does this paper differ from redundancy/complementarity or RSA?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: A2
+    citation: "Andrea Webb Luangrath, Joann Peck, Victor A. Barger (2017). Textual Paralanguage and Its Implications for Marketing Communications. Journal of Consumer Psychology, 27(1), 98–107"
+    source_url: "https://arxiv.org/abs/1605.06799"
+    exam_theme: 1
+    rq: "如何定义、分类并初步描述 textual paralanguage 在不同社交媒体中的使用？"
+    theory: ["textual paralanguage", "voice qualities", "vocalizations", "tactile kinesics", "visual kinesics", "artifacts"]
+    method: "概念 framework 加 exploratory manual content analysis：4,608 valid consumer tweets、4,168 brand tweets、2,943 brand replies、3,749 Facebook posts、1,550 Instagram posts。appendix 称 four coders，正文称 three；discrepancies by discussion，无 chance-corrected reliability。"
+    finding: "TPL 出现在 40.3% valid consumer tweets、20.6% brand tweets、34.8% brand replies、19.1% Facebook posts、31.3% Instagram posts；五类均出现且分布随 platform 变化。 warmth、competence、rapport、trust 等后果只是 conceptual propositions，不是 tested findings；meaning 被明确描述为 context-dependent。"
+    limitation: "convenience/recent-post brand samples、coder count 不一致、无 reliability statistic；无 receiver study 或 causal consequence evidence，categories 有歧义。"
+    relation_to_mainline: "Stages: Informal Visual Expression → Social Meaning / Pragmatics; mechanisms: Meaning"
+    gap_supported_challenged: [GAP-05, GAP-06]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define textual paralanguage and state its observable evidence."
+      comparison: "How does this paper differ from face-to-face paralanguage?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: A1
+    citation: "Jeffrey T. Hancock, Mor Naaman, Karen Levy (2020). AI-Mediated Communication: Definition, Research Agenda, and Ethical Considerations. Journal of Computer-Mediated Communication, 25(1), 89–100"
+    source_url: "https://academic.oup.com/jcmc/article/25/1/89/5714020"
+    exam_theme: 1
+    rq: "如何定义 AI-mediated communication，并组织其 design、language、interpersonal、relational 与 ethical research agenda？"
+    theory: ["AI-mediated communication", "agency", "autonomy", "orientation", "disclosure", "alignment and adaptation"]
+    method: "概念 definition 与 narrative agenda synthesis；没有原创 empirical study。定义聚焦 human–human interpersonal communication where AI acts on behalf of a communicator，并明确排除 direct human–agent HMC 与 feed/ranking algorithms。"
+    finding: "该文没有原创 findings；它整理 agency/autonomy/orientation、disclosure、alignment/adaptation、trust、relationship、bias 等研究问题。"
+    limitation: "不属于 direct embodied HAI/HRI，且是 pre-generative-AI landscape；illustrative synthesis 不能作为 specific effects 或 current field gaps 的证据。"
+    relation_to_mainline: "Stages: Social Meaning / Pragmatics; mechanisms: Meaning"
+    gap_supported_challenged: [GAP-06]
+    priority: "Important"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define AI-mediated communication and state its observable evidence."
+      comparison: "How does this paper differ from direct Human–Machine Communication?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: D5
+    citation: "Anca D. Dragan, Kenton C. T. Lee, Siddhartha S. Srinivasa (2013). Legibility and Predictability of Robot Motion. HRI 2013, 301–308"
+    source_url: "https://publications.ri.cmu.edu/legibility-and-predictability-of-robot-motion"
+    exam_theme: 4
+    rq: "goal→trajectory expectation 与 partial trajectory→goal inference 是否 distinct/conflicting，并可被形式化和行为验证？"
+    theory: ["rational action and inverse planning", "predictability P(trajectory|goal)", "legibility P(goal|partial trajectory)", "observer cost model"]
+    method: "为 point robot、HERB 与 human reaching 制作 predictable/legible videos；432 US MTurk recruits，含 predictability ratings/path drawing 与 fully-between legibility stop-time/accuracy subexperiments；另 exploratory local n=5 HERB expectation study。"
+    finding: "predictable trajectory overall 更符合 expectation，F(1,310)=21.88,p<.001，但 character interaction 存在；HERB 不支持该 effect，human post-hoc adjusted p=.28 与正文叙述不一致。 legible trajectory 带来更早且更正确的 goal inference，F(1,241)=5.62,p=.019；HERB expectations variation 显示 cost model observer-dependent。"
+    limitation: "video、hand-designed two-goal trajectories、无真实 collaboration/longitudinal adaptation；cost model 对 HERB misspecified，且 human post-hoc reporting 有不一致。"
+    relation_to_mainline: "Stages: Situated Adaptive Communication; mechanisms: Meaning, Embodied Communication"
+    gap_supported_challenged: [GAP-03, GAP-04, GAP-06]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define rational action and inverse planning and state its observable evidence."
+      comparison: "How does this paper differ from social expressivity?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: D6
+    citation: "Guy Hoffman, Wendy Ju (2014). Designing Robots with Movement in Mind. Journal of Human-Robot Interaction, 3(1), 91–122"
+    source_url: "https://hrc2.io/assets/pdfs/papers/HoffmanJuJHRI14.pdf"
+    exam_theme: 4
+    rq: "如何把 movement 与 morphology、interaction、physical affordance 同步设计为 communicative material？"
+    theory: ["kinesics", "proxemics", "physical and socially constructed affordance", "animacy and intent attribution", "character-animation principles", "Theory of Mind"]
+    method: "movement-centric design synthesis，使用 animation、skeletal/Wizard-of-Oz prototypes、video 与 interactive DoF exploration，综合 Shimon、Travis、telepresence robot 与 PR2/service-robot cases；不是统一预注册实验。"
+    finding: "少量 strategic DoF 可让非拟人机器人通过 beat、eye contact、breathing/blinking 等表达 turn-taking、attention 与 engagement。 telepresence 中 gesture 与 proxy motion 一致可改善理解；PR2 video studies 报告 anticipation 提高 intent readability/approachability，reaction movement 提高 perceived smartness/confidence。"
+    limitation: "总体论点无统一因果检验；部分效果来自 component/video studies，PR2 未完成实体部署，对 acceptance/real-world adoption 的外推较强。"
+    relation_to_mainline: "Stages: Social Meaning / Pragmatics → Situated Adaptive Communication; mechanisms: Meaning, Embodied Communication"
+    gap_supported_challenged: [GAP-05, GAP-06]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define kinesics and state its observable evidence."
+      comparison: "How does this paper differ from goal legibility?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: D7
+    citation: "Henny Admoni, Brian Scassellati (2017). Social Eye Gaze in Human-Robot Interaction: A Review. Journal of Human-Robot Interaction, 6(1), 25–63"
+    source_url: "https://www.ri.cmu.edu/app/uploads/2018/01/admoni2017jhri.pdf"
+    exam_theme: 4
+    rq: "social gaze 在 HRI 中承担哪些功能，人如何处理 robot gaze，怎样设计/生成 gaze，哪些 embodiment 与 multimodal 问题仍开放？"
+    theory: ["mutual gaze", "deictic gaze", "joint attention", "gaze aversion", "turn-taking", "social agency and animacy"]
+    method: "narrative review，按 human-focused、design-focused、technology-focused 组织 human-human background、virtual/physical embodiment、morphology、lab/field studies 与 measures；未报告 systematic-review search/selection/quality workflow。"
+    finding: "人通常可识别 robot gaze target，但 animacy、contingency 与 engagement 改变解释；micro automatic cueing 中 robot gaze 可能更像 arrow，而 macro interaction 可支持 reference 与 turn-taking。 mutual gaze/gaze aversion 可调节 conversation，speech plus deictic gaze 常优于 speech-only；gaze 还可表达 mental state、emotion、rapport 并影响 cooperation/learning。 biological、empirical、heuristic gaze generation 在 realism、data cost 与 design control 间有 trade-off；embodiment 与 multimodal integration remain open。"
+    limitation: "非系统综述且样本、platform、task、metric 高度异质；morphology 与 virtual/physical differences 妨碍因果汇总。"
+    relation_to_mainline: "Stages: Social Meaning / Pragmatics → Grounding / Common Ground → Situated Adaptive Communication; mechanisms: Meaning, Grounding, Embodied Communication"
+    gap_supported_challenged: [GAP-06, GAP-07]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define mutual gaze and state its observable evidence."
+      comparison: "How does this paper differ from joint attention and common ground?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: E1
+    citation: "Iolanda Leite, Carlos Martinho, Ana Paiva (2013). Social Robots for Long-Term Interaction: A Survey. International Journal of Social Robotics, 5(2), 291–308"
+    source_url: "https://viterbik12.usc.edu/wp-content/uploads/2018/06/Social-Robots-for-Long-Term-Interaction-A-Survey.pdf"
+    exam_theme: 5
+    rq: "截至 2013 的 long-term social-robot studies 覆盖哪些 contexts、designs 与 measures，如何操作化 long term？"
+    theory: ["novelty and habituation", "relationship continuity", "expectation–capability fit", "memory and personalization"]
+    method: "检索 Google Scholar、Microsoft Academic Search、CiteSeer 与主要 HRI venues；45 papers screened，排除设计细节不足与仅 lab studies，保留 24 real-world deployments。缺少完整 strings/dates、dual screening 与 quality appraisal。"
+    finding: "早期 long-term HRI 多 exploratory、小样本；novelty 后应按 function 定义 long term，而非固定天数。 continuity/routines、past-activity memory、new behaviors、affect response、identification 与 personalization 被反复提出；应分析 multi-session trajectories，而非只比较 first/last。 文中 memory/adaptation nearly unexplored 仅描述 2013 corpus，不能当作 2026 current-state claim。"
+    limitation: "2013 descriptive heterogeneous corpus，不能代表 2026 field；无 formal quality appraisal/meta-analysis，且对 control conditions 的保留意见会削弱因果识别。"
+    relation_to_mainline: "Stages: Personalization / Co-adaptation → Situated Adaptive Communication; mechanisms: Adaptation, Embodied Communication"
+    gap_supported_challenged: [GAP-03, GAP-04]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define novelty and habituation and state its observable evidence."
+      comparison: "How does this paper differ from fixed-duration short-term HRI?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: E2
+    citation: "Stefanos Nikolaidis, David Hsu, Siddhartha Srinivasa (2017). Human-Robot Mutual Adaptation in Collaborative Tasks: Models and Experiments. The International Journal of Robotics Research, 36(5–7), 618–634"
+    source_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7449140/"
+    exam_theme: 5
+    rq: "能否用可更新的人类 adaptability model 规划 robot actions，使 team 收敛到较优策略并保持 trust？"
+    theory: ["Bounded-Memory Adaptation Model", "MOMDP", "bounded rationality", "planning under uncertainty", "latent human adaptability"]
+    method: "MTurk video/UI collaborative table-carrying tasks，而非实体 co-manipulation。主要 between-subject study n=69，后续 repeated task n=43、hallway validation n=65、cross-task transfer n=58；离散 goals/actions，k=3 history，alpha grid，SARSOP planning；测 strategy choice、trust 与 team perceptions。"
+    finding: "Mutual 相比 Fixed trust 更高 U=180,p=.048，但 satisfaction 并非全面显著；57% Mutual participants 转向 robot optimal strategy vs Cross-training 26%。 k=1 pilot 约 23% oscillation，k=3 更符合 observations；initial trust 与 low self-confidence 预测首次 adaptation。 cross-task transfer 不完整，说明 task/social norm matter。"
+    limitation: "web/video UI、离散 designer-defined goals/modes；alpha 更像 compliance/strategy switching 而非 reciprocal co-learning。无 communicative meaning、repair、mutual belief 或 convention。"
+    relation_to_mainline: "Stages: Personalization / Co-adaptation; mechanisms: Adaptation"
+    gap_supported_challenged: [GAP-02, GAP-03, GAP-04, GAP-07]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define Bounded-Memory Adaptation Model and state its observable evidence."
+      comparison: "How does this paper differ from one-way personalization and communication convention?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
+  - id: E3
+    citation: "Robert Hawkins, Minae Kwon, Dorsa Sadigh, Noah Goodman (2020). Continual Adaptation for Efficient Machine Communication. CoNLL 2020, 408–419"
+    source_url: "https://aclanthology.org/2020.conll-1.33/"
+    exam_theme: 5
+    rq: "人工 listener 如何从 shared interaction history 在线更新 partner-specific semantics，同时保留 population knowledge 并允许 compositional shortening？"
+    theory: ["Lewisian convention", "Gricean pragmatics", "common ground", "Rational Speech Act", "interaction-timescale adaptation"]
+    method: "Repeated reference game with four similar COCO images, each target repeated six times, 24 trials. ResNet-152 plus LSTM captioner is adapted online using likelihood, pragmatic contrast, KL regularization, compositional augmentation and local rehearsal. Human baseline 108 participants/54 dyads; adaptive-listener study 57 additional human speakers; ablations and 52 easier-context forgetting analyses."
+    finding: "human dyads maintained near-ceiling accuracy while utterances shortened, t=25.8,p<.001. adaptive-listener accuracy rose roughly 37%→93%, z=12.6,p<.001; offline non-adaptive baseline did not improve over time. without KL, unseen-context accuracy fell about 10% vs 2% for full model; removing rehearsal or pragmatic objective significantly hurt performance."
+    limitation: "主 human study 是 human speaker→adaptive listener 的 one-sided role；无 repair、role reversal、partner swap/pseudo-dyad、retention/transfer 或 embodiment，且 non-adaptive comparator 是 offline。"
+    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation → Personalization / Co-adaptation; mechanisms: Meaning, Grounding, Convention, Adaptation"
+    gap_supported_challenged: [GAP-01, GAP-02, GAP-03, GAP-04, GAP-07]
+    priority: "Must Read"
+    source_availability: "full_text"
+    agent_readiness: "full_paper_investigation"
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: "Define Lewisian convention and state its observable evidence."
+      comparison: "How does this paper differ from one-shot RSA pragmatics?"
+      critical: "Which assumption or evidentiary step may fail when this account is transferred to embodied human–AI interaction?"
+      connection: "How could its mechanism explain or design multimodal robot communication without overstating common ground or convention?"
+      research: "What falsifiable next study follows from this paper boundary, using a direct grounding or history-dependence probe?"
 oral_question_types:
   - Definition
   - Comparison
@@ -51,5 +510,13 @@ workflow_history:
   - id: baseline-import-2026-08-26
     status: COMPLETE
   - id: top20-2026-08-27
-    status: SCHEDULED
-    scheduled_for: 2026-08-27T03:00:00-04:00
+    status: COMPLETE
+    completed_at: 2026-08-27T03:34:05-04:00
+    summary: "20/20 full-text Agent investigations complete; researcher reading/mastery unchanged."
+  - id: radar-mainline-2026-08-27
+    status: COMPLETE_WITH_RECOVERY
+    summary: "X6–X12 先更新长期研究主线；只有会改变考试 anchor 或 synthesis 的部分进入此下游视图。"
+  - id: baseline41-2026-08-27
+    status: COMPLETE_WITH_ONE_DEGRADED_SOURCE
+    completed_at: 2026-08-27T09:18:00-04:00
+    summary: "41/41 baseline pages evidence-audited: 40 full-text, F6 abstract-only; Theme 6 second-round anchors now ready for synthesis; researcher reading/mastery unchanged."

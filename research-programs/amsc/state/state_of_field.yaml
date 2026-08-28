@@ -1,12 +1,13 @@
-version: 0.2
+version: 0.4
 updated_at: 2026-08-27
 evidence_snapshot:
-  total_papers: 46
-  bibliographic_only: 39
-  abstract_reviewed: 4
-  abstract_and_full_page_reviewed: 1
+  total_papers: 53
+  bibliographic_only: 0
+  abstract_reviewed: 3
+  abstract_evidence_investigation: 1
   source_verified_candidate: 2
-  full_paper_investigations: 0
+  radar_full_text_audited: 7
+  full_paper_investigations: 40
   strongest_available_level: MODERATE
   warning: "书目覆盖、Agent 调查深度与研究者阅读进度是三件不同的事。"
 claims:
@@ -16,15 +17,15 @@ claims:
     status: EMERGING
     evidence_strength: MODERATE
     evidence: [c6-visual-resemblance-interaction-history]
-    boundary: "仅支持受控的人类 repeated drawing 范式；不能外推为 embodied AI 已能学习同类 convention。"
+    boundary: "单一 object category 的 controlled human drawing；yoked-vs-shuffled 主要隔离 same-producer sequence exposure，不识别 mutual common ground、original-dyad partner specificity、embodied AI 或 long-term transfer。"
     cumulative_change: STILL_HOLDS
   - id: SOF-02
-    statement: "Artificial communicator 可在 repeated linguistic reference interaction 中进行 partner adaptation，并提高摘要所报告的准确性与效率。"
-    claim_kind: source_says
+    statement: "在受限 repeated reference games 中，artificial communicator 可通过 continual adaptation 或 success×cost post-training 获得更高的 communicative success 与 efficiency。"
+    claim_kind: source_grounded_synthesis
     status: EMERGING
-    evidence_strength: PRELIMINARY
-    evidence: [e3-continual-adaptation-machine-communication]
-    boundary: "当前页面只完成摘要调查，且证据不覆盖 multimodal embodied convention。"
+    evidence_strength: MODERATE
+    evidence: [e3-continual-adaptation-machine-communication, x8-success-cost-convention-formation]
+    boundary: "E3 的主要 human evidence 是 fixed visual-reference contexts 中 one-sided adaptive listening；无 online non-adaptive control、partner swap、reciprocal repair 或 embodiment。"
     cumulative_change: STRENGTHENED
   - id: SOF-03
     statement: "Controlled human-robot visual reference tasks 能产生稳定的 task-specific linguistic conventions，但其效率轨迹与 human-human interaction 不完全相同。"
@@ -35,13 +36,13 @@ claims:
     boundary: "受控 Dutch pilots 与 verbal referring expressions 不证明开放式、跨模态或长期 convention。"
     cumulative_change: PARTIALLY_ADDRESSED
   - id: SOF-04
-    statement: "在一个 factorial repeated-reference study 中，LVLM grounding pattern 与人类不同；task success 不能被直接当成 human-like common ground。"
-    claim_kind: source_says
+    statement: "Current LVLM convention/grounding behavior is interaction-regime dependent：post-trained one-way 或 same-model dyads 可出现 convention-like efficiency/signatures，但 mixed human–AI、history-severed pseudo-dyads 与更复杂 role-asymmetric tasks 暴露可靠性和 partner-specificity 缺口。"
+    claim_kind: source_grounded_synthesis
     status: EMERGING
-    evidence_strength: PRELIMINARY
-    evidence: [x2-lvlms-humans-ground-differently]
-    boundary: "不能由一个模型与任务范式外推到所有 LVLM。"
-    cumulative_change: STRENGTHENED
+    evidence_strength: MODERATE
+    evidence: [x2-lvlms-humans-ground-differently, x8-success-cost-convention-formation, x9-aligned-not-partner-specific, x10-llms-people-conventions]
+    boundary: "不同研究使用不同 training objective、角色结构、模型和任务；它们不构成单一总体效应，也不能外推所有 LVLM。"
+    cumulative_change: REDEFINED
   - id: SOF-05
     statement: "一个 AR collaboration prototype 表明 first-person perspective、gaze、gesture 与 revisable memory 可以组合为 history-aware interaction infrastructure。"
     claim_kind: source_says
@@ -51,12 +52,150 @@ claims:
     boundary: "System memory 不等于 mutual belief 或 jointly negotiated convention。"
     cumulative_change: NO_LONGER_CLAIMABLE
   - id: SOF-06
-    statement: "History-aware memory、partner adaptation、task performance 与 shared convention 需要不同的 evidence standard。"
+    statement: "History-aware memory、partner adaptation、task success、lexical alignment、world-model alignment、positive evidence、mutual belief 与 shared convention 需要不同 evidence standards。"
     claim_kind: agent_synthesis
     status: OPEN
     evidence_strength: MODERATE
-    evidence: [c6-visual-resemblance-interaction-history, e3-continual-adaptation-machine-communication, x1-spotter-human-robot-conventions, x2-lvlms-humans-ground-differently, x3-seeing-eye-to-eye]
-    boundary: "这是跨论文综合判断，不是任何单篇论文的原始结论。"
+    evidence: [c1-referring-as-collaborative-process, c2-grounding-in-communication, c3-conceptual-pacts, c4-repeated-reference-games, c6-visual-resemblance-interaction-history, c8-gesturing-toward-abstraction, d5-legibility-and-predictability, e2-human-robot-mutual-adaptation, e3-continual-adaptation-machine-communication, x7-embodied-world-model-alignment, x9-aligned-not-partner-specific, x11-common-ground-benchmark]
+    boundary: "跨论文 agent synthesis；C5/C6 属同一 empirical lineage，success、shortening 或 alignment 任何单项都不是 convention 的充分证据。"
+    cumulative_change: STRENGTHENED
+  - id: SOF-07
+    statement: "Human convention theory already models partner-specific common ground and its transfer toward population-level conventions; partner-specific origin and subsequent transfer are complementary, not mutually exclusive."
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [x12-partners-to-populations]
+    boundary: "CHAI evidence concerns human linguistic coordination and simulation; it does not solve online embodied human–AI convention inference."
+    cumulative_change: NEW_CORE
+
+  - id: SOF-08
+    statement: "在受控 human–human repeated verbal reference tasks 中，reference 通过 presentation、positive evidence、repair 与 partner-specific history 形成；随后压缩稳定，partner change 可触发 elaboration 或回退到更通用表达。"
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [c1-referring-as-collaborative-process, c3-conceptual-pacts]
+    boundary: "小样本 spoken laboratory reference tasks；不是 multimodal、longitudinal 或 embodied-AI evidence。"
+    cumulative_change: NEW
+  - id: SOF-09
+    statement: "RSA 为 context-sensitive production/interpretation 提供 formal tools，且已有 adaptation/convention extensions；但 basic/full-utterance RSA 与 incremental、multimodal、mutually grounded interaction 之间仍有 validation gap。"
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [b1-pragmatic-language-interpretation, b2-rational-speech-act-framework]
+    boundary: "Narrative framework reviews and heterogeneous modeling tasks do not establish one cognitive process or embodied-agent capability."
+    cumulative_change: NEW
+  - id: SOF-10
+    statement: "在受控 one-shot human drawing reference games 中，communicators 会按 distractor similarity 在 diagnosticity 与 production cost 间调节视觉细节。"
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [b3-pragmatic-inference-visual-abstraction]
+    boundary: "32 objects/4 categories，prototype-choice model；无 repeated history、partner-specificity 或 embodiment。"
+    cumulative_change: NEW
+  - id: SOF-11
+    statement: "在受控 repeated human text reference games 中，labels 的缩短受 listener feedback 与 local discriminability 影响，并表现 within-dyad stabilization 与 between-dyad divergence。"
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [c4-repeated-reference-games]
+    boundary: "Text Tangram task、六 repetitions；dialogue 被 collapse，且无 partner swap/history ablation。"
+    cumulative_change: NEW
+  - id: SOF-12
+    statement: "在一项受控 online human assembly task 中，重复协作伴随更短、更多 tower-level referring expressions；combined library-learning/pragmatic model 可定性再现该 shift。"
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [c7-shared-procedural-abstractions]
+    boundary: "未直接测量 shared internal abstractions；Builder 无语言反馈，模型假设 shared DSL 与同步学习。"
+    cumulative_change: NEW
+  - id: SOF-13
+    statement: "在 controlled repeated human–human physical assembly 中，dyads 提高 accuracy/efficiency，并复用 speech/gesture abstractions；modality allocation 与 vocabulary across dyads diverge。"
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [c8-gesturing-toward-abstraction]
+    boundary: "20 dyads、3 towers、4 repetitions、fixed roles；无 Agent、history-severing、repair perturbation 或 transfer。"
+    cumulative_change: NEW_CORE
+  - id: SOF-14
+    statement: "Robot-motion legibility 与 predictability 对应相反 inference directions 并可冲突；observer-dependent expectation/cost assumptions matter。"
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [d5-legibility-and-predictability]
+    boundary: "Video、two-goal、hand-designed trajectories；HERB cost-model mismatch、human post-hoc inconsistency，且无 long-term interaction。"
+    cumulative_change: NEW
+  - id: SOF-15
+    statement: "Designer-authored robot movement and gaze can each convey instrumental intent/reference and relational or affective social meaning; functions are not cleanly separable by modality."
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [d6-designing-robots-with-movement, d7-social-eye-gaze-review]
+    boundary: "Design synthesis plus non-systematic narrative review; mappings are mostly fixed/context-contingent, not jointly grounded or history-dependent conventions."
+    cumulative_change: NEW
+  - id: SOF-16
+    statement: "Longitudinal HRI should measure within-participant trajectories beyond novelty/familiarization; fixed calendar duration alone does not operationalize long-term interaction."
+    claim_kind: historical_source_says
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [e1-long-term-social-robots-survey]
+    boundary: "Historical review as of 2013; not a current 2026 field-state absence claim and not causal evidence about sustained engagement."
+    as_of: 2013
+    cumulative_change: NEW
+  - id: SOF-17
+    statement: "Constrained task-level mutual adaptation can be modeled as latent human strategy-switching propensity plus robot policy optimization, but this is distinct from communication co-development and convention."
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [e2-human-robot-mutual-adaptation]
+    boundary: "Discrete video/UI tasks with designer-optimal goals; strategy compliance does not establish reciprocal co-adaptation, semantics, grounding or embodiment."
+    cumulative_change: NEW
+  - id: SOF-18
+    statement: "Textual paralanguage provides five broad categories and is frequently observed in sampled 2010s social-media posts, with platform-dependent distributions and context-dependent meaning."
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [a2-textual-paralanguage]
+    boundary: "Descriptive convenience samples, coder inconsistency/no reliability statistic, and no causal evidence for warmth, rapport or trust."
+    cumulative_change: NEW
+  - id: SOF-19
+    statement: "Modality presence, grammatical structure and semantic dominance offer a usable theoretical lens for verbal, bodily and graphic multimodal interaction."
+    claim_kind: theoretical_lens
+    status: CONTESTED
+    evidence_strength: PRELIMINARY
+    evidence: [a5-multimodal-parallel-architecture]
+    boundary: "Single static architecture with underspecified component mechanisms; illustrative coding does not validate cognitive truth."
+    cumulative_change: NEW
+  - id: SOF-20
+    statement: "same-producer exposure、style familiarity、independent task learning 与 mutually grounded convention remain causally under-separated across much of the audited multimodal convention evidence."
+    claim_kind: agent_synthesis
+    status: OPEN
+    evidence_strength: MODERATE
+    evidence: [c3-conceptual-pacts, c4-repeated-reference-games, c5-graphical-convention-formation, c6-visual-resemblance-interaction-history, c7-shared-procedural-abstractions, c8-gesturing-toward-abstraction, e3-continual-adaptation-machine-communication]
+    boundary: "Cross-paper causal audit, not any paper original claim; C5 and C6 count as one empirical lineage."
+    cumulative_change: NEW_CORE
+  - id: SOF-21
+    statement: "Contextualized emoji、visual lexicon、dyadic action scaffolds 与 graded reference models 共同表明：signal form 本身不足以决定 meaning；local context、task discriminability、relationship 与 interaction history 会改变解释和表达成本。"
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [a3-interpreting-emoji-pragmatics, a4-a-visual-lexicon, a6-puppetchat, b4-when-redundancy-is-useful]
+    boundary: "证据横跨第三方 emoji interpretation、理论 visual lexicon、11 个 close dyads 的短期 deployment 与 verbal reference games；不能合并为单一 causal mechanism，也不是 embodied human–AI convention evidence。"
+    cumulative_change: STRENGTHENED
+  - id: SOF-22
+    statement: "Robot gaze、motion、speech、LED 与 AR 已能在受控任务中表达 attention、intent、uncertainty、capability 与 repair options；因此固定 signal engineering 不是空白，开放问题是 calibration、history-dependent grounding 与 partner-specific adaptation。"
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [d1-nonverbal-teamwork, d2-footing-in-human-robot-conversations, d3-nonverbal-leakage, d4-expressing-thought, d8-legible-multimodal-state-intent, d9-anatomy-of-uncertainty, g1-robot-motion-intent-ar, g2-visualisation-disambiguating-verbal-requests, g3-explainable-oohri, g4-context-aware-expressive-motion]
+    boundary: "多数研究使用 designer-authored mappings、短期 video/lab tasks 或显式 AR overlays；D8/D9 仍为 2026 的 provisional publication records，且这些研究不证明共同形成的 convention。"
+    cumulative_change: PARTIALLY_ADDRESSED
+  - id: SOF-23
+    statement: "Long-term robot meaning 与 use 会在 routine、roles、maintenance、organizational practice、appropriation 与 developer feedback 中被共同塑造；culture 不应被缩减为静态国别 preference。"
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [e4-designing-robots-long-term, f1-emergence-social-norms-conventions, f2-robots-in-society, f3-robotic-products-social-products, f4-my-roomba-is-rambo, f5-robots-in-the-wild, f6-generative-encounters-robin]
+    boundary: "F1/F2/F5 为 theory/research-agenda synthesis，F3/F4 是小规模 naturalistic cases，F6 仅完成摘要级审计；这些证据不能证明 autonomous robot learning 或 partner-specific convention。"
     cumulative_change: NEW_CORE
 claim_statuses:
   - ESTABLISHED

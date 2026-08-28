@@ -13,35 +13,71 @@
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "communication 不是 speaker 单向 encoding，而是双方共同建立 mutually acceptable reference，并努力降低 joint effort。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "传统 one-way encoding model 无法解释对话中的试探、分段表达、repair 与双方 acceptance。",
+  "method": "8 对 Stanford undergraduate dyads 在 opaque screen 两侧完成 12 个 Tangram 排列任务，共 6 trials；固定 director/matcher，可自由交谈；分析 576 placements、9,792 transcript words 及 exchange/repair/acceptance 结构。",
+  "findings": [
+    "每图 director words 从 trial 1 约 41 降至 trial 6 约 8，director turns 从约 3.7 降至约 1。",
+    "basic exchanges 从早期 18% 升至后期约 84%；reference 常经 presentation、verdict、repair/expansion/replacement 的递归 acceptance cycle。"
+  ],
+  "real_contribution": "把 repeated-reference 压缩重建为共同 acceptance、repair 与累积 shared history 驱动的互动过程，而非 speaker 单边优化。",
+  "biggest_weakness": "仅 8 对学生、单一 spoken Tangram task、固定角色；无 partner swap、history ablation、非语言或具身条件，表达缩短本身不足以证明 partner-specific convention。",
+  "claim_boundary": "支持受控 human–human verbal reference 中的 collaborative grounding 与 history-dependent efficiency；不证明 embodied AI 形成 mutual belief，也不证明所有缩短表达都是 convention。",
   "why_researcher_should_care": "communication 不是 speaker 单向 encoding，而是双方共同建立 mutually acceptable reference，并努力降低 joint effort。",
   "amsc": {
-    "mainline_fit": 9.6,
+    "mainline_fit": 9.8,
     "buckets": [
       "C"
     ],
     "stages": [
+      "Grounding / Common Ground",
+      "Convention Formation"
+    ],
+    "mechanisms": [
+      "Meaning",
       "Grounding",
       "Convention"
     ],
-    "mechanisms": [
-      "common ground",
-      "convention formation"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-02",
+      "GAP-03",
+      "GAP-04",
+      "GAP-07"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "master_list_decision": "Baseline v1.0 — retained / CORE classic anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Full author/official-repository manuscript audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "C1",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "speaker 与 addressee 如何协作完成 reference，并以当前目的所需的充分理解为 grounding criterion？",
+  "theory": [
+    "collaborative model",
+    "presentation–acceptance cycle",
+    "mutual responsibility",
+    "principle of least collaborative effort"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "author_or_official_repository_full_text",
+    "source_url": "https://web.stanford.edu/~clark/1980s/Clark%2C%20H.H.%20_%20Wilkes-Gibbs%2C%20D.%20_Referring%20as%20a%20collaborative%20process_%201986.pdf",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

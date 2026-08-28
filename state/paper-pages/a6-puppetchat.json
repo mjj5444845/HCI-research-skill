@@ -13,36 +13,95 @@
   "doi": "10.1145/3772318.3790685",
   "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "与你老板的研究线连接最明显。尤其关注 embodied actions、personal history、shared memories、social presence 与 intimate communication。未来可以从 human–human mediated expression 推向 human–embodied-AI shared expression。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "one_sentence": "PuppetChat 将 42 种 puppet actions、reciprocity-aware response recommendations 与可编辑的 story-grounded micronarratives 嵌入 dyadic chat；10 天 field deployment 显示 close dyads 会把这些脚手架 appropriated 成 reciprocal routines、inside jokes 与可回访的 relational traces。",
+  "problem": "日常 IM 在 convenience 与 expressive depth 之间存在断层：one-tap reactions 往往是 terminal feedback，generic emoji/actions 缺少关系史与可辨 intent，而长文本又提高表达负担。既有 awareness、mediated touch/joint-action 与 shared-symbol systems 往往分别提供 presence、physical metaphor 或 dyad-specific expression，却较少同时嵌入 IM turn-taking、invite a next move、允许轻量编辑，并把当前互动连接到 personal/shared history。",
+  "method": "Research-through-design 加两阶段混合方法评估。Formative phase：5 名 frequent IM users 与早期 12-action demo 互动 30–40 分钟，随后 semi-structured interviews；两位作者独立生成 codes、讨论达成一致，形成 reciprocity、personal narrative、editability 与 persistence 四个 design goals。System phase：实现 one-to-one PuppetChat，含 42-action library、关键词/情绪/embedding scoring、ReactionCandidates 与 responsive-role bias、基于 user story+action+conversation context 的 Azure OpenAI micronarrative generation、编辑/重生成、action-only ephemerality 与 persistent replay。Field phase：11 个既有 close dyads（N=22；6 best-friend、5 couple；21–28 岁）连续使用 10 天；Days 1–6 每天选 topic 交谈至少 15 分钟，Days 7–10 可自由聊。资料包括 interaction logs、每日两题 micro-survey、post-study 自建 16-item four-dimension scale、SUS、NASA–TLX，以及每 dyad 40–60 分钟访谈；定量仅作 descriptive/reliability summaries，访谈与开放题采用 reflexive thematic analysis。",
+  "findings": [
+    "日志显示每位参与者平均触发 Actions 18.0 次、发送 14.5 个 actions（约 80% trigger-to-send）；约 57% sent actions 附 micronarrative（M=8.2），每人平均 13.2 次 edits，说明 participants 并非只被动接受生成结果。",
+    "自建量表四维均值为 5.1–5.4/7（Co-presence & Affective Intimacy 5.3、Reciprocal Interaction 5.1、Personalized Micronarratives 5.2、Agency & Persistence 5.4）；这些是无对照的使用后描述，不能证明系统造成提升。",
+    "访谈中，complementary/mirrored replies 被体验为 asynchronous co-performance；参与者把 action+caption exchanges 描述为 togetherness、shared routines 与期待被回应，而非孤立 sticker reactions。",
+    "可编辑 micronarratives 支持 indirect/face-saving disclosure 与 playful appropriation；部分 dyads 将 generic prompts 改造成 inside jokes 或 private shorthand，但不同参与者对 personalization effort 的意愿明显不同。",
+    "对 personal history 的直接连接并不稳固：Connection item 是全量表最低（M=4.27），作者因此承认 generic generation 未必能承载 relational history，即便 participants 有时用编辑把它变成 relationship-specific meaning。",
+    "Participants 强烈偏好保留互动记录（reverse-coded Ephemeral item M=6.27）；SUS 报告 M=86.59、NASA–TLX RTLX M=31.72，但论文给出的 SUS 95% CI [68.71, 84.47] 不包含其均值，属于需要核对的内部统计报告错误。"
+  ],
+  "real_contribution": "最强贡献不是“AI 提升 intimacy”，而是一个可复用的 interaction architecture：用 complementary response constraints 把 signal 变成 invitational turn，用 editable micronarrative 给 embodied metaphor 增加 dyad-specific context，再以 persistence 构成 shared-history substrate。它提供了贴近 AMSC 的 human–human mediated evidence，显示 designer-provided/AI-suggested units 可被 dyads appropriated，但尚未证明 stable convention formation。",
+  "biggest_weakness": "22 名已亲密、主要 university-community participants 的 10 天 single-system deployment 没有 comparison/ablation，无法把 self-report/qualitative patterns归因于 complementary recommendations、puppet embodiment、micronarratives、novelty、dedicated-room attention 或研究要求中的每日聊天。自建 16-item scale 只在 N=22 上报告 internal consistency，未验证 construct validity；另有 SUS confidence interval 不包含 reported mean 的明显统计不一致。",
+  "claim_boundary": "可支持：这 11 个 close dyads 在短期、结构化 deployment 中实际使用、编辑并有时 appropriated reciprocal action+micronarrative scaffolds，且主观报告 presence、disclosure、continuity 与 shared meaning。不可支持：PuppetChat 因果提升 intimacy；任何单一 feature 是机制；10 天内形成了稳定/新颖 convention；效果可推广到 non-intimate、intercultural、neurodivergent 或 human–embodied-AI interaction。",
   "why_researcher_should_care": "与你老板的研究线连接最明显。尤其关注 embodied actions、personal history、shared memories、social presence 与 intimate communication。未来可以从 human–human mediated expression 推向 human–embodied-AI shared expression。",
   "amsc": {
-    "mainline_fit": 7.8,
+    "mainline_fit": 8.7,
     "buckets": [
-      "A"
+      "A",
+      "E",
+      "F"
     ],
     "stages": [
-      "Meaning",
-      "Embodied Communication"
+      "Social meaning / pragmatics",
+      "Convention formation",
+      "Personalization / co-adaptation",
+      "Situated adaptive communication"
     ],
     "mechanisms": [
-      "social meaning",
-      "multimodal expression"
+      "Meaning",
+      "Convention",
+      "Adaptation",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-02",
+      "GAP-03",
+      "GAP-04",
+      "GAP-05"
+    ],
+    "master_list_decision": "Master Literature v1.0 保留；作为 high-priority adjacent bridge"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 审读 19 页 arXiv v2 author manuscript（版本日期 2026-02-26）；稿件内含 CHI '26 citation 与 DOI metadata。",
+    "methods、logs、scales、qualitative themes、discussion 与 limitations 均从全文重建；旧 baseline relevance note 未作为证据。",
+    "论文报告的 SUS mean/CI 不一致已保留为 audit flag，没有静默修正。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；后两者保持未追踪。"
   ],
   "source_list_id": "A6",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "日常 dyadic IM 如何通过 reciprocal embodied actions、轻量 personalized micronarratives、user control 与可回访 shared traces，超越 terminal reactions 和 generic symbols？close partners 会怎样在真实使用中采用并体验这种设计？",
+  "theory": [
+    "社会临场理论（Social Presence Theory）",
+    "联合行动与人际协调（joint action / interpersonal coordination）",
+    "可解释歧义（interpretable ambiguity）",
+    "叙事性自我披露（narrative self-disclosure）",
+    "AI-mediated communication 中的 agency 与 control",
+    "关系维持与 shared memory"
+  ],
+  "gap_impact": [
+    "GAP-01 被部分处理：dyads 有时把 actions/captions appropriated 成 private meanings，但研究未 longitudinally 测量其 formation 与 stabilization。",
+    "GAP-02 被部分处理但未解决：action vocabulary 与 response pairs 由 designer 定义；user editing/inside jokes 显示的是对既有 inventory 的 appropriation，而非 emergent symbol invention。",
+    "GAP-03 被部分处理：user stories、conversation context、preference traces 与 persistent interaction history 进入 communication，但 partner-specific history-aware adaptation 较浅，且 Connection item 得分最低。",
+    "GAP-04 被强化并重构：personalization/editability 可为 shared shorthand 提供脚手架，但研究也说明 personalized output 不能等同于 convention formation。",
+    "GAP-05 在 embodied puppet metaphors 支持的 mediated human–human communication 中被部分处理；direct embodied-agent communication theory 与 evidence 仍缺失。"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED_WITH_STATISTICAL_REPORTING_FLAG",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text system-and-evidence audit",
+    "source_type": "author_manuscript_arxiv_v2",
+    "source_url": "https://arxiv.org/pdf/2602.19463",
+    "metadata_url": "https://arxiv.org/abs/2602.19463",
+    "evidence_scope": "problem_formative_study_system_field_method_logs_scales_interviews_discussion_limitations",
+    "degraded": false,
+    "audit_flags": [
+      "论文报告的 SUS 95% CI [68.71, 84.47] 不包含其 reported mean 86.59。",
+      "没有 comparison 或 ablation 支持把因果效果归于单个 system component。"
+    ]
+  },
+  "worth_sharing": false
 }

@@ -15,35 +15,83 @@
   "doi": "10.1109/IROS.2005.1545011",
   "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "早期直接证据，说明 nonverbal social cues 不只是“可爱”，还影响 understandability、task efficiency 和 communication robustness。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "one_sentence": "在一个 autonomous humanoid button-teaching task 中，主动展示 gaze/attention/confusion 的 implicit cues 使参与者更容易读取 robot state，并伴随更短完成时间与更快 error repair；但 behavioral evidence 主要是小样本描述统计。",
+  "problem": "早期 HRI 已常用 explicit gestures 提升 agent likeability 或调节对话，却较少检验 robot behavior 本身携带的 implicit state information 是否能改善真实 interdependent teamwork，尤其是在 autonomous perception/speech errors 不可避免时。论文区分 deliberate explicit cues 与行为自然泄露的 implicit cues，并检验后者是否提高 transparency、efficiency 与 error robustness。",
+  "method": "小样本 between-condition autonomous-robot 实验。21 名从当地 campus 招募、此前未与 Leonardo 互动的参与者（10 男、11 女，约 20–40 岁）通过 speech 与 pointing 先教 65-DOF humanoid 三个 colored buttons 的名字，再要求其全部开启。IMP+EXP condition 中，robot 以 gaze-following、object-directed attention、eye contact、blink/body motion 与 proactive confusion expressions 外显内部 state，同时保留 explicit nod/shake/gestures；EXPLICIT condition 移除持续 gaze/liveliness/proactive confusion，仅在被问时 explicit回应。研究后 questionnaire 测 understandability、mental model 与 perceived effectiveness；视频编码 errors、error-detection latency、task time 与 utterance count。三段视频事后剔除后，behavioral analysis 为 18 人、每条件 9 人。论文未说明 condition assignment/randomization、视频 coder 数量或 reliability，行为结果主要以 condition means/category summaries 报告。",
+  "findings": [
+    "Questionnaire 显示 IMP+EXP participants 认为 robot current state/abilities 更 understandable（t(11)=-1.88, p<.05），并报告较好的 mental model（t(11)=-1.77, p=.05）；perceived interaction effectiveness 无条件差异。论文没有解释这些检验的 df=11 如何对应总样本 21。",
+    "18 人视频样本中，IMP+EXP 的平均完成时间为 101 秒、平均 errors 为 3；EXPLICIT 为 175 秒、平均 errors 为 6。仅看至少一次 error 的 trials，分别为 107 秒（SD=53.8）与 246 秒（SD=159.6）。这些 behavioral contrasts 未报告 inferential tests 或 uncertainty intervals。",
+    "视频观察显示 participants 会等待 robot gaze 落到 intended button 后才结束 pointing，并把 renewed eye contact 当作 acquisition/turn completion；proactive confusion cues 让 speech/gesture recognition failures 更早暴露，从而较快 repair。",
+    "论文同时记录关键 boundary：参与者强烈依赖 gaze/nod 的 natural mapping；一次 spurious nod 使人误以为 label 已被学会，反而延长诊断。nonverbal transparency 只有在 cue–state mapping 准确时才提高 robustness。"
+  ],
+  "real_contribution": "该文把 nonverbal expressivity 从 likeability 装饰推进为 task-relevant state transparency：robot 的 gaze、confusion 与 turn cues 可让 human partner实时更新对 attention/understanding 的 mental model并修复 miscommunication。更重要的是，它使用真正 autonomous、会自然犯 perception/speech errors 的 embodied system，而非通过 Wizard-of-Oz 绕开 failures。",
+  "biggest_weakness": "只有 21 名 campus participants，视频有效样本 18（9/condition）；condition assignment、questionnaire construction、视频 coding reliability 均未充分报告。行为差异没有 inferential statistics，且 errors 来自未受控的真实系统性能，三例 post hoc exclusion 可能与 condition/performance 相关。因此 evidence 是有价值但 preliminary 的 mechanism demonstration，不能承担强因果或普遍化结论。",
+  "claim_boundary": "可支持：在这项简单 autonomous humanoid button task 中，准确映射到 attention/confusion 的 proactive nonverbal cues 与更好的 subjective state understanding 及描述性效率/修复表现相关。不可支持：implicit cues 在所有 robots/tasks/users 中因果提高 performance；anthropomorphic natural mappings 永远正确；social cues 本身形成 shared meaning；系统随 partner history 个性化或形成 convention。",
   "why_researcher_should_care": "早期直接证据，说明 nonverbal social cues 不只是“可爱”，还影响 understandability、task efficiency 和 communication robustness。",
   "amsc": {
-    "mainline_fit": 8.1,
+    "mainline_fit": 8.8,
     "buckets": [
       "D"
     ],
     "stages": [
-      "Embodied Communication"
+      "Grounding / common ground",
+      "Situated adaptive communication"
     ],
     "mechanisms": [
-      "legibility",
-      "nonverbal communication"
+      "Grounding",
+      "Adaptation",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-02",
+      "GAP-06"
+    ],
+    "master_list_decision": "Master Literature v1.0 保留；作为 foundational embodied-state communication"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 审读 MIT robotics/media 官方站托管的 6 页全文，并以 MIT Media Lab publication page 与 DOI 核对书目信息。",
+    "problem、method、results 与 boundaries 均从全文重建；旧 baseline relevance note 未作为 findings 证据。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；后两者保持未追踪。"
   ],
   "source_list_id": "D1",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "在 physical human–robot teamwork 中，相较于仅在被提示时提供 deliberate explicit cues，robot 主动以 gaze、posture 与 confusion behavior 外显内部 state，是否改善 human 的 state understanding/mental model、task efficiency 与对 communication errors 的 robustness？",
+  "theory": [
+    "协作话语理论（Collaborative Discourse Theory）",
+    "联合意图理论（Joint Intention Theory）",
+    "人对 robot 的 mental model",
+    "设计心理学中的 feedback、affordance、causality 与 natural mapping",
+    "implicit 与 explicit nonverbal communication"
+  ],
+  "gap_impact": [
+    "GAP-01 被强化并限定：cue 的功能来自可读且准确的 cue–state mapping；错误 mapping 会直接制造误解，但论文不研究 meaning formation。",
+    "GAP-02 被强化为后续问题：所有 cues 均由 designer 按 human analogs 预定义，未允许 human–robot dyad 协商或形成 partner-specific vocabulary。",
+    "GAP-06 被部分处理：论文把 social gaze/gesture 与 functional attention/confusion/error communication 直接结合，是该 gap 的早期反例；但 social meaning、文化差异与 adaptive convention 仍未统一。"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED_WITH_METHOD_REPORTING_LIMITATIONS",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text empirical audit",
+    "source_type": "official_mit_hosted_full_text",
+    "source_url": "https://robots.media.mit.edu/wp-content/uploads/sites/7/2015/01/Breazeal-etal-IROS-05.pdf",
+    "publisher_url": "https://www.media.mit.edu/publications/effects-of-nonverbal-communication-on-efficiency-and-robustness-in-human-robot-teamwork-2/",
+    "evidence_scope": "problem_hypotheses_platform_manipulation_sample_measures_results_discussion_conclusion",
+    "degraded": false,
+    "audit_flags": [
+      "Behavioral condition differences 仅为描述性结果；论文未报告 inferential tests。",
+      "Questionnaire t-tests 报告 df=11，但 recruited sample 共 21 人，论文未解释 analysis denominator。",
+      "论文未报告 condition assignment 与 video coding reliability。"
+    ]
+  },
+  "worth_sharing": false
 }

@@ -14,35 +14,69 @@
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "与你的“花字”关系极强。文章把文字、符号、图片、标点等定义为能够补充或替代传统 verbal prose 的 textual paralanguage。你以后需要思考如何把这一概念从 CMC 推进到 embodied agents。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "marketing/CMC work 多聚焦 word choice 或窄类 marks，缺少可覆盖书写中 audible、tactile、visual nonverbal surrogates 的 broad construct。",
+  "method": "概念 framework 加 exploratory manual content analysis：4,608 valid consumer tweets、4,168 brand tweets、2,943 brand replies、3,749 Facebook posts、1,550 Instagram posts。appendix 称 four coders，正文称 three；discrepancies by discussion，无 chance-corrected reliability。",
+  "findings": [
+    "TPL 出现在 40.3% valid consumer tweets、20.6% brand tweets、34.8% brand replies、19.1% Facebook posts、31.3% Instagram posts；五类均出现且分布随 platform 变化。",
+    "warmth、competence、rapport、trust 等后果只是 conceptual propositions，不是 tested findings；meaning 被明确描述为 context-dependent。"
+  ],
+  "real_contribution": "建立让 typography、punctuation、emoji 与 represented gesture 可被系统编码的 broad operational vocabulary。",
+  "biggest_weakness": "convenience/recent-post brand samples、coder count 不一致、无 reliability statistic；无 receiver study 或 causal consequence evidence，categories 有歧义。",
+  "claim_boundary": "支持 2010s sampled social media 中 TPL 的可观察与 context dependence；不证明 embodied effects 或 proposed relational consequences。",
   "why_researcher_should_care": "与你的“花字”关系极强。文章把文字、符号、图片、标点等定义为能够补充或替代传统 verbal prose 的 textual paralanguage。你以后需要思考如何把这一概念从 CMC 推进到 embodied agents。",
   "amsc": {
-    "mainline_fit": 7.8,
+    "mainline_fit": 6.6,
     "buckets": [
-      "A"
+      "A",
+      "F"
     ],
     "stages": [
-      "Meaning",
-      "Embodied Communication"
+      "Informal Visual Expression",
+      "Social Meaning / Pragmatics"
     ],
     "mechanisms": [
-      "social meaning",
-      "multimodal expression"
+      "Meaning"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-05",
+      "GAP-06"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / adjacent construct anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "A2",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "如何定义、分类并初步描述 textual paralanguage 在不同社交媒体中的使用？",
+  "theory": [
+    "textual paralanguage",
+    "voice qualities",
+    "vocalizations",
+    "tactile kinesics",
+    "visual kinesics",
+    "artifacts"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://arxiv.org/abs/1605.06799",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

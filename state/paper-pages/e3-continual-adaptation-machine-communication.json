@@ -13,38 +13,79 @@
   "source_url": "https://aclanthology.org/2020.conll-1.33/",
   "doi": "10.18653/v1/2020.conll-1.33",
   "access_status": "full_text",
-  "investigation_status": "abstract_reviewed",
-  "problem": "人工沟通 Agent 能否在 repeated reference interaction 中像人一样，针对新伙伴与新语境持续形成高效 convention？",
-  "method": "提出 interactive repeated reference task 与 regularized continual learning framework，并在 COCO simulations 和真实 human-partner reference games 中评估。",
+  "investigation_status": "full_paper_investigation",
+  "problem": "固定的 pretrained / pragmatic language model 可以利用 population conventions 与当前 context，却难以在互动中持续更新 partner-specific expectations，同时避免 catastrophic forgetting。",
+  "method": "实验采用 repeated reference game：每轮从 4 张相似 COCO images 中指称目标，每个 target 重复 6 次，共 24 trials。系统以 ResNet-152 与 LSTM captioner 为基础，并通过 likelihood、pragmatic contrast、KL regularization、compositional augmentation 与 local rehearsal 在线适应。Human baseline 包含 108 人（54 dyads）；adaptive-listener study 另有 57 名 human speakers，并包含 ablations 与 52 个 easier-context forgetting analyses。",
   "findings": [
-    "来源摘要报告：该框架使以通用语言模型初始化的 Agent 能随互动更准确、更高效地与伙伴沟通。"
+    "Human dyads 在 utterance 持续缩短的同时维持接近 ceiling 的准确率，t=25.8，p<.001。",
+    "Adaptive listener 的准确率约从 37% 升至 93%，z=12.6，p<.001；offline non-adaptive baseline 没有随互动改善。",
+    "移除 KL 后，unseen-context accuracy 约下降 10%，完整模型约下降 2%；移除 rehearsal 或 pragmatic objective 也会显著降低表现。"
   ],
-  "real_contribution": "把 on-the-fly partner adaptation 变成可比较的机器沟通 benchmark 与 continual-learning 问题。",
-  "biggest_weakness": "公开摘要不足以支持对所有实验条件、效应量与失败模式的完整审计；页面当前不作更强结论。",
-  "claim_boundary": "证据针对 repeated linguistic reference communication；不能直接推出 multimodal embodied conventions 已被解决。",
+  "real_contribution": "把 partner-specific convention learning 操作化为 pretrained semantic model 的 regularized online adaptation，并联合 pragmatics、shared history、composition、rehearsal 与 forgetting control。",
+  "biggest_weakness": "主 human study 是 human speaker→adaptive listener 的 one-sided role；无 repair、role reversal、partner swap/pseudo-dyad、retention/transfer 或 embodiment，且 non-adaptive comparator 是 offline。",
+  "claim_boundary": "支持固定 visual reference contexts 中 online listener adaptation；accuracy/shortening 不足以证明 reciprocal、counterfactually partner-specific convention 或 mutual belief。",
   "priority": "Must Read",
   "one_sentence": "目前整个 list 中与你“agent 随着 interaction history 学习 partner-specific convention”最接近的 computational work 之一。它直接让 artificial agent 在 repeated reference interaction 中持续适应沟通伙伴。",
   "why_researcher_should_care": "目前整个 list 中与你“agent 随着 interaction history 学习 partner-specific convention”最接近的 computational work 之一。它直接让 artificial agent 在 repeated reference interaction 中持续适应沟通伙伴。",
   "amsc": {
-    "mainline_fit": 8.8,
+    "mainline_fit": 9.4,
     "buckets": [
+      "B",
+      "C",
       "E"
     ],
     "stages": [
-      "Adaptation"
+      "Grounding / Common Ground",
+      "Convention Formation",
+      "Personalization / Co-adaptation"
     ],
     "mechanisms": [
-      "mutual adaptation",
-      "long-term interaction"
+      "Meaning",
+      "Grounding",
+      "Convention",
+      "Adaptation"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-02",
+      "GAP-03",
+      "GAP-04",
+      "GAP-07"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / cross-theme core bridge"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "E3",
   "provenance": "user_baseline_v1.0",
-  "updated_at": "2026-08-26"
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "人工 listener 如何从 shared interaction history 在线更新 partner-specific semantics，同时保留 population knowledge 并允许 compositional shortening？",
+  "theory": [
+    "Lewisian convention",
+    "Gricean pragmatics",
+    "common ground",
+    "Rational Speech Act",
+    "interaction-timescale adaptation"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://aclanthology.org/2020.conll-1.33/",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

@@ -17,36 +17,69 @@
   "correction_note": "原清单使用 online-first 年份 2019；本页采用正式卷期年份 2020。",
   "priority": "Must Read",
   "one_sentence": "你的理论核心之一。人会根据 communication context 选择更简单或更详细的 drawing；关键不是最大化 detail，而是 **contextually sufficient representation**。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "同一对象在不同 visual contexts 中需要不同程度的 detail；纯 resemblance account 不能解释为何 communicator 只画 contextually relevant information。",
+  "method": "192 AMT participants/96 pairs 完成 online drawing reference game，32 objects/4 categories，close vs far distractors；另 112 人做 naive recognition。human recognition 与 VGG-19 features 进入 probabilistic sketcher model，使用 5-fold CV 与 Bayes-factor lesion comparisons。",
+  "findings": [
+    "viewer overall accuracy 93.8%；far context 以更少 time/strokes/ink 达到近 ceiling，close sketches 的 out-of-context recognition 为 54.2% vs far 37.5%。",
+    "full human-recognition model 优于 no-context 与 no-cost lesions；high-level visual features 优于 mid/low features。"
+  ],
+  "real_contribution": "把 RSA-like pragmatics 扩展到图像，以 behavioral、recognition 与 model lesion evidence 区分 object identity 与 contextually sufficient depiction。",
+  "biggest_weakness": "模型只在参与者已生成的 prototype sketch categories 中选择，不生成 strokes；visual encoder 需 supervision，drawing time 只是 cost proxy；无 repeated history/convention manipulation。",
+  "claim_boundary": "支持受控 one-shot human visual reference 中的 contextual flexibility；不支持 learning、partner-specific common ground、convention formation 或 embodied AI。",
   "why_researcher_should_care": "你的理论核心之一。人会根据 communication context 选择更简单或更详细的 drawing；关键不是最大化 detail，而是 **contextually sufficient representation**。",
   "amsc": {
-    "mainline_fit": 8.5,
+    "mainline_fit": 8.8,
     "buckets": [
       "B"
     ],
     "stages": [
+      "Social Meaning / Pragmatics",
+      "Grounding / Common Ground"
+    ],
+    "mechanisms": [
       "Meaning",
       "Grounding"
     ],
-    "mechanisms": [
-      "pragmatic inference",
-      "representation"
+    "gap_ids": [
+      "GAP-01",
+      "GAP-05"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "master_list_decision": "Baseline v1.0 — retained / CORE visual pragmatics anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
     "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
-    "原清单使用 online-first 年份 2019；本页采用正式卷期年份 2020。"
+    "原清单使用 online-first 年份 2019；本页采用正式卷期年份 2020。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "B3",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "alternate_year_note": "Online first 2019; volume year 2020.",
+  "claimed_gap_rq": "能否用 algorithmically explicit account 联结 visual abstraction、pragmatic diagnosticity 与 production cost，并检验 context、cost、visual features 是否都必要？",
+  "theory": [
+    "Gricean informativeness",
+    "Rational Speech Act",
+    "decision-theoretic utility",
+    "visual abstraction as context-relative diagnosticity"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://cogtoolslab.github.io/pdf/fan_cbb_2019.pdf",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

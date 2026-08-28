@@ -2,46 +2,79 @@
   "id": "F5",
   "slug": "f5-robots-in-the-wild",
   "title": "Robots in the Wild: A Time for More Robust Theories of Human-Robot Interaction",
-  "authors": [
-    "Malte F. Jung",
-    "Pamela J. Hinds"
-  ],
+  "authors": ["Malte F. Jung", "Pamela J. Hinds"],
   "year": 2018,
-  "venue": "ACM Transactions on Human-Robot Interaction, 7(1), Article 2",
+  "venue": "ACM Transactions on Human-Robot Interaction, 7(1), Article 2, 1–5",
   "source_url": "https://interplay.infosci.cornell.edu/assets/papers/wild.pdf",
   "doi": "10.1145/3208975",
   "access_status": "full_text",
+  "investigation_status": "full_paper_investigation",
+  "claimed_gap_rq": "HRI 的理论基础长期由 laboratory、single-human–single-robot studies 主导，与 robots 实际进入 workplaces、homes、public spaces 和 multi-person groups 的复杂社会情境不匹配。论文提出两项 research agenda：在多种真实 contexts 中开展足够长期、可比较的研究；把 robot 对 groups、roles、norms、coordination、conflict 与 trust 的影响整合为可 generalize 的理论。",
+  "theory": [
+    "情境化人机互动（contextualized HRI）",
+    "群体与团队过程（group/team processes）",
+    "社会规范与涟漪效应（social norms/ripple effects）",
+    "组织角色、工作实践与 status structures",
+    "真实场景研究与比较式理论建构（in-the-wild comparative theory building）",
+    "跨学科社会科学理论转移"
+  ],
+  "problem": "短期 dyadic lab studies 能隔离 design mechanisms，却难预测 robot 嵌入由多人、角色、任务依赖、职业实践与文化规范组成的社会系统后，谁会被影响、哪些 norms/roles 会改变、effects 是否随时间反转。",
+  "method": "五页 perspective/theory agenda，非新 empirical study、非 systematic review。作者选择性综合 hospital/pharmacy、workplace、Mars rover teams、shopping mall、museum/family groups、autism therapy 与 team-robot studies，分两部分论证：（1）需要理解 social 所发生的 context；（2）需要研究 robot 对直接 user 以外的 groups 与 norms 的影响。最后提出 qualitative+quantitative、longitudinal、multi-context comparative field research 及跨 robotics/design/behavioral science 的 theory building。没有 search strategy、纳排标准或 evidence-quality grading。",
+  "findings": [
+    "被综述的 field studies 显示，robot response 取决于 patient needs、unit workflow、job roles 与 professional practices；deployment 也会重新分配 control、occupation boundaries 与工作意义。",
+    "contextual effects 不止是 attitude：例如 workplace/pharmacy 与 rover cases 表明 robots/autonomy 会改变 task allocation、interpretation 与 organizational practice，因此实验室中的 individual outcome 不能覆盖系统结果。",
+    "robot 可影响未直接操作它的人：作为 mediator 或仅凭 presence/gaze/behavior，它可能改变 interpersonal attention、roles、conflict、trust 与 groups 形成的 interaction norms。",
+    "截至论文写作时，这些 group/context findings 数量少且未整合成能预测不同 robot、task、social situation 与 culture 组合的理论；这是作者的 literature diagnosis，不是 meta-analytic effect estimate。",
+    "作者主张 field studies 应结合 qualitative 与 quantitative methods，持续足够久以观察 integration/change，并在不同 workplaces、family structures 与 public settings 中比较同一 design element。",
+    "论文明确不否定 laboratory studies；主张 lab 继续作为 mainstay，但需要与 context-rich field evidence 和 social-science theory 互补。"
+  ],
+  "claim_evidence_audit": [
+    {"claim": "现有 HRI theory 对复杂社会 context 过度简化。", "evidence": "对 single-human lab dominance 与多个 field/group cases 的对照，显示 workflows、roles、groups 与 norms 产生 lab dyad 未建模的 effects。", "boundary": "文章没有 systematic corpus/count，不能量化 field 的整体失衡，也不能证明所有 lab findings 在现实中失效。"},
+    {"claim": "robots 会影响直接 dyad 之外的 group dynamics。", "evidence": "被综述的 mediation、gaze、mere presence、workplace ripple-effect、family/group studies。", "boundary": "effects 跨 task、robot 和 outcome 异质；文章未做 synthesis model 或 effect-size comparison。"},
+    {"claim": "更多 in-the-wild studies 将产生 robust/generalizable theory。", "evidence": "context variation 揭示 boundary conditions，comparative studies 可解释 response variation。", "boundary": "field placement 本身不保证 generalization；如果缺少构念、comparison、sampling 和 causal design，多个 idiosyncratic cases 仍不能形成 robust theory。"}
+  ],
+  "real_contribution": "把“ecological validity”从场地选择提升为理论对象：context 包括 roles、status、practice、culture、family/group structure 和时间，而 robot 的 outcome 包括对旁观者、interpersonal relations、norms 与 team processes 的 ripple effects。它要求用跨 context 比较来发现 boundary conditions，而不是只把同一个 lab task 搬到 field。",
+  "biggest_weakness": "作为 agenda article，它的 corpus 是选择性而非 systematic，关键诊断没有 quantified coverage；同时“去 field”容易被误读为方法充分条件，但文章没有给出 sampling、causal identification、measurement invariance、privacy/ethics、failure logging 或如何从 cases 累积 theory 的具体 protocol。",
+  "attack": [
+    {"severity": "major_concern", "issue": "in-the-wild 不自动等于 external validity；单一自然场景也可能比多场景实验更难 generalize。"},
+    {"severity": "major_concern", "issue": "context、culture、group 与 time 的维度很多，若无 factorial/replication logic，agenda 可能产生不可比较案例。"},
+    {"severity": "possible_gap_exposed", "issue": "需要把 lab causal diagnostics 与 longitudinal field trajectories 组合，验证 shared-history、group norm 与 partner-specific convention 在 context 变化后的保持、repair 与 transfer。"}
+  ],
+  "claim_boundary": "本文支持：既有 field/group cases 已显示 workflows、roles、norms 与 third-party effects 对 HRI 理论不可忽略，并提出明确 research agenda。本文不支持：field study 总优于 lab、所有 lab result 缺乏现实效度、2018 年后该缺口仍同等严重，或任何具体 human–robot convention 已在 wild 中建立。",
   "priority": "Must Read",
-  "one_sentence": "提醒 HRI 不能只依靠 one-human-one-robot short laboratory study；对你未来研究 relationship/history/social context 非常重要。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
-  "why_researcher_should_care": "提醒 HRI 不能只依靠 one-human-one-robot short laboratory study；对你未来研究 relationship/history/social context 非常重要。",
+  "one_sentence": "F5 要求 HRI 从短期单人 dyad 扩展到 longitudinal、multi-person、multi-context 的理论建构，但 field setting 本身不是 robust theory 的保证。",
+  "why_researcher_should_care": "它直接决定 AMSC evidence architecture：先在 controlled interaction 中识别 history/convention mechanism，再到不同 relationship、group 与 institutional contexts 中检验 boundary、ripple effects 与 transfer。",
   "amsc": {
-    "mainline_fit": 7.9,
-    "buckets": [
-      "F"
-    ],
-    "stages": [
-      "Meaning",
-      "Adaptation"
-    ],
-    "mechanisms": [
-      "social context",
-      "appropriation"
-    ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "mainline_fit": 8.5,
+    "buckets": ["E", "F"],
+    "stages": ["Grounding / Common Ground", "Convention Formation", "Personalization / Co-adaptation", "Situated Adaptive Communication"],
+    "mechanisms": ["Grounding", "Convention", "Adaptation", "Embodied Communication"],
+    "gap_ids": ["GAP-01", "GAP-03", "GAP-04", "GAP-06", "GAP-07"],
+    "gap_impact": "强化 GAP-01/03 的跨 context、时间与 group boundary，强化 GAP-04/07 需要把 controlled diagnostics 与 field validation 组合，也支持 GAP-06 同时评估 direct user 与 social-environment outcomes；它是 agenda/synthesis evidence，不关闭任何具体机制缺口。",
+    "master_list_decision": "Baseline v1.0 — retained / CORE field-theory and multiparty-method guardrail",
+    "exam_impact": "建议作为 methods/field-theory 的过滤 anchor：比较 lab control 与 field theory building，并批判为什么“在真实世界做”仍不足以证明 generalizability。",
+    "next_project_priority": "采用 staged program：controlled history/partner/repair manipulation → longitudinal deployment → pre-specified cross-context replication 与 group-level outcomes。"
   },
   "evidence_notes": [
-    "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "2026-08-27 审读作者公开全文（5 页）：problem statement p.2:1；context/work-practice synthesis p.2:2；group/ripple-effect synthesis p.2:2–2:3；research agenda p.2:3–2:4；references p.2:5。",
+    "原 Cornell PDF 当前对直接抓取间歇返回 403，但同一作者上传全文在 ResearchGate 可逐页读取，且 title/DOI/page text 与 Cornell indexed copy、ACM metadata 一致；内容审读未降级为 abstract-only。",
+    "本文是 perspective/narrative synthesis；页面 findings 明确标为被综述证据与作者诊断，不伪装成 F5 新实验。",
+    "Agent evidence readiness 与 researcher reading/mastery 分开；未推断或修改 researcher progress。"
   ],
   "source_list_id": "F5",
-  "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "provenance": "user_baseline_v1.0 + full_text_author_copy_audit",
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {"source_availability": "full_text", "agent_investigation": "full_paper_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text perspective audit",
+    "source_type": "author_public_full_text_mirrored_and_metadata_crosschecked",
+    "source_url": "https://interplay.infosci.cornell.edu/assets/papers/wild.pdf",
+    "full_text_mirror": "https://www.researchgate.net/publication/325320727_Robots_in_the_Wild_A_Time_for_More_Robust_Theories_of_Human-Robot_Interaction",
+    "metadata_crosscheck": ["https://doi.org/10.1145/3208975", "https://sts.stanford.edu/publications/robots-wild-time-more-robust-theories-human-robot-interaction"],
+    "evidence_scope": "完整审读论点、context/group 文献综合、研究议程、limitations 与 references",
+    "degraded": false
+  },
+  "worth_sharing": false,
+  "updated_at": "2026-08-27"
 }

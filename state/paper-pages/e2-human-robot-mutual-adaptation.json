@@ -9,39 +9,74 @@
   ],
   "year": 2017,
   "venue": "The International Journal of Robotics Research, 36(5–7), 618–634",
-  "source_url": "https://pubmed.ncbi.nlm.nih.gov/32855581/",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7449140/",
   "doi": "10.1177/0278364917690593",
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "mutual adaptation 的 computational foundation。你未来真正需要推进的是：",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "单向 robot adaptation 可能顺从人的次优策略，而坚持 designer-optimal goal 又可能损害 trust；Agent 需要估计 human adaptability 再决定顺从或引导。",
+  "method": "MTurk video/UI collaborative table-carrying tasks，而非实体 co-manipulation。主要 between-subject study n=69，后续 repeated task n=43、hallway validation n=65、cross-task transfer n=58；离散 goals/actions，k=3 history，alpha grid，SARSOP planning；测 strategy choice、trust 与 team perceptions。",
+  "findings": [
+    "Mutual 相比 Fixed trust 更高 U=180,p=.048，但 satisfaction 并非全面显著；57% Mutual participants 转向 robot optimal strategy vs Cross-training 26%。",
+    "k=1 pilot 约 23% oscillation，k=3 更符合 observations；initial trust 与 low self-confidence 预测首次 adaptation。",
+    "cross-task transfer 不完整，说明 task/social norm matter。"
+  ],
+  "real_contribution": "把 mutual adaptation 操作化为 latent human-model inference 加 robot policy choice，展示 Agent 可在简化任务中主动引导而非只做 one-way personalization。",
+  "biggest_weakness": "web/video UI、离散 designer-defined goals/modes；alpha 更像 compliance/strategy switching 而非 reciprocal co-learning。无 communicative meaning、repair、mutual belief 或 convention。",
+  "claim_boundary": "支持短时 constrained task-policy adaptation；不支持 embodied communication co-adaptation、partner-specific convention、common ground 或 long-term relationship。",
   "why_researcher_should_care": "mutual adaptation 的 computational foundation。你未来真正需要推进的是：",
   "amsc": {
-    "mainline_fit": 8.8,
+    "mainline_fit": 7.1,
     "buckets": [
       "E"
     ],
     "stages": [
-      "Adaptation"
+      "Personalization / Co-adaptation"
     ],
     "mechanisms": [
-      "mutual adaptation",
-      "long-term interaction"
+      "Adaptation"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-02",
+      "GAP-03",
+      "GAP-04",
+      "GAP-07"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / adjacent computational adaptation anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Publisher/author/official-repository full text audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "E2",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "能否用可更新的人类 adaptability model 规划 robot actions，使 team 收敛到较优策略并保持 trust？",
+  "theory": [
+    "Bounded-Memory Adaptation Model",
+    "MOMDP",
+    "bounded rationality",
+    "planning under uncertainty",
+    "latent human adaptability"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "publisher_author_or_official_repository_full_text",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7449140/",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }

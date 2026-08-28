@@ -21,16 +21,29 @@ for (const file of htmlFiles) {
   for (const required of ["<title>", "<main", "<nav", "assets/styles.css", "assets/app.js"]) {
     if (!html.includes(required)) failures.push(`${relative}: missing ${required}`);
   }
-  if (/\b(undefined|null)\b/.test(html.replace(/Insufficient Evidence \/ 尚未记录。/g, ""))) {
+  if (/(?:>|=")(?:undefined|null)(?:<|")/i.test(html.replace(/Insufficient Evidence \/ 尚未记录。/g, ""))) {
     failures.push(`${relative}: rendered undefined/null value`);
   }
+  const h1Count = (html.match(/<h1(?:\s|>)/g) || []).length;
+  if (h1Count !== 1) failures.push(`${relative}: expected exactly one h1; found ${h1Count}`);
+  const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map(match => match[1]);
+  const duplicates = ids.filter((id, index) => ids.indexOf(id) !== index);
+  if (duplicates.length) failures.push(`${relative}: duplicate ids ${[...new Set(duplicates)].join(", ")}`);
+  if (/<canvas(?:\s|>)/.test(html)) failures.push(`${relative}: canvas visualization remains after static-visual redesign`);
   const references = [...html.matchAll(/(?:href|src)="([^"]+)"/g)].map(match => match[1]);
   for (const reference of references) {
-    if (/^(?:https?:|mailto:|#|data:)/.test(reference)) continue;
-    const clean = reference.split(/[?#]/)[0];
+    if (/^(?:https?:|mailto:|data:)/.test(reference)) continue;
+    const [clean, fragment] = reference.split("#", 2);
     let target = path.resolve(path.dirname(file), clean || ".");
     if (clean.endsWith("/") || fs.existsSync(target) && fs.statSync(target).isDirectory()) target = path.join(target, "index.html");
-    if (!fs.existsSync(target)) failures.push(`${relative}: broken local reference ${reference}`);
+    if (!fs.existsSync(target)) {
+      failures.push(`${relative}: broken local reference ${reference}`);
+      continue;
+    }
+    if (fragment && target.endsWith(".html")) {
+      const targetHtml = fs.readFileSync(target, "utf8");
+      if (!targetHtml.includes(`id="${fragment}"`)) failures.push(`${relative}: missing fragment target ${reference}`);
+    }
   }
 }
 

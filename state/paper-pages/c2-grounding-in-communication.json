@@ -13,35 +13,72 @@
   "access_status": "full_text",
   "priority": "Must Read",
   "one_sentence": "common ground / grounding 的理论地基。你以后所有“interaction history”“双方已经知道对方知道什么”的论证都离不开它。",
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "claim_boundary": "当前页面仅完成书目与来源核验；在 full Paper Investigation 前，不依据标题或清单说明推断 findings。",
+  "problem": "collective action 不能仅依赖预存 common ground；参与者还必须逐步建立彼此已理解的共享证据，且 medium 改变这一过程的成本。",
+  "method": "理论/概念综合，使用自然会话例子与既有 face-to-face、telephone、keyboard、email 研究；没有新招募样本或原创实验。",
+  "findings": [
+    "该文没有新的单一实验 finding；其综合主张是 grounding technique 随 purpose 与 medium 改变。",
+    "medium 的 copresence、visibility、audibility、cotemporality、simultaneity、sequentiality、reviewability 与 revisability 会改变 formulation、reception、delay、fault 与 repair 成本。"
+  ],
+  "real_contribution": "给出可操作的 grounding 理论语法，把 common ground、positive evidence、repair、媒介 affordance 与 collective effort 放入同一框架。",
+  "biggest_weakness": "mutual belief 难以直接观测；框架依赖 cooperative coordination，媒介 taxonomy 源自 1991 年 ecology，且无 embodied AI 或 causal comparison。",
+  "claim_boundary": "这是理论框架与既有证据综合；system memory、task success 或 acknowledgment signal 都不能自动等同于 mutual grounding。",
   "why_researcher_should_care": "common ground / grounding 的理论地基。你以后所有“interaction history”“双方已经知道对方知道什么”的论证都离不开它。",
   "amsc": {
-    "mainline_fit": 9.6,
+    "mainline_fit": 10,
     "buckets": [
-      "C"
+      "C",
+      "G"
     ],
     "stages": [
-      "Grounding",
-      "Convention"
+      "Grounding / Common Ground",
+      "Situated Adaptive Communication"
     ],
     "mechanisms": [
-      "common ground",
-      "convention formation"
+      "Grounding",
+      "Embodied Communication"
     ],
-    "gap_ids": [],
-    "master_list_decision": "Baseline v1.0 — retained"
+    "gap_ids": [
+      "GAP-03",
+      "GAP-04",
+      "GAP-06",
+      "GAP-07"
+    ],
+    "master_list_decision": "Baseline v1.0 — retained / CORE theory anchor"
   },
   "evidence_notes": [
     "书目身份、作者、年份、venue、DOI 与可访问来源已于 2026-08-26 核验。",
-    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。"
+    "研究相关性说明来自用户提供的 Master Literature List v1.0；除非页面另行标明 investigation_status，否则它不是从论文 findings 重建的结论。",
+    "Full author/official-repository manuscript audited on 2026-08-27.",
+    "Methods and findings were reconstructed from the full text; the baseline relevance note was not used as evidence.",
+    "Agent readiness is separate from researcher reading/mastery, which remains untracked."
   ],
   "source_list_id": "C2",
   "provenance": "user_baseline_v1.0",
-  "investigation_status": "bibliographic_verification_only",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-08-27",
+  "claimed_gap_rq": "如何统一描述 contribution、evidence of understanding、grounding criterion，以及 purpose/medium 对 grounding techniques 的约束？",
+  "theory": [
+    "common ground",
+    "grounding criterion",
+    "presentation plus acceptance",
+    "positive evidence",
+    "principle of least collaborative effort",
+    "medium constraints"
+  ],
+  "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
+  "readiness": {
+    "source_availability": "full_text",
+    "agent_investigation": "full_paper_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
+  "investigation_provenance": {
+    "date": "2026-08-27",
+    "mode": "deep/full-text",
+    "source_type": "author_or_official_repository_full_text",
+    "source_url": "https://www.cs.cmu.edu/~illah/CLASSDOCS/Clark91.pdf",
+    "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
+    "degraded": false
+  },
+  "worth_sharing": false
 }
