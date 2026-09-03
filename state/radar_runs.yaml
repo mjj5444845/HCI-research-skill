@@ -1,4 +1,39 @@
-version: 0.1
-updated_at: null
-runs: []
-change_log: []
+version: 0.3
+updated_at: 2026-09-03
+runs:
+  - id: amsc-radar-2026-09-03
+    program: AMSC
+    scheduled_for: manual-now
+    completed_at: 2026-09-03T10:00:00-04:00
+    window_start: 2026-08-27T00:00:00-04:00
+    window_end: 2026-09-03T10:00:00-04:00
+    timezone: America/New_York
+    deeply_investigated: 3
+    master_list_additions: [X17, X18, X19]
+    deduplicated_existing:
+      - id: X19
+        lineage: "arXiv:2401.08461 / AAMAS 2024 extended abstract"
+    tracked_not_promoted:
+      - doi: "10.1108/RIA-06-2025-0164"
+        reason: "Abstract-only evidence supports embodied iterated imitation, not dyadic common ground."
+    report: reports/radar/2026-09-03-amsc-mainline.md
+    access_note: "X17–X19 had open full text. Several ACM, IEEE, Taylor & Francis, and Emerald records remained metadata- or abstract-only and were kept in validation/watch queues."
+  - id: amsc-radar-2026-08-31
+    program: AMSC
+    scheduled_for: 2026-08-31T08:00:00-04:00
+    completed_at: 2026-08-31T08:50:30-04:00
+    window_start: 2026-08-24T08:00:00-04:00
+    window_end: 2026-08-31T08:00:00-04:00
+    timezone: America/New_York
+    deeply_investigated: 5
+    master_list_additions: [X13, X14, X15, X16]
+    deduplicated_existing:
+      - id: X6
+        arxiv: "2608.26035"
+    report: reports/radar/2026-08-31-amsc-mainline.md
+    access_note: "All four accepted candidates had open full text. Database coverage was incomplete for ACM/IEEE, OSF/PsyArXiv/SSRN, and the local sandbox validator could not start because C: had no free space."
+change_log:
+  - date: 2026-09-03
+    change: "Recorded the manual full AMSC radar run, added X17–X19, retained abstract-only robot communication work as Track, and activated the Monday 03:00 America/New_York schedule."
+  - date: 2026-08-31
+    change: "Recorded the first configured weekly AMSC radar run; preserved the 2026-08-27 manual radar state and deduplicated its X6 candidate."

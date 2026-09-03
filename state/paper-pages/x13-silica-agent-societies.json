@@ -1,0 +1,35 @@
+{
+  "id": "X13",
+  "slug": "x13-silica-agent-societies",
+  "title": "Benchmarking large language model agent societies against human behavioural distributions",
+  "authors": ["Raad Bin Tareaf"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2608.28182",
+  "doi": "10.48550/arXiv.2608.28182",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "SILICA shows that rapid LLM naming-game convergence partly reflects shared label priors and apparatus sensitivity; negotiation becomes visible only after per-agent label-pool permutation.",
+  "problem": "When may an LLM-agent social simulation support a human-behavior or convention claim rather than reproducing priors, presentation artifacts, or memorized experimental scripts?",
+  "method": "Five human-anchored social environments, twelve open-weight models, 9,115 model runs, representation/design perturbations, divergent-payoff contamination tests, and a per-agent shuffled name-pool control.",
+  "findings": [
+    "Seven of eight tested models still converged in every shuffled-pool seed, but 1.5–2.6 times more slowly; an eighth converged in only two of three seeds at 14–24 times the fixed-order time.",
+    "No assessed finding reached the paper's transferable tier; convention formation alone reached its robust tier, and no model matched the human tipping-point bracket."
+  ],
+  "real_contribution": "Provides a concrete false-positive audit for computational convention claims and demonstrates why shared priors, label order, and apparatus perturbations must be separated from interaction-driven negotiation.",
+  "biggest_weakness": "Single-author preprint; human evidence is imported as anchors, the key shuffled-pool control was added after transcript audit, and all agents still share pretrained label semantics.",
+  "claim_boundary": "Supports an LLM-agent diagnostic precedent, not human-equivalent convention formation, human–AI grounding, embodiment, or mutual belief.",
+  "why_researcher_should_care": "AMSC studies should counterbalance or individualize initial signal spaces and report robustness before attributing convergence to shared-history convention formation.",
+  "amsc": {
+    "mainline_fit": 9.2,
+    "buckets": ["C", "F"],
+    "stages": ["Convention", "Adaptation"],
+    "mechanisms": ["shared label prior", "population negotiation", "apparatus perturbation", "contamination audit"],
+    "gap_ids": ["GAP-02", "GAP-04", "GAP-07"],
+    "master_list_decision": "Candidate — Must Read / Convention false-positive audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": ["Open arXiv PDF inspected; v1 submitted 2026-08-28.", "Agent-society results are not treated as evidence of human cognitive equivalence."],
+  "provenance": "amsc_radar_2026-08-31",
+  "updated_at": "2026-08-31"
+}

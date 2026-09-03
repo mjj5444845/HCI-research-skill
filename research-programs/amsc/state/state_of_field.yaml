@@ -1,12 +1,12 @@
-version: 0.4
-updated_at: 2026-08-27
+version: 0.5
+updated_at: 2026-08-31
 evidence_snapshot:
-  total_papers: 53
+  total_papers: 57
   bibliographic_only: 0
   abstract_reviewed: 3
   abstract_evidence_investigation: 1
   source_verified_candidate: 2
-  radar_full_text_audited: 7
+  radar_full_text_audited: 11
   full_paper_investigations: 40
   strongest_available_level: MODERATE
   warning: "书目覆盖、Agent 调查深度与研究者阅读进度是三件不同的事。"
@@ -197,6 +197,62 @@ claims:
     evidence: [e4-designing-robots-long-term, f1-emergence-social-norms-conventions, f2-robots-in-society, f3-robotic-products-social-products, f4-my-roomba-is-rambo, f5-robots-in-the-wild, f6-generative-encounters-robin]
     boundary: "F1/F2/F5 为 theory/research-agenda synthesis，F3/F4 是小规模 naturalistic cases，F6 仅完成摘要级审计；这些证据不能证明 autonomous robot learning 或 partner-specific convention。"
     cumulative_change: NEW_CORE
+  - id: SOF-24
+    statement: "LLM naming-game convergence can be a false-positive mechanism claim: a shared pretrained label prior and apparatus presentation can accelerate or determine convergence, while per-agent label-pool permutation reveals slower interaction-driven negotiation."
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [x13-silica-agent-societies]
+    boundary: "Single-author preprint using artificial agent populations; shuffled agents still share pretrained label semantics, and results do not establish human-equivalent convention."
+    cumulative_change: NEW
+  - id: SOF-25
+    statement: "In evolutionary simulation, ecological usefulness, body geometry, and coordinated sender–receiver change jointly determine whether a referential code emerges and can transition from iconic to abstract without communication collapse."
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [x14-bee-referential-code]
+    boundary: "Bee-inspired colony simulation with across-generation adaptation, permissive transition assumptions, and no human–AI dyad, repair, or multimodal social meaning."
+    cumulative_change: NEW
+  - id: SOF-26
+    statement: "A simulated agent can acquire partner-sensitive linguistic policies when bodily state, linguistic action, partner response, and nonresetting consequences form one causal loop."
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [x15-synthetic-linguistic-agency]
+    boundary: "Scripted ecology, simulated one-dimensional body, four fixed actions, no humans, and no evidence of mutual convention or open meaning negotiation."
+    cumulative_change: NEW
+  - id: SOF-27
+    statement: "Long-term conversational memory availability and elicited retrieval are empirically distinct from naturally integrating relevant shared history during interaction."
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [x16-memuse-natural-integration]
+    boundary: "One text-only deployment; Natural Integration–satisfaction association is observational and based on 48 sessions/16 users, not evidence of mutual belief or convention."
+    cumulative_change: STRENGTHENED
+  - id: SOF-28
+    statement: "Under character pressure, explicitly prompted AI–AI postmortem coordination can produce efficient dyad-specific shorthand, partial productivity, clarification behavior, and limited newcomer uptake."
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [x17-glossogen-emergent-language]
+    boundary: "Agents were told to develop shorthand, postmortems allowed free code definition, linguistic analysis partly used LLM judges, and one replacement generation does not establish cumulative cultural evolution or human-like common ground."
+    cumulative_change: NEW
+  - id: SOF-29
+    statement: "In short embodied collaboration, increasing robot self-disclosure can non-monotonically reduce user disclosure and perceived coordination, making embodiment congruence, authenticity, reciprocity, and privacy plausible social–functional boundary conditions."
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [x18-small-talk-rapport]
+    boundary: "Single N=50 short-term study; disclosure content and word count were confounded, and interview explanations were not causally tested."
+    cumulative_change: NEW
+  - id: SOF-30
+    statement: "Designer-specified decentralized language-game mechanisms can yield population-level grounded lexical convergence across continuous perceptual domains and remain partly robust to heterogeneous sensing and environmental perturbation."
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [x19-continuous-worlds-vocabularies]
+    boundary: "Algorithmic convergence with built-in invention, target disclosure, adoption and reinforcement is not partner-specific human–AI common ground; dataset features are not physical sensorimotor embodiment."
+    cumulative_change: STRENGTHENED
 claim_statuses:
   - ESTABLISHED
   - EMERGING

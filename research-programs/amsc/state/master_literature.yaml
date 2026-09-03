@@ -1,7 +1,7 @@
-version: v1.3
+version: v1.5
 baseline_count: 41
 verified_at: 2026-08-27
-note: "The 41-paper baseline is user-defined; twelve evidence-audited candidates are tracked separately. Top-20 Agent investigation is complete, while researcher reading/mastery remains untracked."
+note: "The 41-paper baseline is user-defined; nineteen evidence-audited candidates are tracked separately. Top-20 Agent investigation is complete, while researcher reading/mastery remains untracked."
 categories:
   A: "Social / Multimodal / Informal Expression"
   B: "Pragmatics / Representation / Communicative Efficiency"
@@ -267,6 +267,34 @@ candidates:
     slug: x12-partners-to-populations
     title: "From Partners to Populations: A Hierarchical Bayesian Account of Coordination and Convention"
     decision: "Candidate — Must Read / Recovered theory anchor"
+  - id: X13
+    slug: x13-silica-agent-societies
+    title: "Benchmarking large language model agent societies against human behavioural distributions"
+    decision: "Candidate — Must Read / Convention false-positive audit"
+  - id: X14
+    slug: x14-bee-referential-code
+    title: "The emergence and evolution of a referential code in populations of bee-like agents"
+    decision: "Candidate — Important / Embodied convention mechanism"
+  - id: X15
+    slug: x15-synthetic-linguistic-agency
+    title: "Synthetic Linguistic Agency: How an Embodied Mortal Agent Learns Linguistic Affordances through Consequential Social Experience"
+    decision: "Candidate — Important / Embodied adaptation mechanism"
+  - id: X16
+    slug: x16-memuse-natural-integration
+    title: "MemUse: Moving Memory Evaluation from Direct QA to Natural Integration in Long-Term Human-AI Conversation"
+    decision: "Candidate — Important / Longitudinal diagnostic"
+  - id: X17
+    slug: x17-glossogen-emergent-language
+    title: "GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions"
+    decision: "Candidate — Important / AI–AI protocol lifecycle and diagnostic precedent"
+  - id: X18
+    slug: x18-small-talk-rapport
+    title: "From Small Talk to Rapport: Exploring Robot Self-Disclosure in Collaborative Tasks"
+    decision: "Candidate — Important / social–functional embodied communication boundary"
+  - id: X19
+    slug: x19-continuous-worlds-vocabularies
+    title: "Emergent Communication in Continuous Worlds: Self-Organisation of Conceptually Grounded Vocabularies at Scale"
+    decision: "Candidate — Must Read / recovered computational method anchor"
 change_log:
   - date: 2026-08-26
     change: "Imported and source-verified the 41-paper user baseline; corrected B3 year, C7 author order, and E4 first author."
@@ -277,3 +305,7 @@ change_log:
 
   - date: 2026-08-27
     change: "Top-20 baseline full-text investigation completed for C1, C2, C3, B1, B2, B3, C4, C5, C6, C7, C8, A5, A2, A1, D5, D6, D7, E1, E2, and E3; C5 was marked empirically dependent on C6 and readiness was kept separate from researcher mastery."
+  - date: 2026-08-31
+    change: "Weekly Radar v1.4 added X13–X16 after exact-window filtering and DOI/title/arXiv deduplication; X6 was recognized as an existing candidate, and no baseline or human correction was changed."
+  - date: 2026-09-03
+    change: "Manual Radar v1.5 added X17–X19 after full-text audit and independent red-team review; X19 merges its 2024 arXiv/AAMAS lineage into the canonical TACL record, GlossoGen's cumulative-cultural-evolution claim was bounded to one-swap AI–AI protocol transmission, and no baseline or human correction was changed."

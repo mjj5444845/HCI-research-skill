@@ -1,0 +1,39 @@
+{
+  "id": "X19",
+  "slug": "x19-continuous-worlds-vocabularies",
+  "title": "Emergent Communication in Continuous Worlds: Self-Organisation of Conceptually Grounded Vocabularies at Scale",
+  "authors": ["Jérôme Botoko Ekila", "Lara Verheyen", "Jens Nevens", "Katrien Beuls", "Paul Van Eecke"],
+  "year": 2026,
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "source_url": "https://doi.org/10.1162/tacl.a.799",
+  "doi": "10.1162/tacl.a.799",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "A designer-specified decentralized language-game mechanism yields population-level grounded lexical convergence across 37 datasets and remains partly robust to perceptual heterogeneity and environmental perturbation.",
+  "problem": "Can initially blank-slate artificial-agent populations self-organize grounded vocabularies in continuous and high-dimensional perceptual domains without central coordination or direct exchange of internal representations?",
+  "method": "Populations of typically 10 and up to 100 agents repeatedly play local pairwise reference games with role switching, invention, target disclosure after failure, adoption, reward, and inhibition. The TACL extension evaluates 37 datasets, held-out instances, continuous and categorical features, perceptual noise, uncalibrated and heteromorphic sensors, sensor loss, and multiword utterances over up to millions of interactions.",
+  "findings": [
+    "Across seven featured datasets, held-out communicative success was approximately 95.77–99.76% and population conventionality approximately 86.55–96.11%; CLEVR-scale experiments also approached ceiling success.",
+    "The learned vocabularies remained effective under several forms of perceptual heterogeneity and could reorganize after sensor loss, although high noise and strong heteromorphism substantially reduced conventionality and sometimes success.",
+    "Multiword systems converged much more slowly and remained dominated by single-word messages, so the evidence primarily concerns lexical convention rather than compositional grammar."
+  ],
+  "real_contribution": "Provides a strong computational existence proof and reusable benchmark for decentralized population-level convention formation in continuous perceptual spaces, extending a 2024 arXiv/AAMAS lineage rather than introducing the mechanism for the first time.",
+  "biggest_weakness": "The convergence dynamics are largely engineered into invention, failure disclosure, adoption, reward, and inhibition rules; shared candidate scenes, object identity, feedback protocol, and often encoders remain strong common priors, while physical embodiment and human interaction are absent.",
+  "claim_boundary": "Supports algorithmic population-level grounded lexical convergence and perturbation recovery, not mutual belief, partner-specific human–AI common ground, open-ended spontaneous convention discovery, or physical embodied communication.",
+  "why_researcher_should_care": "It closes off an overbroad novelty claim that artificial populations cannot form decentralized grounded conventions, while supplying controls—heteromorphic perception, perturbation, population size, and adaptation—that a human–embodied-AI study should surpass with shared-history and reciprocity tests.",
+  "amsc": {
+    "mainline_fit": 8.6,
+    "buckets": ["C", "E"],
+    "stages": ["Meaning representation", "Convention formation", "Personalization/co-adaptation"],
+    "mechanisms": ["decentralized reference games", "lexical invention and adoption", "population convergence", "perceptual heterogeneity", "environmental perturbation"],
+    "gap_ids": ["GAP-02", "GAP-03", "GAP-04", "GAP-07"],
+    "master_list_decision": "Candidate — Must Read / recovered computational method anchor"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "The canonical TACL record was merged with its arXiv:2401.08461/AAMAS 2024 lineage; it is a recovered method anchor, not a wholly new 2026 mechanism.",
+    "Full accepted manuscript inspected; claims about human common ground and physical embodiment are intentionally excluded."
+  ],
+  "provenance": "amsc_radar_2026-09-03",
+  "updated_at": "2026-09-03"
+}

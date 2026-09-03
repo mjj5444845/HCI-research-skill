@@ -1,10 +1,14 @@
-version: 0.4
+version: 0.5
 gaps:
   - id: GAP-01
     statement: "How an embodied agent detects and updates interaction-history-dependent multimodal meaning across dyad and population levels"
     status: REDEFINED
     priority: high
     evidence:
+      - paper_slug: x14-bee-referential-code
+        evidence_level: PRELIMINARY
+        supports: "Makes ecological usefulness, body geometry, and coupled sender/receiver code change explicit in a referential-code transition."
+        boundary: "Evolutionary bee-colony simulation; not interaction-timescale human–AI detection or multimodal social meaning."
       - paper_slug: c6-visual-resemblance-interaction-history
         evidence_level: MODERATE
         supports: "Interaction history changes pictorial meaning within a repeated human-human drawing paradigm."
@@ -64,6 +68,14 @@ gaps:
         evidence_level: MODERATE
         supports: "Human speakers and an adaptive listener achieve convention-like online efficiency gains."
         boundary: "One-sided model adaptation without partner swap, repair or embodiment."
+      - paper_slug: x17-glossogen-emergent-language
+        evidence_level: PRELIMINARY
+        supports: "Adds explicit AI–AI protocol negotiation, history dosage, one-agent swap, newcomer uptake, and clarification behavior."
+        boundary: "Prompt-sanctioned shorthand with free postmortems, no humans or physical embodiment, and only one replacement generation."
+      - paper_slug: x19-continuous-worlds-vocabularies
+        evidence_level: MODERATE
+        supports: "Shows decentralized artificial populations can converge on grounded lexical conventions under perceptual heterogeneity."
+        boundary: "Designer-specified convergence rules and population-level AI–AI games do not establish mutual human–AI or partner-specific common ground."
     skeptic_challenge: "Do not preserve novelty through adjectives. C3, C8 and E3 cover human partner history, physical multimodality and machine adaptation separately. Demonstrate counterfactual shared-history dependence, then separately test reciprocity, repair and appropriate transfer."
     history:
       - date: 2026-08-26
@@ -74,11 +86,23 @@ gaps:
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
         reason: "Vaduguru weakens generic AI-incapacity claims; Wang and CHAI require history-dependence and transfer to be tested separately."
+      - date: 2026-09-03
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: "GlossoGen and the canonical TACL continuous-worlds lineage close off broad AI-code-emergence claims; the residual remains mutual human–embodied-AI convention with counterfactual shared-history, repair and transfer tests."
   - id: GAP-03
     statement: "Convention lifecycle: establishment, maintenance, repair/revision, context-sensitive retirement, partner/context transfer, and renegotiation after breakdown"
     status: PARTIALLY_ADDRESSED
     priority: high
     evidence:
+      - paper_slug: x14-bee-referential-code
+        evidence_level: PRELIMINARY
+        supports: "Demonstrates a feasible iconic-to-abstract referential code transition under coordinated sender/receiver change."
+        boundary: "Across-generation simulation, not within-dyad human–AI renegotiation or repair."
+      - paper_slug: x15-synthetic-linguistic-agency
+        evidence_level: PRELIMINARY
+        supports: "Shows persistent history-conditioned linguistic policy change after consequential partner responses."
+        boundary: "Adaptation with fixed actions and scripted partners; no convention establishment, repair, retirement, or transfer."
       - paper_slug: x3-seeing-eye-to-eye
         evidence_level: PRELIMINARY
         supports: "A situated AR assistant can combine gaze, gesture, revisable memory, and accumulated common ground."
@@ -119,6 +143,14 @@ gaps:
         evidence_level: PRELIMINARY
         supports: "Abstract-level evidence identifies organizational adaptation and appropriation across four eldercare facilities."
         boundary: "Full text was unavailable; no autonomous learning or convention evidence."
+      - paper_slug: x17-glossogen-emergent-language
+        evidence_level: PRELIMINARY
+        supports: "Provides establishment, explicit negotiation, clarification, one partner swap, and limited protocol transmission components."
+        boundary: "No controlled breakdown, retirement, multi-generation accumulation, human interaction, or physical embodiment."
+      - paper_slug: x19-continuous-worlds-vocabularies
+        evidence_level: MODERATE
+        supports: "Provides population establishment, maintenance, and reorganization after sensor-loss perturbation."
+        boundary: "No human–AI repair, partner-specific transfer, retirement, or open negotiation; adaptation follows engineered language-game rules."
     skeptic_challenge: "Lifecycle components are genuinely partially addressed across settings. Residual novelty is causal integration of repair, retirement, transfer, reciprocity and counterfactual shared history in embodied human–AI interaction."
     history:
       - date: 2026-08-26
@@ -133,11 +165,27 @@ gaps:
         from: REDEFINED
         to: PARTIALLY_ADDRESSED
         reason: "Top-20 audit finds direct component evidence for establishment/maintenance in human verbal, graphical and physical tasks and one-sided machine adaptation; repair, retirement, transfer, reciprocity and counterfactual history remain open."
+      - date: 2026-09-03
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: "X17 and X19 strengthen AI-only establishment, transmission and perturbation-recovery components but do not integrate reciprocal human–AI repair, retirement, partner transfer or causal shared-history tests."
   - id: GAP-04
-    statement: "Integrate and validate existing diagnostics that separate memory, adaptation, task success, alignment, mutual belief, and interaction-history-dependent convention"
+    statement: "Validate an integrated diagnostic stack that separates memory availability, natural integration, adaptation, task success, alignment, mutual belief, shared priors, and interaction-history-dependent convention"
     status: PARTIALLY_ADDRESSED
     priority: medium-high
     evidence:
+      - paper_slug: x13-silica-agent-societies
+        evidence_level: MODERATE
+        supports: "Per-agent label-pool permutation and apparatus perturbations expose shared-prior and presentation-driven convention false positives."
+        boundary: "AI–AI agent societies; pretrained label semantics remain shared and no embodied human–AI discriminant validation is provided."
+      - paper_slug: x15-synthetic-linguistic-agency
+        evidence_level: PRELIMINARY
+        supports: "Mortal/reset and forced-output probes separate persistent bodily consequence from generic linguistic learning."
+        boundary: "Scripted simulated ecology; does not distinguish mutual belief or convention."
+      - paper_slug: x16-memuse-natural-integration
+        evidence_level: MODERATE
+        supports: "Directly separates memory availability and elicited retrieval from natural conversational integration."
+        boundary: "Text-only deployment and observational satisfaction association; no partner-specific convention or embodiment."
       - paper_slug: x4-making-memories-together
         evidence_level: PRELIMINARY
         supports: "Transparent, co-constructed robot memory may provide infrastructure for negotiated personalization."
@@ -170,8 +218,16 @@ gaps:
         evidence_level: PRELIMINARY
         supports: "Separates encoded capability, limitation, explanation and actionable repair channels in an AR architecture."
         boundary: "Small no-control study with authored tasks and substantial human setup; no longitudinal grounding."
+      - paper_slug: x17-glossogen-emergent-language
+        evidence_level: PRELIMINARY
+        supports: "Combines success, language-form, productivity, history-dose, swap, and clarification probes in one AI–AI testbed."
+        boundary: "Prompted protocol design and LLM-mediated linguistic measures limit construct validity."
+      - paper_slug: x19-continuous-worlds-vocabularies
+        evidence_level: MODERATE
+        supports: "Separates communicative success from population lexical conventionality across perceptual and perturbation regimes."
+        boundary: "Neither metric diagnoses mutual belief or counterfactual partner-history dependence."
     evidence_trend: PARTIALLY_ADDRESSED
-    skeptic_challenge: "C2/C3 and E2/E3 show that positive evidence, partner switching, task adaptation and semantic adaptation already have diagnostics. A unified battery is a design opportunity; test discriminant validity rather than claiming generic diagnostic absence."
+    skeptic_challenge: "X9, X13, X16 and the baseline corpus show that component diagnostics already exist. A unified battery alone is no longer a strong novelty claim; the residual contribution must demonstrate discriminant validity across human–AI, embodied, multimodal and partner-transfer regimes."
     history:
       - date: 2026-08-26
         from: ACTIVE
@@ -185,6 +241,14 @@ gaps:
         from: REDEFINED
         to: PARTIALLY_ADDRESSED
         reason: "Pseudo-dyad, common-ground benchmark, and world-model metrics resolve generic diagnostic absence; integration and embodied validation remain open."
+      - date: 2026-08-31
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: "SILICA and MemUse add shared-prior and natural-integration diagnostics; novelty narrows further to discriminant-valid integration in embodied human–AI interaction."
+      - date: 2026-09-03
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: "X17 and X19 add useful multi-measure AI-only diagnostics while reinforcing that success and lexical coherence do not establish mutual belief or history-dependent human–AI convention."
   - id: GAP-05
     statement: "Operationally connect informal/graphic paralanguage and multimodal structural relations to interaction-history-dependent, adaptive embodied human–AI communication"
     status: REDEFINED
@@ -271,6 +335,10 @@ gaps:
         evidence_level: PRELIMINARY
         supports: "Frames social meaning and robot design as mutually shaped through deployment and appropriation."
         boundary: "Conceptual/ethnographic framework, not signal-level causal evidence."
+      - paper_slug: x18-small-talk-rapport
+        evidence_level: PRELIMINARY
+        supports: "Shows that socially richer robot speech can reduce disclosure and coordination during physical collaboration."
+        boundary: "Short single-platform study with disclosure-content/word-count confounding and no adaptive signal history."
     skeptic_challenge: "Top-20 evidence shows single motion and gaze signals can already carry functional and social meanings, so novelty cannot be first integration. The residual is history-dependent joint optimization, trade-off measurement and grounding across modalities; D/F/G closest-work attack is required before a field-separation claim."
     history:
       - date: 2026-08-27
@@ -281,13 +349,21 @@ gaps:
         from: UNCHANGED
         to: REDEFINED
         reason: "D5–D7 refute a clean social-versus-functional separation; the residual is adaptive joint optimization and evaluation."
+      - date: 2026-09-03
+        from: REDEFINED
+        to: REDEFINED
+        reason: "X18 adds a non-monotonic embodied social–functional boundary but does not test history-dependent signal adaptation or joint grounding."
     claimability: RESEARCH_OPPORTUNITY_NOT_FIELD_ABSENCE
     evidence_readiness: FULL_TEXT_BASELINE_COMPLETE_WITH_F6_ABSTRACT_ONLY
   - id: GAP-07
-    statement: "Unified embodied human–agent diagnostic protocol combining history-severed pseudo-dyads, role reversal, repair perturbation, partner swap, transfer, and multimodal physical consequences"
+    statement: "Unified embodied human–agent diagnostic protocol combining history-severed pseudo-dyads, shared-prior disruption, role reversal, repair perturbation, partner swap, transfer, and multimodal physical consequences"
     status: PARTIALLY_ADDRESSED
     priority: high
     evidence:
+      - paper_slug: x13-silica-agent-societies
+        evidence_level: MODERATE
+        supports: "Adds per-agent label permutation and apparatus sensitivity as controls for shared-prior and presentation artifacts."
+        boundary: "No human–AI dyad, embodiment, role reversal, repair, or partner transfer; label semantics remain pretrained and shared."
       - paper_slug: c6-visual-resemblance-interaction-history
         evidence_level: MODERATE
         supports: "Separates resemblance, task practice, and interaction-specific history in human drawing."
@@ -324,7 +400,7 @@ gaps:
         evidence_level: MODERATE
         supports: "Provides online adaptation, rehearsal, forgetting and component ablations."
         boundary: "No pseudo-dyad, reciprocal roles, repair or embodiment."
-    skeptic_challenge: "Partner-switch logic and component diagnostics are not new. HIGH priority applies only to integrated causal validation; C5/C6 count as one lineage and no single audited protocol yet covers history severing, reciprocity, repair, transfer and embodiment."
+    skeptic_challenge: "Partner-switch, pseudo-dyad, memory-use and shared-prior controls are not new. HIGH priority applies only to discriminant-valid integrated causal evidence; no audited single protocol covers history severing, prior disruption, reciprocity, repair, transfer and embodiment."
     history:
       - date: 2026-08-27
         from: null
@@ -334,6 +410,10 @@ gaps:
         from: UNCHANGED
         to: PARTIALLY_ADDRESSED
         reason: "Existing benchmark components resolve generic absence; no audited single protocol integrates history ablation, reciprocity, repair, transfer, and embodiment."
+      - date: 2026-08-31
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: "SILICA adds shared-prior disruption, but no single protocol validates all diagnostics across human–AI, embodiment, repair, transfer and role reversal."
     claimability: OPEN_RESIDUAL
 
 allowed_update_states:

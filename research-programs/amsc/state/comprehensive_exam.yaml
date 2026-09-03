@@ -1,5 +1,5 @@
-version: 0.4
-updated_at: 2026-08-27
+version: 0.6
+updated_at: 2026-09-03
 title: "Adaptive Multimodal Social Communication for Embodied AI: From Social Meaning and Shared Representations to Situated Adaptation"
 core_review_question: "How do socially meaningful multimodal signals become grounded, conventionalized, and adaptive in human–embodied AI interaction?"
 source_plan: research-programs/amsc/imports/comprehensive-exam-plan-v1.md
@@ -15,7 +15,7 @@ readiness:
     abstract_reviewed: 3
     abstract_evidence_investigation: 1
     source_verified_candidate: 2
-    radar_full_text_audit: 7
+    radar_full_text_audit: 14
     full_paper_investigation: 40
   researcher:
     top20_read: null
@@ -45,10 +45,10 @@ second_round_evidence:
     synthesis_boundary: "这些论文强化 fixed-cue 与 AR/motion design precedents，但不建立 history-dependent mutual convention。"
 candidate_anchor_review:
   theme_3:
-    candidates: [X8, X9, X10, X11, X12]
+    candidates: [X8, X9, X10, X11, X12, X13, X14, X16, X17, X19]
     status: REVIEW_BEFORE_CORE_PROMOTION
     rationale: "这些论文直接改变 common-ground / convention 的 gap 与 diagnostic map，但仍需研究者决定是否进入考试 core corpus。"
-  methods_only: [X6, X7]
+  methods_only: [X6, X7, X15]
   guardrail: "Radar candidate 不因 Agent 调查完成而自动成为 exam anchor；researcher reading/mastery 保持未记录。"
 reading_matrix:
   - id: C1
@@ -520,3 +520,11 @@ workflow_history:
     status: COMPLETE_WITH_ONE_DEGRADED_SOURCE
     completed_at: 2026-08-27T09:18:00-04:00
     summary: "41/41 baseline pages evidence-audited: 40 full-text, F6 abstract-only; Theme 6 second-round anchors now ready for synthesis; researcher reading/mastery unchanged."
+  - id: amsc-radar-2026-08-31
+    status: COMPLETE_WITH_ACCESS_LIMITATIONS
+    completed_at: 2026-08-31T08:50:30-04:00
+    summary: "X13 and X16 sharpen Theme 3 diagnostic questions; X14 is queued as a convention-mechanism neighbor; none was promoted to a core exam anchor and researcher mastery remains unchanged."
+  - id: amsc-radar-2026-09-03
+    status: COMPLETE_WITH_ACCESS_LIMITATIONS
+    completed_at: 2026-09-03T10:00:00-04:00
+    summary: "X17 and recovered method anchor X19 sharpen Theme 3 lifecycle and false-positive boundaries; neither was automatically promoted to the core corpus, and researcher reading/mastery remains unchanged."

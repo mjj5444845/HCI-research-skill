@@ -1,0 +1,35 @@
+{
+  "id": "X16",
+  "slug": "x16-memuse-natural-integration",
+  "title": "MemUse: Moving Memory Evaluation from Direct QA to Natural Integration in Long-Term Human-AI Conversation",
+  "authors": ["Ryuichi Sumida", "Koji Inoue", "Tatsuya Kawahara"],
+  "year": 2026,
+  "venue": "EMNLP 2026 Main",
+  "source_url": "https://arxiv.org/abs/2608.24189",
+  "doi": "10.48550/arXiv.2608.24189",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "A four-month deployment shows that retrievable conversational memory is not the same as naturally integrating relevant shared history into an ongoing exchange.",
+  "problem": "Does Direct QA measure whether a conversational agent uses memory in the way that matters during long-term interaction?",
+  "method": "Four-month deployment with 40 users, 1,872 sessions, seven rotating memory conditions, Direct-QA comparisons, and a MemUse set of naturally cued memory moments.",
+  "findings": [
+    "Existing-benchmark Direct QA varied from 19.7% to 70.1% without corresponding satisfaction differences.",
+    "For the same model and context, 78.8% of facts were answerable under Direct QA but only 7.9% were referenced naturally; Natural Integration, not Direct QA, was associated with satisfaction in the observed cue moments."
+  ],
+  "real_contribution": "Separates memory availability and elicited retrieval from context-sensitive conversational use, providing a needed diagnostic layer between memory and shared meaning.",
+  "biggest_weakness": "The Natural Integration–satisfaction analysis is observational and small (48 sessions/16 users), explicit cue moments are sparse, all conditions retained summary context, and the setting is text-only.",
+  "claim_boundary": "Does not demonstrate mutual belief, convention, reciprocal adaptation, embodiment, or that natural memory use causes satisfaction.",
+  "why_researcher_should_care": "AMSC should test retrieval, natural integration, partner-specific interpretation, and convention evidence as distinct outcomes.",
+  "amsc": {
+    "mainline_fit": 8.7,
+    "buckets": ["C", "E"],
+    "stages": ["Grounding", "Adaptation"],
+    "mechanisms": ["memory availability", "natural integration", "longitudinal interaction history"],
+    "gap_ids": ["GAP-04"],
+    "master_list_decision": "Candidate — Important / Longitudinal diagnostic"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": ["Open arXiv full text inspected; v1 submitted 2026-08-25 and listed as EMNLP 2026 Main.", "Association is not treated as causal evidence."],
+  "provenance": "amsc_radar_2026-08-31",
+  "updated_at": "2026-08-31"
+}

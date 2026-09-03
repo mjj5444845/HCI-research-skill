@@ -1,17 +1,16 @@
 {
-  "version": "1.2",
-  "last_updated": "2026-08-27T09:18:00-04:00",
+  "version": "1.4",
+  "last_updated": "2026-09-03T10:00:00-04:00",
   "update_contract": "Paper Investigation、Literature Investigation、Research Radar、Idea Development 与 Study Design 的持久化结果首先更新长期 AMSC research program；只有直接改变考试主题、anchor、写作论点或口试问题的子集才进入 Comprehensive Exam 下游视图。",
   "next_scheduled_run": {
-    "name": "AMSC Baseline 41 Paper Investigation",
-    "scheduled_for": "2026-08-27T03:00:00-04:00",
-    "completed_at": "2026-08-27T09:18:00-04:00",
-    "scope": "41 baseline pages audited for the long-term AMSC program: 40 full-text investigations and one explicitly degraded abstract-level investigation; exam receives only direct anchor/card/question changes.",
-    "automation_id": "amsc-top-20-paper-investigation",
-    "status": "COMPLETE"
+    "name": "AMSC 每周完整 Research Radar",
+    "scheduled_for": "2026-09-07T03:00:00-04:00",
+    "scope": "Every Monday at 03:00 America/New_York: full retrieval, deduplication, triage, investigation, red-team review, state integration, report generation, and validation.",
+    "automation_id": "amsc-research-radar",
+    "status": "ACTIVE"
   },
   "field_map": {
-    "coverage_note": "41 篇 baseline 已完成逐页证据审计：40 篇全文、F6 为摘要级（全文不可得）。另有 12 篇 Radar / missing-paper candidates，调查深度单独标注。Agent readiness 不代表 researcher reading/mastery；C5/C6 按一个 empirical lineage 计数。",
+    "coverage_note": "41 篇 baseline 已完成逐页证据审计：40 篇全文、F6 为摘要级（全文不可得）。另有 19 篇 Radar / missing-paper candidates，调查深度单独标注。Agent readiness 不代表 researcher reading/mastery；C5/C6 与 X19 的早期版本各按单一 empirical lineage 计数。",
     "status_definitions": {
       "STILL_HOLDS": "新证据没有推翻原结论，且其边界仍可辩护。",
       "STRENGTHENED": "新增独立证据提高了结论可信度或扩展了适用范围。",
@@ -220,10 +219,10 @@
       {
         "id": "GAP-02",
         "status": "PARTIALLY_ADDRESSED",
-        "statement": "从 designer-defined vocabulary 推进到双方能够形成、修订并迁移 emergent convention。",
+        "statement": "Human–embodied-AI dyads 如何形成、确认、修复并适当迁移对 shared interaction history 有因果依赖的 multimodal conventions。",
         "priority": "HIGH",
         "evidence_strength": "MODERATE",
-        "research_implication": "新研究必须超越 task-induced lexical stabilization，展示 partner-specificity、协商与跨情境行为后果。"
+        "research_implication": "X17/X19 已封死广义 AI code-emergence novelty；新研究必须区分 alignment、audience design、attunement、memory 与真正的 partner-specific mutual convention。"
       },
       {
         "id": "GAP-03",
@@ -743,6 +742,20 @@
       "status": "COMPLETE_WITH_ONE_DEGRADED_SOURCE",
       "date": "2026-08-27T09:18:00-04:00",
       "summary": "41/41 baseline 页面完成证据级更新：40 篇 full-paper audit，F6 因全文不可得完成 abstract-level audit；researcher reading/mastery 保持未记录。"
+    },
+    {
+      "id": "amsc-radar-2026-08-31",
+      "workflow": "Research Radar + Paper Investigation + Gap Red Team",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-08-31T08:50:30-04:00",
+      "summary": "精确七日窗新增 X13–X16；X6 去重；GAP-04/07 保持 PARTIALLY_ADDRESSED 并收窄到 discriminant-valid integrated diagnostics；researcher mastery 未改。"
+    },
+    {
+      "id": "amsc-radar-2026-09-03",
+      "workflow": "Research Radar + Paper Investigation + Missing-Paper Attack + Gap Red Team",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-09-03T10:00:00-04:00",
+      "summary": "覆盖 2026-08-27 至 2026-09-03；新增 X17–X19，X19 合并其 2024 arXiv/AAMAS lineage；GAP 状态不变但 novelty 收窄到 mutual human–embodied-AI shared-history convention；researcher mastery 未改。"
     }
   ],
   "provenance": {

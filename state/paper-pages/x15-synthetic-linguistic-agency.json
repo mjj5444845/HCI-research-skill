@@ -1,0 +1,35 @@
+{
+  "id": "X15",
+  "slug": "x15-synthetic-linguistic-agency",
+  "title": "Synthetic Linguistic Agency: How an Embodied Mortal Agent Learns Linguistic Affordances through Consequential Social Experience",
+  "authors": ["Sixin Chen", "Taizhou Chen"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2608.27843",
+  "doi": "10.48550/arXiv.2608.27843",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "A simulated mortal agent learns partner-sensitive linguistic actions through a causal body–utterance–partner-response–consequence loop whose effects persist in its social biography.",
+  "problem": "Can language use become a consequential, body-conditioned capability rather than a detached text policy?",
+  "method": "Simulated Embodied Mortal Agent with nonresetting health, fixed linguistic action choices, scripted partners, reinforcement learning, held-out biography tests, forced-output probes, and mortal/reset controls.",
+  "findings": [
+    "Body state and accumulated social history jointly altered later linguistic action policies and partner-specific response choices.",
+    "Correct person-specific evidence improved action probability by roughly .356–.377 and produced positive remaining-useful-life and lifetime effects; reset controls removed the persistent next-turn body effect."
+  ],
+  "real_contribution": "Operationalizes a consequential feedback chain connecting embodiment, linguistic action, partner response, and later adaptation.",
+  "biggest_weakness": "One scripted simulated ecology, a one-dimensional declining body, four fixed actions, no human participants, and no open negotiation or repair.",
+  "claim_boundary": "Shows history-conditioned partner-mediated adaptation, not common ground, mutual convention, natural-language emergence, physical embodiment, or human social interpretation.",
+  "why_researcher_should_care": "Offers a causal design vocabulary for separating memory of interaction from consequences that actually change later communicative policy.",
+  "amsc": {
+    "mainline_fit": 8.2,
+    "buckets": ["E", "G"],
+    "stages": ["Adaptation", "Embodied Communication"],
+    "mechanisms": ["consequential social experience", "body-conditioned policy", "partner-specific biography"],
+    "gap_ids": ["GAP-03", "GAP-04", "GAP-06"],
+    "master_list_decision": "Candidate — Important / Embodied adaptation mechanism"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": ["Open arXiv HTML/PDF inspected; v1 submitted 2026-08-28.", "Artificial sense-making is treated as a contested interpretation, not an established human analogue."],
+  "provenance": "amsc_radar_2026-08-31",
+  "updated_at": "2026-08-31"
+}

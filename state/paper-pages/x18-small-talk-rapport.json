@@ -1,0 +1,39 @@
+{
+  "id": "X18",
+  "slug": "x18-small-talk-rapport",
+  "title": "From Small Talk to Rapport: Exploring Robot Self-Disclosure in Collaborative Tasks",
+  "authors": ["Kaitlynn Taylor Pineda", "Anvii Mishra", "Brian Chien", "Angela Guo", "Toluwani Williams", "Ziang Xiao", "Chien-Ming Huang"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2608.28154",
+  "doi": "10.48550/arXiv.2608.28154",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "During a short physical co-working task, a low-disclosure industrial manipulator elicited more user disclosure and stronger teaming/coordination ratings than a high-disclosure version.",
+  "problem": "How should non-anthropomorphic robots use self-disclosure in small talk while performing physical work with people?",
+  "method": "A between-subjects study with 50 participants compared low- and high-disclosure GPT-4o dialogue strategies on a Franka Panda during an approximately 17-minute loosely coupled sorting task, using coded conversational behavior, surveys, and interviews.",
+  "findings": [
+    "Users in the high-disclosure condition showed lower turn-level disclosure, while direct robot prompts increased disclosure in both conditions.",
+    "Low disclosure produced higher perceived teaming and rapport-coordination; prior robot-teaming experience moderated several outcomes.",
+    "Interviews suggest embodiment incongruence, perceived inauthenticity, shallow reciprocity, and privacy concerns as plausible explanations, not established mediators."
+  ],
+  "real_contribution": "Provides a non-obvious embodied HRI boundary: adding socially richer content can undermine rather than improve relational and coordination outcomes when signal content, platform form, authenticity, and privacy expectations conflict.",
+  "biggest_weakness": "The manipulation changed both disclosure content and robot word count, relied on fictional prior-conversation material, used stepwise AIC models with many covariates in N=50, and did not causally isolate the proposed mechanisms.",
+  "claim_boundary": "Supports a short-term, single-platform self-disclosure effect and qualitative mechanism hypotheses; it does not establish adaptive communication, common ground, convention formation, or broad non-anthropomorphic-robot generalization.",
+  "why_researcher_should_care": "It shows that instrumental embodiment and relational language can interact non-monotonically, motivating designs that measure authenticity, privacy, reciprocity, and task coordination rather than assuming more social signaling is better.",
+  "amsc": {
+    "mainline_fit": 7.8,
+    "buckets": ["D", "F"],
+    "stages": ["Social meaning/pragmatics", "Situated adaptive communication"],
+    "mechanisms": ["self-disclosure", "embodiment congruence", "reciprocity", "privacy expectations", "prior HRI experience"],
+    "gap_ids": ["GAP-06"],
+    "master_list_decision": "Candidate — Important / social–functional embodied communication boundary"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "Open arXiv PDF inspected; v1 submitted 2026-08-28.",
+    "Interview explanations are retained as plausible interpretations rather than causal findings."
+  ],
+  "provenance": "amsc_radar_2026-09-03",
+  "updated_at": "2026-09-03"
+}

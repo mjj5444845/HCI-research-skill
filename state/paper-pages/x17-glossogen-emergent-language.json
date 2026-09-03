@@ -1,0 +1,39 @@
+{
+  "id": "X17",
+  "slug": "x17-glossogen-emergent-language",
+  "title": "GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions",
+  "authors": ["Elias Stengel-Eskin", "Newton Sander", "Carlos Bonetti", "Sasha Boguraev", "James Bowler", "Hale Sirin", "Simon Kirby"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2609.01491",
+  "doi": "10.48550/arXiv.2609.01491",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "In a complex AI–AI task, character pressure plus explicitly prompted postmortem coordination produces efficient dyad-specific shorthand, partial productivity, newcomer uptake, and metalinguistic repair.",
+  "problem": "Under what task, model, and interaction conditions do pretrained LLM agents develop, use, and transmit communication protocols beyond ordinary English?",
+  "method": "GlossoGen's two-agent SaveVeyru task combines asymmetric information and action spaces with 15-round interactions, character budgets, optional unmetered postmortems, multiple proprietary/open models, productive-form probes, and one-agent swap experiments with 0/1/5/10 rounds of history.",
+  "findings": [
+    "Under tight character budgets, proprietary-model teams with postmortems produced less English-like shorthand and outperformed comparable no-postmortem teams; open-weight teams did not reliably develop such protocols.",
+    "Newcomer success increased with the amount of prior message-and-action history, and newcomers asked fewer clarification questions about compositional terms as history increased.",
+    "The paper reports partial productive structure and transmission, but only one replacement generation was tested."
+  ],
+  "real_contribution": "Provides a richer protocol-development testbed than fixed-role reference games by combining asymmetric roles, explicit meta-coordination, action consequences, partner replacement, history dosage, and repair-like queries.",
+  "biggest_weakness": "The system prompt explicitly tells agents to develop shorthand, postmortems permit free code definition, several linguistic measures depend on LLM judges, and one swap cannot establish cumulative cultural evolution.",
+  "claim_boundary": "Supports prompted AI–AI protocol negotiation and partial newcomer uptake, not spontaneous convention, human-like common ground, human–AI interaction, physical embodiment, or cumulative cultural evolution.",
+  "why_researcher_should_care": "It supplies concrete lifecycle components—explicit negotiation, history dosage, partner swap, active clarification, and transfer—that can be adapted into stricter human–embodied-AI experiments with counterfactual history controls.",
+  "amsc": {
+    "mainline_fit": 8.9,
+    "buckets": ["C", "E"],
+    "stages": ["Grounding/common ground", "Convention formation", "Personalization/co-adaptation"],
+    "mechanisms": ["communication pressure", "explicit meta-coordination", "partner swap", "history-conditioned transmission", "metalinguistic repair"],
+    "gap_ids": ["GAP-01", "GAP-02", "GAP-03", "GAP-04", "GAP-07"],
+    "master_list_decision": "Candidate — Important / AI–AI protocol lifecycle and diagnostic precedent"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "Open arXiv HTML/full text inspected; v1 submitted 2026-09-01.",
+    "The paper's cumulative-cultural-evolution claim is treated as overreach because the experiment includes only one newcomer swap rather than multiple successive generations."
+  ],
+  "provenance": "amsc_radar_2026-09-03",
+  "updated_at": "2026-09-03"
+}

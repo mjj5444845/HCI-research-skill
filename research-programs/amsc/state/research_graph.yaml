@@ -1,5 +1,5 @@
-version: 0.2
-updated_at: 2026-08-27
+version: 0.4
+updated_at: 2026-09-03
 nodes:
   - id: paper:c1-referring-as-collaborative-process
     type: paper
@@ -501,6 +501,76 @@ nodes:
     label: "From Partners to Populations"
     evidence_status: radar_full_text_audited
     provenance: "https://arxiv.org/abs/2104.05857"
+  - id: paper:x13-silica-agent-societies
+    type: paper
+    label: "Benchmarking large language model agent societies against human behavioural distributions"
+    evidence_status: radar_full_text_audited
+    provenance: "https://arxiv.org/abs/2608.28182"
+  - id: paper:x14-bee-referential-code
+    type: paper
+    label: "The emergence and evolution of a referential code in populations of bee-like agents"
+    evidence_status: radar_full_text_audited
+    provenance: "https://arxiv.org/abs/2608.25779"
+  - id: paper:x15-synthetic-linguistic-agency
+    type: paper
+    label: "Synthetic Linguistic Agency"
+    evidence_status: radar_full_text_audited
+    provenance: "https://arxiv.org/abs/2608.27843"
+  - id: paper:x16-memuse-natural-integration
+    type: paper
+    label: "MemUse"
+    evidence_status: radar_full_text_audited
+    provenance: "https://arxiv.org/abs/2608.24189"
+  - id: paper:x17-glossogen-emergent-language
+    type: paper
+    label: "GlossoGen"
+    evidence_status: radar_full_text_audited
+    provenance: "https://arxiv.org/abs/2609.01491"
+  - id: paper:x18-small-talk-rapport
+    type: paper
+    label: "From Small Talk to Rapport"
+    evidence_status: radar_full_text_audited
+    provenance: "https://arxiv.org/abs/2608.28154"
+  - id: paper:x19-continuous-worlds-vocabularies
+    type: paper
+    label: "Emergent Communication in Continuous Worlds"
+    evidence_status: radar_full_text_audited
+    provenance: "https://doi.org/10.1162/tacl.a.799"
+  - id: author:raad-bin-tareaf
+    type: author
+    label: "Raad Bin Tareaf"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2608.28182"
+  - id: author:grzegorz-chrupala
+    type: author
+    label: "Grzegorz Chrupała"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2608.25779"
+  - id: author:sixin-chen
+    type: author
+    label: "Sixin Chen"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2608.27843"
+  - id: author:taizhou-chen
+    type: author
+    label: "Taizhou Chen"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2608.27843"
+  - id: author:ryuichi-sumida
+    type: author
+    label: "Ryuichi Sumida"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2608.24189"
+  - id: author:koji-inoue
+    type: author
+    label: "Koji Inoue"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2608.24189"
+  - id: author:tatsuya-kawahara
+    type: author
+    label: "Tatsuya Kawahara"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2608.24189"
 edges:
   - source_node: author:herbert-h-clark
     relation: coauthored
@@ -1231,6 +1301,125 @@ edges:
     confidence: HIGH
     notes: "Extends the tower paradigm to multimodal physical AR collaboration."
 
+  - source_node: author:sixin-chen
+    relation: coauthored
+    target_node: author:taizhou-chen
+    evidence_status: verified
+    evidence: [x15-synthetic-linguistic-agency]
+    confidence: HIGH
+    notes: "Verified from the arXiv paper record; no lab membership inferred."
+  - source_node: author:ryuichi-sumida
+    relation: coauthored
+    target_node: author:koji-inoue
+    evidence_status: verified
+    evidence: [x16-memuse-natural-integration]
+    confidence: HIGH
+    notes: "Verified from the arXiv paper record; no lab membership inferred."
+  - source_node: author:ryuichi-sumida
+    relation: coauthored
+    target_node: author:tatsuya-kawahara
+    evidence_status: verified
+    evidence: [x16-memuse-natural-integration]
+    confidence: HIGH
+    notes: "Verified from the arXiv paper record; no lab membership inferred."
+  - source_node: paper:x13-silica-agent-societies
+    relation: intellectual_lineage
+    target_node: concept:convention
+    evidence_status: inferred
+    evidence: [x13-silica-agent-societies]
+    confidence: HIGH
+    notes: "AMSC mechanism mapping; the paper audits rather than establishes human-equivalent convention."
+  - source_node: paper:x14-bee-referential-code
+    relation: intellectual_lineage
+    target_node: concept:meaning
+    evidence_status: inferred
+    evidence: [x14-bee-referential-code]
+    confidence: MODERATE
+    notes: "AMSC mechanism mapping from a bee-inspired evolutionary simulation."
+  - source_node: paper:x14-bee-referential-code
+    relation: intellectual_lineage
+    target_node: concept:convention
+    evidence_status: inferred
+    evidence: [x14-bee-referential-code]
+    confidence: HIGH
+    notes: "AMSC mechanism mapping from explicit referential-code emergence and transition."
+  - source_node: paper:x14-bee-referential-code
+    relation: intellectual_lineage
+    target_node: concept:adaptation
+    evidence_status: inferred
+    evidence: [x14-bee-referential-code]
+    confidence: MODERATE
+    notes: "Evolutionary adaptation is not equated with interaction-timescale human adaptation."
+  - source_node: paper:x14-bee-referential-code
+    relation: intellectual_lineage
+    target_node: concept:embodied-communication
+    evidence_status: inferred
+    evidence: [x14-bee-referential-code]
+    confidence: MODERATE
+    notes: "Body geometry and ecological constraint are modeled, but no physical robot or human is studied."
+  - source_node: paper:x15-synthetic-linguistic-agency
+    relation: intellectual_lineage
+    target_node: concept:adaptation
+    evidence_status: inferred
+    evidence: [x15-synthetic-linguistic-agency]
+    confidence: HIGH
+    notes: "AMSC mechanism mapping from persistent history-conditioned policy change."
+  - source_node: paper:x15-synthetic-linguistic-agency
+    relation: intellectual_lineage
+    target_node: concept:embodied-communication
+    evidence_status: inferred
+    evidence: [x15-synthetic-linguistic-agency]
+    confidence: MODERATE
+    notes: "Simulation includes consequential body state; physical embodiment and human interpretation are absent."
+  - source_node: paper:x16-memuse-natural-integration
+    relation: intellectual_lineage
+    target_node: concept:grounding
+    evidence_status: inferred
+    evidence: [x16-memuse-natural-integration]
+    confidence: MODERATE
+    notes: "Natural integration is a grounding-adjacent diagnostic, not evidence of mutual belief."
+  - source_node: paper:x16-memuse-natural-integration
+    relation: intellectual_lineage
+    target_node: concept:adaptation
+    evidence_status: inferred
+    evidence: [x16-memuse-natural-integration]
+    confidence: MODERATE
+    notes: "Long-term history use is relevant to adaptation but does not establish convention."
+  - source_node: paper:x17-glossogen-emergent-language
+    relation: intellectual_lineage
+    target_node: concept:convention
+    evidence_status: inferred
+    evidence: [x17-glossogen-emergent-language]
+    confidence: HIGH
+    notes: "Prompted AI–AI shorthand negotiation, partner swap and newcomer uptake are lifecycle neighbors, not human common ground."
+  - source_node: paper:x17-glossogen-emergent-language
+    relation: intellectual_lineage
+    target_node: concept:adaptation
+    evidence_status: inferred
+    evidence: [x17-glossogen-emergent-language]
+    confidence: MODERATE
+    notes: "History dosage and clarification behavior map to adaptation while one swap does not establish cumulative cultural evolution."
+  - source_node: paper:x18-small-talk-rapport
+    relation: intellectual_lineage
+    target_node: concept:embodied-communication
+    evidence_status: inferred
+    evidence: [x18-small-talk-rapport]
+    confidence: HIGH
+    notes: "Physical collaboration supplies a non-monotonic social–functional boundary without convention formation."
+  - source_node: paper:x19-continuous-worlds-vocabularies
+    relation: intellectual_lineage
+    target_node: concept:convention
+    evidence_status: inferred
+    evidence: [x19-continuous-worlds-vocabularies]
+    confidence: HIGH
+    notes: "Strong computational method anchor for decentralized population-level lexical convergence."
+  - source_node: paper:x19-continuous-worlds-vocabularies
+    relation: intellectual_lineage
+    target_node: concept:adaptation
+    evidence_status: inferred
+    evidence: [x19-continuous-worlds-vocabularies]
+    confidence: HIGH
+    notes: "Sensor heterogeneity and perturbation recovery are AI-population adaptation precedents, not human–AI co-adaptation."
 edge_policy:
   verified:
     - coauthored
@@ -1243,25 +1432,25 @@ edge_policy:
     - intellectual_lineage
 human_corrections: []
 next_question_priority:
-  updated_at: 2026-08-27
-  source_run: baseline41-2026-08-27
+  updated_at: 2026-09-03
+  source_run: amsc-radar-2026-09-03
   questions:
     - rank: 1
-      question: "Do communication gains causally depend on shared dyadic history beyond same-producer exposure, style familiarity, and independent task learning?"
+      question: "Do communication gains causally depend on shared dyadic history beyond pretrained/shared signal priors, same-producer exposure, style familiarity, memory availability, and independent task learning?"
       rationale: "This is the minimum falsification needed before calling observed success, shortening or alignment a partner-specific convention."
-      design_stage: "original dyad vs history-severed pseudo-dyad vs same-producer yoked vs shuffled, plus independent representation probes"
+      design_stage: "original dyad vs history-severed pseudo-dyad; shared vs individually permuted/novel signal space; same-producer yoked vs shuffled; retrieval vs natural-integration probes"
       status: HIGHEST_PRIORITY
-      evidence: [c3-conceptual-pacts, c5-graphical-convention-formation, c6-visual-resemblance-interaction-history, c8-gesturing-toward-abstraction, e3-continual-adaptation-machine-communication, x9-aligned-not-partner-specific]
+      evidence: [c3-conceptual-pacts, c5-graphical-convention-formation, c6-visual-resemblance-interaction-history, c8-gesturing-toward-abstraction, e3-continual-adaptation-machine-communication, x9-aligned-not-partner-specific, x13-silica-agent-societies, x16-memuse-natural-integration, x17-glossogen-emergent-language, x19-continuous-worlds-vocabularies]
     - rank: 2
       question: "After shared-history dependence is established, can the mapping survive role reversal and be deliberately repaired after controlled breakdown?"
       rationale: "Tests reciprocity and repair without overloading the first experiment."
       design_stage: "role reversal plus repair perturbation"
       status: NEXT_PHASE
-      evidence: [c1-referring-as-collaborative-process, c2-grounding-in-communication, c3-conceptual-pacts, c4-repeated-reference-games]
+      evidence: [c1-referring-as-collaborative-process, c2-grounding-in-communication, c3-conceptual-pacts, c4-repeated-reference-games, x17-glossogen-emergent-language]
     - rank: 3
       question: "When should a multimodal convention transfer, retire, or be renegotiated across partner and context changes, and how do instrumental and relational meanings trade off?"
       rationale: "Connects lifecycle control to embodied social and functional communication after the core causal criterion is validated."
       design_stage: "partner/context transfer and longitudinal post-novelty study"
       status: LATER_PHASE
-      evidence: [d5-legibility-and-predictability, d6-designing-robots-with-movement, d7-social-eye-gaze-review, d9-anatomy-of-uncertainty, e1-long-term-social-robots-survey, e2-human-robot-mutual-adaptation, f5-robots-in-the-wild, g3-explainable-oohri]
+      evidence: [d5-legibility-and-predictability, d6-designing-robots-with-movement, d7-social-eye-gaze-review, d9-anatomy-of-uncertainty, e1-long-term-social-robots-survey, e2-human-robot-mutual-adaptation, f5-robots-in-the-wild, g3-explainable-oohri, x14-bee-referential-code, x15-synthetic-linguistic-agency, x18-small-talk-rapport, x19-continuous-worlds-vocabularies]
   novelty_warning: "The opportunity is mechanism and measurement, not the conjunction claim that no paper simultaneously covers human–AI, embodiment, multimodality, reciprocity, longitudinality and social meaning."
