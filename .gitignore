@@ -5,3 +5,6 @@ senior-researcher-os-starter/
 Thumbs.db
 *.log
 .codex-temp-relief/
+
+node_modules/
+reports/ui/

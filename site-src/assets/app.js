@@ -85,3 +85,31 @@ document.querySelectorAll('[data-program-map]').forEach(programMap => {
     });
   });
 });
+
+document.querySelectorAll('[data-filter-root]').forEach(root => {
+  const items = [...root.querySelectorAll('[data-filter-item]')];
+  const filters = [...root.querySelectorAll('[data-filter]')];
+  const search = root.querySelector('[data-filter-search]');
+  const params = new URLSearchParams(location.search);
+  filters.forEach(f => { const v=params.get(f.dataset.filter); if ([...f.options].some(o=>o.value===v)) f.value=v; });
+  if(search) search.value=params.get('q') || '';
+  const apply = (writeUrl = true) => {
+    const query=(search?.value || '').trim().toLocaleLowerCase();
+    let count=0;
+    items.forEach(item => {
+      const match=(!query || item.textContent.toLocaleLowerCase().includes(query)) && filters.every(f => !f.value || (item.dataset[f.dataset.filter] || '').split(' ').includes(f.value));
+      item.hidden=!match; if(match) count++;
+    });
+    root.querySelector('[data-filter-count]').textContent=count+' 项';
+    root.querySelector('[data-filter-empty]').hidden=count!==0;
+    if(writeUrl) {
+      const url=new URL(location.href);
+      filters.forEach(f => f.value ? url.searchParams.set(f.dataset.filter,f.value) : url.searchParams.delete(f.dataset.filter));
+      query ? url.searchParams.set('q',search.value) : url.searchParams.delete('q');
+      history.replaceState(null,'',url);
+    }
+  };
+  filters.forEach(f=>f.addEventListener('change',()=>apply()));
+  search?.addEventListener('input',()=>apply());
+  apply(false);
+});

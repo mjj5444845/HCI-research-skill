@@ -1,7 +1,7 @@
-version: v1.5
+version: v1.6
 baseline_count: 41
-verified_at: 2026-08-27
-note: "The 41-paper baseline is user-defined; nineteen evidence-audited candidates are tracked separately. Top-20 Agent investigation is complete, while researcher reading/mastery remains untracked."
+verified_at: 2026-09-07
+note: "The 41-paper baseline is user-defined; twenty-four evidence-audited candidates are tracked separately. Top-20 Agent investigation is complete, while researcher reading/mastery remains untracked."
 categories:
   A: "Social / Multimodal / Informal Expression"
   B: "Pragmatics / Representation / Communicative Efficiency"
@@ -295,6 +295,26 @@ candidates:
     slug: x19-continuous-worlds-vocabularies
     title: "Emergent Communication in Continuous Worlds: Self-Organisation of Conceptually Grounded Vocabularies at Scale"
     decision: "Candidate — Must Read / recovered computational method anchor"
+  - id: X20
+    slug: x20-passing-the-pact
+    title: "Passing the Pact: Comparing Common Ground Building and Audience Design In Multiparty Human and Human-Agent Collaborative Communication"
+    decision: "Candidate — Must Read / abstract-only human-agent pact boundary"
+  - id: X21
+    slug: x21-social-pragmatic-chinese-comments
+    title: "You Really Didn’t Get That? Benchmarking Social Pragmatic Inference for Indirect and Playful Chinese Online Comments"
+    decision: "Candidate — Important / situated social-pragmatics diagnostic"
+  - id: X22
+    slug: x22-banana-man-pragmatic-interpretation
+    title: "Which one is banana man? Evaluating vision–language models in multi-turn pragmatic interpretation"
+    decision: "Candidate — Must Read / convention retrieval-versus-construction anchor"
+  - id: X23
+    slug: x23-machine-mental-imagery-common-ground
+    title: "Using Machine Mental Imagery for Representing Common Ground in Situated Dialogue"
+    decision: "Candidate — Important / multimodal common-ground representation architecture"
+  - id: X24
+    slug: x24-multimodal-repair-detection
+    title: "Do Visual Features Improve Other-Initiated Repair Detection? A Dyadic Multimodal Approach"
+    decision: "Candidate — Important / multimodal repair-detection anchor"
 change_log:
   - date: 2026-08-26
     change: "Imported and source-verified the 41-paper user baseline; corrected B3 year, C7 author order, and E4 first author."
@@ -309,3 +329,5 @@ change_log:
     change: "Weekly Radar v1.4 added X13–X16 after exact-window filtering and DOI/title/arXiv deduplication; X6 was recognized as an existing candidate, and no baseline or human correction was changed."
   - date: 2026-09-03
     change: "Manual Radar v1.5 added X17–X19 after full-text audit and independent red-team review; X19 merges its 2024 arXiv/AAMAS lineage into the canonical TACL record, GlossoGen's cumulative-cultural-evolution claim was bounded to one-swap AI–AI protocol transmission, and no baseline or human correction was changed."
+  - date: 2026-09-07
+    change: "Weekly Radar v1.6 added X20–X24 after exact-window retrieval plus a missing-paper/venue-index recovery pass: one abstract-only human-agent pact study and four full-text diagnostic or architecture anchors. Broad convention-incapacity claims were narrowed to endogenous construction, epistemic calibration, revision, and repair; no baseline or human correction was changed."

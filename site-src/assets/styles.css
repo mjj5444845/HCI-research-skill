@@ -333,3 +333,28 @@ details.disclosure p { margin: 10px 0 0; font-size: .84rem; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   [data-reveal] { opacity: 1; transform: none; }
 }
+
+/* Research workspace */
+.aux-nav{display:flex;align-items:center;justify-content:flex-end;gap:20px;max-width:1280px;margin:auto;padding:8px 20px;border-top:1px solid var(--line);font-size:.78rem}
+.aux-nav span{color:var(--muted);margin-right:auto}.aux-nav a{text-decoration:none}.aux-nav a[aria-current]{color:var(--accent);font-weight:750}
+.research-hero{min-height:560px;padding:64px 0;gap:56px}.accent-text{color:var(--accent)}
+.communication-scene{margin:0}.communication-scene svg{width:100%;height:auto}.communication-scene figcaption{font-size:.85rem;color:var(--muted);padding:20px 8px 0}
+.concept-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.concept-card{padding:24px 20px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.node-number{display:block;color:var(--accent);font-size:.78rem;margin-bottom:28px}.concept-en{display:block;font-size:.77rem;color:var(--muted);min-height:42px;margin-bottom:16px}
+.concept-card p{font-size:.9rem}.concept-card details{font-size:.82rem}.concept-card summary{color:var(--accent);cursor:pointer}.concept-card details p{margin-top:16px}
+.workspace-path{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.stage-link{padding:24px 20px;border:1px solid var(--line);border-radius:var(--radius);text-decoration:none;background:var(--surface);transition:border-color .2s}
+.stage-link:hover{border-color:var(--accent)}.stage-link>span{color:var(--muted);font-size:.76rem}.stage-link h3{margin-top:22px}.stage-link p{font-size:.88rem;min-height:60px}.stage-link>strong{font-size:.83rem;color:var(--accent)}
+.support-links{display:flex;align-items:center;gap:24px;margin-top:36px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}.support-links span,.support-links small{color:var(--muted)}
+.workspace-list{display:grid;gap:20px}.workspace-list .surface-card{padding:28px;scroll-margin-top:140px}.workspace-list h3{max-width:940px;line-height:1.5}.workspace-list details{margin:18px 0}.workspace-list summary{cursor:pointer;color:var(--accent);font-weight:650}
+.workspace-empty{background:var(--surface);border:1px dashed var(--line-strong);border-radius:var(--radius);padding:40px;max-width:900px}.workspace-empty h2{font-size:1.5rem}.workspace-empty p{max-width:760px;margin-bottom:0}
+.filter-bar{display:flex;gap:16px;align-items:end;flex-wrap:wrap;margin-bottom:28px;padding:20px;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+.filter-bar label{display:grid;gap:6px;font-size:.8rem;color:var(--muted)}.filter-bar select,.filter-bar input{font:inherit;font-size:.9rem;color:var(--ink);background:var(--bg);border:1px solid var(--line-strong);border-radius:8px;padding:10px;max-width:100%;min-height:44px}.filter-bar [data-filter-count]{margin-left:auto;padding:10px 0;color:var(--muted);font-size:.85rem}
+.validation-record,.pilot-record{border-top:1px solid var(--line);margin-top:24px;padding-top:20px}.writing-project{margin-bottom:32px;padding:28px;border:1px solid var(--line);background:var(--surface-soft);border-radius:18px}.writing-project .workspace-list{margin-top:24px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+@media(max-width:1100px){.concept-grid,.workspace-path{grid-template-columns:repeat(3,minmax(0,1fr))}.nav-shell{gap:12px}.nav-links a{padding:8px 7px;font-size:.78rem}}
+@media(max-width:760px){.research-hero{grid-template-columns:1fr;padding:44px 0;gap:30px;min-height:0}.communication-scene{max-width:500px}.concept-grid,.workspace-path{grid-template-columns:repeat(2,minmax(0,1fr))}.aux-nav{gap:14px;justify-content:flex-start;flex-wrap:wrap;padding:8px 20px}.aux-nav span{display:none}.filter-bar{align-items:stretch}.filter-bar label{flex:1 1 180px}.filter-bar [data-filter-count]{margin-left:0}.workspace-empty{padding:26px}.stage-link p{min-height:0}}
+@media(max-width:460px){.concept-grid,.workspace-path{grid-template-columns:1fr}.concept-en{min-height:0}.node-number{margin-bottom:14px}.concept-card,.stage-link{padding:22px}.workspace-list .surface-card{padding:22px}.aux-nav{font-size:.73rem;gap:12px}}
+
+
+.validation-record p,.pilot-record p,.writing-project p{white-space:pre-line}

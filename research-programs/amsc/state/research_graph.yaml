@@ -1,5 +1,5 @@
-version: 0.4
-updated_at: 2026-09-03
+version: 0.5
+updated_at: 2026-09-07
 nodes:
   - id: paper:c1-referring-as-collaborative-process
     type: paper
@@ -536,6 +536,96 @@ nodes:
     label: "Emergent Communication in Continuous Worlds"
     evidence_status: radar_full_text_audited
     provenance: "https://doi.org/10.1162/tacl.a.799"
+  - id: paper:x20-passing-the-pact
+    type: paper
+    label: "Passing the Pact"
+    evidence_status: abstract_evidence_investigation
+    provenance: "https://doi.org/10.1145/3806774.3827983"
+  - id: paper:x21-social-pragmatic-chinese-comments
+    type: paper
+    label: "You Really Didn’t Get That?"
+    evidence_status: radar_full_text_audited
+    provenance: "https://arxiv.org/abs/2609.04384"
+  - id: paper:x22-banana-man-pragmatic-interpretation
+    type: paper
+    label: "Which one is banana man?"
+    evidence_status: radar_full_text_audited
+    provenance: "https://arxiv.org/abs/2608.29571"
+  - id: paper:x23-machine-mental-imagery-common-ground
+    type: paper
+    label: "Using Machine Mental Imagery for Representing Common Ground in Situated Dialogue"
+    evidence_status: radar_full_text_audited
+    provenance: "https://arxiv.org/abs/2604.21144"
+  - id: paper:x24-multimodal-repair-detection
+    type: paper
+    label: "Do Visual Features Improve Other-Initiated Repair Detection?"
+    evidence_status: radar_full_text_audited
+    provenance: "https://doi.org/10.1145/3776574.3831200"
+  - id: author:rhys-jacka
+    type: author
+    label: "Rhys Jacka"
+    evidence_status: verified
+    provenance: "https://doi.org/10.1145/3806774.3827983"
+  - id: author:holly-branigan
+    type: author
+    label: "Holly Branigan"
+    evidence_status: verified
+    provenance: "https://doi.org/10.1145/3806774.3827983"
+  - id: author:benjamin-r-cowan
+    type: author
+    label: "Benjamin R. Cowan"
+    evidence_status: verified
+    provenance: "https://doi.org/10.1145/3806774.3827983"
+  - id: author:shiwei-hong
+    type: author
+    label: "Shiwei Hong"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2609.04384"
+  - id: author:zhicong-lu
+    type: author
+    label: "Zhicong Lu"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2609.04384"
+  - id: author:alvin-w-m-tan
+    type: author
+    label: "Alvin W. M. Tan"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2608.29571"
+  - id: author:ben-prystawski
+    type: author
+    label: "Ben Prystawski"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2608.29571"
+  - id: author:veronica-boyce
+    type: author
+    label: "Veronica Boyce"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2608.29571"
+  - id: author:biswesh-mohapatra
+    type: author
+    label: "Biswesh Mohapatra"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2604.21144"
+  - id: author:justine-cassell
+    type: author
+    label: "Justine Cassell"
+    evidence_status: verified
+    provenance: "https://arxiv.org/abs/2604.21144"
+  - id: author:anh-ngo
+    type: author
+    label: "Anh Ngo"
+    evidence_status: verified
+    provenance: "https://doi.org/10.1145/3776574.3831200"
+  - id: author:catherine-pelachaud
+    type: author
+    label: "Catherine Pelachaud"
+    evidence_status: verified
+    provenance: "https://doi.org/10.1145/3776574.3831200"
+  - id: author:chloe-clavel
+    type: author
+    label: "Chloé Clavel"
+    evidence_status: verified
+    provenance: "https://doi.org/10.1145/3776574.3831200"
   - id: author:raad-bin-tareaf
     type: author
     label: "Raad Bin Tareaf"
@@ -1420,6 +1510,139 @@ edges:
     evidence: [x19-continuous-worlds-vocabularies]
     confidence: HIGH
     notes: "Sensor heterogeneity and perturbation recovery are AI-population adaptation precedents, not human–AI co-adaptation."
+  - source_node: author:rhys-jacka
+    relation: coauthored
+    target_node: author:holly-branigan
+    evidence_status: verified
+    evidence: [x20-passing-the-pact]
+    confidence: HIGH
+    notes: "Verified from DOI metadata; no lab, supervisory or lineage relation inferred."
+  - source_node: author:rhys-jacka
+    relation: coauthored
+    target_node: author:benjamin-r-cowan
+    evidence_status: verified
+    evidence: [x20-passing-the-pact]
+    confidence: HIGH
+    notes: "Verified from DOI metadata; no lab, supervisory or lineage relation inferred."
+  - source_node: author:shiwei-hong
+    relation: coauthored
+    target_node: author:zhicong-lu
+    evidence_status: verified
+    evidence: [x21-social-pragmatic-chinese-comments]
+    confidence: HIGH
+    notes: "Verified from the arXiv record; no lab or supervisory relation inferred."
+  - source_node: author:alvin-w-m-tan
+    relation: coauthored
+    target_node: author:ben-prystawski
+    evidence_status: verified
+    evidence: [x22-banana-man-pragmatic-interpretation]
+    confidence: HIGH
+    notes: "Verified from the arXiv record; no lab or supervisory relation inferred."
+  - source_node: author:alvin-w-m-tan
+    relation: coauthored
+    target_node: author:veronica-boyce
+    evidence_status: verified
+    evidence: [x22-banana-man-pragmatic-interpretation]
+    confidence: HIGH
+    notes: "Verified from the arXiv record; no lab or supervisory relation inferred."
+  - source_node: author:biswesh-mohapatra
+    relation: coauthored
+    target_node: author:justine-cassell
+    evidence_status: verified
+    evidence: [x23-machine-mental-imagery-common-ground]
+    confidence: HIGH
+    notes: "Verified from the arXiv record; no lab or supervisory relation inferred."
+  - source_node: author:anh-ngo
+    relation: coauthored
+    target_node: author:catherine-pelachaud
+    evidence_status: verified
+    evidence: [x24-multimodal-repair-detection]
+    confidence: HIGH
+    notes: "Verified from paper metadata; no lab or supervisory relation inferred."
+  - source_node: author:anh-ngo
+    relation: coauthored
+    target_node: author:chloe-clavel
+    evidence_status: verified
+    evidence: [x24-multimodal-repair-detection]
+    confidence: HIGH
+    notes: "Verified from paper metadata; no lab or supervisory relation inferred."
+  - source_node: paper:x20-passing-the-pact
+    relation: intellectual_lineage
+    target_node: concept:grounding
+    evidence_status: inferred
+    evidence: [x20-passing-the-pact]
+    confidence: MODERATE
+    notes: "The abstract frames common-ground building, but does not expose internal-state or full grounding-cycle evidence."
+  - source_node: paper:x20-passing-the-pact
+    relation: intellectual_lineage
+    target_node: concept:convention
+    evidence_status: inferred
+    evidence: [x20-passing-the-pact]
+    confidence: MODERATE
+    notes: "Conceptual pacts are directly studied; reuse is not automatically partner-specific mutual convention."
+  - source_node: paper:x20-passing-the-pact
+    relation: intellectual_lineage
+    target_node: concept:adaptation
+    evidence_status: inferred
+    evidence: [x20-passing-the-pact]
+    confidence: MODERATE
+    notes: "Maps only to knowledge-sensitive audience design, not longitudinal or reciprocal co-adaptation."
+  - source_node: paper:x21-social-pragmatic-chinese-comments
+    relation: intellectual_lineage
+    target_node: concept:meaning
+    evidence_status: inferred
+    evidence: [x21-social-pragmatic-chinese-comments]
+    confidence: HIGH
+    notes: "Direct social-pragmatic meaning diagnostic; full context is not encoded as mutual common ground."
+  - source_node: paper:x22-banana-man-pragmatic-interpretation
+    relation: intellectual_lineage
+    target_node: concept:grounding
+    evidence_status: inferred
+    evidence: [x22-banana-man-pragmatic-interpretation]
+    confidence: MODERATE
+    notes: "Uses prior interaction and feedback to test interpretation, without observing reciprocal grounding."
+  - source_node: paper:x22-banana-man-pragmatic-interpretation
+    relation: intellectual_lineage
+    target_node: concept:convention
+    evidence_status: inferred
+    evidence: [x22-banana-man-pragmatic-interpretation]
+    confidence: HIGH
+    notes: "Directly separates retrieval of game-specific conventions from their endogenous construction and repair."
+  - source_node: paper:x22-banana-man-pragmatic-interpretation
+    relation: intellectual_lineage
+    target_node: concept:adaptation
+    evidence_status: inferred
+    evidence: [x22-banana-man-pragmatic-interpretation]
+    confidence: MODERATE
+    notes: "Limited feedback and recovery dynamics are adaptation diagnostics, not evidence of successful co-adaptation."
+  - source_node: paper:x23-machine-mental-imagery-common-ground
+    relation: intellectual_lineage
+    target_node: concept:grounding
+    evidence_status: inferred
+    evidence: [x23-machine-mental-imagery-common-ground]
+    confidence: MODERATE
+    notes: "Architecture stores inspectable dialogue-derived state; system representation is not mutually recognized common ground."
+  - source_node: paper:x23-machine-mental-imagery-common-ground
+    relation: intellectual_lineage
+    target_node: concept:meaning
+    evidence_status: inferred
+    evidence: [x23-machine-mental-imagery-common-ground]
+    confidence: MODERATE
+    notes: "Depictive and propositional artifacts preserve complementary meaning while indirect and negative content remains difficult."
+  - source_node: paper:x24-multimodal-repair-detection
+    relation: intellectual_lineage
+    target_node: concept:grounding
+    evidence_status: inferred
+    evidence: [x24-multimodal-repair-detection]
+    confidence: HIGH
+    notes: "Other-initiated repair is a direct grounding mechanism; detection is not successful repair or restored common ground."
+  - source_node: paper:x24-multimodal-repair-detection
+    relation: intellectual_lineage
+    target_node: concept:embodied-communication
+    evidence_status: inferred
+    evidence: [x24-multimodal-repair-detection]
+    confidence: MODERATE
+    notes: "Human gaze, face, body and gesture carry trouble signals; no embodied agent was evaluated."
 edge_policy:
   verified:
     - coauthored
@@ -1432,25 +1655,25 @@ edge_policy:
     - intellectual_lineage
 human_corrections: []
 next_question_priority:
-  updated_at: 2026-09-03
-  source_run: amsc-radar-2026-09-03
+  updated_at: 2026-09-07
+  source_run: amsc-radar-2026-09-07
   questions:
     - rank: 1
-      question: "Do communication gains causally depend on shared dyadic history beyond pretrained/shared signal priors, same-producer exposure, style familiarity, memory availability, and independent task learning?"
-      rationale: "This is the minimum falsification needed before calling observed success, shortening or alignment a partner-specific convention."
-      design_stage: "original dyad vs history-severed pseudo-dyad; shared vs individually permuted/novel signal space; same-producer yoked vs shuffled; retrieval vs natural-integration probes"
+      question: "Do communication gains causally depend on shared dyadic history beyond pretrained/shared signal priors, same-producer exposure, style familiarity, externally supplied mappings, memory availability, interlocutor-knowledge/capability beliefs, and independent task learning?"
+      rationale: "This is the minimum falsification needed before calling success, shortening, alignment or pact reuse a partner-specific convention; X20/X22 show that surface reuse and retrieval can occur without demonstrated endogenous mutual construction."
+      design_stage: "original dyad vs history-severed pseudo-dyad; shared vs individually permuted/novel signal space; same-producer yoked vs shuffled; retrieval vs natural-integration; pact reuse vs knowledge-sensitive elaboration and acceptance"
       status: HIGHEST_PRIORITY
-      evidence: [c3-conceptual-pacts, c5-graphical-convention-formation, c6-visual-resemblance-interaction-history, c8-gesturing-toward-abstraction, e3-continual-adaptation-machine-communication, x9-aligned-not-partner-specific, x13-silica-agent-societies, x16-memuse-natural-integration, x17-glossogen-emergent-language, x19-continuous-worlds-vocabularies]
+      evidence: [c3-conceptual-pacts, c5-graphical-convention-formation, c6-visual-resemblance-interaction-history, c8-gesturing-toward-abstraction, e3-continual-adaptation-machine-communication, x9-aligned-not-partner-specific, x13-silica-agent-societies, x16-memuse-natural-integration, x17-glossogen-emergent-language, x19-continuous-worlds-vocabularies, x20-passing-the-pact, x22-banana-man-pragmatic-interpretation, x23-machine-mental-imagery-common-ground]
     - rank: 2
       question: "After shared-history dependence is established, can the mapping survive role reversal and be deliberately repaired after controlled breakdown?"
-      rationale: "Tests reciprocity and repair without overloading the first experiment."
-      design_stage: "role reversal plus repair perturbation"
+      rationale: "Tests reciprocity and repair after separating trouble-signal detection, recovery from feedback, repair action and restored grounding."
+      design_stage: "role reversal plus repair perturbation; multimodal OIR detection followed by repair-policy and uptake measures"
       status: NEXT_PHASE
-      evidence: [c1-referring-as-collaborative-process, c2-grounding-in-communication, c3-conceptual-pacts, c4-repeated-reference-games, x17-glossogen-emergent-language]
+      evidence: [c1-referring-as-collaborative-process, c2-grounding-in-communication, c3-conceptual-pacts, c4-repeated-reference-games, x17-glossogen-emergent-language, x22-banana-man-pragmatic-interpretation, x24-multimodal-repair-detection]
     - rank: 3
       question: "When should a multimodal convention transfer, retire, or be renegotiated across partner and context changes, and how do instrumental and relational meanings trade off?"
       rationale: "Connects lifecycle control to embodied social and functional communication after the core causal criterion is validated."
       design_stage: "partner/context transfer and longitudinal post-novelty study"
       status: LATER_PHASE
-      evidence: [d5-legibility-and-predictability, d6-designing-robots-with-movement, d7-social-eye-gaze-review, d9-anatomy-of-uncertainty, e1-long-term-social-robots-survey, e2-human-robot-mutual-adaptation, f5-robots-in-the-wild, g3-explainable-oohri, x14-bee-referential-code, x15-synthetic-linguistic-agency, x18-small-talk-rapport, x19-continuous-worlds-vocabularies]
+      evidence: [d5-legibility-and-predictability, d6-designing-robots-with-movement, d7-social-eye-gaze-review, d9-anatomy-of-uncertainty, e1-long-term-social-robots-survey, e2-human-robot-mutual-adaptation, f5-robots-in-the-wild, g3-explainable-oohri, x14-bee-referential-code, x15-synthetic-linguistic-agency, x18-small-talk-rapport, x19-continuous-worlds-vocabularies, x20-passing-the-pact]
   novelty_warning: "The opportunity is mechanism and measurement, not the conjunction claim that no paper simultaneously covers human–AI, embodiment, multimodality, reciprocity, longitudinality and social meaning."

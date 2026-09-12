@@ -26,8 +26,14 @@ jobs:
           node-version: 24
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Install dependencies
+        run: npm ci
       - name: Build static site
         run: npm run build
+      - name: Validate research lifecycle
+        run: npm run test:workspace
+      - name: Validate site
+        run: npm run test:site
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:

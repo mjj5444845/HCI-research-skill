@@ -1,5 +1,7 @@
 # Workflow Orchestration
 
+Active stage, state ownership and agent handoffs: [Research lifecycle](research-lifecycle.md).
+
 ## Natural entry points
 
 ### "读这篇论文"
@@ -73,7 +75,7 @@ Persistent synchronized state:
 - Master Literature List
 - Current State of Field
 - Gap Registry
-- Comprehensive Exam KB
+- Questions / validation / studies / pilots
 - Research Graph
 ```
 
@@ -85,10 +87,13 @@ Paper Investigation
 -> Master List decision
 -> Gap updates
 -> Current-state updates
--> Exam updates
+-> Evaluate affected exam and writing references (downstream only)
 -> Research Graph updates
 
 The final synthesis should always answer:
 - What do we know?
 - What don't we know?
 - What should I study next?
+
+## Writing materials
+Collect and organize user-provided writing projects and materials in state/writing_workspace.json. Read upstream facts; do not modify the research program to fit a draft. See research-lifecycle.md.

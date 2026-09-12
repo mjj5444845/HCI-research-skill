@@ -1,12 +1,12 @@
-version: 0.5
-updated_at: 2026-08-31
+version: 0.6
+updated_at: 2026-09-07
 evidence_snapshot:
-  total_papers: 57
+  total_papers: 65
   bibliographic_only: 0
   abstract_reviewed: 3
-  abstract_evidence_investigation: 1
+  abstract_evidence_investigation: 2
   source_verified_candidate: 2
-  radar_full_text_audited: 11
+  radar_full_text_audited: 18
   full_paper_investigations: 40
   strongest_available_level: MODERATE
   warning: "书目覆盖、Agent 调查深度与研究者阅读进度是三件不同的事。"
@@ -56,8 +56,8 @@ claims:
     claim_kind: agent_synthesis
     status: OPEN
     evidence_strength: MODERATE
-    evidence: [c1-referring-as-collaborative-process, c2-grounding-in-communication, c3-conceptual-pacts, c4-repeated-reference-games, c6-visual-resemblance-interaction-history, c8-gesturing-toward-abstraction, d5-legibility-and-predictability, e2-human-robot-mutual-adaptation, e3-continual-adaptation-machine-communication, x7-embodied-world-model-alignment, x9-aligned-not-partner-specific, x11-common-ground-benchmark]
-    boundary: "跨论文 agent synthesis；C5/C6 属同一 empirical lineage，success、shortening 或 alignment 任何单项都不是 convention 的充分证据。"
+    evidence: [c1-referring-as-collaborative-process, c2-grounding-in-communication, c3-conceptual-pacts, c4-repeated-reference-games, c6-visual-resemblance-interaction-history, c8-gesturing-toward-abstraction, d5-legibility-and-predictability, e2-human-robot-mutual-adaptation, e3-continual-adaptation-machine-communication, x7-embodied-world-model-alignment, x9-aligned-not-partner-specific, x11-common-ground-benchmark, x20-passing-the-pact, x22-banana-man-pragmatic-interpretation, x23-machine-mental-imagery-common-ground, x24-multimodal-repair-detection]
+    boundary: "跨论文 agent synthesis；C5/C6 属同一 empirical lineage，success、shortening、pact reuse、state storage 或 repair detection 任何单项都不是 convention/common ground 的充分证据。"
     cumulative_change: STRENGTHENED
   - id: SOF-07
     statement: "Human convention theory already models partner-specific common ground and its transfer toward population-level conventions; partner-specific origin and subsequent transfer are complementary, not mutually exclusive."
@@ -170,8 +170,8 @@ claims:
     claim_kind: agent_synthesis
     status: OPEN
     evidence_strength: MODERATE
-    evidence: [c3-conceptual-pacts, c4-repeated-reference-games, c5-graphical-convention-formation, c6-visual-resemblance-interaction-history, c7-shared-procedural-abstractions, c8-gesturing-toward-abstraction, e3-continual-adaptation-machine-communication]
-    boundary: "Cross-paper causal audit, not any paper original claim; C5 and C6 count as one empirical lineage."
+    evidence: [c3-conceptual-pacts, c4-repeated-reference-games, c5-graphical-convention-formation, c6-visual-resemblance-interaction-history, c7-shared-procedural-abstractions, c8-gesturing-toward-abstraction, e3-continual-adaptation-machine-communication, x20-passing-the-pact, x22-banana-man-pragmatic-interpretation]
+    boundary: "Cross-paper causal audit, not any paper original claim; C5 and C6 count as one empirical lineage. X20 is abstract-only; X22 studies naïve interpreters of archived human games, not reciprocal dyads."
     cumulative_change: NEW_CORE
   - id: SOF-21
     statement: "Contextualized emoji、visual lexicon、dyadic action scaffolds 与 graded reference models 共同表明：signal form 本身不足以决定 meaning；local context、task discriminability、relationship 与 interaction history 会改变解释和表达成本。"
@@ -253,6 +253,46 @@ claims:
     evidence: [x19-continuous-worlds-vocabularies]
     boundary: "Algorithmic convergence with built-in invention, target disclosure, adoption and reinforcement is not partner-specific human–AI common ground; dataset features are not physical sensorimotor embodiment."
     cumulative_change: STRENGTHENED
+  - id: SOF-31
+    statement: "Abstract-level evidence from one multiparty Tangram task reports that speakers reuse prior conceptual pacts with less-knowledgeable human and agent interlocutors while showing stronger knowledge-sensitive elaboration in human–human communication; pact reuse and audience design therefore require separate measurement."
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [x20-passing-the-pact]
+    boundary: "Sample, agent implementation, knowledge manipulation, coding reliability, effect sizes and analysis remain unavailable; the observed speaker behavior does not establish agent learning, mutual belief, equivalence or shared-history causality."
+    cumulative_change: NEW
+  - id: SOF-32
+    statement: "In a purposefully sampled 4,735-item Chinese-language social-pragmatics benchmark, removing reconstructed interaction context reduced tested-model mean accuracy by 39.07 percentage points, demonstrating task-specific situated-context dependence."
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [x21-social-pragmatic-chinese-comments]
+    boundary: "Selection conditioned on context dependence; a 343-item revised hard subset had only 64.14% human accuracy and kappa .53. This is not evidence about Chinese culture, prevalence, original speaker intent, dyadic grounding or embodiment."
+    cumulative_change: NEW
+  - id: SOF-33
+    statement: "In archived iterated Tangram games, tested VLMs could exploit externally supplied correct game-specific mappings but struggled to accumulate relevant context or recover from their own errors under limited feedback, separating convention retrieval from endogenous construction and repair."
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [x22-banana-man-pragmatic-interpretation]
+    boundary: "Models were naïve interpreters of human dialogue rather than reciprocal partners; the result is task/model specific and does not prove general incapacity to form conventions."
+    cumulative_change: NEW_CORE
+  - id: SOF-34
+    statement: "On 200 IndiRef questions over human situated-dialogue traces, incremental image/text externalization outperformed full-dialog reasoning with the same VLM, and hybrid artifacts best preserved complementary depictable and propositional state."
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence: [x23-machine-mental-imagery-common-ground]
+    boundary: "Single benchmark and LLM judge; the pipeline still missed negation, indirect requests and cross-frame relations. A system-side state representation is not evidence of mutually established common ground."
+    cumulative_change: NEW
+  - id: SOF-35
+    statement: "Conversation-Analysis-grounded visual features improved other-initiated-repair detection and type classification beyond text plus audio across two human dyadic corpora, with the size and kind of benefit differing by interaction setting."
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence: [x24-multimodal-repair-detection]
+    boundary: "Human–human French and Dutch corpora, only 47 OIR cases in NOXI, and no real-time agent response or repair outcome; detecting trouble is not performing successful grounding repair."
+    cumulative_change: NEW
 claim_statuses:
   - ESTABLISHED
   - EMERGING

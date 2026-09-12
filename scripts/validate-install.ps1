@@ -62,7 +62,12 @@ $requiredPaths = @(
     'research-programs\amsc\state\workflow_dashboard.json',
     'research-programs\amsc\state\research_graph.yaml',
     'schemas\workflow-dashboard.schema.json',
-    'tests\evaluation-fixtures.yaml'
+    'tests\evaluation-fixtures.yaml',
+    'workflows\research-lifecycle.md',
+    'research-programs\amsc\state\research_pipeline.json',
+    'state\writing_workspace.json',
+    'schemas\research-pipeline.schema.json',
+    'schemas\writing-workspace.schema.json'
 )
 foreach ($relativePath in $requiredPaths) {
     if (-not (Test-Path -LiteralPath (Join-Path $ProjectRoot $relativePath))) {

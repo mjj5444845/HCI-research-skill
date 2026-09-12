@@ -130,8 +130,7 @@ Integrate Reviewer + Theory Mapper + Skeptic.
 Update the persistent Gap Registry, including temporal redefinitions.
 
 ## Exam Curator
-Maintain:
-- Master Literature List
+Read the Master Literature List; maintain only downstream exam objects:
 - Reading Matrix
 - Anchor papers
 - Exam themes
@@ -152,3 +151,6 @@ Every major update must answer:
 1. What do we know?
 2. What don't we know?
 3. What should the researcher study next?
+
+## Lifecycle routing
+Follow workflows/research-lifecycle.md. AMSC Final Synthesizer leads AMSC decisions; Senior Faculty Synthesizer leads other research decisions. Pilot coordination remains in Study Design. All specialized roles return read-only proposals; the primary agent writes accepted state.

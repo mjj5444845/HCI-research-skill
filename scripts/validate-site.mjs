@@ -33,7 +33,8 @@ for (const file of htmlFiles) {
   const references = [...html.matchAll(/(?:href|src)="([^"]+)"/g)].map(match => match[1]);
   for (const reference of references) {
     if (/^(?:https?:|mailto:|data:)/.test(reference)) continue;
-    const [clean, fragment] = reference.split("#", 2);
+    const [withQuery, fragment] = reference.split("#", 2);
+    const clean = withQuery.split("?", 1)[0];
     let target = path.resolve(path.dirname(file), clean || ".");
     if (clean.endsWith("/") || fs.existsSync(target) && fs.statSync(target).isDirectory()) target = path.join(target, "index.html");
     if (!fs.existsSync(target)) {
@@ -48,7 +49,7 @@ for (const file of htmlFiles) {
 }
 
 const catalog = JSON.parse(fs.readFileSync(path.join(site, "data", "catalog.json"), "utf8"));
-const expectedHtml = 8 + catalog.skills.length + catalog.agents.length + catalog.papers.length + 1;
+const expectedHtml = (catalog.workspaceRoutes?.length || 0) + 8 + catalog.skills.length + catalog.agents.length + catalog.papers.length + 1;
 if (htmlFiles.length !== expectedHtml) failures.push(`Expected ${expectedHtml} HTML files; found ${htmlFiles.length}.`);
 
 if (failures.length) {

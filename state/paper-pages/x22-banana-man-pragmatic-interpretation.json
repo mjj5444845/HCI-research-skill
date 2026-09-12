@@ -1,0 +1,40 @@
+{
+  "id": "X22",
+  "slug": "x22-banana-man-pragmatic-interpretation",
+  "title": "Which one is banana man? Evaluating vision–language models in multi-turn pragmatic interpretation",
+  "authors": ["Alvin W. M. Tan", "Ben Prystawski", "Veronica Boyce"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2608.29571",
+  "doi": "10.48550/arXiv.2608.29571",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "VLMs can exploit externally supplied, game-specific Tangram conventions but often fail to accumulate useful context or recover from their own errors under limited feedback, separating convention retrieval from construction and repair.",
+  "problem": "Can vision-language models pragmatically interpret conventionalized descriptions across multiple turns, and how do context amount, order, relevance, and feedback quality affect that ability relative to humans?",
+  "method": "Using ten 2–6-player, six-round Tangram games and naïve human matcher data, the study evaluates five open-weight VLMs across eight context conditions and three feedback regimes. New human samples cover backward and random order; model analyses compare interactive limited feedback, human-yoked limited feedback, and full feedback, with bootstrap intervals and additional frontier-model checks.",
+  "findings": [
+    "Models improved substantially when correct, relevant prior mappings were supplied and could approach human or near-ceiling performance under human-yoked or full feedback.",
+    "With their own guesses plus only correct/incorrect feedback, models improved little and performed at or below chance after a prior mistake, while naïve humans corrected roughly half of prior errors.",
+    "Context from the same game and prior instances of the same tangram mattered most; other-game or target-ablated context produced much lower performance, supporting retrieval of convention-specific mappings more than general task learning.",
+    "Images helped most early or when contextual mappings were sparse; later performance was often similar without images, and trial-level model-human correspondence remained weak."
+  ],
+  "real_contribution": "Provides a causal decomposition of convention retrieval, context relevance, feedback use, and error recovery for VLM pragmatic interpretation, filling a distinct role from dyad-generation and pseudo-dyad studies.",
+  "biggest_weakness": "Models act as naïve interpreters of archived human games rather than reciprocal partners; interactive feedback supplies correctness without the correct answer, and many analyses aggregate heterogeneous models and items.",
+  "claim_boundary": "Shows that tested VLMs can retrieve externally available mappings yet struggle to bootstrap and repair them in this constrained overhearer task; it does not establish that all models cannot form conventions or that retrieval alone is grounding.",
+  "why_researcher_should_care": "It is the clearest current precedent for the AMSC distinction between having a convention in context and causally building, revising, and repairing one through interaction.",
+  "amsc": {
+    "mainline_fit": 9.4,
+    "buckets": ["B", "C", "E"],
+    "stages": ["Social meaning/pragmatics", "Grounding/common ground", "Convention formation", "Personalization/co-adaptation"],
+    "mechanisms": ["convention retrieval", "context relevance", "limited feedback", "error recovery", "multi-turn pragmatic interpretation"],
+    "gap_ids": ["GAP-02", "GAP-03", "GAP-04", "GAP-07"],
+    "master_list_decision": "Candidate — Must Read / convention retrieval-versus-construction anchor"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "Recovered by the missing-paper attack after its 2026-08-30 arXiv submission was not integrated in the prior run.",
+    "Full arXiv HTML plus public code/data links were inspected."
+  ],
+  "provenance": "amsc_radar_2026-09-07",
+  "updated_at": "2026-09-07"
+}

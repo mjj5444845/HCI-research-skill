@@ -1,5 +1,5 @@
-version: 0.6
-updated_at: 2026-09-03
+version: 0.7
+updated_at: 2026-09-07
 title: "Adaptive Multimodal Social Communication for Embodied AI: From Social Meaning and Shared Representations to Situated Adaptation"
 core_review_question: "How do socially meaningful multimodal signals become grounded, conventionalized, and adaptive in human–embodied AI interaction?"
 source_plan: research-programs/amsc/imports/comprehensive-exam-plan-v1.md
@@ -13,9 +13,9 @@ readiness:
   agent_evidence:
     bibliographic_only: 0
     abstract_reviewed: 3
-    abstract_evidence_investigation: 1
+    abstract_evidence_investigation: 2
     source_verified_candidate: 2
-    radar_full_text_audit: 14
+    radar_full_text_audit: 18
     full_paper_investigation: 40
   researcher:
     top20_read: null
@@ -45,11 +45,31 @@ second_round_evidence:
     synthesis_boundary: "这些论文强化 fixed-cue 与 AR/motion design precedents，但不建立 history-dependent mutual convention。"
 candidate_anchor_review:
   theme_3:
-    candidates: [X8, X9, X10, X11, X12, X13, X14, X16, X17, X19]
+    candidates: [X8, X9, X10, X11, X12, X13, X14, X16, X17, X19, X20, X22, X23, X24]
     status: REVIEW_BEFORE_CORE_PROMOTION
-    rationale: "这些论文直接改变 common-ground / convention 的 gap 与 diagnostic map，但仍需研究者决定是否进入考试 core corpus。"
+    rationale: "这些论文直接改变 common-ground / convention 的 gap 与 diagnostic map；X20 仍为 abstract-only，X22–X24 已完成全文 Radar audit，但均需研究者决定是否进入考试 core corpus。"
+  theme_2_6_bridge:
+    candidates: [X21]
+    status: SUPPLEMENTARY_REVIEW
+    rationale: "X21 直接加强 situated social-pragmatic meaning 与 cultural-operationalization 边界，但不构成 dyadic grounding 或 convention evidence。"
   methods_only: [X6, X7, X15]
   guardrail: "Radar candidate 不因 Agent 调查完成而自动成为 exam anchor；researcher reading/mastery 保持未记录。"
+radar_oral_questions:
+  - id: RQ-2026-09-07-1
+    themes: [3]
+    question: "Why is conceptual-pact reuse insufficient evidence of partner-specific common ground, and how can reuse persist while audience design differs across human and agent addressees?"
+    evidence: [X20, C3]
+    boundary: "X20 is abstract-only and reports speaker behavior, not verified agent-side common ground."
+  - id: RQ-2026-09-07-2
+    themes: [2, 6]
+    question: "What does a 39.07-point full-context advantage establish about pragmatic inference, and why does it not establish cultural competence, common ground, or dyadic grounding?"
+    evidence: [X21]
+    boundary: "Purposefully sampled Chinese-language platform episodes are not a representative cultural comparison."
+  - id: RQ-2026-09-07-3
+    themes: [3, 5]
+    question: "How would you distinguish retrieving an established convention, representing dialogue state, detecting trouble, and jointly repairing a grounded mapping?"
+    evidence: [X22, X23, X24, C2]
+    boundary: "The three candidate systems occupy different stages and none alone demonstrates reciprocal embodied repair."
 reading_matrix:
   - id: C1
     citation: "Herbert H. Clark, Deanna Wilkes-Gibbs (1986). Referring as a Collaborative Process. Cognition, 22(1), 1–39"
@@ -528,3 +548,7 @@ workflow_history:
     status: COMPLETE_WITH_ACCESS_LIMITATIONS
     completed_at: 2026-09-03T10:00:00-04:00
     summary: "X17 and recovered method anchor X19 sharpen Theme 3 lifecycle and false-positive boundaries; neither was automatically promoted to the core corpus, and researcher reading/mastery remains unchanged."
+  - id: amsc-radar-2026-09-07
+    status: COMPLETE_WITH_ACCESS_LIMITATIONS
+    completed_at: 2026-09-07T03:35:21-04:00
+    summary: "X20–X24 sharpen Theme 2/3/6 diagnostics for pact reuse, situated meaning, convention retrieval, state representation and multimodal repair detection; no candidate was auto-promoted and researcher mastery remains unchanged."

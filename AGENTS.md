@@ -155,3 +155,7 @@ For mainline work, every meaningful paper/research update should consider update
 The long-term research program is the source of truth. Research workflows serve and update that program. The Comprehensive Exam Knowledge Base is a short-term downstream view: update it only when an upstream change directly affects an exam theme, anchor, writing claim, or oral question. Do not bind all workflow output to the exam.
 
 The research program is a persistent model of the user's field position. It must evolve when new evidence weakens or resolves old gaps.
+
+## Research workspace lifecycle
+
+For Radar, gap, question validation, experiment, exam or writing updates, read workflows/research-lifecycle.md. It defines stage handoffs, state ownership and conditional agent routing. Exam and writing are independent downstream workspaces.

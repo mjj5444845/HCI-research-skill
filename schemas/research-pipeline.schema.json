@@ -1,0 +1,381 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "research-pipeline",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "DRAFT",
+              "VALIDATING",
+              "RECOMMENDED",
+              "PURSUE",
+              "REFRAME",
+              "INCUBATE",
+              "CLOSED",
+              "REOPENED"
+            ]
+          },
+          "value": {
+            "type": "string"
+          },
+          "boundary": {
+            "type": "string"
+          },
+          "assumptions": {
+            "type": "string"
+          },
+          "gap_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "paper_slugs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "updated_at": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "statement",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "validations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "checked_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "search_scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "paper_slugs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "closest_work": {
+            "type": "string"
+          },
+          "support": {
+            "type": "string"
+          },
+          "counterevidence": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "kind",
+                "title",
+                "url"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "assessment": {
+            "type": "object",
+            "properties": {
+              "importance": {
+                "type": "string"
+              },
+              "novelty": {
+                "type": "string"
+              },
+              "answerability": {
+                "type": "string"
+              },
+              "feasibility": {
+                "type": "string"
+              },
+              "mainline_fit": {
+                "type": "string"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          },
+          "precise_statement": {
+            "type": "string"
+          },
+          "recommendation": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "question_id",
+          "checked_at",
+          "search_scope"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "studies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "DRAFT",
+              "PLANNED",
+              "RUNNING",
+              "READY",
+              "REFRAME",
+              "CLOSED"
+            ]
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "evidence_matrix": {
+            "type": "string"
+          },
+          "procedure": {
+            "type": "string"
+          },
+          "analysis": {
+            "type": "string"
+          },
+          "claim_boundary": {
+            "type": "string"
+          },
+          "pilot_waiver": {
+            "type": "string"
+          },
+          "resources": {
+            "type": "string"
+          },
+          "ethics": {
+            "type": "string"
+          },
+          "alternatives": {
+            "type": "string"
+          },
+          "risks": {
+            "type": "string"
+          },
+          "materials": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "question_id",
+          "title",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "pilots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "study_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "technical",
+              "simulation",
+              "protocol",
+              "measurement",
+              "participant",
+              "analysis",
+              "recruitment"
+            ]
+          },
+          "status": {
+            "enum": [
+              "PLANNED",
+              "RUNNING",
+              "COMPLETED",
+              "CLOSED"
+            ]
+          },
+          "target_risk": {
+            "type": "string",
+            "minLength": 1
+          },
+          "criteria": {
+            "type": "string",
+            "minLength": 1
+          },
+          "report": {
+            "type": "string"
+          },
+          "artifact_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "completed_at": {
+            "type": "string"
+          },
+          "design_changes": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "study_id",
+          "kind",
+          "status",
+          "target_risk",
+          "criteria"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "actor": {
+            "enum": [
+              "agent",
+              "researcher"
+            ]
+          },
+          "decision": {
+            "type": "string",
+            "minLength": 1
+          },
+          "date": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provenance": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "question_id",
+          "actor",
+          "decision",
+          "date",
+          "rationale"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "questions",
+    "validations",
+    "studies",
+    "pilots",
+    "decisions"
+  ],
+  "additionalProperties": false
+}

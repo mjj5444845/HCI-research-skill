@@ -1,0 +1,38 @@
+{
+  "id": "X20",
+  "slug": "x20-passing-the-pact",
+  "title": "Passing the Pact: Comparing Common Ground Building and Audience Design In Multiparty Human and Human-Agent Collaborative Communication",
+  "authors": ["Rhys Jacka", "Paola R. Peña", "Megan Nyhan", "Kate Walsh", "Sophie Leonard", "Holly Branigan", "Vincent Wade", "Benjamin R. Cowan"],
+  "year": 2026,
+  "venue": "Proceedings of the 26th ACM International Conference on Intelligent Virtual Agents",
+  "source_url": "https://doi.org/10.1145/3806774.3827983",
+  "doi": "10.1145/3806774.3827983",
+  "access_status": "abstract_only",
+  "priority": "Must Read",
+  "one_sentence": "Abstract-level evidence from a multiparty Tangram task suggests that people reuse prior conceptual pacts with less-knowledgeable human and agent addressees, while tailoring elaboration more strongly to human knowledge differences.",
+  "problem": "How do conceptual-pact reuse and audience design differ when a speaker addresses human versus agent interlocutors with different knowledge in multiparty collaborative communication?",
+  "method": "The accessible abstract reports a Tangram-based multiparty referential-communication comparison of human-human and human-agent dialogue under varying interlocutor knowledge. Sample size, trial sequence, agent implementation, coding reliability, and statistical model were not available.",
+  "findings": [
+    "The abstract reports reuse of previously negotiated pacts when addressing less-knowledgeable human and agent partners.",
+    "It also reports greater sensitivity to knowledge differences and more elaboration in human-human than human-agent communication."
+  ],
+  "real_contribution": "Directly separates surface pact reuse from partner-knowledge-sensitive audience design in a human-agent comparison, making it a close diagnostic neighbor for AMSC rather than evidence that a mutual human-agent convention has formed.",
+  "biggest_weakness": "Only an abstract was accessible, so similarity cannot be interpreted as equivalence and the evidence cannot establish mutual belief, agent-side learning, shared-history causality, repair, or transfer.",
+  "claim_boundary": "Supports a provisional speaker-behavior pattern in one multiparty reference task; it does not show that agents acquire, acknowledge, maintain, or repair conceptual pacts.",
+  "why_researcher_should_care": "It shows that pact-term reuse and epistemically appropriate audience design must be measured separately, and it adds interlocutor knowledge and capability beliefs to the controls required by the highest-priority AMSC study.",
+  "amsc": {
+    "mainline_fit": 9.3,
+    "buckets": ["C", "E"],
+    "stages": ["Grounding/common ground", "Convention formation", "Personalization/co-adaptation"],
+    "mechanisms": ["conceptual-pact reuse", "audience design", "interlocutor knowledge", "multiparty reference"],
+    "gap_ids": ["GAP-02", "GAP-03", "GAP-04", "GAP-07"],
+    "master_list_decision": "Candidate — Must Read / abstract-only human-agent pact boundary"
+  },
+  "investigation_status": "abstract_evidence_investigation",
+  "evidence_notes": [
+    "DOI metadata is verified; findings are taken from an accessible abstract mirror because the ACM full text was unavailable.",
+    "No equivalence, agent-state, embodiment, or causal shared-history claim is encoded."
+  ],
+  "provenance": "amsc_radar_2026-09-07",
+  "updated_at": "2026-09-07"
+}

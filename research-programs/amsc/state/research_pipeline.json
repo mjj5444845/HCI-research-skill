@@ -1,0 +1,224 @@
+{
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "RQ-1",
+      "statement": "Do communication gains causally depend on shared dyadic history beyond same-producer/style, externally supplied mappings, interlocutor-knowledge/capability beliefs, memory and task learning?",
+      "status": "DRAFT",
+      "value": "既有优先序 1 / HIGHEST_PRIORITY。共享历史的因果作用；作为候选问题待研究者决定。",
+      "boundary": "需要排除 shared priors、same-producer/style、externally supplied mappings、capability beliefs、memory availability 与 independent task learning；既有诊断不等于具身人机共同惯例已确立。",
+      "assumptions": "原始设计方向：original vs history-severed dyad; prior disruption; yoked/shuffled controls; pact reuse versus knowledge-sensitive elaboration, acceptance and natural use",
+      "gap_ids": [
+        "GAP-01",
+        "GAP-02",
+        "GAP-04",
+        "GAP-07"
+      ],
+      "paper_slugs": [
+        "c3-conceptual-pacts",
+        "c6-visual-resemblance-interaction-history",
+        "x13-silica-agent-societies",
+        "x20-passing-the-pact",
+        "x22-banana-man-pragmatic-interpretation",
+        "x23-machine-mental-imagery-common-ground",
+        "x9-aligned-not-partner-specific"
+      ],
+      "updated_at": "2026-09-07",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+    },
+    {
+      "id": "RQ-2",
+      "statement": "Can a grounded mapping survive role reversal and be repaired after controlled breakdown?",
+      "status": "DRAFT",
+      "value": "既有优先序 2 / NEXT_PHASE。相互修复与角色转换；作为候选问题待研究者决定。",
+      "boundary": "先建立 shared-history dependence，再检验 role reversal 与 controlled breakdown。检测 trouble、采取 repair、partner uptake 和 restored grounding 是不同证据。",
+      "assumptions": "原始设计方向：role reversal plus repair perturbation; separately measure trouble detection, repair action, uptake and restored grounding",
+      "gap_ids": [
+        "GAP-02",
+        "GAP-03",
+        "GAP-04",
+        "GAP-07"
+      ],
+      "paper_slugs": [
+        "c2-grounding-in-communication",
+        "x1-spotter-human-robot-conventions",
+        "x22-banana-man-pragmatic-interpretation",
+        "x24-multimodal-repair-detection"
+      ],
+      "updated_at": "2026-09-07",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+    },
+    {
+      "id": "RQ-3",
+      "statement": "When should multimodal conventions transfer, retire or be renegotiated, and how do instrumental and relational meanings trade off?",
+      "status": "DRAFT",
+      "value": "既有优先序 3 / LATER_PHASE。惯例生命周期及意义权衡；作为候选问题待研究者决定。",
+      "boundary": "需按 partner/context transfer、retirement、renegotiation 分阶段验证；social 与 instrumental meaning 不能预设为两个完全分离的领域。",
+      "assumptions": "原始设计方向：partner/context transfer plus longitudinal post-novelty study",
+      "gap_ids": [
+        "GAP-03",
+        "GAP-05",
+        "GAP-06",
+        "GAP-07"
+      ],
+      "paper_slugs": [
+        "x12-partners-to-populations",
+        "x14-bee-referential-code",
+        "x15-synthetic-linguistic-agency",
+        "x16-memuse-natural-integration"
+      ],
+      "updated_at": "2026-09-07",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+    }
+  ],
+  "validations": [
+    {
+      "id": "VAL-1-20260907",
+      "question_id": "RQ-1",
+      "checked_at": "2026-09-07",
+      "search_scope": "历史验证快照，来自 2026-09-07 Radar（窗口 2026-08-31 至 2026-09-07；arXiv、DOI、IVA、ICMI、SIGDIAL/ACL 与作者链）。本轮仅迁移，当前新颖性需更新核验。",
+      "paper_slugs": [
+        "c3-conceptual-pacts",
+        "c6-visual-resemblance-interaction-history",
+        "x13-silica-agent-societies",
+        "x20-passing-the-pact",
+        "x22-banana-man-pragmatic-interpretation",
+        "x23-machine-mental-imagery-common-ground",
+        "x9-aligned-not-partner-specific"
+      ],
+      "closest_work": "C3 · Conceptual Pacts and Lexical Choice in Conversation；支持 controlled human–human lexical reference 的 partner-specific historical effect；lexical reuse 不是 conceptual pact、population convention、multimodal convention 或 human–AI mutual belief 的充分证据。\nC6 · Visual Resemblance and Interaction History Jointly Constrain Pictorial Meaning；支持受控 human drawing 中 history-sensitive recognition 与 diagnostic conventions；不证明 mutual belief、human–robot、abstract social meaning、cross-modal、long-term 或 transferable convention。\nX13 · Benchmarking large language model agent societies against human behavioural distributions；Supports an LLM-agent diagnostic precedent, not human-equivalent convention formation, human–AI grounding, embodiment, or mutual belief.\nX20 · Passing the Pact: Comparing Common Ground Building and Audience Design In Multiparty Human and Human-Agent Collaborative Communication；Supports a provisional speaker-behavior pattern in one multiparty reference task; it does not show that agents acquire, acknowledge, maintain, or repair conceptual pacts.\nX22 · Which one is banana man? Evaluating vision–language models in multi-turn pragmatic interpretation；Shows that tested VLMs can retrieve externally available mappings yet struggle to bootstrap and repair them in this constrained overhearer task; it does not establish that all models cannot form conventions or that retrieval alone is grounding.\nX23 · Using Machine Mental Imagery for Representing Common Ground in Situated Dialogue；Supports incremental multimodal state representation and retrieval on human-human dialogue traces, not mutual acceptance, agent-partner common ground, convention formation, or online human-agent co-adaptation.\nX9 · Aligned but Not Partner-Specific: Distinguishing How Multimodal LLM Agents Succeed in Reference Games Without Human-Like Conventions；支持‘alignment/coordination 不足以证明 convention’，但不能推出所有模型或所有 training regimes 都缺乏 partner-specific grounding。",
+      "support": "既有审议要求区分 pact reuse、knowledge-sensitive elaboration、acceptance 与 natural use。X22 提供 established-mapping retrieval 与 endogenous correction 的诊断分离；X23 提供状态表示组件。",
+      "counterevidence": "X20 已使“人不向 agent 复用 pact”失效；X22 已使“模型不能使用 convention”失效。X20 为摘要级；不能主张统计等价或 agent-side common ground。",
+      "sources": [
+        {
+          "kind": "既有 Radar 审议",
+          "title": "2026-09-07 AMSC Radar",
+          "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/reports/radar/2026-09-07-amsc-mainline.md"
+        }
+      ],
+      "assessment": {
+        "importance": "既有优先级：1；未重新评分。",
+        "novelty": "保留历史 residual question，待更新 closest-work 核验。",
+        "answerability": "既有设计方向：original vs history-severed dyad; prior disruption; yoked/shuffled controls; pact reuse versus knowledge-sensitive elaboration, acceptance and natural use",
+        "feasibility": "尚未记录资源评估或实际 pilot；不能确认可行。",
+        "mainline_fit": "既有 AMSC 主线候选，关联 GAP-01、GAP-02、GAP-04、GAP-07"
+      },
+      "precise_statement": "Do communication gains causally depend on shared dyadic history beyond same-producer/style, externally supplied mappings, interlocutor-knowledge/capability beliefs, memory and task learning?",
+      "recommendation": "保留候选；先补当前证据核验和设计细节，不自动立项。",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+    },
+    {
+      "id": "VAL-2-20260907",
+      "question_id": "RQ-2",
+      "checked_at": "2026-09-07",
+      "search_scope": "历史验证快照，来自 2026-09-07 Radar（窗口 2026-08-31 至 2026-09-07；arXiv、DOI、IVA、ICMI、SIGDIAL/ACL 与作者链）。本轮仅迁移，当前新颖性需更新核验。",
+      "paper_slugs": [
+        "c2-grounding-in-communication",
+        "x1-spotter-human-robot-conventions",
+        "x22-banana-man-pragmatic-interpretation",
+        "x24-multimodal-repair-detection"
+      ],
+      "closest_work": "C2 · Grounding in Communication；这是理论框架与既有证据综合；system memory、task success 或 acknowledgment signal 都不能自动等同于 mutual grounding。\nX1 · SPOTTER: A Framework for Investigating Convention Formation in a Visually Grounded Human-Robot Reference Task；支持把 GAP-02 标为 partially addressed，但 human–robot shared convention 的机制、跨模态扩展与长期稳定性仍开放。\nX22 · Which one is banana man? Evaluating vision–language models in multi-turn pragmatic interpretation；Shows that tested VLMs can retrieve externally available mappings yet struggle to bootstrap and repair them in this constrained overhearer task; it does not establish that all models cannot form conventions or that retrieval alone is grounding.\nX24 · Do Visual Features Improve Other-Initiated Repair Detection? A Dyadic Multimodal Approach；Supports multimodal detection of human OIR signals in two corpora; it does not show that an agent can choose, execute, or learn an effective repair policy or build common ground.",
+      "support": "既有记录把 shared-history dependence 后的 role reversal 与 repair 作为下一阶段。X24 提供 multimodal trouble-signal detection，但尚不承担 repair outcome。",
+      "counterevidence": "检测 repair 信号不等于选择并执行有效修复。X22 为 archived human-dialogue matcher；X24 为 human–human corpora，不能直接推断 reciprocal embodied repair。",
+      "sources": [
+        {
+          "kind": "既有 Radar 审议",
+          "title": "2026-09-07 AMSC Radar",
+          "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/reports/radar/2026-09-07-amsc-mainline.md"
+        }
+      ],
+      "assessment": {
+        "importance": "既有优先级：2；未重新评分。",
+        "novelty": "保留历史 residual question，待更新 closest-work 核验。",
+        "answerability": "既有设计方向：role reversal plus repair perturbation; separately measure trouble detection, repair action, uptake and restored grounding",
+        "feasibility": "尚未记录资源评估或实际 pilot；不能确认可行。",
+        "mainline_fit": "既有 AMSC 主线候选，关联 GAP-02、GAP-03、GAP-04、GAP-07"
+      },
+      "precise_statement": "Can a grounded mapping survive role reversal and be repaired after controlled breakdown?",
+      "recommendation": "保留候选；先补当前证据核验和设计细节，不自动立项。",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+    },
+    {
+      "id": "VAL-3-20260907",
+      "question_id": "RQ-3",
+      "checked_at": "2026-09-07",
+      "search_scope": "历史验证快照，来自 2026-09-07 Radar（窗口 2026-08-31 至 2026-09-07；arXiv、DOI、IVA、ICMI、SIGDIAL/ACL 与作者链）。本轮仅迁移，当前新颖性需更新核验。",
+      "paper_slugs": [
+        "x12-partners-to-populations",
+        "x14-bee-referential-code",
+        "x15-synthetic-linguistic-agency",
+        "x16-memuse-natural-integration"
+      ],
+      "closest_work": "X12 · From Partners to Populations: A Hierarchical Bayesian Account of Coordination and Convention；解决 generic human convention transfer 的理论缺口，不解决 embodied human–AI 中如何在线检测、协商、修复或迁移 mapping。\nX14 · The emergence and evolution of a referential code in populations of bee-like agents；Does not establish interaction-timescale human–AI grounding, repair, partner specificity, multimodal integration, or socially relational meaning.\nX15 · Synthetic Linguistic Agency: How an Embodied Mortal Agent Learns Linguistic Affordances through Consequential Social Experience；Shows history-conditioned partner-mediated adaptation, not common ground, mutual convention, natural-language emergence, physical embodiment, or human social interpretation.\nX16 · MemUse: Moving Memory Evaluation from Direct QA to Natural Integration in Long-Term Human-AI Conversation；Does not demonstrate mutual belief, convention, reciprocal adaptation, embodiment, or that natural memory use causes satisfaction.",
+      "support": "既有 GAP-03/05/06 和 Q3 指向 partner/context transfer 与长期变化；既有文献提供迁移、具身约束和记忆使用的部分组件。",
+      "counterevidence": "不可不断添加 lifecycle 阶段来维持永远开放的 gap。固定 action/affect integration 已有先例；human linguistic transfer 与 AI simulation 不等于人机长期迁移。",
+      "sources": [
+        {
+          "kind": "既有 Radar 审议",
+          "title": "2026-09-07 AMSC Radar",
+          "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/reports/radar/2026-09-07-amsc-mainline.md"
+        }
+      ],
+      "assessment": {
+        "importance": "既有优先级：3；未重新评分。",
+        "novelty": "保留历史 residual question，待更新 closest-work 核验。",
+        "answerability": "既有设计方向：partner/context transfer plus longitudinal post-novelty study",
+        "feasibility": "尚未记录资源评估或实际 pilot；不能确认可行。",
+        "mainline_fit": "既有 AMSC 主线候选，关联 GAP-03、GAP-05、GAP-06、GAP-07"
+      },
+      "precise_statement": "When should multimodal conventions transfer, retire or be renegotiated, and how do instrumental and relational meanings trade off?",
+      "recommendation": "保留候选；先补当前证据核验和设计细节，不自动立项。",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+    }
+  ],
+  "studies": [
+    {
+      "id": "STUDY-1",
+      "question_id": "RQ-1",
+      "title": "共享历史的因果作用 · 既有诊断草案",
+      "status": "DRAFT",
+      "rationale": "迁移既有 design_stage；不是已执行或成熟方案。",
+      "evidence_matrix": "original vs history-severed dyad; prior disruption; yoked/shuffled controls; pact reuse versus knowledge-sensitive elaboration, acceptance and natural use",
+      "procedure": "原始设计方向：original vs history-severed dyad; prior disruption; yoked/shuffled controls; pact reuse versus knowledge-sensitive elaboration, acceptance and natural use。具体任务材料、条件分配和步骤尚待设计。",
+      "analysis": "原记录尚无完整分析计划；需在实施前明确主要指标、比较、排除标准和可支持结论。",
+      "claim_boundary": "需要排除 shared priors、same-producer/style、externally supplied mappings、capability beliefs、memory availability 与 independent task learning；既有诊断不等于具身人机共同惯例已确立。",
+      "risks": "X20 已使“人不向 agent 复用 pact”失效；X22 已使“模型不能使用 convention”失效。X20 为摘要级；不能主张统计等价或 agent-side common ground。",
+      "resources": "样本、设备、时间预算和招募方案未记录。",
+      "ethics": "尚未进入执行阶段，按最终设计完成适用的伦理审查。",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+    },
+    {
+      "id": "STUDY-2",
+      "question_id": "RQ-2",
+      "title": "相互修复与角色转换 · 既有诊断草案",
+      "status": "DRAFT",
+      "rationale": "迁移既有 design_stage；不是已执行或成熟方案。",
+      "evidence_matrix": "role reversal plus repair perturbation; separately measure trouble detection, repair action, uptake and restored grounding",
+      "procedure": "原始设计方向：role reversal plus repair perturbation; separately measure trouble detection, repair action, uptake and restored grounding。具体任务材料、条件分配和步骤尚待设计。",
+      "analysis": "原记录尚无完整分析计划；需在实施前明确主要指标、比较、排除标准和可支持结论。",
+      "claim_boundary": "先建立 shared-history dependence，再检验 role reversal 与 controlled breakdown。检测 trouble、采取 repair、partner uptake 和 restored grounding 是不同证据。",
+      "risks": "检测 repair 信号不等于选择并执行有效修复。X22 为 archived human-dialogue matcher；X24 为 human–human corpora，不能直接推断 reciprocal embodied repair。",
+      "resources": "样本、设备、时间预算和招募方案未记录。",
+      "ethics": "尚未进入执行阶段，按最终设计完成适用的伦理审查。",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+    },
+    {
+      "id": "STUDY-3",
+      "question_id": "RQ-3",
+      "title": "惯例生命周期及意义权衡 · 既有诊断草案",
+      "status": "DRAFT",
+      "rationale": "迁移既有 design_stage；不是已执行或成熟方案。",
+      "evidence_matrix": "partner/context transfer plus longitudinal post-novelty study",
+      "procedure": "原始设计方向：partner/context transfer plus longitudinal post-novelty study。具体任务材料、条件分配和步骤尚待设计。",
+      "analysis": "原记录尚无完整分析计划；需在实施前明确主要指标、比较、排除标准和可支持结论。",
+      "claim_boundary": "需按 partner/context transfer、retirement、renegotiation 分阶段验证；social 与 instrumental meaning 不能预设为两个完全分离的领域。",
+      "risks": "不可不断添加 lifecycle 阶段来维持永远开放的 gap。固定 action/affect integration 已有先例；human linguistic transfer 与 AI simulation 不等于人机长期迁移。",
+      "resources": "样本、设备、时间预算和招募方案未记录。",
+      "ethics": "尚未进入执行阶段，按最终设计完成适用的伦理审查。",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+    }
+  ],
+  "pilots": [],
+  "decisions": []
+}
