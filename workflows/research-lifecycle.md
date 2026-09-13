@@ -55,3 +55,9 @@ Exam and writing select from the research program. Their deadlines, chapter stru
 The first release is a generated reading workspace, maintained through the agent. Browser controls search and filter; they do not launch jobs or save state.
 After state changes: npm run build, npm run test:site. After workflow/state-topology changes: npm run validate.
 Use schemas/research-pipeline.schema.json and schemas/writing-workspace.schema.json as field contracts. Run node --test tests/research-workspace.test.mjs for lifecycle guard checks.
+
+## 中文阅读呈现
+
+论文、研究空白和问题页面默认使用通俗中文。先说明具体做法与发现，再说明证据不能支持什么，以及与研究主线的关系。不要用连续英文术语代替解释。中文标题标为工作译名，保留英文原标题、作者、出处和来源用于检索。例子须明确是解释性示例，不能写成实验结果。
+
+网页阅读内容维护在 `state/reading_zh.json`，原始审查记录仍作为证据来源。新增或修订论文、Gap、问题时，同时核对对应中文解读并更新来源哈希；源记录变化而解读未核对时，网页提示待复核。翻译或通俗改写不得改变研究状态、优先级、研究者决定及实际实验完成情况。

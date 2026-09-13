@@ -358,3 +358,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 
 
 .validation-record p,.pilot-record p,.writing-project p{white-space:pre-line}
+
+/* Chinese reading: keep explanations legible and headings subordinate. */
+.reading-card > h2 { font-size: clamp(1.3rem, 2.2vw, 1.65rem); line-height: 1.5; }
+.reading-section h2 { font-size: 1.15rem; line-height: 1.6; margin-bottom: .65rem; }
+.reading-card p, .reading-section p { font-size: 1rem; line-height: 1.9; max-width: 72ch; }
+.reading-card .reading-section { padding-block: 1rem; }
+.reading-card details { margin-block: 1rem; }

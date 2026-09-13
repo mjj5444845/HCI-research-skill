@@ -1,3 +1,4 @@
+import {readChinese, localizePapers, renderChineseReading} from "./chinese-reading.mjs";
 import { renderArchive } from "./content-archive.mjs";
 import fs from "node:fs";
 import { topics, readWorkspace, validateWorkspace, renderWorkspace } from "./research-workspace.mjs";
@@ -145,7 +146,9 @@ const agents = fs.readdirSync(path.join(root, ".codex", "agents"), { withFileTyp
   .map(entry => parseAgent(path.join(root, ".codex", "agents", entry.name)))
   .sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
 
-const papers = readPapers();
+const originalPapers = readPapers();
+const chineseReading = readChinese(root, originalPapers);
+const papers = localizePapers(originalPapers, chineseReading);
 const configToml = fs.readFileSync(path.join(root, ".codex", "config.toml"), "utf8").trim();
 const manifest = JSON.parse(fs.readFileSync(path.join(root, "manifest.json"), "utf8"));
 const dashboard = JSON.parse(fs.readFileSync(path.join(root, "research-programs", "amsc", "state", "workflow_dashboard.json"), "utf8"));
@@ -205,7 +208,7 @@ const rel = (depth, target = "") => `${"../".repeat(depth)}${target}`;
 function nav(depth, current) {
   const links = [
     ["home", "", "研究主线"], ["papers", "papers/", "论文库"],
-    ["gaps", "gaps/", "Gap 库"], ["questions", "questions/", "潜在研究问题"],
+    ["gaps", "gaps/", "研究空白库"], ["questions", "questions/", "潜在研究问题"],
     ["validation", "validation/", "验证与筛选"], ["studies", "studies/", "实验方案与报告"]
   ];
   return `
@@ -224,7 +227,7 @@ function nav(depth, current) {
 }
 
 function footer(depth) {
-  return `<footer class="site-footer"><div class="container footer-grid"><div><strong>AMSC Research OS</strong><br>围绕长期研究主线维护论文、证据、Gap 与研究决策。</div><div class="footer-links"><a href="${rel(depth, "program/")}">研究主线</a><a href="${rel(depth, "field-map/")}">领域状态</a><a href="${rel(depth, "skills/")}">工作流</a><a href="${rel(depth, "exam/")}">考试准备</a></div></div></footer>`;
+  return `<footer class="site-footer"><div class="container footer-grid"><div><strong>AMSC Research OS</strong><br>围绕长期研究主线维护论文、证据、研究空白与研究决策。</div><div class="footer-links"><a href="${rel(depth, "program/")}">研究主线</a><a href="${rel(depth, "field-map/")}">领域状态</a><a href="${rel(depth, "skills/")}">工作流</a><a href="${rel(depth, "exam/")}">考试准备</a></div></div></footer>`;
 }
 
 function page({ title, description, current, depth = 0, body }) {
@@ -343,7 +346,7 @@ const investigationCounts = papers.reduce((counts, paper) => {
   return counts;
 }, {});
 const fieldClaims = dashboard.field_map.claims;
-const dashboardGaps = dashboard.field_map.gaps;
+const dashboardGaps = dashboard.field_map.gaps.map(g => ({...g, statement:chineseReading.gaps[g.id]?.title || g.statement, research_implication:chineseReading.gaps[g.id]?.known || g.research_implication}));
 const claimableGaps = dashboardGaps.filter(gap => gap.claimability !== "CANNOT_CLAIM");
 const provisionalGaps = dashboardGaps.filter(gap => gap.claimability === "CANNOT_CLAIM");
 const evidenceLabel = value => ({
@@ -358,7 +361,7 @@ write("field-map/index.html", page({
   current: "field-map",
   depth: 1,
   body: `<section class="page-hero compact-hero"><div class="container"><span class="eyebrow">Current field state</span><h1>当前证据支持什么，哪些问题仍然值得研究。</h1><p>这是长期研究主线的证据层，不是考试笔记。页面将来源覆盖、调查深度、跨论文综合和研究机会分开，避免把“收录了论文”误写成“领域已经知道”。</p><div class="button-row"><a class="button" href="../program/">返回研究主线</a><a class="button" href="../papers/">查看论文证据</a></div></div></section>
-  <section class="section compact"><div class="container"><div class="evidence-summary" data-reveal><article class="summary-note"><strong>当前证据快照</strong><span>${escapeHtml(dashboard.field_map.coverage_note)}</span></article><article><strong>${investigationCounts.full_paper_investigation || 0}/41</strong><span>Baseline 全文审计</span></article><article><strong>${investigationCounts.abstract_evidence_investigation || 0}</strong><span>Baseline 摘要级审计</span></article><article><strong>${(investigationCounts.radar_full_text_audit || 0) + (investigationCounts.abstract_reviewed || 0) + (investigationCounts.source_verified_candidate || 0)}</strong><span>Radar / 搜索候选</span></article></div>
+  <section class="section compact"><div class="container"><div class="evidence-summary" data-reveal><article class="summary-note"><strong>当前证据快照</strong><span>${escapeHtml(dashboard.field_map.coverage_note)}</span></article><article><strong>${investigationCounts.full_paper_investigation || 0}/41</strong><span>Baseline 全文审计</span></article><article><strong>${investigationCounts.abstract_evidence_investigation || 0}</strong><span>Baseline 摘要级审计</span></article><article><strong>${(investigationCounts.radar_full_text_audit || 0) + (investigationCounts.abstract_reviewed || 0) + (investigationCounts.source_verified_candidate || 0)}</strong><span>监测与搜索候选</span></article></div>
   <div class="section-head"><div><span class="eyebrow">Cumulative claims</span><h2>领域判断的当前版本</h2></div><p>卡片只展示结论与状态；来源和边界折叠在“证据说明”中。跨论文 synthesis 不会伪装成单篇论文结论。</p></div>
   <div class="claim-list">${fieldClaims.map(claim => `<article class="claim-item" data-reveal><div class="claim-top"><strong>${escapeHtml(claim.id)}</strong><span class="status-pill ${statusClass(claim.status)}">${escapeHtml(fieldStatusZh[claim.status] || claim.status)}</span></div><h3>${escapeHtml(claim.statement)}</h3><div class="claim-meta"><span class="tag">证据：${escapeHtml(evidenceLabel(claim.evidence_strength))}</span></div><details class="disclosure"><summary>查看证据、边界与来源</summary><p><strong>适用边界：</strong>${escapeHtml(claim.boundary)}</p><div>${evidenceLinks(claim.evidence)}</div></details></article>`).join("")}</div></div></section>
   <section class="section tinted"><div class="container"><div class="section-head"><div><span class="eyebrow">Gap registry</span><h2>仍在审查的研究问题</h2></div><p>Gap 是可被新证据削弱、重定义或删除的主张。候选问题不会自动成为 novelty claim。</p></div><div class="gap-columns"><div><h3>当前主线 Gap</h3><div class="gap-stack">${claimableGaps.map(gap => `<article id="${slugify(gap.id)}" class="gap-card" data-reveal><div class="claim-top"><strong>${escapeHtml(gap.id)}</strong><span class="status-pill ${statusClass(gap.status)}">${escapeHtml(fieldStatusZh[gap.status] || gap.status)}</span></div><h3>${escapeHtml(gap.statement)}</h3><details class="disclosure"><summary>为什么仍值得研究</summary><p>${escapeHtml(gap.research_implication)}</p><div class="claim-meta"><span class="tag">优先级：${escapeHtml(gap.priority || "待定")}</span><span class="tag">证据：${escapeHtml(evidenceLabel(gap.evidence_strength))}</span></div></details></article>`).join("")}</div></div><aside><h3>尚不能作为 Gap 声称</h3><div class="gap-stack">${provisionalGaps.map(gap => `<article id="${slugify(gap.id)}" class="gap-card cannot-claim"><div class="claim-top"><strong>${escapeHtml(gap.id)}</strong><span class="status-pill status-cannot-claim">待验证</span></div><h3>${escapeHtml(gap.statement)}</h3><p>${escapeHtml(gap.research_implication)}</p></article>`).join("")}</div></aside></div></div></section>
@@ -406,22 +409,22 @@ write("program/index.html", page({
 const isBaselinePaper = paper => /^[A-G]\d+$/.test(String(paper.source_list_id || paper.id || ""));
 
 function paperCard(paper) {
-  const collection = isBaselinePaper(paper) ? `Baseline ${paper.source_list_id}` : "搜索候选";
+  const collection = isBaselinePaper(paper) ? `基础文献 ${paper.source_list_id}` : "搜索候选";
   const summary = paper.investigation_status === "full_paper_investigation"
     ? (paper.real_contribution || paper.problem || paper.one_sentence)
     : paper.one_sentence;
-  return `<article class="paper-card" data-reveal data-filter-item data-topic="${escapeHtml((paper.amsc?.buckets || []).join(' '))}" data-collection="${isBaselinePaper(paper) ? 'baseline' : 'radar'}"><div class="paper-year">${escapeHtml(paper.year)}</div><div><div class="paper-meta">${escapeHtml((paper.authors || []).join(", "))}${paper.venue ? ` · ${escapeHtml(paper.venue)}` : ""}</div><h3>${escapeHtml(paper.title)}</h3><p>${inlineMarkdown(summary)}</p><div class="tag-row"><span class="priority">${escapeHtml(paper.priority)}</span><span class="tag">${escapeHtml(collection)}</span><span class="tag">${escapeHtml(investigationLabel(paper.investigation_status))}</span></div><div class="tag-row">${(paper.amsc?.buckets || []).map(b => `<span class="tag">${escapeHtml(topics[b] || b)}</span>`).join("")}</div><a class="card-link" href="${escapeHtml(paper.slug)}/">查看拆解与证据 →</a></div></article>`;
+  return `<article class="paper-card" data-reveal data-filter-item data-topic="${escapeHtml((paper.amsc?.buckets || []).join(' '))}" data-collection="${isBaselinePaper(paper) ? 'baseline' : 'radar'}"><div class="paper-year">${escapeHtml(paper.year)}</div><div><div class="paper-meta">${escapeHtml((paper.authors || []).join(", "))}${paper.venue ? ` · ${escapeHtml(paper.venue)}` : ""}</div><h3>${escapeHtml(paper.title)}</h3><details><summary>英文原标题</summary><p>${escapeHtml(paper.original_title)}</p></details><p>${inlineMarkdown(summary)}</p><div class="tag-row"><span class="priority">${escapeHtml(({"Must Read":"优先阅读","Important":"重要","Optional":"按需阅读"})[paper.priority] || paper.priority)}</span><span class="tag">${escapeHtml(collection)}</span><span class="tag">${escapeHtml(investigationLabel(paper.investigation_status))}</span></div><div class="tag-row">${(paper.amsc?.buckets || []).map(b => `<span class="tag">${escapeHtml(topics[b] || b)}</span>`).join("")}</div><a class="card-link" href="${escapeHtml(paper.slug)}/">查看拆解与证据 →</a></div></article>`;
 }
 
 const baselinePapers = papers.filter(isBaselinePaper);
 const candidatePapers = papers.filter(paper => !isBaselinePaper(paper));
 const papersBody = `<div data-filter-root><div class="filter-bar"><label>研究主题 <select data-filter="topic"><option value="">全部主题</option>${Object.entries(topics).map(([id,label]) => `<option value="${id}">${id} · ${label}</option>`).join("")}</select></label><label>来源 <select data-filter="collection"><option value="">全部论文</option><option value="baseline">基础文献</option><option value="radar">Radar / 搜索候选</option></select></label><label>搜索 <input type="search" data-filter-search placeholder="标题、作者、机制或主题"></label><span data-filter-count aria-live="polite"></span></div><div class="grid two">${papers.map(paperCard).join("")}</div><p hidden data-filter-empty>没有匹配的论文，请调整筛选。</p></div>`;
 write("papers/index.html", page({
-  title: "Papers",
+  title: "论文库",
   description: "可追踪证据的论文知识界面：每篇已核验论文拥有独立页面，并明确区分 metadata、abstract 与 full-text 证据。",
   current: "papers",
   depth: 1,
-  body: `<section class="page-hero compact-hero"><div class="container"><span class="eyebrow">Evidence library</span><h1>每篇论文拥有独立、可审计的证据页面。</h1><p>论文库是长期研究主线的证据基础。页面明确区分书目核验、摘要调查与 finding-level 调查；全文可访问不等于已经精读。</p><div class="button-row"><a class="button" href="../program/">返回研究主线</a><a class="button" href="../field-map/">查看跨论文综合</a></div></div></section><section class="section compact"><div class="container">${papersBody}</div></section>`
+  body: `<section class="page-hero compact-hero"><div class="container"><span class="eyebrow">论文解读</span><h1>先读懂这篇论文，再决定怎样用它。</h1><p>每篇先用中文讲清做法、发现和局限，再说明与你的研究有什么关系。英文原标题可展开查看，也可直接搜索。仅有摘要的论文会明确标出。</p><div class="button-row"><a class="button" href="../program/">返回研究主线</a><a class="button" href="../field-map/">查看跨论文综合</a></div></div></section><section class="section compact"><div class="container">${papersBody}</div></section>`
 }));
 
 for (const paper of papers) {
@@ -451,7 +454,7 @@ for (const paper of papers) {
     description: paper.one_sentence,
     current: "papers",
     depth: 2,
-    body: `<section class="page-hero compact-hero paper-hero"><div class="container"><span class="eyebrow">${escapeHtml(collectionLabel)} · ${escapeHtml(paper.priority)}</span><h1>${escapeHtml(paper.title)}</h1><p><strong>${metadataOnly ? "清单定位" : "证据摘要"}：</strong>${inlineMarkdown(heroSummary)}</p><div class="tag-row">${[...(amsc.mechanisms || []), ...(amsc.buckets || [])].map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div><div class="button-row"><a class="button" href="../">返回论文库</a><a class="button" href="../../program/">研究主线</a></div></div></section><div class="container detail-shell"><article class="prose">${evidenceGate}${examinedContent}${paperSection("Claim boundary", paragraph(paper.claim_boundary))}${paperSection("逐项主张审查", (paper.claim_evidence_audit || []).map(item => `<h3>${escapeHtml(item.claim)}</h3><p>${escapeHtml(item.evidence)}</p><p>${escapeHtml(item.judgment)}</p>`).join(""))}${paperSection("可复用的方法", (paper.reusable || []).map(item => paragraph(item)).join(""))}${paperSection("何时回看", (paper.remember_when || []).map(item => paragraph(item)).join(""))}${paperSection("本次调查范围", paper.investigation_provenance ? paragraph(paper.investigation_provenance.scope) + (paper.investigation_provenance.sources || []).filter(url => typeof url === "string").map(url => `<p><a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">全文与核验来源 ↗</a></p>`).join("") : "")}${paperSection("待补全文", paper.access_attempts ? paragraph(paper.access_attempts.result) + paragraph(paper.access_attempts.needed) : "")}${paperSection("证据与来源说明", notes.length ? `<ul>${notes.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : "")}</article><aside class="side-panel"><h2>论文元数据</h2><dl><dt>作者</dt><dd>${escapeHtml(paper.authors.join(", "))}</dd><dt>年份 / Venue</dt><dd>${escapeHtml(paper.year)}${paper.venue ? ` · ${escapeHtml(paper.venue)}` : ""}</dd><dt>来源</dt><dd>${escapeHtml(accessLabels[paper.access_status] || paper.access_status)}</dd><dt>调查层级</dt><dd>${escapeHtml(investigationLabels[paper.investigation_status] || paper.investigation_status || "尚未标记")}</dd><dt>原始来源</dt><dd><a href="${escapeHtml(paper.source_url)}" target="_blank" rel="noreferrer">打开来源 ↗</a></dd>${paper.doi ? `<dt>DOI</dt><dd>${escapeHtml(paper.doi)}</dd>` : ""}<dt>AMSC 相关度</dt><dd>${fit === null ? "尚未评估" : `<div class="metric"><div class="metric-bar"><i style="--value:${fit * 10}%"></i></div><strong>${fit}/10</strong></div>`}</dd><dt>关联 Gap</dt><dd>${gapLinks}</dd><dt>Master List</dt><dd>${escapeHtml(amsc.master_list_decision || "尚未评估")}</dd></dl></aside></div>`
+    body: `<section class="page-hero compact-hero paper-hero"><div class="container"><span class="eyebrow">${escapeHtml(collectionLabel)} · ${escapeHtml(({"Must Read":"优先阅读","Important":"重要","Optional":"按需阅读"})[paper.priority] || paper.priority)}</span><h1>${escapeHtml(paper.title)}</h1><p><strong>${metadataOnly ? "清单定位" : "证据摘要"}：</strong>${inlineMarkdown(heroSummary)}</p><div class="tag-row">${[...(amsc.mechanisms || []), ...(amsc.buckets || [])].map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div><div class="button-row"><a class="button" href="../">返回论文库</a><a class="button" href="../../program/">研究主线</a></div></div></section><div class="container detail-shell"><article class="prose">${evidenceGate}${examinedContent}${paperSection("Claim boundary", paragraph(paper.claim_boundary))}${paperSection("逐项主张审查", (paper.claim_evidence_audit || []).map(item => `<h3>${escapeHtml(item.claim)}</h3><p>${escapeHtml(item.evidence)}</p><p>${escapeHtml(item.judgment)}</p>`).join(""))}${paperSection("可复用的方法", (paper.reusable || []).map(item => paragraph(item)).join(""))}${paperSection("何时回看", (paper.remember_when || []).map(item => paragraph(item)).join(""))}${paperSection("本次调查范围", paper.investigation_provenance ? paragraph(paper.investigation_provenance.scope) + (paper.investigation_provenance.sources || []).filter(url => typeof url === "string").map(url => `<p><a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">全文与核验来源 ↗</a></p>`).join("") : "")}${paperSection("待补全文", paper.access_attempts ? paragraph(paper.access_attempts.result) + paragraph(paper.access_attempts.needed) : "")}${paperSection("证据与来源说明", notes.length ? `<ul>${notes.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : "")}</article><aside class="side-panel"><h2>论文元数据</h2><dl><dt>作者</dt><dd>${escapeHtml(paper.authors.join(", "))}</dd><dt>年份 / Venue</dt><dd>${escapeHtml(paper.year)}${paper.venue ? ` · ${escapeHtml(paper.venue)}` : ""}</dd><dt>来源</dt><dd>${escapeHtml(accessLabels[paper.access_status] || paper.access_status)}</dd><dt>调查层级</dt><dd>${escapeHtml(investigationLabels[paper.investigation_status] || paper.investigation_status || "尚未标记")}</dd><dt>原始来源</dt><dd><a href="${escapeHtml(paper.source_url)}" target="_blank" rel="noreferrer">打开来源 ↗</a></dd>${paper.doi ? `<dt>DOI</dt><dd>${escapeHtml(paper.doi)}</dd>` : ""}<dt>AMSC 相关度</dt><dd>${fit === null ? "尚未评估" : `<div class="metric"><div class="metric-bar"><i style="--value:${fit * 10}%"></i></div><strong>${fit}/10</strong></div>`}</dd><dt>关联 Gap</dt><dd>${gapLinks}</dd><dt>Master List</dt><dd>${escapeHtml(amsc.master_list_decision || "尚未评估")}</dd></dl></aside></div>`
   }));
 }
 
@@ -463,6 +466,7 @@ write("404.html", page({
 }));
 
 const workspaceRoutes = renderWorkspace({page, write, papers, dashboard, workspace});
+renderChineseReading({page,write,papers,workspace,data:chineseReading});
 workspaceRoutes.push(...renderArchive({root,out,page,write,renderMarkdown,papers}));
 write("data/catalog.json", JSON.stringify({ workspaceRoutes, version: manifest.version, generated_at: new Date().toISOString(), skills: skills.map(({ body, ...skill }) => skill), agents: agents.map(({ instructions, ...agent }) => agent), papers, dashboard }, null, 2));
 write("schemas/paper-page.schema.json", fs.readFileSync(path.join(root, "schemas", "paper-page.schema.json"), "utf8"));
