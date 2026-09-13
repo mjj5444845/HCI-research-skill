@@ -1,6 +1,6 @@
 {
   "version": "1.5",
-  "last_updated": "2026-09-07T03:35:21-04:00",
+  "last_updated": "2026-09-12",
   "update_contract": "Paper Investigation、Literature Investigation、Research Radar、Idea Development 与 Study Design 的持久化结果首先更新长期 AMSC research program；只有直接改变考试主题、anchor、写作论点或口试问题的子集才进入 Comprehensive Exam 下游视图。",
   "next_scheduled_run": {
     "name": "AMSC 每周完整 Research Radar",
@@ -10,7 +10,7 @@
     "status": "ACTIVE"
   },
   "field_map": {
-    "coverage_note": "41 篇 baseline 已完成逐页证据审计：40 篇全文、F6 为摘要级（全文不可得）。另有 24 篇 Radar / missing-paper candidates，调查深度单独标注。Agent readiness 不代表 researcher reading/mastery；C5/C6 与 X19 的早期版本各按单一 empirical lineage 计数。",
+    "coverage_note": "65篇：63篇已有全文调查或全文Radar审查；F6、X20仍摘要级，全文访问受阻。2026-09-12补审X1–X5，不代表其余58篇本轮重新审查。",
     "status_definitions": {
       "STILL_HOLDS": "新证据没有推翻原结论，且其边界仍可辩护。",
       "STRENGTHENED": "新增独立证据提高了结论可信度或扩展了适用范围。",
@@ -818,6 +818,13 @@
       "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
       "date": "2026-09-07T03:35:21-04:00",
       "summary": "覆盖最新七日窗并恢复漏检/新 venue-index 条目；新增 X20–X24，GAP-07 重构为 linked modular protocol family；researcher mastery 未改。"
+    },
+    {
+      "id": "backlog-audit-2026-09-12",
+      "workflow": "Paper Investigation",
+      "status": "PARTIAL",
+      "date": "2026-09-12",
+      "summary": "X1–X5全文补审及独立反方复核完成；F6/X20等待可读全文。论文、Gap、问题验证同步更新。"
     }
   ],
   "provenance": {
@@ -1046,9 +1053,16 @@
       "baseline_total": 41,
       "full_paper_investigations": 40,
       "abstract_evidence_investigations": 1,
-      "degraded_ids": ["F6"],
-      "publication_status_caveats": ["D8", "D9"],
-      "metadata_corrections": ["E4"],
+      "degraded_ids": [
+        "F6"
+      ],
+      "publication_status_caveats": [
+        "D8",
+        "D9"
+      ],
+      "metadata_corrections": [
+        "E4"
+      ],
       "researcher_progress_changed": false
     }
   }

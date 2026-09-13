@@ -16,15 +16,16 @@
   "doi": null,
   "access_status": "full_text",
   "priority": "Must Read",
-  "one_sentence": "直接研究 visually grounded human–robot reference task 中的 common ground、repeated interaction 与 convention formation，是原 41 篇清单中最明显的主线遗漏。",
+  "one_sentence": "SPOTTER 的 21 名成人 WoZ 试验显示描述趋于稳定但未清晰缩短；它提供动态视觉指称框架，不证明自主机器人形成互惠惯例。",
   "problem": "人和机器人在重复的视觉指称任务中能否形成稳定的 referring conventions？",
   "findings": [
-    "论文提供约 5,000 条 utterances 的研究资源。",
-    "表达长度没有像典型 human–human repeated reference interaction 那样缩短，且 convention 稳定性受到 distractors 影响。"
+    "§5.2/Fig.3：观察到语义复用与稳定化；最大相似度不是双方认可或伙伴特异性的直接指标。",
+    "§5.2/Fig.4：平均描述未显示清晰缩短；没有等效检验，不能断言不存在缩短效应。",
+    "§6：新增相似角色伴随部分描述修订；未独立随机操纵歧义，不能识别修订机制的因果作用。"
   ],
-  "real_contribution": "把 convention formation 直接放进 human–robot visually grounded reference task，并提供可复用 framework 与语料。",
-  "biggest_weakness": "单一任务范式的结果不能代表所有 multimodal embodied convention；也不能据此认为 GAP-02 已完全解决。",
-  "claim_boundary": "支持把 GAP-02 标为 partially addressed，但 human–robot shared convention 的机制、跨模态扩展与长期稳定性仍开放。",
+  "real_contribution": "可复用的具身WoZ动态指称任务和注释语料，以及描述稳定化的探索证据。",
+  "biggest_weakness": "30%成人排除、两个版本混杂；重复频率、角色身份与“机器人朋友”的预先介绍混杂。低互惠WoZ政策与缺少HH对照限制机制解释。",
+  "claim_boundary": "21名成人的探索性描述复用，不等于自主机器人学习、HH/HRI等价、共同历史的因果作用或长期惯例。无显著性结果不能补写为不存在效应。",
   "amsc": {
     "mainline_fit": 9.8,
     "buckets": [
@@ -45,13 +46,71 @@
     ],
     "master_list_decision": "Candidate — Must Read"
   },
-  "method": "SPOTTER 以可调整的 visually grounded reference game 比较 human–human 与 human–robot interaction；两项 Dutch exploratory pilots 操作 familiar inner circle 与 unfamiliar outer circle，并发布约 5,000 条 utterances。",
-  "investigation_status": "abstract_reviewed",
-  "why_researcher_should_care": "直接研究 visually grounded human–robot reference task 中的 common ground、repeated interaction 与 convention formation，是原 41 篇清单中最明显的主线遗漏。",
+  "method": "两个荷兰语 pilot 共招募30名成人，排除9名未完成六轮者，分析21名成人（7/14）；人类director、NAO V6的WoZ matcher。内圈角色反复出现，外圈间歇出现。两版本同时改变图像、次序和位置任务；无同任务HH对照。4978 utterances、871 mentions；SentenceBERT相邻轮最大相似度与词长主要作描述性分析。",
+  "investigation_status": "full_paper_investigation",
+  "why_researcher_should_care": "为RQ1提供强closest work及动态distractor控制；RQ2可借用trouble—revision—uptake—reuse编码，但需新增互惠与历史操纵。",
   "evidence_notes": [
     "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
-    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。"
+    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。",
+    "2026-09-12：官方14页全文与附录；未重分析数据。独立审查角色：quantitative_rigor_auditor；主agent综合并写入。"
   ],
   "provenance": "missing_paper_attack_2026-08-26",
-  "updated_at": "2026-08-26"
+  "updated_at": "2026-09-12",
+  "correction_history": [
+    {
+      "date": "2026-09-12",
+      "previous_status": "abstract_reviewed",
+      "previous_authors": [
+        "Jaap Kruijt",
+        "Peggy van Minkelen",
+        "Lucia Donatelli",
+        "Piek T.J.M. Vossen",
+        "Elly Konijn",
+        "Thomas Baier"
+      ],
+      "previous_findings": [
+        "论文提供约 5,000 条 utterances 的研究资源。",
+        "表达长度没有像典型 human–human repeated reference interaction 那样缩短，且 convention 稳定性受到 distractors 影响。"
+      ],
+      "reason": "Independent specialist full-text audit; see investigation_provenance."
+    }
+  ],
+  "claim_evidence_audit": [
+    {
+      "claim": "形成共享惯例",
+      "evidence": "§5.2/Fig.3 相邻轮最大语义相似度",
+      "judgment": "支持描述稳定复用；不单独证明mutual acceptance或自主agent惯例。"
+    },
+    {
+      "claim": "机器人情境阻止表达缩短",
+      "evidence": "§5.2/Fig.4及§7；无同任务HH比较",
+      "judgment": "只可报告未观察到清晰缩短；不能归因于机器人身份。"
+    },
+    {
+      "claim": "动态视觉环境促使惯例修订",
+      "evidence": "§6 pp.15209–15210案例",
+      "judgment": "探索性共现；需随机化歧义与伙伴控制。"
+    }
+  ],
+  "reusable": [
+    "内外圈角色与动态distractor任务",
+    "提及跨度、轮次、TU语料结构；相似度应加入mean/first-mention与shuffled基线"
+  ],
+  "remember_when": [
+    "设计具身动态指称任务时。",
+    "需要区分描述稳定、缩短与互惠惯例时。"
+  ],
+  "last_verified": "2026-09-12",
+  "investigation_provenance": {
+    "date": "2026-09-12",
+    "reviewer": "quantitative_rigor_auditor",
+    "scope": "官方14页全文与附录；未重分析数据",
+    "sources": [
+      "https://aclanthology.org/2024.lrec-main.1322/",
+      "https://aclanthology.org/2024.lrec-main.1322.pdf"
+    ],
+    "state_writer": "primary agent",
+    "skeptic": "gap_red_team",
+    "data_reanalysis": false
+  }
 }

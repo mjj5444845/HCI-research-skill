@@ -1,5 +1,5 @@
-version: 0.5
-updated_at: 2026-09-07
+version: 0.6
+updated_at: 2026-09-12
 nodes:
   - id: paper:c1-referring-as-collaborative-process
     type: paper
@@ -444,27 +444,27 @@ nodes:
   - id: paper:x1-spotter-human-robot-conventions
     type: paper
     label: "SPOTTER"
-    evidence_status: abstract_reviewed
+    evidence_status: full_paper_investigation
     provenance: "https://aclanthology.org/2024.lrec-main.1322/"
   - id: paper:x2-lvlms-humans-ground-differently
     type: paper
     label: "LVLMs and Humans Ground Differently in Referential Communication"
-    evidence_status: abstract_reviewed
+    evidence_status: full_paper_investigation
     provenance: "https://aclanthology.org/2026.acl-long.410/"
   - id: paper:x3-seeing-eye-to-eye
     type: paper
     label: "Seeing Eye to Eye"
-    evidence_status: abstract_reviewed
+    evidence_status: full_paper_investigation
     provenance: "https://arxiv.org/abs/2603.12701"
   - id: paper:x4-making-memories-together
     type: paper
     label: "Making Memories Together"
-    evidence_status: source_verified
+    evidence_status: full_paper_investigation
     provenance: "https://research.utwente.nl/en/publications/making-memories-together-toward-transparent-and-co-constructed-ro/"
   - id: paper:x5-social-context-of-hri
     type: paper
     label: "The Social Context of Human–Robot Interactions"
-    evidence_status: source_verified
+    evidence_status: full_paper_investigation
     provenance: "https://www.annualreviews.org/content/journals/10.1146/annurev-control-030623-015506"
   - id: paper:x6-beyond-local-surprise
     type: paper
@@ -666,728 +666,728 @@ edges:
     relation: coauthored
     target_node: author:deanna-wilkes-gibbs
     evidence_status: verified
-    evidence: [c1-referring-as-collaborative-process]
+    evidence: [ c1-referring-as-collaborative-process ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:c1-referring-as-collaborative-process
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [c1-referring-as-collaborative-process]
+    evidence: [ c1-referring-as-collaborative-process ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c1-referring-as-collaborative-process
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [c1-referring-as-collaborative-process]
+    evidence: [ c1-referring-as-collaborative-process ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c1-referring-as-collaborative-process
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [c1-referring-as-collaborative-process]
+    evidence: [ c1-referring-as-collaborative-process ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:herbert-h-clark
     relation: coauthored
     target_node: author:susan-e-brennan
     evidence_status: verified
-    evidence: [c2-grounding-in-communication]
+    evidence: [ c2-grounding-in-communication ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:c2-grounding-in-communication
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [c2-grounding-in-communication]
+    evidence: [ c2-grounding-in-communication ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c2-grounding-in-communication
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [c2-grounding-in-communication]
+    evidence: [ c2-grounding-in-communication ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:susan-e-brennan
     relation: coauthored
     target_node: author:herbert-h-clark
     evidence_status: verified
-    evidence: [c3-conceptual-pacts]
+    evidence: [ c3-conceptual-pacts ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:c3-conceptual-pacts
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [c3-conceptual-pacts]
+    evidence: [ c3-conceptual-pacts ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c3-conceptual-pacts
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [c3-conceptual-pacts]
+    evidence: [ c3-conceptual-pacts ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c3-conceptual-pacts
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [c3-conceptual-pacts]
+    evidence: [ c3-conceptual-pacts ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:noah-d-goodman
     relation: coauthored
     target_node: author:michael-c-frank
     evidence_status: verified
-    evidence: [b1-pragmatic-language-interpretation]
+    evidence: [ b1-pragmatic-language-interpretation ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:b1-pragmatic-language-interpretation
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [b1-pragmatic-language-interpretation]
+    evidence: [ b1-pragmatic-language-interpretation ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:b1-pragmatic-language-interpretation
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [b1-pragmatic-language-interpretation]
+    evidence: [ b1-pragmatic-language-interpretation ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:b2-rational-speech-act-framework
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [b2-rational-speech-act-framework]
+    evidence: [ b2-rational-speech-act-framework ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:b2-rational-speech-act-framework
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [b2-rational-speech-act-framework]
+    evidence: [ b2-rational-speech-act-framework ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:b2-rational-speech-act-framework
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [b2-rational-speech-act-framework]
+    evidence: [ b2-rational-speech-act-framework ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:judith-e-fan
     relation: coauthored
     target_node: author:robert-d-hawkins
     evidence_status: verified
-    evidence: [b3-pragmatic-inference-visual-abstraction]
+    evidence: [ b3-pragmatic-inference-visual-abstraction ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:judith-e-fan
     relation: coauthored
     target_node: author:mike-wu
     evidence_status: verified
-    evidence: [b3-pragmatic-inference-visual-abstraction]
+    evidence: [ b3-pragmatic-inference-visual-abstraction ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:judith-e-fan
     relation: coauthored
     target_node: author:noah-d-goodman
     evidence_status: verified
-    evidence: [b3-pragmatic-inference-visual-abstraction]
+    evidence: [ b3-pragmatic-inference-visual-abstraction ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:b3-pragmatic-inference-visual-abstraction
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [b3-pragmatic-inference-visual-abstraction]
+    evidence: [ b3-pragmatic-inference-visual-abstraction ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:b3-pragmatic-inference-visual-abstraction
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [b3-pragmatic-inference-visual-abstraction]
+    evidence: [ b3-pragmatic-inference-visual-abstraction ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:robert-d-hawkins
     relation: coauthored
     target_node: author:michael-c-frank
     evidence_status: verified
-    evidence: [c4-repeated-reference-games]
+    evidence: [ c4-repeated-reference-games ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:robert-d-hawkins
     relation: coauthored
     target_node: author:noah-d-goodman
     evidence_status: verified
-    evidence: [c4-repeated-reference-games]
+    evidence: [ c4-repeated-reference-games ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:c4-repeated-reference-games
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [c4-repeated-reference-games]
+    evidence: [ c4-repeated-reference-games ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c4-repeated-reference-games
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [c4-repeated-reference-games]
+    evidence: [ c4-repeated-reference-games ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c4-repeated-reference-games
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [c4-repeated-reference-games]
+    evidence: [ c4-repeated-reference-games ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:robert-x-d-hawkins
     relation: coauthored
     target_node: author:megumi-sano
     evidence_status: verified
-    evidence: [c5-graphical-convention-formation]
+    evidence: [ c5-graphical-convention-formation ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:robert-x-d-hawkins
     relation: coauthored
     target_node: author:noah-d-goodman
     evidence_status: verified
-    evidence: [c5-graphical-convention-formation]
+    evidence: [ c5-graphical-convention-formation ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:robert-x-d-hawkins
     relation: coauthored
     target_node: author:judith-e-fan
     evidence_status: verified
-    evidence: [c5-graphical-convention-formation]
+    evidence: [ c5-graphical-convention-formation ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:c5-graphical-convention-formation
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [c5-graphical-convention-formation]
+    evidence: [ c5-graphical-convention-formation ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c5-graphical-convention-formation
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [c5-graphical-convention-formation]
+    evidence: [ c5-graphical-convention-formation ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c5-graphical-convention-formation
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [c5-graphical-convention-formation]
+    evidence: [ c5-graphical-convention-formation ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:robert-d-hawkins
     relation: coauthored
     target_node: author:megumi-sano
     evidence_status: verified
-    evidence: [c6-visual-resemblance-interaction-history]
+    evidence: [ c6-visual-resemblance-interaction-history ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:robert-d-hawkins
     relation: coauthored
     target_node: author:noah-d-goodman
     evidence_status: verified
-    evidence: [c6-visual-resemblance-interaction-history]
+    evidence: [ c6-visual-resemblance-interaction-history ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:robert-d-hawkins
     relation: coauthored
     target_node: author:judith-e-fan
     evidence_status: verified
-    evidence: [c6-visual-resemblance-interaction-history]
+    evidence: [ c6-visual-resemblance-interaction-history ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:c6-visual-resemblance-interaction-history
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [c6-visual-resemblance-interaction-history]
+    evidence: [ c6-visual-resemblance-interaction-history ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c6-visual-resemblance-interaction-history
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [c6-visual-resemblance-interaction-history]
+    evidence: [ c6-visual-resemblance-interaction-history ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c6-visual-resemblance-interaction-history
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [c6-visual-resemblance-interaction-history]
+    evidence: [ c6-visual-resemblance-interaction-history ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:william-p-mccarthy
     relation: coauthored
     target_node: author:robert-d-hawkins
     evidence_status: verified
-    evidence: [c7-shared-procedural-abstractions]
+    evidence: [ c7-shared-procedural-abstractions ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:william-p-mccarthy
     relation: coauthored
     target_node: author:haoliang-wang
     evidence_status: verified
-    evidence: [c7-shared-procedural-abstractions]
+    evidence: [ c7-shared-procedural-abstractions ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:william-p-mccarthy
     relation: coauthored
     target_node: author:cameron-holdaway
     evidence_status: verified
-    evidence: [c7-shared-procedural-abstractions]
+    evidence: [ c7-shared-procedural-abstractions ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:william-p-mccarthy
     relation: coauthored
     target_node: author:judith-e-fan
     evidence_status: verified
-    evidence: [c7-shared-procedural-abstractions]
+    evidence: [ c7-shared-procedural-abstractions ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:c7-shared-procedural-abstractions
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [c7-shared-procedural-abstractions]
+    evidence: [ c7-shared-procedural-abstractions ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c7-shared-procedural-abstractions
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [c7-shared-procedural-abstractions]
+    evidence: [ c7-shared-procedural-abstractions ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c7-shared-procedural-abstractions
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [c7-shared-procedural-abstractions]
+    evidence: [ c7-shared-procedural-abstractions ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:kiyosu-maeda
     relation: coauthored
     target_node: author:william-p-mccarthy
     evidence_status: verified
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:kiyosu-maeda
     relation: coauthored
     target_node: author:ching-yi-tsai
     evidence_status: verified
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:kiyosu-maeda
     relation: coauthored
     target_node: author:jeffrey-mu
     evidence_status: verified
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:kiyosu-maeda
     relation: coauthored
     target_node: author:haoliang-wang
     evidence_status: verified
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:kiyosu-maeda
     relation: coauthored
     target_node: author:robert-d-hawkins
     evidence_status: verified
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:kiyosu-maeda
     relation: coauthored
     target_node: author:judith-e-fan
     evidence_status: verified
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:kiyosu-maeda
     relation: coauthored
     target_node: author:parastoo-abtahi
     evidence_status: verified
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:c8-gesturing-toward-abstraction
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c8-gesturing-toward-abstraction
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c8-gesturing-toward-abstraction
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c8-gesturing-toward-abstraction
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c8-gesturing-toward-abstraction
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:a5-multimodal-parallel-architecture
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [a5-multimodal-parallel-architecture]
+    evidence: [ a5-multimodal-parallel-architecture ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:andrea-webb-luangrath
     relation: coauthored
     target_node: author:joann-peck
     evidence_status: verified
-    evidence: [a2-textual-paralanguage]
+    evidence: [ a2-textual-paralanguage ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:andrea-webb-luangrath
     relation: coauthored
     target_node: author:victor-a-barger
     evidence_status: verified
-    evidence: [a2-textual-paralanguage]
+    evidence: [ a2-textual-paralanguage ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:a2-textual-paralanguage
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [a2-textual-paralanguage]
+    evidence: [ a2-textual-paralanguage ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:jeffrey-t-hancock
     relation: coauthored
     target_node: author:mor-naaman
     evidence_status: verified
-    evidence: [a1-ai-mediated-communication]
+    evidence: [ a1-ai-mediated-communication ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:jeffrey-t-hancock
     relation: coauthored
     target_node: author:karen-levy
     evidence_status: verified
-    evidence: [a1-ai-mediated-communication]
+    evidence: [ a1-ai-mediated-communication ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:a1-ai-mediated-communication
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [a1-ai-mediated-communication]
+    evidence: [ a1-ai-mediated-communication ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:anca-d-dragan
     relation: coauthored
     target_node: author:kenton-c-t-lee
     evidence_status: verified
-    evidence: [d5-legibility-and-predictability]
+    evidence: [ d5-legibility-and-predictability ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:anca-d-dragan
     relation: coauthored
     target_node: author:siddhartha-s-srinivasa
     evidence_status: verified
-    evidence: [d5-legibility-and-predictability]
+    evidence: [ d5-legibility-and-predictability ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:d5-legibility-and-predictability
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [d5-legibility-and-predictability]
+    evidence: [ d5-legibility-and-predictability ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:d5-legibility-and-predictability
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [d5-legibility-and-predictability]
+    evidence: [ d5-legibility-and-predictability ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:guy-hoffman
     relation: coauthored
     target_node: author:wendy-ju
     evidence_status: verified
-    evidence: [d6-designing-robots-with-movement]
+    evidence: [ d6-designing-robots-with-movement ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:d6-designing-robots-with-movement
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [d6-designing-robots-with-movement]
+    evidence: [ d6-designing-robots-with-movement ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:d6-designing-robots-with-movement
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [d6-designing-robots-with-movement]
+    evidence: [ d6-designing-robots-with-movement ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:henny-admoni
     relation: coauthored
     target_node: author:brian-scassellati
     evidence_status: verified
-    evidence: [d7-social-eye-gaze-review]
+    evidence: [ d7-social-eye-gaze-review ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:d7-social-eye-gaze-review
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [d7-social-eye-gaze-review]
+    evidence: [ d7-social-eye-gaze-review ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:d7-social-eye-gaze-review
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [d7-social-eye-gaze-review]
+    evidence: [ d7-social-eye-gaze-review ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:d7-social-eye-gaze-review
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [d7-social-eye-gaze-review]
+    evidence: [ d7-social-eye-gaze-review ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:iolanda-leite
     relation: coauthored
     target_node: author:carlos-martinho
     evidence_status: verified
-    evidence: [e1-long-term-social-robots-survey]
+    evidence: [ e1-long-term-social-robots-survey ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:iolanda-leite
     relation: coauthored
     target_node: author:ana-paiva
     evidence_status: verified
-    evidence: [e1-long-term-social-robots-survey]
+    evidence: [ e1-long-term-social-robots-survey ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:e1-long-term-social-robots-survey
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [e1-long-term-social-robots-survey]
+    evidence: [ e1-long-term-social-robots-survey ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:e1-long-term-social-robots-survey
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [e1-long-term-social-robots-survey]
+    evidence: [ e1-long-term-social-robots-survey ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:stefanos-nikolaidis
     relation: coauthored
     target_node: author:david-hsu
     evidence_status: verified
-    evidence: [e2-human-robot-mutual-adaptation]
+    evidence: [ e2-human-robot-mutual-adaptation ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:stefanos-nikolaidis
     relation: coauthored
     target_node: author:siddhartha-srinivasa
     evidence_status: verified
-    evidence: [e2-human-robot-mutual-adaptation]
+    evidence: [ e2-human-robot-mutual-adaptation ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:e2-human-robot-mutual-adaptation
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [e2-human-robot-mutual-adaptation]
+    evidence: [ e2-human-robot-mutual-adaptation ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: author:robert-hawkins
     relation: coauthored
     target_node: author:minae-kwon
     evidence_status: verified
-    evidence: [e3-continual-adaptation-machine-communication]
+    evidence: [ e3-continual-adaptation-machine-communication ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:robert-hawkins
     relation: coauthored
     target_node: author:dorsa-sadigh
     evidence_status: verified
-    evidence: [e3-continual-adaptation-machine-communication]
+    evidence: [ e3-continual-adaptation-machine-communication ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: author:robert-hawkins
     relation: coauthored
     target_node: author:noah-goodman
     evidence_status: verified
-    evidence: [e3-continual-adaptation-machine-communication]
+    evidence: [ e3-continual-adaptation-machine-communication ]
     confidence: HIGH
     notes: "Verified from paper title page; star topology avoids implying unobserved lab membership."
   - source_node: paper:e3-continual-adaptation-machine-communication
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [e3-continual-adaptation-machine-communication]
+    evidence: [ e3-continual-adaptation-machine-communication ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:e3-continual-adaptation-machine-communication
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [e3-continual-adaptation-machine-communication]
+    evidence: [ e3-continual-adaptation-machine-communication ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:e3-continual-adaptation-machine-communication
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [e3-continual-adaptation-machine-communication]
+    evidence: [ e3-continual-adaptation-machine-communication ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:e3-continual-adaptation-machine-communication
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [e3-continual-adaptation-machine-communication]
+    evidence: [ e3-continual-adaptation-machine-communication ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from full-text investigation, not an author-claimed lineage."
   - source_node: paper:c2-grounding-in-communication
     relation: cites
     target_node: paper:c1-referring-as-collaborative-process
     evidence_status: verified
-    evidence: [c2-grounding-in-communication]
+    evidence: [ c2-grounding-in-communication ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:c3-conceptual-pacts
     relation: cites
     target_node: paper:c1-referring-as-collaborative-process
     evidence_status: verified
-    evidence: [c3-conceptual-pacts]
+    evidence: [ c3-conceptual-pacts ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:b2-rational-speech-act-framework
     relation: cites
     target_node: paper:b1-pragmatic-language-interpretation
     evidence_status: verified
-    evidence: [b2-rational-speech-act-framework]
+    evidence: [ b2-rational-speech-act-framework ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:c6-visual-resemblance-interaction-history
     relation: cites
     target_node: paper:b3-pragmatic-inference-visual-abstraction
     evidence_status: verified
-    evidence: [c6-visual-resemblance-interaction-history]
+    evidence: [ c6-visual-resemblance-interaction-history ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:c6-visual-resemblance-interaction-history
     relation: cites
     target_node: paper:c4-repeated-reference-games
     evidence_status: verified
-    evidence: [c6-visual-resemblance-interaction-history]
+    evidence: [ c6-visual-resemblance-interaction-history ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:c7-shared-procedural-abstractions
     relation: cites
     target_node: paper:c4-repeated-reference-games
     evidence_status: verified
-    evidence: [c7-shared-procedural-abstractions]
+    evidence: [ c7-shared-procedural-abstractions ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:c8-gesturing-toward-abstraction
     relation: cites
     target_node: paper:c1-referring-as-collaborative-process
     evidence_status: verified
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:c8-gesturing-toward-abstraction
     relation: cites
     target_node: paper:c3-conceptual-pacts
     evidence_status: verified
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:c8-gesturing-toward-abstraction
     relation: cites
     target_node: paper:c7-shared-procedural-abstractions
     evidence_status: verified
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:e3-continual-adaptation-machine-communication
     relation: cites
     target_node: paper:c1-referring-as-collaborative-process
     evidence_status: verified
-    evidence: [e3-continual-adaptation-machine-communication]
+    evidence: [ e3-continual-adaptation-machine-communication ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:e3-continual-adaptation-machine-communication
     relation: cites
     target_node: paper:b1-pragmatic-language-interpretation
     evidence_status: verified
-    evidence: [e3-continual-adaptation-machine-communication]
+    evidence: [ e3-continual-adaptation-machine-communication ]
     confidence: HIGH
     notes: "Verified in the audited reference list."
   - source_node: paper:c6-visual-resemblance-interaction-history
     relation: extends
     target_node: paper:c5-graphical-convention-formation
     evidence_status: inferred
-    evidence: [c6-visual-resemblance-interaction-history]
+    evidence: [ c6-visual-resemblance-interaction-history ]
     confidence: HIGH
     notes: "C6 explicitly identifies the CogSci 2019 paper as a subset; C5 is not an independent evidence source."
   - source_node: paper:c7-shared-procedural-abstractions
     relation: extends
     target_node: paper:c4-repeated-reference-games
     evidence_status: inferred
-    evidence: [c7-shared-procedural-abstractions]
+    evidence: [ c7-shared-procedural-abstractions ]
     confidence: MODERATE
     notes: "Extends repeated-reference dynamics toward hierarchical procedural structure."
   - source_node: paper:c8-gesturing-toward-abstraction
     relation: extends
     target_node: paper:c7-shared-procedural-abstractions
     evidence_status: inferred
-    evidence: [c8-gesturing-toward-abstraction]
+    evidence: [ c8-gesturing-toward-abstraction ]
     confidence: HIGH
     notes: "Extends the tower paradigm to multimodal physical AR collaboration."
 
@@ -1395,252 +1395,252 @@ edges:
     relation: coauthored
     target_node: author:taizhou-chen
     evidence_status: verified
-    evidence: [x15-synthetic-linguistic-agency]
+    evidence: [ x15-synthetic-linguistic-agency ]
     confidence: HIGH
     notes: "Verified from the arXiv paper record; no lab membership inferred."
   - source_node: author:ryuichi-sumida
     relation: coauthored
     target_node: author:koji-inoue
     evidence_status: verified
-    evidence: [x16-memuse-natural-integration]
+    evidence: [ x16-memuse-natural-integration ]
     confidence: HIGH
     notes: "Verified from the arXiv paper record; no lab membership inferred."
   - source_node: author:ryuichi-sumida
     relation: coauthored
     target_node: author:tatsuya-kawahara
     evidence_status: verified
-    evidence: [x16-memuse-natural-integration]
+    evidence: [ x16-memuse-natural-integration ]
     confidence: HIGH
     notes: "Verified from the arXiv paper record; no lab membership inferred."
   - source_node: paper:x13-silica-agent-societies
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [x13-silica-agent-societies]
+    evidence: [ x13-silica-agent-societies ]
     confidence: HIGH
     notes: "AMSC mechanism mapping; the paper audits rather than establishes human-equivalent convention."
   - source_node: paper:x14-bee-referential-code
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [x14-bee-referential-code]
+    evidence: [ x14-bee-referential-code ]
     confidence: MODERATE
     notes: "AMSC mechanism mapping from a bee-inspired evolutionary simulation."
   - source_node: paper:x14-bee-referential-code
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [x14-bee-referential-code]
+    evidence: [ x14-bee-referential-code ]
     confidence: HIGH
     notes: "AMSC mechanism mapping from explicit referential-code emergence and transition."
   - source_node: paper:x14-bee-referential-code
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [x14-bee-referential-code]
+    evidence: [ x14-bee-referential-code ]
     confidence: MODERATE
     notes: "Evolutionary adaptation is not equated with interaction-timescale human adaptation."
   - source_node: paper:x14-bee-referential-code
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [x14-bee-referential-code]
+    evidence: [ x14-bee-referential-code ]
     confidence: MODERATE
     notes: "Body geometry and ecological constraint are modeled, but no physical robot or human is studied."
   - source_node: paper:x15-synthetic-linguistic-agency
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [x15-synthetic-linguistic-agency]
+    evidence: [ x15-synthetic-linguistic-agency ]
     confidence: HIGH
     notes: "AMSC mechanism mapping from persistent history-conditioned policy change."
   - source_node: paper:x15-synthetic-linguistic-agency
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [x15-synthetic-linguistic-agency]
+    evidence: [ x15-synthetic-linguistic-agency ]
     confidence: MODERATE
     notes: "Simulation includes consequential body state; physical embodiment and human interpretation are absent."
   - source_node: paper:x16-memuse-natural-integration
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [x16-memuse-natural-integration]
+    evidence: [ x16-memuse-natural-integration ]
     confidence: MODERATE
     notes: "Natural integration is a grounding-adjacent diagnostic, not evidence of mutual belief."
   - source_node: paper:x16-memuse-natural-integration
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [x16-memuse-natural-integration]
+    evidence: [ x16-memuse-natural-integration ]
     confidence: MODERATE
     notes: "Long-term history use is relevant to adaptation but does not establish convention."
   - source_node: paper:x17-glossogen-emergent-language
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [x17-glossogen-emergent-language]
+    evidence: [ x17-glossogen-emergent-language ]
     confidence: HIGH
     notes: "Prompted AI–AI shorthand negotiation, partner swap and newcomer uptake are lifecycle neighbors, not human common ground."
   - source_node: paper:x17-glossogen-emergent-language
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [x17-glossogen-emergent-language]
+    evidence: [ x17-glossogen-emergent-language ]
     confidence: MODERATE
     notes: "History dosage and clarification behavior map to adaptation while one swap does not establish cumulative cultural evolution."
   - source_node: paper:x18-small-talk-rapport
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [x18-small-talk-rapport]
+    evidence: [ x18-small-talk-rapport ]
     confidence: HIGH
     notes: "Physical collaboration supplies a non-monotonic social–functional boundary without convention formation."
   - source_node: paper:x19-continuous-worlds-vocabularies
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [x19-continuous-worlds-vocabularies]
+    evidence: [ x19-continuous-worlds-vocabularies ]
     confidence: HIGH
     notes: "Strong computational method anchor for decentralized population-level lexical convergence."
   - source_node: paper:x19-continuous-worlds-vocabularies
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [x19-continuous-worlds-vocabularies]
+    evidence: [ x19-continuous-worlds-vocabularies ]
     confidence: HIGH
     notes: "Sensor heterogeneity and perturbation recovery are AI-population adaptation precedents, not human–AI co-adaptation."
   - source_node: author:rhys-jacka
     relation: coauthored
     target_node: author:holly-branigan
     evidence_status: verified
-    evidence: [x20-passing-the-pact]
+    evidence: [ x20-passing-the-pact ]
     confidence: HIGH
     notes: "Verified from DOI metadata; no lab, supervisory or lineage relation inferred."
   - source_node: author:rhys-jacka
     relation: coauthored
     target_node: author:benjamin-r-cowan
     evidence_status: verified
-    evidence: [x20-passing-the-pact]
+    evidence: [ x20-passing-the-pact ]
     confidence: HIGH
     notes: "Verified from DOI metadata; no lab, supervisory or lineage relation inferred."
   - source_node: author:shiwei-hong
     relation: coauthored
     target_node: author:zhicong-lu
     evidence_status: verified
-    evidence: [x21-social-pragmatic-chinese-comments]
+    evidence: [ x21-social-pragmatic-chinese-comments ]
     confidence: HIGH
     notes: "Verified from the arXiv record; no lab or supervisory relation inferred."
   - source_node: author:alvin-w-m-tan
     relation: coauthored
     target_node: author:ben-prystawski
     evidence_status: verified
-    evidence: [x22-banana-man-pragmatic-interpretation]
+    evidence: [ x22-banana-man-pragmatic-interpretation ]
     confidence: HIGH
     notes: "Verified from the arXiv record; no lab or supervisory relation inferred."
   - source_node: author:alvin-w-m-tan
     relation: coauthored
     target_node: author:veronica-boyce
     evidence_status: verified
-    evidence: [x22-banana-man-pragmatic-interpretation]
+    evidence: [ x22-banana-man-pragmatic-interpretation ]
     confidence: HIGH
     notes: "Verified from the arXiv record; no lab or supervisory relation inferred."
   - source_node: author:biswesh-mohapatra
     relation: coauthored
     target_node: author:justine-cassell
     evidence_status: verified
-    evidence: [x23-machine-mental-imagery-common-ground]
+    evidence: [ x23-machine-mental-imagery-common-ground ]
     confidence: HIGH
     notes: "Verified from the arXiv record; no lab or supervisory relation inferred."
   - source_node: author:anh-ngo
     relation: coauthored
     target_node: author:catherine-pelachaud
     evidence_status: verified
-    evidence: [x24-multimodal-repair-detection]
+    evidence: [ x24-multimodal-repair-detection ]
     confidence: HIGH
     notes: "Verified from paper metadata; no lab or supervisory relation inferred."
   - source_node: author:anh-ngo
     relation: coauthored
     target_node: author:chloe-clavel
     evidence_status: verified
-    evidence: [x24-multimodal-repair-detection]
+    evidence: [ x24-multimodal-repair-detection ]
     confidence: HIGH
     notes: "Verified from paper metadata; no lab or supervisory relation inferred."
   - source_node: paper:x20-passing-the-pact
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [x20-passing-the-pact]
+    evidence: [ x20-passing-the-pact ]
     confidence: MODERATE
     notes: "The abstract frames common-ground building, but does not expose internal-state or full grounding-cycle evidence."
   - source_node: paper:x20-passing-the-pact
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [x20-passing-the-pact]
+    evidence: [ x20-passing-the-pact ]
     confidence: MODERATE
     notes: "Conceptual pacts are directly studied; reuse is not automatically partner-specific mutual convention."
   - source_node: paper:x20-passing-the-pact
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [x20-passing-the-pact]
+    evidence: [ x20-passing-the-pact ]
     confidence: MODERATE
     notes: "Maps only to knowledge-sensitive audience design, not longitudinal or reciprocal co-adaptation."
   - source_node: paper:x21-social-pragmatic-chinese-comments
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [x21-social-pragmatic-chinese-comments]
+    evidence: [ x21-social-pragmatic-chinese-comments ]
     confidence: HIGH
     notes: "Direct social-pragmatic meaning diagnostic; full context is not encoded as mutual common ground."
   - source_node: paper:x22-banana-man-pragmatic-interpretation
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [x22-banana-man-pragmatic-interpretation]
+    evidence: [ x22-banana-man-pragmatic-interpretation ]
     confidence: MODERATE
     notes: "Uses prior interaction and feedback to test interpretation, without observing reciprocal grounding."
   - source_node: paper:x22-banana-man-pragmatic-interpretation
     relation: intellectual_lineage
     target_node: concept:convention
     evidence_status: inferred
-    evidence: [x22-banana-man-pragmatic-interpretation]
+    evidence: [ x22-banana-man-pragmatic-interpretation ]
     confidence: HIGH
     notes: "Directly separates retrieval of game-specific conventions from their endogenous construction and repair."
   - source_node: paper:x22-banana-man-pragmatic-interpretation
     relation: intellectual_lineage
     target_node: concept:adaptation
     evidence_status: inferred
-    evidence: [x22-banana-man-pragmatic-interpretation]
+    evidence: [ x22-banana-man-pragmatic-interpretation ]
     confidence: MODERATE
     notes: "Limited feedback and recovery dynamics are adaptation diagnostics, not evidence of successful co-adaptation."
   - source_node: paper:x23-machine-mental-imagery-common-ground
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [x23-machine-mental-imagery-common-ground]
+    evidence: [ x23-machine-mental-imagery-common-ground ]
     confidence: MODERATE
     notes: "Architecture stores inspectable dialogue-derived state; system representation is not mutually recognized common ground."
   - source_node: paper:x23-machine-mental-imagery-common-ground
     relation: intellectual_lineage
     target_node: concept:meaning
     evidence_status: inferred
-    evidence: [x23-machine-mental-imagery-common-ground]
+    evidence: [ x23-machine-mental-imagery-common-ground ]
     confidence: MODERATE
     notes: "Depictive and propositional artifacts preserve complementary meaning while indirect and negative content remains difficult."
   - source_node: paper:x24-multimodal-repair-detection
     relation: intellectual_lineage
     target_node: concept:grounding
     evidence_status: inferred
-    evidence: [x24-multimodal-repair-detection]
+    evidence: [ x24-multimodal-repair-detection ]
     confidence: HIGH
     notes: "Other-initiated repair is a direct grounding mechanism; detection is not successful repair or restored common ground."
   - source_node: paper:x24-multimodal-repair-detection
     relation: intellectual_lineage
     target_node: concept:embodied-communication
     evidence_status: inferred
-    evidence: [x24-multimodal-repair-detection]
+    evidence: [ x24-multimodal-repair-detection ]
     confidence: MODERATE
     notes: "Human gaze, face, body and gesture carry trouble signals; no embodied agent was evaluated."
 edge_policy:
@@ -1663,17 +1663,17 @@ next_question_priority:
       rationale: "This is the minimum falsification needed before calling success, shortening, alignment or pact reuse a partner-specific convention; X20/X22 show that surface reuse and retrieval can occur without demonstrated endogenous mutual construction."
       design_stage: "original dyad vs history-severed pseudo-dyad; shared vs individually permuted/novel signal space; same-producer yoked vs shuffled; retrieval vs natural-integration; pact reuse vs knowledge-sensitive elaboration and acceptance"
       status: HIGHEST_PRIORITY
-      evidence: [c3-conceptual-pacts, c5-graphical-convention-formation, c6-visual-resemblance-interaction-history, c8-gesturing-toward-abstraction, e3-continual-adaptation-machine-communication, x9-aligned-not-partner-specific, x13-silica-agent-societies, x16-memuse-natural-integration, x17-glossogen-emergent-language, x19-continuous-worlds-vocabularies, x20-passing-the-pact, x22-banana-man-pragmatic-interpretation, x23-machine-mental-imagery-common-ground]
+      evidence: [ c3-conceptual-pacts, c5-graphical-convention-formation, c6-visual-resemblance-interaction-history, c8-gesturing-toward-abstraction, e3-continual-adaptation-machine-communication, x9-aligned-not-partner-specific, x13-silica-agent-societies, x16-memuse-natural-integration, x17-glossogen-emergent-language, x19-continuous-worlds-vocabularies, x20-passing-the-pact, x22-banana-man-pragmatic-interpretation, x23-machine-mental-imagery-common-ground ]
     - rank: 2
       question: "After shared-history dependence is established, can the mapping survive role reversal and be deliberately repaired after controlled breakdown?"
       rationale: "Tests reciprocity and repair after separating trouble-signal detection, recovery from feedback, repair action and restored grounding."
       design_stage: "role reversal plus repair perturbation; multimodal OIR detection followed by repair-policy and uptake measures"
       status: NEXT_PHASE
-      evidence: [c1-referring-as-collaborative-process, c2-grounding-in-communication, c3-conceptual-pacts, c4-repeated-reference-games, x17-glossogen-emergent-language, x22-banana-man-pragmatic-interpretation, x24-multimodal-repair-detection]
+      evidence: [ c1-referring-as-collaborative-process, c2-grounding-in-communication, c3-conceptual-pacts, c4-repeated-reference-games, x17-glossogen-emergent-language, x22-banana-man-pragmatic-interpretation, x24-multimodal-repair-detection ]
     - rank: 3
       question: "When should a multimodal convention transfer, retire, or be renegotiated across partner and context changes, and how do instrumental and relational meanings trade off?"
       rationale: "Connects lifecycle control to embodied social and functional communication after the core causal criterion is validated."
       design_stage: "partner/context transfer and longitudinal post-novelty study"
       status: LATER_PHASE
-      evidence: [d5-legibility-and-predictability, d6-designing-robots-with-movement, d7-social-eye-gaze-review, d9-anatomy-of-uncertainty, e1-long-term-social-robots-survey, e2-human-robot-mutual-adaptation, f5-robots-in-the-wild, g3-explainable-oohri, x14-bee-referential-code, x15-synthetic-linguistic-agency, x18-small-talk-rapport, x19-continuous-worlds-vocabularies, x20-passing-the-pact]
+      evidence: [ d5-legibility-and-predictability, d6-designing-robots-with-movement, d7-social-eye-gaze-review, d9-anatomy-of-uncertainty, e1-long-term-social-robots-survey, e2-human-robot-mutual-adaptation, f5-robots-in-the-wild, g3-explainable-oohri, x14-bee-referential-code, x15-synthetic-linguistic-agency, x18-small-talk-rapport, x19-continuous-worlds-vocabularies, x20-passing-the-pact ]
   novelty_warning: "The opportunity is mechanism and measurement, not the conjunction claim that no paper simultaneously covers human–AI, embodiment, multimodality, reciprocity, longitudinality and social meaning."

@@ -19,12 +19,13 @@
   "doi": "10.18653/v1/2026.acl-long.410",
   "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "通过 human–human、human–AI、AI–human 与 AI–AI 的 repeated reference 对照，检验 LVLM 是否形成 human-like interactive common ground。",
+  "one_sentence": "四种角色组合的89对篮子指称任务揭示GPT-5.2配置与人类的协作轨迹差异；不能把感知、错序和prompt故障统称为缺乏共同基础。",
   "findings": [
-    "论文报告 LVLM 与人类在 referential communication 中的 grounding 方式不同。",
-    "现有模型尚不能像人一样交互式建立和解析 referring expressions。"
+    "Table1/Fig.2：HH准确率改善，AA均值92.2→90.1→84.4→76.6%；AI参与条件存在角色不对称。",
+    "Fig.6–8：描述错序、错对象及repair失败案例；作者未系统编码全体repair，不能确立统一失败机制。",
+    "RE自动提取在外部HH语料验证，不等于本研究四条件均经人工校验。"
   ],
-  "claim_boundary": "结果细化了 GAP-02/GAP-04：问题不只是保存 interaction history，还在于更新机制是否产生 human-like grounding。",
+  "claim_boundary": "描述性比较支持该配置的轨迹差异；无history ablation，不能证明历史无贡献或所有LVLM不能grounding。README与论文关于排序/反馈存在配置差异，复现需核对branch/commit。",
   "amsc": {
     "mainline_fit": 9.2,
     "buckets": [
@@ -46,15 +47,77 @@
     "master_list_decision": "Candidate — Important"
   },
   "problem": "LVLM 是否能够在多轮 repeated referential communication 中建立、更新并使用与人类相似的 common ground？",
-  "method": "Factorial director–matcher design 比较 human–human、human–AI、AI–human 与 AI–AI；89 对参与者/Agent 完成四轮互动，共形成 356 段 dialogues，并分析 accuracy、efficiency 与 lexical overlap。",
-  "real_contribution": "把模型的 common-ground deficit 放进与 human baseline 可比的多轮实验，而不只检验单轮视觉问答能力。",
-  "biggest_weakness": "任务使用难以直接 lexicalize 的对象图片；结果说明这一范式中的 grounding failure，但不能自动外推到所有 LVLM 或 embodied settings。",
-  "investigation_status": "abstract_reviewed",
-  "why_researcher_should_care": "通过 human–human、human–AI、AI–human 与 AI–AI 的 repeated reference 对照，检验 LVLM 是否形成 human-like interactive common ground。",
+  "method": "官方v2全文：HH32、HA22、AH17、AA18对，共89对×4轮=356 dialogues，103人。12篮子每轮重排，matcher另见6 distractors；固定伙伴/角色、在线文本。主AI为GPT-5.2 reasoning=none。比较准确率、words/turns、自动提取RE与词汇重合；报告OLS轮次斜率。跨模型/推理后续每条件最多2次，属探索。",
+  "real_contribution": "可复用的HH/HA/AH/AA自由多轮比较与语料，为区分成功、成本、词汇对齐和伙伴建模提供诊断来源。",
+  "biggest_weakness": "主比较仅一种模型配置；prompt确认要求、视觉/顺序状态故障及分批招募可能混淆。重复pair依赖、条件×轮次与斜率区间报告不够明确。",
+  "investigation_status": "full_paper_investigation",
+  "why_researcher_should_care": "RQ1需同时控制通用状态追踪、信息量与prompt；RQ2需将repair机会、政策、uptake与后续成功分测。",
   "evidence_notes": [
     "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
-    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。"
+    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。",
+    "2026-09-12：官方v2 27页全文、附录prompt及作者仓库说明；未重分析语料。独立审查角色：quantitative_rigor_auditor；主agent综合并写入。"
   ],
   "provenance": "missing_paper_attack_2026-08-26",
-  "updated_at": "2026-08-26"
+  "updated_at": "2026-09-12",
+  "correction_history": [
+    {
+      "date": "2026-09-12",
+      "previous_status": "abstract_reviewed",
+      "previous_authors": [
+        "Peter Zeng",
+        "Weiling Li",
+        "Amie J. Paige",
+        "Zhengxiang Wang",
+        "Panagiotis Kaliosis",
+        "Dimitris Samaras",
+        "Gregory Zelinsky",
+        "Susan E. Brennan",
+        "Owen Rambow"
+      ],
+      "previous_findings": [
+        "论文报告 LVLM 与人类在 referential communication 中的 grounding 方式不同。",
+        "现有模型尚不能像人一样交互式建立和解析 referring expressions。"
+      ],
+      "reason": "Independent specialist full-text audit; see investigation_provenance."
+    }
+  ],
+  "claim_evidence_audit": [
+    {
+      "claim": "AI不能形成conceptual pact",
+      "evidence": "§4–5/Table1/Fig.2；单GPT-5.2配置",
+      "judgment": "词汇、成功与成本轨迹不同；不缩短/高重合均非pact存在与否的充分指标。"
+    },
+    {
+      "claim": "共同基础缺失导致失败",
+      "evidence": "§5案例同时包含视觉与错序错误",
+      "judgment": "未分离通用状态管理和grounding；不能作机制因果结论。"
+    },
+    {
+      "claim": "repair失败已被系统证明",
+      "evidence": "Fig.6–8及limitations",
+      "judgment": "有案例，尚无全语料系统repair分析；后续少量run保持探索标签。"
+    }
+  ],
+  "reusable": [
+    "四种角色组合语料",
+    "逐pair/item的准确率与成本联合分析；repair与视觉/序列错误分层人工编码"
+  ],
+  "remember_when": [
+    "选择人机重复指称的强基线时。",
+    "需要区分通用任务故障与伙伴建模不足时。"
+  ],
+  "last_verified": "2026-09-12",
+  "investigation_provenance": {
+    "date": "2026-09-12",
+    "reviewer": "quantitative_rigor_auditor",
+    "scope": "官方v2 27页全文、附录prompt及作者仓库说明；未重分析语料",
+    "sources": [
+      "https://aclanthology.org/2026.acl-long.410/",
+      "https://aclanthology.org/2026.acl-long.410v2.pdf",
+      "https://github.com/peterzeng/lvlms-referential-game"
+    ],
+    "state_writer": "primary agent",
+    "skeptic": "gap_red_team",
+    "data_reanalysis": false
+  }
 }

@@ -6,7 +6,7 @@
       "statement": "Do communication gains causally depend on shared dyadic history beyond same-producer/style, externally supplied mappings, interlocutor-knowledge/capability beliefs, memory and task learning?",
       "status": "DRAFT",
       "value": "既有优先序 1 / HIGHEST_PRIORITY。共享历史的因果作用；作为候选问题待研究者决定。",
-      "boundary": "需要排除 shared priors、same-producer/style、externally supplied mappings、capability beliefs、memory availability 与 independent task learning；既有诊断不等于具身人机共同惯例已确立。",
+      "boundary": "需要排除 shared priors、same-producer/style、externally supplied mappings、capability beliefs、memory availability 与 independent task learning；既有诊断不等于具身人机共同惯例已确立。 2026-09-12补审：记忆可能中介历史效应，不能要求排除所有memory；匹配信息、feedback、practice及一般视觉/状态追踪。",
       "assumptions": "原始设计方向：original vs history-severed dyad; prior disruption; yoked/shuffled controls; pact reuse versus knowledge-sensitive elaboration, acceptance and natural use",
       "gap_ids": [
         "GAP-01",
@@ -21,17 +21,22 @@
         "x20-passing-the-pact",
         "x22-banana-man-pragmatic-interpretation",
         "x23-machine-mental-imagery-common-ground",
-        "x9-aligned-not-partner-specific"
+        "x9-aligned-not-partner-specific",
+        "x1-spotter-human-robot-conventions",
+        "x2-lvlms-humans-ground-differently",
+        "x3-seeing-eye-to-eye",
+        "x4-making-memories-together",
+        "x5-social-context-of-hri"
       ],
-      "updated_at": "2026-09-07",
-      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+      "updated_at": "2026-09-12",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。 本次保留原RQ，精确表述建议见新增验证记录，未经研究者确认不替换。"
     },
     {
       "id": "RQ-2",
       "statement": "Can a grounded mapping survive role reversal and be repaired after controlled breakdown?",
       "status": "DRAFT",
       "value": "既有优先序 2 / NEXT_PHASE。相互修复与角色转换；作为候选问题待研究者决定。",
-      "boundary": "先建立 shared-history dependence，再检验 role reversal 与 controlled breakdown。检测 trouble、采取 repair、partner uptake 和 restored grounding 是不同证据。",
+      "boundary": "先建立 shared-history dependence，再检验 role reversal 与 controlled breakdown。检测 trouble、采取 repair、partner uptake 和 restored grounding 是不同证据。 2026-09-12补审：分开当前动作纠正、指称修复和未来mapping更新；按错误机会计repair、uptake与复发。",
       "assumptions": "原始设计方向：role reversal plus repair perturbation; separately measure trouble detection, repair action, uptake and restored grounding",
       "gap_ids": [
         "GAP-02",
@@ -43,17 +48,21 @@
         "c2-grounding-in-communication",
         "x1-spotter-human-robot-conventions",
         "x22-banana-man-pragmatic-interpretation",
-        "x24-multimodal-repair-detection"
+        "x24-multimodal-repair-detection",
+        "x2-lvlms-humans-ground-differently",
+        "x3-seeing-eye-to-eye",
+        "x4-making-memories-together",
+        "x5-social-context-of-hri"
       ],
-      "updated_at": "2026-09-07",
-      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+      "updated_at": "2026-09-12",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。 本次保留原RQ，精确表述建议见新增验证记录，未经研究者确认不替换。"
     },
     {
       "id": "RQ-3",
       "statement": "When should multimodal conventions transfer, retire or be renegotiated, and how do instrumental and relational meanings trade off?",
       "status": "DRAFT",
       "value": "既有优先序 3 / LATER_PHASE。惯例生命周期及意义权衡；作为候选问题待研究者决定。",
-      "boundary": "需按 partner/context transfer、retirement、renegotiation 分阶段验证；social 与 instrumental meaning 不能预设为两个完全分离的领域。",
+      "boundary": "需按 partner/context transfer、retirement、renegotiation 分阶段验证；social 与 instrumental meaning 不能预设为两个完全分离的领域。 2026-09-12补审：保持后续阶段；先选择一个transition，不能预设instrumental/relational冲突。",
       "assumptions": "原始设计方向：partner/context transfer plus longitudinal post-novelty study",
       "gap_ids": [
         "GAP-03",
@@ -65,10 +74,15 @@
         "x12-partners-to-populations",
         "x14-bee-referential-code",
         "x15-synthetic-linguistic-agency",
-        "x16-memuse-natural-integration"
+        "x16-memuse-natural-integration",
+        "x1-spotter-human-robot-conventions",
+        "x2-lvlms-humans-ground-differently",
+        "x3-seeing-eye-to-eye",
+        "x4-making-memories-together",
+        "x5-social-context-of-hri"
       ],
-      "updated_at": "2026-09-07",
-      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+      "updated_at": "2026-09-12",
+      "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。 本次保留原RQ，精确表述建议见新增验证记录，未经研究者确认不替换。"
     }
   ],
   "validations": [
@@ -170,6 +184,165 @@
       "precise_statement": "When should multimodal conventions transfer, retire or be renegotiated, and how do instrumental and relational meanings trade off?",
       "recommendation": "保留候选；先补当前证据核验和设计细节，不自动立项。",
       "provenance": "迁移自 reports/radar/2026-09-07-amsc-mainline.md 与 workflow_dashboard.json#research_line.next_questions；保留 2026-09-07 历史判断，未进行新的检索或立项。"
+    },
+    {
+      "id": "VAL-1-20260912",
+      "question_id": "RQ-1",
+      "checked_at": "2026-09-12",
+      "search_scope": "X1–X5积压全文专项复核，F6/X20访问与摘要复核；不是全面的新颖性检索，未覆盖全部最新实验室/新闻/博客。",
+      "paper_slugs": [
+        "x1-spotter-human-robot-conventions",
+        "x2-lvlms-humans-ground-differently",
+        "x3-seeing-eye-to-eye",
+        "x4-making-memories-together",
+        "x5-social-context-of-hri"
+      ],
+      "closest_work": "X1：SPOTTER 的 21 名成人 WoZ 试验显示描述趋于稳定但未清晰缩短；它提供动态视觉指称框架，不证明自主机器人形成互惠惯例。\nX2：四种角色组合的89对篮子指称任务揭示GPT-5.2配置与人类的协作轨迹差异；不能把感知、错序和prompt故障统称为缺乏共同基础。\nX3：Eye2Eye整套AR系统减少错误和澄清需求；正文不支持显著缩短任务时间，组件混杂也不允许把收益单独归因于共享记忆。\nX4：一年后重访50名儿童的Leo记忆更新显示档案补全与短期亲近感部分回升；透明、用户主动编辑的Open-Memory仍是未来设计。\nX5：该综述用agent、environment与association组织社会情境；它是概念与文献框架，不是证明情境效应或共同惯例的新实验。",
+      "support": "记忆可能中介历史效应，不能要求排除所有memory；匹配信息、feedback、practice及一般视觉/状态追踪。",
+      "counterevidence": "X1已有动态WoZ指称，X2已有四角色比较，X3整套系统有效而记忆未独立识别，X4开放记忆未实测，X5是已有情境框架；不得宣称这些方向完全空白。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "SPOTTER: A Framework for Investigating Convention Formation in a Visually Grounded Human-Robot Reference Task",
+          "url": "https://aclanthology.org/2024.lrec-main.1322.pdf"
+        },
+        {
+          "kind": "paper",
+          "title": "LVLMs and Humans Ground Differently in Referential Communication",
+          "url": "https://github.com/peterzeng/lvlms-referential-game"
+        },
+        {
+          "kind": "paper",
+          "title": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human–AI Collaboration",
+          "url": "https://arxiv.org/html/2603.12701v1"
+        },
+        {
+          "kind": "paper",
+          "title": "Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction",
+          "url": "https://www.researchgate.net/publication/402209571_Making_Memories_Together_Toward_Transparent_and_Co-constructed_Robot_Memory_in_Child-Robot_Interaction"
+        },
+        {
+          "kind": "paper",
+          "title": "The Social Context of Human–Robot Interactions",
+          "url": "https://arxiv.org/html/2508.13982v1"
+        }
+      ],
+      "assessment": {
+        "importance": "保留原优先序，未自动提高。",
+        "novelty": "仅支持收窄候选问题；尚未确立新颖性。",
+        "answerability": "记忆可能中介历史效应，不能要求排除所有memory；匹配信息、feedback、practice及一般视觉/状态追踪。",
+        "feasibility": "尚无实际pilot结果。",
+        "mainline_fit": "Grounding / Convention / Adaptation"
+      },
+      "precise_statement": "With information, feedback and practice matched, how does jointly confirmed dyadic history change subsequent reference and partner-sensitive uptake relative to an equally available stored record?",
+      "recommendation": "保留DRAFT；这是明确标记的表述修订建议，待研究者决定。",
+      "provenance": "独立quantitative/cognitive-behavioral/interpretivist审查 + gap_red_team反方复核；主agent综合写入。"
+    },
+    {
+      "id": "VAL-2-20260912",
+      "question_id": "RQ-2",
+      "checked_at": "2026-09-12",
+      "search_scope": "X1–X5积压全文专项复核，F6/X20访问与摘要复核；不是全面的新颖性检索，未覆盖全部最新实验室/新闻/博客。",
+      "paper_slugs": [
+        "x1-spotter-human-robot-conventions",
+        "x2-lvlms-humans-ground-differently",
+        "x3-seeing-eye-to-eye",
+        "x4-making-memories-together",
+        "x5-social-context-of-hri"
+      ],
+      "closest_work": "X1：SPOTTER 的 21 名成人 WoZ 试验显示描述趋于稳定但未清晰缩短；它提供动态视觉指称框架，不证明自主机器人形成互惠惯例。\nX2：四种角色组合的89对篮子指称任务揭示GPT-5.2配置与人类的协作轨迹差异；不能把感知、错序和prompt故障统称为缺乏共同基础。\nX3：Eye2Eye整套AR系统减少错误和澄清需求；正文不支持显著缩短任务时间，组件混杂也不允许把收益单独归因于共享记忆。\nX4：一年后重访50名儿童的Leo记忆更新显示档案补全与短期亲近感部分回升；透明、用户主动编辑的Open-Memory仍是未来设计。\nX5：该综述用agent、environment与association组织社会情境；它是概念与文献框架，不是证明情境效应或共同惯例的新实验。",
+      "support": "分开当前动作纠正、指称修复和未来mapping更新；按错误机会计repair、uptake与复发。",
+      "counterevidence": "X1已有动态WoZ指称，X2已有四角色比较，X3整套系统有效而记忆未独立识别，X4开放记忆未实测，X5是已有情境框架；不得宣称这些方向完全空白。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "SPOTTER: A Framework for Investigating Convention Formation in a Visually Grounded Human-Robot Reference Task",
+          "url": "https://aclanthology.org/2024.lrec-main.1322.pdf"
+        },
+        {
+          "kind": "paper",
+          "title": "LVLMs and Humans Ground Differently in Referential Communication",
+          "url": "https://github.com/peterzeng/lvlms-referential-game"
+        },
+        {
+          "kind": "paper",
+          "title": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human–AI Collaboration",
+          "url": "https://arxiv.org/html/2603.12701v1"
+        },
+        {
+          "kind": "paper",
+          "title": "Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction",
+          "url": "https://www.researchgate.net/publication/402209571_Making_Memories_Together_Toward_Transparent_and_Co-constructed_Robot_Memory_in_Child-Robot_Interaction"
+        },
+        {
+          "kind": "paper",
+          "title": "The Social Context of Human–Robot Interactions",
+          "url": "https://arxiv.org/html/2508.13982v1"
+        }
+      ],
+      "assessment": {
+        "importance": "保留原优先序，未自动提高。",
+        "novelty": "仅支持收窄候选问题；尚未确立新颖性。",
+        "answerability": "分开当前动作纠正、指称修复和未来mapping更新；按错误机会计repair、uptake与复发。",
+        "feasibility": "尚无实际pilot结果。",
+        "mainline_fit": "Grounding / Convention / Adaptation"
+      },
+      "precise_statement": "After a controlled referential breakdown, when does repair yield partner uptake and a mapping that is reused successfully on a later opportunity?",
+      "recommendation": "保留DRAFT；这是明确标记的表述修订建议，待研究者决定。",
+      "provenance": "独立quantitative/cognitive-behavioral/interpretivist审查 + gap_red_team反方复核；主agent综合写入。"
+    },
+    {
+      "id": "VAL-3-20260912",
+      "question_id": "RQ-3",
+      "checked_at": "2026-09-12",
+      "search_scope": "X1–X5积压全文专项复核，F6/X20访问与摘要复核；不是全面的新颖性检索，未覆盖全部最新实验室/新闻/博客。",
+      "paper_slugs": [
+        "x1-spotter-human-robot-conventions",
+        "x2-lvlms-humans-ground-differently",
+        "x3-seeing-eye-to-eye",
+        "x4-making-memories-together",
+        "x5-social-context-of-hri"
+      ],
+      "closest_work": "X1：SPOTTER 的 21 名成人 WoZ 试验显示描述趋于稳定但未清晰缩短；它提供动态视觉指称框架，不证明自主机器人形成互惠惯例。\nX2：四种角色组合的89对篮子指称任务揭示GPT-5.2配置与人类的协作轨迹差异；不能把感知、错序和prompt故障统称为缺乏共同基础。\nX3：Eye2Eye整套AR系统减少错误和澄清需求；正文不支持显著缩短任务时间，组件混杂也不允许把收益单独归因于共享记忆。\nX4：一年后重访50名儿童的Leo记忆更新显示档案补全与短期亲近感部分回升；透明、用户主动编辑的Open-Memory仍是未来设计。\nX5：该综述用agent、environment与association组织社会情境；它是概念与文献框架，不是证明情境效应或共同惯例的新实验。",
+      "support": "保持后续阶段；先选择一个transition，不能预设instrumental/relational冲突。",
+      "counterevidence": "X1已有动态WoZ指称，X2已有四角色比较，X3整套系统有效而记忆未独立识别，X4开放记忆未实测，X5是已有情境框架；不得宣称这些方向完全空白。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "SPOTTER: A Framework for Investigating Convention Formation in a Visually Grounded Human-Robot Reference Task",
+          "url": "https://aclanthology.org/2024.lrec-main.1322.pdf"
+        },
+        {
+          "kind": "paper",
+          "title": "LVLMs and Humans Ground Differently in Referential Communication",
+          "url": "https://github.com/peterzeng/lvlms-referential-game"
+        },
+        {
+          "kind": "paper",
+          "title": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human–AI Collaboration",
+          "url": "https://arxiv.org/html/2603.12701v1"
+        },
+        {
+          "kind": "paper",
+          "title": "Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction",
+          "url": "https://www.researchgate.net/publication/402209571_Making_Memories_Together_Toward_Transparent_and_Co-constructed_Robot_Memory_in_Child-Robot_Interaction"
+        },
+        {
+          "kind": "paper",
+          "title": "The Social Context of Human–Robot Interactions",
+          "url": "https://arxiv.org/html/2508.13982v1"
+        }
+      ],
+      "assessment": {
+        "importance": "保留原优先序，未自动提高。",
+        "novelty": "仅支持收窄候选问题；尚未确立新颖性。",
+        "answerability": "保持后续阶段；先选择一个transition，不能预设instrumental/relational冲突。",
+        "feasibility": "尚无实际pilot结果。",
+        "mainline_fit": "Grounding / Convention / Adaptation"
+      },
+      "precise_statement": "For one specified partner or context transition, when is an existing mapping retained or renegotiated, and what instrumental and relational consequences follow?",
+      "recommendation": "保留DRAFT；这是明确标记的表述修订建议，待研究者决定。",
+      "provenance": "独立quantitative/cognitive-behavioral/interpretivist审查 + gap_red_team反方复核；主agent综合写入。"
     }
   ],
   "studies": [

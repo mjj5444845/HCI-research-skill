@@ -3,8 +3,8 @@
   "slug": "x5-social-context-of-hri",
   "title": "The Social Context of Human–Robot Interactions",
   "authors": [
-    "Sophie Thompson",
-    "Katherine Candon",
+    "Sydney Thompson",
+    "Kate Candon",
     "Marynel Vázquez"
   ],
   "year": 2026,
@@ -13,8 +13,8 @@
   "doi": "10.1146/annurev-control-030623-015506",
   "access_status": "full_text",
   "priority": "Important",
-  "one_sentence": "梳理 HRI 中含混的 social context 用法，并提出可操作的 conceptual model 与 context attributes。",
-  "claim_boundary": "后续 AMSC 研究不应笼统声称 context-aware，而应区分 social situation、participants/roles、interaction scenario 与 history。",
+  "one_sentence": "该综述用agent、environment与association组织社会情境；它是概念与文献框架，不是证明情境效应或共同惯例的新实验。",
+  "claim_boundary": "作者预印本全文已读，最终出版版正文未逐字比对。不能推论整个HRI只有4篇定义情境、历史缺席，或模型已证明有效。综述与其引用原研究不算独立实证重复。",
   "amsc": {
     "mainline_fit": 8.4,
     "buckets": [
@@ -36,17 +36,73 @@
     ],
     "master_list_decision": "Candidate — Important"
   },
-  "problem": null,
-  "method": null,
-  "findings": [],
-  "real_contribution": null,
-  "biggest_weakness": null,
-  "why_researcher_should_care": "梳理 HRI 中含混的 social context 用法，并提出可操作的 conceptual model 与 context attributes。",
+  "problem": "HRI中的social context如何被使用和定义，如何形成可复用的描述与比较框架？",
+  "method": "作者预印本v1 §2–4：2012–2023五个venue，27843篇经字符串筛选320，再纳入58篇/257句；27篇双向HRI子集用于模型应用。用句子分类与协作affinity diagrams形成taxonomy，不是新增受试者实验。",
+  "findings": [
+    "§3/Table1：纳入的58篇中4篇显式定义；结论仅限关键词、年份与venue限定的语料。",
+    "§4.1：情境由agent、environment、association属性构成，关系可随时间变化。",
+    "§4.3–5：既有案例说明应用，计算表示与泛化是议程；非模型效能因果检验。"
+  ],
+  "real_contribution": "澄清术语、建立可比较的社会情境描述框架，供实验和情境分析使用。",
+  "biggest_weakness": "词串检索可能漏掉不用social context术语的相关传统；分类与affinity分析的分歧、定位和负例轨迹有限。",
+  "why_researcher_should_care": "RQ1可用作伙伴/角色/信息情境控制清单；RQ3用于明确transfer改变的是哪类关系与情境，并保留参与者意义。",
   "evidence_notes": [
     "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
-    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。"
+    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。",
+    "2026-09-12：作者arXiv v1全文；官方最终元数据核验，最终正文未逐字比较。独立审查角色：interpretivist_qualitative_auditor；主agent综合并写入。"
   ],
   "provenance": "missing_paper_attack_2026-08-26",
-  "investigation_status": "source_verified_candidate",
-  "updated_at": "2026-08-26"
+  "investigation_status": "full_paper_investigation",
+  "updated_at": "2026-09-12",
+  "correction_history": [
+    {
+      "date": "2026-09-12",
+      "previous_status": "source_verified_candidate",
+      "previous_authors": [
+        "Sophie Thompson",
+        "Katherine Candon",
+        "Marynel Vázquez"
+      ],
+      "previous_findings": [],
+      "reason": "Independent specialist full-text audit; see investigation_provenance."
+    }
+  ],
+  "claim_evidence_audit": [
+    {
+      "claim": "整个HRI缺少情境定义",
+      "evidence": "§2语料选择、§3/Table1",
+      "judgment": "只限纳入58篇；不能外推全部相关研究。"
+    },
+    {
+      "claim": "框架解释/改善机器人表现",
+      "evidence": "§4模型及案例、§5议程",
+      "judgment": "概念资源，不是新实验因果证据。"
+    },
+    {
+      "claim": "context-aware未包含history",
+      "evidence": "§4.1动态association",
+      "judgment": "关系与变化已有概念位置；剩余问题是具体机制与测量。"
+    }
+  ],
+  "reusable": [
+    "agent–environment–association情境矩阵",
+    "transfer中的伙伴、角色、场所、关系、媒介维度"
+  ],
+  "remember_when": [
+    "定义social context及迁移边界时。",
+    "区分概念框架与经验机制证据时。"
+  ],
+  "last_verified": "2026-09-12",
+  "investigation_provenance": {
+    "date": "2026-09-12",
+    "reviewer": "interpretivist_qualitative_auditor",
+    "scope": "作者arXiv v1全文；官方最终元数据核验，最终正文未逐字比较",
+    "sources": [
+      "https://www.annualreviews.org/content/journals/10.1146/annurev-control-030623-015506",
+      "https://arxiv.org/html/2508.13982v1"
+    ],
+    "state_writer": "primary agent",
+    "skeptic": "gap_red_team",
+    "data_reanalysis": false
+  }
 }

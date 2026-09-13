@@ -2,7 +2,16 @@
   "id": "X20",
   "slug": "x20-passing-the-pact",
   "title": "Passing the Pact: Comparing Common Ground Building and Audience Design In Multiparty Human and Human-Agent Collaborative Communication",
-  "authors": ["Rhys Jacka", "Paola R. Peña", "Megan Nyhan", "Kate Walsh", "Sophie Leonard", "Holly Branigan", "Vincent Wade", "Benjamin R. Cowan"],
+  "authors": [
+    "Rhys Jacka",
+    "Paola R. Peña",
+    "Megan Nyhan",
+    "Kate Walsh",
+    "Sophie Leonard",
+    "Holly Branigan",
+    "Vincent Wade",
+    "Benjamin R. Cowan"
+  ],
   "year": 2026,
   "venue": "Proceedings of the 26th ACM International Conference on Intelligent Virtual Agents",
   "source_url": "https://doi.org/10.1145/3806774.3827983",
@@ -22,17 +31,47 @@
   "why_researcher_should_care": "It shows that pact-term reuse and epistemically appropriate audience design must be measured separately, and it adds interlocutor knowledge and capability beliefs to the controls required by the highest-priority AMSC study.",
   "amsc": {
     "mainline_fit": 9.3,
-    "buckets": ["C", "E"],
-    "stages": ["Grounding/common ground", "Convention formation", "Personalization/co-adaptation"],
-    "mechanisms": ["conceptual-pact reuse", "audience design", "interlocutor knowledge", "multiparty reference"],
-    "gap_ids": ["GAP-02", "GAP-03", "GAP-04", "GAP-07"],
+    "buckets": [
+      "C",
+      "E"
+    ],
+    "stages": [
+      "Grounding/common ground",
+      "Convention formation",
+      "Personalization/co-adaptation"
+    ],
+    "mechanisms": [
+      "conceptual-pact reuse",
+      "audience design",
+      "interlocutor knowledge",
+      "multiparty reference"
+    ],
+    "gap_ids": [
+      "GAP-02",
+      "GAP-03",
+      "GAP-04",
+      "GAP-07"
+    ],
     "master_list_decision": "Candidate — Must Read / abstract-only human-agent pact boundary"
   },
   "investigation_status": "abstract_evidence_investigation",
   "evidence_notes": [
     "DOI metadata is verified; findings are taken from an accessible abstract mirror because the ACM full text was unavailable.",
-    "No equivalence, agent-state, embodiment, or causal shared-history claim is encoded."
+    "No equivalence, agent-state, embodiment, or causal shared-history claim is encoded.",
+    "2026-09-12：重新核对元数据及摘要；全文未获取，样本、统计与方法细节仍不能核实。"
   ],
   "provenance": "amsc_radar_2026-09-07",
-  "updated_at": "2026-09-07"
+  "updated_at": "2026-09-12",
+  "last_verified": "2026-09-12",
+  "access_attempts": {
+    "date": "2026-09-12",
+    "sources": [
+      "ACM DOI landing and PDF",
+      "Crossref metadata",
+      "OpenAlex locations",
+      "Title/author manuscript search"
+    ],
+    "result": "OpenAlex reports gold OA, but no usable PDF location; publisher retrieval returned 403. OA status does not imply text was obtained.",
+    "needed": "Full manuscript including methods, results and appendices"
+  }
 }

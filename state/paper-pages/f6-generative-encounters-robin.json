@@ -2,13 +2,16 @@
   "id": "F6",
   "slug": "f6-generative-encounters-robin",
   "title": "Generative Encounters with Robin: Design through Adaptation and Appropriation of a Social Robot in Four Eldercare Facilities",
-  "authors": ["Nan Hu", "Selma Šabanović"],
+  "authors": [
+    "Nan Hu",
+    "Selma Šabanović"
+  ],
   "year": 2026,
   "venue": "HRI 2026, 306–315",
   "source_url": "https://doi.org/10.1145/3757279.3785575",
   "doi": "10.1145/3757279.3785575",
   "access_status": "abstract_only",
-  "last_verified": "2026-08-27",
+  "last_verified": "2026-09-12",
   "priority": "Must Read",
   "one_sentence": "Abstract-level evidence 表明，Robin 的实际使用与持续设计受到机构情境、员工实践、开发者沟通及用户 appropriation 的共同塑造；由于全文不可得，目前不能完成完整 method 与 claim audit。",
   "problem": "Socially assistive robot 往往在部署时被当作已经完成的 artifact，因而遮蔽了不同 eldercare institutions、住民、员工与开发者如何在实践中持续重塑 robot use 与 design。",
@@ -22,16 +25,36 @@
   "claim_boundary": "可访问证据只支持作者关于四家机构 contextual adaptation 与 appropriation 的摘要级论述；它不能建立 causal effects，不能外推到其他机构，也不能证明 autonomous robot adaptation、dyadic grounding、convention formation，或厂商所称持续数月/数年的 acceptance。",
   "why_researcher_should_care": "F6 为 AMSC 提供重要的 sociotechnical boundary condition：adaptive embodied communication 嵌入 staff routines、organizational interpretations、teleoperation awareness 与 developer feedback loops。它促使后续研究追问 agent 如何识别 emerging local practices，同时避免把 appropriation 等同于 shared convention。",
   "claimed_gap_rq": "异质 eldercare facilities 的 contextual factors 如何塑造 socially assistive robot 部署后的 use、appropriation 与 collaborative adaptation？",
-  "theory": ["iterative engagement", "generative encounters", "appropriation", "socially situated robot design"],
+  "theory": [
+    "iterative engagement",
+    "generative encounters",
+    "appropriation",
+    "socially situated robot design"
+  ],
   "amsc": {
     "mainline_fit": 7.9,
-    "buckets": ["F", "E"],
-    "stages": ["Social Meaning / Pragmatics", "Personalization / Co-adaptation", "Situated Adaptive Communication"],
-    "mechanisms": ["Meaning", "Adaptation", "Embodied Communication"],
-    "gap_ids": ["GAP-03", "GAP-04", "GAP-06"],
+    "buckets": [
+      "F",
+      "E"
+    ],
+    "stages": [
+      "Social Meaning / Pragmatics",
+      "Personalization / Co-adaptation",
+      "Situated Adaptive Communication"
+    ],
+    "mechanisms": [
+      "Meaning",
+      "Adaptation",
+      "Embodied Communication"
+    ],
+    "gap_ids": [
+      "GAP-03",
+      "GAP-04",
+      "GAP-06"
+    ],
     "gap_impact": {
-      "GAP-03": "STRENGTHENS：需要区分 contextual/deployment adaptation 与 interaction-history-aware communication；摘要识别了 context 与 feedback loops，但没有展示 history-aware robot signaling。",
-      "GAP-04": "STRENGTHENS：进一步区分 appropriation/personalization 与 convention formation；users 与 developers 可以调整 use，却没有 mutually grounded signal system 的证据。",
+      "GAP-03": "ABSTRACT_ONLY / NOT_REASSESSED：需要区分 contextual/deployment adaptation 与 interaction-history-aware communication；摘要识别了 context 与 feedback loops，但没有展示 history-aware robot signaling。 摘要未报告不等于全文不存在相关证据，不能据此强化Gap。",
+      "GAP-04": "ABSTRACT_ONLY / NOT_REASSESSED：进一步区分 appropriation/personalization 与 convention formation；users 与 developers 可以调整 use，却没有 mutually grounded signal system 的证据。 摘要未报告不等于全文不存在相关证据，不能据此强化Gap。",
       "GAP-06": "PARTIALLY_ADDRESSES：通过说明 organizational practices 如何塑造 use，触及 social meaning 与 robot function 的连接；但没有 functional-state signals 的 finding-level evidence。"
     },
     "master_list_decision": "Baseline v1.0 — 保留；高优先级获取全文",
@@ -45,13 +68,19 @@
     "Indexed abstract/summary 提供所报告的 ethnographic method 与四项 contextual factors；这里只将其用于边界明确的 abstract-level reconstruction。",
     "2026-08-27 已穷尽 official proceedings、DOI route、author/lab pages、institutional repositories、project/vendor pages、DBLP/Unpaywall leads 及 title/DOI PDF search，仍未找到可访问 author manuscript 或 proceedings PDF。",
     "Vendor 关于 30+ observation hours 及持续数月/数年的 acceptance 声称未被当作论文证据，因为无法核验 primary text。",
-    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者保持未追踪。"
+    "Agent evidence readiness 与 researcher reading/mastery 分开记录；后两者保持未追踪。",
+    "2026-09-12：重新核对元数据及摘要；全文未获取，样本、统计与方法细节仍不能核实。"
   ],
   "source_list_id": "F6",
   "provenance": "user_baseline_v1.0",
   "investigation_status": "abstract_evidence_investigation",
   "agent_readiness": "ABSTRACT_ONLY_AUDITED_FULL_TEXT_BLOCKED",
-  "readiness": {"source_availability": "abstract_only", "agent_investigation": "abstract_evidence_investigation", "researcher_reading": null, "researcher_mastery": null},
+  "readiness": {
+    "source_availability": "abstract_only",
+    "agent_investigation": "abstract_evidence_investigation",
+    "researcher_reading": null,
+    "researcher_mastery": null
+  },
   "investigation_provenance": {
     "date": "2026-08-27",
     "mode": "normal/abstract-only",
@@ -68,5 +97,16 @@
     "degradation_reason": "未找到可访问的 publisher PDF、official repository copy 或 author manuscript。"
   },
   "worth_sharing": false,
-  "updated_at": "2026-08-27"
+  "updated_at": "2026-09-12",
+  "access_attempts": {
+    "date": "2026-09-12",
+    "sources": [
+      "ACM DOI landing and PDF",
+      "Crossref metadata",
+      "OpenAlex locations",
+      "Title/author manuscript search"
+    ],
+    "result": "Publisher retrieval blocked; OpenAlex reports closed and no repository full text.",
+    "needed": "Full manuscript including methods, results and appendices"
+  }
 }

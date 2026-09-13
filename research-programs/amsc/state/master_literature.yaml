@@ -1,6 +1,6 @@
-version: v1.6
+version: "1.7"
 baseline_count: 41
-verified_at: 2026-09-07
+verified_at: 2026-09-12
 note: "The 41-paper baseline is user-defined; twenty-four evidence-audited candidates are tracked separately. Top-20 Agent investigation is complete, while researcher reading/mastery remains untracked."
 categories:
   A: "Social / Multimodal / Informal Expression"
@@ -202,6 +202,11 @@ papers:
     slug: f6-generative-encounters-robin
     title: "Generative Encounters with Robin: Design through Adaptation and Appropriation of a Social Robot in Four Eldercare Facilities"
     decision: "Baseline v1.0 — retained"
+    investigation_status: abstract_evidence_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Nan Hu
+      - Selma Šabanović
   - id: G1
     slug: g1-robot-motion-intent-ar
     title: "Communicating Robot Motion Intent with Augmented Reality"
@@ -223,22 +228,67 @@ candidates:
     slug: x1-spotter-human-robot-conventions
     title: "SPOTTER: A Framework for Investigating Convention Formation in a Visually Grounded Human-Robot Reference Task"
     decision: "Candidate — Must Read"
+    investigation_status: full_paper_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Jaap Kruijt
+      - Peggy van Minkelen
+      - Lucia Donatelli
+      - Piek T.J.M. Vossen
+      - Elly Konijn
+      - Thomas Baier
   - id: X2
     slug: x2-lvlms-humans-ground-differently
     title: "LVLMs and Humans Ground Differently in Referential Communication"
     decision: "Candidate — Important"
+    investigation_status: full_paper_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Peter Zeng
+      - Weiling Li
+      - Amie J. Paige
+      - Zhengxiang Wang
+      - Panagiotis Kaliosis
+      - Dimitris Samaras
+      - Gregory Zelinsky
+      - Susan E. Brennan
+      - Owen Rambow
   - id: X3
     slug: x3-seeing-eye-to-eye
     title: "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human–AI Collaboration"
     decision: "Candidate — Important"
+    investigation_status: full_paper_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Zhuyu Teng
+      - Pei Chen
+      - Yichen Cai
+      - Ruoqing Lu
+      - Zhaoqu Jiang
+      - Jiayang Li
+      - Weitao You
+      - Lingyun Sun
   - id: X4
     slug: x4-making-memories-together
     title: "Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction"
     decision: "Candidate — Important / Preliminary"
+    investigation_status: full_paper_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Elena Malnatsky
+      - Shenghui Wang
+      - Koen Hindriks
+      - Mike E. U. Ligthart
   - id: X5
     slug: x5-social-context-of-hri
     title: "The Social Context of Human–Robot Interactions"
     decision: "Candidate — Important"
+    investigation_status: full_paper_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Sydney Thompson
+      - Kate Candon
+      - Marynel Vázquez
   - id: X6
     slug: x6-beyond-local-surprise
     title: "Beyond Local Surprise: Grounded Dialogue as Selective Belief Revision under Referential Uncertainty"
@@ -299,6 +349,17 @@ candidates:
     slug: x20-passing-the-pact
     title: "Passing the Pact: Comparing Common Ground Building and Audience Design In Multiparty Human and Human-Agent Collaborative Communication"
     decision: "Candidate — Must Read / abstract-only human-agent pact boundary"
+    investigation_status: abstract_evidence_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Rhys Jacka
+      - Paola R. Peña
+      - Megan Nyhan
+      - Kate Walsh
+      - Sophie Leonard
+      - Holly Branigan
+      - Vincent Wade
+      - Benjamin R. Cowan
   - id: X21
     slug: x21-social-pragmatic-chinese-comments
     title: "You Really Didn’t Get That? Benchmarking Social Pragmatic Inference for Indirect and Playful Chinese Online Comments"
@@ -331,3 +392,5 @@ change_log:
     change: "Manual Radar v1.5 added X17–X19 after full-text audit and independent red-team review; X19 merges its 2024 arXiv/AAMAS lineage into the canonical TACL record, GlossoGen's cumulative-cultural-evolution claim was bounded to one-swap AI–AI protocol transmission, and no baseline or human correction was changed."
   - date: 2026-09-07
     change: "Weekly Radar v1.6 added X20–X24 after exact-window retrieval plus a missing-paper/venue-index recovery pass: one abstract-only human-agent pact study and four full-text diagnostic or architecture anchors. Broad convention-incapacity claims were narrowed to endogenous construction, epistemic calibration, revision, and repair; no baseline or human correction was changed."
+  - date: 2026-09-12
+    note: X1–X5全文审查完成；X4/X5作者纠正；F6/X20仍摘要级且记录访问障碍。保留所有收录决策。
