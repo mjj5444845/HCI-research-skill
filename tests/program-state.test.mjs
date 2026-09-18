@@ -34,3 +34,17 @@ test('Chinese validation renders a new question date from its evidence, not hist
  const out={};renderChineseReading({page:o=>o.body,write:(f,c)=>out[f]=c,papers:[],workspace,data});
  assert.match(out['validation/index.html'],/新的检索范围/);assert.match(out['validation/index.html'],/反例记录/);assert.doesNotMatch(out['validation/index.html'],/undefined|积压论文补读|9月7日/);
 });
+
+test('approved artifact roadmap preserves dependency and evidence boundaries',()=>{
+ const p=read('research-programs/amsc/program.yaml'),r=p.artifact_roadmap;
+ assert.equal(r.status,'APPROVED_DIRECTION');assert.equal(r.stages.length,5);
+ const stageIds=new Set(r.stages.map(s=>s.id));assert.equal(stageIds.size,r.stages.length);
+ const refs=new Set(r.sources.map(s=>s.id));
+ const visited=new Set(),active=new Set();
+ const visit=id=>{assert.ok(stageIds.has(id),'unknown stage '+id);assert.ok(!active.has(id),'cyclic stage dependency '+id);if(visited.has(id))return;active.add(id);for(const d of r.stages.find(s=>s.id===id).depends_on)visit(d);active.delete(id);visited.add(id);};
+ for(const s of r.stages){visit(s.id);assert.ok(s.interface_panels.length);assert.ok(s.deliverables.length);assert.ok(s.evidence.length);assert.ok(s.gate&&s.stop);assert.equal(s.status,'PLANNED');for(const id of s.industry_refs)assert.ok(refs.has(id),'unknown source '+id);}
+ for(const s of r.sources){assert.match(s.url,/^https:\/\//);assert.ok(s.observed&&s.relevance&&s.caveat);}
+ const pipeline=read('research-programs/amsc/state/research_pipeline.json');assert.ok(pipeline.questions.some(q=>q.id===r.first_question_id));
+ assert.ok(pipeline.decisions.some(d=>d.actor==='researcher'&&d.decision==='APPROVE_INTEGRATED_ROADMAP'));
+ assert.equal(read('research-programs/amsc/state/workflow_dashboard.json').research_line.identity,p.research_identity_zh);
+});

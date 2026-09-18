@@ -1,4 +1,4 @@
-# AMSC Research Program v2.0
+# AMSC Research Program v2.1 — AMSC × FailureTrace
 
 Updated: 2026-09-18. AMSC remains the stable internal identifier.
 
@@ -50,4 +50,26 @@ Zhicong Lu；Judith Fan；Ziqiao Ma；Parastoo Abtahi；Ryo Suzuki。Zhicong Lu�
 
 program.yaml 与本文件定义方向；master_literature、state_of_field、gap_registry、research_graph及research_pipeline保存可追溯研究状态。paper-pages保存论文事实；workflow_dashboard与reading_zh是同步展示层。考试与写作是独立下游，不反向决定主线。
 
-本次批准的是方向与结构调整；未批准具体首项问题、gap新颖性或实验。候选问题保持DRAFT。归档机器人专属材料不表示原论文失效或科学问题已解决。迁移前快照：archives/2026-09-18-mainline-v1。
+2026-09-18后续用户批准整合为一条主线、每阶段有落地artifact并更新网站。具体RQ保持DRAFT，科学新颖性、效果、样本量与实验准备度尚未确立。归档机器人专属材料不表示原论文失效或科学问题已解决。迁移前快照：archives/2026-09-18-mainline-v1。
+
+## 已批准的整合主线与artifact路线
+
+近期执行主线：理解分歧 → 有效评价 → 校准预测 → 沟通支持 → 共享语境与适应。原有的社会表达研究身份保持；FailureTrace提供轨迹、校准与独立干预验证方法。合理的解释分歧不自动记作失败。
+
+研究表述：我研究人和AI如何理解情境中的多模态表达、在哪里产生理解分歧，以及如何通过人类证据校准的模型预测和支持有效澄清，并在持续互动中形成共享语境。
+
+正式结构与网站共同读取 program.yaml 的 artifact_roadmap；可读版本见 ARTIFACT_ROADMAP.md。
+
+| 阶段 | 主要artifact与界面 | 验收重点 |
+|---|---|---|
+| 1 理解分歧 | MeaningTrace Studio：图像、评论、背景、解释采集与轨迹回放网页 | 区分意图、解释、合理歧义及行动后果 |
+| 2 有效评价 | FrictionBench Communication Track：数据集、benchmark、案例与结果浏览器 | 独立切分、人类参照、冻结预测与强基线 |
+| 3 校准预测 | Listener Model Workbench：模型/方法/API与校准分析台 | 增量预测能力、不确定性、成本及域外边界 |
+| 4 沟通支持 | FrictionLens：澄清建议、证据与变体比较界面 | 沟通结果、误建议、打断及表达自主性 |
+| 5 持续适应 | Shared Context Lab：重复互动与历史/伙伴控制台，可选VR/AR | 区分伙伴适应、一般记忆与练习；空间视角必要时才采用XR |
+
+五阶段是能力与证据的依赖图，不是五篇预定论文。阶段3与4可并行；每阶段发布包包含演示/案例、可复现代码或数据、基线与指标、失效边界。界面完成与科学验证分别验收，当前五个artifact均为计划中。
+
+近期优先阶段1与阶段2的最小闭环：视觉作品的间接反馈、固定指代对象、一种背景补充、真实解释数据、简单基线及留出干预验证。首项3–6个月，不同时承诺完整模拟器、大benchmark、设计师研究和XR。
+
+前沿能力对应官方公开研究：Adobe的设计分析、Stanford HCI的用户建模、Anthropic的agent评估、Microsoft Research的协作与情境、DeepMind的虚拟环境互动、Meta Aria的情境感知。来源与边界保存在artifact_roadmap.sources；相关性不表示合作、采用、招聘或兴趣承诺。

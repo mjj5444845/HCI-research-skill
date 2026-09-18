@@ -67,3 +67,9 @@ Use schemas/research-pipeline.schema.json and schemas/writing-workspace.schema.j
 Current scope is program v2.0. A–G labels are defined in program.yaml; old paper IDs remain stable and no longer imply the new category. archives/2026-09-18-mainline-v1 preserves all pre-migration records including uncommitted work. Deferred robot material and old RQ/validation/study bundles are absent from current site projections. Archival does not resolve a scientific gap. New specific RQs require question development; direction approval is not PURSUE. Do not run legacy import or integration scripts against v2 state.
 
 Select evidence by contribution: computational validation is a first-class study design; human-study and qualitative audits are conditional. After scope changes validate every paper, gap, question, graph and downstream reference and rebuild Chinese source hashes only for reviewed edits.
+
+## Artifact roadmap approval (2026-09-18)
+
+Program v2.1 supersedes the earlier v2.0 direction-only snapshot. The user approved AMSC × FailureTrace as one mainline with tangible artifacts at every stage and website publication. program.yaml#artifact_roadmap owns stages, interface blueprints, deliverables, evidence gates, dependencies and official capability references; the website reads it directly.
+
+Actual implementation, validation and release require artifact evidence. Roadmap approval does not establish novelty or study readiness. The current priority is MeaningTrace Studio plus a minimal FrictionBench protocol. Model and application work may proceed in parallel. Laboratory references support inferred capability fit, never collaboration or adoption claims. Exam and writing remain independent downstream workspaces.

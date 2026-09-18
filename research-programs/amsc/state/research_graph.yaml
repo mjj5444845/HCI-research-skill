@@ -3,8 +3,7 @@ updated_at: 2026-09-18
 nodes:
   - id: paper:x25-seeing-is-not-sharing
     type: paper
-    label: "Seeing Is Not Sharing: Some Vision-Language Models Overestimate Common Ground in Asymmetric
-      Dialogue"
+    label: "Seeing Is Not Sharing: Some Vision-Language Models Overestimate Common Ground in Asymmetric Dialogue"
     evidence_status: verified
     provenance: https://aclanthology.org/2026.sigdial-1.49/
   - id: paper:x26-convention-gap
@@ -14,8 +13,8 @@ nodes:
     provenance: https://arxiv.org/abs/2609.11489
   - id: paper:x27-calibrated-ambiguity
     type: paper
-    label: "Calibrated Ambiguity in Multimodal Language Models: Humans reach for cultural references, while
-      models describe the picture"
+    label: "Calibrated Ambiguity in Multimodal Language Models: Humans reach for cultural references, while models
+      describe the picture"
     evidence_status: verified
     provenance: https://arxiv.org/abs/2609.12575
   - id: paper:x28-continue-adapt-yield
@@ -65,8 +64,8 @@ nodes:
     provenance: https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12845
   - id: paper:c5-graphical-convention-formation
     type: paper
-    label: Disentangling contributions of visual information and interaction history in the formation of
-      graphical conventions
+    label: Disentangling contributions of visual information and interaction history in the formation of graphical
+      conventions
     evidence_status: verified
     provenance: https://escholarship.org/uc/item/6408z76h
   - id: paper:c6-visual-resemblance-interaction-history
@@ -1353,8 +1352,7 @@ edges:
     evidence:
       - c6-visual-resemblance-interaction-history
     confidence: HIGH
-    notes: C6 explicitly identifies the CogSci 2019 paper as a subset; C5 is not an independent evidence
-      source.
+    notes: C6 explicitly identifies the CogSci 2019 paper as a subset; C5 is not an independent evidence source.
   - source_node: paper:c7-shared-procedural-abstractions
     relation: extends
     target_node: paper:c4-repeated-reference-games
@@ -1418,8 +1416,8 @@ edges:
     evidence:
       - x17-glossogen-emergent-language
     confidence: HIGH
-    notes: Prompted AI–AI shorthand negotiation, partner swap and newcomer uptake are lifecycle neighbors,
-      not human common ground.
+    notes: Prompted AI–AI shorthand negotiation, partner swap and newcomer uptake are lifecycle neighbors, not
+      human common ground.
   - source_node: paper:x17-glossogen-emergent-language
     relation: intellectual_lineage
     target_node: concept:adaptation
@@ -1500,8 +1498,8 @@ edges:
     evidence:
       - x20-passing-the-pact
     confidence: MODERATE
-    notes: The abstract frames common-ground building, but does not expose internal-state or full
-      grounding-cycle evidence.
+    notes: The abstract frames common-ground building, but does not expose internal-state or full grounding-cycle
+      evidence.
   - source_node: paper:x20-passing-the-pact
     relation: intellectual_lineage
     target_node: concept:convention
@@ -1509,8 +1507,7 @@ edges:
     evidence:
       - x20-passing-the-pact
     confidence: MODERATE
-    notes: Conceptual pacts are directly studied; reuse is not automatically partner-specific mutual
-      convention.
+    notes: Conceptual pacts are directly studied; reuse is not automatically partner-specific mutual convention.
   - source_node: paper:x20-passing-the-pact
     relation: intellectual_lineage
     target_node: concept:adaptation
@@ -1542,8 +1539,7 @@ edges:
     evidence:
       - x22-banana-man-pragmatic-interpretation
     confidence: HIGH
-    notes: Directly separates retrieval of game-specific conventions from their endogenous construction and
-      repair.
+    notes: Directly separates retrieval of game-specific conventions from their endogenous construction and repair.
   - source_node: paper:x22-banana-man-pragmatic-interpretation
     relation: intellectual_lineage
     target_node: concept:adaptation
@@ -1578,8 +1574,8 @@ edges:
     evidence:
       - x24-multimodal-repair-detection
     confidence: HIGH
-    notes: Other-initiated repair is a direct grounding mechanism; detection is not successful repair or
-      restored common ground.
+    notes: Other-initiated repair is a direct grounding mechanism; detection is not successful repair or restored
+      common ground.
   - source_node: paper:x24-multimodal-repair-detection
     relation: intellectual_lineage
     target_node: concept:embodied-communication
@@ -1611,8 +1607,8 @@ edges:
     evidence:
       - x27-calibrated-ambiguity
     confidence: MODERATE
-    notes: Does not demonstrate cross-cultural flattening, audience comprehension, or history-dependent
-      social meaning.
+    notes: Does not demonstrate cross-cultural flattening, audience comprehension, or history-dependent social
+      meaning.
   - source_node: paper:x28-continue-adapt-yield
     relation: intellectual_lineage
     target_node: concept:grounding
@@ -1964,10 +1960,11 @@ edge_policy:
 human_corrections: []
 next_question_priority:
   updated_at: 2026-09-18
-  status: FIRST_PROJECT_UNSELECTED
-  questions: []
-  focus: 以用户二作X21为基础，先探索情境化多模态社会语用理解；不强制修复、交互实验或机器人。
-  note: 2026-09-18 Radar补回6篇直接先例。下一步对比具体任务/机制/评价/资源，未选定或升级RQ。
+  status: INTEGRATED_ROADMAP_APPROVED
+  questions:
+    - RQ-FT-01
+  focus: AMSC × FailureTrace：理解分歧→有效评价→校准预测→沟通支持→共享语境；近期优先MeaningTrace Studio与最小评测协议。
+  note: 用户已批准整合方向与artifact路线；具体RQ尚需验证，不新增未经证实的实验室合作关系。
 anchor_preferences:
   primary:
     - Zhicong Lu

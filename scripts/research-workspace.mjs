@@ -1,3 +1,4 @@
+import { renderRoadmapOverview } from "./artifact-roadmap.mjs";
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse } from 'yaml';
@@ -96,8 +97,9 @@ export function renderWorkspace({page, write, papers, dashboard, workspace}) {
     ['studies','05','研究方案与报告','计算、实证与系统研究的设计及验证',pipeline.studies.length]
   ];
   write('index.html', page({title:'AMSC · 研究主线', description:dashboard.research_line.identity, current:'home', body:`
-    <div class="container"><section class="hero research-hero"><div><span class="eyebrow">Adaptive Multimodal Social Communication</span><h1>理解表达，<br>探索<span class="accent-text">共享的意义。</span></h1><p class="hero-copy">${text(dashboard.research_line.identity)}</p><p>从情境化理解出发，连接 HCI、AI、CV 与 NLP；数据、模型、方法和交互研究均可。</p><div class="button-row"><a class="button primary" href="#research-map">探索研究主线 ↓</a><a class="button" href="papers/">进入论文库</a></div></div>
+    <div class="container"><section class="hero research-hero"><div><span class="eyebrow">Adaptive Multimodal Social Communication</span><h1>看见误解，<br>让<span class="accent-text">澄清有据可循。</span></h1><p class="hero-copy">${text(programDefinition.artifact_roadmap?.identity || dashboard.research_line.identity)}</p><p>从真实误解的记录，到数据集、模型评估与沟通支持，让每一阶段留下可检验、可复用的研究成果。</p><div class="button-row"><a class="button primary" href="#artifact-roadmap">探索落地路线 ↓</a><a class="button" href="papers/">进入论文库</a></div></div>
     <figure class="communication-scene"><svg viewBox="0 0 480 310" role="img" aria-labelledby="scene-title scene-desc"><title id="scene-title">情境化多模态沟通</title><desc id="scene-desc">文字、图像和情境共同构成表达，AI需要理解其用意；共享意义是长期问题。</desc><rect x="12" y="12" width="456" height="286" rx="24" fill="#e3ede6"/><rect x="38" y="48" width="270" height="66" rx="18" fill="white"/><text x="62" y="89" fill="#315f78" font-size="22">这次真有你的！</text><rect x="184" y="133" width="250" height="67" rx="18" fill="#176b5b"/><text x="207" y="174" fill="white" font-size="20">赞赏？调侃？共同梗？</text><path d="M113 122 L113 165 L166 165" fill="none" stroke="#315f78" stroke-width="3"/><text x="240" y="250" text-anchor="middle" fill="#174b3f" font-size="17">文字 · 图像 · 情境 · 共同经历</text></svg><figcaption>解释性示例：同一句表达，在不同情境中可能具有不同用意。</figcaption></figure></section></div>
+    ${renderRoadmapOverview()}
     <section class="section tinted" id="research-map"><div class="container"><div class="section-head"><div><span class="eyebrow">研究核心</span><h2>五个相互关联的问题</h2></div><p>社会语用与多模态意义是近期重心；共同理解、惯例与适应保留为相互关联的研究视角。</p></div><div class="concept-grid">${list(dashboard.research_line.nodes,(n,i)=>`<article class="concept-card" id="${text(n.id)}"><span class="node-number">0${i+1}</span><h3>${text(n.label_zh || n.label)}</h3><span class="concept-en">${text(n.label)}</span><p>${text(n.question)}</p><details><summary>这一部分研究什么</summary><p>${text(n.detail)}</p><div class="tag-row">${list(n.buckets,b=>`<a class="tag" href="papers/?topic=${b}">${text(topics[b])}</a>`)}</div><p>${list(n.gaps,id=>`<a href="gaps/#${slug(id)}">${text(id)}</a>`).split('</a>').join('</a> ')}</p></details></article>`)}</div><p class="map-note">互动反馈会重新塑造意义、共同理解与惯例；这些节点是研究视角，箭头不代表已证实的因果顺序。</p></div></section>
     ${section('沿着证据，推进研究',`<div class="workspace-path">${list(stages,([route,num,title,desc,count])=>`<a class="stage-link" href="${route}/"><span>${num} / ${count} 项</span><h3>${title}</h3><p>${desc}</p><strong>进入 →</strong></a>`)}</div><div class="support-links"><span>独立工作区</span><a href="exam/">考试准备 ↗</a><a href="writing/">论文写作 ↗</a><small>从主线获取材料，独立维护笔记与进度。</small></div>`)}` }));
 
@@ -126,3 +128,4 @@ export function renderWorkspace({page, write, papers, dashboard, workspace}) {
     section('材料收集箱',writing.materials.some(m=>!m.project_id)?`<div data-filter-root><div class="filter-bar"><label>搜索材料 <input type="search" data-filter-search placeholder="论点、主题、论文或来源"></label><span data-filter-count aria-live="polite"></span></div><div class="workspace-list">${list(writing.materials.filter(m=>!m.project_id),material)}</div><p hidden data-filter-empty>没有匹配的材料。</p></div>`: '<div class="workspace-empty"><p>暂时没有未归档材料。材料可以先收集，之后再分配到项目与章节。</p></div>'));
   return routes;
 }
+

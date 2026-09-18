@@ -1,8 +1,47 @@
 {
   "version": "2.0",
-  "questions": [],
+  "questions": [
+    {
+      "id": "RQ-FT-01",
+      "statement": "在视觉作品的间接反馈中，模型能否依据接收者可获得的背景与初始解释，预测补充相关沟通背景对理解的影响，并在留出的交流材料上优于简单基线？",
+      "status": "DRAFT",
+      "value": "连接情境化用意理解与真实接收者的干预响应，形成可复现评估与轻量沟通支持原型。",
+      "boundary": "单场景、单类间接反馈、单一背景补充；首轮允许使用原条件的人类解释作校准，不宣称零样本部署、未见干预类型泛化或长期共享意义。",
+      "assumptions": "真实用意及合理歧义能够区分；材料有权限；干预效应存在可估计的差异；新颖性须进一步全文核验。",
+      "gap_ids": [
+        "GAP-04",
+        "GAP-05"
+      ],
+      "paper_slugs": [
+        "x21-social-pragmatic-chinese-comments",
+        "x34-memebridge",
+        "b2-rational-speech-act-framework"
+      ],
+      "updated_at": "2026-09-18",
+      "provenance": "2026-09-18用户要求整合AMSC与FailureTrace；主审结合amsc_skeptic和method_efficiency_advocate独立意见提出。详见reports/amsc-failuretrace-integration-2026-09-18.md；尚非研究者选定首项RQ。 2026-09-18后续用户批准整合主线与artifact路线；具体问题保持DRAFT以完成测量和文献验证。"
+    }
+  ],
   "validations": [],
   "studies": [],
   "pilots": [],
-  "decisions": []
+  "decisions": [
+    {
+      "id": "DEC-FT-01",
+      "question_id": "RQ-FT-01",
+      "actor": "agent",
+      "decision": "REFRAME",
+      "date": "2026-09-18",
+      "rationale": "将FailureTrace的校准与独立干预验证方法用于多模态沟通；首轮限制为视觉反馈用意理解。独立审查对指代任务的可测量性与社会表达的主线契合存在取舍，保留为草案。",
+      "provenance": "2026-09-18用户要求整合AMSC与FailureTrace；主审结合amsc_skeptic和method_efficiency_advocate独立意见提出。详见reports/amsc-failuretrace-integration-2026-09-18.md；尚非研究者选定首项RQ。"
+    },
+    {
+      "id": "DEC-FT-02",
+      "question_id": "RQ-FT-01",
+      "actor": "researcher",
+      "decision": "APPROVE_INTEGRATED_ROADMAP",
+      "date": "2026-09-18",
+      "rationale": "用户明确要求“更新一下，做成一条主线”，每阶段有界面或数据/benchmark等artifact，强调前沿实验室相关能力，并更新网站。批准主线和交付方向，不表示新颖性或实验结果已验证。",
+      "provenance": "本任务2026-09-18最新用户消息；program.yaml artifact_roadmap为当前路线来源。"
+    }
+  ]
 }

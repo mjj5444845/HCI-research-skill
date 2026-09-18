@@ -85,7 +85,7 @@ amsc:
     - Parastoo Abtahi
     - Ryo Suzuki
   foundation_paper: "2609.04384"
-  program_version: "2.0"
+  program_version: "2.1"
   robot_requirement: false
   contribution_policy: Computational, resource, theoretical, empirical and system contributions are equal
     routes; human studies only when the claim needs them.

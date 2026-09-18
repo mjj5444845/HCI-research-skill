@@ -684,8 +684,8 @@
     }
   },
   "research_line": {
-    "identity": "我研究 AI 如何理解、参与和支持具体情境中富有表现力的多模态沟通，以及人与 AI 如何通过持续互动建立共享意义、形成并调整彼此熟悉的表达方式。",
-    "core_question": "How does AI understand and participate in situated multimodal social meaning, and how can shared meanings develop through interaction?",
+    "identity": "我研究人和 AI 如何理解情境中的多模态表达、在哪里产生理解分歧，以及如何通过人类证据校准的模型预测和支持有效澄清，并在持续互动中形成共享语境。",
+    "core_question": "How can human-calibrated models explain differences in multimodal interpretation and predict effective clarification and shared-context adaptation?",
     "nodes": [
       {
         "id": "meaning",
@@ -724,7 +724,7 @@
         "label": "Grounding",
         "label_zh": "理解确认与修复",
         "question": "如何知道对方理解到位？",
-        "detail": "区分答对、被理解感与互动中的确认；修复可研究，但不规定为首项项目。",
+        "detail": "记录理解确认与澄清过程，预测干预是否帮助真实接收者；合理解释差异不自动是错误。",
         "buckets": [
           "C",
           "G"
@@ -769,7 +769,8 @@
         "情境化社会语用理解与多模态表达",
         "AI / CV / NLP 的模型、方法、数据与评估",
         "人与AI及AI支持的人际沟通",
-        "共同理解、惯例与适应"
+        "共同理解、惯例与适应",
+        "人类证据校准的解释分布、澄清效果预测与可复现artifact"
       ],
       "adjacent": [
         "机器人与具身沟通：延后、按实质问题选用",
@@ -782,7 +783,9 @@
         "未经证据把偏好或记忆等同于共同理解"
       ]
     },
-    "next_questions": [],
+    "next_questions": [
+      "RQ-FT-01"
+    ],
     "foundation_paper": "x21-social-pragmatic-chinese-comments",
     "communities": [
       "HCI",
@@ -810,7 +813,8 @@
         6
       ]
     },
-    "next_step": "以X21为已有研究基础，选择具体表达现象并核对相关研究。首项RQ、方法与设计尚未确定。"
+    "next_step": "优先实施MeaningTrace Studio的材料与测量验证，建立最小评测协议。",
+    "roadmap_source": "research-programs/amsc/program.yaml#artifact_roadmap"
   },
   "workflow_runs": [
     {
@@ -893,6 +897,13 @@
       "date": "2026-09-18",
       "summary": "新主线首次运行：6篇历史补回（X30–X35），0篇核实的窗口内新增；同步GAP04/05和领域状态，无RQ升级。",
       "report": "reports/radar/2026-09-18-amsc-mainline-v2.md"
+    },
+    {
+      "id": "amsc-failuretrace-roadmap-2026-09-18",
+      "workflow": "Mainline integration + artifact roadmap",
+      "status": "COMPLETE",
+      "date": "2026-09-18",
+      "summary": "用户批准一条整合主线与逐阶段artifact路线；五个研究artifact均为计划中，尚无新颖性或效果结论。"
     }
   ],
   "provenance": {

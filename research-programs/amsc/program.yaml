@@ -1,9 +1,9 @@
 program_id: amsc
-version: "2.0"
-name: Multimodal Social Meaning, Understanding, and Adaptive Communication
-research_identity: I study how AI understands, participates in, and supports expressive multimodal
-  communication in context, and how humans and AI develop shared meanings and adapt their ways of
-  communicating through ongoing interaction.
+version: "2.1"
+name: Situated Multimodal Understanding and Evidence-Grounded Communication Support
+research_identity: I study how people and AI interpret multimodal expressions in context, where their
+  interpretations diverge, and how human-calibrated models can predict and support clarification and shared
+  context over time.
 operating_model:
   source_of_truth: long_term_research_program
   workflow_role: acquire_audit_and_integrate_evidence_for_mainline
@@ -24,9 +24,11 @@ core_chain:
   - Shared conventions
   - Adaptation
 development_stages:
-  - Contextual pragmatic understanding (near-term focus)
-  - Expression, response and AI-mediated communication
-  - Shared meaning and ongoing adaptation
+  - 看见理解分歧 / MeaningTrace Studio
+  - 把能力变成可测的任务 / FrictionBench · Communication Track
+  - 学习有边界的接收者模型 / Listener Model Workbench
+  - 让预测帮助真实沟通 / FrictionLens
+  - 从一次澄清走向共同语境 / Shared Context Lab
 anchors:
   primary:
     - Zhicong Lu
@@ -84,8 +86,9 @@ master_literature:
   current_version: "2.0"
   policy: Preserve historical snapshot and stable IDs; active corpus reflects 2026-09-18 user-authorized scope change
 updated_at: 2026-09-18
-research_identity_zh: 我研究 AI 如何理解、参与和支持具体情境中富有表现力的多模态沟通，以及人与 AI 如何通过持续互动建立共享意义、形成并调整彼此熟悉的表达方式。
-development_policy: Linked research perspectives, not a mandatory sequence of papers; no requirement to cover all stages.
+research_identity_zh: 我研究人和 AI 如何理解情境中的多模态表达、在哪里产生理解分歧，以及如何通过人类证据校准的模型预测和支持有效澄清，并在持续互动中形成共享语境。
+development_policy: One approved research line with evidence-gated artifacts; not five mandatory papers.
+  Modeling and applied interaction work can proceed in parallel.
 categories:
   A: 社会与多模态表达 / Social and expressive multimodal communication
   B: 语用与情境化理解 / Pragmatics and contextual understanding
@@ -141,7 +144,295 @@ deferred:
   - embodied communication as mandatory identity
   - hardware acquisition as prerequisite
 decisions:
-  approved: Program direction and workspace realignment
-  not_approved: No specific first RQ, novelty claim, method, or experiment is selected
-  repair: Optional candidate, not prescribed first project
+  approved: "2026-09-18: User approved AMSC × FailureTrace as one mainline, tangible artifacts at every stage,
+    frontier-lab capability relevance and website publication."
+  not_approved: Novelty, efficacy, exact study design, sample size and completion of research artifacts are not
+    established.
+  repair: Clarification and intervention prediction are part of the approved direction; first scenario remains
+    subject to measurement and closest-work validation.
 provenance: research-programs/amsc/SOURCE_USER_SPEC.md
+artifact_roadmap:
+  title: 从理解分歧，到可验证的沟通支持
+  subtitle: AMSC × FailureTrace · 一条主线，五类可交付成果
+  approved_at: 2026-09-18
+  status: APPROVED_DIRECTION
+  identity: 我研究人和 AI 如何理解情境中的多模态表达、在哪里产生理解分歧，以及如何通过人类证据校准的模型预测和支持有效澄清，并在持续互动中形成共享语境。
+  identity_en: I study how people and AI interpret multimodal expressions in context, where their
+    interpretations diverge, and how human-calibrated models can predict and support clarification and shared
+    context over time.
+  principle: 每个阶段都有可查看、可运行或可复现的 artifact。界面交付与科学验证分别验收；五阶段不是五篇固定论文，模型与应用可按证据并行。
+  first_question_id: RQ-FT-01
+  first_cycle:
+    - window: 第1–2周
+      work: 限定视觉作品中的一种间接反馈与一种背景补充，核对真实案例和最近工作。
+      output: 案例卡、材料权限清单、研究问题与证据映射。
+      gate: 用意证据与合理歧义能够区分；新颖性仍需全文核验。
+    - window: 第3–4周
+      work: 实现图像、评论、背景、解释输入及事件回放，接入简单基线。
+      output: MeaningTrace Studio MVP 与60–90秒演示。
+      gate: 完整记录一个过程；演示明确标注尚未人类校准。
+    - window: 第5–7周
+      work: 在适用审批到位后做小规模真人试点，检查任务和评分。
+      output: 初始真人轨迹、测量规则、成本及精度估计。
+      gate: 观察到自然理解差异，干预变化可以测量。
+    - window: 第8–11周
+      work: 收集开发数据，固定分组切分，比较简单规则与模型。
+      output: 数据v0.1、基线表、预测误差与校准图。
+      gate: 独立材料足够，效果估计精度允许比较。
+    - window: 第12–16周
+      work: 冻结预测与分析后获取留出条件的人类结果。
+      output: 预测与实际效果对照、失效分析、最小评估包。
+      gate: 有可复查的结果；正负结果均如实记录。
+    - window: 第17–24周
+      work: 完成分析、写作与一项必要补充验证。
+      output: 首项论文稿、可复现artifact、portfolio案例页。
+      gate: 贡献与近邻可区分；3–6个月为规划窗口而非保证。
+  stages:
+    - id: trace-studio
+      number: "01"
+      title: 看见理解分歧
+      question: 同一图像与评论，接收者在哪里形成不同理解？补充背景后怎样变化？
+      artifact_name: MeaningTrace Studio
+      artifact_kind: Web 实验平台 · 轨迹回放 · 实证资源
+      status: PLANNED
+      timing: 近期优先 · 首个4周做MVP，随后真人试点
+      contribution: 把情境表达转为可审查的交互证据，明确哪些差异是合理多义、哪些有任务相关后果。
+      interface_panels:
+        - title: 表达与情境
+          content: 左侧呈现图像、固定对象锚点、间接反馈；按条件展示背景。
+        - title: 接收者视图
+          content: 中间记录自由解释、接受/修改/澄清选择；不显示发送者隐藏意图。
+        - title: 证据与回放
+          content: 右侧对齐原解释、干预、修订解释和行动；事实与机制推断分开。
+      workflow:
+        - 导入有来源的案例
+        - 设置可见背景
+        - 记录接收者解释
+        - 补充一条背景
+        - 回放并审查变化
+      deliverables:
+        - 可运行实验网页与复现配置
+        - 统一事件格式、来源与权限记录
+        - 小型真人试点数据及评分规则
+        - 示例回放与演示视频
+      evidence:
+        - 发送者意图、接收者解释、可见语境、后续行动分列记录。
+        - 真人差异不能只由研究者编造的极端句子产生。
+        - 已有X21提供语用诊断基础；新采集与干预证据必须单独获得。
+      gate: 测量能区分合理歧义与任务相关误解；日志和干预流程可靠。
+      stop: 若主要问题来自点击、视觉识别或阅读难度，先改题；不强行解释为社会语用。
+      depends_on: []
+      industry_refs:
+        - stanford-gum
+        - adobe-uxcascade
+    - id: friction-bench
+      number: "02"
+      title: 把能力变成可测的任务
+      question: 模型能否预测人的解释分布，以及澄清带来的真实变化？
+      artifact_name: FrictionBench · Communication Track
+      artifact_kind: 数据集 · AI benchmark · 案例与结果浏览器
+      status: PLANNED
+      timing: 首个3–6个月形成最小评估包；满足标准后扩展发布
+      contribution: 将单一答题准确率扩展为解释分布、干预收益和不确定性的有效评价。
+      interface_panels:
+        - title: 案例浏览器
+          content: 按表达、语境、歧义类型及证据来源筛选；比较可接受解释。
+        - title: 评估配置
+          content: 选择公开开发划分与指标；测试标签隔离，预测带版本与冻结时间。
+        - title: 结果审查
+          content: 并列模型与真人分布、收益误差和置信区间；榜单只展示实际验证结果。
+      workflow:
+        - 整理授权数据
+        - 按源材料分组切分
+        - 运行简单与模型基线
+        - 冻结测试预测
+        - 独立评价并发布版本
+      deliverables:
+        - 数据说明、许可与去标识策略
+        - 版本化数据和分组切分清单
+        - 可重复运行的评测程序与基线
+        - 案例浏览器、结果表与失败报告
+      evidence:
+        - 干预效果有对照和明确评价目标；解释变化不自动算改善。
+        - 未见材料、参与者、干预类型与跨场景泛化分别报告。
+        - 冻结预测后验证真实结果，控制近重复和源对话泄漏。
+        - 有平均收益、初始误解率及直接模型预测等低成本基线。
+      gate: 人类参照可靠、测量有效、独立结果可复现；规模服务问题而非凑数量。
+      stop: 若人类效果过噪或单一正向规则就足够，不扩榜单；先改测量或材料。
+      depends_on:
+        - trace-studio
+      industry_refs:
+        - anthropic-evals
+        - stanford-gum
+    - id: listener-workbench
+      number: "03"
+      title: 学习有边界的接收者模型
+      question: 什么接收者信息真正增加预测力？模型何时应该承认不知道？
+      artifact_name: Listener Model Workbench
+      artifact_kind: 模型/方法 · 可调用接口 · 校准与误差分析台
+      status: PLANNED
+      timing: 评估协议成立后按基线缺口启动；不作为应用研究前置门槛
+      contribution: 研究有证据的知识与语境表示、校准、分布变化和拒绝预测，提升可检验的理解与干预预测能力。
+      interface_panels:
+        - title: 可用证据
+          content: 显示模型可见的表达、背景和已观察接收者信息，禁止隐藏答案流入。
+        - title: 模型对照
+          content: 同基础模型、相近预算比较直接预测、采样、结构化状态与必要消融。
+        - title: 可靠性面板
+          content: 展示校准、收益误差、成本和不确定案例；可导出预测记录。
+      workflow:
+        - 定位简单基线的不足
+        - 加入最小必要状态
+        - 校准及消融
+        - 测试留出分布
+        - 提供带边界的接口
+      deliverables:
+        - 模型方法或轻量适配器与推理接口
+        - 可运行对照台与复现实验配置
+        - 校准/成本/域外失效报告
+        - 在许可允许时发布代码或权重及模型说明
+      evidence:
+        - 相对群体预测、初始误解率和直接模型基线有增量价值。
+        - 无个体历史时只声称群体或条件模型，不宣称个体数字孪生。
+        - 显式状态或拟合优越不直接证明人的认知机制。
+      gate: 独立材料上有稳定的预测或校准收益，并明确延迟、成本和失效范围。
+      stop: 若复杂模拟器无增益，保留最简单模型；资源与评价贡献可独立成立。
+      depends_on:
+        - friction-bench
+      industry_refs:
+        - stanford-gum
+        - anthropic-evals
+        - microsoft-m365
+    - id: friction-lens
+      number: "04"
+      title: 让预测帮助真实沟通
+      question: 何时补背景、重述或提问能帮助交流，同时保留表达者的声音与选择？
+      artifact_name: FrictionLens
+      artifact_kind: Web/画布沟通工具 · 交互技术 · 决策支持研究
+      status: PLANNED
+      timing: 测量可靠后可与模型阶段并行，优先复用现有可靠模型
+      contribution: 检验诊断和建议是否改善真实沟通决策、降低无效打断，而不只是让界面看起来更智能。
+      interface_panels:
+        - title: 写作/反馈画布
+          content: 在图像与评论旁标出可能的理解分歧，保留原表达。
+        - title: 澄清候选
+          content: 比较补背景、重述或询问；解释建议依据，允许不干预。
+        - title: 人的决定
+          content: 用户接受、编辑或拒绝；回看实际结果和误建议，调整建议边界。
+      workflow:
+        - 写下表达
+        - 查看理解风险依据
+        - 比较澄清方式
+        - 由人决定
+        - 记录后续沟通结果
+      deliverables:
+        - 可交互的薄原型或插件
+        - 建议证据卡、变体比较和撤回设计
+        - 真实沟通任务评价与误建议案例
+        - 产品研究案例页与可复用设计原则
+      evidence:
+        - 与无辅助、简单提示或普通LLM辅助比较。
+        - 测量任务相关理解、修复成本、打断负担和表达自主性。
+        - 只做可用性或满意度测评不足以证明沟通效果。
+      gate: 对预定义的沟通结果有证据，且额外负担与错误建议可接受。
+      stop: 若建议降低表达质量、增加打断或没有效果，收缩为证据浏览而非自动指导。
+      depends_on:
+        - friction-bench
+      industry_refs:
+        - adobe-uxcascade
+        - microsoft-m365
+    - id: shared-context-lab
+      number: "05"
+      title: 从一次澄清走向共同语境
+      question: 共同经历何时改变之后的表达与理解？这些变化是伙伴特定的吗？
+      artifact_name: Shared Context Lab
+      artifact_kind: 持续互动实验台 · 可选 VR/AR · 跨次评估资源
+      status: PLANNED
+      timing: 长期条件分支；由前期历史增量价值触发，不预设设备或工期
+      contribution: 区分一般记忆、任务练习与伙伴间的共同语境及适应，延续原主线的共享意义问题。
+      interface_panels:
+        - title: 共同历史
+          content: 显示已经相互确认的表达与修复记录；可重置或打乱历史。
+        - title: 伙伴与视角
+          content: 设置伙伴互换和信息可见性；需要空间视角时再使用VR/AR。
+        - title: 跨次变化
+          content: 比较后续表达、理解与修复成本；匹配信息量和练习程度。
+      workflow:
+        - 记录重复互动
+        - 操纵历史或伙伴
+        - 测试新表达/新场景
+        - 检验适应是否迁移
+        - 分析共享语境边界
+      deliverables:
+        - 可配置的重复互动Web实验台
+        - 伙伴/历史/信息量控制协议与数据
+        - 跨次泛化评估与轨迹可视化
+        - 若问题要求空间视角，再交付XR场景与同步记录
+      evidence:
+        - 历史打乱、伙伴互换及信息量匹配能排除简单长上下文收益。
+        - 一次澄清改善或表达重复不足以证明共同惯例。
+        - AR/VR必须贡献视角、共同注意或空间可见性的独立证据。
+      gate: 存在值得解释的伙伴历史增量；设备能力与招募成本可行。
+      stop: 若桌面足以回答问题则保留Web；不把Aria预设为显示设备或实时输出平台。
+      depends_on:
+        - trace-studio
+        - friction-bench
+      industry_refs:
+        - deepmind-sima
+        - meta-aria
+        - microsoft-m365
+  sources:
+    - id: adobe-uxcascade
+      organization: Adobe Research
+      title: UXCascade
+      url: https://research.adobe.com/publication/uxcascade-scalable-usability-testing-with-simulated-user-agents/
+      observed: 官方项目介绍模拟用户轨迹分析、设计反馈与界面修改比较。
+      relevance: 对应可追溯分析、干预比较与设计工具；本主线另须验证真实接收者效果。
+      caveat: 核验于2026-09-18；页面列发表日2026-11-02。作为公开研究方向证据，未据摘要断言其方法缺口。
+    - id: stanford-gum
+      organization: Stanford HCI
+      title: Creating General User Models from Computer Use
+      url: https://hci.stanford.edu/publications/paper.php?id=512
+      observed: 官方论文页列出UIST 2025的通用用户建模研究。
+      relevance: 对应从交互证据表示用户知识与状态；本项目聚焦表达解释和澄清响应。
+      caveat: 能力相关性是本项目综合判断，不表示合作或该团队已认可本项目。
+    - id: anthropic-evals
+      organization: Anthropic
+      title: Demystifying evals for AI agents
+      url: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+      observed: 官方工程文章讨论轨迹、结果、评测框架与人类校准。
+      relevance: 对应可复现评估、分层指标与失效分析，便于模型团队接入研究资源。
+      caveat: 工程方向参照；不证明本题新颖性或招聘需求。
+    - id: microsoft-m365
+      organization: Microsoft Research
+      title: M365 Research
+      url: https://www.microsoft.com/en-us/research/group/m365-research/
+      observed: 官方团队方向涵盖情境、经验、协作、评估和人类控制。
+      relevance: 对应共享语境、协作工具及可验证的沟通干预。
+      caveat: 团队方向会更新；2026-09-18访问，契合不等于采用意向。
+    - id: deepmind-sima
+      organization: Google DeepMind
+      title: SIMA 2
+      url: https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/
+      observed: 官方研究介绍在虚拟3D环境中理解指令、对话与行动的agent。
+      relevance: 对应情境理解、互动环境与跨场景评价；空间阶段可提供边界清晰的研究任务。
+      caveat: 不是要求训练通用具身agent；虚拟空间相似不自动构成科学关联。
+    - id: meta-aria
+      organization: Meta / Project Aria
+      title: Open Science Initiative · Aria Gen 2
+      url: https://facebookresearch.github.io/projectaria_tools/gen2/research-tools
+      observed: 官方研究工具面向多模态感知与contextual AI，提供数据和分析资源。
+      relevance: 若共享视角或可见背景是核心变量，可支持情境证据采集与离线研究。
+      caveat: 用户设备的具体采集、同步和开发能力须单独验证；不假定显示或实时输出。
+  boundaries:
+    - 原主线仍研究社会表达与意义；一般GUI操作失败只有明确沟通机制时才进入。
+    - FailureTrace是证据与评估方法，MeaningTrace保留合理的解释多样性。
+    - 已批准的是主线与artifact路线；科学新颖性、效果、具体样本量及实验准备度仍需核验。
+    - 所有artifact当前均为计划中；本网站提供路线与界面蓝图，不伪装已完成研究系统或真实榜单。
+    - 官方研究方向只支持能力契合，不能保证大厂兴趣、采用、合作或招聘。
+    - 每阶段发布包应包含演示/案例、可复现代码或数据、基线、指标和失败边界。
+  next_actions:
+    - 优先实施MeaningTrace Studio的材料与测量验证，建立最小评测协议。
+    - 首场景为视觉作品上的间接反馈；先固定对象指代，仅研究一种用意差异。
+    - 先比较简单预测方法，避免为展示而加入persona、记忆或多agent模块。
+    - 首个研究闭环以3–6个月规划；后续阶段按证据选取，不强行串成五篇。

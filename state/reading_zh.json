@@ -473,9 +473,19 @@
       "next": "先对照X21与X30–X35建立任务、机制、评价和资源矩阵，再提炼首项问题；本轮没有批准研究方案。"
     }
   },
-  "questions": {},
+  "questions": {
+    "RQ-FT-01": {
+      "title": "AI能预测补一句背景是否真的帮助理解间接反馈吗？",
+      "summary": "整合主线与逐阶段artifact路线已获用户批准；本具体问题仍为草案，尚未验证新颖性和测量可行性。",
+      "example": "解释性示例：对海报标题的“真是生怕别人看不见啊”可能被读成赞美，也可能是委婉修改建议。补充此前“希望低调”的讨论后，接收者的理解是否改变？此例不是实验结果。",
+      "value": "检验模型自己的理解与预测真实接收者如何受澄清影响是否是不同能力，并形成可复现数据和评估。",
+      "boundary": "尚未确认新颖性、材料与测量可行性。发送者意图、合理解释和实际误解要区分；未见材料不等于未见干预。",
+      "next": "按已批准路线优先准备MeaningTrace Studio和最小评测协议；先核对近邻全文、真实案例与测量，后续模型和工具按证据扩展。",
+      "original": "在视觉作品的间接反馈中，模型能否依据接收者可获得的背景与初始解释，预测补充相关沟通背景对理解的影响，并在留出的交流材料上优于简单基线？"
+    }
+  },
   "source_hashes": {
     "research-programs/amsc/state/gap_registry.yaml": "873bce9e2bc63d33ee3104fa5f8dfe8fa32fe6d6c79914429bdf13455027cdae",
-    "research-programs/amsc/state/research_pipeline.json": "db9ee99f4c1f7606258b4b0c3be80881412a351f7df35a68f3b076a4057c60d1"
+    "research-programs/amsc/state/research_pipeline.json": "f71bc3d85bbdbc5dd6bd43bd3ca3bf5e256fd62096fe70fede3f3b9917a56089"
   }
 }
