@@ -15,7 +15,20 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  availability:
+    runs-on: ubuntu-latest
+    outputs:
+      enabled: ${{ steps.pages.outputs.result }}
+    steps:
+      - uses: actions/github-script@v8
+        id: pages
+        with:
+          script: |
+            const repo = await github.rest.repos.get(context.repo);
+            return repo.data.has_pages;
   build:
+    needs: availability
+    if: needs.availability.outputs.enabled == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

@@ -1,0 +1,49 @@
+name: Publish offline research website
+on:
+  push:
+    tags: ['v*-offline-*']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - run: npm ci
+      - run: npm run build
+      - run: node --test tests/research-workspace.test.mjs tests/chinese-reading.test.mjs tests/program-state.test.mjs
+      - run: npm run test:site
+      - run: node scripts/package-offline-site.mjs
+      - name: Create portable ZIP
+        working-directory: release-dist
+        run: zip -qr AMSC-Research-Site.zip AMSC-Research-Site
+      - name: Publish Releases shortcut and reading package
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require('fs');
+            const {owner,repo}=context.repo;
+            const tag=context.ref.startsWith('refs/tags/') ? context.ref.slice(10) : 'v2.1-offline-'+context.sha.slice(0,7);
+            const base='https://github.com/'+owner+'/'+repo;
+            const body=[
+              '## 快捷访问','',
+              '**[下载研究网站离线阅读版]('+base+'/releases/download/'+tag+'/AMSC-Research-Site.zip)**','',
+              '解压整个压缩包，双击 **打开研究网站.html**，即可进入网站。无需安装软件或启动服务器。','',
+              '不下载也可查看：[主线与五阶段成果]('+base+'/blob/'+context.sha+'/research-programs/amsc/ARTIFACT_ROADMAP.md) · [研究计划]('+base+'/blob/'+context.sha+'/research-programs/amsc/PROGRAM.md)','',
+              '包含主线、阶段蓝图、论文库、搜索筛选及研究工作区的发布快照。外部论文链接需联网。','',
+              '本入口不依赖GitHub Pages。Release权限沿用仓库权限；私有仓库需登录获授权账号下载。研究artifact蓝图仍是计划，并非已实现的研究系统。','',
+              '来源提交：'+context.sha
+            ].join('\n');
+            const releases=await github.paginate(github.rest.repos.listReleases,{owner,repo,per_page:100});
+            let release=releases.find(r=>r.tag_name===tag);
+            if(!release)release=(await github.rest.repos.createRelease({owner,repo,tag_name:tag,target_commitish:context.sha,name:'研究网站 · 快捷访问与离线阅读版',body,draft:true})).data;
+            const assets=(await github.rest.repos.listReleaseAssets({owner,repo,release_id:release.id})).data;
+            const old=assets.find(a=>a.name==='AMSC-Research-Site.zip');
+            if(old)await github.rest.repos.deleteReleaseAsset({owner,repo,asset_id:old.id});
+            await github.rest.repos.uploadReleaseAsset({owner,repo,release_id:release.id,name:'AMSC-Research-Site.zip',data:fs.readFileSync('release-dist/AMSC-Research-Site.zip')});
+            await github.rest.repos.updateRelease({owner,repo,release_id:release.id,name:'研究网站 · 快捷访问与离线阅读版',body,draft:false,make_latest:'true'});
+
