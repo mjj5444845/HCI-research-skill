@@ -31,6 +31,9 @@ jobs:
             const base='https://github.com/'+owner+'/'+repo;
             const body=[
               '## 快捷访问','',
+              '**[打开在线研究网站 →](https://mjj5444845.github.io/HCI-research-skill/)**','',
+              '[研究主线与五阶段成果](https://mjj5444845.github.io/HCI-research-skill/program/) · [论文库](https://mjj5444845.github.io/HCI-research-skill/papers/)','',
+              '在线入口跟随网站更新；下方离线包保留本次发布快照。','',
               '**[下载研究网站离线阅读版]('+base+'/releases/download/'+tag+'/AMSC-Research-Site.zip)**','',
               '解压整个压缩包，双击 **打开研究网站.html**，即可进入网站。无需安装软件或启动服务器。','',
               '不下载也可查看：[主线与五阶段成果]('+base+'/blob/'+context.sha+'/research-programs/amsc/ARTIFACT_ROADMAP.md) · [研究计划]('+base+'/blob/'+context.sha+'/research-programs/amsc/PROGRAM.md)','',
@@ -40,10 +43,10 @@ jobs:
             ].join('\n');
             const releases=await github.paginate(github.rest.repos.listReleases,{owner,repo,per_page:100});
             let release=releases.find(r=>r.tag_name===tag);
-            if(!release)release=(await github.rest.repos.createRelease({owner,repo,tag_name:tag,target_commitish:context.sha,name:'研究网站 · 快捷访问与离线阅读版',body,draft:true})).data;
+            if(!release)release=(await github.rest.repos.createRelease({owner,repo,tag_name:tag,target_commitish:context.sha,name:'研究网站 · 在线快捷入口与离线阅读',body,draft:true})).data;
             const assets=(await github.rest.repos.listReleaseAssets({owner,repo,release_id:release.id})).data;
             const old=assets.find(a=>a.name==='AMSC-Research-Site.zip');
             if(old)await github.rest.repos.deleteReleaseAsset({owner,repo,asset_id:old.id});
             await github.rest.repos.uploadReleaseAsset({owner,repo,release_id:release.id,name:'AMSC-Research-Site.zip',data:fs.readFileSync('release-dist/AMSC-Research-Site.zip')});
-            await github.rest.repos.updateRelease({owner,repo,release_id:release.id,name:'研究网站 · 快捷访问与离线阅读版',body,draft:false,make_latest:'true'});
+            await github.rest.repos.updateRelease({owner,repo,release_id:release.id,name:'研究网站 · 在线快捷入口与离线阅读',body,draft:false,make_latest:'true'});
 
