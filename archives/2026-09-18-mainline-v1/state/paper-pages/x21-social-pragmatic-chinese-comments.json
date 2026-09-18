@@ -1,0 +1,39 @@
+{
+  "id": "X21",
+  "slug": "x21-social-pragmatic-chinese-comments",
+  "title": "You Really Didn’t Get That? Benchmarking Social Pragmatic Inference for Indirect and Playful Chinese Online Comments",
+  "authors": ["Shiwei Hong", "Junjie Ma", "Emma Jiren Wang", "Ethan Z. Rong", "Siying Hu", "Haichang Li", "Ziying Wang", "Zhicong Lu"],
+  "year": 2026,
+  "venue": "EMNLP 2026 Main Conference; arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2609.04384",
+  "doi": "10.48550/arXiv.2609.04384",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "A 4,735-item, human-validated Chinese-language social-pragmatics benchmark shows strong task-specific dependence on reconstructed interaction context while exposing unstable interpretations in a difficult revised subset.",
+  "problem": "Can current language models recover the target, stance, wordplay mechanism, and interactional force of indirect or playful comments embedded in Chinese-language online interaction?",
+  "method": "The authors purposefully sampled public interaction episodes from Zhihu, Tieba, Douban, and Xiaohongshu, screened more than 12,000 examples to retain 3,200 episodes, and generated 4,735 five-choice items with eight writer models and seven trained native-Chinese, high-frequency social-media users. They report three 200-item reliability audits, leave-writer-out solver accuracy, a random 300-item human audit, context ablations, and qualitative error cases.",
+  "findings": [
+    "Across the tested model versions, reported leave-writer-out accuracy averaged 68.70%, while a random 300-item human audit reported 90.8% accuracy and kappa .85; these are not paired estimates on identical item sets.",
+    "Removing the reconstructed interaction context reduced mean model accuracy from 68.70% to 29.63%, a 39.07-point drop within this deliberately context-dependent benchmark.",
+    "The 343 human-revised difficult items produced only 64.14% human accuracy and kappa .53, revealing a meaningful ambiguity/gold-stability boundary."
+  ],
+  "real_contribution": "Provides a native-language, multi-platform resource and a plausible-misreading diagnostic protocol for situated social meaning, moving beyond broad humor or sarcasm labels toward target, stance, mechanism, and interactional move.",
+  "biggest_weakness": "Purposive selection conditions on context dependence, solver comparisons use different leave-writer-out item compositions, and adjudicated labels do not directly reveal original speaker intent or participant uptake.",
+  "claim_boundary": "Supports context sensitivity within a purposefully sampled Chinese-language benchmark, not a claim about Chinese culture, all Chinese speakers, general cultural competence, dyadic common ground, or embodied adaptation.",
+  "why_researcher_should_care": "It gives AMSC a rigorous upstream diagnostic template for social-meaning misreadings and a clear example of context-sensitive meaning that must not be mislabeled as common ground.",
+  "amsc": {
+    "mainline_fit": 8.2,
+    "buckets": ["A", "B", "F"],
+    "stages": ["Social meaning/pragmatics"],
+    "mechanisms": ["situated pragmatic inference", "context ablation", "plausible misreadings", "human interpretive ceiling"],
+    "gap_ids": ["GAP-04", "GAP-05"],
+    "master_list_decision": "Candidate — Important / situated social-pragmatics diagnostic"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "Full arXiv HTML was inspected; exact values are preserved with their sampling and comparison boundaries.",
+    "Chinese denotes language and platform discourse ecology here, not a measured national or ethnic culture."
+  ],
+  "provenance": "amsc_radar_2026-09-07",
+  "updated_at": "2026-09-07"
+}

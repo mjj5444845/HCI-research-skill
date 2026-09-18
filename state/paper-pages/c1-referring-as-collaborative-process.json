@@ -41,8 +41,7 @@
       "GAP-01",
       "GAP-02",
       "GAP-03",
-      "GAP-04",
-      "GAP-07"
+      "GAP-04"
     ],
     "master_list_decision": "Baseline v1.0 — retained / CORE classic anchor"
   },
@@ -79,5 +78,12 @@
     "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
     "degraded": false
   },
-  "worth_sharing": false
+  "worth_sharing": false,
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

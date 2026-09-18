@@ -1,0 +1,122 @@
+{
+  "id": "X3",
+  "slug": "x3-seeing-eye-to-eye",
+  "title": "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human–AI Collaboration",
+  "authors": [
+    "Zhuyu Teng",
+    "Pei Chen",
+    "Yichen Cai",
+    "Ruoqing Lu",
+    "Zhaoqu Jiang",
+    "Jiayang Li",
+    "Weitao You",
+    "Lingyun Sun"
+  ],
+  "year": 2026,
+  "venue": "CHI 2026, Article 19, 1–19",
+  "source_url": "https://arxiv.org/abs/2603.12701",
+  "doi": "10.1145/3772318.3791059",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "Eye2Eye整套AR系统减少错误和澄清需求；正文不支持显著缩短任务时间，组件混杂也不允许把收益单独归因于共享记忆。",
+  "claim_boundary": "短期整套系统收益；没有history severing、partner swap、角色互换或新表达协商。对象卡表示不等于双方确认的共同信念。",
+  "amsc": {
+    "mainline_fit": 9.3,
+    "buckets": [
+      "C",
+      "E",
+      "G"
+    ],
+    "stages": [
+      "Grounding",
+      "Adaptation",
+      "Embodied Communication"
+    ],
+    "mechanisms": [
+      "shared perspective",
+      "accumulated common ground"
+    ],
+    "gap_ids": [
+      "GAP-03"
+    ],
+    "master_list_decision": "Candidate — Important"
+  },
+  "problem": "视觉型 AI assistant 如何减少用户把丰富 embodied intent 压缩为 verbal commands 的 communication gulf，并弥补 Agent 对细微 cues 的 understanding gulf？",
+  "method": "60名21–28岁成人；system组间、3任务组内且反平衡顺序。咖啡、图书分类、并联电路排障，共2338turns；LME/GLMM含System×Task及participant截距。AVP系统整合注意触发、对象记忆、反馈，延迟4–5秒。离线消融基于6人×3任务=18段片段、12评者；memory/reflection移除同时改变trigger配置。",
+  "findings": [
+    "Table2/§5.5.1：错误率EMM4.48% vs10.62%；澄清指标0.57 vs1.11，均有系统差异支持。",
+    "§5.5.1：完成时间system和interaction均不显著；总体330 vs345秒仅可描述。摘要的显著缩时说法不能沿用。",
+    "§5.5.2：部分fluency、copresence、trust指标改善；不能写为所有NASA-TLX维度显著降低。",
+    "§6/Table3：完整系统优于消融，但缺少分离memory、feedback和trigger的因果比较；访谈包含用户放慢动作/凝视以迁就延迟。"
+  ],
+  "real_contribution": "共同注意、对象记忆与现场反馈的可用系统组合及短期任务比较，而非mutual-belief或共同惯例的直接验证。",
+  "biggest_weakness": "系统和消融条件混杂；总澄清减少可能由错误机会减少驱动。累积错误曲线与用户迁就不能直接证明学习或稳定共同理解。",
+  "investigation_status": "full_paper_investigation",
+  "why_researcher_should_care": "RQ1应比较等信息量下共同确认历史与仅存储记录；RQ2应测每次错误后的修复、uptake、复发及未来表达更新。",
+  "evidence_notes": [
+    "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
+    "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。",
+    "2026-09-12：v1正文§1–8、Table2及Appendix Table3；未运行系统/重分析。独立审查角色：cognitive_behavioral_methods_auditor；主agent综合并写入。"
+  ],
+  "provenance": "missing_paper_attack_2026-08-26",
+  "updated_at": "2026-09-12",
+  "correction_history": [
+    {
+      "date": "2026-09-12",
+      "previous_status": "abstract_reviewed",
+      "previous_authors": [
+        "Zhuyu Teng",
+        "Pei Chen",
+        "Yichen Cai",
+        "Ruoqing Lu",
+        "Zhaoqu Jiang",
+        "Jiayang Li",
+        "Weitao You",
+        "Lingyun Sun"
+      ],
+      "previous_findings": [
+        "来源摘要报告系统降低 task completion time 与 interaction load，并提高 trust。",
+        "三个组件共同用于维护 evolving common ground，但该 memory 是否形成 jointly negotiated convention 仍需单独检验。"
+      ],
+      "reason": "Independent specialist full-text audit; see investigation_provenance."
+    }
+  ],
+  "claim_evidence_audit": [
+    {
+      "claim": "显著缩短完成时间",
+      "evidence": "摘要与§5.5.1/Table2冲突",
+      "judgment": "采用正文：系统主效应和交互均不显著；纠正旧摘要结论。"
+    },
+    {
+      "claim": "记忆单独导致收益",
+      "evidence": "§6/Appendix Table3消融同时改变reflection和trigger",
+      "judgment": "无法隔离；full优于ablation不等于统计协同已证明。"
+    },
+    {
+      "claim": "形成共同理解或长期惯例",
+      "evidence": "任务错误、主观指标与短序列",
+      "judgment": "属于间接证据；无共同知识判断、历史因果或纵向惯例测试。"
+    }
+  ],
+  "reusable": [
+    "对象卡与显式纠错界面",
+    "每次已验证错误的repair时间/成功率、后续复发及用户等待行为"
+  ],
+  "remember_when": [
+    "构建AR注意、记忆与反馈基线时。",
+    "需要说明性能改善不等于共同信念时。"
+  ],
+  "last_verified": "2026-09-12",
+  "investigation_provenance": {
+    "date": "2026-09-12",
+    "reviewer": "cognitive_behavioral_methods_auditor",
+    "scope": "v1正文§1–8、Table2及Appendix Table3；未运行系统/重分析",
+    "sources": [
+      "https://arxiv.org/abs/2603.12701",
+      "https://arxiv.org/html/2603.12701v1"
+    ],
+    "state_writer": "primary agent",
+    "skeptic": "gap_red_team",
+    "data_reanalysis": false
+  }
+}

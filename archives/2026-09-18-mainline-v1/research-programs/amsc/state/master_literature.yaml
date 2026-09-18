@@ -1,0 +1,418 @@
+version: "1.8"
+baseline_count: 41
+verified_at: 2026-09-14
+note: "The 41-paper baseline is user-defined; twenty-nine evidence-audited candidates are tracked separately. Top-20 Agent investigation is complete, while researcher reading/mastery remains untracked."
+categories:
+  A: "Social / Multimodal / Informal Expression"
+  B: "Pragmatics / Representation / Communicative Efficiency"
+  C: "Common Ground / Grounding / Convention Formation"
+  D: "HRI Communication / Legibility / Uncertainty / Capability"
+  E: "Adaptation / Personalization / Long-Term HRI"
+  F: "Social / Cultural / Relational / Appropriation"
+  G: "Situated / AR / Embodied Output"
+papers:
+  - id: A1
+    slug: a1-ai-mediated-communication
+    title: "AI-Mediated Communication: Definition, Research Agenda, and Ethical Considerations"
+    decision: "Baseline v1.0 — retained / Important background; definition excludes direct HAI"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: A2
+    slug: a2-textual-paralanguage
+    title: "Textual Paralanguage and Its Implications for Marketing Communications"
+    decision: "Baseline v1.0 — retained / Supplementary construct anchor"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: A3
+    slug: a3-interpreting-emoji-pragmatics
+    title: "Interpreting Emoji Pragmatics"
+    decision: "Baseline v1.0 — retained"
+  - id: A4
+    slug: a4-a-visual-lexicon
+    title: "A Visual Lexicon"
+    decision: "Baseline v1.0 — retained"
+  - id: A5
+    slug: a5-multimodal-parallel-architecture
+    title: "A Multimodal Parallel Architecture: A Cognitive Framework for Multimodal Interactions"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: A6
+    slug: a6-puppetchat
+    title: "PuppetChat: Fostering Intimate Communication through Bidirectional Actions and Micronarratives"
+    decision: "Baseline v1.0 — retained"
+  - id: B1
+    slug: b1-pragmatic-language-interpretation
+    title: "Pragmatic Language Interpretation as Probabilistic Inference"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: B2
+    slug: b2-rational-speech-act-framework
+    title: "The Rational Speech Act Framework"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: B3
+    slug: b3-pragmatic-inference-visual-abstraction
+    title: "Pragmatic Inference and Visual Abstraction Enable Contextual Flexibility During Visual Communication"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: B4
+    slug: b4-when-redundancy-is-useful
+    title: "When Redundancy Is Useful: A Bayesian Approach to ‘Overinformative’ Referring Expressions"
+    decision: "Baseline v1.0 — retained"
+  - id: C1
+    slug: c1-referring-as-collaborative-process
+    title: "Referring as a Collaborative Process"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: C2
+    slug: c2-grounding-in-communication
+    title: "Grounding in Communication"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: C3
+    slug: c3-conceptual-pacts
+    title: "Conceptual Pacts and Lexical Choice in Conversation"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: C4
+    slug: c4-repeated-reference-games
+    title: "Characterizing the Dynamics of Learning in Repeated Reference Games"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: C5
+    slug: c5-graphical-convention-formation
+    title: "Disentangling contributions of visual information and interaction history in the formation of graphical conventions"
+    decision: "Baseline v1.0 — retained / EMPIRICALLY_SUPERSEDED_BY C6"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+    alternate_title: "Graphical Convention Formation During Visual Communication"
+    evidence_independence: dependent_on_c6
+    counts_as_independent_source: false
+  - id: C6
+    slug: c6-visual-resemblance-interaction-history
+    title: "Visual Resemblance and Interaction History Jointly Constrain Pictorial Meaning"
+    decision: "Baseline v1.0 — retained / canonical visual-convention anchor"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: C7
+    slug: c7-shared-procedural-abstractions
+    title: "Learning to Communicate about Shared Procedural Abstractions"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: C8
+    slug: c8-gesturing-toward-abstraction
+    title: "Gesturing Toward Abstraction: Multimodal Convention Formation in Collaborative Physical Tasks"
+    decision: "Baseline v1.0 — retained / CORE closest multimodal-physical anchor"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: D1
+    slug: d1-nonverbal-teamwork
+    title: "Effects of Nonverbal Communication on Efficiency and Robustness in Human-Robot Teamwork"
+    decision: "Baseline v1.0 — retained"
+  - id: D2
+    slug: d2-footing-in-human-robot-conversations
+    title: "Footing in Human-Robot Conversations: How Robots Might Shape Participant Roles Using Gaze Cues"
+    decision: "Baseline v1.0 — retained"
+  - id: D3
+    slug: d3-nonverbal-leakage
+    title: "Nonverbal Leakage in Robots: Communication of Intentions through Seemingly Unintentional Behavior"
+    decision: "Baseline v1.0 — retained"
+  - id: D4
+    slug: d4-expressing-thought
+    title: "Expressing Thought: Improving Robot Readability with Animation Principles"
+    decision: "Baseline v1.0 — retained"
+  - id: D5
+    slug: d5-legibility-and-predictability
+    title: "Legibility and Predictability of Robot Motion"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: D6
+    slug: d6-designing-robots-with-movement
+    title: "Designing Robots with Movement in Mind"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: D7
+    slug: d7-social-eye-gaze-review
+    title: "Social Eye Gaze in Human-Robot Interaction: A Review"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: D8
+    slug: d8-legible-multimodal-state-intent
+    title: "Legible and Intuitive Multi-modal Robot State and Intent Communication Validated in Online and Real-world Studies"
+    decision: "Baseline v1.0 — retained"
+  - id: D9
+    slug: d9-anatomy-of-uncertainty
+    title: "Anatomy of Uncertainty: Expressive Descriptors of Robotic Manipulator Motion for Non-verbal Communication in Human-Robot Collaboration"
+    decision: "Baseline v1.0 — retained"
+  - id: E1
+    slug: e1-long-term-social-robots-survey
+    title: "Social Robots for Long-Term Interaction: A Survey"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: E2
+    slug: e2-human-robot-mutual-adaptation
+    title: "Human-Robot Mutual Adaptation in Collaborative Tasks: Models and Experiments"
+    decision: "Baseline v1.0 — retained / adjacent computational adaptation anchor"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: E3
+    slug: e3-continual-adaptation-machine-communication
+    title: "Continual Adaptation for Efficient Machine Communication"
+    decision: "Baseline v1.0 — retained / CORE cross-theme bridge"
+    investigation_status: full_paper_investigation
+    last_investigated: 2026-08-27
+  - id: E4
+    slug: e4-designing-robots-long-term
+    title: "Designing Robots for Long-Term Social Interaction"
+    decision: "Baseline v1.0 — retained"
+  - id: F1
+    slug: f1-emergence-social-norms-conventions
+    title: "The Emergence of Social Norms and Conventions"
+    decision: "Baseline v1.0 — retained"
+  - id: F2
+    slug: f2-robots-in-society
+    title: "Robots in Society, Society in Robots: Mutual Shaping of Society and Technology as a Framework for Social Robot Design"
+    decision: "Baseline v1.0 — retained"
+  - id: F3
+    slug: f3-robotic-products-social-products
+    title: "How Robotic Products Become Social Products: An Ethnographic Study of Cleaning in the Home"
+    decision: "Baseline v1.0 — retained"
+  - id: F4
+    slug: f4-my-roomba-is-rambo
+    title: "“My Roomba Is Rambo”: Intimate Home Appliances"
+    decision: "Baseline v1.0 — retained"
+  - id: F5
+    slug: f5-robots-in-the-wild
+    title: "Robots in the Wild: A Time for More Robust Theories of Human-Robot Interaction"
+    decision: "Baseline v1.0 — retained"
+  - id: F6
+    slug: f6-generative-encounters-robin
+    title: "Generative Encounters with Robin: Design through Adaptation and Appropriation of a Social Robot in Four Eldercare Facilities"
+    decision: "Baseline v1.0 — retained"
+    investigation_status: abstract_evidence_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Nan Hu
+      - Selma Šabanović
+  - id: G1
+    slug: g1-robot-motion-intent-ar
+    title: "Communicating Robot Motion Intent with Augmented Reality"
+    decision: "Baseline v1.0 — retained"
+  - id: G2
+    slug: g2-visualisation-disambiguating-verbal-requests
+    title: "A Comparison of Visualisation Methods for Disambiguating Verbal Requests in Human-Robot Interaction"
+    decision: "Baseline v1.0 — retained"
+  - id: G3
+    slug: g3-explainable-oohri
+    title: "Explainable OOHRI: Communicating Robot Capabilities and Limitations as Augmented Reality Affordances"
+    decision: "Baseline v1.0 — retained"
+  - id: G4
+    slug: g4-context-aware-expressive-motion
+    title: "Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models"
+    decision: "Baseline v1.0 — retained"
+candidates:
+  - id: X1
+    slug: x1-spotter-human-robot-conventions
+    title: "SPOTTER: A Framework for Investigating Convention Formation in a Visually Grounded Human-Robot Reference Task"
+    decision: "Candidate — Must Read"
+    investigation_status: full_paper_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Jaap Kruijt
+      - Peggy van Minkelen
+      - Lucia Donatelli
+      - Piek T.J.M. Vossen
+      - Elly Konijn
+      - Thomas Baier
+  - id: X2
+    slug: x2-lvlms-humans-ground-differently
+    title: "LVLMs and Humans Ground Differently in Referential Communication"
+    decision: "Candidate — Important"
+    investigation_status: full_paper_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Peter Zeng
+      - Weiling Li
+      - Amie J. Paige
+      - Zhengxiang Wang
+      - Panagiotis Kaliosis
+      - Dimitris Samaras
+      - Gregory Zelinsky
+      - Susan E. Brennan
+      - Owen Rambow
+  - id: X3
+    slug: x3-seeing-eye-to-eye
+    title: "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human–AI Collaboration"
+    decision: "Candidate — Important"
+    investigation_status: full_paper_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Zhuyu Teng
+      - Pei Chen
+      - Yichen Cai
+      - Ruoqing Lu
+      - Zhaoqu Jiang
+      - Jiayang Li
+      - Weitao You
+      - Lingyun Sun
+  - id: X4
+    slug: x4-making-memories-together
+    title: "Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction"
+    decision: "Candidate — Important / Preliminary"
+    investigation_status: full_paper_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Elena Malnatsky
+      - Shenghui Wang
+      - Koen Hindriks
+      - Mike E. U. Ligthart
+  - id: X5
+    slug: x5-social-context-of-hri
+    title: "The Social Context of Human–Robot Interactions"
+    decision: "Candidate — Important"
+    investigation_status: full_paper_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Sydney Thompson
+      - Kate Candon
+      - Marynel Vázquez
+  - id: X6
+    slug: x6-beyond-local-surprise
+    title: "Beyond Local Surprise: Grounded Dialogue as Selective Belief Revision under Referential Uncertainty"
+    decision: "Candidate — Important / Computational hypothesis"
+  - id: X7
+    slug: x7-embodied-world-model-alignment
+    title: "Embodied Multi-Agent Coordination by Aligning World Models Through Dialogue"
+    decision: "Candidate — Important / Embodied method"
+  - id: X8
+    slug: x8-success-cost-convention-formation
+    title: "Success and Cost Elicit Convention Formation for Efficient Communication"
+    decision: "Candidate — Must Read / First-run recovery"
+  - id: X9
+    slug: x9-aligned-not-partner-specific
+    title: "Aligned but Not Partner-Specific: Distinguishing How Multimodal LLM Agents Succeed in Reference Games Without Human-Like Conventions"
+    decision: "Candidate — Must Read / First-run recovery"
+  - id: X10
+    slug: x10-llms-people-conventions
+    title: "LLMs and People Both Learn to Form Conventions—Just Not with Each Other"
+    decision: "Candidate — Must Read / First-run recovery"
+  - id: X11
+    slug: x11-common-ground-benchmark
+    title: "A Benchmark to Assess Common Ground in Human-AI Collaboration"
+    decision: "Candidate — Important / First-run recovery"
+  - id: X12
+    slug: x12-partners-to-populations
+    title: "From Partners to Populations: A Hierarchical Bayesian Account of Coordination and Convention"
+    decision: "Candidate — Must Read / Recovered theory anchor"
+  - id: X13
+    slug: x13-silica-agent-societies
+    title: "Benchmarking large language model agent societies against human behavioural distributions"
+    decision: "Candidate — Must Read / Convention false-positive audit"
+  - id: X14
+    slug: x14-bee-referential-code
+    title: "The emergence and evolution of a referential code in populations of bee-like agents"
+    decision: "Candidate — Important / Embodied convention mechanism"
+  - id: X15
+    slug: x15-synthetic-linguistic-agency
+    title: "Synthetic Linguistic Agency: How an Embodied Mortal Agent Learns Linguistic Affordances through Consequential Social Experience"
+    decision: "Candidate — Important / Embodied adaptation mechanism"
+  - id: X16
+    slug: x16-memuse-natural-integration
+    title: "MemUse: Moving Memory Evaluation from Direct QA to Natural Integration in Long-Term Human-AI Conversation"
+    decision: "Candidate — Important / Longitudinal diagnostic"
+  - id: X17
+    slug: x17-glossogen-emergent-language
+    title: "GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions"
+    decision: "Candidate — Important / AI–AI protocol lifecycle and diagnostic precedent"
+  - id: X18
+    slug: x18-small-talk-rapport
+    title: "From Small Talk to Rapport: Exploring Robot Self-Disclosure in Collaborative Tasks"
+    decision: "Candidate — Important / social–functional embodied communication boundary"
+  - id: X19
+    slug: x19-continuous-worlds-vocabularies
+    title: "Emergent Communication in Continuous Worlds: Self-Organisation of Conceptually Grounded Vocabularies at Scale"
+    decision: "Candidate — Must Read / recovered computational method anchor"
+  - id: X20
+    slug: x20-passing-the-pact
+    title: "Passing the Pact: Comparing Common Ground Building and Audience Design In Multiparty Human and Human-Agent Collaborative Communication"
+    decision: "Candidate — Must Read / abstract-only human-agent pact boundary"
+    investigation_status: abstract_evidence_investigation
+    verified_at: 2026-09-12
+    authors:
+      - Rhys Jacka
+      - Paola R. Peña
+      - Megan Nyhan
+      - Kate Walsh
+      - Sophie Leonard
+      - Holly Branigan
+      - Vincent Wade
+      - Benjamin R. Cowan
+  - id: X21
+    slug: x21-social-pragmatic-chinese-comments
+    title: "You Really Didn’t Get That? Benchmarking Social Pragmatic Inference for Indirect and Playful Chinese Online Comments"
+    decision: "Candidate — Important / situated social-pragmatics diagnostic"
+  - id: X22
+    slug: x22-banana-man-pragmatic-interpretation
+    title: "Which one is banana man? Evaluating vision–language models in multi-turn pragmatic interpretation"
+    decision: "Candidate — Must Read / convention retrieval-versus-construction anchor"
+  - id: X23
+    slug: x23-machine-mental-imagery-common-ground
+    title: "Using Machine Mental Imagery for Representing Common Ground in Situated Dialogue"
+    decision: "Candidate — Important / multimodal common-ground representation architecture"
+  - id: X24
+    slug: x24-multimodal-repair-detection
+    title: "Do Visual Features Improve Other-Initiated Repair Detection? A Dyadic Multimodal Approach"
+    decision: "Candidate — Important / multimodal repair-detection anchor"
+  - id: X25
+    slug: x25-seeing-is-not-sharing
+    title: "Seeing Is Not Sharing: Some Vision-Language Models Overestimate Common Ground in Asymmetric Dialogue"
+    decision: "Candidate — Must Read / recovered diagnostic anchor"
+  - id: X26
+    slug: x26-convention-gap
+    title: "The Convention Gap: Towards Measuring Implicit Communication in Cooperative AI Evaluation"
+    decision: "Candidate — Must Read / measurement anchor"
+  - id: X27
+    slug: x27-calibrated-ambiguity
+    title: "Calibrated Ambiguity in Multimodal Language Models: Humans reach for cultural references, while models describe the picture"
+    decision: "Candidate — Important / meaning-production method"
+  - id: X28
+    slug: x28-continue-adapt-yield
+    title: "Continue, Adapt, or Yield: In-Turn Adaptation to Overlapping Speech in Full-Duplex Agents"
+    decision: "Candidate — Important / uptake measurement component"
+  - id: X29
+    slug: x29-testing-interchangeability
+    title: "Testing Interchangeability in LLM Agent Teams"
+    decision: "Candidate — Must Read / recovered causal-method counterexample"
+change_log:
+  - date: 2026-09-14
+    change: "Added X25–X29: three current-window preprints and two recovered works; partner-swap evidence narrows broad AI partner-specificity claims. No baseline or researcher decision changed."
+  - date: 2026-08-26
+    change: "Imported and source-verified the 41-paper user baseline; corrected B3 year, C7 author order, and E4 first author."
+  - date: 2026-08-26
+    change: "Added five separately labeled candidates from a bounded Missing Paper Attack; GAP-02 and GAP-03 should be treated as partially addressed."
+  - date: 2026-08-27
+    change: "Research Radar v1.2 added two in-window candidates and five first-run recovery candidates after DOI/title/arXiv deduplication and full-text evidence audit; no baseline paper was removed or reprioritized."
+
+  - date: 2026-08-27
+    change: "Top-20 baseline full-text investigation completed for C1, C2, C3, B1, B2, B3, C4, C5, C6, C7, C8, A5, A2, A1, D5, D6, D7, E1, E2, and E3; C5 was marked empirically dependent on C6 and readiness was kept separate from researcher mastery."
+  - date: 2026-08-31
+    change: "Weekly Radar v1.4 added X13–X16 after exact-window filtering and DOI/title/arXiv deduplication; X6 was recognized as an existing candidate, and no baseline or human correction was changed."
+  - date: 2026-09-03
+    change: "Manual Radar v1.5 added X17–X19 after full-text audit and independent red-team review; X19 merges its 2024 arXiv/AAMAS lineage into the canonical TACL record, GlossoGen's cumulative-cultural-evolution claim was bounded to one-swap AI–AI protocol transmission, and no baseline or human correction was changed."
+  - date: 2026-09-07
+    change: "Weekly Radar v1.6 added X20–X24 after exact-window retrieval plus a missing-paper/venue-index recovery pass: one abstract-only human-agent pact study and four full-text diagnostic or architecture anchors. Broad convention-incapacity claims were narrowed to endogenous construction, epistemic calibration, revision, and repair; no baseline or human correction was changed."
+  - date: 2026-09-12
+    note: X1–X5全文审查完成；X4/X5作者纠正；F6/X20仍摘要级且记录访问障碍。保留所有收录决策。

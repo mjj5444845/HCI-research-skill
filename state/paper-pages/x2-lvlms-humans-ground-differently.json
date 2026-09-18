@@ -30,7 +30,8 @@
     "mainline_fit": 9.2,
     "buckets": [
       "B",
-      "C"
+      "C",
+      "D"
     ],
     "stages": [
       "Grounding",
@@ -119,5 +120,12 @@
     "state_writer": "primary agent",
     "skeptic": "gap_red_team",
     "data_reanalysis": false
-  }
+  },
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

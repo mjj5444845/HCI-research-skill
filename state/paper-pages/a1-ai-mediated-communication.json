@@ -27,7 +27,8 @@
     "mainline_fit": 5.4,
     "buckets": [
       "A",
-      "F"
+      "F",
+      "G"
     ],
     "stages": [
       "Social Meaning / Pragmatics"
@@ -35,9 +36,7 @@
     "mechanisms": [
       "Meaning"
     ],
-    "gap_ids": [
-      "GAP-06"
-    ],
+    "gap_ids": [],
     "master_list_decision": "Baseline v1.0 — retained / supplementary background"
   },
   "evidence_notes": [
@@ -75,5 +74,12 @@
     "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
     "degraded": false
   },
-  "worth_sharing": false
+  "worth_sharing": false,
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

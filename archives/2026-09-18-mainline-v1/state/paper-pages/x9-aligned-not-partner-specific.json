@@ -1,0 +1,33 @@
+{
+  "id": "X9",
+  "slug": "x9-aligned-not-partner-specific",
+  "title": "Aligned but Not Partner-Specific: Distinguishing How Multimodal LLM Agents Succeed in Reference Games Without Human-Like Conventions",
+  "authors": ["Po-Ya Angela Wang", "Chinmaya Mishra", "Aslı Özyürek", "Paula Rubio-Fernández", "Esam Ghaleb"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2606.08081",
+  "doi": "10.48550/arXiv.2606.08081",
+  "access_status": "full_text",
+  "publication_status": "preprint_only",
+  "priority": "Must Read",
+  "one_sentence": "用打断 partner history 的 constrained pseudo-dyad baseline 证明高 lexical overlap 和成功可在没有 partner-specific convention 时出现。",
+  "problem": "MLLM reference-game alignment 来自具体 dyad 的 shared history，还是共享任务 vocabulary、pretrained priors 与 verbosity？",
+  "method": "比较 45 个 GPT-5 MLLM dyads/905 rounds 与 42 个 human dyads/3,288 rounds，并构造匹配 referent、round、turn count 与 success 的 pseudo-dyads。",
+  "findings": ["Humans 随互动压缩表达，real dyads 相对 pseudo-dyads 显示 interaction-dependent reuse。", "Agents 保持冗长；real/pseudo overlap 近 ceiling 且无可靠差异，说明 coordination 可不依赖具体 partner history。"],
+  "real_contribution": "提供可反事实检验 partner-specific origin 的 history-severing diagnostic，而非仅以 success、compression 或 overlap 命名 convention。",
+  "biggest_weakness": "preprint；使用单一 GPT-5 setup 与 agent-agent dyads，没有 human–AI mixed condition。",
+  "claim_boundary": "支持‘alignment/coordination 不足以证明 convention’，但不能推出所有模型或所有 training regimes 都缺乏 partner-specific grounding。",
+  "why_researcher_should_care": "几乎直接提供 GAP-04/GAP-07 所需的核心 diagnostic，并迫使 AMSC novelty 使用反事实 history test。",
+  "amsc": {
+    "mainline_fit": 9.7,
+    "buckets": ["C", "E"],
+    "stages": ["Grounding", "Convention", "Adaptation"],
+    "mechanisms": ["pseudo-dyad", "partner-specificity", "history ablation"],
+    "gap_ids": ["GAP-04", "GAP-07"],
+    "master_list_decision": "Candidate — Must Read / First-run recovery"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": ["arXiv v1 from June 2026; outside the strict seven-day window and labeled first-run recovery.", "Preprint status is preserved; full text and reported mixed-effects results were audited."],
+  "provenance": "amsc_radar_2026-08-27_recovery",
+  "updated_at": "2026-08-27"
+}

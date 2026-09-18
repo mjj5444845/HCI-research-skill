@@ -30,7 +30,7 @@
   "claim_boundary": "可支持：在这些 reference games 中，graded semantics+context/typicality能解释 speakers 的系统性 redundancy 与 abstraction choices。不可支持：所有冗余都提升理解；cost 在一般 communication 中不重要；cs-RSA 是实际 cognitive algorithm；verbal object reference 的参数可直接规定 robot multimodal output；该研究解释 shared meaning/conventions 如何随互动形成。",
   "why_researcher_should_care": "提醒你不要简单假设“越少越好”。communication 需要权衡 information cost 与 robustness；未来研究 multimodal redundancy 时非常重要。",
   "amsc": {
-    "mainline_fit": 9.0,
+    "mainline_fit": 9,
     "buckets": [
       "B"
     ],
@@ -44,8 +44,7 @@
     ],
     "gap_ids": [
       "GAP-01",
-      "GAP-03",
-      "GAP-06"
+      "GAP-03"
     ],
     "master_list_decision": "Master Literature v1.0 保留；作为核心 pragmatics-and-efficiency theory"
   },
@@ -88,5 +87,12 @@
     "evidence_scope": "problem_theory_three_experiments_norming_behavioral_results_model_comparisons_general_discussion",
     "degraded": false
   },
-  "worth_sharing": false
+  "worth_sharing": false,
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

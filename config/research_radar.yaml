@@ -9,35 +9,40 @@ deep_read_limit: 5
 normal_read_limit: 10
 interests:
   primary:
-  - HCI
-  - CSCW
-  - Human-AI Interaction
-  - Human-Robot Interaction
-  - Cross-cultural HCI
-  - Cultural AI
-  - AI Policy
+    - HCI
+    - CSCW
+    - AI
+    - CV
+    - NLP
+    - Cognitive science
   semantic_descriptions:
-  - social and cultural mechanisms in human interaction with AI and embodied agents
-  - non-obvious social phenomena enabled or reshaped by AI systems
-  - cross-cultural variation, diaspora, identity, language, and cultural interpretation
-    in AI-mediated interaction
-  - AI-era HCI research methods, computational evidence, digital trace data, simulation-to-human
-    validation
+    - situated social pragmatic interpretation of indirect and playful expression
+    - multimodal relations among language, memes, typography, visual expression and interaction context
+    - models, evaluation, datasets and benchmarks that advance social meaning understanding
+    - human–AI communication and AI-mediated human–human communication
+    - common ground, conventions, memory and adaptation when relevant to the question
   exclusions:
-  - pure application papers with no meaningful research contribution
-  - AI wrapper papers with only obvious user preference outcomes
+    - pure application papers with no meaningful research contribution
+    - AI wrapper papers with only obvious user preference outcomes
 venues:
-  prioritize:
-  - CHI
-  - CSCW
-  - UIST
-  - HRI
-  - FAccT
-  - ACL
-  - EMNLP
-  - NeurIPS
-  - ICML
-  - ICLR
+  prioritize: &a1
+    - CHI
+    - CSCW
+    - UIST
+    - ACL
+    - EMNLP
+    - NAACL
+    - COLING
+    - TACL
+    - CVPR
+    - ICCV
+    - ECCV
+    - NeurIPS
+    - ICML
+    - ICLR
+    - AAAI
+    - IJCAI
+    - CogSci
 output:
   primary_language: zh
   include_english_executive_summary: true
@@ -59,22 +64,28 @@ amsc:
   mechanism_based_search: true
   track_anchor_researchers: true
   track_students_postdocs_collaborators: true
-  tier1_venues:
-  - CHI
-  - CSCW
-  - HRI
-  - UIST
-  - CogSci
+  tier1_venues: *a1
   tier2_venues:
-  - RO-MAN
-  - ICRA
-  - IROS
-  - ACM THRI
-  - International Journal of Social Robotics
+    - HRI
+    - RO-MAN
+    - ICRA
+    - IROS
+    - ACM THRI
   preprints:
-  - arXiv
+    - arXiv
   reject_keyword_only_overlap: true
   weekly_fixed_sections:
-  - 本周论文及其总结分析
-  - Master Literature List 更新
-  - 当前研究现状与 Gap 更新
+    - 本周论文及其总结分析
+    - Master Literature List 更新
+    - 当前研究现状与 Gap 更新
+  primary_anchors:
+    - Zhicong Lu
+    - Judith Fan
+    - Ziqiao Ma
+    - Parastoo Abtahi
+    - Ryo Suzuki
+  foundation_paper: "2609.04384"
+  program_version: "2.0"
+  robot_requirement: false
+  contribution_policy: Computational, resource, theoretical, empirical and system contributions are equal
+    routes; human studies only when the claim needs them.

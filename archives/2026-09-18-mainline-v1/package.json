@@ -1,0 +1,19 @@
+{
+  "name": "hci-research-skill",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import:literature": "node scripts/import-master-literature.mjs",
+    "build": "node scripts/build-site.mjs",
+    "preview": "node scripts/serve-site.mjs",
+    "test:site": "node scripts/validate-site.mjs",
+    "validate": "powershell -ExecutionPolicy Bypass -File scripts/validate-install.ps1",
+    "test:workspace": "node --test tests/research-workspace.test.mjs",
+    "test:reading": "node --test tests/chinese-reading.test.mjs"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "yaml": "2.9.1"
+  }
+}

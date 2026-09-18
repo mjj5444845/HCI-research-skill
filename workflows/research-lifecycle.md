@@ -33,7 +33,7 @@ This is the active lifecycle contract for Research Radar, Idea Development, Lite
 | Gap aggregation or major change | amsc_gap_curator | gap_red_team and missing_paper_attacker before consequential promotion |
 | Candidate question | Idea Development | amsc_skeptic on importance, distinction and mainline fit |
 | Novelty validation | Literature Investigation | novelty_domain_panel with relevant domain lenses |
-| Basic design | Study Design | method_efficiency_advocate and human_evidence_advocate; quantitative, behavioral, culture and paradigm-appropriate qualitative auditors as relevant |
+| Basic design | Study Design | method_efficiency_advocate and human_evidence_advocate; computational-evaluation, quantitative, behavioral, culture and paradigm-appropriate qualitative auditors as relevant |
 | Pilot report | Study Design | Relevant method auditor compares observations against predeclared criteria |
 | Mainline decision | amsc_final_synthesizer | Synthesize disagreement, not a vote; researcher decides priority |
 | Non-AMSC decision | senior_faculty_synthesizer | Same evidence and deliberation requirements |
@@ -61,3 +61,9 @@ Use schemas/research-pipeline.schema.json and schemas/writing-workspace.schema.j
 论文、研究空白和问题页面默认使用通俗中文。先说明具体做法与发现，再说明证据不能支持什么，以及与研究主线的关系。不要用连续英文术语代替解释。中文标题标为工作译名，保留英文原标题、作者、出处和来源用于检索。例子须明确是解释性示例，不能写成实验结果。
 
 网页阅读内容维护在 `state/reading_zh.json`，原始审查记录仍作为证据来源。新增或修订论文、Gap、问题时，同时核对对应中文解读并更新来源哈希；源记录变化而解读未核对时，网页提示待复核。翻译或通俗改写不得改变研究状态、优先级、研究者决定及实际实验完成情况。
+
+## Program scope migration (2026-09-18)
+
+Current scope is program v2.0. A–G labels are defined in program.yaml; old paper IDs remain stable and no longer imply the new category. archives/2026-09-18-mainline-v1 preserves all pre-migration records including uncommitted work. Deferred robot material and old RQ/validation/study bundles are absent from current site projections. Archival does not resolve a scientific gap. New specific RQs require question development; direction approval is not PURSUE. Do not run legacy import or integration scripts against v2 state.
+
+Select evidence by contribution: computational validation is a first-class study design; human-study and qualitative audits are conditional. After scope changes validate every paper, gap, question, graph and downstream reference and rebuild Chinese source hashes only for reviewed edits.

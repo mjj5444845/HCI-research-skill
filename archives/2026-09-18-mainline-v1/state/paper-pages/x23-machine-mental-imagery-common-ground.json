@@ -1,0 +1,39 @@
+{
+  "id": "X23",
+  "slug": "x23-machine-mental-imagery-common-ground",
+  "title": "Using Machine Mental Imagery for Representing Common Ground in Situated Dialogue",
+  "authors": ["Biswesh Mohapatra", "Giovanni Duca", "Laurent Romary", "Justine Cassell"],
+  "year": 2026,
+  "venue": "ACM ICMI 2026 program; arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2604.21144",
+  "doi": "10.48550/arXiv.2604.21144",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "Incremental visual and textual artifacts improve QA over archived situated dialogues, with hybrid representations best preserving complementary depictable and propositional state, but they remain system-side representations rather than demonstrated mutual common ground.",
+  "problem": "Can an agent incrementally externalize evolving situated-dialogue state into inspectable visual artifacts that reduce representational blur and support later grounded inference?",
+  "method": "An Observer–Constructor–Linker–Reasoner pipeline uses Qwen-family models to segment MeetUp dialogue, generate verified schematic images or dense text summaries, store cross-scene relations, retrieve relevant artifacts, and answer 200 IndiRef questions spanning temporal, spatial, attributive, and inferred relations. Full-dialog, image, text, and hybrid conditions are compared using an LLM judge.",
+  "findings": [
+    "Incremental image and text conditions outperformed the same VLM reasoning directly over the full dialogue across all four relation types.",
+    "Images were stronger for several local, temporal, and inferred distinctions, while text was better for some topology, negation, uncertainty, and other non-depictable information.",
+    "The hybrid image-plus-text condition achieved the best results in three of four categories, but inferred accuracy remained lower than image-only and overall accuracy stayed far from ceiling."
+  ],
+  "real_contribution": "Offers an inspectable multimodal memory architecture and a concrete operationalization of persistent dialogue-state commitments, including explicit epistemic markings for confirmed, unresolved, and assumed content.",
+  "biggest_weakness": "A single 200-question benchmark, shared model backbone, LLM-based judge, and qualitative mechanism analysis do not isolate every component; indirect requests, negation, and cross-frame links remain failure modes.",
+  "claim_boundary": "Supports incremental multimodal state representation and retrieval on human-human dialogue traces, not mutual acceptance, agent-partner common ground, convention formation, or online human-agent co-adaptation.",
+  "why_researcher_should_care": "It is a close architecture precedent for separating memory availability from an inspectable representation of what the system treats as shared, while its failures show why pragmatic grounding cannot be reduced to depictive state storage.",
+  "amsc": {
+    "mainline_fit": 8.7,
+    "buckets": ["B", "C", "E"],
+    "stages": ["Grounding/common ground", "Personalization/co-adaptation"],
+    "mechanisms": ["incremental state externalization", "visual scaffolding", "multimodal memory", "epistemic commitment", "retrieval"],
+    "gap_ids": ["GAP-01", "GAP-04"],
+    "master_list_decision": "Candidate — Important / multimodal common-ground representation architecture"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "Recovered when the ICMI 2026 official sessions page surfaced; the arXiv paper predates the exact seven-day submission window.",
+    "The paper's use of common ground is retained as its framing, while the state record distinguishes system representation from mutually grounded evidence."
+  ],
+  "provenance": "amsc_radar_2026-09-07",
+  "updated_at": "2026-09-07"
+}

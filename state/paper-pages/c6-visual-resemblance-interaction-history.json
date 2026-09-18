@@ -29,6 +29,7 @@
   "amsc": {
     "mainline_fit": 9.8,
     "buckets": [
+      "A",
       "C"
     ],
     "stages": [
@@ -42,8 +43,7 @@
     ],
     "gap_ids": [
       "GAP-01",
-      "GAP-02",
-      "GAP-07"
+      "GAP-02"
     ],
     "master_list_decision": "Baseline v1.0 — retained / definitive visual-convention anchor"
   },
@@ -79,5 +79,12 @@
     "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
     "degraded": false
   },
-  "worth_sharing": false
+  "worth_sharing": false,
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

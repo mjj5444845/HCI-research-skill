@@ -1,0 +1,55 @@
+{
+  "id": "X26",
+  "slug": "x26-convention-gap",
+  "title": "The Convention Gap: Towards Measuring Implicit Communication in Cooperative AI Evaluation",
+  "authors": [
+    "Makoto Fukushima",
+    "Hua-Dong Xiong",
+    "Ehsan Moradi Pari"
+  ],
+  "venue": "arXiv preprint v2, 11 September 2026",
+  "source_url": "https://arxiv.org/abs/2609.11489",
+  "priority": "Must Read",
+  "one_sentence": "A literal-information baseline exposes beyond-literal cooperation in Hanabi, without identifying how shared conventions formed.",
+  "problem": "What does cooperative success reveal beyond explicitly conveyed information?",
+  "method": "Retrospective replay of 100,956 Hanabi play actions; exact literal failure posterior minus observed failure; clustered uncertainty, within-participant comparisons and Off-Belief Learning validation.",
+  "findings": [
+    "Gaps were +26.2 percentage points for human pairs, −0.7 for AI pairs and +16.4 for human–AI.",
+    "Controlled convention levels yielded increasing gaps; the Full–Intentional ordering did not replicate within participants."
+  ],
+  "real_contribution": "An interpretable baseline-relative communication diagnostic.",
+  "biggest_weakness": "Shared convention and unilateral adaptation remain observationally indistinguishable; prospective prediction is untested.",
+  "claim_boundary": "Gap magnitude is not evidence of dyadic convention construction or causal history dependence.",
+  "why_researcher_should_care": "Use a literal baseline alongside partner/history interventions; separate descriptive measurement from prediction.",
+  "amsc": {
+    "mainline_fit": 9.2,
+    "buckets": [
+      "B",
+      "C"
+    ],
+    "stages": [
+      "Grounding/common ground",
+      "Convention formation"
+    ],
+    "mechanisms": [
+      "implicit communication",
+      "literal baseline",
+      "convention compatibility"
+    ],
+    "gap_ids": [
+      "GAP-02",
+      "GAP-04",
+      "GAP-07"
+    ],
+    "master_list_decision": "Candidate — Must Read / measurement anchor"
+  },
+  "evidence_notes": [
+    "Full HTML v2 audited; independent quantitative audit agrees with diagnostic value and causal boundary.",
+    "Gap contains observed loss; contemporaneous association with loss cannot establish predictive validity."
+  ],
+  "year": 2026,
+  "access_status": "full_text",
+  "investigation_status": "radar_full_text_audit",
+  "provenance": "amsc_radar_2026-09-14",
+  "updated_at": "2026-09-14"
+}

@@ -30,6 +30,7 @@
   "amsc": {
     "mainline_fit": 8.8,
     "buckets": [
+      "A",
       "B"
     ],
     "stages": [
@@ -81,5 +82,12 @@
     "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
     "degraded": false
   },
-  "worth_sharing": false
+  "worth_sharing": false,
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

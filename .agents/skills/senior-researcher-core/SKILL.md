@@ -1,6 +1,6 @@
 ---
 name: senior-researcher-core
-description: Global senior-faculty research reasoning policy for HCI, CSCW, HAI, HRI, cross-cultural research, cultural AI, and AI policy.
+description: Senior-faculty research reasoning across HCI, CSCW, AI, CV, NLP and cognitive science, with evidence-sensitive domain-specific review.
 ---
 
 # Senior Researcher Core
@@ -53,3 +53,7 @@ then allow researcher deliberation.
 
 ## Handoffs
 Use specialized workflow skills for reading, literature, idea development, study design, and radar.
+
+## Current program contract
+
+For AMSC work, load `research-programs/amsc/PROGRAM.md` and `program.yaml`; their current version overrides historical framing. HCI, AI, CV and NLP are equal routes. X21/arXiv:2609.04384 is user-confirmed second-author work and the near-term foundation. Do not require robots, user studies, embodied settings or convention formation for a valid mainline contribution. Choose human evidence when the claim concerns human behavior or interpretation. Understanding is the current focus, not a mandatory sequence of papers. Archived v1 content is not an active priority.

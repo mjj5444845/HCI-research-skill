@@ -32,8 +32,8 @@
     "mainline_fit": 8.7,
     "buckets": [
       "A",
-      "E",
-      "F"
+      "F",
+      "G"
     ],
     "stages": [
       "Social meaning / pragmatics",
@@ -103,5 +103,12 @@
       "没有 comparison 或 ablation 支持把因果效果归于单个 system component。"
     ]
   },
-  "worth_sharing": false
+  "worth_sharing": false,
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

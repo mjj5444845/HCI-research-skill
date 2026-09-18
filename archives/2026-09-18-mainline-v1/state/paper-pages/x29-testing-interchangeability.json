@@ -1,0 +1,62 @@
+{
+  "id": "X29",
+  "slug": "x29-testing-interchangeability",
+  "title": "Testing Interchangeability in LLM Agent Teams",
+  "authors": [
+    "Jianxin Gao",
+    "Tianyi Yu",
+    "Linna Deng",
+    "Runze Li",
+    "Zining Wang"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint, 4 September 2026",
+  "source_url": "https://arxiv.org/abs/2609.05279",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "Role-matched swaps expose partner-specific coordination costs in memory-equipped LLM dyads.",
+  "problem": "Does accumulated team experience transfer to an equally experienced replacement?",
+  "method": "Eight teams per setting in Collab-Overcooked and Hanabi; independent post-formation forks compare intact, placebo, swap, cleared partner notes, amnesia and naive replacement. Swap uncertainty uses four independent pairs.",
+  "findings": [
+    "Swap increased communication per unit progress by 16–63%; the reported recovery trajectory requires numerical clarification.",
+    "Partner-note deletion reproduced part of the penalty; longer formation increased partner specificity."
+  ],
+  "real_contribution": "An intervention-based counterexample to broad claims that LLM coordination lacks partner specificity.",
+  "biggest_weakness": "Few independent pairs; note deletion changes context length; prompted note categories and task-order differences complicate mechanism attribution.",
+  "claim_boundary": "Supports history-bearing partner compatibility in tested LLM dyads, not mutually acknowledged referential meaning or human–robot generalization.",
+  "why_researcher_should_care": "Q1 must distinguish partner-model compatibility from jointly accepted meaning, and evaluate coordination cost as well as accuracy.",
+  "amsc": {
+    "mainline_fit": 9.3,
+    "buckets": [
+      "B",
+      "C",
+      "E"
+    ],
+    "stages": [
+      "Convention formation",
+      "Adaptation"
+    ],
+    "mechanisms": [
+      "partner swap",
+      "team familiarity",
+      "persistent partner notes",
+      "recovery"
+    ],
+    "gap_ids": [
+      "GAP-02",
+      "GAP-03",
+      "GAP-04",
+      "GAP-07"
+    ],
+    "master_list_decision": "Candidate — Must Read / recovered causal-method counterexample"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "Recovered by independent missing-paper attack; outside weekly submission window.",
+    "Full HTML sections 3–7 audited; task coupling gradient is observational, not a causal manipulation.",
+    "Independent quantitative audit: section 4.4 initial cost ratios 1.15/1.48/1.55 are below Table 1 ten-episode ratios about 1.16/1.51/1.63 despite the stated initial-shock narrative. Aggregation may differ but is unexplained; do not treat the claimed recovery-speed ratio as established.",
+    "Reviewer disagreement: missing-paper reviewer recommends Must Read for novelty impact; quantitative reviewer recommends Important for evidentiary limits. Root retains Must Read as reading priority with PRELIMINARY evidence strength."
+  ],
+  "provenance": "amsc_radar_2026-09-14",
+  "updated_at": "2026-09-14"
+}

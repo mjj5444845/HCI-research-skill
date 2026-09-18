@@ -1,0 +1,60 @@
+{
+  "id": "X27",
+  "slug": "x27-calibrated-ambiguity",
+  "title": "Calibrated Ambiguity in Multimodal Language Models: Humans reach for cultural references, while models describe the picture",
+  "authors": [
+    "Cody Kommers",
+    "Mingrui Ye",
+    "Evelyn Gius",
+    "Daniela Mihai",
+    "Hoyt Long",
+    "Zheng Yuan",
+    "Drew Hemment"
+  ],
+  "venue": "arXiv preprint, 11 September 2026",
+  "source_url": "https://arxiv.org/abs/2609.12575",
+  "priority": "Important",
+  "one_sentence": "Dixit offers a method for studying useful ambiguity, with bounded evidence of reduced cultural allusion in model clues.",
+  "problem": "Can generated clues remain interpretable while allowing multiple plausible readings?",
+  "method": "350 English Dixit boards, six open-weight VLMs and two prompts; author-coded rubric validation and model-assisted large-scale scoring.",
+  "findings": [
+    "Under minimal prompting, model clues were generally overspecified and less culturally allusive.",
+    "Prompt changes helped some models; near-human rubric performance occurred in some conditions."
+  ],
+  "real_contribution": "Operationalizes ambiguity as a communicative resource rather than only an error.",
+  "biggest_weakness": "Humans chose their target cards; models did not. Author coders and English allusions limit cultural inference; no live recipient test.",
+  "claim_boundary": "Does not demonstrate cross-cultural flattening, audience comprehension, or history-dependent social meaning.",
+  "why_researcher_should_care": "Test when ambiguity is useful for a particular audience; measure interpretation separately from rubric judgments.",
+  "amsc": {
+    "mainline_fit": 8.2,
+    "buckets": [
+      "A",
+      "B",
+      "F"
+    ],
+    "stages": [
+      "Meaning",
+      "Social/relational context"
+    ],
+    "mechanisms": [
+      "calibrated ambiguity",
+      "cultural allusion",
+      "audience interpretation"
+    ],
+    "gap_ids": [
+      "GAP-05",
+      "GAP-06"
+    ],
+    "master_list_decision": "Candidate — Important / meaning-production method"
+  },
+  "evidence_notes": [
+    "Full HTML audited; no national culture inference.",
+    "Proposed embodied transfer is a research opportunity, not a result.",
+    "Independent culture audit: decoys were selected in response to human clues; author-coder consistency does not establish cross-group construct validity, and English competence is not a culture-neutral baseline."
+  ],
+  "year": 2026,
+  "access_status": "full_text",
+  "investigation_status": "radar_full_text_audit",
+  "provenance": "amsc_radar_2026-09-14",
+  "updated_at": "2026-09-14"
+}

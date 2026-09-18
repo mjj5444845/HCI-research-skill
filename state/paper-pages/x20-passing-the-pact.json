@@ -32,6 +32,7 @@
   "amsc": {
     "mainline_fit": 9.3,
     "buckets": [
+      "B",
       "C",
       "E"
     ],
@@ -49,8 +50,7 @@
     "gap_ids": [
       "GAP-02",
       "GAP-03",
-      "GAP-04",
-      "GAP-07"
+      "GAP-04"
     ],
     "master_list_decision": "Candidate — Must Read / abstract-only human-agent pact boundary"
   },
@@ -73,5 +73,12 @@
     ],
     "result": "OpenAlex reports gold OA, but no usable PDF location; publisher retrieval returned 403. OA status does not imply text was obtained.",
     "needed": "Full manuscript including methods, results and appendices"
-  }
+  },
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

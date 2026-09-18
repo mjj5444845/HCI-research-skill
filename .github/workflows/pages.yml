@@ -32,6 +32,10 @@ jobs:
         run: npm run build
       - name: Validate research lifecycle
         run: npm run test:workspace
+      - name: Validate Chinese reading
+        run: npm run test:reading
+      - name: Validate program state
+        run: npm run test:program
       - name: Validate site
         run: npm run test:site
       - name: Upload Pages artifact

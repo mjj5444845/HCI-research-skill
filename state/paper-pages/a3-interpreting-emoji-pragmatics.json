@@ -29,7 +29,9 @@
   "amsc": {
     "mainline_fit": 8.1,
     "buckets": [
-      "A"
+      "A",
+      "B",
+      "F"
     ],
     "stages": [
       "Social meaning / pragmatics"
@@ -39,8 +41,7 @@
     ],
     "gap_ids": [
       "GAP-01",
-      "GAP-05",
-      "GAP-06"
+      "GAP-05"
     ],
     "master_list_decision": "Master Literature v1.0 保留；作为重要 pragmatics bridge"
   },
@@ -82,5 +83,12 @@
     "evidence_scope": "problem_rqs_methods_results_discussion_limitations",
     "degraded": false
   },
-  "worth_sharing": false
+  "worth_sharing": false,
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

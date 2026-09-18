@@ -1,3 +1,7 @@
+# Current workspace notice
+
+This workspace is already deployed and uses program v2.0. Read research-programs/amsc/PROGRAM.md and program.yaml first. The historical bootstrap instructions below must not overwrite active state or restore archived v1 priorities.
+
 # Codex Bootstrap Task
 
 Build this repository into a working **Senior Researcher OS** for research conversations and recurring paper monitoring.

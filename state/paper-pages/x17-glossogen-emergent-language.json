@@ -2,7 +2,15 @@
   "id": "X17",
   "slug": "x17-glossogen-emergent-language",
   "title": "GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions",
-  "authors": ["Elias Stengel-Eskin", "Newton Sander", "Carlos Bonetti", "Sasha Boguraev", "James Bowler", "Hale Sirin", "Simon Kirby"],
+  "authors": [
+    "Elias Stengel-Eskin",
+    "Newton Sander",
+    "Carlos Bonetti",
+    "Sasha Boguraev",
+    "James Bowler",
+    "Hale Sirin",
+    "Simon Kirby"
+  ],
   "year": 2026,
   "venue": "arXiv preprint",
   "source_url": "https://arxiv.org/abs/2609.01491",
@@ -23,10 +31,28 @@
   "why_researcher_should_care": "It supplies concrete lifecycle components—explicit negotiation, history dosage, partner swap, active clarification, and transfer—that can be adapted into stricter human–embodied-AI experiments with counterfactual history controls.",
   "amsc": {
     "mainline_fit": 8.9,
-    "buckets": ["C", "E"],
-    "stages": ["Grounding/common ground", "Convention formation", "Personalization/co-adaptation"],
-    "mechanisms": ["communication pressure", "explicit meta-coordination", "partner swap", "history-conditioned transmission", "metalinguistic repair"],
-    "gap_ids": ["GAP-01", "GAP-02", "GAP-03", "GAP-04", "GAP-07"],
+    "buckets": [
+      "C",
+      "D"
+    ],
+    "stages": [
+      "Grounding/common ground",
+      "Convention formation",
+      "Personalization/co-adaptation"
+    ],
+    "mechanisms": [
+      "communication pressure",
+      "explicit meta-coordination",
+      "partner swap",
+      "history-conditioned transmission",
+      "metalinguistic repair"
+    ],
+    "gap_ids": [
+      "GAP-01",
+      "GAP-02",
+      "GAP-03",
+      "GAP-04"
+    ],
     "master_list_decision": "Candidate — Important / AI–AI protocol lifecycle and diagnostic precedent"
   },
   "investigation_status": "radar_full_text_audit",
@@ -35,5 +61,12 @@
     "The paper's cumulative-cultural-evolution claim is treated as overreach because the experiment includes only one newcomer swap rather than multiple successive generations."
   ],
   "provenance": "amsc_radar_2026-09-03",
-  "updated_at": "2026-09-03"
+  "updated_at": "2026-09-03",
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Adjacent method or mechanism precedent; not a first-project requirement"
+  },
+  "scope_updated_at": "2026-09-18"
 }

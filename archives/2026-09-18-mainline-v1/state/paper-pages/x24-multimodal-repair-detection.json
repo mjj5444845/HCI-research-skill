@@ -1,0 +1,39 @@
+{
+  "id": "X24",
+  "slug": "x24-multimodal-repair-detection",
+  "title": "Do Visual Features Improve Other-Initiated Repair Detection? A Dyadic Multimodal Approach",
+  "authors": ["Anh Ngo", "Nicolas Rollet", "Catherine Pelachaud", "Chloé Clavel"],
+  "year": 2026,
+  "venue": "Proceedings of ACM ICMI 2026",
+  "source_url": "https://arxiv.org/abs/2607.23845",
+  "doi": "10.1145/3776574.3831200",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "Conversation-Analysis-grounded gaze, face, head, body, and gesture features improve other-initiated-repair detection and type classification across two human-human corpora, but detection is not successful agent repair.",
+  "problem": "Do visual behaviors improve automatic detection and classification of other-initiated repair, and do useful cues differ across language and interaction setting?",
+  "method": "A hierarchical text-audio-visual classifier is evaluated with session-level five-fold cross-validation on French screen-mediated NOXI (47 OIR instances in seven hours) and Dutch face-to-face task-oriented CABB-S (378 instances in eight hours). Handcrafted, Conversation-Analysis-grounded visual features cover both participants' gaze, facial action units, head, body, holds, gesture, and dyadic coordination.",
+  "findings": [
+    "Adding visual features to text and audio increased detection macro-F1 by 4.1 points on NOXI and 12.9 points on CABB-S.",
+    "For repair-type classification, visual features added 13.2 points on NOXI but only 2.4 points on CABB-S, indicating strong setting dependence.",
+    "NOXI estimates were unstable because OIR instances and restricted offers were sparse; visual-only features lacked sufficient specificity."
+  ],
+  "real_contribution": "Supplies a multimodal, interaction-theory-grounded detector for visible trouble signals and distinguishes detection from repair-type classification across two interaction ecologies.",
+  "biggest_weakness": "Both corpora are human-human, one contains only 47 repair instances, feature availability differs by corpus, and the study does not test real-time conversational-agent deployment, repair production, or downstream grounding outcomes.",
+  "claim_boundary": "Supports multimodal detection of human OIR signals in two corpora; it does not show that an agent can choose, execute, or learn an effective repair policy or build common ground.",
+  "why_researcher_should_care": "It fills a missing measurement component for AMSC's repair stage and shows that the informative visual channel depends on interaction setting, making single-modality repair benchmarks inadequate.",
+  "amsc": {
+    "mainline_fit": 8.6,
+    "buckets": ["C", "D"],
+    "stages": ["Grounding/common ground", "Situated adaptive communication"],
+    "mechanisms": ["other-initiated repair", "multimodal trouble signals", "dyadic visual coordination", "repair-type classification"],
+    "gap_ids": ["GAP-03", "GAP-04", "GAP-07"],
+    "master_list_decision": "Candidate — Important / multimodal repair-detection anchor"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "Recovered when the ICMI 2026 official sessions page surfaced; full arXiv HTML and DOI metadata were inspected.",
+    "Human-human signal detection is not encoded as evidence of successful human-agent repair."
+  ],
+  "provenance": "amsc_radar_2026-09-07",
+  "updated_at": "2026-09-07"
+}

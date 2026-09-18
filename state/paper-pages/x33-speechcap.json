@@ -1,0 +1,70 @@
+{
+  "id": "X33",
+  "slug": "x33-speechcap",
+  "title": "SpeechCap: Leveraging Playful Impact Captions to Facilitate Interpersonal Communication in Social Virtual Reality",
+  "authors": [
+    "Yu Zhang",
+    "Yi Wen",
+    "Siying Hu",
+    "Zhicong Lu"
+  ],
+  "year": 2025,
+  "venue": "Proceedings of the ACM on Human-Computer Interaction 9(7), Article CSCW246; CSCW 2025",
+  "source_url": "https://arxiv.org/abs/2502.10736",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "花字提供视觉修辞和互动表达机会，也出现歧义与误解。",
+  "problem": "花字如何成为实时人际交流中的表达资源？",
+  "method": "内容分析、4名专家共同设计和14名参与者原型研究；核查正文相关方法、体验与歧义章节。",
+  "findings": [
+    "花字提供视觉修辞和互动表达机会，也出现歧义与误解。"
+  ],
+  "real_contribution": "Zhicong Lu的直接先例，贴近用户最初兴趣；区分好玩、表达丰富与准确理解，设备方案需另行评估。",
+  "biggest_weakness": "探索性原型研究不能证明花字普遍提高理解正确率；研究的是支持人际交流，不是AI理解测试。",
+  "claim_boundary": "探索性原型研究不能证明花字普遍提高理解正确率；研究的是支持人际交流，不是AI理解测试。",
+  "why_researcher_should_care": "Zhicong Lu的直接先例，贴近用户最初兴趣；区分好玩、表达丰富与准确理解，设备方案需另行评估。",
+  "amsc": {
+    "mainline_fit": null,
+    "buckets": [
+      "A",
+      "G"
+    ],
+    "stages": [
+      "Social meaning/pragmatics"
+    ],
+    "mechanisms": [
+      "花字如何成为实时人际交流中的表达资源？"
+    ],
+    "gap_ids": [
+      "GAP-04",
+      "GAP-05"
+    ],
+    "master_list_decision": "Candidate — Must Read / recovered under program v2"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "独立遗漏审查者核验v2正文含§7.4.2误解案例；元数据v3声明CSCW2025，未做版本差异审计。",
+    "Historical recovery outside 2026-09-11–18 window; normal audit, not deep replication."
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2502.10736v2",
+      "accessed_at": "2026-09-18",
+      "scope": "独立遗漏审查者核验v2正文含§7.4.2误解案例；元数据v3声明CSCW2025，未做版本差异审计。"
+    },
+    {
+      "url": "https://scholars.cityu.edu.hk/en/publications/speechcap-leveraging-playful-impact-captions-to-facilitate-interp/",
+      "accessed_at": "2026-09-18",
+      "scope": "University publication record: authors, venue, article and online date 2025-10-16."
+    }
+  ],
+  "provenance": "amsc-radar-2026-09-18",
+  "updated_at": "2026-09-18",
+  "program_membership": {
+    "status": "ACTIVE",
+    "program_version": "2.0",
+    "reviewed_at": "2026-09-18",
+    "reason": "Zhicong Lu的直接先例，贴近用户最初兴趣；区分好玩、表达丰富与准确理解，设备方案需另行评估。"
+  },
+  "doi": "10.1145/3757427"
+}

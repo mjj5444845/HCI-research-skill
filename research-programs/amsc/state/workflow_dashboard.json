@@ -1,16 +1,16 @@
 {
-  "version": "1.5",
-  "last_updated": "2026-09-12",
+  "version": "2.1",
+  "last_updated": "2026-09-18",
   "update_contract": "Paper Investigation、Literature Investigation、Research Radar、Idea Development 与 Study Design 的持久化结果首先更新长期 AMSC research program；只有直接改变考试主题、anchor、写作论点或口试问题的子集才进入 Comprehensive Exam 下游视图。",
   "next_scheduled_run": {
     "name": "AMSC 每周完整 Research Radar",
-    "scheduled_for": "2026-09-14T03:00:00-04:00",
+    "scheduled_for": "2026-09-21T03:00:00-04:00",
     "scope": "Every Monday at 03:00 America/New_York: full retrieval, deduplication, triage, investigation, red-team review, state integration, report generation, and validation.",
     "automation_id": "amsc-research-radar",
     "status": "ACTIVE"
   },
   "field_map": {
-    "coverage_note": "65篇：63篇已有全文调查或全文Radar审查；F6、X20仍摘要级，全文访问受阻。2026-09-12补审X1–X5，不代表其余58篇本轮重新审查。",
+    "coverage_note": "48篇活动论文；本轮6篇历史补回，最近一周未核实新增。不同审查深度与来源边界见论文页。",
     "status_definitions": {
       "STILL_HOLDS": "新证据没有推翻原结论，且其边界仍可辩护。",
       "STRENGTHENED": "新增独立证据提高了结论可信度或扩展了适用范围。",
@@ -21,148 +21,204 @@
     },
     "claims": [
       {
-        "id": "FM-01",
-        "status": "STILL_HOLDS",
-        "statement": "Pictorial meaning 既受 visual resemblance 约束，也会随 shared interaction history 形成 interaction-specific conventions。",
+        "id": "SOF-01",
+        "statement": "在 repeated human-human drawing reference game 中，visual resemblance 与 interaction history 共同约束 pictorial meaning，且互动形成的表达仍保留 diagnostic visual features。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
         "evidence_strength": "MODERATE",
         "evidence": [
           "c6-visual-resemblance-interaction-history"
         ],
-        "boundary": "Controlled single-category human drawing；yoked-vs-shuffled isolates same-producer sequence exposure, not mutual common ground or embodied AI.",
-        "updated_at": "2026-08-26"
+        "boundary": "单一 object category 的 controlled human drawing；yoked-vs-shuffled 主要隔离 same-producer sequence exposure，不识别 mutual common ground、original-dyad partner specificity、embodied AI 或 long-term transfer。",
+        "cumulative_change": "STILL_HOLDS"
       },
       {
-        "id": "FM-02",
-        "status": "STRENGTHENED",
-        "statement": "Human–robot repeated reference interaction 可以出现稳定的 task-specific referring conventions，但现有 AI/LVLM grounding 仍不呈现完整的 human-like interactive adaptation。",
-        "evidence_strength": "PRELIMINARY",
-        "evidence": [
-          "x1-spotter-human-robot-conventions",
-          "x2-lvlms-humans-ground-differently",
-          "e3-continual-adaptation-machine-communication"
-        ],
-        "boundary": "Human–robot and machine-adaptation studies use different roles/tasks; E3 is one-sided adaptive listening and does not establish reciprocal embodied convention.",
-        "updated_at": "2026-08-26"
-      },
-      {
-        "id": "FM-03",
-        "status": "NO_LONGER_CLAIMABLE",
-        "statement": "不能再笼统声称 situated AI communication 很少使用 interaction history 或 accumulated common ground。",
-        "evidence_strength": "PRELIMINARY",
-        "evidence": [
-          "x3-seeing-eye-to-eye",
-          "x1-spotter-human-robot-conventions"
-        ],
-        "boundary": "history-conditioned memory 不等于 mutual belief 或 shared convention；失效的是旧 gap wording，不是整个研究方向。",
-        "updated_at": "2026-08-26"
-      },
-      {
-        "id": "FM-04",
-        "status": "STILL_HOLDS",
-        "statement": "Personalization、shared memory 与 convention formation 必须保持概念区分。",
-        "evidence_strength": "AGENT_SYNTHESIS",
+        "id": "SOF-02",
+        "statement": "在受限 repeated reference games 中，artificial communicator 可通过 continual adaptation 或 success×cost post-training 获得更高的 communicative success 与 efficiency。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
         "evidence": [
           "e3-continual-adaptation-machine-communication",
-          "x1-spotter-human-robot-conventions",
-          "x2-lvlms-humans-ground-differently",
-          "x3-seeing-eye-to-eye"
+          "x8-success-cost-convention-formation"
         ],
-        "boundary": "现有工作尚未通过 causal comparison 证明 personalization-only 与 convention-aware mechanisms 的差异。",
-        "updated_at": "2026-08-26"
+        "boundary": "E3 的主要 human evidence 是 fixed visual-reference contexts 中 one-sided adaptive listening；无 online non-adaptive control、partner swap、reciprocal repair 或 embodiment。",
+        "cumulative_change": "STRENGTHENED"
       },
       {
-        "id": "FM-05",
-        "status": "PARTIALLY_ADDRESSED",
-        "statement": "Human–robot emergent convention 已有直接研究，但开放式、跨模态、长期且双方可协商的 embodied convention 仍未被这些证据解决。",
+        "id": "SOF-03",
+        "statement": "Controlled human-robot visual reference tasks 能产生稳定的 task-specific linguistic conventions，但其效率轨迹与 human-human interaction 不完全相同。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
         "evidence_strength": "PRELIMINARY",
         "evidence": [
-          "x1-spotter-human-robot-conventions",
-          "c8-gesturing-toward-abstraction"
+          "x1-spotter-human-robot-conventions"
         ],
-        "boundary": "C8 now provides full-text human–human physical multimodal evidence, but not human–AI reciprocity, counterfactual history, repair or transfer.",
-        "updated_at": "2026-08-26"
+        "boundary": "受控 Dutch pilots 与 verbal referring expressions 不证明开放式、跨模态或长期 convention。",
+        "cumulative_change": "PARTIALLY_ADDRESSED"
       },
       {
-        "id": "FM-06",
-        "status": "NEW_CORE",
-        "statement": "Convention lifecycle——formation、detection、repair、retention、forgetting 与 transfer——应成为 AMSC 的核心研究问题。",
-        "evidence_strength": "SYNTHESIS_REQUIRES_VALIDATION",
+        "id": "SOF-04",
+        "statement": "Current LVLM convention/grounding behavior is interaction-regime dependent：post-trained one-way 或 same-model dyads 可出现 convention-like efficiency/signatures，但 mixed human–AI、history-severed pseudo-dyads 与更复杂 role-asymmetric tasks 暴露可靠性和 partner-specificity 缺口。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
         "evidence": [
-          "x1-spotter-human-robot-conventions",
-          "x3-seeing-eye-to-eye",
-          "c6-visual-resemblance-interaction-history"
+          "x2-lvlms-humans-ground-differently",
+          "x8-success-cost-convention-formation",
+          "x9-aligned-not-partner-specific",
+          "x10-llms-people-conventions"
         ],
-        "boundary": "这是 agent synthesis / research opportunity，不是任何单篇论文的原始结论。",
-        "updated_at": "2026-08-26"
+        "boundary": "不同研究使用不同 training objective、角色结构、模型和任务；它们不构成单一总体效应，也不能外推所有 LVLM。",
+        "cumulative_change": "REDEFINED"
       },
       {
-        "id": "FM-07",
-        "status": "STRENGTHENED",
-        "statement": "Human repeated reference 通过 presentation、positive evidence、repair 与 partner-specific history 建立 grounding；仅有表达缩短或 alignment 并不足以证明 convention。",
+        "id": "SOF-05",
+        "statement": "Eye2Eye整套AR系统减少错误和澄清需求；正文不支持显著缩短任务时间，组件混杂也不允许把收益单独归因于共享记忆。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x3-seeing-eye-to-eye"
+        ],
+        "boundary": "短期整套系统收益；没有history severing、partner swap、角色互换或新表达协商。对象卡表示不等于双方确认的共同信念。 消融同时改变memory/reflection和trigger，无法识别memory单独因果贡献。",
+        "cumulative_change": "NO_LONGER_CLAIMABLE"
+      },
+      {
+        "id": "SOF-07",
+        "statement": "Human convention theory already models partner-specific common ground and its transfer toward population-level conventions; partner-specific origin and subsequent transfer are complementary, not mutually exclusive.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x12-partners-to-populations"
+        ],
+        "boundary": "CHAI evidence concerns human linguistic coordination and simulation; it does not solve online embodied human–AI convention inference.",
+        "cumulative_change": "NEW_CORE"
+      },
+      {
+        "id": "SOF-08",
+        "statement": "在受控 human–human repeated verbal reference tasks 中，reference 通过 presentation、positive evidence、repair 与 partner-specific history 形成；随后压缩稳定，partner change 可触发 elaboration 或回退到更通用表达。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
         "evidence_strength": "MODERATE",
         "evidence": [
           "c1-referring-as-collaborative-process",
-          "c2-grounding-in-communication",
           "c3-conceptual-pacts"
         ],
-        "boundary": "证据来自 spoken laboratory human–human tasks；没有直接的 embodied-AI evidence。",
-        "updated_at": "2026-08-27"
+        "boundary": "小样本 spoken laboratory reference tasks；不是 multimodal、longitudinal 或 embodied-AI evidence。",
+        "cumulative_change": "NEW"
       },
       {
-        "id": "FM-08",
-        "status": "NEW_CORE",
-        "statement": "受控的 human physical collaboration 可形成可复用的 speech / gesture abstractions，并出现 dyad 之间分化的 multimodal strategies。",
+        "id": "SOF-09",
+        "statement": "RSA 为 context-sensitive production/interpretation 提供 formal tools，且已有 adaptation/convention extensions；但 basic/full-utterance RSA 与 incremental、multimodal、mutually grounded interaction 之间仍有 validation gap。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "b1-pragmatic-language-interpretation",
+          "b2-rational-speech-act-framework"
+        ],
+        "boundary": "Narrative framework reviews and heterogeneous modeling tasks do not establish one cognitive process or embodied-agent capability.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-10",
+        "statement": "在受控 one-shot human drawing reference games 中，communicators 会按 distractor similarity 在 diagnosticity 与 production cost 间调节视觉细节。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "b3-pragmatic-inference-visual-abstraction"
+        ],
+        "boundary": "32 objects/4 categories，prototype-choice model；无 repeated history、partner-specificity 或 embodiment。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-11",
+        "statement": "在受控 repeated human text reference games 中，labels 的缩短受 listener feedback 与 local discriminability 影响，并表现 within-dyad stabilization 与 between-dyad divergence。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "c4-repeated-reference-games"
+        ],
+        "boundary": "Text Tangram task、六 repetitions；dialogue 被 collapse，且无 partner swap/history ablation。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-12",
+        "statement": "在一项受控 online human assembly task 中，重复协作伴随更短、更多 tower-level referring expressions；combined library-learning/pragmatic model 可定性再现该 shift。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "c7-shared-procedural-abstractions"
+        ],
+        "boundary": "未直接测量 shared internal abstractions；Builder 无语言反馈，模型假设 shared DSL 与同步学习。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-13",
+        "statement": "在 controlled repeated human–human physical assembly 中，dyads 提高 accuracy/efficiency，并复用 speech/gesture abstractions；modality allocation 与 vocabulary across dyads diverge。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
         "evidence_strength": "MODERATE",
         "evidence": [
           "c8-gesturing-toward-abstraction"
         ],
-        "boundary": "20 dyads、固定角色、4 次重复；没有 Agent 或 history-severed control。",
-        "updated_at": "2026-08-27"
+        "boundary": "20 dyads、3 towers、4 repetitions、fixed roles；无 Agent、history-severing、repair perturbation 或 transfer。",
+        "cumulative_change": "NEW_CORE"
       },
       {
-        "id": "FM-09",
+        "id": "SOF-18",
+        "statement": "Textual paralanguage provides five broad categories and is frequently observed in sampled 2010s social-media posts, with platform-dependent distributions and context-dependent meaning.",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "a2-textual-paralanguage"
+        ],
+        "boundary": "Descriptive convenience samples, coder inconsistency/no reliability statistic, and no causal evidence for warmth, rapport or trust.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-19",
+        "statement": "Modality presence, grammatical structure and semantic dominance offer a usable theoretical lens for verbal, bodily and graphic multimodal interaction.",
+        "claim_kind": "theoretical_lens",
         "status": "CONTESTED",
-        "statement": "Robot motion / gaze 可以同时承载 instrumental 与 relational meaning，因此不能再把 social 与 functional communication 写成清晰分离的两个领域。",
-        "evidence_strength": "MODERATE",
+        "evidence_strength": "PRELIMINARY",
         "evidence": [
-          "d5-legibility-and-predictability",
-          "d6-designing-robots-with-movement",
-          "d7-social-eye-gaze-review"
+          "a5-multimodal-parallel-architecture"
         ],
-        "boundary": "证据主要来自 fixed designer-authored behavior 与 narrative / design synthesis；没有 history-dependent joint grounding。",
-        "updated_at": "2026-08-27"
+        "boundary": "Single static architecture with underspecified component mechanisms; illustrative coding does not validate cognitive truth.",
+        "cumulative_change": "NEW"
       },
       {
-        "id": "FM-10",
-        "status": "STILL_HOLDS",
-        "statement": "Task-strategy adaptation、semantic partner adaptation 与 mutual convention 必须分别建模与测量。",
+        "id": "SOF-20",
+        "statement": "same-producer exposure、style familiarity、independent task learning 与 mutually grounded convention remain causally under-separated across much of the audited multimodal convention evidence.",
+        "claim_kind": "agent_synthesis",
+        "status": "OPEN",
         "evidence_strength": "MODERATE",
-        "evidence": [
-          "e2-human-robot-mutual-adaptation",
-          "e3-continual-adaptation-machine-communication"
-        ],
-        "boundary": "E2 测量 video / UI strategy switching；E3 是 one-sided reference adaptation。二者都没有建立 reciprocal embodied convention。",
-        "updated_at": "2026-08-27"
-      },
-      {
-        "id": "FM-11",
-        "status": "NEW_CORE",
-        "statement": "Same-producer exposure、style familiarity、task learning 与 mutually grounded convention 在现有证据中仍缺少充分的因果区分。",
-        "evidence_strength": "SYNTHESIS_REQUIRES_VALIDATION",
         "evidence": [
           "c3-conceptual-pacts",
           "c4-repeated-reference-games",
+          "c5-graphical-convention-formation",
           "c6-visual-resemblance-interaction-history",
+          "c7-shared-procedural-abstractions",
           "c8-gesturing-toward-abstraction",
-          "e3-continual-adaptation-machine-communication"
+          "e3-continual-adaptation-machine-communication",
+          "x20-passing-the-pact",
+          "x22-banana-man-pragmatic-interpretation"
         ],
-        "boundary": "这是 Agent synthesis；C5/C6 属于同一 evidence lineage，success、shortening 或 alignment 都不是充分证据。",
-        "updated_at": "2026-08-27"
+        "boundary": "Cross-paper causal audit, not any paper original claim; C5 and C6 count as one empirical lineage. X20 is abstract-only; X22 studies naïve interpreters of archived human games, not reciprocal dyads.",
+        "cumulative_change": "NEW_CORE"
       },
       {
-        "id": "FM-12",
-        "status": "STRENGTHENED",
-        "statement": "Signal form 本身不足以决定 meaning；local context、task discriminability、relationship 与 interaction history 会共同改变解释与表达成本。",
+        "id": "SOF-21",
+        "statement": "Contextualized emoji、visual lexicon、dyadic action scaffolds 与 graded reference models 共同表明：signal form 本身不足以决定 meaning；local context、task discriminability、relationship 与 interaction history 会改变解释和表达成本。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
         "evidence_strength": "MODERATE",
         "evidence": [
           "a3-interpreting-emoji-pragmatics",
@@ -170,164 +226,241 @@
           "a6-puppetchat",
           "b4-when-redundancy-is-useful"
         ],
-        "boundary": "证据来自不同媒介与任务，不能被合并成单一 causal mechanism，也不是 embodied human–AI convention evidence。",
-        "updated_at": "2026-08-27"
+        "boundary": "证据横跨第三方 emoji interpretation、理论 visual lexicon、11 个 close dyads 的短期 deployment 与 verbal reference games；不能合并为单一 causal mechanism，也不是 embodied human–AI convention evidence。",
+        "cumulative_change": "STRENGTHENED"
       },
       {
-        "id": "FM-13",
-        "status": "PARTIALLY_ADDRESSED",
-        "statement": "Robot gaze、motion、speech、LED 与 AR 已能表达 attention、intent、uncertainty、capability 与 repair options；真正开放的是 calibration、history-dependent grounding 与 partner-specific adaptation。",
+        "id": "SOF-24",
+        "statement": "LLM naming-game convergence can be a false-positive mechanism claim: a shared pretrained label prior and apparatus presentation can accelerate or determine convergence, while per-agent label-pool permutation reveals slower interaction-driven negotiation.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x13-silica-agent-societies"
+        ],
+        "boundary": "Single-author preprint using artificial agent populations; shuffled agents still share pretrained label semantics, and results do not establish human-equivalent convention.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-27",
+        "statement": "Long-term conversational memory availability and elicited retrieval are empirically distinct from naturally integrating relevant shared history during interaction.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
         "evidence_strength": "MODERATE",
         "evidence": [
-          "d1-nonverbal-teamwork",
-          "d8-legible-multimodal-state-intent",
-          "d9-anatomy-of-uncertainty",
-          "g1-robot-motion-intent-ar",
-          "g3-explainable-oohri",
-          "g4-context-aware-expressive-motion"
+          "x16-memuse-natural-integration"
         ],
-        "boundary": "多数证据来自 designer-authored mappings 与短期受控任务；不能证明共同形成的 convention。",
-        "updated_at": "2026-08-27"
+        "boundary": "One text-only deployment; Natural Integration–satisfaction association is observational and based on 48 sessions/16 users, not evidence of mutual belief or convention.",
+        "cumulative_change": "STRENGTHENED"
       },
       {
-        "id": "FM-14",
-        "status": "NEW_CORE",
-        "statement": "Long-term robot meaning 与 use 会在 routine、roles、maintenance、organizational practice、appropriation 与 developer feedback 中共同生成；culture 不能被缩减为静态国别 preference。",
-        "evidence_strength": "MODERATE",
+        "id": "SOF-28",
+        "statement": "Under character pressure, explicitly prompted AI–AI postmortem coordination can produce efficient dyad-specific shorthand, partial productivity, clarification behavior, and limited newcomer uptake.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
         "evidence": [
-          "e4-designing-robots-long-term",
-          "f1-emergence-social-norms-conventions",
-          "f2-robots-in-society",
-          "f3-robotic-products-social-products",
-          "f4-my-roomba-is-rambo",
-          "f5-robots-in-the-wild",
-          "f6-generative-encounters-robin"
+          "x17-glossogen-emergent-language"
         ],
-        "boundary": "证据包括 theory、research agenda、小规模 field cases 与一篇摘要级论文；不证明 autonomous robot learning 或 partner-specific convention。",
-        "updated_at": "2026-08-27"
+        "boundary": "Agents were told to develop shorthand, postmortems allowed free code definition, linguistic analysis partly used LLM judges, and one replacement generation does not establish cumulative cultural evolution or human-like common ground.",
+        "cumulative_change": "NEW"
       },
       {
-        "id": "FM-15",
-        "status": "PARTIALLY_ADDRESSED",
-        "statement": "Conceptual-pact term reuse 与 partner-knowledge-sensitive audience design 是可分离指标；human-agent reuse 不能自动视为 mutual common ground。",
+        "id": "SOF-31",
+        "statement": "Abstract-level evidence from one multiparty Tangram task reports that speakers reuse prior conceptual pacts with less-knowledgeable human and agent interlocutors while showing stronger knowledge-sensitive elaboration in human–human communication; pact reuse and audience design therefore require separate measurement.",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
         "evidence_strength": "PRELIMINARY",
         "evidence": [
           "x20-passing-the-pact"
         ],
-        "boundary": "Abstract-only multiparty Tangram evidence；sample、agent state、effect size、analysis 与 equivalence test 尚不可核验。",
-        "updated_at": "2026-09-07"
+        "boundary": "Sample, agent implementation, knowledge manipulation, coding reliability, effect sizes and analysis remain unavailable; the observed speaker behavior does not establish agent learning, mutual belief, equivalence or shared-history causality.",
+        "cumulative_change": "NEW"
       },
       {
-        "id": "FM-16",
-        "status": "STILL_HOLDS",
-        "statement": "Situated social-pragmatic meaning 可强烈依赖 local interaction context，但 context availability 不等于 dyadic common ground。",
+        "id": "SOF-32",
+        "statement": "In a purposefully sampled 4,735-item Chinese-language social-pragmatics benchmark, removing reconstructed interaction context reduced tested-model mean accuracy by 39.07 percentage points, demonstrating task-specific situated-context dependence.",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
         "evidence_strength": "MODERATE",
         "evidence": [
           "x21-social-pragmatic-chinese-comments"
         ],
-        "boundary": "Purposefully sampled Chinese-language platform episodes；不代表中国文化、跨文化差异、original speaker intent 或 embodied interaction。",
-        "updated_at": "2026-09-07"
+        "boundary": "Selection conditioned on context dependence; a 343-item revised hard subset had only 64.14% human accuracy and kappa .53. This is not evidence about Chinese culture, prevalence, original speaker intent, dyadic grounding or embodiment.",
+        "cumulative_change": "NEW"
       },
       {
-        "id": "FM-17",
-        "status": "NEW_CORE",
-        "statement": "VLM 能利用 externally supplied game-specific convention，不代表它能在有限反馈下自主建构、校准并修复该 mapping。",
+        "id": "SOF-33",
+        "statement": "In archived iterated Tangram games, tested VLMs could exploit externally supplied correct game-specific mappings but struggled to accumulate relevant context or recover from their own errors under limited feedback, separating convention retrieval from endogenous construction and repair.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
         "evidence_strength": "MODERATE",
         "evidence": [
           "x22-banana-man-pragmatic-interpretation"
         ],
-        "boundary": "Naïve interpreter over archived human Tangram games；不是 live reciprocal human–AI dyad，也不是所有 VLM 的总体能力结论。",
-        "updated_at": "2026-09-07"
+        "boundary": "Models were naïve interpreters of human dialogue rather than reciprocal partners; the result is task/model specific and does not prove general incapacity to form conventions.",
+        "cumulative_change": "NEW_CORE"
       },
       {
-        "id": "FM-18",
-        "status": "PARTIALLY_ADDRESSED",
-        "statement": "Incremental visual/text artifacts can improve persistent situated-dialogue state retrieval, but system-side representation remains distinct from mutually established common ground。",
+        "id": "SOF-34",
+        "statement": "On 200 IndiRef questions over human situated-dialogue traces, incremental image/text externalization outperformed full-dialog reasoning with the same VLM, and hybrid artifacts best preserved complementary depictable and propositional state.",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
         "evidence_strength": "PRELIMINARY",
         "evidence": [
           "x23-machine-mental-imagery-common-ground"
         ],
-        "boundary": "200-item IndiRef QA with an LLM judge；negation、indirect requests 与 cross-frame links remain failure modes。",
-        "updated_at": "2026-09-07"
+        "boundary": "Single benchmark and LLM judge; the pipeline still missed negation, indirect requests and cross-frame relations. A system-side state representation is not evidence of mutually established common ground.",
+        "cumulative_change": "NEW"
       },
       {
-        "id": "FM-19",
-        "status": "PARTIALLY_ADDRESSED",
-        "statement": "Gaze、face、head、body 与 gesture provide measurable trouble signals for multimodal other-initiated-repair detection, with setting-dependent contributions。",
+        "id": "SOF-35",
+        "statement": "Conversation-Analysis-grounded visual features improved other-initiated-repair detection and type classification beyond text plus audio across two human dyadic corpora, with the size and kind of benefit differing by interaction setting.",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
         "evidence_strength": "MODERATE",
         "evidence": [
           "x24-multimodal-repair-detection"
         ],
-        "boundary": "Human–human French/Dutch corpora；detecting repair initiation is not choosing or completing an agent repair。",
-        "updated_at": "2026-09-07"
+        "boundary": "Human–human French and Dutch corpora, only 47 OIR cases in NOXI, and no real-time agent response or repair outcome; detecting trouble is not performing successful grounding repair.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-36",
+        "statement": "Some VLMs conflate available task content with established referential alignment in MapTask overhearer judgments.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x25-seeing-is-not-sharing"
+        ],
+        "boundary": "Model-specific responses; one corpus and no interactive grounding.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-37",
+        "statement": "A literal-posterior residual measures beyond-literal Hanabi cooperation but does not identify jointly formed conventions.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x26-convention-gap"
+        ],
+        "boundary": "Retrospective measurement; unilateral adaptation and shared convention remain separable hypotheses.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-38",
+        "statement": "English Dixit clue coding provides a method for examining useful ambiguity and cultural allusion.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x27-calibrated-ambiguity"
+        ],
+        "boundary": "Asymmetric card/decoy selection, author coders, no cross-cultural or live recipient validation.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-39",
+        "statement": "In-turn content uptake is distinguishable from unchanged continuation and yielding.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x28-continue-adapt-yield"
+        ],
+        "boundary": "Outcome-informed cue labels and conditional coverage preclude an unbiased general human–model gap.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-40",
+        "statement": "Role-matched swaps provide intervention evidence that formed notebook-equipped LLM dyads are not fully interchangeable in coordination cost.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x29-testing-interchangeability"
+        ],
+        "boundary": "Formation-order/task-note differences remain; four swap pairs per setting, no human partners or mutual-meaning test; recovery arithmetic requires clarification.",
+        "cumulative_change": "REDEFINED"
+      },
+      {
+        "id": "SOF-41",
+        "statement": "视觉语用评估已存在直接方法先例：RefOI中自动指标与人的指称定位不能互换，CMPM中原序展示高分不能证明打乱后的顺序恢复。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x30-refoi-pragmatic-generation",
+          "x31-cmpm-order-matters"
+        ],
+        "boundary": "不同任务的结果不能合成同一能力分数；CMPM为预印本、小规模解释评价。",
+        "cumulative_change": "REDEFINED"
+      },
+      {
+        "id": "SOF-42",
+        "statement": "花字沟通系统、文化meme理解资源和meme语用建模已有实质先例；新主线的研究空间需要在具体机制、模型能力或评价效度上定位。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x32-intent-projection",
+          "x33-speechcap",
+          "x34-memebridge",
+          "x35-mgmc-fusion"
+        ],
+        "boundary": "综合不构成新颖性结论，也不证明这些方法解决真实互动中的理解；各研究样本、任务和证据不同。",
+        "cumulative_change": "REDEFINED"
       }
     ],
     "gaps": [
       {
         "id": "GAP-01",
         "status": "REDEFINED",
-        "statement": "互动反馈与 shared history 如何改变 embodied signal 的 partner-specific meaning，以及 Agent 如何检测这种 meaning change。",
-        "priority": "HIGH",
+        "statement": "How AI detects and updates interaction-dependent multimodal meanings; a long-term candidate requiring a concrete task and mechanism.",
+        "priority": "LOW",
         "evidence_strength": "PRELIMINARY",
-        "research_implication": "研究重点应是 meaning formation mechanism，而不是再做单一 cue 是否有效的问卷比较。"
+        "research_implication": "长期保留，不作为首项研究的必经步骤。"
       },
       {
         "id": "GAP-02",
         "status": "PARTIALLY_ADDRESSED",
-        "statement": "Human–embodied-AI dyads 如何形成、确认、修复并适当迁移对 shared interaction history 有因果依赖的 multimodal conventions。",
-        "priority": "HIGH",
-        "evidence_strength": "MODERATE",
-        "research_implication": "X17/X19/X20/X22 已封死广义 AI code-emergence、pact-reuse 与 established-mapping-use novelty；新研究必须证明 endogenous、mutual、history-causal construction、revision 与 repair。"
+        "statement": "Mutual human–AI conventions whose formation is counterfactually dependent on shared interaction history, followed by repair and transfer tests",
+        "priority": "LOW",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "长期保留，不作为首项研究的必经步骤。"
       },
       {
         "id": "GAP-03",
         "status": "PARTIALLY_ADDRESSED",
-        "statement": "Convention lifecycle 的若干环节已有证据，但 reciprocal repair、retirement、partner/context transfer 与 shared-history counterfactual test 仍然开放。",
-        "priority": "HIGH",
-        "evidence_strength": "MODERATE",
-        "research_implication": "X22/X24 已补充 error recovery 与 multimodal repair detection；仍应先检验 shared-history causality，再分开测试 repair action/uptake、role reversal 与 transfer/retirement。"
+        "statement": "Convention lifecycle: establishment, maintenance, repair/revision, context-sensitive retirement, partner/context transfer, and renegotiation after breakdown",
+        "priority": "LOW",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "长期保留，不作为首项研究的必经步骤。"
       },
       {
         "id": "GAP-04",
-        "status": "PARTIALLY_ADDRESSED",
-        "statement": "验证 minimal linked causal battery，以区分 memory、pact reuse、audience design、repair detection、task/semantic adaptation、alignment、mutual belief 与 history-dependent convention。",
-        "priority": "MEDIUM_HIGH",
-        "evidence_strength": "MODERATE",
-        "research_implication": "复用 partner-switch、pseudo-dyad、context/feedback ablation、state-representation 与 OIR diagnostics；用 linked modules 保持 construct identifiability。"
+        "status": "REDEFINED",
+        "statement": "What evidence distinguishes expression recognition, pragmatic understanding, appropriate response, memory use, felt understanding and shared meaning for a specified research claim?",
+        "priority": "MEDIUM",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "RefOI已展示自动指标与人的指称理解不一致；SpeechCap的表达体验、MemeBridge的解释和误解预测、CMPM的顺序与解释评分也有不同测量对象。不能宣称没有评价方法；需证明具体指标的新增效度。"
       },
       {
         "id": "GAP-05",
         "status": "REDEFINED",
-        "statement": "把 informal / graphic paralanguage 与 multimodal structure 操作化地连接到 history-dependent adaptive embodied human–AI communication。",
-        "priority": "MEDIUM_HIGH",
-        "evidence_strength": "MODERATE",
-        "claimability": "OPEN_INTEGRATION_PROBLEM",
-        "research_implication": "X21 提供 situated target/stance/mechanism/interactional-move diagnostics；下一步是将 local context 与 accumulated dyadic history 分离并迁移到 embodied multimodal interaction。"
-      },
-      {
-        "id": "GAP-06",
-        "status": "REDEFINED",
-        "statement": "当 multimodal signals 随 history 适应时，如何联合优化和评估 instrumental state/intent legibility 与 relational meaning。",
-        "priority": "MEDIUM_HIGH",
-        "evidence_strength": "MODERATE",
-        "claimability": "RESEARCH_OPPORTUNITY_NOT_FIELD_ABSENCE",
-        "research_implication": "研究重点是 trade-off 与 grounding；不能再声称 social 与 functional communication 从未被整合。"
-      },
-      {
-        "id": "GAP-07",
-        "status": "REDEFINED",
-        "statement": "建立 linked modular embodied human–agent causal protocol family，连接 history severing、prior disruption、reciprocity、repair、transfer 与 physical consequences。",
-        "priority": "HIGH",
-        "evidence_strength": "MODERATE",
-        "research_implication": "避免把所有 construct 塞入一个 underidentified 大实验；共享 measurement model 下先证 shared-history causality，再连接 repair、transfer 与 consequence modules。",
-        "claimability": "OPEN_RESIDUAL"
+        "statement": "Which relations among text, visual expression and interaction context make social-pragmatic interpretation difficult for AI, and what evaluation or modeling advances address those difficulties?",
+        "priority": "MEDIUM",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "花字互动系统、中文多格meme/评论评估、文化meme误解资源和多粒度融合/字面语用分离模型均有先例。新增模态、上下文或模型不自动构成新贡献；应定位尚未解决的具体能力、泛化或评价机制。"
       }
     ]
   },
   "exam": {
-    "title": "Adaptive Multimodal Social Communication for Embodied AI: From Social Meaning and Shared Representations to Situated Adaptation",
-    "core_question": "人类与具身智能体如何利用多模态、社会化和非正式表达建立共享意义，并随着互动历史、用户和情境变化形成自适应交流？",
-    "written_target": "8–10 pages；正文使用约 25–30 篇，核心 corpus 30–35 篇，extended oral corpus 50–70 篇。",
+    "title": "Multimodal Social Meaning, Understanding, and Adaptive Communication: Pragmatics, Evaluation, Shared Meaning and Adaptation",
+    "core_question": "暂定新主线考试视图：社会语用理解、多模态表达、计算评估、共享意义与适应；最终考试范围待确认。",
+    "written_target": "历史目标8–10页保留；新主题与篇幅分配待考试任务确认。",
     "top20": [
       {
         "order": 1,
@@ -415,36 +548,6 @@
       },
       {
         "order": 15,
-        "id": "D5",
-        "slug": "d5-legibility-and-predictability",
-        "theme": 4
-      },
-      {
-        "order": 16,
-        "id": "D6",
-        "slug": "d6-designing-robots-with-movement",
-        "theme": 4
-      },
-      {
-        "order": 17,
-        "id": "D7",
-        "slug": "d7-social-eye-gaze-review",
-        "theme": 4
-      },
-      {
-        "order": 18,
-        "id": "E1",
-        "slug": "e1-long-term-social-robots-survey",
-        "theme": 5
-      },
-      {
-        "order": 19,
-        "id": "E2",
-        "slug": "e2-human-robot-mutual-adaptation",
-        "theme": 5
-      },
-      {
-        "order": 20,
         "id": "E3",
         "slug": "e3-continual-adaptation-machine-communication",
         "theme": 5
@@ -453,320 +556,261 @@
     "themes": [
       {
         "id": 1,
-        "name": "Social and Multimodal Communication",
-        "question": "多模态 signal 如何同时承载 information 与 social meaning？",
+        "name": "Social and expressive multimodal communication",
+        "question": "表达怎样承载社会意义？",
         "concepts": [
-          "multimodal communication",
-          "social signaling",
-          "textual paralanguage",
-          "visual language",
-          "emoji pragmatics"
+          "expression",
+          "multimodality"
         ],
         "anchors": [
-          "Jeffrey Hancock",
-          "Neil Cohn",
-          "Guy Hoffman",
-          "Bilge Mutlu"
+          "Zhicong Lu",
+          "Judith Fan"
         ]
       },
       {
         "id": 2,
-        "name": "Representation and Pragmatics",
-        "question": "为什么 communication 追求 contextually sufficient，而不是最大化 detail？",
+        "name": "Pragmatics and contextual understanding",
+        "question": "AI如何依据情境理解用意？",
         "concepts": [
-          "pragmatic inference",
-          "communicative efficiency",
-          "abstraction",
-          "Rational Speech Act",
-          "informativeness"
+          "pragmatics",
+          "context"
         ],
         "anchors": [
-          "Judith Fan",
-          "Noah Goodman",
-          "Michael Frank",
-          "Judith Degen"
+          "Zhicong Lu",
+          "Judith Fan"
         ]
       },
       {
         "id": 3,
-        "name": "Common Ground, Grounding, and Convention Formation",
-        "question": "双方如何从 repeated interaction 形成 shared shorthand，并确认彼此理解？",
+        "name": "Common ground and conventions",
+        "question": "如何区分识别、确认与共享惯例？",
         "concepts": [
-          "common ground",
           "grounding",
-          "conceptual pact",
-          "collaborative reference",
-          "convention formation"
+          "convention"
         ],
         "anchors": [
-          "Herbert Clark",
-          "Judith Fan",
-          "Noah Goodman"
+          "Zhicong Lu",
+          "Judith Fan"
         ]
       },
       {
         "id": 4,
-        "name": "Embodied and Situated Robot Communication",
-        "question": "Robot 如何通过 motion、gaze、gesture、speech 与 visual signals 表达 intent、state、uncertainty 与 capability？",
+        "name": "Models, evaluation and research resources",
+        "question": "怎样测量与改善模型的相关能力？",
         "concepts": [
-          "legibility",
-          "predictability",
-          "intent communication",
-          "uncertainty",
-          "situated interaction"
+          "evaluation",
+          "modeling"
         ],
         "anchors": [
-          "Anca Dragan",
-          "Henny Admoni",
-          "Bilge Mutlu",
-          "Parastoo Abtahi"
+          "Ziqiao Ma",
+          "Zhicong Lu"
         ]
       },
       {
         "id": 5,
-        "name": "Adaptation, Personalization, and Long-Term HRI",
-        "question": "Communication 如何随 user、relationship 与 interaction history 共同适应？",
+        "name": "Memory and adaptation",
+        "question": "怎样区分记忆、适应与共同经历的作用？",
         "concepts": [
-          "personalization",
-          "mutual adaptation",
-          "co-adaptation",
-          "longitudinal HRI",
-          "interaction history"
+          "memory",
+          "adaptation"
         ],
         "anchors": [
-          "Stefanos Nikolaidis",
-          "Iolanda Leite",
-          "Malte Jung"
+          "Zhicong Lu",
+          "Judith Fan"
         ]
       },
       {
         "id": 6,
-        "name": "Social, Cultural, and Relational Context",
-        "question": "Communicative priors 如何经由 interaction 被强化、修订或替换为 personal convention？",
+        "name": "Culture, relationships and social practices",
+        "question": "文化实践与关系如何影响解释？",
         "concepts": [
-          "social meaning-making",
-          "appropriation",
-          "cultural prior",
-          "relationship",
-          "community practices"
+          "culture",
+          "social practices"
         ],
         "anchors": [
-          "F1 · Social norms and conventions",
-          "F2 · Mutual shaping",
-          "F5 · Robots in the Wild"
+          "Zhicong Lu",
+          "Judith Fan"
         ]
       }
     ],
     "writing_plan": [
       {
-        "section": "Introduction",
-        "pages": "0.75–1",
-        "goal": "定义 embodied AI、multimodal social communication、informal visual language 与 adaptive communication，并提出总问题。"
+        "section": "Social and expressive multimodal communication",
+        "pages": "待定",
+        "goal": "表达怎样承载社会意义？"
       },
       {
-        "section": "Multimodal Social Communication",
-        "pages": "1–1.25",
-        "goal": "建立 communication = information + social meaning，避免 modality catalogue。"
+        "section": "Pragmatics and contextual understanding",
+        "pages": "待定",
+        "goal": "AI如何依据情境理解用意？"
       },
       {
-        "section": "Pragmatics, Grounding, and Shared Representation",
-        "pages": "1.5–2",
-        "goal": "解释 pragmatics、common ground、abstraction、shared representation 与 convention。"
+        "section": "Common ground and conventions",
+        "pages": "待定",
+        "goal": "如何区分识别、确认与共享惯例？"
       },
       {
-        "section": "Multimodal Communication in HRI",
-        "pages": "1.5",
-        "goal": "连接 motion、gaze、gesture、visual signals、legibility 与 predefined semantics。"
+        "section": "Models, evaluation and research resources",
+        "pages": "待定",
+        "goal": "怎样测量与改善模型的相关能力？"
       },
       {
-        "section": "Adaptation and Long-Term Interaction",
-        "pages": "1–1.25",
-        "goal": "区分 behavior adaptation 与 communication co-development。"
+        "section": "Memory and adaptation",
+        "pages": "待定",
+        "goal": "怎样区分记忆、适应与共同经历的作用？"
       },
       {
-        "section": "Social and Cultural Meaning",
-        "pages": "1",
-        "goal": "解释 social context、appropriation、relationship 与 cultural priors。"
-      },
-      {
-        "section": "Open Problems and Research Agenda",
-        "pages": "1.5–2",
-        "goal": "收束 emergent convention、adaptive visual communication、longitudinal grounding 与 social + instrumental meaning。"
+        "section": "Culture, relationships and social practices",
+        "pages": "待定",
+        "goal": "文化实践与关系如何影响解释？"
       }
     ],
     "checklists": [
       {
-        "name": "边界",
+        "name": "范围与证据",
         "items": [
-          "固定总题目与一句 RQ",
-          "明确 scope / out of scope",
-          "不吞并整个 social robotics、affective computing 或 multimodal AI"
-        ]
-      },
-      {
-        "name": "文献地图",
-        "items": [
-          "覆盖六个主题与十个机制 cluster",
-          "每个核心 claim 有可追踪 evidence",
-          "运行 Missing Paper Attack"
-        ]
-      },
-      {
-        "name": "每篇论文",
-        "items": [
-          "RQ / theory / modality / meaning",
-          "fixed vs emergent / context / history / adaptation",
-          "method / findings / limitations / remaining gap"
-        ]
-      },
-      {
-        "name": "Critical synthesis",
-        "items": [
-          "区分 established / proof-of-concept / short-term",
-          "检查 designer-defined semantics",
-          "区分 personalization、co-adaptation 与 convention"
-        ]
-      },
-      {
-        "name": "写作",
-        "items": [
-          "不是 paper-by-paper summary",
-          "每节都有 known / boundary / unknown",
-          "不使用无系统证据的 few studies / nobody claims"
-        ]
-      },
-      {
-        "name": "口试",
-        "items": [
-          "能定义、比较、批判和迁移核心理论",
-          "能解释与 social HRI、affective computing、multimodal LLM 的区别",
-          "能说明 informal visual language 是 scientific probe 而非 gimmick"
+          "考试是下游视图，不限制研究社区或贡献类型",
+          "每个论点回到对应来源与证据边界",
+          "个人掌握状态不由agent阅读推断"
         ]
       }
     ],
     "agent_readiness": {
-      "top20_full_text_available": 20,
-      "full_paper_investigation": 20,
+      "active_queue_count": 15,
       "researcher_top20_read": null,
       "researcher_top20_mastered": null,
       "researcher_status": "UNTRACKED",
-      "warning": "Source availability, Agent investigation, and researcher mastery are separate dimensions."
+      "warning": "新范围尚需复核；沿用个人进度，不自动补齐20篇。"
     }
   },
   "research_line": {
-    "identity": "我研究人类与具身 AI Agent 如何通过 situated interaction，发展 adaptive、socially meaningful 的 multimodal communication。",
-    "core_question": "How do socially meaningful multimodal signals become grounded, conventionalized, and adaptive in human–embodied AI interaction?",
+    "identity": "我研究 AI 如何理解、参与和支持具体情境中富有表现力的多模态沟通，以及人与 AI 如何通过持续互动建立共享意义、形成并调整彼此熟悉的表达方式。",
+    "core_question": "How does AI understand and participate in situated multimodal social meaning, and how can shared meanings develop through interaction?",
     "nodes": [
       {
         "id": "meaning",
-        "label": "Meaning",
-        "question": "Signal 表达什么 social / instrumental meaning？",
-        "detail": "Informal visual expression、speech、gaze、gesture、motion 与 AR cue 不只是信息通道，也表达 stance、rapport、uncertainty 与 identity。",
+        "label": "Social Meaning",
+        "label_zh": "社会意义",
+        "question": "这个表达在此刻想做什么？",
+        "detail": "区分对象、立场、幽默与互动用意；允许文化与关系影响解释。",
         "buckets": [
           "A",
+          "B",
           "F"
         ],
         "gaps": [
-          "GAP-01",
           "GAP-05",
-          "GAP-06"
+          "GAP-04"
+        ]
+      },
+      {
+        "id": "understanding",
+        "label": "Pragmatic Understanding",
+        "label_zh": "情境化理解",
+        "question": "AI依据什么理解言外之意？",
+        "detail": "近期重点：跨文字、图像和情境的理解；评估、数据、模型与方法都是独立贡献路径。",
+        "buckets": [
+          "A",
+          "B",
+          "D"
+        ],
+        "gaps": [
+          "GAP-05",
+          "GAP-04"
         ]
       },
       {
         "id": "grounding",
         "label": "Grounding",
-        "question": "双方如何确认彼此理解？",
-        "detail": "Pragmatic inference、joint attention、feedback 与 common ground 让 signal 在当前 context 中获得可接受解释。",
+        "label_zh": "理解确认与修复",
+        "question": "如何知道对方理解到位？",
+        "detail": "区分答对、被理解感与互动中的确认；修复可研究，但不规定为首项项目。",
         "buckets": [
-          "B",
-          "C"
+          "C",
+          "G"
         ],
         "gaps": [
           "GAP-01",
-          "GAP-03"
+          "GAP-04"
         ]
       },
       {
         "id": "convention",
-        "label": "Convention",
-        "question": "Repeated interaction 如何生成 shared shorthand？",
-        "detail": "研究 conceptual pact、partner-specific convention、abstraction、repair、retention、forgetting 与 transfer。",
+        "label": "Shared Conventions",
+        "label_zh": "共享表达与惯例",
+        "question": "表达何时成为我们的说法？",
+        "detail": "保留长期兴趣，考察共同经历、文化资源与伙伴差异，不能只凭表达重复认定惯例。",
         "buckets": [
-          "C"
+          "C",
+          "F"
         ],
         "gaps": [
-          "GAP-02",
-          "GAP-07"
+          "GAP-02"
         ]
       },
       {
         "id": "adaptation",
         "label": "Adaptation",
-        "question": "Communication 如何随 user 与 history 改变？",
-        "detail": "区分 personalization、user modeling、mutual adaptation、co-adaptation 与真正共同生成的 convention。",
+        "label_zh": "适应与持续互动",
+        "question": "理解与表达如何随经历调整？",
+        "detail": "人机交流与AI支持人际沟通均可；机器人、AR与手势按问题需要加入。",
         "buckets": [
           "E",
-          "F"
+          "G"
         ],
         "gaps": [
           "GAP-03",
           "GAP-04"
         ]
-      },
-      {
-        "id": "embodied",
-        "label": "Embodied Communication",
-        "question": "WHAT / WHEN / WHERE / HOW 应如何进入 physical world？",
-        "detail": "把 motion、gaze、gesture、speech、visual display 与 spatial AR 作为可协调的 situated communication resources。",
-        "buckets": [
-          "D",
-          "G"
-        ],
-        "gaps": [
-          "GAP-05",
-          "GAP-06"
-        ]
       }
     ],
     "scope": {
       "core": [
-        "Interaction-specific meaning formation",
-        "Common Ground / Grounding",
-        "Convention formation",
-        "Partner-specific co-adaptation",
-        "Situated multimodal communication"
+        "情境化社会语用理解与多模态表达",
+        "AI / CV / NLP 的模型、方法、数据与评估",
+        "人与AI及AI支持的人际沟通",
+        "共同理解、惯例与适应"
       ],
       "adjacent": [
-        "Affective computing when it reveals mechanism",
-        "Cross-cultural HRI as communicative priors",
-        "Multimodal foundation models as enabling infrastructure"
+        "机器人与具身沟通：延后、按实质问题选用",
+        "AR、手势与空间交互：可选载体",
+        "认知机制和社会实践：解释沟通现象"
       ],
       "out_of_scope": [
-        "只比较单一视觉效果是否更可爱",
-        "按国籍做静态 preference ranking",
-        "没有 meaning / grounding / adaptation 机制的 AI wrapper"
+        "只因关键词或设备可用而设题",
+        "把国家标签直接当文化",
+        "未经证据把偏好或记忆等同于共同理解"
       ]
     },
-    "next_questions": [
-      {
-        "rank": 1,
-        "status": "HIGHEST_PRIORITY",
-        "question": "Do communication gains causally depend on shared dyadic history beyond same-producer/style, externally supplied mappings, interlocutor-knowledge/capability beliefs, memory and task learning?",
-        "design_stage": "original vs history-severed dyad; prior disruption; yoked/shuffled controls; pact reuse versus knowledge-sensitive elaboration, acceptance and natural use"
-      },
-      {
-        "rank": 2,
-        "status": "NEXT_PHASE",
-        "question": "Can a grounded mapping survive role reversal and be repaired after controlled breakdown?",
-        "design_stage": "role reversal plus repair perturbation; separately measure trouble detection, repair action, uptake and restored grounding"
-      },
-      {
-        "rank": 3,
-        "status": "LATER_PHASE",
-        "question": "When should multimodal conventions transfer, retire or be renegotiated, and how do instrumental and relational meanings trade off?",
-        "design_stage": "partner/context transfer plus longitudinal post-novelty study"
-      }
-    ]
+    "next_questions": [],
+    "foundation_paper": "x21-social-pragmatic-chinese-comments",
+    "communities": [
+      "HCI",
+      "CSCW",
+      "AI",
+      "CV",
+      "NLP",
+      "Cognitive science"
+    ],
+    "resources": {
+      "robot_available": false,
+      "virtual_character_available": false,
+      "existing_interaction_platform": false,
+      "devices": [
+        "several Meta Aria Gen 2",
+        "one Meta Quest 3"
+      ],
+      "device_capabilities": "Not verified; do not assume live sensing, output or multiuser support.",
+      "budget": "limited; no robot purchase planned",
+      "technical_development": "User reports able to build a system; actual workload still requires scoping",
+      "participants": "Campus adults, often students as general users; off-campus recruitment possible",
+      "interaction_duration": "One-off or repeated participation possible",
+      "first_followup_target_months": [
+        3,
+        6
+      ]
+    },
+    "next_step": "以X21为已有研究基础，选择具体表达现象并核对相关研究。首项RQ、方法与设计尚未确定。"
   },
   "workflow_runs": [
     {
@@ -825,6 +869,30 @@
       "status": "PARTIAL",
       "date": "2026-09-12",
       "summary": "X1–X5全文补审及独立反方复核完成；F6/X20等待可读全文。论文、Gap、问题验证同步更新。"
+    },
+    {
+      "id": "amsc-radar-2026-09-14",
+      "workflow": "Research Radar + Paper Investigation + independent missing-paper, quantitative and culture audits",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-09-14T11:05:45-04:00",
+      "verification": "70 papers; 117 HTML pages; workspace 7/7; Chinese reading 2/2; validate-install and diff-check passed.",
+      "summary": "X25–X29 added; broad no-partner-specificity claim narrowed; five full-text audits, three new and two recovered. Priorities unchanged; no researcher mastery inference."
+    },
+    {
+      "id": "mainline-realignment-2026-09-18",
+      "workflow": "User-directed program and workspace migration",
+      "status": "COMPLETE",
+      "date": "2026-09-18",
+      "summary": "42 active papers; 28 deferred; X21 user research foundation; old RQs/studies archived; no new RQ or project promotion.",
+      "verification": "90-page validation, 12 tests, 8 skill validators and install checks passed; desktop/mobile layout and foundation filter checked."
+    },
+    {
+      "id": "amsc-radar-2026-09-18",
+      "workflow": "Research Radar",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-09-18",
+      "summary": "新主线首次运行：6篇历史补回（X30–X35），0篇核实的窗口内新增；同步GAP04/05和领域状态，无RQ升级。",
+      "report": "reports/radar/2026-09-18-amsc-mainline-v2.md"
     }
   ],
   "provenance": {

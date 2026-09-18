@@ -2,7 +2,12 @@
   "id": "X23",
   "slug": "x23-machine-mental-imagery-common-ground",
   "title": "Using Machine Mental Imagery for Representing Common Ground in Situated Dialogue",
-  "authors": ["Biswesh Mohapatra", "Giovanni Duca", "Laurent Romary", "Justine Cassell"],
+  "authors": [
+    "Biswesh Mohapatra",
+    "Giovanni Duca",
+    "Laurent Romary",
+    "Justine Cassell"
+  ],
   "year": 2026,
   "venue": "ACM ICMI 2026 program; arXiv preprint",
   "source_url": "https://arxiv.org/abs/2604.21144",
@@ -23,10 +28,25 @@
   "why_researcher_should_care": "It is a close architecture precedent for separating memory availability from an inspectable representation of what the system treats as shared, while its failures show why pragmatic grounding cannot be reduced to depictive state storage.",
   "amsc": {
     "mainline_fit": 8.7,
-    "buckets": ["B", "C", "E"],
-    "stages": ["Grounding/common ground", "Personalization/co-adaptation"],
-    "mechanisms": ["incremental state externalization", "visual scaffolding", "multimodal memory", "epistemic commitment", "retrieval"],
-    "gap_ids": ["GAP-01", "GAP-04"],
+    "buckets": [
+      "C",
+      "D"
+    ],
+    "stages": [
+      "Grounding/common ground",
+      "Personalization/co-adaptation"
+    ],
+    "mechanisms": [
+      "incremental state externalization",
+      "visual scaffolding",
+      "multimodal memory",
+      "epistemic commitment",
+      "retrieval"
+    ],
+    "gap_ids": [
+      "GAP-01",
+      "GAP-04"
+    ],
     "master_list_decision": "Candidate — Important / multimodal common-ground representation architecture"
   },
   "investigation_status": "radar_full_text_audit",
@@ -35,5 +55,12 @@
     "The paper's use of common ground is retained as its framing, while the state record distinguishes system representation from mutually grounded evidence."
   ],
   "provenance": "amsc_radar_2026-09-07",
-  "updated_at": "2026-09-07"
+  "updated_at": "2026-09-07",
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

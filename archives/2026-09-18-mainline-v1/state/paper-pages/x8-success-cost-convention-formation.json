@@ -1,0 +1,32 @@
+{
+  "id": "X8",
+  "slug": "x8-success-cost-convention-formation",
+  "title": "Success and Cost Elicit Convention Formation for Efficient Communication",
+  "authors": ["Saujas Vaduguru", "Yilun Hua", "Yoav Artzi", "Daniel Fried"],
+  "year": 2026,
+  "venue": "ACL 2026, 42033–42050",
+  "source_url": "https://aclanthology.org/2026.acl-long.1946/",
+  "doi": "10.18653/v1/2026.acl-long.1946",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "显示 success 与 message cost 的联合训练压力可在受限 repeated visual reference games 中诱发对人类可读的 convention-like efficiency gains。",
+  "problem": "能否在没有新增 human demonstration data 的情况下训练 LMM 随互动形成更短且更成功的 referring expressions？",
+  "method": "以 simulated photo/tangram reference games 生成 success+cost preference pairs，进行 DPO-style post-training，再以 model-speaker→human-listener games 比较 baselines。",
+  "findings": ["来源报告 message length 最高下降 41%，success 随互动最高提高约 15%，human listeners 反应更快。", "success-only 或 cost-only 均不足，联合目标才产生 efficiency trajectory。"],
+  "real_contribution": "把 convention formation 转成可干预的 training-objective problem，并提供 human-listener behavioral validation。",
+  "biggest_weakness": "固定单向 speaker→listener；全 history 位于 context window，未测 role reversal、repair、mutual belief、partner swap 或 physical embodiment。",
+  "claim_boundary": "证明 convention-like efficient reference policy 可被训练，不证明双方共同协商或 interaction-history-specific mutual convention 已形成。",
+  "why_researcher_should_care": "直接削弱‘AI 不能形成 convention-like adaptation’的宽泛表述，并指出 success×cost 是值得因果检验的 selection pressure。",
+  "amsc": {
+    "mainline_fit": 9.6,
+    "buckets": ["C", "E"],
+    "stages": ["Grounding", "Convention", "Adaptation"],
+    "mechanisms": ["communicative success", "message cost", "convention formation"],
+    "gap_ids": ["GAP-02", "GAP-04"],
+    "master_list_decision": "Candidate — Must Read / First-run recovery"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": ["Published July 2026; outside the strict seven-day publication window and labeled first-run recovery.", "Full ACL paper and limitations were audited."],
+  "provenance": "amsc_radar_2026-08-27_recovery",
+  "updated_at": "2026-08-27"
+}

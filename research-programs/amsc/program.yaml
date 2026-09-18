@@ -1,77 +1,147 @@
 program_id: amsc
-version: '0.1'
-name: Adaptive Multimodal Social Communication for Embodied AI
-research_identity: I study how humans and embodied AI agents develop adaptive, socially
-  meaningful multimodal communication through situated interaction.
+version: "2.0"
+name: Multimodal Social Meaning, Understanding, and Adaptive Communication
+research_identity: I study how AI understands, participates in, and supports expressive multimodal
+  communication in context, and how humans and AI develop shared meanings and adapt their ways of
+  communicating through ongoing interaction.
 operating_model:
   source_of_truth: long_term_research_program
   workflow_role: acquire_audit_and_integrate_evidence_for_mainline
   primary_state:
-  - Master Literature List
-  - Current State of the Field
-  - Gap Registry
-  - Research Graph
-  - Next-question priority
+    - Master Literature List
+    - Current State of the Field
+    - Gap Registry
+    - Research Graph
+    - Next-question priority
   exam_role: short_term_filtered_view
-  exam_update_condition: Only when an upstream change directly affects an exam theme,
-    anchor, writing claim, or oral question.
-core_theory_priority: Common Ground / Grounding / Convention Formation
+  exam_update_condition: Only when an upstream change directly affects an exam theme, anchor, writing claim, or oral question.
+core_theory_priority: Social pragmatics / multimodal meaning; common ground, grounding, convention and
+  adaptation as question-dependent resources
 core_chain:
-- Meaning
-- Grounding
-- Convention
-- Adaptation
-- Embodied Communication
+  - Situated social meaning
+  - Multimodal pragmatic understanding
+  - Grounding and repair
+  - Shared conventions
+  - Adaptation
 development_stages:
-- Informal visual expression
-- Social meaning / pragmatics
-- Grounding / common ground
-- Convention formation
-- Personalization / co-adaptation
-- Situated adaptive communication
+  - Contextual pragmatic understanding (near-term focus)
+  - Expression, response and AI-mediated communication
+  - Shared meaning and ongoing adaptation
 anchors:
   primary:
-  - Zhicong Lu
-  - Judith Ellen Fan
-  - Parastoo Abtahi
+    - Zhicong Lu
+    - Judith Fan
+    - Ziqiao Ma
+    - Parastoo Abtahi
+    - Ryo Suzuki
+  preference:
+    most: Zhicong Lu
+    evidence: user stated research taste; not a claim of collaboration
   secondary:
-  - Herbert Clark
-  - Noah Goodman
-  - Michael Frank
-  - Judith Degen
-  - Neil Cohn
-  - Jeffrey Hancock
-  - Guy Hoffman
-  - Bilge Mutlu
-  - Henny Admoni
-  - Anca Dragan
-  - Brian Scassellati
-  - Chien-Ming Huang
-  - Maya Cakmak
-  - Stefanos Nikolaidis
-  - Iolanda Leite
-  - Malte Jung
-  - Selma Šabanović
-  - Kerstin Fischer
+    - Herbert Clark
+    - Noah Goodman
+    - Michael Frank
+    - Judith Degen
+    - Neil Cohn
+    - Jeffrey Hancock
   also_track:
-  - students
-  - postdocs
-  - frequent collaborators
+    - students
+    - postdocs
+    - frequent collaborators
+  relationship_policy: Authorship/affiliation requires evidence; taste does not imply ties
 venues:
-  tier1:
-  - CHI
-  - CSCW
-  - HRI
-  - UIST
-  - CogSci
+  equal_priority: &a1
+    - CHI
+    - CSCW
+    - UIST
+    - ACL
+    - EMNLP
+    - NAACL
+    - COLING
+    - TACL
+    - CVPR
+    - ICCV
+    - ECCV
+    - NeurIPS
+    - ICML
+    - ICLR
+    - AAAI
+    - IJCAI
+    - CogSci
+  tier1: *a1
   tier2:
-  - RO-MAN
-  - ICRA
-  - IROS
-  - ACM THRI
-  - International Journal of Social Robotics
+    - HRI
+    - RO-MAN
+    - ICRA
+    - IROS
+    - ACM THRI
+  deferred_policy: Robotics venues only when substantive communication relevance, not mandatory weekly quota
   preprint:
-  - arXiv
+    - arXiv
 master_literature:
-  baseline_version: v1.0
-  baseline_count: 41
+  historical_baseline_version: v1.0
+  historical_baseline_count: 41
+  current_version: "2.0"
+  policy: Preserve historical snapshot and stable IDs; active corpus reflects 2026-09-18 user-authorized scope change
+updated_at: 2026-09-18
+research_identity_zh: 我研究 AI 如何理解、参与和支持具体情境中富有表现力的多模态沟通，以及人与 AI 如何通过持续互动建立共享意义、形成并调整彼此熟悉的表达方式。
+development_policy: Linked research perspectives, not a mandatory sequence of papers; no requirement to cover all stages.
+categories:
+  A: 社会与多模态表达 / Social and expressive multimodal communication
+  B: 语用与情境化理解 / Pragmatics and contextual understanding
+  C: 共同基础与沟通惯例 / Grounding and conventions
+  D: 模型、评估与研究资源 / Models, evaluation and resources
+  E: 记忆、适应与持续互动 / Memory, adaptation and ongoing interaction
+  F: 文化、关系与社会实践 / Culture, relationships and social practices
+  G: 沟通系统与情境化交互 / Communication systems and situated interaction
+communities:
+  - HCI
+  - CSCW
+  - AI
+  - CV
+  - NLP
+  - Cognitive science
+contribution_types:
+  - empirical
+  - theory
+  - dataset
+  - benchmark
+  - evaluation
+  - model
+  - method
+  - system
+  - design
+  - resource
+foundation_paper:
+  id: X21
+  arxiv: "2609.04384"
+  user_role: second_author
+  role_evidence: Explicit user statement in this conversation
+  relationship: existing research foundation; preserve critical evidence audit
+resources:
+  robot_available: false
+  virtual_character_available: false
+  existing_interaction_platform: false
+  devices:
+    - several Meta Aria Gen 2
+    - one Meta Quest 3
+  device_capabilities: Not verified; do not assume live sensing, output or multiuser support.
+  budget: limited; no robot purchase planned
+  technical_development: User reports able to build a system; actual workload still requires scoping
+  participants: Campus adults, often students as general users; off-campus recruitment possible
+  interaction_duration: One-off or repeated participation possible
+  first_followup_target_months:
+    - 3
+    - 6
+research_relationships:
+  - human–AI communication
+  - AI-mediated human–human communication
+deferred:
+  - robot-dependent projects
+  - embodied communication as mandatory identity
+  - hardware acquisition as prerequisite
+decisions:
+  approved: Program direction and workspace realignment
+  not_approved: No specific first RQ, novelty claim, method, or experiment is selected
+  repair: Optional candidate, not prescribed first project
+provenance: research-programs/amsc/SOURCE_USER_SPEC.md

@@ -25,7 +25,7 @@ Search:
 - non-obvious venues.
 
 ## Novelty Domain Panel
-Use multiple relevant domain lenses (e.g. HCI, HRI, CSCW, Cultural AI, AI policy, NLP/AI).
+Use multiple relevant domain lenses (e.g. HCI, CSCW, AI/ML, CV, NLP and cognition; HRI or policy when relevant).
 Each reports:
 - closest tradition;
 - what is already known;
@@ -127,7 +127,7 @@ Attempt to prove:
 
 ## Gap Curator
 Integrate Reviewer + Theory Mapper + Skeptic.
-Update the persistent Gap Registry, including temporal redefinitions.
+Return traceable Gap Registry proposals including temporal redefinitions; the primary agent applies accepted changes.
 
 ## Exam Curator
 Read the Master Literature List; maintain only downstream exam objects:
@@ -154,3 +154,11 @@ Every major update must answer:
 
 ## Lifecycle routing
 Follow workflows/research-lifecycle.md. AMSC Final Synthesizer leads AMSC decisions; Senior Faculty Synthesizer leads other research decisions. Pilot coordination remains in Study Design. All specialized roles return read-only proposals; the primary agent writes accepted state.
+
+## Current program contract
+
+For AMSC work, load `research-programs/amsc/PROGRAM.md` and `program.yaml`; their current version overrides historical framing. HCI, AI, CV and NLP are equal routes. X21/arXiv:2609.04384 is user-confirmed second-author work and the near-term foundation. Do not require robots, user studies, embodied settings or convention formation for a valid mainline contribution. Choose human evidence when the claim concerns human behavior or interpretation. Understanding is the current focus, not a mandatory sequence of papers. Archived v1 content is not an active priority.
+
+## Computational Evaluation Auditor
+
+Audit data and split provenance, leakage, contamination, baseline fairness, ablations, model/prompt/version/seeds, annotation ambiguity, compute budgets, metrics and reproducibility. Separate model capability from human effects. Do not require a user study for a purely computational claim. Read-only proposals; no project-promotion authority.

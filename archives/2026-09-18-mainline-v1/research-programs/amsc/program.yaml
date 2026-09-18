@@ -1,0 +1,77 @@
+program_id: amsc
+version: '0.1'
+name: Adaptive Multimodal Social Communication for Embodied AI
+research_identity: I study how humans and embodied AI agents develop adaptive, socially
+  meaningful multimodal communication through situated interaction.
+operating_model:
+  source_of_truth: long_term_research_program
+  workflow_role: acquire_audit_and_integrate_evidence_for_mainline
+  primary_state:
+  - Master Literature List
+  - Current State of the Field
+  - Gap Registry
+  - Research Graph
+  - Next-question priority
+  exam_role: short_term_filtered_view
+  exam_update_condition: Only when an upstream change directly affects an exam theme,
+    anchor, writing claim, or oral question.
+core_theory_priority: Common Ground / Grounding / Convention Formation
+core_chain:
+- Meaning
+- Grounding
+- Convention
+- Adaptation
+- Embodied Communication
+development_stages:
+- Informal visual expression
+- Social meaning / pragmatics
+- Grounding / common ground
+- Convention formation
+- Personalization / co-adaptation
+- Situated adaptive communication
+anchors:
+  primary:
+  - Zhicong Lu
+  - Judith Ellen Fan
+  - Parastoo Abtahi
+  secondary:
+  - Herbert Clark
+  - Noah Goodman
+  - Michael Frank
+  - Judith Degen
+  - Neil Cohn
+  - Jeffrey Hancock
+  - Guy Hoffman
+  - Bilge Mutlu
+  - Henny Admoni
+  - Anca Dragan
+  - Brian Scassellati
+  - Chien-Ming Huang
+  - Maya Cakmak
+  - Stefanos Nikolaidis
+  - Iolanda Leite
+  - Malte Jung
+  - Selma Šabanović
+  - Kerstin Fischer
+  also_track:
+  - students
+  - postdocs
+  - frequent collaborators
+venues:
+  tier1:
+  - CHI
+  - CSCW
+  - HRI
+  - UIST
+  - CogSci
+  tier2:
+  - RO-MAN
+  - ICRA
+  - IROS
+  - ACM THRI
+  - International Journal of Social Robotics
+  preprint:
+  - arXiv
+master_literature:
+  baseline_version: v1.0
+  baseline_count: 41

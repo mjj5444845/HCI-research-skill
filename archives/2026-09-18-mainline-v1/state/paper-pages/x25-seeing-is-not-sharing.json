@@ -1,0 +1,53 @@
+{
+  "id": "X25",
+  "slug": "x25-seeing-is-not-sharing",
+  "title": "Seeing Is Not Sharing: Some Vision-Language Models Overestimate Common Ground in Asymmetric Dialogue",
+  "authors": [
+    "Nan Li",
+    "Albert Gatt",
+    "Massimo Poesio"
+  ],
+  "venue": "SIGDIAL 2026, 694–710",
+  "source_url": "https://aclanthology.org/2026.sigdial-1.49/",
+  "priority": "Must Read",
+  "one_sentence": "Some tested VLMs confuse available map information with established referential alignment.",
+  "problem": "Can an overhearing VLM distinguish potentially shared information from interpretations established in dialogue?",
+  "method": "Binary interpretation matching on 13,077 references in 128 MapTask dialogues; controlled context windows and authentic, textual, blank and shuffled map conditions; detailed grid on Qwen3-VL-8B and baseline comparisons on four other models.",
+  "findings": [
+    "Authentic maps improved overall performance while increasing false alignment in some models; text conveying map content reproduced the direction.",
+    "Model responses were heterogeneous: Qwen3-VL-4B became more conservative."
+  ],
+  "real_contribution": "A diagnostic separating perceptual availability from grounded interpretation.",
+  "biggest_weakness": "Single corpus, imbalanced labels, only 239 misunderstood cases; overhearer judgments rather than interaction.",
+  "claim_boundary": "Does not establish universal VLM over-alignment, mutual belief, or failure of live repair.",
+  "why_researcher_should_care": "Add alignment-specific errors and perspective controls before interpreting successful reference as common ground.",
+  "amsc": {
+    "mainline_fit": 9.4,
+    "buckets": [
+      "B",
+      "C"
+    ],
+    "stages": [
+      "Grounding/common ground"
+    ],
+    "mechanisms": [
+      "perspective asymmetry",
+      "epistemic calibration"
+    ],
+    "gap_ids": [
+      "GAP-02",
+      "GAP-04",
+      "GAP-07"
+    ],
+    "master_list_decision": "Candidate — Must Read / recovered diagnostic anchor"
+  },
+  "evidence_notes": [
+    "Recovered from prior deferred queue; August publication, not new this week.",
+    "Full PDF sections 3–6 and limitations audited."
+  ],
+  "year": 2026,
+  "access_status": "full_text",
+  "investigation_status": "radar_full_text_audit",
+  "provenance": "amsc_radar_2026-09-14",
+  "updated_at": "2026-09-14"
+}

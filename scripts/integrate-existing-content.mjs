@@ -1,3 +1,6 @@
+// Historical migration only: current v2 data must never be overwritten.
+import { readFileSync as readProgramGuard } from 'node:fs';
+if (/version:\s*['"]?2/.test(readProgramGuard(new URL('../research-programs/amsc/program.yaml', import.meta.url),'utf8'))) throw new Error('Historical importer disabled for program v2; use explicit reviewed migration.');
 
 import fs from 'node:fs';
 import {parse} from 'yaml';

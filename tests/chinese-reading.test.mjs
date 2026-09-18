@@ -15,6 +15,6 @@ test('Chinese presentation preserves research states, original titles and eviden
  for(let i=0;i<papers.length;i++){assert.equal(localized[i].original_title,papers[i].title);assert.equal(localized[i].investigation_status,papers[i].investigation_status);}
  renderChineseReading({page:o=>'<main id="main">'+o.body+'</main>',write:(f,c)=>out[f]=c,papers:localized,workspace,data});
  for(const p of papers.filter(p=>['F6','X20'].includes(p.id)))assert.match(out['papers/'+p.slug+'/index.html'],/尚未读到全文/);
- assert.match(out['questions/index.html'],/草案，尚未验证/);assert.equal(JSON.stringify(workspace),before);
+ if(workspace.pipeline.questions.length)assert.match(out['questions/index.html'],/草案，尚未验证/);else assert.match(out['questions/index.html'],/首项研究问题尚未选择/);assert.equal(JSON.stringify(workspace),before);
  const stale={...data,stale:['X3']};renderChineseReading({page:o=>'<main id="main">'+o.body+'</main>',write:(f,c)=>out[f]=c,papers:localized,workspace,data:stale});assert.match(out['questions/index.html'],/中文解读需要重新核对/);
 });

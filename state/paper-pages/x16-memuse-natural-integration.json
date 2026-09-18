@@ -2,7 +2,11 @@
   "id": "X16",
   "slug": "x16-memuse-natural-integration",
   "title": "MemUse: Moving Memory Evaluation from Direct QA to Natural Integration in Long-Term Human-AI Conversation",
-  "authors": ["Ryuichi Sumida", "Koji Inoue", "Tatsuya Kawahara"],
+  "authors": [
+    "Ryuichi Sumida",
+    "Koji Inoue",
+    "Tatsuya Kawahara"
+  ],
   "year": 2026,
   "venue": "EMNLP 2026 Main",
   "source_url": "https://arxiv.org/abs/2608.24189",
@@ -22,14 +26,36 @@
   "why_researcher_should_care": "AMSC should test retrieval, natural integration, partner-specific interpretation, and convention evidence as distinct outcomes.",
   "amsc": {
     "mainline_fit": 8.7,
-    "buckets": ["C", "E"],
-    "stages": ["Grounding", "Adaptation"],
-    "mechanisms": ["memory availability", "natural integration", "longitudinal interaction history"],
-    "gap_ids": ["GAP-04"],
+    "buckets": [
+      "D",
+      "E"
+    ],
+    "stages": [
+      "Grounding",
+      "Adaptation"
+    ],
+    "mechanisms": [
+      "memory availability",
+      "natural integration",
+      "longitudinal interaction history"
+    ],
+    "gap_ids": [
+      "GAP-04"
+    ],
     "master_list_decision": "Candidate — Important / Longitudinal diagnostic"
   },
   "investigation_status": "radar_full_text_audit",
-  "evidence_notes": ["Open arXiv full text inspected; v1 submitted 2026-08-25 and listed as EMNLP 2026 Main.", "Association is not treated as causal evidence."],
+  "evidence_notes": [
+    "Open arXiv full text inspected; v1 submitted 2026-08-25 and listed as EMNLP 2026 Main.",
+    "Association is not treated as causal evidence."
+  ],
   "provenance": "amsc_radar_2026-08-31",
-  "updated_at": "2026-08-31"
+  "updated_at": "2026-08-31",
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

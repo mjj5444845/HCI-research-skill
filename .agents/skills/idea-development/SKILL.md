@@ -49,6 +49,7 @@ Generate multiple pragmatic framings when relevant:
 - FAccT
 - NLP / ACL-style
 - AI/ML
+- CV / vision-language modeling
 - robotics
 - cross-cultural/social computing
 - AI policy
@@ -139,7 +140,7 @@ When evaluating the user's own mainline ideas, additionally score:
 - relation to Grounding
 - relation to Convention
 - relation to Adaptation
-- relation to Embodied Communication
+- computational / multimodal understanding contribution
 - fit with the current development stage
 - contribution to one or more active gaps
 - advisor-fit potential
@@ -153,3 +154,9 @@ Prefer ideas that reveal:
 - how prior interaction changes communication;
 - when personalization becomes convention;
 - how situated/embodied output changes pragmatic interpretation.
+
+## Current program contract
+
+For AMSC work, load `research-programs/amsc/PROGRAM.md` and `program.yaml`; their current version overrides historical framing. HCI, AI, CV and NLP are equal routes. X21/arXiv:2609.04384 is user-confirmed second-author work and the near-term foundation. Do not require robots, user studies, embodied settings or convention formation for a valid mainline contribution. Choose human evidence when the claim concerns human behavior or interpretation. Understanding is the current focus, not a mandatory sequence of papers. Archived v1 content is not an active priority.
+
+A follow-up to user-authored work is legitimate. Compare its added knowledge, capability or resource with the existing foundation. Do not force a behavioral mechanism claim onto a technical contribution, or treat a modality extension as automatically trivial or automatically novel.

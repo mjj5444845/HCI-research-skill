@@ -1,204 +1,258 @@
-version: 0.7
+version: "2.1"
 gaps:
   - id: GAP-01
-    statement: "How an embodied agent detects and updates interaction-history-dependent multimodal meaning across dyad and population levels"
+    statement: How AI detects and updates interaction-dependent multimodal meanings; a long-term candidate
+      requiring a concrete task and mechanism.
     status: REDEFINED
-    priority: high
+    priority: low
     evidence:
-      - paper_slug: x14-bee-referential-code
-        evidence_level: PRELIMINARY
-        supports: "Makes ecological usefulness, body geometry, and coupled sender/receiver code change explicit in a referential-code transition."
-        boundary: "Evolutionary bee-colony simulation; not interaction-timescale human–AI detection or multimodal social meaning."
       - paper_slug: c6-visual-resemblance-interaction-history
         evidence_level: MODERATE
-        supports: "Interaction history changes pictorial meaning within a repeated human-human drawing paradigm."
-        boundary: "Controlled human drawing; yoked-vs-shuffled isolates same-producer sequence exposure, not mutual common ground or embodied-agent detection."
+        supports: Interaction history changes pictorial meaning within a repeated human-human drawing paradigm.
+        boundary: Controlled human drawing; yoked-vs-shuffled isolates same-producer sequence exposure, not
+          mutual common ground or embodied-agent detection.
       - paper_slug: x12-partners-to-populations
         evidence_level: MODERATE
-        supports: "CHAI models how partner-specific common ground and population conventions coexist and transfer."
-        boundary: "Human linguistic coordination and simulation; no embodied human–AI agent."
+        supports: CHAI models how partner-specific common ground and population conventions coexist and transfer.
+        boundary: Human linguistic coordination and simulation; no embodied human–AI agent.
       - paper_slug: c8-gesturing-toward-abstraction
         evidence_level: MODERATE
-        supports: "Human physical dyads develop and reuse speech/gesture abstractions with diverging dyad vocabularies."
-        boundary: "No Agent, partner swap, history severing or transfer."
+        supports: Human physical dyads develop and reuse speech/gesture abstractions with diverging dyad
+          vocabularies.
+        boundary: No Agent, partner swap, history severing or transfer.
       - paper_slug: e3-continual-adaptation-machine-communication
         evidence_level: MODERATE
-        supports: "An artificial listener updates linguistic reference expectations online from interaction history."
-        boundary: "One-sided visual-reference adaptation; non-embodied and no dyad/population transfer."
+        supports: An artificial listener updates linguistic reference expectations online from interaction
+          history.
+        boundary: One-sided visual-reference adaptation; non-embodied and no dyad/population transfer.
       - paper_slug: x23-machine-mental-imagery-common-ground
         evidence_level: PRELIMINARY
-        supports: "Incrementally externalizes dialogue-derived visual and textual state and distinguishes confirmed, unresolved and assumed content."
-        boundary: "Offline QA over human dialogue traces; system-side state tracking is not partner-specific meaning change or mutual common ground."
+        supports: Incrementally externalizes dialogue-derived visual and textual state and distinguishes
+          confirmed, unresolved and assumed content.
+        boundary: Offline QA over human dialogue traces; system-side state tracking is not partner-specific
+          meaning change or mutual common ground.
       - paper_slug: x1-spotter-human-robot-conventions
         evidence_level: PRELIMINARY
         supports: SPOTTER 的 21 名成人 WoZ 试验显示描述趋于稳定但未清晰缩短；它提供动态视觉指称框架，不证明自主机器人形成互惠惯例。
         boundary: 21名成人的探索性描述复用，不等于自主机器人学习、HH/HRI等价、共同历史的因果作用或长期惯例。无显著性结果不能补写为不存在效应。
-    skeptic_challenge: "Human meaning formation, multimodal physical convention and partner-to-population transfer already have direct precedents; novelty must be counterfactual embodied-agent detection, repair and validated transfer rather than rediscovery. 2026-09-12反方复核：不得以非自主为由排除WoZ先例，不得把修复/记忆更新说成从未研究；新增条件组合本身不是新颖性。"
+    skeptic_challenge: Human meaning formation, visual conventions and partner-to-population transfer have
+      direct precedents. Choose a concrete claim and compare the closest work; no robot, repair or
+      transfer requirement applies to every understanding study. Do not dismiss Wizard-of-Oz work solely
+      because it is non-autonomous or manufacture novelty by combining untested conditions.
     history:
       - date: 2026-08-27
         from: ACTIVE
         to: REDEFINED
-        reason: "C6 and X1 make a generic absence-of-meaning-formation claim too broad."
+        reason: C6 and X1 make a generic absence-of-meaning-formation claim too broad.
       - date: 2026-08-27
         from: REDEFINED
         to: REDEFINED
-        reason: "CHAI removes generic transfer-theory absence; residual opportunity is embodied human–AI inference across dyad and population levels."
+        reason: CHAI removes generic transfer-theory absence; residual opportunity is embodied human–AI inference
+          across dyad and population levels.
       - date: 2026-09-07
         from: REDEFINED
         to: REDEFINED
-        reason: "X23 supplies an inspectable multimodal state-representation architecture but leaves partner-specific meaning change, mutual acceptance and embodied online updating untested."
+        reason: X23 supplies an inspectable multimodal state-representation architecture but leaves
+          partner-specific meaning change, mutual acceptance and embodied online updating untested.
       - date: 2026-09-12
         from: REDEFINED
         to: REDEFINED
         reason: 五篇积压全文补审及独立gap_red_team复核；保留既有状态与优先级。X1是直接WoZ先例，X3组件混杂，X4开放记忆未实测，X5为概念综述，不能计为独立实证重复。
+      - date: 2026-09-18
+        from: REDEFINED
+        to: REDEFINED
+        reason: "User-authorized scope/priorities change, not new evidence. Previous statement: How an embodied
+          agent detects and updates interaction-history-dependent multimodal meaning across dyad and
+          population levels"
+    scope_status: LONG_TERM
+    scope_note: 方向相关性不等于新颖性；长期问题不再强制作为首项研究。
   - id: GAP-02
-    statement: "Mutual human–AI conventions whose formation is counterfactually dependent on shared interaction history, followed by repair and transfer tests"
+    statement: Mutual human–AI conventions whose formation is counterfactually dependent on shared
+      interaction history, followed by repair and transfer tests
     status: PARTIALLY_ADDRESSED
-    priority: high
+    priority: low
     evidence:
+      - paper_slug: x25-seeing-is-not-sharing
+        evidence_level: MODERATE
+        supports: Some VLMs conflate available task content with established referential alignment in MapTask
+          overhearer judgments.
+        boundary: Model-specific responses; one corpus and no interactive grounding.
+      - paper_slug: x26-convention-gap
+        evidence_level: MODERATE
+        supports: A literal-posterior residual measures beyond-literal Hanabi cooperation but does not identify
+          jointly formed conventions.
+        boundary: Retrospective measurement; unilateral adaptation and shared convention remain separable
+          hypotheses.
+      - paper_slug: x29-testing-interchangeability
+        evidence_level: PRELIMINARY
+        supports: Role-matched swaps provide intervention evidence that formed notebook-equipped LLM dyads are
+          not fully interchangeable in coordination cost.
+        boundary: Formation-order/task-note differences remain; four swap pairs per setting, no human partners or
+          mutual-meaning test; recovery arithmetic requires clarification.
       - paper_slug: x1-spotter-human-robot-conventions
         evidence_level: PRELIMINARY
-        supports: "SPOTTER 的 21 名成人 WoZ 试验显示描述趋于稳定但未清晰缩短；它提供动态视觉指称框架，不证明自主机器人形成互惠惯例。"
-        boundary: "21名成人的探索性描述复用，不等于自主机器人学习、HH/HRI等价、共同历史的因果作用或长期惯例。无显著性结果不能补写为不存在效应。"
+        supports: SPOTTER 的 21 名成人 WoZ 试验显示描述趋于稳定但未清晰缩短；它提供动态视觉指称框架，不证明自主机器人形成互惠惯例。
+        boundary: 21名成人的探索性描述复用，不等于自主机器人学习、HH/HRI等价、共同历史的因果作用或长期惯例。无显著性结果不能补写为不存在效应。
       - paper_slug: x8-success-cost-convention-formation
         evidence_level: MODERATE
-        supports: "Success×cost post-training yields convention-like efficiency gains with human listeners."
-        boundary: "Fixed model-speaker role; no mutual negotiation, history ablation, repair, or embodiment."
+        supports: Success×cost post-training yields convention-like efficiency gains with human listeners.
+        boundary: Fixed model-speaker role; no mutual negotiation, history ablation, repair, or embodiment.
       - paper_slug: x9-aligned-not-partner-specific
         evidence_level: MODERATE
-        supports: "Pseudo-dyad controls show that high overlap and success can persist after partner history is severed."
-        boundary: "Preprint and AI–AI dyads; does not rule out partner-specificity under other regimes."
+        supports: Pseudo-dyad controls show that high overlap and success can persist after partner history is
+          severed.
+        boundary: Preprint and AI–AI dyads; does not rule out partner-specificity under other regimes.
       - paper_slug: x12-partners-to-populations
         evidence_level: MODERATE
-        supports: "Dyad-originated conventions can later transfer toward population expectations."
-        boundary: "Partner-specific origin must not be defined as permanent non-transferability."
+        supports: Dyad-originated conventions can later transfer toward population expectations.
+        boundary: Partner-specific origin must not be defined as permanent non-transferability.
       - paper_slug: c3-conceptual-pacts
         evidence_level: MODERATE
-        supports: "A classic human partner-switch experiment shows partner-specific lexical history changes later reference choice."
-        boundary: "Only four key items; item-level partner effect was marginal and not multimodal or human–AI."
+        supports: A classic human partner-switch experiment shows partner-specific lexical history changes later
+          reference choice.
+        boundary: Only four key items; item-level partner effect was marginal and not multimodal or human–AI.
       - paper_slug: c8-gesturing-toward-abstraction
         evidence_level: MODERATE
-        supports: "Human dyads form multimodal abstractions in repeated physical collaboration."
-        boundary: "No human–AI reciprocity or counterfactual history manipulation."
+        supports: Human dyads form multimodal abstractions in repeated physical collaboration.
+        boundary: No human–AI reciprocity or counterfactual history manipulation.
       - paper_slug: e3-continual-adaptation-machine-communication
         evidence_level: MODERATE
-        supports: "Human speakers and an adaptive listener achieve convention-like online efficiency gains."
-        boundary: "One-sided model adaptation without partner swap, repair or embodiment."
+        supports: Human speakers and an adaptive listener achieve convention-like online efficiency gains.
+        boundary: One-sided model adaptation without partner swap, repair or embodiment.
       - paper_slug: x17-glossogen-emergent-language
         evidence_level: PRELIMINARY
-        supports: "Adds explicit AI–AI protocol negotiation, history dosage, one-agent swap, newcomer uptake, and clarification behavior."
-        boundary: "Prompt-sanctioned shorthand with free postmortems, no humans or physical embodiment, and only one replacement generation."
-      - paper_slug: x19-continuous-worlds-vocabularies
-        evidence_level: MODERATE
-        supports: "Shows decentralized artificial populations can converge on grounded lexical conventions under perceptual heterogeneity."
-        boundary: "Designer-specified convergence rules and population-level AI–AI games do not establish mutual human–AI or partner-specific common ground."
+        supports: Adds explicit AI–AI protocol negotiation, history dosage, one-agent swap, newcomer uptake, and
+          clarification behavior.
+        boundary: Prompt-sanctioned shorthand with free postmortems, no humans or physical embodiment, and only
+          one replacement generation.
       - paper_slug: x20-passing-the-pact
         evidence_level: PRELIMINARY
-        supports: "Abstract reports conceptual-pact reuse with less-knowledgeable human and agent interlocutors plus weaker knowledge-sensitive elaboration toward agents."
-        boundary: "Speaker behavior only; no verified agent learning, mutual belief, equivalence, embodiment or shared-history counterfactual."
+        supports: Abstract reports conceptual-pact reuse with less-knowledgeable human and agent interlocutors
+          plus weaker knowledge-sensitive elaboration toward agents.
+        boundary: Speaker behavior only; no verified agent learning, mutual belief, equivalence, embodiment or
+          shared-history counterfactual.
       - paper_slug: x22-banana-man-pragmatic-interpretation
         evidence_level: MODERATE
-        supports: "Separates retrieval of externally supplied game-specific mappings from endogenous accumulation and error recovery under limited feedback."
-        boundary: "Naïve VLM interpretation of archived human games, not reciprocal human–AI convention formation."
+        supports: Separates retrieval of externally supplied game-specific mappings from endogenous accumulation
+          and error recovery under limited feedback.
+        boundary: Naïve VLM interpretation of archived human games, not reciprocal human–AI convention formation.
       - paper_slug: x2-lvlms-humans-ground-differently
         evidence_level: PRELIMINARY
         supports: 四种角色组合的89对篮子指称任务揭示GPT-5.2配置与人类的协作轨迹差异；不能把感知、错序和prompt故障统称为缺乏共同基础。
-        boundary: 描述性比较支持该配置的轨迹差异；无history ablation，不能证明历史无贡献或所有LVLM不能grounding。README与论文关于排序/反馈存在配置差异，复现需核对branch/commit。
-    skeptic_challenge: "Do not preserve novelty through adjectives. Human–agent pact reuse and VLM retrieval of established mappings now have direct precedents. Demonstrate counterfactual shared-history dependence, endogenous updating, reciprocity, repair and appropriate transfer. 2026-09-12反方复核：不得以非自主为由排除WoZ先例，不得把修复/记忆更新说成从未研究；新增条件组合本身不是新颖性。"
+        boundary: 描述性比较支持该配置的轨迹差异；无history
+          ablation，不能证明历史无贡献或所有LVLM不能grounding。README与论文关于排序/反馈存在配置差异，复现需核对branch/commit。
+    skeptic_challenge: Do not preserve novelty through adjectives. Human–agent pact reuse and VLM retrieval
+      of established mappings now have direct precedents. Demonstrate counterfactual shared-history
+      dependence, endogenous updating, reciprocity, repair and appropriate transfer.
+      2026-09-12反方复核：不得以非自主为由排除WoZ先例，不得把修复/记忆更新说成从未研究；新增条件组合本身不是新颖性。
     history:
+      - date: 2026-09-14
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: 新增有边界的测量与换伙伴干预先例；保留问题状态。AI团队不可完全互换已有证据，剩余问题是具体机制、共同确认及人机推广，不以条件堆叠宣称新颖性。
       - date: 2026-08-26
         from: HIGH_PRIORITY
         to: PARTIALLY_ADDRESSED
-        reason: "SPOTTER directly studies convention formation in a visually grounded human–robot reference task; the broader multimodal and longitudinal problem remains open."
+        reason: SPOTTER directly studies convention formation in a visually grounded human–robot reference task;
+          the broader multimodal and longitudinal problem remains open.
       - date: 2026-08-27
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
-        reason: "Vaduguru weakens generic AI-incapacity claims; Wang and CHAI require history-dependence and transfer to be tested separately."
+        reason: Vaduguru weakens generic AI-incapacity claims; Wang and CHAI require history-dependence and
+          transfer to be tested separately.
       - date: 2026-09-03
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
-        reason: "GlossoGen and the canonical TACL continuous-worlds lineage close off broad AI-code-emergence claims; the residual remains mutual human–embodied-AI convention with counterfactual shared-history, repair and transfer tests."
+        reason: GlossoGen and the canonical TACL continuous-worlds lineage close off broad AI-code-emergence
+          claims; the residual remains mutual human–embodied-AI convention with counterfactual
+          shared-history, repair and transfer tests.
       - date: 2026-09-07
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
-        reason: "X20/X22 close off broader absence claims about human-agent pact reuse and model use of established conventions; the residual is endogenous, mutual, history-causal construction, repair and transfer."
+        reason: X20/X22 close off broader absence claims about human-agent pact reuse and model use of
+          established conventions; the residual is endogenous, mutual, history-causal construction,
+          repair and transfer.
       - date: 2026-09-12
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
         reason: 五篇积压全文补审及独立gap_red_team复核；保留既有状态与优先级。X1是直接WoZ先例，X3组件混杂，X4开放记忆未实测，X5为概念综述，不能计为独立实证重复。
+      - date: 2026-09-18
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: "User-authorized scope/priorities change, not new evidence. Previous statement: Mutual human–AI
+          conventions whose formation is counterfactually dependent on shared interaction history,
+          followed by repair and transfer tests"
+    scope_status: LONG_TERM
+    scope_note: 方向相关性不等于新颖性；长期问题不再强制作为首项研究。
   - id: GAP-03
-    statement: "Convention lifecycle: establishment, maintenance, repair/revision, context-sensitive retirement, partner/context transfer, and renegotiation after breakdown"
+    statement: "Convention lifecycle: establishment, maintenance, repair/revision, context-sensitive
+      retirement, partner/context transfer, and renegotiation after breakdown"
     status: PARTIALLY_ADDRESSED
-    priority: high
+    priority: low
     evidence:
-      - paper_slug: x14-bee-referential-code
+      - paper_slug: x28-continue-adapt-yield
         evidence_level: PRELIMINARY
-        supports: "Demonstrates a feasible iconic-to-abstract referential code transition under coordinated sender/receiver change."
-        boundary: "Across-generation simulation, not within-dyad human–AI renegotiation or repair."
-      - paper_slug: x15-synthetic-linguistic-agency
+        supports: In-turn content uptake is distinguishable from unchanged continuation and yielding.
+        boundary: Outcome-informed cue labels and conditional coverage preclude an unbiased general human–model
+          gap.
+      - paper_slug: x29-testing-interchangeability
         evidence_level: PRELIMINARY
-        supports: "Shows persistent history-conditioned linguistic policy change after consequential partner responses."
-        boundary: "Adaptation with fixed actions and scripted partners; no convention establishment, repair, retirement, or transfer."
+        supports: Role-matched swaps provide intervention evidence that formed notebook-equipped LLM dyads are
+          not fully interchangeable in coordination cost.
+        boundary: Formation-order/task-note differences remain; four swap pairs per setting, no human partners or
+          mutual-meaning test; recovery arithmetic requires clarification.
       - paper_slug: x3-seeing-eye-to-eye
         evidence_level: PRELIMINARY
-        supports: "Eye2Eye整套AR系统减少错误和澄清需求；正文不支持显著缩短任务时间，组件混杂也不允许把收益单独归因于共享记忆。"
-        boundary: "短期整套系统收益；没有history severing、partner swap、角色互换或新表达协商。对象卡表示不等于双方确认的共同信念。"
+        supports: Eye2Eye整套AR系统减少错误和澄清需求；正文不支持显著缩短任务时间，组件混杂也不允许把收益单独归因于共享记忆。
+        boundary: 短期整套系统收益；没有history severing、partner swap、角色互换或新表达协商。对象卡表示不等于双方确认的共同信念。
       - paper_slug: x11-common-ground-benchmark
         evidence_level: MODERATE
-        supports: "Human–AI joint-action and repair benchmark components already exist."
-        boundary: "Single-model text/puzzle preprint without partner-history ablation or transfer."
+        supports: Human–AI joint-action and repair benchmark components already exist.
+        boundary: Single-model text/puzzle preprint without partner-history ablation or transfer.
       - paper_slug: x6-beyond-local-surprise
         evidence_level: PRELIMINARY
-        supports: "Provides an explicit computational preserve/revise policy comparison."
-        boundary: "No human validation; selective policy does not outperform conservative retrieval baselines."
+        supports: Provides an explicit computational preserve/revise policy comparison.
+        boundary: No human validation; selective policy does not outperform conservative retrieval baselines.
       - paper_slug: x12-partners-to-populations
         evidence_level: MODERATE
-        supports: "Provides theory and evidence for partner-to-population transfer."
-        boundary: "No embodied Agent or multimodal repair."
+        supports: Provides theory and evidence for partner-to-population transfer.
+        boundary: No embodied Agent or multimodal repair.
       - paper_slug: c4-repeated-reference-games
         evidence_level: MODERATE
-        supports: "Directly measures establishment, maintenance and feedback-contingent revision in repeated human reference."
-        boundary: "No retirement, transfer, partner swap or embodiment."
+        supports: Directly measures establishment, maintenance and feedback-contingent revision in repeated human
+          reference.
+        boundary: No retirement, transfer, partner swap or embodiment.
       - paper_slug: c8-gesturing-toward-abstraction
         evidence_level: MODERATE
-        supports: "Covers establishment and reuse of multimodal abstractions in human physical collaboration."
-        boundary: "Natural corrections are not controlled repair; no retirement, transfer or Agent."
+        supports: Covers establishment and reuse of multimodal abstractions in human physical collaboration.
+        boundary: Natural corrections are not controlled repair; no retirement, transfer or Agent.
       - paper_slug: e3-continual-adaptation-machine-communication
         evidence_level: MODERATE
-        supports: "Covers online establishment, local rehearsal and forgetting regularization for an artificial listener."
-        boundary: "No reciprocal repair, retirement, partner/context transfer or embodiment."
-      - paper_slug: e4-designing-robots-long-term
-        evidence_level: MODERATE
-        supports: "Provides nine-month deployment instrumentation and separates persistent traffic from identifiable repeat visitors."
-        boundary: "No causal comparison, shared-meaning measure or convention lifecycle probe."
-      - paper_slug: f5-robots-in-the-wild
-        evidence_level: MODERATE
-        supports: "Shows that roles, practices, third-party effects and time are boundary conditions for long-term HRI theory."
-        boundary: "Research agenda and case synthesis, not a tested lifecycle mechanism."
-      - paper_slug: f6-generative-encounters-robin
-        evidence_level: PRELIMINARY
-        supports: "Abstract-level evidence identifies organizational adaptation and appropriation across four eldercare facilities."
-        boundary: "Full text was unavailable; no autonomous learning or convention evidence."
+        supports: Covers online establishment, local rehearsal and forgetting regularization for an artificial
+          listener.
+        boundary: No reciprocal repair, retirement, partner/context transfer or embodiment.
       - paper_slug: x17-glossogen-emergent-language
         evidence_level: PRELIMINARY
-        supports: "Provides establishment, explicit negotiation, clarification, one partner swap, and limited protocol transmission components."
-        boundary: "No controlled breakdown, retirement, multi-generation accumulation, human interaction, or physical embodiment."
-      - paper_slug: x19-continuous-worlds-vocabularies
-        evidence_level: MODERATE
-        supports: "Provides population establishment, maintenance, and reorganization after sensor-loss perturbation."
-        boundary: "No human–AI repair, partner-specific transfer, retirement, or open negotiation; adaptation follows engineered language-game rules."
+        supports: Provides establishment, explicit negotiation, clarification, one partner swap, and limited
+          protocol transmission components.
+        boundary: No controlled breakdown, retirement, multi-generation accumulation, human interaction, or
+          physical embodiment.
       - paper_slug: x20-passing-the-pact
         evidence_level: PRELIMINARY
-        supports: "Adds a partner-knowledge and multiparty audience-design component to pact reuse."
-        boundary: "Elaboration is not controlled repair, and full lifecycle details are unavailable at abstract level."
+        supports: Adds a partner-knowledge and multiparty audience-design component to pact reuse.
+        boundary: Elaboration is not controlled repair, and full lifecycle details are unavailable at abstract
+          level.
       - paper_slug: x22-banana-man-pragmatic-interpretation
         evidence_level: MODERATE
-        supports: "Shows that tested VLM interpreters retain correct mappings yet fail to recover reliably after prior errors under limited feedback."
-        boundary: "Overhearer-style interpretation, not reciprocal online repair or renegotiation."
+        supports: Shows that tested VLM interpreters retain correct mappings yet fail to recover reliably after
+          prior errors under limited feedback.
+        boundary: Overhearer-style interpretation, not reciprocal online repair or renegotiation.
       - paper_slug: x24-multimodal-repair-detection
         evidence_level: MODERATE
-        supports: "Provides a multimodal detector for other-initiated-repair signals and repair types across two human dyadic corpora."
-        boundary: "Detection does not establish agent repair choice, production, uptake, or common-ground restoration."
+        supports: Provides a multimodal detector for other-initiated-repair signals and repair types across two
+          human dyadic corpora.
+        boundary: Detection does not establish agent repair choice, production, uptake, or common-ground
+          restoration.
       - paper_slug: x1-spotter-human-robot-conventions
         evidence_level: PRELIMINARY
         supports: SPOTTER 的 21 名成人 WoZ 试验显示描述趋于稳定但未清晰缩短；它提供动态视觉指称框架，不证明自主机器人形成互惠惯例。
@@ -206,372 +260,348 @@ gaps:
       - paper_slug: x2-lvlms-humans-ground-differently
         evidence_level: PRELIMINARY
         supports: 四种角色组合的89对篮子指称任务揭示GPT-5.2配置与人类的协作轨迹差异；不能把感知、错序和prompt故障统称为缺乏共同基础。
-        boundary: 描述性比较支持该配置的轨迹差异；无history ablation，不能证明历史无贡献或所有LVLM不能grounding。README与论文关于排序/反馈存在配置差异，复现需核对branch/commit。
-      - paper_slug: x4-making-memories-together
-        evidence_level: PRELIMINARY
-        supports: 一年后重访50名儿童的Leo记忆更新显示档案补全与短期亲近感部分回升；透明、用户主动编辑的Open-Memory仍是未来设计。
-        boundary: 短期虚拟重访、特定年龄及既有关系；不证明透明记忆有效、关系完全恢复、长期具身共同惯例或shared-history因果作用。
-    skeptic_challenge: "Lifecycle components are genuinely partially addressed across settings. Residual novelty is causal integration of repair, retirement, transfer, reciprocity and counterfactual shared history in embodied human–AI interaction. 2026-09-12反方复核：不得以非自主为由排除WoZ先例，不得把修复/记忆更新说成从未研究；新增条件组合本身不是新颖性。"
+        boundary: 描述性比较支持该配置的轨迹差异；无history
+          ablation，不能证明历史无贡献或所有LVLM不能grounding。README与论文关于排序/反馈存在配置差异，复现需核对branch/commit。
+    skeptic_challenge: Convention maintenance, repair and transfer each have existing precedents. Select one
+      concrete transition and compare its closest work; do not manufacture novelty by demanding every
+      lifecycle stage in one study. Embodiment is optional and any transfer claim needs corresponding
+      evidence.
     history:
+      - date: 2026-09-14
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: 新增有边界的测量与换伙伴干预先例；保留问题状态。AI团队不可完全互换已有证据，剩余问题是具体机制、共同确认及人机推广，不以条件堆叠宣称新颖性。
       - date: 2026-08-26
         from: HIGH_PRIORITY
         to: REDEFINED
-        reason: "Eye2Eye makes a generic absence-of-history claim untenable; the defensible gap concerns convention inference and lifecycle management."
+        reason: Eye2Eye makes a generic absence-of-history claim untenable; the defensible gap concerns
+          convention inference and lifecycle management.
       - date: 2026-08-27
         from: REDEFINED
         to: REDEFINED
-        reason: "First-run recovery narrows lifecycle novelty from generic history/repair/transfer to integrated embodied human–AI convention control."
+        reason: First-run recovery narrows lifecycle novelty from generic history/repair/transfer to integrated
+          embodied human–AI convention control.
       - date: 2026-08-27
         from: REDEFINED
         to: PARTIALLY_ADDRESSED
-        reason: "Top-20 audit finds direct component evidence for establishment/maintenance in human verbal, graphical and physical tasks and one-sided machine adaptation; repair, retirement, transfer, reciprocity and counterfactual history remain open."
+        reason: Top-20 audit finds direct component evidence for establishment/maintenance in human verbal,
+          graphical and physical tasks and one-sided machine adaptation; repair, retirement, transfer,
+          reciprocity and counterfactual history remain open.
       - date: 2026-09-03
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
-        reason: "X17 and X19 strengthen AI-only establishment, transmission and perturbation-recovery components but do not integrate reciprocal human–AI repair, retirement, partner transfer or causal shared-history tests."
+        reason: X17 and X19 strengthen AI-only establishment, transmission and perturbation-recovery components
+          but do not integrate reciprocal human–AI repair, retirement, partner transfer or causal
+          shared-history tests.
       - date: 2026-09-07
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
-        reason: "X20/X22/X24 add audience design, failed error recovery and multimodal repair-signal detection; reciprocal repair execution, retirement and renegotiation remain open."
+        reason: X20/X22/X24 add audience design, failed error recovery and multimodal repair-signal detection;
+          reciprocal repair execution, retirement and renegotiation remain open.
       - date: 2026-09-12
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
         reason: 五篇积压全文补审及独立gap_red_team复核；保留既有状态与优先级。X1是直接WoZ先例，X3组件混杂，X4开放记忆未实测，X5为概念综述，不能计为独立实证重复。
+      - date: 2026-09-18
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: "User-authorized scope/priorities change, not new evidence. Previous statement: Convention
+          lifecycle: establishment, maintenance, repair/revision, context-sensitive retirement,
+          partner/context transfer, and renegotiation after breakdown"
+      - date: 2026-09-18
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: "Prior skeptical guidance archived during scope update: Lifecycle components are genuinely
+          partially addressed across settings. Residual novelty is causal integration of repair,
+          retirement, transfer, reciprocity and counterfactual shared history in embodied human–AI
+          interaction. 2026-09-12反方复核：不得以非自主为由排除WoZ先例，不得把修复/记忆更新说成从未研究；新增条件组合本身不是新颖性。"
+    scope_status: LONG_TERM
+    scope_note: 方向相关性不等于新颖性；长期问题不再强制作为首项研究。
   - id: GAP-04
-    statement: "Validate a minimal linked causal battery that separates memory availability, natural integration, pact reuse, audience design, repair detection, adaptation, task success, alignment, mutual belief, shared priors, and interaction-history-dependent convention"
-    status: PARTIALLY_ADDRESSED
-    priority: medium-high
+    statement: What evidence distinguishes expression recognition, pragmatic understanding, appropriate
+      response, memory use, felt understanding and shared meaning for a specified research claim?
+    status: REDEFINED
+    priority: medium
     evidence:
+      - paper_slug: x25-seeing-is-not-sharing
+        evidence_level: MODERATE
+        supports: Some VLMs conflate available task content with established referential alignment in MapTask
+          overhearer judgments.
+        boundary: Model-specific responses; one corpus and no interactive grounding.
+      - paper_slug: x26-convention-gap
+        evidence_level: MODERATE
+        supports: A literal-posterior residual measures beyond-literal Hanabi cooperation but does not identify
+          jointly formed conventions.
+        boundary: Retrospective measurement; unilateral adaptation and shared convention remain separable
+          hypotheses.
+      - paper_slug: x28-continue-adapt-yield
+        evidence_level: PRELIMINARY
+        supports: In-turn content uptake is distinguishable from unchanged continuation and yielding.
+        boundary: Outcome-informed cue labels and conditional coverage preclude an unbiased general human–model
+          gap.
+      - paper_slug: x29-testing-interchangeability
+        evidence_level: PRELIMINARY
+        supports: Role-matched swaps provide intervention evidence that formed notebook-equipped LLM dyads are
+          not fully interchangeable in coordination cost.
+        boundary: Formation-order/task-note differences remain; four swap pairs per setting, no human partners or
+          mutual-meaning test; recovery arithmetic requires clarification.
       - paper_slug: x13-silica-agent-societies
         evidence_level: MODERATE
-        supports: "Per-agent label-pool permutation and apparatus perturbations expose shared-prior and presentation-driven convention false positives."
-        boundary: "AI–AI agent societies; pretrained label semantics remain shared and no embodied human–AI discriminant validation is provided."
-      - paper_slug: x15-synthetic-linguistic-agency
-        evidence_level: PRELIMINARY
-        supports: "Mortal/reset and forced-output probes separate persistent bodily consequence from generic linguistic learning."
-        boundary: "Scripted simulated ecology; does not distinguish mutual belief or convention."
+        supports: Per-agent label-pool permutation and apparatus perturbations expose shared-prior and
+          presentation-driven convention false positives.
+        boundary: AI–AI agent societies; pretrained label semantics remain shared and no embodied human–AI
+          discriminant validation is provided.
       - paper_slug: x16-memuse-natural-integration
         evidence_level: MODERATE
-        supports: "Directly separates memory availability and elicited retrieval from natural conversational integration."
-        boundary: "Text-only deployment and observational satisfaction association; no partner-specific convention or embodiment."
-      - paper_slug: x4-making-memories-together
-        evidence_level: PRELIMINARY
-        supports: "一年后重访50名儿童的Leo记忆更新显示档案补全与短期亲近感部分回升；透明、用户主动编辑的Open-Memory仍是未来设计。"
-        boundary: "短期虚拟重访、特定年龄及既有关系；不证明透明记忆有效、关系完全恢复、长期具身共同惯例或shared-history因果作用。"
+        supports: Directly separates memory availability and elicited retrieval from natural conversational
+          integration.
+        boundary: Text-only deployment and observational satisfaction association; no partner-specific convention
+          or embodiment.
       - paper_slug: x9-aligned-not-partner-specific
         evidence_level: MODERATE
-        supports: "Pseudo-dyads operationalize whether alignment depends on partner history."
-        boundary: "Preprint and AI–AI only."
+        supports: Pseudo-dyads operationalize whether alignment depends on partner history.
+        boundary: Preprint and AI–AI only.
       - paper_slug: x11-common-ground-benchmark
         evidence_level: MODERATE
-        supports: "A human–AI puzzle benchmark separates task, communication, and object-level grounding evidence."
-        boundary: "Single model and no embodied multimodal lifecycle."
-      - paper_slug: x7-embodied-world-model-alignment
-        evidence_level: MODERATE
-        supports: "Embodied agent metrics separate action conflict, task success, information novelty, and belief-sensitive messaging."
-        boundary: "AI–AI simulation cannot establish human–AI common ground."
+        supports: A human–AI puzzle benchmark separates task, communication, and object-level grounding evidence.
+        boundary: Single model and no embodied multimodal lifecycle.
       - paper_slug: c3-conceptual-pacts
         evidence_level: MODERATE
-        supports: "Provides a human partner-switch precedent for distinguishing lexical history from partner-independent reuse."
-        boundary: "Lexical entrainment remains an imperfect proxy for shared representation."
+        supports: Provides a human partner-switch precedent for distinguishing lexical history from
+          partner-independent reuse.
+        boundary: Lexical entrainment remains an imperfect proxy for shared representation.
       - paper_slug: e3-continual-adaptation-machine-communication
         evidence_level: MODERATE
-        supports: "Pragmatic, rehearsal and KL ablations separate components of online adaptation."
-        boundary: "Does not distinguish partner specificity, mutual belief or convention."
-      - paper_slug: d9-anatomy-of-uncertainty
-        evidence_level: PRELIMINARY
-        supports: "Separates intended category recognition from descriptor-level intensity judgments for expressive uncertainty motion."
-        boundary: "Preprint video study; no calibration to live uncertainty, task outcome or shared history."
-      - paper_slug: g3-explainable-oohri
-        evidence_level: PRELIMINARY
-        supports: "Separates encoded capability, limitation, explanation and actionable repair channels in an AR architecture."
-        boundary: "Small no-control study with authored tasks and substantial human setup; no longitudinal grounding."
+        supports: Pragmatic, rehearsal and KL ablations separate components of online adaptation.
+        boundary: Does not distinguish partner specificity, mutual belief or convention.
       - paper_slug: x17-glossogen-emergent-language
         evidence_level: PRELIMINARY
-        supports: "Combines success, language-form, productivity, history-dose, swap, and clarification probes in one AI–AI testbed."
-        boundary: "Prompted protocol design and LLM-mediated linguistic measures limit construct validity."
-      - paper_slug: x19-continuous-worlds-vocabularies
-        evidence_level: MODERATE
-        supports: "Separates communicative success from population lexical conventionality across perceptual and perturbation regimes."
-        boundary: "Neither metric diagnoses mutual belief or counterfactual partner-history dependence."
+        supports: Combines success, language-form, productivity, history-dose, swap, and clarification probes in
+          one AI–AI testbed.
+        boundary: Prompted protocol design and LLM-mediated linguistic measures limit construct validity.
       - paper_slug: x20-passing-the-pact
         evidence_level: PRELIMINARY
-        supports: "Shows why pact-term reuse and recipient-knowledge-sensitive elaboration must be measured separately."
-        boundary: "Abstract-only; no direct equivalence test or verified acceptance/repair measures."
+        supports: Shows why pact-term reuse and recipient-knowledge-sensitive elaboration must be measured
+          separately.
+        boundary: Abstract-only; no direct equivalence test or verified acceptance/repair measures.
       - paper_slug: x21-social-pragmatic-chinese-comments
         evidence_level: MODERATE
-        supports: "Adds context-component ablation, plausible-misreading alternatives and a human ambiguity ceiling for social-meaning diagnostics."
-        boundary: "Static text benchmark; context availability is not mutual grounding."
+        supports: Adds context-component ablation, plausible-misreading alternatives and a human ambiguity
+          ceiling for social-meaning diagnostics.
+        boundary: Static text benchmark; context availability is not mutual grounding.
       - paper_slug: x22-banana-man-pragmatic-interpretation
         evidence_level: MODERATE
-        supports: "Separates relevant-context retrieval, general task learning and correction after feedback."
-        boundary: "Does not observe reciprocal dyadic construction or agent production."
+        supports: Separates relevant-context retrieval, general task learning and correction after feedback.
+        boundary: Does not observe reciprocal dyadic construction or agent production.
       - paper_slug: x23-machine-mental-imagery-common-ground
         evidence_level: PRELIMINARY
-        supports: "Separates full-dialog access from incremental visual, textual and hybrid externalization of dialogue state."
-        boundary: "State representation and QA success do not establish mutual belief or natural use in live interaction."
+        supports: Separates full-dialog access from incremental visual, textual and hybrid externalization of
+          dialogue state.
+        boundary: State representation and QA success do not establish mutual belief or natural use in live
+          interaction.
       - paper_slug: x24-multimodal-repair-detection
         evidence_level: MODERATE
-        supports: "Separates OIR detection from OIR-type classification and quantifies the added value of visual signals across two settings."
-        boundary: "No repair policy, uptake or restored-grounding outcome."
+        supports: Separates OIR detection from OIR-type classification and quantifies the added value of visual
+          signals across two settings.
+        boundary: No repair policy, uptake or restored-grounding outcome.
       - paper_slug: x3-seeing-eye-to-eye
         evidence_level: PRELIMINARY
         supports: Eye2Eye整套AR系统减少错误和澄清需求；正文不支持显著缩短任务时间，组件混杂也不允许把收益单独归因于共享记忆。
         boundary: 短期整套系统收益；没有history severing、partner swap、角色互换或新表达协商。对象卡表示不等于双方确认的共同信念。
+      - paper_slug: x30-refoi-pragmatic-generation
+        evidence_level: MODERATE
+        supports: 受测模型的指称表现落后于人类表达；常用自动指标不能可靠反映人的定位表现。
+        boundary: 结论限于所测模型和指称任务；模型听者不是人类理解的替代，不能推广到全部社会语用能力。
+      - paper_slug: x31-cmpm-order-matters
+        evidence_level: PRELIMINARY
+        supports: 按原顺序展示的高分不能代表排序推理；评论收益较小且有正负差异。
+        boundary: 预印本；解释评价是精选小样本，一致性中等；数据代码待接收后释放。排序与幽默理解相关但不能等同。
+      - paper_slug: x32-intent-projection
+        evidence_level: PRELIMINARY
+        supports: 作者报告多个骨干的生成和分类指标改善，尤其在字面内容与用意差异较大的材料上。
+        boundary: 预印本，未独立复现；主要英语/西方平台数据，自蒸馏可能复制错误；指标提升不证明恢复真实作者意图。
+      - paper_slug: x33-speechcap
+        evidence_level: PRELIMINARY
+        supports: 花字提供视觉修辞和互动表达机会，也出现歧义与误解。
+        boundary: 探索性原型研究不能证明花字普遍提高理解正确率；研究的是支持人际交流，不是AI理解测试。
+      - paper_slug: x34-memebridge
+        evidence_level: PRELIMINARY
+        supports: 作者发现预测误解与实际解释存在不匹配；提供文化知识和解释评价资源。
+        boundary: 双向视角不等于双向meme来源；群体内差异、评分和模板污染仍需审查，不能把国籍直接等同文化。
     evidence_trend: PARTIALLY_ADDRESSED
-    skeptic_challenge: "Component diagnostics now span pseudo-dyads, memory use, pact reuse, convention retrieval, state representation and repair sensing. A monolithic experiment risks underidentification; the residual contribution is a validated linked battery with explicit construct separation across human–AI, embodied and transfer regimes. 2026-09-12反方复核：不得以非自主为由排除WoZ先例，不得把修复/记忆更新说成从未研究；新增条件组合本身不是新颖性。"
+    skeptic_challenge: RefOI已展示自动指标与人的指称理解不一致；SpeechCap的表达体验、MemeBridge的解释和误解预测、CMPM的顺序与解释评分也有不同测量对象。不能宣称没有评价方法；需证明具体指标的新增效度。
     history:
+      - date: 2026-09-18
+        from: REDEFINED
+        to: REDEFINED
+        reason: 新主线Radar补回直接先例，收紧泛化空白；状态和中等优先级保留，没有完成具体RQ新颖性验证。
+      - date: 2026-09-14
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: 新增有边界的测量与换伙伴干预先例；保留问题状态。AI团队不可完全互换已有证据，剩余问题是具体机制、共同确认及人机推广，不以条件堆叠宣称新颖性。
       - date: 2026-08-26
         from: ACTIVE
         to: UNCHANGED
-        reason: "Recent memory and convention papers strengthen the distinction but do not bridge it empirically."
+        reason: Recent memory and convention papers strengthen the distinction but do not bridge it empirically.
       - date: 2026-08-27
         from: UNCHANGED
         to: REDEFINED
-        reason: "The original distinction was a warning, not an operational gap; the revised form requires falsifiable diagnostic criteria."
+        reason: The original distinction was a warning, not an operational gap; the revised form requires
+          falsifiable diagnostic criteria.
       - date: 2026-08-27
         from: REDEFINED
         to: PARTIALLY_ADDRESSED
-        reason: "Pseudo-dyad, common-ground benchmark, and world-model metrics resolve generic diagnostic absence; integration and embodied validation remain open."
+        reason: Pseudo-dyad, common-ground benchmark, and world-model metrics resolve generic diagnostic absence;
+          integration and embodied validation remain open.
       - date: 2026-08-31
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
-        reason: "SILICA and MemUse add shared-prior and natural-integration diagnostics; novelty narrows further to discriminant-valid integration in embodied human–AI interaction."
+        reason: SILICA and MemUse add shared-prior and natural-integration diagnostics; novelty narrows further
+          to discriminant-valid integration in embodied human–AI interaction.
       - date: 2026-09-03
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
-        reason: "X17 and X19 add useful multi-measure AI-only diagnostics while reinforcing that success and lexical coherence do not establish mutual belief or history-dependent human–AI convention."
+        reason: X17 and X19 add useful multi-measure AI-only diagnostics while reinforcing that success and
+          lexical coherence do not establish mutual belief or history-dependent human–AI convention.
       - date: 2026-09-07
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
-        reason: "X20–X24 add separable diagnostics for audience design, social meaning, retrieval, state representation and repair sensing; red-team review replaces a maximal integrated stack with a minimal linked causal battery."
+        reason: X20–X24 add separable diagnostics for audience design, social meaning, retrieval, state
+          representation and repair sensing; red-team review replaces a maximal integrated stack with a
+          minimal linked causal battery.
       - date: 2026-09-12
         from: PARTIALLY_ADDRESSED
         to: PARTIALLY_ADDRESSED
         reason: 五篇积压全文补审及独立gap_red_team复核；保留既有状态与优先级。X1是直接WoZ先例，X3组件混杂，X4开放记忆未实测，X5为概念综述，不能计为独立实证重复。
+      - date: 2026-09-18
+        from: PARTIALLY_ADDRESSED
+        to: PARTIALLY_ADDRESSED
+        reason: "User-authorized scope/priorities change, not new evidence. Previous statement: Validate a
+          minimal linked causal battery that separates memory availability, natural integration, pact
+          reuse, audience design, repair detection, adaptation, task success, alignment, mutual belief,
+          shared priors, and interaction-history-dependent convention"
+      - date: 2026-09-18
+        from: PARTIALLY_ADDRESSED
+        to: REDEFINED
+        reason: Replace an obligatory all-in-one causal battery with claim-specific evaluation boundaries;
+          previous wording is preserved in migration snapshot. No new evidence or novelty promotion.
+      - date: 2026-09-18
+        from: REDEFINED
+        to: REDEFINED
+        reason: "Prior skeptical guidance archived during scope update: Component diagnostics now span
+          pseudo-dyads, memory use, pact reuse, convention retrieval, state representation and repair
+          sensing. A monolithic experiment risks underidentification; the residual contribution is a
+          validated linked battery with explicit construct separation across human–AI, embodied and
+          transfer regimes. 2026-09-12反方复核：不得以非自主为由排除WoZ先例，不得把修复/记忆更新说成从未研究；新增条件组合本身不是新颖性。 A
+          computational contribution does not require measuring every human-interaction construct; select
+          only those required by its claims. X21 already provides diagnostic evaluation and context
+          ablation."
+    scope_status: METHOD_CANDIDATE
+    scope_note: 方向相关性不等于新颖性；长期问题不再强制作为首项研究。
   - id: GAP-05
-    statement: "Operationally connect informal/graphic paralanguage and multimodal structural relations to interaction-history-dependent, adaptive embodied human–AI communication"
+    statement: Which relations among text, visual expression and interaction context make social-pragmatic
+      interpretation difficult for AI, and what evaluation or modeling advances address those
+      difficulties?
     status: REDEFINED
-    priority: medium-high
+    priority: medium
     evidence:
+      - paper_slug: x27-calibrated-ambiguity
+        evidence_level: PRELIMINARY
+        supports: English Dixit clue coding provides a method for examining useful ambiguity and cultural
+          allusion.
+        boundary: Asymmetric card/decoy selection, author coders, no cross-cultural or live recipient validation.
       - paper_slug: a2-textual-paralanguage
         evidence_level: PRELIMINARY
-        supports: "Provides a broad, context-sensitive construct and coding vocabulary for textual/graphic paralanguage."
-        boundary: "Descriptive marketing/CMC samples; no causal receiver effects, embodiment, history or Agent."
+        supports: Provides a broad, context-sensitive construct and coding vocabulary for textual/graphic
+          paralanguage.
+        boundary: Descriptive marketing/CMC samples; no causal receiver effects, embodiment, history or Agent.
       - paper_slug: a5-multimodal-parallel-architecture
         evidence_level: PRELIMINARY
-        supports: "Provides structural relations across verbal, bodily and graphic modalities."
-        boundary: "Static theoretical architecture; no grounding, adaptation or Agent validation."
+        supports: Provides structural relations across verbal, bodily and graphic modalities.
+        boundary: Static theoretical architecture; no grounding, adaptation or Agent validation.
       - paper_slug: c8-gesturing-toward-abstraction
         evidence_level: MODERATE
-        supports: "Shows history-evolving speech/gesture abstractions in controlled human physical collaboration."
-        boundary: "No informal graphic paralanguage, human–AI dyad or counterfactual history test."
-      - paper_slug: d6-designing-robots-with-movement
-        evidence_level: PRELIMINARY
-        supports: "Shows embodied movement already has a mature communicative design vocabulary."
-        boundary: "Designer-authored mappings, not jointly negotiated or history-dependent."
+        supports: Shows history-evolving speech/gesture abstractions in controlled human physical collaboration.
+        boundary: No informal graphic paralanguage, human–AI dyad or counterfactual history test.
       - paper_slug: a3-interpreting-emoji-pragmatics
         evidence_level: MODERATE
-        supports: "Empirically shows that local discourse context changes perceived emoji pragmatic function."
-        boundary: "Third-party Facebook interpretation, not dyadic emergence or robot-authored signals."
+        supports: Empirically shows that local discourse context changes perceived emoji pragmatic function.
+        boundary: Third-party Facebook interpretation, not dyadic emergence or robot-authored signals.
       - paper_slug: a4-a-visual-lexicon
         evidence_level: PRELIMINARY
-        supports: "Provides a cross-granularity representation vocabulary for conventional and productive visual forms."
-        boundary: "Conceptual analysis without behavioral validation or interactive formation."
+        supports: Provides a cross-granularity representation vocabulary for conventional and productive visual
+          forms.
+        boundary: Conceptual analysis without behavioral validation or interactive formation.
       - paper_slug: a6-puppetchat
         evidence_level: PRELIMINARY
-        supports: "Shows close dyads can appropriate editable embodied actions and micronarratives over a short deployment."
-        boundary: "Eleven dyads, no causal control and no stable-convention test."
+        supports: Shows close dyads can appropriate editable embodied actions and micronarratives over a short
+          deployment.
+        boundary: Eleven dyads, no causal control and no stable-convention test.
       - paper_slug: x21-social-pragmatic-chinese-comments
         evidence_level: MODERATE
-        supports: "Operationalizes situated target, stance, wordplay mechanism and interactional move using plausible misreadings and context ablation."
-        boundary: "Purposefully sampled Chinese-language text/screenshot benchmark; no multimodal embodied agent, dyadic grounding or cultural-population inference."
-      - paper_slug: x5-social-context-of-hri
+        supports: Operationalizes situated target, stance, wordplay mechanism and interactional move using
+          plausible misreadings and context ablation.
+        boundary: Purposefully sampled Chinese-language text/screenshot benchmark; no multimodal embodied agent,
+          dyadic grounding or cultural-population inference.
+      - paper_slug: x31-cmpm-order-matters
         evidence_level: PRELIMINARY
-        supports: 该综述用agent、environment与association组织社会情境；它是概念与文献框架，不是证明情境效应或共同惯例的新实验。
-        boundary: 作者预印本全文已读，最终出版版正文未逐字比对。不能推论整个HRI只有4篇定义情境、历史缺席，或模型已证明有效。综述与其引用原研究不算独立实证重复。
-    skeptic_challenge: "A2, A5, C8 and D6 already provide construct, architecture, physical-convention and embodied-design building blocks. Novelty cannot be a new umbrella framework; it must operationalize a cross-layer mechanism and show causal behavioral gain. A3/A4/D/F/G closest-work audit remains required. 2026-09-12反方复核：不得以非自主为由排除WoZ先例，不得把修复/记忆更新说成从未研究；新增条件组合本身不是新颖性。"
+        supports: 按原顺序展示的高分不能代表排序推理；评论收益较小且有正负差异。
+        boundary: 预印本；解释评价是精选小样本，一致性中等；数据代码待接收后释放。排序与幽默理解相关但不能等同。
+      - paper_slug: x32-intent-projection
+        evidence_level: PRELIMINARY
+        supports: 作者报告多个骨干的生成和分类指标改善，尤其在字面内容与用意差异较大的材料上。
+        boundary: 预印本，未独立复现；主要英语/西方平台数据，自蒸馏可能复制错误；指标提升不证明恢复真实作者意图。
+      - paper_slug: x33-speechcap
+        evidence_level: PRELIMINARY
+        supports: 花字提供视觉修辞和互动表达机会，也出现歧义与误解。
+        boundary: 探索性原型研究不能证明花字普遍提高理解正确率；研究的是支持人际交流，不是AI理解测试。
+      - paper_slug: x34-memebridge
+        evidence_level: PRELIMINARY
+        supports: 作者发现预测误解与实际解释存在不匹配；提供文化知识和解释评价资源。
+        boundary: 双向视角不等于双向meme来源；群体内差异、评分和模板污染仍需审查，不能把国籍直接等同文化。
+      - paper_slug: x35-mgmc-fusion
+        evidence_level: MODERATE
+        supports: 作者报告隐喻、情感、意图及冒犯检测上的性能改善。
+        boundary: 证据限于受测标签任务；分类准确率不等于具体情境用意解释或共享意义，泛化与泄漏需进一步审计。
+    skeptic_challenge: 花字互动系统、中文多格meme/评论评估、文化meme误解资源和多粒度融合/字面语用分离模型均有先例。新增模态、上下文或模型不自动构成新贡献；应定位尚未解决的具体能力、泛化或评价机制。
     history:
+      - date: 2026-09-18
+        from: REDEFINED
+        to: REDEFINED
+        reason: 新主线Radar补回直接先例，收紧泛化空白；状态和中等优先级保留，没有完成具体RQ新颖性验证。
+      - date: 2026-09-14
+        from: REDEFINED
+        to: REDEFINED
+        reason: 新增有边界的测量与换伙伴干预先例；保留问题状态。AI团队不可完全互换已有证据，剩余问题是具体机制、共同确认及人机推广，不以条件堆叠宣称新颖性。
       - date: 2026-08-27
         from: ACTIVE
         to: UNCHANGED
-        reason: "Status vocabulary normalized; claim remained unverified because relevant pages were bibliographic-only."
+        reason: Status vocabulary normalized; claim remained unverified because relevant pages were
+          bibliographic-only.
       - date: 2026-08-27
         from: UNCHANGED
         to: REDEFINED
-        reason: "Top-20 full-text audit rejects a generic theory-absence claim and reframes the residual as an operational integration problem."
+        reason: Top-20 full-text audit rejects a generic theory-absence claim and reframes the residual as an
+          operational integration problem.
       - date: 2026-09-07
         from: REDEFINED
         to: REDEFINED
-        reason: "X21 strengthens upstream situated social-meaning measurement without bridging it to multimodal, history-dependent embodied human–AI interaction."
+        reason: X21 strengthens upstream situated social-meaning measurement without bridging it to multimodal,
+          history-dependent embodied human–AI interaction.
       - date: 2026-09-12
         from: REDEFINED
         to: REDEFINED
         reason: 五篇积压全文补审及独立gap_red_team复核；保留既有状态与优先级。X1是直接WoZ先例，X3组件混杂，X4开放记忆未实测，X5为概念综述，不能计为独立实证重复。
+      - date: 2026-09-18
+        from: REDEFINED
+        to: REDEFINED
+        reason: "User-authorized scope/priorities change, not new evidence. Previous statement: Operationally
+          connect informal/graphic paralanguage and multimodal structural relations to
+          interaction-history-dependent, adaptive embodied human–AI communication"
     claimability: OPEN_INTEGRATION_PROBLEM
     evidence_readiness: FULL_TEXT_BASELINE_COMPLETE
-  - id: GAP-06
-    statement: "How embodied agents jointly optimize and evaluate instrumental state/intent legibility and socially situated or relational meaning as multimodal signals adapt over interaction history"
-    status: REDEFINED
-    priority: medium-high
-    evidence:
-      - paper_slug: d5-legibility-and-predictability
-        evidence_level: MODERATE
-        supports: "Formally and behaviorally separates intent legibility from expected motion."
-        boundary: "Goal-directed video trajectories; no social meaning, history or convention."
-      - paper_slug: d6-designing-robots-with-movement
-        evidence_level: PRELIMINARY
-        supports: "Robot movement can expose task intent and affective/personality state in the same design material."
-        boundary: "Design synthesis with fixed mappings; no common ground or longitudinal adaptation."
-      - paper_slug: d7-social-eye-gaze-review
-        evidence_level: MODERATE
-        supports: "Gaze can coordinate reference, attention and turn-taking while also carrying rapport, emotion and social agency."
-        boundary: "Non-systematic heterogeneous review; no partner-specific or history-conditioned convention."
-      - paper_slug: a2-textual-paralanguage
-        evidence_level: PRELIMINARY
-        supports: "Social signal meaning is context-dependent and can supplement or replace prose."
-        boundary: "CMC/marketing construct, not robot-state communication evidence."
-      - paper_slug: d8-legible-multimodal-state-intent
-        evidence_level: MODERATE
-        supports: "Compares fixed gesture+speech and LED mappings across online and live settings for five state/intent messages."
-        boundary: "Accepted/presented preprint with proceedings DOI pending; modality package is confounded."
-      - paper_slug: d9-anatomy-of-uncertainty
-        evidence_level: PRELIMINARY
-        supports: "Provides a parameterized motion vocabulary for perceived uncertainty category and intensity."
-        boundary: "Preprint, animator-authored video trajectories, no live uncertainty calibration."
-      - paper_slug: g1-robot-motion-intent-ar
-        evidence_level: MODERATE
-        supports: "Demonstrates spatially registered future-action previews and distinct environment/robot/interface cue locations."
-        boundary: "Single short aerial-robot task with fixed cues; no history-dependent adaptation."
-      - paper_slug: g3-explainable-oohri
-        evidence_level: PRELIMINARY
-        supports: "Connects WHAT/WHERE/HOW capability communication to in-situ repair options."
-        boundary: "Preliminary no-control study; no autonomous open-world assessment or convention."
-      - paper_slug: f2-robots-in-society
-        evidence_level: PRELIMINARY
-        supports: "Frames social meaning and robot design as mutually shaped through deployment and appropriation."
-        boundary: "Conceptual/ethnographic framework, not signal-level causal evidence."
-      - paper_slug: x18-small-talk-rapport
-        evidence_level: PRELIMINARY
-        supports: "Shows that socially richer robot speech can reduce disclosure and coordination during physical collaboration."
-        boundary: "Short single-platform study with disclosure-content/word-count confounding and no adaptive signal history."
-      - paper_slug: x4-making-memories-together
-        evidence_level: PRELIMINARY
-        supports: 一年后重访50名儿童的Leo记忆更新显示档案补全与短期亲近感部分回升；透明、用户主动编辑的Open-Memory仍是未来设计。
-        boundary: 短期虚拟重访、特定年龄及既有关系；不证明透明记忆有效、关系完全恢复、长期具身共同惯例或shared-history因果作用。
-      - paper_slug: x5-social-context-of-hri
-        evidence_level: PRELIMINARY
-        supports: 该综述用agent、environment与association组织社会情境；它是概念与文献框架，不是证明情境效应或共同惯例的新实验。
-        boundary: 作者预印本全文已读，最终出版版正文未逐字比对。不能推论整个HRI只有4篇定义情境、历史缺席，或模型已证明有效。综述与其引用原研究不算独立实证重复。
-    skeptic_challenge: "Top-20 evidence shows single motion and gaze signals can already carry functional and social meanings, so novelty cannot be first integration. The residual is history-dependent joint optimization, trade-off measurement and grounding across modalities; D/F/G closest-work attack is required before a field-separation claim. 2026-09-12反方复核：不得以非自主为由排除WoZ先例，不得把修复/记忆更新说成从未研究；新增条件组合本身不是新颖性。"
-    history:
-      - date: 2026-08-27
-        from: ACTIVE
-        to: UNCHANGED
-        reason: "Status vocabulary normalized; current corpus could not support the field-separation claim."
-      - date: 2026-08-27
-        from: UNCHANGED
-        to: REDEFINED
-        reason: "D5–D7 refute a clean social-versus-functional separation; the residual is adaptive joint optimization and evaluation."
-      - date: 2026-09-03
-        from: REDEFINED
-        to: REDEFINED
-        reason: "X18 adds a non-monotonic embodied social–functional boundary but does not test history-dependent signal adaptation or joint grounding."
-      - date: 2026-09-12
-        from: REDEFINED
-        to: REDEFINED
-        reason: 五篇积压全文补审及独立gap_red_team复核；保留既有状态与优先级。X1是直接WoZ先例，X3组件混杂，X4开放记忆未实测，X5为概念综述，不能计为独立实证重复。
-    claimability: RESEARCH_OPPORTUNITY_NOT_FIELD_ABSENCE
-    evidence_readiness: FULL_TEXT_BASELINE_COMPLETE_WITH_F6_ABSTRACT_ONLY
-  - id: GAP-07
-    statement: "Linked modular embodied human–agent causal protocol family combining history-severed pseudo-dyads, shared-prior disruption, role reversal, repair perturbation, partner swap, transfer, and multimodal physical consequences"
-    status: REDEFINED
-    priority: high
-    evidence:
-      - paper_slug: x13-silica-agent-societies
-        evidence_level: MODERATE
-        supports: "Adds per-agent label permutation and apparatus sensitivity as controls for shared-prior and presentation artifacts."
-        boundary: "No human–AI dyad, embodiment, role reversal, repair, or partner transfer; label semantics remain pretrained and shared."
-      - paper_slug: c6-visual-resemblance-interaction-history
-        evidence_level: MODERATE
-        supports: "Separates resemblance, task practice, and interaction-specific history in human drawing."
-        boundary: "Human-human drawing paradigm only."
-      - paper_slug: x2-lvlms-humans-ground-differently
-        evidence_level: PRELIMINARY
-        supports: "四种角色组合的89对篮子指称任务揭示GPT-5.2配置与人类的协作轨迹差异；不能把感知、错序和prompt故障统称为缺乏共同基础。"
-        boundary: "描述性比较支持该配置的轨迹差异；无history ablation，不能证明历史无贡献或所有LVLM不能grounding。README与论文关于排序/反馈存在配置差异，复现需核对branch/commit。"
-      - paper_slug: x9-aligned-not-partner-specific
-        evidence_level: MODERATE
-        supports: "Provides a constrained history-severed pseudo-dyad diagnostic."
-        boundary: "Preprint, AI–AI only."
-      - paper_slug: x11-common-ground-benchmark
-        evidence_level: MODERATE
-        supports: "Provides an existing human–AI common-ground benchmark with repair and situation-awareness manipulation."
-        boundary: "No pseudo-dyad, partner swap, transfer, or embodiment."
-      - paper_slug: x7-embodied-world-model-alignment
-        evidence_level: MODERATE
-        supports: "Adds embodied world-state and belief-sensitive messaging metrics."
-        boundary: "AI–AI simulation."
-      - paper_slug: c3-conceptual-pacts
-        evidence_level: MODERATE
-        supports: "Classic human partner-switch logic provides a direct history-sensitive diagnostic precedent."
-        boundary: "Spoken card matching, not embodied human–AI."
-      - paper_slug: c4-repeated-reference-games
-        evidence_level: MODERATE
-        supports: "Provides feedback-sensitive establishment and maintenance metrics."
-        boundary: "No history severing, partner swap or physical consequence."
-      - paper_slug: c8-gesturing-toward-abstraction
-        evidence_level: MODERATE
-        supports: "Provides a physical multimodal human protocol with repeated targets, natural correction and dyad divergence."
-        boundary: "No Agent, role reversal, controlled repair or transfer."
-      - paper_slug: e3-continual-adaptation-machine-communication
-        evidence_level: MODERATE
-        supports: "Provides online adaptation, rehearsal, forgetting and component ablations."
-        boundary: "No pseudo-dyad, reciprocal roles, repair or embodiment."
-      - paper_slug: x20-passing-the-pact
-        evidence_level: PRELIMINARY
-        supports: "Adds partner type, knowledge asymmetry and pact-reuse/audience-design measures."
-        boundary: "Abstract-only and non-embodied; does not provide history severing, reciprocity or controlled repair."
-      - paper_slug: x22-banana-man-pragmatic-interpretation
-        evidence_level: MODERATE
-        supports: "Adds context relevance and feedback-quality manipulations that separate retrieval from error recovery."
-        boundary: "Naïve interpreter setting rather than live human–agent dyads."
-      - paper_slug: x24-multimodal-repair-detection
-        evidence_level: MODERATE
-        supports: "Adds cross-setting multimodal OIR detection as a repair-stage measurement component."
-        boundary: "Human–human detection only; no agent repair action or physical consequence."
-      - paper_slug: x1-spotter-human-robot-conventions
-        evidence_level: PRELIMINARY
-        supports: SPOTTER 的 21 名成人 WoZ 试验显示描述趋于稳定但未清晰缩短；它提供动态视觉指称框架，不证明自主机器人形成互惠惯例。
-        boundary: 21名成人的探索性描述复用，不等于自主机器人学习、HH/HRI等价、共同历史的因果作用或长期惯例。无显著性结果不能补写为不存在效应。
-      - paper_slug: x3-seeing-eye-to-eye
-        evidence_level: PRELIMINARY
-        supports: Eye2Eye整套AR系统减少错误和澄清需求；正文不支持显著缩短任务时间，组件混杂也不允许把收益单独归因于共享记忆。
-        boundary: 短期整套系统收益；没有history severing、partner swap、角色互换或新表达协商。对象卡表示不等于双方确认的共同信念。
-    skeptic_challenge: "Partner-switch, pseudo-dyad, memory-use, shared-prior, audience-design, retrieval and repair-detection components already exist. Requiring all of them in one experiment is method maximalism; the defensible gap is discriminant-valid linkage across a modular protocol family. 2026-09-12反方复核：不得以非自主为由排除WoZ先例，不得把修复/记忆更新说成从未研究；新增条件组合本身不是新颖性。"
-    history:
-      - date: 2026-08-27
-        from: null
-        to: UNCHANGED
-        reason: "Added as a high-potential candidate, not yet a high-priority established gap."
-      - date: 2026-08-27
-        from: UNCHANGED
-        to: PARTIALLY_ADDRESSED
-        reason: "Existing benchmark components resolve generic absence; no audited single protocol integrates history ablation, reciprocity, repair, transfer, and embodiment."
-      - date: 2026-08-31
-        from: PARTIALLY_ADDRESSED
-        to: PARTIALLY_ADDRESSED
-        reason: "SILICA adds shared-prior disruption, but no single protocol validates all diagnostics across human–AI, embodiment, repair, transfer and role reversal."
-      - date: 2026-09-07
-        from: PARTIALLY_ADDRESSED
-        to: REDEFINED
-        reason: "Independent red-team review identifies monolithic-protocol underidentification risk; X20/X22/X24 instead support a linked modular causal battery with shared measurement logic."
-      - date: 2026-09-12
-        from: REDEFINED
-        to: REDEFINED
-        reason: 五篇积压全文补审及独立gap_red_team复核；保留既有状态与优先级。X1是直接WoZ先例，X3组件混杂，X4开放记忆未实测，X5为概念综述，不能计为独立实证重复。
-    claimability: OPEN_RESIDUAL
-
+    scope_status: NEAR_TERM_CANDIDATE
+    scope_note: 方向相关性不等于新颖性；长期问题不再强制作为首项研究。
 allowed_update_states:
   - UNCHANGED
   - STRENGTHENED
@@ -580,7 +610,7 @@ allowed_update_states:
   - WEAKENED
   - RESOLVED
   - REMOVED
-
 high_priority_rule:
   independent_evidence_sources_min: 2
   skeptic_challenge_required: true
+updated_at: 2026-09-18

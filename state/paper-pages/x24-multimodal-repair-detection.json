@@ -2,7 +2,12 @@
   "id": "X24",
   "slug": "x24-multimodal-repair-detection",
   "title": "Do Visual Features Improve Other-Initiated Repair Detection? A Dyadic Multimodal Approach",
-  "authors": ["Anh Ngo", "Nicolas Rollet", "Catherine Pelachaud", "Chloé Clavel"],
+  "authors": [
+    "Anh Ngo",
+    "Nicolas Rollet",
+    "Catherine Pelachaud",
+    "Chloé Clavel"
+  ],
   "year": 2026,
   "venue": "Proceedings of ACM ICMI 2026",
   "source_url": "https://arxiv.org/abs/2607.23845",
@@ -23,10 +28,25 @@
   "why_researcher_should_care": "It fills a missing measurement component for AMSC's repair stage and shows that the informative visual channel depends on interaction setting, making single-modality repair benchmarks inadequate.",
   "amsc": {
     "mainline_fit": 8.6,
-    "buckets": ["C", "D"],
-    "stages": ["Grounding/common ground", "Situated adaptive communication"],
-    "mechanisms": ["other-initiated repair", "multimodal trouble signals", "dyadic visual coordination", "repair-type classification"],
-    "gap_ids": ["GAP-03", "GAP-04", "GAP-07"],
+    "buckets": [
+      "C",
+      "D",
+      "G"
+    ],
+    "stages": [
+      "Grounding/common ground",
+      "Situated adaptive communication"
+    ],
+    "mechanisms": [
+      "other-initiated repair",
+      "multimodal trouble signals",
+      "dyadic visual coordination",
+      "repair-type classification"
+    ],
+    "gap_ids": [
+      "GAP-03",
+      "GAP-04"
+    ],
     "master_list_decision": "Candidate — Important / multimodal repair-detection anchor"
   },
   "investigation_status": "radar_full_text_audit",
@@ -35,5 +55,12 @@
     "Human-human signal detection is not encoded as evidence of successful human-agent repair."
   ],
   "provenance": "amsc_radar_2026-09-07",
-  "updated_at": "2026-09-07"
+  "updated_at": "2026-09-07",
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

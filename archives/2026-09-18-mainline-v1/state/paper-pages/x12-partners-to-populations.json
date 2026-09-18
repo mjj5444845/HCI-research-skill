@@ -1,0 +1,32 @@
+{
+  "id": "X12",
+  "slug": "x12-partners-to-populations",
+  "title": "From Partners to Populations: A Hierarchical Bayesian Account of Coordination and Convention",
+  "authors": ["Robert D. Hawkins", "Michael Franke", "Michael C. Frank", "Adele E. Goldberg", "Kenny Smith", "Thomas L. Griffiths", "Noah D. Goodman"],
+  "year": 2023,
+  "venue": "Psychological Review, 130(4), 977–1016",
+  "source_url": "https://arxiv.org/abs/2104.05857",
+  "doi": "10.1037/rev0000348",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "CHAI 已形式化 partner-specific common ground 如何在多个时间尺度上与 community conventions 共存并发生 transfer。",
+  "problem": "Dyad-specific flexibility 如何与 population-wide stable conventions 共存，且局部互动经验如何向陌生伙伴泛化？",
+  "method": "提出 Continual Hierarchical Adaptation through Inference (CHAI)，结合 repeated natural-language communication experiments 与 hierarchical Bayesian simulations。",
+  "findings": ["模型与实验覆盖同伴内 referring efficiency、partner-specific knowledge 向 strangers 的渐进 transfer，以及 communicative context 对最终 convention 的影响。"],
+  "real_contribution": "为 dyad→population convention transfer 提供理论与计算 baseline，阻止 AMSC 把 generic lifecycle/transfer theory 当成空白。",
+  "biggest_weakness": "计算可扩展性、online incrementality 与现实开放环境仍有限；没有 embodied multimodal Agent。",
+  "claim_boundary": "解决 generic human convention transfer 的理论缺口，不解决 embodied human–AI 中如何在线检测、协商、修复或迁移 mapping。",
+  "why_researcher_should_care": "要求下一步 novelty 建立在现有 multi-timescale convention theory 之上，而非把 partner-specific 与 transferable convention 错误对立。",
+  "amsc": {
+    "mainline_fit": 9.7,
+    "buckets": ["C", "E", "F"],
+    "stages": ["Grounding", "Convention", "Adaptation"],
+    "mechanisms": ["hierarchical Bayesian inference", "partner-to-population transfer"],
+    "gap_ids": ["GAP-01", "GAP-02", "GAP-03"],
+    "master_list_decision": "Candidate — Must Read / Recovered theory anchor"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": ["Recovered classic outside the strict seven-day window; journal DOI and open manuscript were verified.", "Included because it materially narrows the program's transfer/lifecycle novelty claim."],
+  "provenance": "amsc_radar_2026-08-27_recovery",
+  "updated_at": "2026-08-27"
+}

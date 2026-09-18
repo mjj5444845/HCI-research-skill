@@ -1,0 +1,33 @@
+{
+  "id": "X10",
+  "slug": "x10-llms-people-conventions",
+  "title": "LLMs and People Both Learn to Form Conventions—Just Not with Each Other",
+  "authors": ["Cameron R. Jones", "Agnese Lombardi", "Kyle Mahowald", "Benjamin K. Bergen"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2602.08208",
+  "doi": "10.48550/arXiv.2602.08208",
+  "access_status": "full_text",
+  "publication_status": "preprint_only",
+  "priority": "Must Read",
+  "one_sentence": "同质 dyads 显示 convention-like performance signatures，而 mixed human–AI dyads 即使采用 humanlike prompt 仍不能消除 accuracy/lexical-overlap gap。",
+  "problem": "General-purpose LLM 是否能与 humans 在双向、角色互换的 multimodal reference game 中形成相同类型的 conventions？",
+  "method": "预注册比较 human–human、human–AI、AI–AI 在 10 tangrams×5 blocks/50 turns 中的 accuracy、message length 与 lexical overlap，并用第二实验操纵 humanlike prompt。",
+  "findings": ["Same-type dyads 出现不同程度的 accuracy/consistency gains；mixed human–AI dyads 持续落后。", "Humanlike prompt 缩短表达并小幅提高 accuracy，却未可靠修复 lexical overlap gap。"],
+  "real_contribution": "把 generic model capability 问题重构为 heterogeneous dyad compatibility，并显示表面模仿不足以解释或修复 mixed-dyad failure。",
+  "biggest_weakness": "preprint；AI–AI 使用相同 GPT-5 copies 和 prompt，初始 overlap 很高，shared interpretive biases 是作者解释而非被直接操纵的机制。",
+  "claim_boundary": "AI–AI 结果只能称 convention-like signatures；partner-specific origin 仍需 pseudo-dyad/partner-swap tests。",
+  "why_researcher_should_care": "提示 AMSC 不能只问模型会不会适应，而要问 humans 与 models 的 priors/representations 为什么在 mixed dyad 中不兼容。",
+  "amsc": {
+    "mainline_fit": 9.4,
+    "buckets": ["C", "E"],
+    "stages": ["Grounding", "Convention", "Adaptation"],
+    "mechanisms": ["dyad compatibility", "role reversal", "convention-like adaptation"],
+    "gap_ids": ["GAP-02", "GAP-04", "GAP-07"],
+    "master_list_decision": "Candidate — Must Read / First-run recovery"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": ["arXiv v1 from February 2026; outside the strict seven-day window and labeled first-run recovery.", "Preprint and preregistered experiment details were audited."],
+  "provenance": "amsc_radar_2026-08-27_recovery",
+  "updated_at": "2026-08-27"
+}

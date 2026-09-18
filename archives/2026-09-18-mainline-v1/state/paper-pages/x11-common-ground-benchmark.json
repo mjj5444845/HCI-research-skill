@@ -1,0 +1,33 @@
+{
+  "id": "X11",
+  "slug": "x11-common-ground-benchmark",
+  "title": "A Benchmark to Assess Common Ground in Human-AI Collaboration",
+  "authors": ["Christian Poelitz", "Finale Doshi-Velez", "Siân Lindley"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2602.21337",
+  "doi": "10.48550/arXiv.2602.21337",
+  "access_status": "full_text",
+  "publication_status": "preprint_only",
+  "priority": "Important",
+  "one_sentence": "提供已经存在的 human–AI common-ground benchmark precedent，覆盖 joint action、referential coordination、repair 与 situation awareness。",
+  "problem": "如何让 human–AI common ground 由可重复任务与多层指标测量，而不只数 surface grounding acts？",
+  "method": "设计 collaborative puzzle benchmark，并以 2×2 role×shared-view、N=40 UK participants 与 GPT-4.1 的 confirmatory study 验证 task、communication 与 object-level measures。",
+  "findings": ["Benchmark 重现若干 human-human grounding 理论预期，并暴露 human–AI divergences。", "GPT-4.1 常不延续 clarification、难以保持 puzzle state，也不适应 participant vocabulary；shared view 可支持部分 repair。"],
+  "real_contribution": "消除‘没有 human–AI common-ground benchmark’这一宽泛 gap，并为 residual embodied diagnostic battery 提供 closest work。",
+  "biggest_weakness": "preprint、N=40、单模型、text/puzzle setting；尚无 partner-history ablation、partner swap、cross-task transfer 或 physical embodiment。",
+  "claim_boundary": "证明 benchmark 组件已存在，不证明 common ground 已被可靠测尽或模型差异可跨任务泛化。",
+  "why_researcher_should_care": "AMSC 的 benchmark novelty 必须从 generic absence 转向整合 partner-specificity、repair、transfer 与 embodiment。",
+  "amsc": {
+    "mainline_fit": 9.0,
+    "buckets": ["C", "E"],
+    "stages": ["Grounding", "Adaptation"],
+    "mechanisms": ["common-ground benchmark", "repair", "situation awareness"],
+    "gap_ids": ["GAP-03", "GAP-04", "GAP-07"],
+    "master_list_decision": "Candidate — Important / First-run recovery"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": ["arXiv v1 from February 2026; outside the strict seven-day window and labeled first-run recovery.", "Full preprint method, participant design, measures, and conclusion were audited."],
+  "provenance": "amsc_radar_2026-08-27_recovery",
+  "updated_at": "2026-08-27"
+}

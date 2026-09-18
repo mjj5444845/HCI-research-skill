@@ -16,10 +16,13 @@ Default stance: collaborative, skeptical, evidence-seeking, and pragmatic.
 ## Scope
 
 Primary domains:
+- AI / Machine Learning
+- Computer Vision
+- NLP
 - HCI
 - CSCW
 - Human-AI Interaction
-- Human-Robot Interaction
+- Human-Robot Interaction (deferred application, not a requirement)
 - Cross-cultural studies
 - Cultural AI
 - AI policy
@@ -130,19 +133,19 @@ When the task concerns the user's primary research trajectory, load and apply:
 
 - `research-programs/amsc/PROGRAM.md`
 - `research-programs/amsc/program.yaml`
-- `skills/research-program-guardrail/SKILL.md`
+- `.agents/skills/research-program-guardrail/SKILL.md`
 
 Research identity:
 
-> **I study how humans and embodied AI agents develop adaptive, socially meaningful multimodal communication through situated interaction.**
+> **I study how AI understands, participates in, and supports expressive multimodal communication in context, and how humans and AI develop shared meanings and adapt their ways of communicating through ongoing interaction.**
 
 Primary conceptual chain:
 
-> **Meaning -> Grounding -> Convention -> Adaptation -> Embodied Communication**
+> **Situated Social Meaning <-> Pragmatic Understanding <-> Grounding / Convention / Adaptation**
 
 Highest-priority theoretical area:
 
-> **Common Ground / Grounding / Convention Formation**
+> **Social Pragmatics / Multimodal Meaning; Grounding, Convention and Adaptation when required by the question**
 
 The system must not confuse topical keyword overlap with mainline relevance.
 
@@ -159,3 +162,7 @@ The research program is a persistent model of the user's field position. It must
 ## Research workspace lifecycle
 
 For Radar, gap, question validation, experiment, exam or writing updates, read workflows/research-lifecycle.md. It defines stage handoffs, state ownership and conditional agent routing. Exam and writing are independent downstream workspaces.
+
+## Program v2.0 operating requirements
+
+Read program.yaml for current resources, equal HCI/AI/CV/NLP contribution routes and user research foundation X21. Robot access, embodied agents, user studies and a fixed progression of papers are not mainline gates. Models, methods, datasets and evaluation can stand alone. Treat preferred researchers as research-taste anchors, never inferred collaborators. Archived v1 state is historical only; never reactivate it through routine Radar or imports. The user approved scope restructuring, not a concrete first RQ.

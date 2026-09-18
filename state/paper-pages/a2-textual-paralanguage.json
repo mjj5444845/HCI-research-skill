@@ -28,7 +28,7 @@
     "mainline_fit": 6.6,
     "buckets": [
       "A",
-      "F"
+      "B"
     ],
     "stages": [
       "Informal Visual Expression",
@@ -38,8 +38,7 @@
       "Meaning"
     ],
     "gap_ids": [
-      "GAP-05",
-      "GAP-06"
+      "GAP-05"
     ],
     "master_list_decision": "Baseline v1.0 — retained / adjacent construct anchor"
   },
@@ -78,5 +77,12 @@
     "evidence_scope": "methods_and_findings_reconstructed_from_full_text",
     "degraded": false
   },
-  "worth_sharing": false
+  "worth_sharing": false,
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
 }

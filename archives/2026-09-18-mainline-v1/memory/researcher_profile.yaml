@@ -1,0 +1,70 @@
+version: 0.1
+status: evolving
+update_policy:
+  rule: Treat as preferences, not scientific truth. Update only from repeated or explicit
+    researcher signals.
+domains:
+  primary:
+  - HCI
+  - CSCW
+  - Human-AI Interaction
+  - Human-Robot Interaction
+  - Cross-cultural Research
+  - Cultural AI
+  - AI Policy
+research_taste:
+  starts_from:
+  - interesting_social_or_use_phenomenon
+  - real_world_impact
+  - unresolved_problem
+  - technology_enabled_new_research_capability
+  strongly_values:
+  - non_obvious_insight
+  - rigorous_logic
+  - feasible_study
+  - efficiency
+  - strong_contribution
+  - evidence_that_requires_actual_investigation
+  avoids:
+  - obvious_results
+  - forced_storytelling
+  - significance_inflation
+  - fashionable_ai_wrapper
+  - weak_novelty
+  - rq_method_mismatch
+  - unnecessarily_slow_user_studies
+  methods:
+    preference_notes:
+    - Quantitative evidence often preferred when appropriate.
+    - Accessible public / digital-trace data preferred when it can answer the construct.
+    - Qualitative work remains appropriate when the construct requires it.
+    - Do not avoid human studies merely for convenience.
+    - Pilot is default for most empirical studies.
+  theory:
+    preferred: Established and broadly discussed in the relevant community.
+    reject_if: Decorative, forced, or does not alter explanation/design/interpretation.
+  portfolio:
+    strategy: 2–3 credible small gaps can support a conference paper; related small
+      gaps may accumulate toward a larger research problem.
+decision_style:
+  high_stakes: multi_agent_deliberation
+  final_consequential_choice: researcher
+active_research_program:
+  id: amsc
+  name: Adaptive Multimodal Social Communication for Embodied AI
+  research_identity: I study how humans and embodied AI agents develop adaptive, socially
+    meaningful multimodal communication through situated interaction.
+  highest_priority_theory: Common Ground / Grounding / Convention Formation
+  core_chain:
+  - Meaning
+  - Grounding
+  - Convention
+  - Adaptation
+  - Embodied Communication
+  development_stages:
+  - Informal visual expression
+  - Social meaning / pragmatics
+  - Grounding / common ground
+  - Convention formation
+  - Personalization / co-adaptation
+  - Situated adaptive communication

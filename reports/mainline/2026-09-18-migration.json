@@ -1,0 +1,216 @@
+{
+  "date": "2026-09-18",
+  "source": "research-programs/amsc/SOURCE_USER_SPEC.md",
+  "archive": "archives/2026-09-18-mainline-v1",
+  "active_paper_ids": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "E3",
+    "F1",
+    "X1",
+    "X10",
+    "X11",
+    "X12",
+    "X13",
+    "X16",
+    "X17",
+    "X2",
+    "X20",
+    "X21",
+    "X22",
+    "X23",
+    "X24",
+    "X25",
+    "X26",
+    "X27",
+    "X28",
+    "X29",
+    "X3",
+    "X6",
+    "X8",
+    "X9"
+  ],
+  "deferred_papers": [
+    {
+      "id": "D1",
+      "slug": "d1-nonverbal-teamwork",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "D2",
+      "slug": "d2-footing-in-human-robot-conversations",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "D3",
+      "slug": "d3-nonverbal-leakage",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "D4",
+      "slug": "d4-expressing-thought",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "D5",
+      "slug": "d5-legibility-and-predictability",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "D6",
+      "slug": "d6-designing-robots-with-movement",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "D7",
+      "slug": "d7-social-eye-gaze-review",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "D8",
+      "slug": "d8-legible-multimodal-state-intent",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "D9",
+      "slug": "d9-anatomy-of-uncertainty",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "E1",
+      "slug": "e1-long-term-social-robots-survey",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "E2",
+      "slug": "e2-human-robot-mutual-adaptation",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "E4",
+      "slug": "e4-designing-robots-long-term",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "F2",
+      "slug": "f2-robots-in-society",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "F3",
+      "slug": "f3-robotic-products-social-products",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "F4",
+      "slug": "f4-my-roomba-is-rambo",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "F5",
+      "slug": "f5-robots-in-the-wild",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "F6",
+      "slug": "f6-generative-encounters-robin",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "G1",
+      "slug": "g1-robot-motion-intent-ar",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "G2",
+      "slug": "g2-visualisation-disambiguating-verbal-requests",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "G3",
+      "slug": "g3-explainable-oohri",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "G4",
+      "slug": "g4-context-aware-expressive-motion",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "X14",
+      "slug": "x14-bee-referential-code",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "X18",
+      "slug": "x18-small-talk-rapport",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "X4",
+      "slug": "x4-making-memories-together",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "X5",
+      "slug": "x5-social-context-of-hri",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "X7",
+      "slug": "x7-embodied-world-model-alignment",
+      "reason": "Robot-specific or temporarily peripheral to near-term social-pragmatic understanding; evidence retained in snapshot"
+    },
+    {
+      "id": "X15",
+      "slug": "x15-synthetic-linguistic-agency",
+      "reason": "Population-language evolution is temporarily peripheral; deferred for problem distance, not because computational research lacks a robot."
+    },
+    {
+      "id": "X19",
+      "slug": "x19-continuous-worlds-vocabularies",
+      "reason": "Population-language evolution is temporarily peripheral; deferred for problem distance, not because computational research lacks a robot."
+    }
+  ],
+  "archived_gaps": [
+    "GAP-06",
+    "GAP-07"
+  ],
+  "archived_questions": [
+    "RQ-1",
+    "RQ-2",
+    "RQ-3",
+    "RQ-4"
+  ],
+  "archived_studies": [
+    "STUDY-1",
+    "STUDY-2",
+    "STUDY-3"
+  ],
+  "new_draft_questions": [],
+  "first_project_selected": false,
+  "source_evidence_unchanged": true,
+  "retained_gap_ids": [
+    "GAP-01",
+    "GAP-02",
+    "GAP-03",
+    "GAP-04",
+    "GAP-05"
+  ]
+}

@@ -159,12 +159,12 @@ Output `coverage_confidence`, not fake completeness.
 
 When investigating the active AMSC research program:
 - classify accepted papers into buckets A–G;
-- update Master Literature List incrementally, never rebuild it;
+- update Master Literature List incrementally; explicit researcher-directed scope migrations may archive entries with provenance;
 - evaluate every existing Gap Registry entry;
 - add a candidate gap only after explicit evidence;
 - require >=2 independent evidence sources + Skeptic challenge for HIGH PRIORITY;
 - update Current State of Field using ESTABLISHED / EMERGING / CONTESTED / UNDEREXPLORED / OPEN;
-- generate Comprehensive Exam mappings for CORE/anchor papers;
+- update exam mappings only when the current exam scope is directly affected;
 - update temporal gap histories when old wording becomes obsolete.
 
 Always determine whether new work changes:
@@ -172,6 +172,10 @@ Always determine whether new work changes:
 - Grounding
 - Convention
 - Adaptation
-- Embodied Communication
+- Situated multimodal understanding and communication
 
 After an AMSC run changes the literature landscape, synchronize evidence-backed changes to the long-term research program, Current State of Field, Gap Registry, Research Graph, next-question priority, and the public projection in `research-programs/amsc/state/workflow_dashboard.json`. The exam knowledge base is a downstream filtered view: update it only when the changed landscape directly affects an exam theme, anchor, or synthesis claim. Claims lacking finding-level evidence belong in a validation queue or `CANNOT_CLAIM`, not in the public field-known set.
+
+## Current program contract
+
+For AMSC work, load `research-programs/amsc/PROGRAM.md` and `program.yaml`; their current version overrides historical framing. HCI, AI, CV and NLP are equal routes. X21/arXiv:2609.04384 is user-confirmed second-author work and the near-term foundation. Do not require robots, user studies, embodied settings or convention formation for a valid mainline contribution. Choose human evidence when the claim concerns human behavior or interpretation. Understanding is the current focus, not a mandatory sequence of papers. Archived v1 content is not an active priority.

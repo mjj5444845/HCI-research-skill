@@ -141,7 +141,7 @@ Cross:
 - communication function
 - mechanism
 - interaction
-- embodiment
+- interaction context and optional embodiment
 
 Also search:
 - anchor researchers;
@@ -158,7 +158,7 @@ For every candidate answer:
 3. what does it express?
 4. fixed/context-/interaction-dependent/emergent meaning?
 5. interaction history/adaptation?
-6. embodiment/situated context?
+6. relevant interaction context; embodiment only if material?
 7. theory/mechanism?
 8. does it update a current gap?
 
@@ -215,3 +215,9 @@ Report:
 - Q1 What do we know?
 - Q2 What don't we know?
 - Q3 What should I study next?
+
+## Current program contract
+
+For AMSC work, load `research-programs/amsc/PROGRAM.md` and `program.yaml`; their current version overrides historical framing. HCI, AI, CV and NLP are equal routes. X21/arXiv:2609.04384 is user-confirmed second-author work and the near-term foundation. Do not require robots, user studies, embodied settings or convention formation for a valid mainline contribution. Choose human evidence when the claim concerns human behavior or interpretation. Understanding is the current focus, not a mandatory sequence of papers. Archived v1 content is not an active priority.
+
+Scan HCI/AI/CV/NLP and cognition according to the active config without a robotics quota. Rank communicative mechanisms and computational capabilities directly; foundation models are not merely infrastructure. Respect archived exclusions; return a deferred paper only with an explicit new substantive reason and do not silently reactivate it.

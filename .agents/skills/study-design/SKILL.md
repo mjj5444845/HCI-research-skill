@@ -25,14 +25,14 @@ Always consider when relevant:
 - No-traditional-user-study alternative
 - Ideal/resource-rich design
 
-## Required adversarial roles
+## Conditional independent review roles
 - Method Efficiency Advocate
 - Human Evidence Advocate
 - Quantitative Rigor Auditor
-- Qualitative Reliability Auditor
-- Interpretivist Qualitative Auditor
-- Cognitive/Behavioral Methods Auditor
-- specialized AI/HRI/Culture auditors when applicable
+- Qualitative Reliability Auditor when reliability-oriented qualitative evidence is used
+- Interpretivist Qualitative Auditor when interpretive qualitative evidence is used
+- Cognitive/Behavioral Methods Auditor when behavioral claims are made
+- Computational Evaluation Auditor for model, dataset or benchmark claims; HRI/Culture auditors only when applicable
 
 ## Evidence preference
 Prefer public / digital-trace / large-scale / reusable evidence when it measures the construct well.
@@ -44,7 +44,7 @@ Formative -> system/design -> evaluation is allowed but never mandatory.
 Attack ritualized/formulaic studies that add expensive interviews/user studies without unique evidentiary value.
 
 ## Quantitative audit
-At minimum:
+Apply the relevant checks for the design; briefly mark non-applicable checks rather than requiring every item.
 - construct validity
 - operationalization
 - sample size/power logic
@@ -147,14 +147,16 @@ If method can answer only part of an RQ, show:
 - Split project
 - Defer RQ
 
-## Required Study Blueprint
+## Full Study Blueprint
+
+Use applicable sections for a full design. A screening request needs only a compact contribution, evidence and feasibility assessment. Qualitative review, human recruitment and IRB applicability are conditional; no new human study is implied.
 1. RQ
 2. Why empirical evidence is needed
 3. Constructs
 4. Required evidence
 5. Literature precedents
 6. Candidate designs
-7. Multi-agent method debate
+7. Relevant independent method review when material
 8. Selected design
 9. Participants/dataset
 10. Conditions/materials
@@ -163,7 +165,7 @@ If method can answer only part of an RQ, show:
 13. Analysis
 14. RQ -> Evidence -> Method -> Analysis -> Claim matrix
 15. Quant rigor audit
-16. Qual rigor audit
+16. Qualitative rigor audit when qualitative evidence is used
 17. AI/HRI audit when relevant
 18. Cross-cultural audit when relevant
 19. Pilot plan
@@ -174,26 +176,33 @@ If method can answer only part of an RQ, show:
 24. Time/cost/recruitment complexity
 25. Venue precedent
 26. Alternative designs
-27. Final ethics/IRB audit
+27. Applicable data ethics, permissions and IRB determination
 
 ---
 
 ## AMSC Study-Design Guardrail
 
-For mainline projects, the design must make clear whether the evidence can distinguish:
-- fixed signal effectiveness
-from
-- meaning formation / grounding / convention / adaptation.
+For each mainline project, identify the exact claim: interpretation, model performance, dataset validity, interaction behavior or shared meaning. Require evidence for that claim, not every level of the program. A model or benchmark project need not establish convention formation.
 
 Do not treat a one-shot preference increase as evidence of convention formation or long-term adaptation.
 
 If the claim involves:
 - common ground,
 - convention,
-- interaction history,
+- causal effects of shared interaction history,
 - co-adaptation,
 - partner-specific shorthand,
 
 the design should usually include evidence capable of testing repeated interaction, history dependence, partner specificity, emergent coordination, or longitudinal change.
 
 If a fast one-shot study cannot support the mainline claim, expose the mismatch and offer staged alternatives.
+
+## Current program contract
+
+For AMSC work, load `research-programs/amsc/PROGRAM.md` and `program.yaml`; their current version overrides historical framing. HCI, AI, CV and NLP are equal routes. X21/arXiv:2609.04384 is user-confirmed second-author work and the near-term foundation. Do not require robots, user studies, embodied settings or convention formation for a valid mainline contribution. Choose human evidence when the claim concerns human behavior or interpretation. Understanding is the current focus, not a mandatory sequence of papers. Archived v1 content is not an active priority.
+
+## Computational evidence module
+
+For AI/CV/NLP contributions audit train/test and source separation, leakage and contamination, fair baselines, ablations, prompt/model/version/seeds, compute/data budgets, evaluation uncertainty, label ambiguity, annotation provenance and reproducibility. Split correlated items by episode/source/participant where the generalization claim requires it. Model-only experiments are valid; do not infer human effects from them. Route one relevant independent computational auditor rather than every qualitative auditor by default.
+
+Offline history-conditioned interpretation can be tested on suitable archived traces; it does not require new repeated-participant experiments. Claims about causal shared-history effects, partner specificity or convention formation require corresponding designs. Existing suitable human annotations or traces may supply human evidence without new recruitment. Confirm compute/API/data access; programming confidence and wearable ownership do not establish training capacity.

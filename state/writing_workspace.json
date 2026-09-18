@@ -72,34 +72,6 @@
       "provenance": "从 state_of_field.yaml 的 SOF-05 迁移到独立材料箱；不创建虚构投稿项目。"
     },
     {
-      "id": "MAT-SOF-06",
-      "title": "SOF-06 · History-aware memory、partner adaptation、task success、lexical alignment、world-model alignment、positive evidence、mutual belief 与 shared convention 需要不同 evidence standards。",
-      "content": "既有领域综合：History-aware memory、partner adaptation、task success、lexical alignment、world-model alignment、positive evidence、mutual belief 与 shared convention 需要不同 evidence standards。\n类型：agent_synthesis；状态：OPEN；证据：MODERATE\n适用边界：跨论文 agent synthesis；C5/C6 属同一 empirical lineage，success、shortening、pact reuse、state storage 或 repair detection 任何单项都不是 convention/common ground 的充分证据。",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "c1-referring-as-collaborative-process",
-        "c2-grounding-in-communication",
-        "c3-conceptual-pacts",
-        "c4-repeated-reference-games",
-        "c6-visual-resemblance-interaction-history",
-        "c8-gesturing-toward-abstraction",
-        "d5-legibility-and-predictability",
-        "e2-human-robot-mutual-adaptation",
-        "e3-continual-adaptation-machine-communication",
-        "x7-embodied-world-model-alignment",
-        "x9-aligned-not-partner-specific",
-        "x11-common-ground-benchmark",
-        "x20-passing-the-pact",
-        "x22-banana-man-pragmatic-interpretation",
-        "x23-machine-mental-imagery-common-ground",
-        "x24-multimodal-repair-detection"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-06 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
       "id": "MAT-SOF-07",
       "title": "SOF-07 · Human convention theory already models partner-specific common ground and its transfer toward population-level conventions; partner-specific origin and subsequent transfer are complementary, not mutually exclusive.",
       "content": "既有领域综合：Human convention theory already models partner-specific common ground and its transfer toward population-level conventions; partner-specific origin and subsequent transfer are complementary, not mutually exclusive.\n类型：source_grounded_synthesis；状态：EMERGING；证据：MODERATE\n适用边界：CHAI evidence concerns human linguistic coordination and simulation; it does not solve online embodied human–AI convention inference.",
@@ -193,59 +165,6 @@
       "provenance": "从 state_of_field.yaml 的 SOF-13 迁移到独立材料箱；不创建虚构投稿项目。"
     },
     {
-      "id": "MAT-SOF-14",
-      "title": "SOF-14 · Robot-motion legibility 与 predictability 对应相反 inference directions 并可冲突；observer-dependent expectation/cost assumptions matter。",
-      "content": "既有领域综合：Robot-motion legibility 与 predictability 对应相反 inference directions 并可冲突；observer-dependent expectation/cost assumptions matter。\n类型：source_says；状态：EMERGING；证据：MODERATE\n适用边界：Video、two-goal、hand-designed trajectories；HERB cost-model mismatch、human post-hoc inconsistency，且无 long-term interaction。",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "d5-legibility-and-predictability"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-14 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
-      "id": "MAT-SOF-15",
-      "title": "SOF-15 · Designer-authored robot movement and gaze can each convey instrumental intent/reference and relational or affective social meaning; functions are not cleanly separable by modality.",
-      "content": "既有领域综合：Designer-authored robot movement and gaze can each convey instrumental intent/reference and relational or affective social meaning; functions are not cleanly separable by modality.\n类型：source_grounded_synthesis；状态：EMERGING；证据：MODERATE\n适用边界：Design synthesis plus non-systematic narrative review; mappings are mostly fixed/context-contingent, not jointly grounded or history-dependent conventions.",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "d6-designing-robots-with-movement",
-        "d7-social-eye-gaze-review"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-15 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
-      "id": "MAT-SOF-16",
-      "title": "SOF-16 · Longitudinal HRI should measure within-participant trajectories beyond novelty/familiarization; fixed calendar duration alone does not operationalize long-term interaction.",
-      "content": "既有领域综合：Longitudinal HRI should measure within-participant trajectories beyond novelty/familiarization; fixed calendar duration alone does not operationalize long-term interaction.\n类型：historical_source_says；状态：EMERGING；证据：MODERATE\n适用边界：Historical review as of 2013; not a current 2026 field-state absence claim and not causal evidence about sustained engagement.",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "e1-long-term-social-robots-survey"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-16 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
-      "id": "MAT-SOF-17",
-      "title": "SOF-17 · Constrained task-level mutual adaptation can be modeled as latent human strategy-switching propensity plus robot policy optimization, but this is distinct from communication co-development and convention.",
-      "content": "既有领域综合：Constrained task-level mutual adaptation can be modeled as latent human strategy-switching propensity plus robot policy optimization, but this is distinct from communication co-development and convention.\n类型：source_grounded_synthesis；状态：EMERGING；证据：MODERATE\n适用边界：Discrete video/UI tasks with designer-optimal goals; strategy compliance does not establish reciprocal co-adaptation, semantics, grounding or embodiment.",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "e2-human-robot-mutual-adaptation"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-17 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
       "id": "MAT-SOF-18",
       "title": "SOF-18 · Textual paralanguage provides five broad categories and is frequently observed in sampled 2010s social-media posts, with platform-dependent distributions and context-dependent meaning.",
       "content": "既有领域综合：Textual paralanguage provides five broad categories and is frequently observed in sampled 2010s social-media posts, with platform-dependent distributions and context-dependent meaning.\n类型：source_says；状态：EMERGING；证据：PRELIMINARY\n适用边界：Descriptive convenience samples, coder inconsistency/no reliability statistic, and no causal evidence for warmth, rapport or trust.",
@@ -309,47 +228,6 @@
       "provenance": "从 state_of_field.yaml 的 SOF-21 迁移到独立材料箱；不创建虚构投稿项目。"
     },
     {
-      "id": "MAT-SOF-22",
-      "title": "SOF-22 · Robot gaze、motion、speech、LED 与 AR 已能在受控任务中表达 attention、intent、uncertainty、capability 与 repair options；因此固定 signal engineering 不是空白，开放问题是 calibration、history-dependent grounding 与 partner-specific adaptation。",
-      "content": "既有领域综合：Robot gaze、motion、speech、LED 与 AR 已能在受控任务中表达 attention、intent、uncertainty、capability 与 repair options；因此固定 signal engineering 不是空白，开放问题是 calibration、history-dependent grounding 与 partner-specific adaptation。\n类型：source_grounded_synthesis；状态：EMERGING；证据：MODERATE\n适用边界：多数研究使用 designer-authored mappings、短期 video/lab tasks 或显式 AR overlays；D8/D9 仍为 2026 的 provisional publication records，且这些研究不证明共同形成的 convention。",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "d1-nonverbal-teamwork",
-        "d2-footing-in-human-robot-conversations",
-        "d3-nonverbal-leakage",
-        "d4-expressing-thought",
-        "d8-legible-multimodal-state-intent",
-        "d9-anatomy-of-uncertainty",
-        "g1-robot-motion-intent-ar",
-        "g2-visualisation-disambiguating-verbal-requests",
-        "g3-explainable-oohri",
-        "g4-context-aware-expressive-motion"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-22 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
-      "id": "MAT-SOF-23",
-      "title": "SOF-23 · Long-term robot meaning 与 use 会在 routine、roles、maintenance、organizational practice、appropriation 与 developer feedback 中被共同塑造；culture 不应被缩减为静态国别 preference。",
-      "content": "既有领域综合：Long-term robot meaning 与 use 会在 routine、roles、maintenance、organizational practice、appropriation 与 developer feedback 中被共同塑造；culture 不应被缩减为静态国别 preference。\n类型：source_grounded_synthesis；状态：EMERGING；证据：MODERATE\n适用边界：F1/F2/F5 为 theory/research-agenda synthesis，F3/F4 是小规模 naturalistic cases，F6 仅完成摘要级审计；这些证据不能证明 autonomous robot learning 或 partner-specific convention。",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "e4-designing-robots-long-term",
-        "f1-emergence-social-norms-conventions",
-        "f2-robots-in-society",
-        "f3-robotic-products-social-products",
-        "f4-my-roomba-is-rambo",
-        "f5-robots-in-the-wild",
-        "f6-generative-encounters-robin"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-23 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
       "id": "MAT-SOF-24",
       "title": "SOF-24 · LLM naming-game convergence can be a false-positive mechanism claim: a shared pretrained label prior and apparatus presentation can accelerate or determine convergence, while per-agent label-pool permutation reveals slower interaction-driven negotiation.",
       "content": "既有领域综合：LLM naming-game convergence can be a false-positive mechanism claim: a shared pretrained label prior and apparatus presentation can accelerate or determine convergence, while per-agent label-pool permutation reveals slower interaction-driven negotiation.\n类型：source_grounded_synthesis；状态：EMERGING；证据：PRELIMINARY\n适用边界：Single-author preprint using artificial agent populations; shuffled agents still share pretrained label semantics, and results do not establish human-equivalent convention.",
@@ -361,32 +239,6 @@
       "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
       "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
       "provenance": "从 state_of_field.yaml 的 SOF-24 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
-      "id": "MAT-SOF-25",
-      "title": "SOF-25 · In evolutionary simulation, ecological usefulness, body geometry, and coordinated sender–receiver change jointly determine whether a referential code emerges and can transition from iconic to abstract without communication collapse.",
-      "content": "既有领域综合：In evolutionary simulation, ecological usefulness, body geometry, and coordinated sender–receiver change jointly determine whether a referential code emerges and can transition from iconic to abstract without communication collapse.\n类型：source_says；状态：EMERGING；证据：PRELIMINARY\n适用边界：Bee-inspired colony simulation with across-generation adaptation, permissive transition assumptions, and no human–AI dyad, repair, or multimodal social meaning.",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "x14-bee-referential-code"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-25 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
-      "id": "MAT-SOF-26",
-      "title": "SOF-26 · A simulated agent can acquire partner-sensitive linguistic policies when bodily state, linguistic action, partner response, and nonresetting consequences form one causal loop.",
-      "content": "既有领域综合：A simulated agent can acquire partner-sensitive linguistic policies when bodily state, linguistic action, partner response, and nonresetting consequences form one causal loop.\n类型：source_says；状态：EMERGING；证据：PRELIMINARY\n适用边界：Scripted ecology, simulated one-dimensional body, four fixed actions, no humans, and no evidence of mutual convention or open meaning negotiation.",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "x15-synthetic-linguistic-agency"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-26 迁移到独立材料箱；不创建虚构投稿项目。"
     },
     {
       "id": "MAT-SOF-27",
@@ -413,32 +265,6 @@
       "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
       "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
       "provenance": "从 state_of_field.yaml 的 SOF-28 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
-      "id": "MAT-SOF-29",
-      "title": "SOF-29 · In short embodied collaboration, increasing robot self-disclosure can non-monotonically reduce user disclosure and perceived coordination, making embodiment congruence, authenticity, reciprocity, and privacy plausible social–functional boundary conditions.",
-      "content": "既有领域综合：In short embodied collaboration, increasing robot self-disclosure can non-monotonically reduce user disclosure and perceived coordination, making embodiment congruence, authenticity, reciprocity, and privacy plausible social–functional boundary conditions.\n类型：source_grounded_synthesis；状态：EMERGING；证据：PRELIMINARY\n适用边界：Single N=50 short-term study; disclosure content and word count were confounded, and interview explanations were not causally tested.",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "x18-small-talk-rapport"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-29 迁移到独立材料箱；不创建虚构投稿项目。"
-    },
-    {
-      "id": "MAT-SOF-30",
-      "title": "SOF-30 · Designer-specified decentralized language-game mechanisms can yield population-level grounded lexical convergence across continuous perceptual domains and remain partly robust to heterogeneous sensing and environmental perturbation.",
-      "content": "既有领域综合：Designer-specified decentralized language-game mechanisms can yield population-level grounded lexical convergence across continuous perceptual domains and remain partly robust to heterogeneous sensing and environmental perturbation.\n类型：source_grounded_synthesis；状态：EMERGING；证据：MODERATE\n适用边界：Algorithmic convergence with built-in invention, target disclosure, adoption and reinforcement is not partner-specific human–AI common ground; dataset features are not physical sensorimotor embodiment.",
-      "section": "论点与证据",
-      "paper_slugs": [
-        "x19-continuous-worlds-vocabularies"
-      ],
-      "source_checked_at": "2026-09-07",
-      "url": "https://github.com/mjj5444845/HCI-research-skill/blob/main/research-programs/amsc/state/state_of_field.yaml",
-      "next_action": "按未来写作项目选择章节；使用前复核原文与最新证据，不直接作为已完成稿件。",
-      "provenance": "从 state_of_field.yaml 的 SOF-30 迁移到独立材料箱；不创建虚构投稿项目。"
     },
     {
       "id": "MAT-SOF-31",

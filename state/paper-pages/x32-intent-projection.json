@@ -1,0 +1,69 @@
+{
+  "id": "X32",
+  "slug": "x32-intent-projection",
+  "title": "Beyond the Literal: Decomposing Pragmatic Intent in Multimodal Meme Understanding",
+  "authors": [
+    "Zhengyi Zhao",
+    "Shubo Zhang",
+    "Zezhong Wang",
+    "Luyao Ye",
+    "Huimin Wang",
+    "Hanqi Yan",
+    "Binyang Li",
+    "Kam-Fai Wong",
+    "Yulan He"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint, 2 June 2026",
+  "source_url": "https://arxiv.org/abs/2606.03604",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "作者报告多个骨干的生成和分类指标改善，尤其在字面内容与用意差异较大的材料上。",
+  "problem": "如何减少模型用画面描述代替meme用意解释的倾向？",
+  "method": "Intent Projection结合表征投影、结构化解释、自蒸馏和奖励训练；在多个meme与讽刺任务上比较基线及消融。",
+  "findings": [
+    "作者报告多个骨干的生成和分类指标改善，尤其在字面内容与用意差异较大的材料上。"
+  ],
+  "real_contribution": "模型方法是主线的独立贡献路径；不能宣称尚无字面与语用分离方法，需核对训练成本、标签效度和跨分布收益。",
+  "biggest_weakness": "预印本，未独立复现；主要英语/西方平台数据，自蒸馏可能复制错误；指标提升不证明恢复真实作者意图。",
+  "claim_boundary": "预印本，未独立复现；主要英语/西方平台数据，自蒸馏可能复制错误；指标提升不证明恢复真实作者意图。",
+  "why_researcher_should_care": "模型方法是主线的独立贡献路径；不能宣称尚无字面与语用分离方法，需核对训练成本、标签效度和跨分布收益。",
+  "amsc": {
+    "mainline_fit": null,
+    "buckets": [
+      "B",
+      "D"
+    ],
+    "stages": [
+      "Social meaning/pragmatics"
+    ],
+    "mechanisms": [
+      "如何减少模型用画面描述代替meme用意解释的倾向？"
+    ],
+    "gap_ids": [
+      "GAP-04",
+      "GAP-05"
+    ],
+    "master_list_decision": "Candidate — Important / recovered under program v2"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "正文方法概述、实验表1–4、消融及局限核查；训练成本与复现未核实。",
+    "Historical recovery outside 2026-09-11–18 window; normal audit, not deep replication."
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2606.03604v1",
+      "accessed_at": "2026-09-18",
+      "scope": "正文方法概述、实验表1–4、消融及局限核查；训练成本与复现未核实。"
+    }
+  ],
+  "provenance": "amsc-radar-2026-09-18",
+  "updated_at": "2026-09-18",
+  "program_membership": {
+    "status": "ACTIVE",
+    "program_version": "2.0",
+    "reviewed_at": "2026-09-18",
+    "reason": "模型方法是主线的独立贡献路径；不能宣称尚无字面与语用分离方法，需核对训练成本、标签效度和跨分布收益。"
+  }
+}

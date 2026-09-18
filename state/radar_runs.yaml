@@ -1,6 +1,60 @@
-version: 0.3
-updated_at: 2026-09-03
+version: "0.5"
+updated_at: 2026-09-18
 runs:
+  - id: amsc-radar-2026-09-18
+    program: AMSC
+    program_version: "2.0"
+    completed_at: 2026-09-18T17:18:02.727Z
+    window_start: 2026-09-11
+    window_end: 2026-09-18
+    timezone: America/New_York
+    deeply_investigated: 0
+    normally_investigated: 6
+    master_list_additions:
+      - X30
+      - X31
+      - X32
+      - X33
+      - X34
+      - X35
+    in_window_additions: []
+    recovered_additions:
+      - X30
+      - X31
+      - X32
+      - X33
+      - X34
+      - X35
+    report: reports/radar/2026-09-18-amsc-mainline-v2.md
+    status: COMPLETE_WITH_ACCESS_LIMITATIONS
+    access_note: Bounded web/primary-source search and independent missing-paper attack; six normal full-text
+      audits, no replication. Publisher coverage incomplete; tracked LREC PDF failed to open.
+  - id: amsc-radar-2026-09-14
+    program: AMSC
+    completed_at: 2026-09-14T11:05:45-04:00
+    window_start: 2026-09-07
+    window_end: 2026-09-14
+    timezone: America/New_York
+    deeply_investigated: 3
+    normally_investigated: 2
+    master_list_additions:
+      - X25
+      - X26
+      - X27
+      - X28
+      - X29
+    in_window_additions:
+      - X26
+      - X27
+      - X28
+    recovered_additions:
+      - X25
+      - X29
+    report: reports/radar/2026-09-14-amsc-mainline.md
+    status: COMPLETE_WITH_ACCESS_LIMITATIONS
+    access_note: Five accepted full texts audited; publisher-first coverage incomplete; F6/X20 remain abstract-only.
+    verification: "build: 70 papers; test:site: 117 pages; workspace: 7/7; reading: 2/2; validate-install and
+      diff-check passed."
   - id: amsc-radar-2026-09-03
     program: AMSC
     scheduled_for: manual-now
@@ -9,15 +63,19 @@ runs:
     window_end: 2026-09-03T10:00:00-04:00
     timezone: America/New_York
     deeply_investigated: 3
-    master_list_additions: [X17, X18, X19]
+    master_list_additions:
+      - X17
+      - X18
+      - X19
     deduplicated_existing:
       - id: X19
-        lineage: "arXiv:2401.08461 / AAMAS 2024 extended abstract"
+        lineage: arXiv:2401.08461 / AAMAS 2024 extended abstract
     tracked_not_promoted:
-      - doi: "10.1108/RIA-06-2025-0164"
-        reason: "Abstract-only evidence supports embodied iterated imitation, not dyadic common ground."
+      - doi: 10.1108/RIA-06-2025-0164
+        reason: Abstract-only evidence supports embodied iterated imitation, not dyadic common ground.
     report: reports/radar/2026-09-03-amsc-mainline.md
-    access_note: "X17–X19 had open full text. Several ACM, IEEE, Taylor & Francis, and Emerald records remained metadata- or abstract-only and were kept in validation/watch queues."
+    access_note: X17–X19 had open full text. Several ACM, IEEE, Taylor & Francis, and Emerald records
+      remained metadata- or abstract-only and were kept in validation/watch queues.
   - id: amsc-radar-2026-08-31
     program: AMSC
     scheduled_for: 2026-08-31T08:00:00-04:00
@@ -26,14 +84,22 @@ runs:
     window_end: 2026-08-31T08:00:00-04:00
     timezone: America/New_York
     deeply_investigated: 5
-    master_list_additions: [X13, X14, X15, X16]
+    master_list_additions:
+      - X13
+      - X14
+      - X15
+      - X16
     deduplicated_existing:
       - id: X6
         arxiv: "2608.26035"
     report: reports/radar/2026-08-31-amsc-mainline.md
-    access_note: "All four accepted candidates had open full text. Database coverage was incomplete for ACM/IEEE, OSF/PsyArXiv/SSRN, and the local sandbox validator could not start because C: had no free space."
+    access_note: "All four accepted candidates had open full text. Database coverage was incomplete for
+      ACM/IEEE, OSF/PsyArXiv/SSRN, and the local sandbox validator could not start because C: had no free
+      space."
 change_log:
   - date: 2026-09-03
-    change: "Recorded the manual full AMSC radar run, added X17–X19, retained abstract-only robot communication work as Track, and activated the Monday 03:00 America/New_York schedule."
+    change: Recorded the manual full AMSC radar run, added X17–X19, retained abstract-only robot
+      communication work as Track, and activated the Monday 03:00 America/New_York schedule.
   - date: 2026-08-31
-    change: "Recorded the first configured weekly AMSC radar run; preserved the 2026-08-27 manual radar state and deduplicated its X6 candidate."
+    change: Recorded the first configured weekly AMSC radar run; preserved the 2026-08-27 manual radar state
+      and deduplicated its X6 candidate.
