@@ -33,10 +33,7 @@
       "C",
       "D"
     ],
-    "stages": [
-      "Grounding",
-      "Convention"
-    ],
+    "stages": [],
     "mechanisms": [
       "referential grounding",
       "LVLM"
@@ -52,7 +49,7 @@
   "real_contribution": "可复用的HH/HA/AH/AA自由多轮比较与语料，为区分成功、成本、词汇对齐和伙伴建模提供诊断来源。",
   "biggest_weakness": "主比较仅一种模型配置；prompt确认要求、视觉/顺序状态故障及分批招募可能混淆。重复pair依赖、条件×轮次与斜率区间报告不够明确。",
   "investigation_status": "full_paper_investigation",
-  "why_researcher_should_care": "RQ1需同时控制通用状态追踪、信息量与prompt；RQ2需将repair机会、政策、uptake与后续成功分测。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "evidence_notes": [
     "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
     "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。",
@@ -122,10 +119,10 @@
     "data_reanalysis": false
   },
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

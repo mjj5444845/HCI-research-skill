@@ -26,7 +26,7 @@
   "real_contribution": "为 dyad→population convention transfer 提供理论与计算 baseline，阻止 AMSC 把 generic lifecycle/transfer theory 当成空白。",
   "biggest_weakness": "计算可扩展性、online incrementality 与现实开放环境仍有限；没有 embodied multimodal Agent。",
   "claim_boundary": "解决 generic human convention transfer 的理论缺口，不解决 embodied human–AI 中如何在线检测、协商、修复或迁移 mapping。",
-  "why_researcher_should_care": "要求下一步 novelty 建立在现有 multi-timescale convention theory 之上，而非把 partner-specific 与 transferable convention 错误对立。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9.7,
     "buckets": [
@@ -34,11 +34,7 @@
       "E",
       "F"
     ],
-    "stages": [
-      "Grounding",
-      "Convention",
-      "Adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "hierarchical Bayesian inference",
       "partner-to-population transfer"
@@ -58,10 +54,10 @@
   "provenance": "amsc_radar_2026-08-27_recovery",
   "updated_at": "2026-08-27",
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

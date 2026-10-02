@@ -199,10 +199,15 @@ If a fast one-shot study cannot support the mainline claim, expose the mismatch 
 
 ## Current program contract
 
-For AMSC work, load `research-programs/amsc/PROGRAM.md` and `program.yaml`; their current version overrides historical framing. HCI, AI, CV and NLP are equal routes. X21/arXiv:2609.04384 is user-confirmed second-author work and the near-term foundation. Do not require robots, user studies, embodied settings or convention formation for a valid mainline contribution. Choose human evidence when the claim concerns human behavior or interpretation. Understanding is the current focus, not a mandatory sequence of papers. Archived v1 content is not an active priority.
+For AMSC work, load current PROGRAM.md and program.yaml (v3.0, 2026-10-02). The mainline is robot visual/embodied expression, user interpretation, character–behavior coherence and relationships, including an AI companion with robotic/electronic extensions. One companion and separate characters are alternatives, not selected winners. Devices need not converse or carry independent personas. Persistence is not fixed behavior; evolution is not random drift. Empirical, artifact and evidence-supported theoretical contributions are valid; computational work must state its substantive bridge. Human perception and relationship claims need appropriate human evidence; short-term liking is not long-term relationship. X21 remains user-confirmed foundation, not a required starting point. No first RQ or new hardware access is approved. Preserve archives and human edits; reactivation needs item-level review.
 
 ## Computational evidence module
 
 For AI/CV/NLP contributions audit train/test and source separation, leakage and contamination, fair baselines, ablations, prompt/model/version/seeds, compute/data budgets, evaluation uncertainty, label ambiguity, annotation provenance and reproducibility. Split correlated items by episode/source/participant where the generalization claim requires it. Model-only experiments are valid; do not infer human effects from them. Route one relevant independent computational auditor rather than every qualitative auditor by default.
 
 Offline history-conditioned interpretation can be tested on suitable archived traces; it does not require new repeated-participant experiments. Claims about causal shared-history effects, partner specificity or convention formation require corresponding designs. Existing suitable human annotations or traces may supply human evidence without new recruitment. Confirm compute/API/data access; programming confidence and wearable ownership do not establish training capacity.
+
+
+## Robot expression and companion evidence
+
+Separate readability, confidence, technical coherence, perceived character and relationship. Match task capability and stimuli. Videos cannot establish physical co-presence; narrated time cannot establish longitudinal change. Separate traits, mood, preferences and history.

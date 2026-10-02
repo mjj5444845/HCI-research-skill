@@ -1,0 +1,64 @@
+{
+  "id": "X36",
+  "slug": "x36-polite-but-misaligned",
+  "title": "Polite but Misaligned: Evaluating LLM Politeness Judgments Against Human Pragmatic Norms",
+  "authors": [
+    "Rong Wang",
+    "Kun Sun",
+    "Yadong Guo"
+  ],
+  "year": 2026,
+  "venue": "EMNLP 2026",
+  "source_url": "https://arxiv.org/abs/2609.29001",
+  "doi": "10.48550/arXiv.2609.29001",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "七个LLM彼此对礼貌判断的一致性显著高于其与人类的一致性，并出现向Neutral压缩的方向性偏差。",
+  "problem": "模型的politeness标签与哪一种human pragmatic reference对齐，分歧是否具有稳定方向？",
+  "method": "在两个英语礼貌语料上比较七个模型、crowd labels与human leave-one-out；对318个高分歧样本由五名受过语言学/语用训练的标注者复核，并分析礼貌策略。",
+  "findings": [
+    "平均inter-model相关高于model-human相关。",
+    "分类判断系统性过产Neutral并低估Impolite；专家诊断集上仍存在该方向性偏差。"
+  ],
+  "real_contribution": "把human reference与directional miscalibration本身变成社会语用评估对象，而非把单一标签或模型共识视作gold。",
+  "biggest_weakness": "仅英语礼貌现象；专家集按高分歧抽样，不能估计总体流行率；表面策略关联不是内部机制证据。",
+  "claim_boundary": "不能据此声称LLM普遍不理解礼貌、专家标签代表唯一社会规范，或偏差由RLHF造成。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
+  "amsc": {
+    "mainline_fit": "high",
+    "buckets": [
+      "B",
+      "D"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "human-reference disagreement",
+      "neutral compression"
+    ],
+    "gap_ids": [
+      "GAP-04",
+      "GAP-05"
+    ],
+    "master_list_decision": "Candidate — Must Read / human-reference calibration"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "公开全文已核查方法、主要结果和限制；未复现实验。",
+    "不操纵communication background，也不估计recipient-level effect。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2609.29001v1",
+      "accessed_at": "2026-09-28",
+      "scope": "全文方法、结果、专家诊断与限制"
+    }
+  ],
+  "provenance": "amsc-radar-2026-09-28",
+  "updated_at": "2026-09-28",
+  "program_membership": {
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+  }
+}

@@ -25,7 +25,7 @@
   "real_contribution": "为GAP04/05补上跨文化meme理解先例；可借鉴解释与误解预测分离，但不复制粗粒度文化假设。",
   "biggest_weakness": "双向视角不等于双向meme来源；群体内差异、评分和模板污染仍需审查，不能把国籍直接等同文化。",
   "claim_boundary": "双向视角不等于双向meme来源；群体内差异、评分和模板污染仍需审查，不能把国籍直接等同文化。",
-  "why_researcher_should_care": "为GAP04/05补上跨文化meme理解先例；可借鉴解释与误解预测分离，但不复制粗粒度文化假设。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": null,
     "buckets": [
@@ -33,9 +33,7 @@
       "D",
       "F"
     ],
-    "stages": [
-      "Social meaning/pragmatics"
-    ],
+    "stages": [],
     "mechanisms": [
       "人们预测的跨文化误解与接收者实际解释是否一致，模型能否处理这种差异？"
     ],
@@ -60,9 +58,9 @@
   "provenance": "amsc-radar-2026-09-18",
   "updated_at": "2026-09-18",
   "program_membership": {
-    "status": "ACTIVE",
-    "program_version": "2.0",
-    "reviewed_at": "2026-09-18",
-    "reason": "为GAP04/05补上跨文化meme理解先例；可借鉴解释与误解预测分离，但不复制粗粒度文化假设。"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   }
 }

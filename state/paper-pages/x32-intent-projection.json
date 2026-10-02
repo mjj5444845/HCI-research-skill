@@ -27,16 +27,14 @@
   "real_contribution": "模型方法是主线的独立贡献路径；不能宣称尚无字面与语用分离方法，需核对训练成本、标签效度和跨分布收益。",
   "biggest_weakness": "预印本，未独立复现；主要英语/西方平台数据，自蒸馏可能复制错误；指标提升不证明恢复真实作者意图。",
   "claim_boundary": "预印本，未独立复现；主要英语/西方平台数据，自蒸馏可能复制错误；指标提升不证明恢复真实作者意图。",
-  "why_researcher_should_care": "模型方法是主线的独立贡献路径；不能宣称尚无字面与语用分离方法，需核对训练成本、标签效度和跨分布收益。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": null,
     "buckets": [
       "B",
       "D"
     ],
-    "stages": [
-      "Social meaning/pragmatics"
-    ],
+    "stages": [],
     "mechanisms": [
       "如何减少模型用画面描述代替meme用意解释的倾向？"
     ],
@@ -61,9 +59,9 @@
   "provenance": "amsc-radar-2026-09-18",
   "updated_at": "2026-09-18",
   "program_membership": {
-    "status": "ACTIVE",
-    "program_version": "2.0",
-    "reviewed_at": "2026-09-18",
-    "reason": "模型方法是主线的独立贡献路径；不能宣称尚无字面与语用分离方法，需核对训练成本、标签效度和跨分布收益。"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   }
 }

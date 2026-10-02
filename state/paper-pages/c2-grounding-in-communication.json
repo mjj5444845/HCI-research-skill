@@ -22,16 +22,13 @@
   "real_contribution": "给出可操作的 grounding 理论语法，把 common ground、positive evidence、repair、媒介 affordance 与 collective effort 放入同一框架。",
   "biggest_weakness": "mutual belief 难以直接观测；框架依赖 cooperative coordination，媒介 taxonomy 源自 1991 年 ecology，且无 embodied AI 或 causal comparison。",
   "claim_boundary": "这是理论框架与既有证据综合；system memory、task success 或 acknowledgment signal 都不能自动等同于 mutual grounding。",
-  "why_researcher_should_care": "common ground / grounding 的理论地基。你以后所有“interaction history”“双方已经知道对方知道什么”的论证都离不开它。",
+  "why_researcher_should_care": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。",
   "amsc": {
     "mainline_fit": 10,
     "buckets": [
       "C"
     ],
-    "stages": [
-      "Grounding / Common Ground",
-      "Situated Adaptive Communication"
-    ],
+    "stages": [],
     "mechanisms": [
       "Grounding",
       "Embodied Communication"
@@ -79,10 +76,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "SUPPORTING",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
   },
   "scope_updated_at": "2026-09-18"
 }

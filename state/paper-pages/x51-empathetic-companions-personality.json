@@ -1,0 +1,58 @@
+{
+  "id": "X51",
+  "slug": "x51-empathetic-companions-personality",
+  "title": "Designing Empathetic Companions: Exploring Personality, Emotion, and Trust in Social Robots",
+  "authors": [
+    "Alice Nardelli",
+    "Antonio Sgorbissa",
+    "Carmine Tommaso Recchiuto"
+  ],
+  "year": 2025,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/html/2504.13964v1",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "机器人个性如何联系情绪、动作与信任",
+  "problem": "机器人个性如何联系情绪、动作与信任",
+  "method": "28人各三次5分钟互动；人格控制情绪、凝视、决策和语言，共84次会话而非84人。",
+  "findings": [
+    "作者报告受测人格维度可辨认，并报告部分信任及共情关联。"
+  ],
+  "real_contribution": "机器人个性如何联系情绪、动作与信任",
+  "biggest_weakness": "短会话不证明持久演变；重复测量与Mann–Whitney分析匹配需复核；p=.06不能写显著。",
+  "claim_boundary": "短会话不证明持久演变；重复测量与Mann–Whitney分析匹配需复核；p=.06不能写显著。",
+  "why_researcher_should_care": "提供新主线的直接先例与反证边界；组合已有设计不自动构成新颖性。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "A",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "机器人个性如何联系情绪、动作与信任"
+    ],
+    "gap_ids": [
+      "GAP-RC-02"
+    ],
+    "master_list_decision": "Added after independent focused audit"
+  },
+  "investigation_status": "focused_source_audit",
+  "evidence_notes": [
+    "2026-10-02独立文献代理核查；全文可访问与完整深度调查分开，未复现实验。",
+    "短会话不证明持久演变；重复测量与Mann–Whitney分析匹配需复核；p=.06不能写显著。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/html/2504.13964v1"
+    ]
+  },
+  "updated_at": "2026-10-02",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "机器人个性如何联系情绪、动作与信任"
+  }
+}

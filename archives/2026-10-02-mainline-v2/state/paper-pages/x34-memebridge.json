@@ -1,0 +1,68 @@
+{
+  "id": "X34",
+  "slug": "x34-memebridge",
+  "title": "MemeBridge: A Dataset for Benchmarking and Mitigating the Bidirectional Cultural Gap in Meme Interpretation",
+  "authors": [
+    "Hangxiao Zhu",
+    "Suliu Qin",
+    "Zhuoyan Li",
+    "Ming Jiang",
+    "Yu Zhang",
+    "Meng Xia"
+  ],
+  "year": 2026,
+  "venue": "KDD 2026",
+  "source_url": "https://arxiv.org/abs/2609.00491",
+  "doi": "10.1145/3770854.3785691",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "作者发现预测误解与实际解释存在不匹配；提供文化知识和解释评价资源。",
+  "problem": "人们预测的跨文化误解与接收者实际解释是否一致，模型能否处理这种差异？",
+  "method": "621个美国来源meme；美国参与者预测误解、中国参与者提供解释，多阶段众包与模型评测。",
+  "findings": [
+    "作者发现预测误解与实际解释存在不匹配；提供文化知识和解释评价资源。"
+  ],
+  "real_contribution": "为GAP04/05补上跨文化meme理解先例；可借鉴解释与误解预测分离，但不复制粗粒度文化假设。",
+  "biggest_weakness": "双向视角不等于双向meme来源；群体内差异、评分和模板污染仍需审查，不能把国籍直接等同文化。",
+  "claim_boundary": "双向视角不等于双向meme来源；群体内差异、评分和模板污染仍需审查，不能把国籍直接等同文化。",
+  "why_researcher_should_care": "为GAP04/05补上跨文化meme理解先例；可借鉴解释与误解预测分离，但不复制粗粒度文化假设。",
+  "amsc": {
+    "mainline_fit": null,
+    "buckets": [
+      "B",
+      "D",
+      "F"
+    ],
+    "stages": [
+      "Social meaning/pragmatics"
+    ],
+    "mechanisms": [
+      "人们预测的跨文化误解与接收者实际解释是否一致，模型能否处理这种差异？"
+    ],
+    "gap_ids": [
+      "GAP-04",
+      "GAP-05"
+    ],
+    "master_list_decision": "Candidate — Must Read / recovered under program v2"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "独立审查者核验出版稿方法、结果与局限；70/15/15切分未核实模板或来源分组。日期字段为arXiv首发，会议早于该日。",
+    "Historical recovery outside 2026-09-11–18 window; normal audit, not deep replication."
+  ],
+  "sources": [
+    {
+      "url": "https://www.xiameng.org/KDD_Meme_Bridge.pdf",
+      "accessed_at": "2026-09-18",
+      "scope": "独立审查者核验出版稿方法、结果与局限；70/15/15切分未核实模板或来源分组。日期字段为arXiv首发，会议早于该日。"
+    }
+  ],
+  "provenance": "amsc-radar-2026-09-18",
+  "updated_at": "2026-09-18",
+  "program_membership": {
+    "status": "ACTIVE",
+    "program_version": "2.0",
+    "reviewed_at": "2026-09-18",
+    "reason": "为GAP04/05补上跨文化meme理解先例；可借鉴解释与误解预测分离，但不复制粗粒度文化假设。"
+  }
+}

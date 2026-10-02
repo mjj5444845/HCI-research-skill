@@ -26,18 +26,14 @@
   "real_contribution": "把 reference/convention formation 连接到 hierarchical action structure，提供 assembly paradigm 与 computational vocabulary。",
   "biggest_weakness": "shared procedural abstraction 未直接测量；Builder 无语言反馈，model 假设双方同速学习同一 DSL，未 fit individual trajectories；coding 无 reliability，初始 high accuracy 弱化 necessity claim。",
   "claim_boundary": "支持 constrained online human assembly 中 repetition、简短 tower-level talk 与 performance 的关联；不证明相同 internal representation、causal abstraction、mutual grounding 或 embodied AI transfer。",
-  "why_researcher_should_care": "repeated physical assembly 中，人会建立更高级的 procedural abstraction，并通过交流协调这些 abstraction。是你进入 physical collaboration 的关键桥梁。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9.3,
     "buckets": [
       "B",
       "C"
     ],
-    "stages": [
-      "Grounding / Common Ground",
-      "Convention Formation",
-      "Situated Adaptive Communication"
-    ],
+    "stages": [],
     "mechanisms": [
       "Grounding",
       "Convention",
@@ -85,10 +81,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

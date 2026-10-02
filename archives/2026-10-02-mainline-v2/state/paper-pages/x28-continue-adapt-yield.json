@@ -1,0 +1,67 @@
+{
+  "id": "X28",
+  "slug": "x28-continue-adapt-yield",
+  "title": "Continue, Adapt, or Yield: In-Turn Adaptation to Overlapping Speech in Full-Duplex Agents",
+  "authors": [
+    "Yunqi Lu",
+    "Tyler Baumgartner",
+    "Nikhil Johri",
+    "Brandon Tai",
+    "Candice Fan",
+    "Luc Debaupte",
+    "Ruben Aguilar",
+    "Bill Wang",
+    "Yi Zhong"
+  ],
+  "venue": "arXiv preprint, 11 September 2026",
+  "source_url": "https://arxiv.org/abs/2609.13117",
+  "priority": "Important",
+  "one_sentence": "Duplex Cue distinguishes content uptake while speaking from unchanged continuation and yielding.",
+  "problem": "How can evaluation detect responding to an overlapping contribution without stopping?",
+  "method": "300 cues from English conversations; recorded responses versus one PersonaPlex generation per cue; 208 pairs active and scorable in both conditions.",
+  "findings": [
+    "Among 66 collaborative pairs, adaptation was 68.2% for recorded speakers and 34.8% for PersonaPlex.",
+    "Cue classification used subsequent source behavior, partly building adaptation into the human comparison."
+  ],
+  "real_contribution": "A local uptake category missing from binary floor-retention scoring.",
+  "biggest_weakness": "Outcome leakage, asymmetric exclusions, bounded converted model history, one model and non-independent adjudication.",
+  "claim_boundary": "Adaptation includes acknowledgment; it does not establish correct repair, causal cue effects or restored grounding.",
+  "why_researcher_should_care": "Add uptake as a separate repair-stage measure, then test correct revision and later reuse.",
+  "amsc": {
+    "mainline_fit": 8.4,
+    "buckets": [
+      "C",
+      "D"
+    ],
+    "stages": [
+      "Grounding/common ground",
+      "Situated adaptive communication"
+    ],
+    "mechanisms": [
+      "overlap",
+      "in-turn uptake",
+      "floor management"
+    ],
+    "gap_ids": [
+      "GAP-03",
+      "GAP-04"
+    ],
+    "master_list_decision": "Candidate — Important / uptake measurement component"
+  },
+  "evidence_notes": [
+    "Full HTML and independent quantitative audit.",
+    "Blind cue labeling and no-cue controls are proposed next checks, not completed evidence."
+  ],
+  "year": 2026,
+  "access_status": "full_text",
+  "investigation_status": "radar_full_text_audit",
+  "provenance": "amsc_radar_2026-09-14",
+  "updated_at": "2026-09-14",
+  "program_membership": {
+    "status": "ACTIVE",
+    "reviewed_at": "2026-09-18",
+    "program_version": "2.0",
+    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+  },
+  "scope_updated_at": "2026-09-18"
+}

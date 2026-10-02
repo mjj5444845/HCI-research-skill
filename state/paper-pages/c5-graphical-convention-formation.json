@@ -24,17 +24,14 @@
   "real_contribution": "用 repeated/control 与 yoked/shuffled history controls 建立后来 C6 的核心方法骨架。",
   "biggest_weakness": "yoked observers 不是原 partner；manipulation 隔离的是 same-producer sequence continuity，不是 reciprocal common ground。单一 chair category、固定角色，部分结果在 C6 replication 中修正。",
   "claim_boundary": "不能据此声称 arbitrary symbols、mutual negotiation、internal shared belief 或 embodied AI；C5 是 C6 明示的早期 findings subset，不应计为独立 evidence source。",
-  "why_researcher_should_care": "把 convention formation 从 verbal communication 推向 graphical communication；与你的 visual convention 路线直接相连。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9.1,
     "buckets": [
       "A",
       "C"
     ],
-    "stages": [
-      "Grounding / Common Ground",
-      "Convention Formation"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning",
       "Grounding",
@@ -86,10 +83,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

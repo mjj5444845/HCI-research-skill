@@ -1,16 +1,16 @@
 {
-  "version": "2.1",
-  "last_updated": "2026-09-18",
+  "version": "3.0",
+  "last_updated": "2026-10-02",
   "update_contract": "Paper Investigation、Literature Investigation、Research Radar、Idea Development 与 Study Design 的持久化结果首先更新长期 AMSC research program；只有直接改变考试主题、anchor、写作论点或口试问题的子集才进入 Comprehensive Exam 下游视图。",
   "next_scheduled_run": {
     "name": "AMSC 每周完整 Research Radar",
-    "scheduled_for": "2026-09-21T03:00:00-04:00",
+    "scheduled_for": "2026-10-05T03:00:00-04:00",
     "scope": "Every Monday at 03:00 America/New_York: full retrieval, deduplication, triage, investigation, red-team review, state integration, report generation, and validation.",
     "automation_id": "amsc-research-radar",
     "status": "ACTIVE"
   },
   "field_map": {
-    "coverage_note": "48篇活动论文；本轮6篇历史补回，最近一周未核实新增。不同审查深度与来源边界见论文页。",
+    "coverage_note": "76篇记录：55篇逐项重评、11篇历史恢复、10篇新增核实先例。新方向检索为focused audit，非完整综述；5个新gap均为候选。",
     "status_definitions": {
       "STILL_HOLDS": "新证据没有推翻原结论，且其边界仍可辩护。",
       "STRENGTHENED": "新增独立证据提高了结论可信度或扩展了适用范围。",
@@ -412,6 +412,151 @@
         ],
         "boundary": "综合不构成新颖性结论，也不证明这些方法解决真实互动中的理解；各研究样本、任务和证据不同。",
         "cumulative_change": "REDEFINED"
+      },
+      {
+        "id": "SOF-43",
+        "statement": "在两个英语礼貌语料和一个高分歧专家诊断子集上，受测LLM彼此一致性高于模型—人一致性，并出现向Neutral压缩的方向性偏差；模型共识不能替代human pragmatic reference。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x36-polite-but-misaligned"
+        ],
+        "boundary": "第二语料来源与标签过程不清；专家仅5名L2英语语言学研究者且按高分歧抽样。只能称特定panel/reference，不能外推human norms、文化或内部机制。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-44",
+        "statement": "在受控生成任务中，最终可用信息相当并不保证结果相同；早期歧义形成的旧假设可在后续澄清后继续污染行为，因此memory availability、acknowledgment与state invalidation必须分开评价。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x37-clarification-not-correction"
+        ],
+        "boundary": "两种Gemini、生成任务与同族model judge；未排除全部位置/近因/指令效应，也未研究真实recipient或visual feedback。early posterior collapse不是测得的内部posterior。",
+        "cumulative_change": "NEW_CORE"
+      },
+      {
+        "id": "SOF-45",
+        "statement": "低维read-write bottleneck可编码并因果操纵模型从对话中推断的部分user state，但这种模型自我报告belief不等于真实用户属性、recipient interpretation或完整listener model。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x38-user-model-belief-distillation"
+        ],
+        "boundary": "三种7–8B白盒模型、预设属性与自蒸馏监督；存在cross-attribute leakage，无真实用户ground truth。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-46",
+        "statement": "实时直播与多方语音benchmark已把selective participation拆为whether/when/whom/what、speaker-scoped state、authority与restraint；这些rubric与系统准确率仍不等于social appropriateness、usefulness或shared meaning。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x39-live-assistant",
+          "x40-msi-bench"
+        ],
+        "boundary": "Live Assistant含teacher-generated trajectories与自动judge；MSI-Bench主要是脚本/TTS场景。二者没有真实互动中的recipient outcome或共同理解证据。",
+        "cumulative_change": "REDEFINED"
+      },
+      {
+        "id": "SOF-47",
+        "statement": "在175名两次均采用AI草稿的日美Prolific雇员中，邮件表面风格marker随预选草稿移动，且研究者定义的misaligned条件移动更大；这支持特定任务中的AI-mediated style shift，不支持国家规范被覆盖。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x41-ai-email-cultural-style"
+        ],
+        "boundary": "国别、居住地与语言捆绑；纳入率差异大，单一双语coder、翻译链和high/low-context复合指标未验证measurement invariance；邮件未真实发送。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-48",
+        "statement": "MemeCF表明可用反事实flip和局部rationale把标签相关的文本、图像与跨模态cue显式化，为failure trace提供方法先例；label flip仍不能证明恢复作者意图或recipient interpretation。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x42-memecf-pivotal-cues"
+        ],
+        "boundary": "9,895项中仅512项标为multimodal cue，主要任务是静态harm/hate/sarcasm分类；半自动生成与跨来源划分尚需泄漏审计。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-49",
+        "statement": "机器人表达设计、动作节奏及可读性已有直接研究；新主线须具体比较传意准确度、确信和角色归因，而非笼统宣称表达有益。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "ESTABLISHED",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "d4-expressing-thought",
+          "d5-legibility-and-predictability",
+          "x43-elegnt",
+          "x44-expressive-motion-timing"
+        ],
+        "boundary": "既有实验限于受测条件；D4未提高意图识别准确率，不能把确信提高当理解改善。",
+        "cumulative_change": "NEW_CORE"
+      },
+      {
+        "id": "SOF-50",
+        "statement": "跨载体companion及人格、记忆迁移已有LIREC直接先例；身份连续性感知与能力判断可以分离。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "ESTABLISHED",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x47-migrating-artificial-companions",
+          "x48-memory-identity-embodiments",
+          "x49-long-term-agent-migration"
+        ],
+        "boundary": "同一研究谱系，样本与载体有限；不能证明任意设备间关系完整迁移。",
+        "cumulative_change": "NEW_CORE"
+      },
+      {
+        "id": "SOF-51",
+        "statement": "角色到行为映射及任务匹配已有实现与实验，持久、可演变人格的具体边界仍需针对性验证。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x45-appearance-behavior-task",
+          "x46-companion-behavior-consistency",
+          "x51-empathetic-companions-personality",
+          "g4-context-aware-expressive-motion"
+        ],
+        "boundary": "短期评分不能证明长期人格；演化部分覆盖有限，未宣称文献空白。",
+        "cumulative_change": "NEW_CORE"
+      },
+      {
+        "id": "SOF-52",
+        "statement": "关系型代理和长期机器人使用已有研究；身份识别、留存、好感与关系质量不是同一证据对象。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "ESTABLISHED",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x50-computer-patient-alliance",
+          "e1-long-term-social-robots-survey",
+          "e4-designing-robots-long-term",
+          "f3-robotic-products-social-products"
+        ],
+        "boundary": "医疗working alliance、家庭实践和公共空间日志不能无条件合并为普遍陪伴效果。",
+        "cumulative_change": "NEW_CORE"
+      },
+      {
+        "id": "SOF-53",
+        "statement": "身份数量与设备数量不必一一对应；一个companion的多种外延和一台机器人多个身份都属于可比较设计空间。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x47-migrating-artificial-companions",
+          "x52-meet-my-sidekick"
+        ],
+        "boundary": "X52为摘要级；尚不能选出普遍最优架构。",
+        "cumulative_change": "NEW_CORE"
       }
     ],
     "gaps": [
@@ -421,7 +566,7 @@
         "statement": "How AI detects and updates interaction-dependent multimodal meanings; a long-term candidate requiring a concrete task and mechanism.",
         "priority": "LOW",
         "evidence_strength": "PRELIMINARY",
-        "research_implication": "长期保留，不作为首项研究的必经步骤。"
+        "research_implication": "2026-10-02方向调整：保留原科学状态和证据，旧优先级不代表当前首项研究。"
       },
       {
         "id": "GAP-02",
@@ -429,7 +574,7 @@
         "statement": "Mutual human–AI conventions whose formation is counterfactually dependent on shared interaction history, followed by repair and transfer tests",
         "priority": "LOW",
         "evidence_strength": "PRELIMINARY",
-        "research_implication": "长期保留，不作为首项研究的必经步骤。"
+        "research_implication": "2026-10-02方向调整：保留原科学状态和证据，旧优先级不代表当前首项研究。"
       },
       {
         "id": "GAP-03",
@@ -437,7 +582,7 @@
         "statement": "Convention lifecycle: establishment, maintenance, repair/revision, context-sensitive retirement, partner/context transfer, and renegotiation after breakdown",
         "priority": "LOW",
         "evidence_strength": "PRELIMINARY",
-        "research_implication": "长期保留，不作为首项研究的必经步骤。"
+        "research_implication": "2026-10-02方向调整：保留原科学状态和证据，旧优先级不代表当前首项研究。"
       },
       {
         "id": "GAP-04",
@@ -445,349 +590,893 @@
         "statement": "What evidence distinguishes expression recognition, pragmatic understanding, appropriate response, memory use, felt understanding and shared meaning for a specified research claim?",
         "priority": "MEDIUM",
         "evidence_strength": "PRELIMINARY",
-        "research_implication": "RefOI已展示自动指标与人的指称理解不一致；SpeechCap的表达体验、MemeBridge的解释和误解预测、CMPM的顺序与解释评分也有不同测量对象。不能宣称没有评价方法；需证明具体指标的新增效度。"
+        "research_implication": "2026-10-02方向调整：保留原科学状态和证据，旧优先级不代表当前首项研究。"
       },
       {
         "id": "GAP-05",
         "status": "REDEFINED",
-        "statement": "Which relations among text, visual expression and interaction context make social-pragmatic interpretation difficult for AI, and what evaluation or modeling advances address those difficulties?",
+        "statement": "Which relations among text, visual expression and interaction context causally change recipients' social-pragmatic interpretation, and how can evaluation or modeling predict recipient-, item- and timing-specific help, harm or no-change rather than only average context benefit?",
         "priority": "MEDIUM",
         "evidence_strength": "PRELIMINARY",
-        "research_implication": "花字互动系统、中文多格meme/评论评估、文化meme误解资源和多粒度融合/字面语用分离模型均有先例。新增模态、上下文或模型不自动构成新贡献；应定位尚未解决的具体能力、泛化或评价机制。"
+        "research_implication": "2026-10-02方向调整：保留原科学状态和证据，旧优先级不代表当前首项研究。"
+      },
+      {
+        "id": "GAP-RC-01",
+        "status": "CANDIDATE",
+        "statement": "同一视觉/动作线索在不同情境中，如何分别影响意图识别、判断确信及能力预期？",
+        "priority": "MEDIUM",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "研究方向获授权；候选gap尚未完成review-grade新颖性验证。"
+      },
+      {
+        "id": "GAP-RC-02",
+        "status": "CANDIDATE",
+        "statement": "角色约束如何跨动作、视觉反馈和主动性保持可感知的一致性，同时适应任务与设备能力？",
+        "priority": "MEDIUM",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "研究方向获授权；候选gap尚未完成review-grade新颖性验证。"
+      },
+      {
+        "id": "GAP-RC-03",
+        "status": "CANDIDATE",
+        "statement": "变化幅度、变化理由和互动历史分别怎样影响用户对同一companion成长、适应或性格漂移的判断？",
+        "priority": "MEDIUM",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "研究方向获授权；候选gap尚未完成review-grade新颖性验证。"
+      },
+      {
+        "id": "GAP-RC-04",
+        "status": "CANDIDATE",
+        "statement": "跨能力不对称设备时，表面身份、表达风格、记忆与任务连续性分别怎样影响身份识别、行为预期和责任归属？",
+        "priority": "MEDIUM",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "研究方向获授权；候选gap尚未完成review-grade新颖性验证。"
+      },
+      {
+        "id": "GAP-RC-05",
+        "status": "CANDIDATE",
+        "statement": "表达和行为一致性如何改变重复互动中的期待、信任校准、再次使用及失配后的关系理解？",
+        "priority": "MEDIUM",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "研究方向获授权；候选gap尚未完成review-grade新颖性验证。"
       }
     ]
   },
   "exam": {
     "title": "Multimodal Social Meaning, Understanding, and Adaptive Communication: Pragmatics, Evaluation, Shared Meaning and Adaptation",
-    "core_question": "暂定新主线考试视图：社会语用理解、多模态表达、计算评估、共享意义与适应；最终考试范围待确认。",
-    "written_target": "历史目标8–10页保留；新主题与篇幅分配待考试任务确认。",
+    "core_question": "人和AI如何在具体情境中表达、理解与协商多模态社会意义？这些过程如何受到模型能力、文化知识、关系与持续互动的影响？",
+    "written_target": "30篇支撑一组开放问题；以下仅是约9页的论证骨架，可按实际题目调整顺序、篇幅与取舍。8–10页仍为历史准备目标。",
     "top20": [
       {
         "order": 1,
-        "id": "C1",
-        "slug": "c1-referring-as-collaborative-process",
-        "theme": 3
+        "id": "A2",
+        "slug": "a2-textual-paralanguage",
+        "theme": 1,
+        "themes": [
+          1,
+          2
+        ],
+        "reading_group": "expression"
       },
       {
         "order": 2,
-        "id": "C2",
-        "slug": "c2-grounding-in-communication",
-        "theme": 3
+        "id": "A3",
+        "slug": "a3-interpreting-emoji-pragmatics",
+        "theme": 1,
+        "themes": [
+          1,
+          2,
+          6
+        ],
+        "reading_group": "expression"
       },
       {
         "order": 3,
-        "id": "C3",
-        "slug": "c3-conceptual-pacts",
-        "theme": 3
+        "id": "A4",
+        "slug": "a4-a-visual-lexicon",
+        "theme": 1,
+        "themes": [
+          1,
+          3
+        ],
+        "reading_group": "expression"
       },
       {
         "order": 4,
-        "id": "B1",
-        "slug": "b1-pragmatic-language-interpretation",
-        "theme": 2
+        "id": "A5",
+        "slug": "a5-multimodal-parallel-architecture",
+        "theme": 1,
+        "themes": [
+          1,
+          2
+        ],
+        "reading_group": "expression"
       },
       {
         "order": 5,
-        "id": "B2",
-        "slug": "b2-rational-speech-act-framework",
-        "theme": 2
+        "id": "X33",
+        "slug": "x33-speechcap",
+        "theme": 1,
+        "themes": [
+          1,
+          6
+        ],
+        "reading_group": "expression"
       },
       {
         "order": 6,
-        "id": "B3",
-        "slug": "b3-pragmatic-inference-visual-abstraction",
-        "theme": 2
+        "id": "X21",
+        "slug": "x21-social-pragmatic-chinese-comments",
+        "theme": 2,
+        "themes": [
+          2,
+          4,
+          6
+        ],
+        "reading_group": "interpretation"
       },
       {
         "order": 7,
-        "id": "C4",
-        "slug": "c4-repeated-reference-games",
-        "theme": 3
+        "id": "B1",
+        "slug": "b1-pragmatic-language-interpretation",
+        "theme": 2,
+        "themes": [
+          2,
+          4
+        ],
+        "reading_group": "interpretation"
       },
       {
         "order": 8,
-        "id": "C5",
-        "slug": "c5-graphical-convention-formation",
-        "theme": 3
+        "id": "B2",
+        "slug": "b2-rational-speech-act-framework",
+        "theme": 2,
+        "themes": [
+          2,
+          4
+        ],
+        "reading_group": "interpretation"
       },
       {
         "order": 9,
-        "id": "C6",
-        "slug": "c6-visual-resemblance-interaction-history",
-        "theme": 3
+        "id": "B3",
+        "slug": "b3-pragmatic-inference-visual-abstraction",
+        "theme": 2,
+        "themes": [
+          2,
+          1
+        ],
+        "reading_group": "interpretation"
       },
       {
         "order": 10,
-        "id": "C7",
-        "slug": "c7-shared-procedural-abstractions",
-        "theme": 3
+        "id": "B4",
+        "slug": "b4-when-redundancy-is-useful",
+        "theme": 2,
+        "themes": [
+          2,
+          4
+        ],
+        "reading_group": "interpretation"
       },
       {
         "order": 11,
-        "id": "C8",
-        "slug": "c8-gesturing-toward-abstraction",
-        "theme": 3
+        "id": "X30",
+        "slug": "x30-refoi-pragmatic-generation",
+        "theme": 4,
+        "themes": [
+          4,
+          2
+        ],
+        "reading_group": "evaluation"
       },
       {
         "order": 12,
-        "id": "A5",
-        "slug": "a5-multimodal-parallel-architecture",
-        "theme": 1
+        "id": "X31",
+        "slug": "x31-cmpm-order-matters",
+        "theme": 4,
+        "themes": [
+          4,
+          1,
+          2
+        ],
+        "reading_group": "evaluation"
       },
       {
         "order": 13,
-        "id": "A2",
-        "slug": "a2-textual-paralanguage",
-        "theme": 1
+        "id": "X32",
+        "slug": "x32-intent-projection",
+        "theme": 4,
+        "themes": [
+          4,
+          2
+        ],
+        "reading_group": "evaluation"
       },
       {
         "order": 14,
-        "id": "A1",
-        "slug": "a1-ai-mediated-communication",
-        "theme": 1
+        "id": "X35",
+        "slug": "x35-mgmc-fusion",
+        "theme": 4,
+        "themes": [
+          4,
+          2
+        ],
+        "reading_group": "evaluation"
       },
       {
         "order": 15,
+        "id": "X24",
+        "slug": "x24-multimodal-repair-detection",
+        "theme": 4,
+        "themes": [
+          4,
+          3
+        ],
+        "reading_group": "evaluation"
+      },
+      {
+        "order": 16,
+        "id": "A1",
+        "slug": "a1-ai-mediated-communication",
+        "theme": 1,
+        "themes": [
+          1,
+          6
+        ],
+        "reading_group": "social_context"
+      },
+      {
+        "order": 17,
+        "id": "A6",
+        "slug": "a6-puppetchat",
+        "theme": 1,
+        "themes": [
+          1,
+          5,
+          6
+        ],
+        "reading_group": "social_context"
+      },
+      {
+        "order": 18,
+        "id": "X34",
+        "slug": "x34-memebridge",
+        "theme": 6,
+        "themes": [
+          6,
+          4,
+          2
+        ],
+        "reading_group": "social_context"
+      },
+      {
+        "order": 19,
+        "id": "X27",
+        "slug": "x27-calibrated-ambiguity",
+        "theme": 6,
+        "themes": [
+          6,
+          1,
+          2,
+          4
+        ],
+        "reading_group": "social_context"
+      },
+      {
+        "order": 20,
+        "id": "X12",
+        "slug": "x12-partners-to-populations",
+        "theme": 3,
+        "themes": [
+          3,
+          5,
+          6
+        ],
+        "reading_group": "social_context"
+      },
+      {
+        "order": 21,
+        "id": "C1",
+        "slug": "c1-referring-as-collaborative-process",
+        "theme": 3,
+        "themes": [
+          3,
+          2
+        ],
+        "reading_group": "shared_meaning"
+      },
+      {
+        "order": 22,
+        "id": "C2",
+        "slug": "c2-grounding-in-communication",
+        "theme": 3,
+        "themes": [
+          3,
+          1
+        ],
+        "reading_group": "shared_meaning"
+      },
+      {
+        "order": 23,
+        "id": "C3",
+        "slug": "c3-conceptual-pacts",
+        "theme": 3,
+        "themes": [
+          3,
+          5
+        ],
+        "reading_group": "shared_meaning"
+      },
+      {
+        "order": 24,
+        "id": "C6",
+        "slug": "c6-visual-resemblance-interaction-history",
+        "theme": 3,
+        "themes": [
+          3,
+          1
+        ],
+        "reading_group": "shared_meaning"
+      },
+      {
+        "order": 25,
+        "id": "C8",
+        "slug": "c8-gesturing-toward-abstraction",
+        "theme": 3,
+        "themes": [
+          3,
+          1,
+          5
+        ],
+        "reading_group": "shared_meaning"
+      },
+      {
+        "order": 26,
         "id": "E3",
         "slug": "e3-continual-adaptation-machine-communication",
-        "theme": 5
+        "theme": 5,
+        "themes": [
+          5,
+          4,
+          3
+        ],
+        "reading_group": "adaptation"
+      },
+      {
+        "order": 27,
+        "id": "X8",
+        "slug": "x8-success-cost-convention-formation",
+        "theme": 5,
+        "themes": [
+          5,
+          4,
+          3
+        ],
+        "reading_group": "adaptation"
+      },
+      {
+        "order": 28,
+        "id": "X9",
+        "slug": "x9-aligned-not-partner-specific",
+        "theme": 3,
+        "themes": [
+          3,
+          4,
+          5
+        ],
+        "reading_group": "adaptation"
+      },
+      {
+        "order": 29,
+        "id": "X16",
+        "slug": "x16-memuse-natural-integration",
+        "theme": 5,
+        "themes": [
+          5,
+          4
+        ],
+        "reading_group": "adaptation"
+      },
+      {
+        "order": 30,
+        "id": "X22",
+        "slug": "x22-banana-man-pragmatic-interpretation",
+        "theme": 2,
+        "themes": [
+          2,
+          3,
+          5
+        ],
+        "reading_group": "adaptation"
       }
     ],
     "themes": [
       {
         "id": 1,
-        "name": "Social and expressive multimodal communication",
-        "question": "表达怎样承载社会意义？",
+        "name": "社会意义与多模态表达",
+        "question": "文字、图像、emoji和花字怎样共同表达态度、用意与关系？",
         "concepts": [
-          "expression",
-          "multimodality"
+          "multimodal meaning",
+          "textual paralanguage",
+          "pragmatic function",
+          "AI-mediated communication"
         ],
         "anchors": [
-          "Zhicong Lu",
-          "Judith Fan"
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "X33",
+          "B3",
+          "X31",
+          "A1",
+          "A6",
+          "X27",
+          "C2",
+          "C6",
+          "C8"
         ]
       },
       {
         "id": 2,
-        "name": "Pragmatics and contextual understanding",
-        "question": "AI如何依据情境理解用意？",
+        "name": "语用推理与情境化理解",
+        "question": "AI能否从具体情境推断对象、立场和言外之意？解释正确的标准是什么？",
         "concepts": [
-          "pragmatics",
-          "context"
+          "pragmatic inference",
+          "RSA",
+          "speaker intention",
+          "context dependence",
+          "plausible misreading"
         ],
         "anchors": [
-          "Zhicong Lu",
-          "Judith Fan"
+          "A2",
+          "A3",
+          "A5",
+          "X21",
+          "B1",
+          "B2",
+          "B3",
+          "B4",
+          "X30",
+          "X31",
+          "X32",
+          "X35",
+          "X34",
+          "X27",
+          "C1",
+          "X22"
         ]
       },
       {
         "id": 3,
-        "name": "Common ground and conventions",
-        "question": "如何区分识别、确认与共享惯例？",
+        "name": "共同基础、理解确认与沟通惯例",
+        "question": "怎样区分已有上下文、双方确认的理解和互动形成的表达惯例？",
         "concepts": [
+          "common ground",
           "grounding",
-          "convention"
+          "conceptual pact",
+          "partner specificity"
         ],
         "anchors": [
-          "Zhicong Lu",
-          "Judith Fan"
+          "A4",
+          "X24",
+          "X12",
+          "C1",
+          "C2",
+          "C3",
+          "C6",
+          "C8",
+          "E3",
+          "X8",
+          "X9",
+          "X22"
         ]
       },
       {
         "id": 4,
-        "name": "Models, evaluation and research resources",
-        "question": "怎样测量与改善模型的相关能力？",
+        "name": "模型、数据集与评估效度",
+        "question": "怎样判断模型改善了语用能力，而非仅提高特定标签或自动指标？",
         "concepts": [
-          "evaluation",
-          "modeling"
+          "construct validity",
+          "context ablation",
+          "annotation ambiguity",
+          "generalization",
+          "model ablation"
         ],
         "anchors": [
-          "Ziqiao Ma",
-          "Zhicong Lu"
+          "X21",
+          "B1",
+          "B2",
+          "B4",
+          "X30",
+          "X31",
+          "X32",
+          "X35",
+          "X24",
+          "X34",
+          "X27",
+          "E3",
+          "X8",
+          "X9",
+          "X16"
         ]
       },
       {
         "id": 5,
-        "name": "Memory and adaptation",
-        "question": "怎样区分记忆、适应与共同经历的作用？",
+        "name": "记忆、适应与持续互动",
+        "question": "记住信息、自然使用历史和适应某个伙伴分别需要什么证据？",
         "concepts": [
-          "memory",
-          "adaptation"
+          "memory retrieval",
+          "natural integration",
+          "continual adaptation",
+          "shared meaning"
         ],
         "anchors": [
-          "Zhicong Lu",
-          "Judith Fan"
+          "A6",
+          "X12",
+          "C3",
+          "C8",
+          "E3",
+          "X8",
+          "X9",
+          "X16",
+          "X22"
         ]
       },
       {
         "id": 6,
-        "name": "Culture, relationships and social practices",
-        "question": "文化实践与关系如何影响解释？",
+        "name": "文化知识、关系与社会实践",
+        "question": "文化知识、伙伴关系、平台实践与群体预期如何塑造表达和解释？",
         "concepts": [
-          "culture",
-          "social practices"
+          "shared knowledge",
+          "social practice",
+          "within-group variation",
+          "recipient interpretation"
         ],
         "anchors": [
-          "Zhicong Lu",
-          "Judith Fan"
+          "A3",
+          "X33",
+          "X21",
+          "A1",
+          "A6",
+          "X34",
+          "X27",
+          "X12"
         ]
       }
     ],
     "writing_plan": [
       {
-        "section": "Social and expressive multimodal communication",
-        "pages": "待定",
-        "goal": "表达怎样承载社会意义？"
+        "section": "提出现象与核心问题",
+        "pages": "约1",
+        "goal": "从具体表达或沟通情境切入，说明为何值得解释；可从X21、花字、meme或关系沟通开始。"
       },
       {
-        "section": "Pragmatics and contextual understanding",
-        "pages": "待定",
-        "goal": "AI如何依据情境理解用意？"
+        "section": "组织概念与理论对话",
+        "pages": "约2",
+        "goal": "按题目选择语用、视觉/多模态结构、grounding或社会实践视角，比较解释单位与假设。"
       },
       {
-        "section": "Common ground and conventions",
-        "pages": "待定",
-        "goal": "如何区分识别、确认与共享惯例？"
+        "section": "比较跨方法的证据",
+        "pages": "约3",
+        "goal": "围绕2–3个问题比较人类研究、模型方法、benchmark及系统实践；不按30篇逐篇摘要。"
       },
       {
-        "section": "Models, evaluation and research resources",
-        "pages": "待定",
-        "goal": "怎样测量与改善模型的相关能力？"
+        "section": "展开张力、边界与替代解释",
+        "pages": "约2",
+        "goal": "从歧义/准确、效率/表达、个体/群体、单次/持续等讨论线索中选取，不要求全部覆盖。"
       },
       {
-        "section": "Memory and adaptation",
-        "pages": "待定",
-        "goal": "怎样区分记忆、适应与共同经历的作用？"
-      },
-      {
-        "section": "Culture, relationships and social practices",
-        "pages": "待定",
-        "goal": "文化实践与关系如何影响解释？"
+        "section": "综合与开放问题",
+        "pages": "约1",
+        "goal": "提出仍可辩护的认识与多个可能方向；区分证据空白、测量局限与候选研究机会。"
       }
     ],
     "checklists": [
       {
-        "name": "范围与证据",
+        "name": "定义与比较",
         "items": [
-          "考试是下游视图，不限制研究社区或贡献类型",
-          "每个论点回到对应来源与证据边界",
-          "个人掌握状态不由agent阅读推断"
+          "用自己的例子区分识别、语用解释、恰当回应、被理解感与共享意义。",
+          "比较RSA、结构性多模态理论与互动grounding的解释单位。"
+        ]
+      },
+      {
+        "name": "证据与批判",
+        "items": [
+          "逐篇说明任务、样本、比较条件、发现与外推边界。",
+          "解释X21难例歧义、X30指标效度与X31顺序任务边界。",
+          "比较X32与X35的技术机制、基线和消融，不把性能提升等同真实意图恢复。"
+        ]
+      },
+      {
+        "name": "连接与综合",
+        "items": [
+          "区分AI作为伙伴与AI支持人际沟通，并用X33/A1举例。",
+          "区分信息记忆、自然使用历史、单方适应与共享意义。",
+          "解释文化知识、平台实践及群体内差异，避免国籍等同文化。"
+        ]
+      },
+      {
+        "name": "推导研究问题",
+        "items": [
+          "从已有研究提出具体问题，说明新增贡献与可能反例。",
+          "分别说明计算评估、行为证据或解释性材料何时能支持所作主张。",
+          "保留候选问题状态；不将考试提纲当作已批准研究项目。"
+        ]
+      },
+      {
+        "name": "跨主题开放讨论",
+        "items": [
+          "任选一个现象，从至少两个理论视角提出不同解释。",
+          "比较一种计算证据和一种行为、体验或实践证据，说明各自能回答什么。",
+          "为自己的解释提出合理反例，并说明什么观察会使你修改判断。",
+          "提出两个可行的后续方向，不把阅读清单锁成单一RQ或技术路线。"
         ]
       }
     ],
     "agent_readiness": {
-      "active_queue_count": 15,
+      "active_queue_count": 30,
       "researcher_top20_read": null,
       "researcher_top20_mastered": null,
       "researcher_status": "UNTRACKED",
-      "warning": "新范围尚需复核；沿用个人进度，不自动补齐20篇。"
-    }
-  },
-  "research_line": {
-    "identity": "我研究人和 AI 如何理解情境中的多模态表达、在哪里产生理解分歧，以及如何通过人类证据校准的模型预测和支持有效澄清，并在持续互动中形成共享语境。",
-    "core_question": "How can human-calibrated models explain differences in multimodal interpretation and predict effective clarification and shared-context adaptation?",
-    "nodes": [
+      "warning": "30篇已按当前持久证据组织；阅读顺序和讨论范围可调整，个人进度保持原记录。"
+    },
+    "reading_groups": [
       {
-        "id": "meaning",
-        "label": "Social Meaning",
-        "label_zh": "社会意义",
-        "question": "这个表达在此刻想做什么？",
-        "detail": "区分对象、立场、幽默与互动用意；允许文化与关系影响解释。",
-        "buckets": [
-          "A",
-          "B",
-          "F"
+        "id": "expression",
+        "name": "表达形式如何承载社会意义",
+        "papers": [
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "X33"
         ],
-        "gaps": [
-          "GAP-05",
-          "GAP-04"
-        ]
+        "question": "从文字副语言、emoji、视觉词汇到花字，哪些意义来自形式，哪些来自情境和使用？",
+        "bridge": "先认识表达资源，再追问同一形式为什么能被理解成不同用意。"
       },
       {
-        "id": "understanding",
-        "label": "Pragmatic Understanding",
-        "label_zh": "情境化理解",
-        "question": "AI依据什么理解言外之意？",
-        "detail": "近期重点：跨文字、图像和情境的理解；评估、数据、模型与方法都是独立贡献路径。",
-        "buckets": [
-          "A",
-          "B",
-          "D"
+        "id": "interpretation",
+        "name": "人和AI如何推断用意",
+        "papers": [
+          "X21",
+          "B1",
+          "B2",
+          "B3",
+          "B4"
         ],
-        "gaps": [
-          "GAP-05",
-          "GAP-04"
-        ]
+        "question": "人怎样结合目标、语境与不确定性解释表达？简洁和信息充分是否总是一致？",
+        "bridge": "把表达现象连接到可比较的推理解释；X21是问题入口，不限定所有后续讨论。"
       },
       {
-        "id": "grounding",
-        "label": "Grounding",
-        "label_zh": "理解确认与修复",
-        "question": "如何知道对方理解到位？",
-        "detail": "记录理解确认与澄清过程，预测干预是否帮助真实接收者；合理解释差异不自动是错误。",
-        "buckets": [
-          "C",
-          "G"
+        "id": "evaluation",
+        "name": "如何建模与获得可信的能力证据",
+        "papers": [
+          "X30",
+          "X31",
+          "X32",
+          "X35",
+          "X24"
         ],
-        "gaps": [
-          "GAP-01",
-          "GAP-04"
-        ]
+        "question": "定位、排序、解释、分类及修复信号检测各自揭示了什么？模型改善怎样获得证据支持？",
+        "bridge": "从理论转向模型、数据与测量，再追问测试中的能力如何联系实际沟通。"
       },
       {
-        "id": "convention",
-        "label": "Shared Conventions",
-        "label_zh": "共享表达与惯例",
-        "question": "表达何时成为我们的说法？",
-        "detail": "保留长期兴趣，考察共同经历、文化资源与伙伴差异，不能只凭表达重复认定惯例。",
-        "buckets": [
-          "C",
-          "F"
+        "id": "social_context",
+        "name": "文化知识、关系与沟通实践",
+        "papers": [
+          "A1",
+          "A6",
+          "X34",
+          "X27",
+          "X12"
         ],
-        "gaps": [
-          "GAP-02"
-        ]
+        "question": "谁在与谁沟通、共享哪些经历、为什么要这样表达？关系体验、有用歧义与群体惯例如何进入讨论？",
+        "bridge": "把单次任务放回伙伴、关系与群体；X12连接个人经验和群体预期，不作为文化差异的直接实证。"
+      },
+      {
+        "id": "shared_meaning",
+        "name": "理解如何在互动中得到确认和形成",
+        "papers": [
+          "C1",
+          "C2",
+          "C3",
+          "C6",
+          "C8"
+        ],
+        "question": "双方怎样确认足够的理解，并形成可复用的语言、绘画或手势表达？",
+        "bridge": "比较单次推断与协作过程；多模态物理任务只是一个观察窗口。"
       },
       {
         "id": "adaptation",
-        "label": "Adaptation",
-        "label_zh": "适应与持续互动",
-        "question": "理解与表达如何随经历调整？",
-        "detail": "人机交流与AI支持人际沟通均可；机器人、AR与手势按问题需要加入。",
+        "name": "持续沟通中的记忆、学习与适应",
+        "papers": [
+          "E3",
+          "X8",
+          "X9",
+          "X16",
+          "X22"
+        ],
+        "question": "模型能学到什么、历史怎样被使用、何时只是表面协调？哪些改善值得保留，哪些解释仍需检验？",
+        "bridge": "让训练、在线适应、记忆使用与多轮解释互相对照，再回到最初的理解与表达问题。"
+      }
+    ],
+    "discussion_questions": [
+      {
+        "question": "沟通的好坏，是否只有准确理解这一项标准？",
+        "papers": [
+          "X21",
+          "X30",
+          "X33",
+          "A6"
+        ],
+        "discussion": "比较任务正确率、表达机会、关系体验与参与者解释；不同研究目的可以采用不同证据，不能自动相互替代。"
+      },
+      {
+        "question": "表达应该更简洁、更明确，还是允许冗余和歧义？",
+        "papers": [
+          "B3",
+          "B4",
+          "X27",
+          "A3"
+        ],
+        "discussion": "讨论辨别需要、噪声、受众知识、幽默和关系功能；不预设一种表达策略在所有场景最好。"
+      },
+      {
+        "question": "模型改善和共同意义之间是什么关系？",
+        "papers": [
+          "X32",
+          "X35",
+          "X8",
+          "X9",
+          "C2"
+        ],
+        "discussion": "模型与训练收益具有独立价值；是否支持共同意义取决于任务和主张。X8/X9设计不同，不能当作同一实验的正反结果。"
+      },
+      {
+        "question": "文化、关系和共同经历应当放在哪个解释层次？",
+        "papers": [
+          "X34",
+          "A6",
+          "X12",
+          "X21"
+        ],
+        "discussion": "比较个体经验、伙伴关系、平台实践及群体预期，讨论群体内差异；X12是跨层理论连接，不是文化群体比较。"
+      },
+      {
+        "question": "从静态材料走向互动，会多出什么问题？",
+        "papers": [
+          "X31",
+          "X24",
+          "C8",
+          "X16",
+          "X22"
+        ],
+        "discussion": "讨论时间顺序、声音/手势、反馈、记忆相关性和理解确认；互动研究是可选问题路径，不是所有计算贡献的门槛。"
+      },
+      {
+        "question": "我们怎样知道一项解释比替代解释更好？",
+        "papers": [
+          "B2",
+          "X30",
+          "X9",
+          "C3"
+        ],
+        "discussion": "比较理论拟合、消融、行为结果与反事实对照；解释性或设计研究还应讨论情境、参与者意义和分析过程，方法随问题选择。"
+      }
+    ],
+    "organization_policy": "六组是可交叉的阅读入口，不是六章固定目录或先后依赖；可从现象、理论、计算或互动进入，按考试题目选取跨组证据。",
+    "reading_depth_policy": "30篇均进入准备池，但无需同等深读。先用每篇的问题、方法、发现和边界完成全景阅读；再按实际考试问题选择理论锚点及相互补充或冲突的实证做深读。未指定固定深读名额。"
+  },
+  "research_line": {
+    "identity": "我研究如何设计机器人与 AI companion 的视觉和具身表达，人们如何理解这些表达及其与角色一致的行为，以及这些互动如何影响持续的人机关系；其中包括通过多种机器人或电子设备形成物理外延的 companion。",
+    "core_question": "How do expressive design and character-consistent behavior across physical extensions shape interpretation, identity and relationships?",
+    "nodes": [
+      {
+        "id": "expression",
+        "label": "Visual Expression",
+        "label_zh": "视觉表达",
+        "question": "同一视觉/动作线索在不同情境中，如何分别影响意图识别、判断确信及能力预期？",
+        "detail": "表达增加吸引力不等于准确理解；视频不能证明实体或关系效应。",
         "buckets": [
+          "A",
           "E",
           "G"
         ],
         "gaps": [
-          "GAP-03",
-          "GAP-04"
+          "GAP-RC-01"
+        ]
+      },
+      {
+        "id": "coherence",
+        "label": "Character–Behavior Coherence",
+        "label_zh": "角色与行为一致性",
+        "question": "角色约束如何跨动作、视觉反馈和主动性保持可感知的一致性，同时适应任务与设备能力？",
+        "detail": "技术一致分数不等于用户感知一致；已有情境动作生成不能被忽略。",
+        "buckets": [
+          "A",
+          "E",
+          "G"
+        ],
+        "gaps": [
+          "GAP-RC-02"
+        ]
+      },
+      {
+        "id": "evolution",
+        "label": "Persistence and Evolution",
+        "label_zh": "持续与演化",
+        "question": "变化幅度、变化理由和互动历史分别怎样影响用户对同一companion成长、适应或性格漂移的判断？",
+        "detail": "本轮人格演变覆盖有限，gap未确认；叙述时间流逝不等于实际长期经验。",
+        "buckets": [
+          "A",
+          "E",
+          "G"
+        ],
+        "gaps": [
+          "GAP-RC-03"
+        ]
+      },
+      {
+        "id": "extensions",
+        "label": "Physical Extensions",
+        "label_zh": "多设备物理外延",
+        "question": "跨能力不对称设备时，表面身份、表达风格、记忆与任务连续性分别怎样影响身份识别、行为预期和责任归属？",
+        "detail": "迁移概念已有先例；身份识别不等于关系迁移；LIREC同谱系不当独立重复。",
+        "buckets": [
+          "A",
+          "E",
+          "G"
+        ],
+        "gaps": [
+          "GAP-RC-04"
+        ]
+      },
+      {
+        "id": "relationship",
+        "label": "Ongoing Relationship",
+        "label_zh": "持续关系",
+        "question": "表达和行为一致性如何改变重复互动中的期待、信任校准、再次使用及失配后的关系理解？",
+        "detail": "留存、好感和重用意愿都不能单独证明关系质量；不预设更亲密就是更好。",
+        "buckets": [
+          "A",
+          "E",
+          "G"
+        ],
+        "gaps": [
+          "GAP-RC-05"
         ]
       }
     ],
     "scope": {
       "core": [
-        "情境化社会语用理解与多模态表达",
-        "AI / CV / NLP 的模型、方法、数据与评估",
-        "人与AI及AI支持的人际沟通",
-        "共同理解、惯例与适应",
-        "人类证据校准的解释分布、澄清效果预测与可复现artifact"
+        "机器人视觉与具身表达、用户理解与感知",
+        "角色设定与行为一致性、持续与演化",
+        "AI companion的物理外延与身份连续性",
+        "持续关系、期待与使用实践"
       ],
       "adjacent": [
-        "机器人与具身沟通：延后、按实质问题选用",
-        "AR、手势与空间交互：可选载体",
-        "认知机制和社会实践：解释沟通现象"
+        "社会语用、grounding与convention：按具体问题桥接",
+        "AI/CV/NLP模型、数据与评价：须说明新增能力",
+        "AR/VR与电子设备：按机制与资源选用"
       ],
       "out_of_scope": [
-        "只因关键词或设备可用而设题",
-        "把国家标签直接当文化",
-        "未经证据把偏好或记忆等同于共同理解"
+        "仅因设备或AI关键词重叠",
+        "把好感、留存或记忆直接等同关系",
+        "未经证据宣称架构优越或首次组合"
       ]
     },
     "next_questions": [
-      "RQ-FT-01"
+      "RQ-RC-01",
+      "RQ-RC-02",
+      "RQ-RC-03",
+      "RQ-RC-04",
+      "RQ-RC-05"
     ],
     "foundation_paper": "x21-social-pragmatic-chinese-comments",
     "communities": [
+      "HRI",
       "HCI",
       "CSCW",
       "AI",
@@ -811,9 +1500,11 @@
       "first_followup_target_months": [
         3,
         6
-      ]
+      ],
+      "last_confirmed_at": "2026-09-18",
+      "reconfirmation_note": "2026-10-02方向改变不证明已获得机器人或平台；现有资源记录为上次陈述，实施前核实。"
     },
-    "next_step": "优先实施MeaningTrace Studio的材料与测量验证，建立最小评测协议。",
+    "next_step": "比较五个候选问题的现象、最近工作与测量；具体首项问题未选择。",
     "roadmap_source": "research-programs/amsc/program.yaml#artifact_roadmap"
   },
   "workflow_runs": [
@@ -865,7 +1556,7 @@
       "workflow": "Research Radar + Paper Investigation + Missing-Paper Attack + Novelty/Gap/Method/Culture/Theory Review",
       "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
       "date": "2026-09-07T03:35:21-04:00",
-      "summary": "覆盖最新七日窗并恢复漏检/新 venue-index 条目；新增 X20–X24，GAP-07 重构为 linked modular protocol family；researcher mastery 未改。"
+      "summary": "覆盖最新七日窗并恢复漏检/新 venue-index 条目；新增 X20–X24，GAP-RC-02 重构为 linked modular protocol family；researcher mastery 未改。"
     },
     {
       "id": "backlog-audit-2026-09-12",
@@ -904,6 +1595,21 @@
       "status": "COMPLETE",
       "date": "2026-09-18",
       "summary": "用户批准一条整合主线与逐阶段artifact路线；五个研究artifact均为计划中，尚无新颖性或效果结论。"
+    },
+    {
+      "id": "amsc-radar-2026-09-28",
+      "workflow": "Research Radar + Paper Investigation + Missing-Paper Attack + Novelty/Gap/Method/Culture Review",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-09-28",
+      "summary": "覆盖2026-09-21至28；新增X36–X42并将GAP-05收窄为真实recipient、item与timing异质的help/harm/no-change预测；RQ-FT-01保持DRAFT，考试视图未改。",
+      "report": "reports/radar/2026-09-28-amsc-mainline.md"
+    },
+    {
+      "id": "mainline-v3-2026-10-02",
+      "workflow": "Mainline scope migration",
+      "status": "COMPLETE",
+      "date": "2026-10-02",
+      "summary": "用户授权主线更新；76篇逐项范围复核，5个候选gap与5个DRAFT问题；旧问题暂缓；实验未开始。"
     }
   ],
   "provenance": {

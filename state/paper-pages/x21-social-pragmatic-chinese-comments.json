@@ -29,7 +29,7 @@
   "real_contribution": "Provides a native-language, multi-platform resource and a plausible-misreading diagnostic protocol for situated social meaning, moving beyond broad humor or sarcasm labels toward target, stance, mechanism, and interactional move.",
   "biggest_weakness": "Purposive selection conditions on context dependence, solver comparisons use different leave-writer-out item compositions, and adjudicated labels do not directly reveal original speaker intent or participant uptake.",
   "claim_boundary": "Supports context sensitivity within a purposefully sampled Chinese-language benchmark, not a claim about Chinese culture, all Chinese speakers, general cultural competence, dyadic common ground, or embodied adaptation.",
-  "why_researcher_should_care": "用户二作已有成果与近期研究起点；延续情境化社会语用理解、多模态评估或模型方法，明确新增贡献，不以单纯增加上下文为gap。",
+  "why_researcher_should_care": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。",
   "amsc": {
     "mainline_fit": 8.2,
     "buckets": [
@@ -38,9 +38,7 @@
       "D",
       "F"
     ],
-    "stages": [
-      "Social meaning/pragmatics"
-    ],
+    "stages": [],
     "mechanisms": [
       "situated pragmatic inference",
       "context ablation",
@@ -61,10 +59,10 @@
   "provenance": "amsc_radar_2026-09-07",
   "updated_at": "2026-09-07",
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "SUPPORTING",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
   },
   "researcher_relationship": {
     "role": "second_author",

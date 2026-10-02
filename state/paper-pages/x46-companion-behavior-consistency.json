@@ -1,0 +1,60 @@
+{
+  "id": "X46",
+  "slug": "x46-companion-behavior-consistency",
+  "title": "Avoiding the uncanny valley: robot appearance, personality and consistency of behavior in an attention-seeking home scenario for a robot companion",
+  "authors": [
+    "Michael L. Walters",
+    "Dag S. Syrdal",
+    "Kerstin Dautenhahn",
+    "René te Boekhorst",
+    "Kheng Lee Koay"
+  ],
+  "year": 2008,
+  "venue": "Autonomous Robots 24:159–178",
+  "source_url": "https://link.springer.com/article/10.1007/s10514-007-9058-3",
+  "access_status": "abstract_only",
+  "priority": "Important",
+  "one_sentence": "机器人外观、个性与行为一致性的早期研究",
+  "problem": "机器人外观、个性与行为一致性的早期研究",
+  "method": "出版社摘要报告家庭attention-seeking情境的视频评价；全文本轮不可用。",
+  "findings": [
+    "摘要报告外观偏好与参与者个体差异，不能给出普遍最优外观。"
+  ],
+  "real_contribution": "机器人外观、个性与行为一致性的早期研究",
+  "biggest_weakness": "摘要级；视频偏好不等于真实家庭长期关系；2007在线、2008卷期。",
+  "claim_boundary": "摘要级；视频偏好不等于真实家庭长期关系；2007在线、2008卷期。",
+  "why_researcher_should_care": "提供新主线的直接先例与反证边界；组合已有设计不自动构成新颖性。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "A",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "机器人外观、个性与行为一致性的早期研究"
+    ],
+    "gap_ids": [
+      "GAP-RC-02"
+    ],
+    "master_list_decision": "Added after independent focused audit"
+  },
+  "investigation_status": "abstract_evidence_investigation",
+  "evidence_notes": [
+    "2026-10-02仅核验原始摘要与元数据，未核验全文；未复现实验。",
+    "摘要级；视频偏好不等于真实家庭长期关系；2007在线、2008卷期。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://link.springer.com/article/10.1007/s10514-007-9058-3"
+    ]
+  },
+  "updated_at": "2026-10-02",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "机器人外观、个性与行为一致性的早期研究"
+  }
+}

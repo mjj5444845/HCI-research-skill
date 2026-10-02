@@ -1,0 +1,655 @@
+{
+  "date": "2026-10-02",
+  "program_version": "3.0",
+  "snapshot": "archives/2026-10-02-mainline-v2",
+  "restored_slugs": [
+    "d4-expressing-thought",
+    "d5-legibility-and-predictability",
+    "d6-designing-robots-with-movement",
+    "d7-social-eye-gaze-review",
+    "e1-long-term-social-robots-survey",
+    "e2-human-robot-mutual-adaptation",
+    "e4-designing-robots-long-term",
+    "f3-robotic-products-social-products",
+    "f5-robots-in-the-wild",
+    "g4-context-aware-expressive-motion",
+    "x4-making-memories-together"
+  ],
+  "new_paper_ids": [
+    "X43",
+    "X44",
+    "X45",
+    "X46",
+    "X47",
+    "X48",
+    "X49",
+    "X50",
+    "X51",
+    "X52"
+  ],
+  "paper_scope_reviews": [
+    {
+      "id": "A1",
+      "slug": "a1-ai-mediated-communication",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "A2",
+      "slug": "a2-textual-paralanguage",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "A3",
+      "slug": "a3-interpreting-emoji-pragmatics",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "A4",
+      "slug": "a4-a-visual-lexicon",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "A5",
+      "slug": "a5-multimodal-parallel-architecture",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "A6",
+      "slug": "a6-puppetchat",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "B1",
+      "slug": "b1-pragmatic-language-interpretation",
+      "status": "SUPPORTING",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+    },
+    {
+      "id": "B2",
+      "slug": "b2-rational-speech-act-framework",
+      "status": "SUPPORTING",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+    },
+    {
+      "id": "B3",
+      "slug": "b3-pragmatic-inference-visual-abstraction",
+      "status": "SUPPORTING",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+    },
+    {
+      "id": "B4",
+      "slug": "b4-when-redundancy-is-useful",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "C1",
+      "slug": "c1-referring-as-collaborative-process",
+      "status": "SUPPORTING",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+    },
+    {
+      "id": "C2",
+      "slug": "c2-grounding-in-communication",
+      "status": "SUPPORTING",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+    },
+    {
+      "id": "C3",
+      "slug": "c3-conceptual-pacts",
+      "status": "SUPPORTING",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+    },
+    {
+      "id": "C4",
+      "slug": "c4-repeated-reference-games",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "C5",
+      "slug": "c5-graphical-convention-formation",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "C6",
+      "slug": "c6-visual-resemblance-interaction-history",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "C7",
+      "slug": "c7-shared-procedural-abstractions",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "C8",
+      "slug": "c8-gesturing-toward-abstraction",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "D4",
+      "slug": "d4-expressing-thought",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "D5",
+      "slug": "d5-legibility-and-predictability",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "D6",
+      "slug": "d6-designing-robots-with-movement",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "D7",
+      "slug": "d7-social-eye-gaze-review",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "E1",
+      "slug": "e1-long-term-social-robots-survey",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "E2",
+      "slug": "e2-human-robot-mutual-adaptation",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "E3",
+      "slug": "e3-continual-adaptation-machine-communication",
+      "status": "SUPPORTING",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+    },
+    {
+      "id": "E4",
+      "slug": "e4-designing-robots-long-term",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "F1",
+      "slug": "f1-emergence-social-norms-conventions",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "F3",
+      "slug": "f3-robotic-products-social-products",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "F5",
+      "slug": "f5-robots-in-the-wild",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "G4",
+      "slug": "g4-context-aware-expressive-motion",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "X1",
+      "slug": "x1-spotter-human-robot-conventions",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X10",
+      "slug": "x10-llms-people-conventions",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X11",
+      "slug": "x11-common-ground-benchmark",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X12",
+      "slug": "x12-partners-to-populations",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X13",
+      "slug": "x13-silica-agent-societies",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X16",
+      "slug": "x16-memuse-natural-integration",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X17",
+      "slug": "x17-glossogen-emergent-language",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X2",
+      "slug": "x2-lvlms-humans-ground-differently",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X20",
+      "slug": "x20-passing-the-pact",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X21",
+      "slug": "x21-social-pragmatic-chinese-comments",
+      "status": "SUPPORTING",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+    },
+    {
+      "id": "X22",
+      "slug": "x22-banana-man-pragmatic-interpretation",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X23",
+      "slug": "x23-machine-mental-imagery-common-ground",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X24",
+      "slug": "x24-multimodal-repair-detection",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X25",
+      "slug": "x25-seeing-is-not-sharing",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X26",
+      "slug": "x26-convention-gap",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X27",
+      "slug": "x27-calibrated-ambiguity",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X28",
+      "slug": "x28-continue-adapt-yield",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X29",
+      "slug": "x29-testing-interchangeability",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X3",
+      "slug": "x3-seeing-eye-to-eye",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X30",
+      "slug": "x30-refoi-pragmatic-generation",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X31",
+      "slug": "x31-cmpm-order-matters",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X32",
+      "slug": "x32-intent-projection",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X33",
+      "slug": "x33-speechcap",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X34",
+      "slug": "x34-memebridge",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X35",
+      "slug": "x35-mgmc-fusion",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X36",
+      "slug": "x36-polite-but-misaligned",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X37",
+      "slug": "x37-clarification-not-correction",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X38",
+      "slug": "x38-user-model-belief-distillation",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X39",
+      "slug": "x39-live-assistant",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X4",
+      "slug": "x4-making-memories-together",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    },
+    {
+      "id": "X40",
+      "slug": "x40-msi-bench",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X41",
+      "slug": "x41-ai-email-cultural-style",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X42",
+      "slug": "x42-memecf-pivotal-cues",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X43",
+      "slug": "x43-elegnt",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "灯形机器人的表达性与功能性动作"
+    },
+    {
+      "id": "X44",
+      "slug": "x44-expressive-motion-timing",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "动作节奏如何改变人对机器人的判断"
+    },
+    {
+      "id": "X45",
+      "slug": "x45-appearance-behavior-task",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "机器人外观和行为要与任务匹配"
+    },
+    {
+      "id": "X46",
+      "slug": "x46-companion-behavior-consistency",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "机器人外观、个性与行为一致性的早期研究"
+    },
+    {
+      "id": "X47",
+      "slug": "x47-migrating-artificial-companions",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "跨屏幕与手机迁移的人工伙伴"
+    },
+    {
+      "id": "X48",
+      "slug": "x48-memory-identity-embodiments",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "记忆与跨载体身份感可以分离"
+    },
+    {
+      "id": "X49",
+      "slug": "x49-long-term-agent-migration",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "五周互动中的机器人伙伴迁移"
+    },
+    {
+      "id": "X50",
+      "slug": "x50-computer-patient-alliance",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "关系型代理与三十天的工作联盟"
+    },
+    {
+      "id": "X51",
+      "slug": "x51-empathetic-companions-personality",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "机器人个性如何联系情绪、动作与信任"
+    },
+    {
+      "id": "X52",
+      "slug": "x52-meet-my-sidekick",
+      "status": "CORE",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "一台机器人也可以承载多个身份"
+    },
+    {
+      "id": "X6",
+      "slug": "x6-beyond-local-surprise",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X8",
+      "slug": "x8-success-cost-convention-formation",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    },
+    {
+      "id": "X9",
+      "slug": "x9-aligned-not-partner-specific",
+      "status": "BACKGROUND",
+      "program_version": "3.0",
+      "reviewed_at": "2026-10-02",
+      "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    }
+  ],
+  "new_gaps": [
+    "GAP-RC-01",
+    "GAP-RC-02",
+    "GAP-RC-03",
+    "GAP-RC-04",
+    "GAP-RC-05"
+  ],
+  "new_questions": [
+    "RQ-RC-01",
+    "RQ-RC-02",
+    "RQ-RC-03",
+    "RQ-RC-04",
+    "RQ-RC-05"
+  ],
+  "first_question_selected": false
+}

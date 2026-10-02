@@ -26,17 +26,14 @@
   "real_contribution": "把 RSA-like pragmatics 扩展到图像，以 behavioral、recognition 与 model lesion evidence 区分 object identity 与 contextually sufficient depiction。",
   "biggest_weakness": "模型只在参与者已生成的 prototype sketch categories 中选择，不生成 strokes；visual encoder 需 supervision，drawing time 只是 cost proxy；无 repeated history/convention manipulation。",
   "claim_boundary": "支持受控 one-shot human visual reference 中的 contextual flexibility；不支持 learning、partner-specific common ground、convention formation 或 embodied AI。",
-  "why_researcher_should_care": "你的理论核心之一。人会根据 communication context 选择更简单或更详细的 drawing；关键不是最大化 detail，而是 **contextually sufficient representation**。",
+  "why_researcher_should_care": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。",
   "amsc": {
     "mainline_fit": 8.8,
     "buckets": [
       "A",
       "B"
     ],
-    "stages": [
-      "Social Meaning / Pragmatics",
-      "Grounding / Common Ground"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning",
       "Grounding"
@@ -84,10 +81,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "SUPPORTING",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
   },
   "scope_updated_at": "2026-09-18"
 }

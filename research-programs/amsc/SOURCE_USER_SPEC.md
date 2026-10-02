@@ -19,3 +19,10 @@
 用户在阅读整合建议后要求：“可以，那就更新一下，做成一条主线。”每阶段需要落地界面或其他贡献，可为前端、VR/AR、数据集与AI benchmark；强调能对应大厂与前沿实验室关心能力的artifact，并要求更新网站。
 
 本次授权使AMSC × FailureTrace整合方向与逐阶段交付路线成为当前主线。具体RQ、方法与结果仍需核验。阶段命名和能力映射是研究综合，不能将其写成实验室已认可的兴趣或合作。
+
+
+## 2026-10-02 用户授权的主线调整
+
+用户提出：设计机器人传意的视觉语言，研究user perception与human–robot relationship；允许empirical、artifact与potential theoretical contribution。每个机器人有virtual character是例子；角色personality应persistent且可evolving，角色与机器人behavior一致值得研究。也可能仅一个符合用户个性和习惯的AI companion，通过多种robotic/electronic devices形成物理外延，不要求每个设备交流。
+
+用户确认六模块交付骨架，补充Gap库、论文库、问题库同步，并授权详细执行、每步检查和最终push。此授权替代旧主线优先级，不表示选定具体RQ、获得硬件或证明新颖性。

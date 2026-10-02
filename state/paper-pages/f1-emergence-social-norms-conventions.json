@@ -70,19 +70,14 @@
   "claim_boundary": "本文支持一个跨尺度 synthesis：individual cognition、dyadic history 与 population structure 都有独立 literature 证明其可影响 norm/convention。它不证明三层模型已完成、不提供 embodied AI evidence，也不允许把 macro community regularity 直接写成 individual culture trait 或把 local alignment 自动写成 mutual convention。",
   "priority": "Must Read",
   "one_sentence": "F1 是 AMSC 从 dyadic convention 走向 population convention 的理论桥：local history、population priors 与 network/transmission 必须被分开并联合解释。",
-  "why_researcher_should_care": "它为 AMSC 提供最直接的 multiscale guardrail：partner-specific adaptation 既不能被 population norm 吞没，也不能被定义成永不 transfer；未来实验应操纵 prior、history、network/partner exposure 与 transfer destination。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9,
     "buckets": [
       "C",
       "F"
     ],
-    "stages": [
-      "Social Meaning / Pragmatics",
-      "Grounding / Common Ground",
-      "Convention Formation",
-      "Personalization / Co-adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning",
       "Grounding",
@@ -95,10 +90,10 @@
       "GAP-03",
       "GAP-04"
     ],
-    "gap_impact": "重定义 GAP-01/02，使其不再声称 generic convention emergence 缺失；可辩护的剩余问题是 embodied human–AI interaction 中跨 partner、context 与 population 的因果推断及 lifecycle control。并强化 GAP-03 的 transfer/retirement 与 GAP-04 的区分测量要求。",
+    "gap_impact": "当前关联以gap_ids和v3.0 Gap Registry为准；旧评估保存在historical_program_analysis。",
     "master_list_decision": "Baseline v1.0 — 保留；CORE multiscale convention synthesis",
     "exam_impact": "建议过滤进入考试，作为跨主题 convention anchor：定义 convention 与 descriptive/prescriptive norm；比较 dyadic 与 population emergence；批判其向 embodied AI 的迁移。",
-    "next_project_priority": "将 partner↔population transfer 提升为主线设计轴，但必须提出明确的 cross-level predictions，不能仅以三层图充当解释。"
+    "next_project_priority": "五个候选问题尚未排序或立项；旧优先建议已标历史。"
   },
   "evidence_notes": [
     "2026-08-27 审读 author manuscript 全文：摘要/三层框架 pp.1–2；功能性/Lewis account pp.3–4；population/network/transmission 与 minimal-agent box pp.5–7；dyadic graphical/linguistic convention evidence pp.7–9；结论与 outstanding questions pp.9–10。",
@@ -129,10 +124,15 @@
   "worth_sharing": false,
   "updated_at": "2026-08-27",
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
-  "scope_updated_at": "2026-09-18"
+  "scope_updated_at": "2026-09-18",
+  "historical_program_analysis": {
+    "recorded_before": "2026-10-02",
+    "gap_impact": "重定义 GAP-01/02，使其不再声称 generic convention emergence 缺失；可辩护的剩余问题是 embodied human–AI interaction 中跨 partner、context 与 population 的因果推断及 lifecycle control。并强化 GAP-03 的 transfer/retirement 与 GAP-04 的区分测量要求。",
+    "next_project_priority": "将 partner↔population transfer 提升为主线设计轴，但必须提出明确的 cross-level predictions，不能仅以三层图充当解释。"
+  }
 }

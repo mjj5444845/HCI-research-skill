@@ -25,18 +25,14 @@
   "real_contribution": "把 generic model capability 问题重构为 heterogeneous dyad compatibility，并显示表面模仿不足以解释或修复 mixed-dyad failure。",
   "biggest_weakness": "preprint；AI–AI 使用相同 GPT-5 copies 和 prompt，初始 overlap 很高，shared interpretive biases 是作者解释而非被直接操纵的机制。",
   "claim_boundary": "AI–AI 结果只能称 convention-like signatures；partner-specific origin 仍需 pseudo-dyad/partner-swap tests。",
-  "why_researcher_should_care": "提示 AMSC 不能只问模型会不会适应，而要问 humans 与 models 的 priors/representations 为什么在 mixed dyad 中不兼容。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9.4,
     "buckets": [
       "C",
       "D"
     ],
-    "stages": [
-      "Grounding",
-      "Convention",
-      "Adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "dyad compatibility",
       "role reversal",
@@ -56,10 +52,10 @@
   "provenance": "amsc_radar_2026-08-27_recovery",
   "updated_at": "2026-08-27",
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

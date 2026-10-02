@@ -22,7 +22,7 @@ Primary domains:
 - HCI
 - CSCW
 - Human-AI Interaction
-- Human-Robot Interaction (deferred application, not a requirement)
+- Human-Robot Interaction (active mainline; physical hardware is not required for every project)
 - Cross-cultural studies
 - Cultural AI
 - AI policy
@@ -137,15 +137,15 @@ When the task concerns the user's primary research trajectory, load and apply:
 
 Research identity:
 
-> **I study how AI understands, participates in, and supports expressive multimodal communication in context, and how humans and AI develop shared meanings and adapt their ways of communicating through ongoing interaction.**
+> **I study how to design visual and embodied expressions through which robots and AI companions communicate, how people interpret these expressions and character-consistent behavior, and how these interactions shape relationships over time, including companions that extend across robotic and electronic devices.**
 
 Primary conceptual chain:
 
-> **Situated Social Meaning <-> Pragmatic Understanding <-> Grounding / Convention / Adaptation**
+> **Visual / Embodied Expression <-> User Interpretation <-> Character–Behavior Coherence <-> Identity / Adaptation <-> Relationship**
 
 Highest-priority theoretical area:
 
-> **Social Pragmatics / Multimodal Meaning; Grounding, Convention and Adaptation when required by the question**
+> **Question-dependent social perception, attribution, expectancy and relationship theories; pragmatics and grounding where useful**
 
 The system must not confuse topical keyword overlap with mainline relevance.
 
@@ -163,6 +163,6 @@ The research program is a persistent model of the user's field position. It must
 
 For Radar, gap, question validation, experiment, exam or writing updates, read workflows/research-lifecycle.md. It defines stage handoffs, state ownership and conditional agent routing. Exam and writing are independent downstream workspaces.
 
-## Program v2.0 operating requirements
+## Program v3.0 operating requirements
 
-Read program.yaml for current resources, equal HCI/AI/CV/NLP contribution routes and user research foundation X21. Robot access, embodied agents, user studies and a fixed progression of papers are not mainline gates. Models, methods, datasets and evaluation can stand alone. Treat preferred researchers as research-taste anchors, never inferred collaborators. Archived v1 state is historical only; never reactivate it through routine Radar or imports. The user approved scope restructuring, not a concrete first RQ.
+For AMSC work, load current PROGRAM.md and program.yaml (v3.0, 2026-10-02). The mainline is robot visual/embodied expression, user interpretation, character–behavior coherence and relationships, including an AI companion with robotic/electronic extensions. One companion and separate characters are alternatives, not selected winners. Devices need not converse or carry independent personas. Persistence is not fixed behavior; evolution is not random drift. Empirical, artifact and evidence-supported theoretical contributions are valid; computational work must state its substantive bridge. Human perception and relationship claims need appropriate human evidence; short-term liking is not long-term relationship. X21 remains user-confirmed foundation, not a required starting point. No first RQ or new hardware access is approved. Preserve archives and human edits; reactivation needs item-level review.

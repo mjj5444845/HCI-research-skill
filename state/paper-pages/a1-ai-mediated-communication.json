@@ -22,7 +22,7 @@
   "real_contribution": "提供 AI-MC 边界词汇与 multi-level agenda，帮助区分 AI mediation 与 direct human–agent communication。",
   "biggest_weakness": "不属于 direct embodied HAI/HRI，且是 pre-generative-AI landscape；illustrative synthesis 不能作为 specific effects 或 current field gaps 的证据。",
   "claim_boundary": "只能作为 boundary/agenda paper；其 AI-MC 定义明确排除 AMSC 的核心 direct human–embodied-AI interaction。",
-  "why_researcher_should_care": "建立 AI 与 communication research 的大框架。虽然原始 AI-MC 主要讨论 AI 介入 human–human communication，但非常适合成为你从 social computing 走向 human–AI communication 的理论起点。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 5.4,
     "buckets": [
@@ -30,9 +30,7 @@
       "F",
       "G"
     ],
-    "stages": [
-      "Social Meaning / Pragmatics"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning"
     ],
@@ -76,10 +74,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

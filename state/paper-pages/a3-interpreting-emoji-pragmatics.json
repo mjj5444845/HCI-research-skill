@@ -25,7 +25,7 @@
   "real_contribution": "把 emoji 研究从孤立 icon semantics 推进到 contextualized pragmatic-function interpretation，并以 523 人 receiver survey 对研究者提出的 graphicon taxonomy 做外部效度检验；对 AMSC 最有价值的是证明 signal rendering 不能单独决定 communicative function。",
   "biggest_weakness": "刺激是研究者有目的挑选且多为难编码案例，并经过 context truncation、multimodal-to-text substitution 与文本简化；样本和场景又集中于 public Facebook、英语使用者和美国居民。研究测量的是第三方接收者对重构片段的分类，不是原 sender intention、dyadic negotiation 或 interaction-specific convention。",
   "claim_boundary": "可支持：在这组 contextualized public-Facebook examples 中，emoji 常被解释为 tone modifier，且 local discourse context 会改变 perceived pragmatic function。不可支持：所有平台/文化/关系中的 emoji 都以 tone 为基本功能；context 保证正确理解；该研究观察到共同意义如何形成；这些结果可直接迁移到 robot-authored signals。",
-  "why_researcher_should_care": "证明 emoji 的意义不能只从 emotion/semantics 理解，而必须从 **context-dependent pragmatic function** 理解；这直接支持你不要把机器人 emoji 做成固定 emotion mapping。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 8.1,
     "buckets": [
@@ -33,9 +33,7 @@
       "B",
       "F"
     ],
-    "stages": [
-      "Social meaning / pragmatics"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning"
     ],
@@ -65,7 +63,7 @@
   "gap_impact": [
     "GAP-01 被强化：effectiveness/meaning 不能简化为固定 icon-to-emotion mapping；但论文没有 longitudinally 观察 meaning formation。",
     "GAP-05 获得部分支持：informal visual signals 已有 contextual pragmatic account，但仍缺少系统的 embodied-communication theory。",
-    "GAP-06 作为 transfer gap 被强化：本文实证刻画 social-pragmatic signal functions，而 functional robot-state communication 不在其范围内。"
+    "historical-v1:GAP-06 作为 transfer gap 被强化：本文实证刻画 social-pragmatic signal functions，而 functional robot-state communication 不在其范围内。"
   ],
   "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
   "readiness": {
@@ -85,10 +83,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

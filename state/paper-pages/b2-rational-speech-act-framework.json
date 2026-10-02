@@ -21,17 +21,13 @@
   "real_contribution": "提供截至 2023 年的 RSA state-of-framework anchor，同时记录 convention/adaptation extensions 与模型边界。",
   "biggest_weakness": "非系统综述且以 scalar implicature 组织；开放式 multimodal joint action 距离大，alternative set、prior、utility 与 linking hypothesis 存在 underidentification。",
   "claim_boundary": "证明 RSA 是有生产力的 formal hypothesis framework；不证明 embodied agent 具有人类式 pragmatics/common ground，也不能把 computational fit 当作 process mechanism。",
-  "why_researcher_should_care": "系统理解 RSA、informativeness、cost、context、prior belief，以及这一框架目前的局限。",
+  "why_researcher_should_care": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。",
   "amsc": {
     "mainline_fit": 9,
     "buckets": [
       "B"
     ],
-    "stages": [
-      "Social Meaning / Pragmatics",
-      "Grounding / Common Ground",
-      "Convention Formation"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning",
       "Grounding",
@@ -80,10 +76,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "SUPPORTING",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
   },
   "scope_updated_at": "2026-09-18"
 }

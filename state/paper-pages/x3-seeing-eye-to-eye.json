@@ -26,11 +26,7 @@
       "C",
       "G"
     ],
-    "stages": [
-      "Grounding",
-      "Adaptation",
-      "Embodied Communication"
-    ],
+    "stages": [],
     "mechanisms": [
       "shared perspective",
       "accumulated common ground"
@@ -51,7 +47,7 @@
   "real_contribution": "共同注意、对象记忆与现场反馈的可用系统组合及短期任务比较，而非mutual-belief或共同惯例的直接验证。",
   "biggest_weakness": "系统和消融条件混杂；总澄清减少可能由错误机会减少驱动。累积错误曲线与用户迁就不能直接证明学习或稳定共同理解。",
   "investigation_status": "full_paper_investigation",
-  "why_researcher_should_care": "RQ1应比较等信息量下共同确认历史与仅存储记录；RQ2应测每次错误后的修复、uptake、复发及未来表达更新。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "evidence_notes": [
     "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
     "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。",
@@ -119,10 +115,10 @@
     "data_reanalysis": false
   },
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

@@ -32,11 +32,7 @@
       "C",
       "D"
     ],
-    "stages": [
-      "Grounding",
-      "Convention",
-      "Adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "human–robot convention formation",
       "repeated reference"
@@ -48,7 +44,7 @@
   },
   "method": "两个荷兰语 pilot 共招募30名成人，排除9名未完成六轮者，分析21名成人（7/14）；人类director、NAO V6的WoZ matcher。内圈角色反复出现，外圈间歇出现。两版本同时改变图像、次序和位置任务；无同任务HH对照。4978 utterances、871 mentions；SentenceBERT相邻轮最大相似度与词长主要作描述性分析。",
   "investigation_status": "full_paper_investigation",
-  "why_researcher_should_care": "为RQ1提供强closest work及动态distractor控制；RQ2可借用trouble—revision—uptake—reuse编码，但需新增互惠与历史操纵。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "evidence_notes": [
     "该条目来自 2026-08-26 bounded Missing Paper Attack，不属于用户原始 41 篇 baseline。",
     "检索覆盖不等于系统综述；不得据此声称不存在其他相关工作。",
@@ -114,10 +110,10 @@
     "data_reanalysis": false
   },
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Adjacent method or mechanism precedent; not a first-project requirement"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

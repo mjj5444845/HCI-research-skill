@@ -1,12 +1,7 @@
-version: "2.1"
-updated_at: 2026-09-18
-evidence_snapshot:
-  total_papers: 48
-  warning: 既有42篇保留原审查，2026-09-18补回6篇正文普通审查；未复现实验，不代表研究者已阅读。
-  by_investigation_status:
-    full_paper_investigation: 23
-    radar_full_text_audit: 24
-    abstract_evidence_investigation: 1
+version: "3.0"
+updated_at: 2026-10-02
+evidence_snapshot: v3.0 focused mainline audit; prior claims retained as bounded historical knowledge, not
+  automatic current priority.
 claims:
   - id: SOF-01
     statement: 在 repeated human-human drawing reference game 中，visual resemblance 与 interaction history 共同约束
@@ -17,8 +12,7 @@ claims:
     evidence:
       - c6-visual-resemblance-interaction-history
     boundary: 单一 object category 的 controlled human drawing；yoked-vs-shuffled 主要隔离 same-producer sequence
-      exposure，不识别 mutual common ground、original-dyad partner specificity、embodied AI 或 long-term
-      transfer。
+      exposure，不识别 mutual common ground、original-dyad partner specificity、embodied AI 或 long-term transfer。
     cumulative_change: STILL_HOLDS
   - id: SOF-02
     statement: 在受限 repeated reference games 中，artificial communicator 可通过 continual adaptation 或 success×cost
@@ -33,8 +27,8 @@ claims:
       non-adaptive control、partner swap、reciprocal repair 或 embodiment。
     cumulative_change: STRENGTHENED
   - id: SOF-03
-    statement: Controlled human-robot visual reference tasks 能产生稳定的 task-specific linguistic
-      conventions，但其效率轨迹与 human-human interaction 不完全相同。
+    statement: Controlled human-robot visual reference tasks 能产生稳定的 task-specific linguistic conventions，但其效率轨迹与
+      human-human interaction 不完全相同。
     claim_kind: source_says
     status: EMERGING
     evidence_strength: PRELIMINARY
@@ -43,9 +37,9 @@ claims:
     boundary: 受控 Dutch pilots 与 verbal referring expressions 不证明开放式、跨模态或长期 convention。
     cumulative_change: PARTIALLY_ADDRESSED
   - id: SOF-04
-    statement: Current LVLM convention/grounding behavior is interaction-regime dependent：post-trained
-      one-way 或 same-model dyads 可出现 convention-like efficiency/signatures，但 mixed
-      human–AI、history-severed pseudo-dyads 与更复杂 role-asymmetric tasks 暴露可靠性和 partner-specificity 缺口。
+    statement: Current LVLM convention/grounding behavior is interaction-regime dependent：post-trained one-way 或
+      same-model dyads 可出现 convention-like efficiency/signatures，但 mixed human–AI、history-severed pseudo-dyads
+      与更复杂 role-asymmetric tasks 暴露可靠性和 partner-specificity 缺口。
     claim_kind: source_grounded_synthesis
     status: EMERGING
     evidence_strength: MODERATE
@@ -68,8 +62,8 @@ claims:
     cumulative_change: NO_LONGER_CLAIMABLE
   - id: SOF-07
     statement: Human convention theory already models partner-specific common ground and its transfer toward
-      population-level conventions; partner-specific origin and subsequent transfer are complementary,
-      not mutually exclusive.
+      population-level conventions; partner-specific origin and subsequent transfer are complementary, not
+      mutually exclusive.
     claim_kind: source_grounded_synthesis
     status: EMERGING
     evidence_strength: MODERATE
@@ -99,12 +93,12 @@ claims:
     evidence:
       - b1-pragmatic-language-interpretation
       - b2-rational-speech-act-framework
-    boundary: Narrative framework reviews and heterogeneous modeling tasks do not establish one cognitive
-      process or embodied-agent capability.
+    boundary: Narrative framework reviews and heterogeneous modeling tasks do not establish one cognitive process
+      or embodied-agent capability.
     cumulative_change: NEW
   - id: SOF-10
-    statement: 在受控 one-shot human drawing reference games 中，communicators 会按 distractor similarity 在
-      diagnosticity 与 production cost 间调节视觉细节。
+    statement: 在受控 one-shot human drawing reference games 中，communicators 会按 distractor similarity 在 diagnosticity
+      与 production cost 间调节视觉细节。
     claim_kind: source_says
     status: EMERGING
     evidence_strength: MODERATE
@@ -113,8 +107,8 @@ claims:
     boundary: 32 objects/4 categories，prototype-choice model；无 repeated history、partner-specificity 或 embodiment。
     cumulative_change: NEW
   - id: SOF-11
-    statement: 在受控 repeated human text reference games 中，labels 的缩短受 listener feedback 与 local
-      discriminability 影响，并表现 within-dyad stabilization 与 between-dyad divergence。
+    statement: 在受控 repeated human text reference games 中，labels 的缩短受 listener feedback 与 local discriminability
+      影响，并表现 within-dyad stabilization 与 between-dyad divergence。
     claim_kind: source_says
     status: EMERGING
     evidence_strength: MODERATE
@@ -143,8 +137,8 @@ claims:
     boundary: 20 dyads、3 towers、4 repetitions、fixed roles；无 Agent、history-severing、repair perturbation 或 transfer。
     cumulative_change: NEW_CORE
   - id: SOF-18
-    statement: Textual paralanguage provides five broad categories and is frequently observed in sampled
-      2010s social-media posts, with platform-dependent distributions and context-dependent meaning.
+    statement: Textual paralanguage provides five broad categories and is frequently observed in sampled 2010s
+      social-media posts, with platform-dependent distributions and context-dependent meaning.
     claim_kind: source_says
     status: EMERGING
     evidence_strength: PRELIMINARY
@@ -154,20 +148,19 @@ claims:
       evidence for warmth, rapport or trust.
     cumulative_change: NEW
   - id: SOF-19
-    statement: Modality presence, grammatical structure and semantic dominance offer a usable theoretical
-      lens for verbal, bodily and graphic multimodal interaction.
+    statement: Modality presence, grammatical structure and semantic dominance offer a usable theoretical lens for
+      verbal, bodily and graphic multimodal interaction.
     claim_kind: theoretical_lens
     status: CONTESTED
     evidence_strength: PRELIMINARY
     evidence:
       - a5-multimodal-parallel-architecture
-    boundary: Single static architecture with underspecified component mechanisms; illustrative coding does
-      not validate cognitive truth.
+    boundary: Single static architecture with underspecified component mechanisms; illustrative coding does not
+      validate cognitive truth.
     cumulative_change: NEW
   - id: SOF-20
-    statement: same-producer exposure、style familiarity、independent task learning 与 mutually grounded
-      convention remain causally under-separated across much of the audited multimodal convention
-      evidence.
+    statement: same-producer exposure、style familiarity、independent task learning 与 mutually grounded convention
+      remain causally under-separated across much of the audited multimodal convention evidence.
     claim_kind: agent_synthesis
     status: OPEN
     evidence_strength: MODERATE
@@ -181,14 +174,12 @@ claims:
       - e3-continual-adaptation-machine-communication
       - x20-passing-the-pact
       - x22-banana-man-pragmatic-interpretation
-    boundary: Cross-paper causal audit, not any paper original claim; C5 and C6 count as one empirical
-      lineage. X20 is abstract-only; X22 studies naïve interpreters of archived human games, not
-      reciprocal dyads.
+    boundary: Cross-paper causal audit, not any paper original claim; C5 and C6 count as one empirical lineage.
+      X20 is abstract-only; X22 studies naïve interpreters of archived human games, not reciprocal dyads.
     cumulative_change: NEW_CORE
   - id: SOF-21
-    statement: Contextualized emoji、visual lexicon、dyadic action scaffolds 与 graded reference models
-      共同表明：signal form 本身不足以决定 meaning；local context、task discriminability、relationship 与 interaction
-      history 会改变解释和表达成本。
+    statement: Contextualized emoji、visual lexicon、dyadic action scaffolds 与 graded reference models 共同表明：signal
+      form 本身不足以决定 meaning；local context、task discriminability、relationship 与 interaction history 会改变解释和表达成本。
     claim_kind: source_grounded_synthesis
     status: EMERGING
     evidence_strength: MODERATE
@@ -197,58 +188,57 @@ claims:
       - a4-a-visual-lexicon
       - a6-puppetchat
       - b4-when-redundancy-is-useful
-    boundary: 证据横跨第三方 emoji interpretation、理论 visual lexicon、11 个 close dyads 的短期 deployment 与 verbal
-      reference games；不能合并为单一 causal mechanism，也不是 embodied human–AI convention evidence。
+    boundary: 证据横跨第三方 emoji interpretation、理论 visual lexicon、11 个 close dyads 的短期 deployment 与 verbal reference
+      games；不能合并为单一 causal mechanism，也不是 embodied human–AI convention evidence。
     cumulative_change: STRENGTHENED
   - id: SOF-24
-    statement: "LLM naming-game convergence can be a false-positive mechanism claim: a shared pretrained
-      label prior and apparatus presentation can accelerate or determine convergence, while per-agent
-      label-pool permutation reveals slower interaction-driven negotiation."
+    statement: "LLM naming-game convergence can be a false-positive mechanism claim: a shared pretrained label
+      prior and apparatus presentation can accelerate or determine convergence, while per-agent label-pool
+      permutation reveals slower interaction-driven negotiation."
     claim_kind: source_grounded_synthesis
     status: EMERGING
     evidence_strength: PRELIMINARY
     evidence:
       - x13-silica-agent-societies
-    boundary: Single-author preprint using artificial agent populations; shuffled agents still share
-      pretrained label semantics, and results do not establish human-equivalent convention.
+    boundary: Single-author preprint using artificial agent populations; shuffled agents still share pretrained
+      label semantics, and results do not establish human-equivalent convention.
     cumulative_change: NEW
   - id: SOF-27
-    statement: Long-term conversational memory availability and elicited retrieval are empirically distinct
-      from naturally integrating relevant shared history during interaction.
+    statement: Long-term conversational memory availability and elicited retrieval are empirically distinct from
+      naturally integrating relevant shared history during interaction.
     claim_kind: source_grounded_synthesis
     status: EMERGING
     evidence_strength: MODERATE
     evidence:
       - x16-memuse-natural-integration
-    boundary: One text-only deployment; Natural Integration–satisfaction association is observational and
-      based on 48 sessions/16 users, not evidence of mutual belief or convention.
+    boundary: One text-only deployment; Natural Integration–satisfaction association is observational and based on
+      48 sessions/16 users, not evidence of mutual belief or convention.
     cumulative_change: STRENGTHENED
   - id: SOF-28
-    statement: Under character pressure, explicitly prompted AI–AI postmortem coordination can produce
-      efficient dyad-specific shorthand, partial productivity, clarification behavior, and limited
-      newcomer uptake.
+    statement: Under character pressure, explicitly prompted AI–AI postmortem coordination can produce efficient
+      dyad-specific shorthand, partial productivity, clarification behavior, and limited newcomer uptake.
     claim_kind: source_grounded_synthesis
     status: EMERGING
     evidence_strength: PRELIMINARY
     evidence:
       - x17-glossogen-emergent-language
-    boundary: Agents were told to develop shorthand, postmortems allowed free code definition, linguistic
-      analysis partly used LLM judges, and one replacement generation does not establish cumulative
-      cultural evolution or human-like common ground.
+    boundary: Agents were told to develop shorthand, postmortems allowed free code definition, linguistic analysis
+      partly used LLM judges, and one replacement generation does not establish cumulative cultural evolution
+      or human-like common ground.
     cumulative_change: NEW
   - id: SOF-31
     statement: Abstract-level evidence from one multiparty Tangram task reports that speakers reuse prior
       conceptual pacts with less-knowledgeable human and agent interlocutors while showing stronger
-      knowledge-sensitive elaboration in human–human communication; pact reuse and audience design
-      therefore require separate measurement.
+      knowledge-sensitive elaboration in human–human communication; pact reuse and audience design therefore
+      require separate measurement.
     claim_kind: source_says
     status: EMERGING
     evidence_strength: PRELIMINARY
     evidence:
       - x20-passing-the-pact
-    boundary: Sample, agent implementation, knowledge manipulation, coding reliability, effect sizes and
-      analysis remain unavailable; the observed speaker behavior does not establish agent learning,
-      mutual belief, equivalence or shared-history causality.
+    boundary: Sample, agent implementation, knowledge manipulation, coding reliability, effect sizes and analysis
+      remain unavailable; the observed speaker behavior does not establish agent learning, mutual belief,
+      equivalence or shared-history causality.
     cumulative_change: NEW
   - id: SOF-32
     statement: In a purposefully sampled 4,735-item Chinese-language social-pragmatics benchmark, removing
@@ -259,15 +249,14 @@ claims:
     evidence_strength: MODERATE
     evidence:
       - x21-social-pragmatic-chinese-comments
-    boundary: Selection conditioned on context dependence; a 343-item revised hard subset had only 64.14%
-      human accuracy and kappa .53. This is not evidence about Chinese culture, prevalence, original
-      speaker intent, dyadic grounding or embodiment.
+    boundary: Selection conditioned on context dependence; a 343-item revised hard subset had only 64.14% human
+      accuracy and kappa .53. This is not evidence about Chinese culture, prevalence, original speaker intent,
+      dyadic grounding or embodiment.
     cumulative_change: NEW
   - id: SOF-33
     statement: In archived iterated Tangram games, tested VLMs could exploit externally supplied correct
-      game-specific mappings but struggled to accumulate relevant context or recover from their own
-      errors under limited feedback, separating convention retrieval from endogenous construction and
-      repair.
+      game-specific mappings but struggled to accumulate relevant context or recover from their own errors
+      under limited feedback, separating convention retrieval from endogenous construction and repair.
     claim_kind: source_grounded_synthesis
     status: EMERGING
     evidence_strength: MODERATE
@@ -286,20 +275,20 @@ claims:
     evidence:
       - x23-machine-mental-imagery-common-ground
     boundary: Single benchmark and LLM judge; the pipeline still missed negation, indirect requests and
-      cross-frame relations. A system-side state representation is not evidence of mutually established
-      common ground.
+      cross-frame relations. A system-side state representation is not evidence of mutually established common
+      ground.
     cumulative_change: NEW
   - id: SOF-35
-    statement: Conversation-Analysis-grounded visual features improved other-initiated-repair detection and
-      type classification beyond text plus audio across two human dyadic corpora, with the size and kind
-      of benefit differing by interaction setting.
+    statement: Conversation-Analysis-grounded visual features improved other-initiated-repair detection and type
+      classification beyond text plus audio across two human dyadic corpora, with the size and kind of benefit
+      differing by interaction setting.
     claim_kind: source_says
     status: EMERGING
     evidence_strength: MODERATE
     evidence:
       - x24-multimodal-repair-detection
-    boundary: Human–human French and Dutch corpora, only 47 OIR cases in NOXI, and no real-time agent
-      response or repair outcome; detecting trouble is not performing successful grounding repair.
+    boundary: Human–human French and Dutch corpora, only 47 OIR cases in NOXI, and no real-time agent response or
+      repair outcome; detecting trouble is not performing successful grounding repair.
     cumulative_change: NEW
   - id: SOF-36
     statement: Some VLMs conflate available task content with established referential alignment in MapTask
@@ -340,8 +329,8 @@ claims:
     boundary: Outcome-informed cue labels and conditional coverage preclude an unbiased general human–model gap.
     cumulative_change: NEW
   - id: SOF-40
-    statement: Role-matched swaps provide intervention evidence that formed notebook-equipped LLM dyads are
-      not fully interchangeable in coordination cost.
+    statement: Role-matched swaps provide intervention evidence that formed notebook-equipped LLM dyads are not
+      fully interchangeable in coordination cost.
     claim_kind: source_grounded_synthesis
     status: EMERGING
     evidence_strength: PRELIMINARY
@@ -372,6 +361,125 @@ claims:
       - x35-mgmc-fusion
     boundary: 综合不构成新颖性结论，也不证明这些方法解决真实互动中的理解；各研究样本、任务和证据不同。
     cumulative_change: REDEFINED
+  - id: SOF-43
+    statement: 在两个英语礼貌语料和一个高分歧专家诊断子集上，受测LLM彼此一致性高于模型—人一致性，并出现向Neutral压缩的方向性偏差；模型共识不能替代human pragmatic reference。
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence:
+      - x36-polite-but-misaligned
+    boundary: 第二语料来源与标签过程不清；专家仅5名L2英语语言学研究者且按高分歧抽样。只能称特定panel/reference，不能外推human norms、文化或内部机制。
+    cumulative_change: NEW
+  - id: SOF-44
+    statement: 在受控生成任务中，最终可用信息相当并不保证结果相同；早期歧义形成的旧假设可在后续澄清后继续污染行为，因此memory availability、acknowledgment与state
+      invalidation必须分开评价。
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence:
+      - x37-clarification-not-correction
+    boundary: 两种Gemini、生成任务与同族model judge；未排除全部位置/近因/指令效应，也未研究真实recipient或visual feedback。early posterior
+      collapse不是测得的内部posterior。
+    cumulative_change: NEW_CORE
+  - id: SOF-45
+    statement: 低维read-write bottleneck可编码并因果操纵模型从对话中推断的部分user state，但这种模型自我报告belief不等于真实用户属性、recipient
+      interpretation或完整listener model。
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence:
+      - x38-user-model-belief-distillation
+    boundary: 三种7–8B白盒模型、预设属性与自蒸馏监督；存在cross-attribute leakage，无真实用户ground truth。
+    cumulative_change: NEW
+  - id: SOF-46
+    statement: 实时直播与多方语音benchmark已把selective participation拆为whether/when/whom/what、speaker-scoped
+      state、authority与restraint；这些rubric与系统准确率仍不等于social appropriateness、usefulness或shared meaning。
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence:
+      - x39-live-assistant
+      - x40-msi-bench
+    boundary: Live Assistant含teacher-generated trajectories与自动judge；MSI-Bench主要是脚本/TTS场景。二者没有真实互动中的recipient
+      outcome或共同理解证据。
+    cumulative_change: REDEFINED
+  - id: SOF-47
+    statement: 在175名两次均采用AI草稿的日美Prolific雇员中，邮件表面风格marker随预选草稿移动，且研究者定义的misaligned条件移动更大；这支持特定任务中的AI-mediated style
+      shift，不支持国家规范被覆盖。
+    claim_kind: source_says
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence:
+      - x41-ai-email-cultural-style
+    boundary: 国别、居住地与语言捆绑；纳入率差异大，单一双语coder、翻译链和high/low-context复合指标未验证measurement invariance；邮件未真实发送。
+    cumulative_change: NEW
+  - id: SOF-48
+    statement: MemeCF表明可用反事实flip和局部rationale把标签相关的文本、图像与跨模态cue显式化，为failure trace提供方法先例；label
+      flip仍不能证明恢复作者意图或recipient interpretation。
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: PRELIMINARY
+    evidence:
+      - x42-memecf-pivotal-cues
+    boundary: 9,895项中仅512项标为multimodal cue，主要任务是静态harm/hate/sarcasm分类；半自动生成与跨来源划分尚需泄漏审计。
+    cumulative_change: NEW
+  - id: SOF-49
+    statement: 机器人表达设计、动作节奏及可读性已有直接研究；新主线须具体比较传意准确度、确信和角色归因，而非笼统宣称表达有益。
+    claim_kind: source_grounded_synthesis
+    status: ESTABLISHED
+    evidence_strength: MODERATE
+    evidence:
+      - d4-expressing-thought
+      - d5-legibility-and-predictability
+      - x43-elegnt
+      - x44-expressive-motion-timing
+    boundary: 既有实验限于受测条件；D4未提高意图识别准确率，不能把确信提高当理解改善。
+    cumulative_change: NEW_CORE
+  - id: SOF-50
+    statement: 跨载体companion及人格、记忆迁移已有LIREC直接先例；身份连续性感知与能力判断可以分离。
+    claim_kind: source_grounded_synthesis
+    status: ESTABLISHED
+    evidence_strength: MODERATE
+    evidence:
+      - x47-migrating-artificial-companions
+      - x48-memory-identity-embodiments
+      - x49-long-term-agent-migration
+    boundary: 同一研究谱系，样本与载体有限；不能证明任意设备间关系完整迁移。
+    cumulative_change: NEW_CORE
+  - id: SOF-51
+    statement: 角色到行为映射及任务匹配已有实现与实验，持久、可演变人格的具体边界仍需针对性验证。
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence:
+      - x45-appearance-behavior-task
+      - x46-companion-behavior-consistency
+      - x51-empathetic-companions-personality
+      - g4-context-aware-expressive-motion
+    boundary: 短期评分不能证明长期人格；演化部分覆盖有限，未宣称文献空白。
+    cumulative_change: NEW_CORE
+  - id: SOF-52
+    statement: 关系型代理和长期机器人使用已有研究；身份识别、留存、好感与关系质量不是同一证据对象。
+    claim_kind: source_grounded_synthesis
+    status: ESTABLISHED
+    evidence_strength: MODERATE
+    evidence:
+      - x50-computer-patient-alliance
+      - e1-long-term-social-robots-survey
+      - e4-designing-robots-long-term
+      - f3-robotic-products-social-products
+    boundary: 医疗working alliance、家庭实践和公共空间日志不能无条件合并为普遍陪伴效果。
+    cumulative_change: NEW_CORE
+  - id: SOF-53
+    statement: 身份数量与设备数量不必一一对应；一个companion的多种外延和一台机器人多个身份都属于可比较设计空间。
+    claim_kind: source_grounded_synthesis
+    status: EMERGING
+    evidence_strength: MODERATE
+    evidence:
+      - x47-migrating-artificial-companions
+      - x52-meet-my-sidekick
+    boundary: X52为摘要级；尚不能选出普遍最优架构。
+    cumulative_change: NEW_CORE
 claim_statuses:
   - ESTABLISHED
   - EMERGING

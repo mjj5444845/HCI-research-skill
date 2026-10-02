@@ -1,0 +1,59 @@
+{
+  "id": "X44",
+  "slug": "x44-expressive-motion-timing",
+  "title": "Expressive Robot Motion Timing",
+  "authors": [
+    "Allan Zhou",
+    "Dylan Hadfield-Menell",
+    "Anusha Nagabandi",
+    "Anca D. Dragan"
+  ],
+  "year": 2017,
+  "venue": "HRI 2017",
+  "source_url": "https://people.eecs.berkeley.edu/~anca/papers/HRI17_timing.pdf",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "动作节奏如何改变人对机器人的判断",
+  "problem": "动作节奏如何改变人对机器人的判断",
+  "method": "保持运动路径，改变timing，研究confidence、naturalness与物体重量判断并建立模型。",
+  "findings": [
+    "时间参数可改变受测属性推断，为低维表达控制提供先例。"
+  ],
+  "real_contribution": "动作节奏如何改变人对机器人的判断",
+  "biggest_weakness": "不证明人格持续或长期关系；2017会议论文不能按2018 arXiv上传时间记年。",
+  "claim_boundary": "不证明人格持续或长期关系；2017会议论文不能按2018 arXiv上传时间记年。",
+  "why_researcher_should_care": "提供新主线的直接先例与反证边界；组合已有设计不自动构成新颖性。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "A",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "动作节奏如何改变人对机器人的判断"
+    ],
+    "gap_ids": [
+      "GAP-RC-01"
+    ],
+    "master_list_decision": "Added after independent focused audit"
+  },
+  "investigation_status": "focused_source_audit",
+  "evidence_notes": [
+    "2026-10-02独立文献代理核查；全文可访问与完整深度调查分开，未复现实验。",
+    "不证明人格持续或长期关系；2017会议论文不能按2018 arXiv上传时间记年。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://people.eecs.berkeley.edu/~anca/papers/HRI17_timing.pdf"
+    ]
+  },
+  "updated_at": "2026-10-02",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "动作节奏如何改变人对机器人的判断"
+  }
+}

@@ -62,14 +62,20 @@ Use schemas/research-pipeline.schema.json and schemas/writing-workspace.schema.j
 
 网页阅读内容维护在 `state/reading_zh.json`，原始审查记录仍作为证据来源。新增或修订论文、Gap、问题时，同时核对对应中文解读并更新来源哈希；源记录变化而解读未核对时，网页提示待复核。翻译或通俗改写不得改变研究状态、优先级、研究者决定及实际实验完成情况。
 
-## Program scope migration (2026-09-18)
+## Historical program scope migration (2026-09-18; superseded by v3.0)
 
 Current scope is program v2.0. A–G labels are defined in program.yaml; old paper IDs remain stable and no longer imply the new category. archives/2026-09-18-mainline-v1 preserves all pre-migration records including uncommitted work. Deferred robot material and old RQ/validation/study bundles are absent from current site projections. Archival does not resolve a scientific gap. New specific RQs require question development; direction approval is not PURSUE. Do not run legacy import or integration scripts against v2 state.
 
 Select evidence by contribution: computational validation is a first-class study design; human-study and qualitative audits are conditional. After scope changes validate every paper, gap, question, graph and downstream reference and rebuild Chinese source hashes only for reviewed edits.
 
-## Artifact roadmap approval (2026-09-18)
+## Historical artifact roadmap approval (2026-09-18; superseded by v3.0)
 
 Program v2.1 supersedes the earlier v2.0 direction-only snapshot. The user approved AMSC × FailureTrace as one mainline with tangible artifacts at every stage and website publication. program.yaml#artifact_roadmap owns stages, interface blueprints, deliverables, evidence gates, dependencies and official capability references; the website reads it directly.
 
 Actual implementation, validation and release require artifact evidence. Roadmap approval does not establish novelty or study readiness. The current priority is MeaningTrace Studio plus a minimal FrictionBench protocol. Model and application work may proceed in parallel. Laboratory references support inferred capability fit, never collaboration or adoption claims. Exam and writing remain independent downstream workspaces.
+
+
+## Current scope migration (2026-10-02)
+
+For AMSC work, load current PROGRAM.md and program.yaml (v3.0, 2026-10-02). The mainline is robot visual/embodied expression, user interpretation, character–behavior coherence and relationships, including an AI companion with robotic/electronic extensions. One companion and separate characters are alternatives, not selected winners. Devices need not converse or carry independent personas. Persistence is not fixed behavior; evolution is not random drift. Empirical, artifact and evidence-supported theoretical contributions are valid; computational work must state its substantive bridge. Human perception and relationship claims need appropriate human evidence; short-term liking is not long-term relationship. X21 remains user-confirmed foundation, not a required starting point. No first RQ or new hardware access is approved. Preserve archives and human edits; reactivation needs item-level review.
+Read scope histories separately from scientific gap status. The five new work packages are candidate proposals, not selected experiments. Preserve the previous working-tree state in archives/2026-10-02-mainline-v2. Update all paper memberships, every gap scope, question priorities, graph and Chinese projections. Do not relabel source findings or personal mastery.

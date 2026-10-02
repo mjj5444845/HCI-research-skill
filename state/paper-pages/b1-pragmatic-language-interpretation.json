@@ -22,16 +22,13 @@
   "real_contribution": "把 pragmatic meaning 从 fixed decoding 推进到可检验的 probabilistic inverse planning，并提供连接 linguistics、cognitive science 与 AI 的 formal vocabulary。",
   "biggest_weakness": "narrative review 来自框架主要提出者；basic RSA 常预设 alternatives、utility、literal semantics 与 rational speaker，主要解释受限 listener judgments，而非在线 production/repair。",
   "claim_boundary": "不能据此声称人类显式执行深层 Bayesian recursion，也不能推出 RSA 已解释 multimodal embodied grounding 或 emergent convention。",
-  "why_researcher_should_care": "RSA 的核心入口。把 communication 理解为 communicator 和 listener 根据 context、goal 和彼此认知进行 probabilistic reasoning，而不是 fixed signal decoding。",
+  "why_researcher_should_care": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。",
   "amsc": {
     "mainline_fit": 8.8,
     "buckets": [
       "B"
     ],
-    "stages": [
-      "Social Meaning / Pragmatics",
-      "Grounding / Common Ground"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning",
       "Grounding"
@@ -79,10 +76,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "SUPPORTING",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
   },
   "scope_updated_at": "2026-09-18"
 }

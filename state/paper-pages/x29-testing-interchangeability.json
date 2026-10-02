@@ -24,7 +24,7 @@
   "real_contribution": "An intervention-based counterexample to broad claims that LLM coordination lacks partner specificity.",
   "biggest_weakness": "Few independent pairs; note deletion changes context length; prompted note categories and task-order differences complicate mechanism attribution.",
   "claim_boundary": "Supports history-bearing partner compatibility in tested LLM dyads, not mutually acknowledged referential meaning or human–robot generalization.",
-  "why_researcher_should_care": "Q1 must distinguish partner-model compatibility from jointly accepted meaning, and evaluate coordination cost as well as accuracy.",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9.3,
     "buckets": [
@@ -32,10 +32,7 @@
       "D",
       "E"
     ],
-    "stages": [
-      "Convention formation",
-      "Adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "partner swap",
       "team familiarity",
@@ -59,10 +56,10 @@
   "provenance": "amsc_radar_2026-09-14",
   "updated_at": "2026-09-14",
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Adjacent method or mechanism precedent; not a first-project requirement"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

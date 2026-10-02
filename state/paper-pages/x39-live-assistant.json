@@ -1,0 +1,71 @@
+{
+  "id": "X39",
+  "slug": "x39-live-assistant",
+  "title": "Live Assistant: Learning Whether, When, and Whom to Assist in Real-World Live Social Streams",
+  "authors": [
+    "Shujian Gao",
+    "Jiamei Yan",
+    "Yuchen Yang",
+    "Penghao Zhou",
+    "Qinglei Wang",
+    "Tiehan Fan",
+    "Yuan Wang",
+    "Zuxuan Wu",
+    "Yu-gang Jiang"
+  ],
+  "year": 2026,
+  "venue": "Under review",
+  "source_url": "https://arxiv.org/abs/2609.27303",
+  "doi": "10.48550/arXiv.2609.27303",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "把直播中的是否、何时、向谁、做什么整合为基于原生音视频与社会流信号的选择性参与任务。",
+  "problem": "实时social stream中的助手如何联合决定保持沉默、记录或向特定recipient回应？",
+  "method": "用原生音视频、评论、礼物、viewer dynamics和room metadata构建320.8小时优化轨迹及38.4小时、275 clips、13,812 intervals的benchmark，并训练Qwen3-Omni策略。",
+  "findings": [
+    "模型在held-out benchmark上达到71.14 state、72.67 recipient和58.41 task accuracy。",
+    "联合structured decision训练优于一般SFT基线。"
+  ],
+  "real_contribution": "为situated multimodal participation提供问题定义、数据资源和AI/CV训练路线。",
+  "biggest_weakness": "参考轨迹含teacher-model生成与人工审核，审核独立性不清；10秒粒度、较少rooms及自动judge限制效度。",
+  "claim_boundary": "state/recipient/task accuracy不证明真实host/viewer觉得介入有用、合宜或形成shared meaning。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
+  "amsc": {
+    "mainline_fit": "high",
+    "buckets": [
+      "A",
+      "D",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "selective participation",
+      "recipient routing"
+    ],
+    "gap_ids": [
+      "GAP-04",
+      "GAP-05"
+    ],
+    "master_list_decision": "Candidate — Important / situated multimodal participation"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "公开全文已核查数据、训练、结果和限制；未复现实验。",
+    "真实直播隐私、同意和部署效用仍未建立。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2609.27303v1",
+      "accessed_at": "2026-09-28",
+      "scope": "全文任务、数据、训练、结果与限制"
+    }
+  ],
+  "provenance": "amsc-radar-2026-09-28",
+  "updated_at": "2026-09-28",
+  "program_membership": {
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+  }
+}

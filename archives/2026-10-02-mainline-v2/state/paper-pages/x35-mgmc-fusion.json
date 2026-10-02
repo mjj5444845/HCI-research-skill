@@ -1,0 +1,68 @@
+{
+  "id": "X35",
+  "slug": "x35-mgmc-fusion",
+  "title": "Multi-Granular Multimodal Clue Fusion for Meme Understanding",
+  "authors": [
+    "Li Zheng",
+    "Hao Fei",
+    "Ting Dai",
+    "Zuquan Peng",
+    "Fei Li",
+    "Huisheng Ma",
+    "Chong Teng",
+    "Donghong Ji"
+  ],
+  "year": 2025,
+  "venue": "AAAI 2025",
+  "source_url": "https://arxiv.org/abs/2503.12560",
+  "doi": "10.1609/aaai.v39i24.34801",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "作者报告隐喻、情感、意图及冒犯检测上的性能改善。",
+  "problem": "细粒度视觉线索与较弱的图文联系如何进入meme模型？",
+  "method": "对象级语义挖掘、全局与局部跨模态交互及双语义训练；在MET-MEME中英文任务上比较基线与组件消融。",
+  "findings": [
+    "作者报告隐喻、情感、意图及冒犯检测上的性能改善。"
+  ],
+  "real_contribution": "新模型研究需比较已有融合方法，技术贡献本身有效，无须附加不相关人机实验。",
+  "biggest_weakness": "证据限于受测标签任务；分类准确率不等于具体情境用意解释或共享意义，泛化与泄漏需进一步审计。",
+  "claim_boundary": "证据限于受测标签任务；分类准确率不等于具体情境用意解释或共享意义，泛化与泄漏需进一步审计。",
+  "why_researcher_should_care": "新模型研究需比较已有融合方法，技术贡献本身有效，无须附加不相关人机实验。",
+  "amsc": {
+    "mainline_fit": null,
+    "buckets": [
+      "B",
+      "D"
+    ],
+    "stages": [
+      "Social meaning/pragmatics"
+    ],
+    "mechanisms": [
+      "细粒度视觉线索与较弱的图文联系如何进入meme模型？"
+    ],
+    "gap_ids": [
+      "GAP-05"
+    ],
+    "master_list_decision": "Candidate — Important / recovered under program v2"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "独立审查者核验AAAI元数据与正文实验/消融；未复现实验。",
+    "Historical recovery outside 2026-09-11–18 window; normal audit, not deep replication."
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2503.12560v1",
+      "accessed_at": "2026-09-18",
+      "scope": "独立审查者核验AAAI元数据与正文实验/消融；未复现实验。"
+    }
+  ],
+  "provenance": "amsc-radar-2026-09-18",
+  "updated_at": "2026-09-18",
+  "program_membership": {
+    "status": "ACTIVE",
+    "program_version": "2.0",
+    "reviewed_at": "2026-09-18",
+    "reason": "新模型研究需比较已有融合方法，技术贡献本身有效，无须附加不相关人机实验。"
+  }
+}

@@ -23,18 +23,14 @@
   "real_contribution": "把一致用词推进为历史敏感、共同协商、partner-specific 且可修订的 conceptual coordination account，并给出直接 partner-switch evidence。",
   "biggest_weakness": "只有四个关键 target items，关键 partner effect 的 item-level test marginal；partner switch 同时改变 memory cue、feedback 与 expectations，不能单独识别内部 representation。",
   "claim_boundary": "支持 controlled human–human lexical reference 的 partner-specific historical effect；lexical reuse 不是 conceptual pact、population convention、multimodal convention 或 human–AI mutual belief 的充分证据。",
-  "why_researcher_should_care": "非常关键。不同 dyads 会建立 **partner-specific conceptual pacts**，而 interaction history 会影响以后如何指称同一对象。",
+  "why_researcher_should_care": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。",
   "amsc": {
     "mainline_fit": 10,
     "buckets": [
       "C",
       "E"
     ],
-    "stages": [
-      "Grounding / Common Ground",
-      "Convention Formation",
-      "Personalization / Co-adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "Grounding",
       "Convention",
@@ -82,10 +78,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "SUPPORTING",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
   },
   "scope_updated_at": "2026-09-18"
 }

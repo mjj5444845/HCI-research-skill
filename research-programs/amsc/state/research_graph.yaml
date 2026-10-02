@@ -1,5 +1,5 @@
-version: "2.1"
-updated_at: 2026-09-18
+version: "3.0"
+updated_at: 2026-10-02
 nodes:
   - id: paper:x25-seeing-is-not-sharing
     type: paper
@@ -680,6 +680,242 @@ nodes:
     label: Yu Zhang (memebridge; identity unresolved)
     evidence_status: name_verified_identity_unresolved
     provenance: https://arxiv.org/abs/2609.00491
+  - id: paper:x36-polite-but-misaligned
+    type: paper
+    label: "Polite but Misaligned: Evaluating LLM Politeness Judgments Against Human Pragmatic Norms"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.29001
+  - id: author:rong-wang
+    type: author
+    label: Rong Wang
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.29001
+  - id: author:yadong-guo
+    type: author
+    label: Yadong Guo
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.29001
+  - id: paper:x37-clarification-not-correction
+    type: paper
+    label: "Clarification Is Not Correction: LLMs Fail to Let Go"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.25337
+  - id: author:jianzhe-lin
+    type: author
+    label: Jianzhe Lin
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.25337
+  - id: author:jubin-chheda
+    type: author
+    label: Jubin Chheda
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.25337
+  - id: paper:x38-user-model-belief-distillation
+    type: paper
+    label: User Model Extraction via Belief Self-Distillation
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.31603
+  - id: author:ali-holmov
+    type: author
+    label: Ali Holmov
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.31603
+  - id: author:zeynep-akata
+    type: author
+    label: Zeynep Akata
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.31603
+  - id: paper:x39-live-assistant
+    type: paper
+    label: "Live Assistant: Learning Whether, When, and Whom to Assist in Real-World Live Social Streams"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.27303
+  - id: author:shujian-gao
+    type: author
+    label: Shujian Gao
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.27303
+  - id: author:yu-gang-jiang
+    type: author
+    label: Yu-gang Jiang
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.27303
+  - id: paper:x40-msi-bench
+    type: paper
+    label: "MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.24812
+  - id: author:chenxu-xiong
+    type: author
+    label: Chenxu Xiong
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.24812
+  - id: author:alex-smola
+    type: author
+    label: Alex Smola
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.24812
+  - id: paper:x41-ai-email-cultural-style
+    type: paper
+    label: AI-Generated Email Drafts Shift Culturally Distinctive Communication Styles in Professional Email
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.26403
+  - id: author:shintaro-sakai
+    type: author
+    label: Shintaro Sakai
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.26403
+  - id: author:katharina-reinecke
+    type: author
+    label: Katharina Reinecke
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.26403
+  - id: paper:x42-memecf-pivotal-cues
+    type: paper
+    label: "Small Cues, Big Consequences: Learning Pivotal Cues for Multimodal Meme Classification"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.26907
+  - id: author:akshit-sharma
+    type: author
+    label: Akshit Sharma
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.26907
+  - id: author:prashant-w-patil
+    type: author
+    label: Prashant W. Patil
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.26907
+  - id: paper:d4-expressing-thought
+    type: paper
+    label: "Expressing Thought: Improving Robot Readability with Animation Principles"
+    evidence_status: verified
+    provenance: https://www.leilatakayama.org/downloads/Takayama.Animation_HRI2011_prepress.pdf
+  - id: paper:d5-legibility-and-predictability
+    type: paper
+    label: Legibility and Predictability of Robot Motion
+    evidence_status: verified
+    provenance: https://publications.ri.cmu.edu/legibility-and-predictability-of-robot-motion
+  - id: paper:d6-designing-robots-with-movement
+    type: paper
+    label: Designing Robots with Movement in Mind
+    evidence_status: verified
+    provenance: https://hrc2.io/assets/pdfs/papers/HoffmanJuJHRI14.pdf
+  - id: paper:d7-social-eye-gaze-review
+    type: paper
+    label: "Social Eye Gaze in Human-Robot Interaction: A Review"
+    evidence_status: verified
+    provenance: https://www.ri.cmu.edu/app/uploads/2018/01/admoni2017jhri.pdf
+  - id: paper:e1-long-term-social-robots-survey
+    type: paper
+    label: "Social Robots for Long-Term Interaction: A Survey"
+    evidence_status: verified
+    provenance: https://viterbik12.usc.edu/wp-content/uploads/2018/06/Social-Robots-for-Long-Term-Interaction-A-Survey.pdf
+  - id: paper:e2-human-robot-mutual-adaptation
+    type: paper
+    label: "Human-Robot Mutual Adaptation in Collaborative Tasks: Models and Experiments"
+    evidence_status: verified
+    provenance: https://pmc.ncbi.nlm.nih.gov/articles/PMC7449140/
+  - id: paper:e4-designing-robots-long-term
+    type: paper
+    label: Designing Robots for Long-Term Social Interaction
+    evidence_status: verified
+    provenance: https://www.cs.cmu.edu/afs/cs/usr/reids/www/papers/Valerie-IROS2005-final.pdf
+  - id: paper:f3-robotic-products-social-products
+    type: paper
+    label: "How Robotic Products Become Social Products: An Ethnographic Study of Cleaning in the Home"
+    evidence_status: verified
+    provenance: https://hcii.s3.amazonaws.com/ppr/papers/p129-forlizzi.pdf
+  - id: paper:f5-robots-in-the-wild
+    type: paper
+    label: "Robots in the Wild: A Time for More Robust Theories of Human-Robot Interaction"
+    evidence_status: verified
+    provenance: https://interplay.infosci.cornell.edu/assets/papers/wild.pdf
+  - id: paper:g4-context-aware-expressive-motion
+    type: paper
+    label: Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models
+    evidence_status: verified
+    provenance: https://gen-mod-expressive-motion-behavior.github.io/
+  - id: paper:x4-making-memories-together
+    type: paper
+    label: "Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction"
+    evidence_status: verified
+    provenance: https://research.utwente.nl/en/publications/making-memories-together-toward-transparent-and-co-constructed-ro/
+  - id: paper:x43-elegnt
+    type: paper
+    label: "ELEGNT: Expressive and Functional Movement Design for Non-Anthropomorphic Robot"
+    evidence_status: verified
+    provenance: https://arxiv.org/html/2501.12493v1
+  - id: paper:x44-expressive-motion-timing
+    type: paper
+    label: Expressive Robot Motion Timing
+    evidence_status: verified
+    provenance: https://people.eecs.berkeley.edu/~anca/papers/HRI17_timing.pdf
+  - id: paper:x45-appearance-behavior-task
+    type: paper
+    label: Matching Robot Appearance and Behavior to Tasks to Improve Human-Robot Cooperation
+    evidence_status: verified
+    provenance: https://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/kiesler/publications/2003pdfs/2003_matching-robot-appear-coop.pdf
+  - id: paper:x46-companion-behavior-consistency
+    type: paper
+    label: "Avoiding the uncanny valley: robot appearance, personality and consistency of behavior in an
+      attention-seeking home scenario for a robot companion"
+    evidence_status: verified
+    provenance: https://link.springer.com/article/10.1007/s10514-007-9058-3
+  - id: paper:x47-migrating-artificial-companions
+    type: paper
+    label: Migrating Artificial Companions (Demonstration)
+    evidence_status: verified
+    provenance: https://researchportal.hw.ac.uk/en/publications/migrating-artificial-companions-demonstration/
+  - id: paper:x48-memory-identity-embodiments
+    type: paper
+    label: Do I remember you? Memory and identity in multiple embodiments
+    evidence_status: verified
+    provenance: https://www.macs.hw.ac.uk/~ruth/Papers/planning/AylettEtAl-RoMan2013v6.pdf
+  - id: paper:x49-long-term-agent-migration
+    type: paper
+    label: Prototyping Realistic Long-term Human-Robot Interaction for the Study of Agent Migration
+    evidence_status: verified
+    provenance: https://uhra.herts.ac.uk/id/eprint/15163/1/PrototypingRealisticLong_termHRIMigration_ROMAN2016_v1.4_CameraReady.pdf
+  - id: paper:x50-computer-patient-alliance
+    type: paper
+    label: Establishing the computer-patient working alliance in automated health behavior change interventions
+    evidence_status: verified
+    provenance: https://pubmed.ncbi.nlm.nih.gov/16198215/
+  - id: paper:x51-empathetic-companions-personality
+    type: paper
+    label: "Designing Empathetic Companions: Exploring Personality, Emotion, and Trust in Social Robots"
+    evidence_status: verified
+    provenance: https://arxiv.org/html/2504.13964v1
+  - id: paper:x52-meet-my-sidekick
+    type: paper
+    label: "“Meet My Sidekick!”: Effects of Separate Identities and Control of a Single Robot in HRI"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2602.07598
+  - id: question:RQ-RC-01
+    type: question
+    label: 同一视觉/动作线索在不同情境中，如何分别影响意图识别、判断确信及能力预期？
+    evidence_status: proposed
+    provenance: 2026-10-02 user scope + independent synthesis
+  - id: question:RQ-RC-02
+    type: question
+    label: 角色约束如何跨动作、视觉反馈和主动性保持可感知的一致性，同时适应任务与设备能力？
+    evidence_status: proposed
+    provenance: 2026-10-02 user scope + independent synthesis
+  - id: question:RQ-RC-03
+    type: question
+    label: 变化幅度、变化理由和互动历史分别怎样影响用户对同一companion成长、适应或性格漂移的判断？
+    evidence_status: proposed
+    provenance: 2026-10-02 user scope + independent synthesis
+  - id: question:RQ-RC-04
+    type: question
+    label: 跨能力不对称设备时，表面身份、表达风格、记忆与任务连续性分别怎样影响身份识别、行为预期和责任归属？
+    evidence_status: proposed
+    provenance: 2026-10-02 user scope + independent synthesis
+  - id: question:RQ-RC-05
+    type: question
+    label: 表达和行为一致性如何改变重复互动中的期待、信任校准、再次使用及失配后的关系理解？
+    evidence_status: proposed
+    provenance: 2026-10-02 user scope + independent synthesis
 edges:
   - source_node: author:herbert-h-clark
     relation: coauthored
@@ -1947,6 +2183,271 @@ edges:
       - x35-mgmc-fusion
     confidence: MODERATE
     notes: 新模型研究需比较已有融合方法，技术贡献本身有效，无须附加不相关人机实验。
+  - source_node: author:rong-wang
+    relation: coauthored
+    target_node: author:yadong-guo
+    evidence_status: verified
+    evidence:
+      - x36-polite-but-misaligned
+    confidence: HIGH
+    notes: Representative verified coauthor edge; full author list remains on the paper page and no lab relation
+      is inferred.
+  - source_node: paper:x36-polite-but-misaligned
+    relation: intellectual_lineage
+    target_node: concept:meaning
+    evidence_status: inferred
+    evidence:
+      - x36-polite-but-misaligned
+    confidence: MODERATE
+    notes: Human-reference calibration for social-pragmatic interpretation; not an author-claimed lineage.
+  - source_node: author:jianzhe-lin
+    relation: coauthored
+    target_node: author:jubin-chheda
+    evidence_status: verified
+    evidence:
+      - x37-clarification-not-correction
+    confidence: HIGH
+    notes: Representative verified coauthor edge; no lab relation inferred.
+  - source_node: paper:x37-clarification-not-correction
+    relation: intellectual_lineage
+    target_node: concept:adaptation
+    evidence_status: inferred
+    evidence:
+      - x37-clarification-not-correction
+    confidence: MODERATE
+    notes: State invalidation and clarification timing map to adaptation, but no human convention claim is inferred.
+  - source_node: author:ali-holmov
+    relation: coauthored
+    target_node: author:zeynep-akata
+    evidence_status: verified
+    evidence:
+      - x38-user-model-belief-distillation
+    confidence: HIGH
+    notes: Representative verified coauthor edge; no lab relation inferred.
+  - source_node: paper:x38-user-model-belief-distillation
+    relation: intellectual_lineage
+    target_node: concept:adaptation
+    evidence_status: inferred
+    evidence:
+      - x38-user-model-belief-distillation
+    confidence: MODERATE
+    notes: Read-write inferred-user state is an adaptation mechanism candidate, not verified human understanding.
+  - source_node: author:shujian-gao
+    relation: coauthored
+    target_node: author:yu-gang-jiang
+    evidence_status: verified
+    evidence:
+      - x39-live-assistant
+    confidence: HIGH
+    notes: Representative verified coauthor edge; no lab relation inferred.
+  - source_node: paper:x39-live-assistant
+    relation: intellectual_lineage
+    target_node: concept:embodied-communication
+    evidence_status: inferred
+    evidence:
+      - x39-live-assistant
+    confidence: MODERATE
+    notes: Maps situated audiovisual selective participation to AMSC without claiming real-user usefulness.
+  - source_node: author:chenxu-xiong
+    relation: coauthored
+    target_node: author:alex-smola
+    evidence_status: verified
+    evidence:
+      - x40-msi-bench
+    confidence: HIGH
+    notes: Representative verified coauthor edge; no lab relation inferred.
+  - source_node: paper:x40-msi-bench
+    relation: intellectual_lineage
+    target_node: concept:grounding
+    evidence_status: inferred
+    evidence:
+      - x40-msi-bench
+    confidence: MODERATE
+    notes: Speaker-scoped capability mapping; rubric success is not equated with mutual grounding.
+  - source_node: author:shintaro-sakai
+    relation: coauthored
+    target_node: author:katharina-reinecke
+    evidence_status: verified
+    evidence:
+      - x41-ai-email-cultural-style
+    confidence: HIGH
+    notes: Representative verified coauthor edge; no lab or cultural identity relation inferred.
+  - source_node: paper:x41-ai-email-cultural-style
+    relation: intellectual_lineage
+    target_node: concept:adaptation
+    evidence_status: inferred
+    evidence:
+      - x41-ai-email-cultural-style
+    confidence: MODERATE
+    notes: AI-mediated style shift maps to adaptation while preserving group, language and measurement boundaries.
+  - source_node: author:akshit-sharma
+    relation: coauthored
+    target_node: author:prashant-w-patil
+    evidence_status: verified
+    evidence:
+      - x42-memecf-pivotal-cues
+    confidence: HIGH
+    notes: Verified two-author relation; no affiliation relation inferred.
+  - source_node: paper:x42-memecf-pivotal-cues
+    relation: intellectual_lineage
+    target_node: concept:meaning
+    evidence_status: inferred
+    evidence:
+      - x42-memecf-pivotal-cues
+    confidence: MODERATE
+    notes: Counterfactual cue localization informs failure tracing but label flip is not recipient interpretation.
+  - source_node: paper:d4-expressing-thought
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-01
+    evidence_status: inferred
+    evidence:
+      - d4-expressing-thought
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:d5-legibility-and-predictability
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-01
+    evidence_status: inferred
+    evidence:
+      - d5-legibility-and-predictability
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x43-elegnt
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-01
+    evidence_status: inferred
+    evidence:
+      - x43-elegnt
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x44-expressive-motion-timing
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-01
+    evidence_status: inferred
+    evidence:
+      - x44-expressive-motion-timing
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x45-appearance-behavior-task
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence:
+      - x45-appearance-behavior-task
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x46-companion-behavior-consistency
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence:
+      - x46-companion-behavior-consistency
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x51-empathetic-companions-personality
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence:
+      - x51-empathetic-companions-personality
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:g4-context-aware-expressive-motion
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence:
+      - g4-context-aware-expressive-motion
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x51-empathetic-companions-personality
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence:
+      - x51-empathetic-companions-personality
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:e1-long-term-social-robots-survey
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence:
+      - e1-long-term-social-robots-survey
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x4-making-memories-together
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence:
+      - x4-making-memories-together
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x47-migrating-artificial-companions
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence:
+      - x47-migrating-artificial-companions
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x48-memory-identity-embodiments
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence:
+      - x48-memory-identity-embodiments
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x49-long-term-agent-migration
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence:
+      - x49-long-term-agent-migration
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x52-meet-my-sidekick
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence:
+      - x52-meet-my-sidekick
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x50-computer-patient-alliance
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence:
+      - x50-computer-patient-alliance
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:e4-designing-robots-long-term
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence:
+      - e4-designing-robots-long-term
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:f3-robotic-products-social-products
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence:
+      - f3-robotic-products-social-products
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x49-long-term-agent-migration
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence:
+      - x49-long-term-agent-migration
+    confidence: PROVISIONAL
+    notes: 主审综合关系，不代表论文作者提出或认可该问题。
 edge_policy:
   verified:
     - coauthored
@@ -1959,12 +2460,16 @@ edge_policy:
     - intellectual_lineage
 human_corrections: []
 next_question_priority:
-  updated_at: 2026-09-18
-  status: INTEGRATED_ROADMAP_APPROVED
+  updated_at: 2026-10-02
+  status: CANDIDATES_NOT_SELECTED
   questions:
-    - RQ-FT-01
-  focus: AMSC × FailureTrace：理解分歧→有效评价→校准预测→沟通支持→共享语境；近期优先MeaningTrace Studio与最小评测协议。
-  note: 用户已批准整合方向与artifact路线；具体RQ尚需验证，不新增未经证实的实验室合作关系。
+    - RQ-RC-01
+    - RQ-RC-02
+    - RQ-RC-03
+    - RQ-RC-04
+    - RQ-RC-05
+  focus: 我研究如何设计机器人与 AI companion 的视觉和具身表达，人们如何理解这些表达及其与角色一致的行为，以及这些互动如何影响持续的人机关系；其中包括通过多种机器人或电子设备形成物理外延的 companion。
+  note: 五项均DRAFT；顺序仅对应工作方向，不代表优先级排名。旧RQ-FT-01暂缓。
 anchor_preferences:
   primary:
     - Zhicong Lu

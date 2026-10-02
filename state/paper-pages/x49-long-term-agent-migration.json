@@ -1,0 +1,59 @@
+{
+  "id": "X49",
+  "slug": "x49-long-term-agent-migration",
+  "title": "Prototyping Realistic Long-term Human-Robot Interaction for the Study of Agent Migration",
+  "authors": [
+    "Kheng Lee Koay",
+    "Dag Sverre Syrdal",
+    "W. C. Ho",
+    "Kerstin Dautenhahn"
+  ],
+  "year": 2016,
+  "venue": "RO-MAN 2016",
+  "source_url": "https://uhra.herts.ac.uk/id/eprint/15163/1/PrototypingRealisticLong_termHRIMigration_ROMAN2016_v1.4_CameraReady.pdf",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "五周互动中的机器人伙伴迁移",
+  "problem": "五周互动中的机器人伙伴迁移",
+  "method": "9人、5周、每周两次，在smart house体验多个机器人载体中的companion。",
+  "findings": [
+    "作者报告迁移理解与身份确定感随熟悉提高，任务延续是重要身份线索。"
+  ],
+  "real_contribution": "五周互动中的机器人伙伴迁移",
+  "biggest_weakness": "小样本原型不独立识别各线索因果作用；机构页漏列Ho，按论文首页保留四作者。",
+  "claim_boundary": "小样本原型不独立识别各线索因果作用；机构页漏列Ho，按论文首页保留四作者。",
+  "why_researcher_should_care": "提供新主线的直接先例与反证边界；组合已有设计不自动构成新颖性。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "A",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "五周互动中的机器人伙伴迁移"
+    ],
+    "gap_ids": [
+      "GAP-RC-04"
+    ],
+    "master_list_decision": "Added after independent focused audit"
+  },
+  "investigation_status": "focused_source_audit",
+  "evidence_notes": [
+    "2026-10-02独立文献代理核查；全文可访问与完整深度调查分开，未复现实验。",
+    "小样本原型不独立识别各线索因果作用；机构页漏列Ho，按论文首页保留四作者。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://uhra.herts.ac.uk/id/eprint/15163/1/PrototypingRealisticLong_termHRIMigration_ROMAN2016_v1.4_CameraReady.pdf"
+    ]
+  },
+  "updated_at": "2026-10-02",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "五周互动中的机器人伙伴迁移"
+  }
+}

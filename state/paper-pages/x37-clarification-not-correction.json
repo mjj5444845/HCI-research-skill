@@ -1,0 +1,68 @@
+{
+  "id": "X37",
+  "slug": "x37-clarification-not-correction",
+  "title": "Clarification Is Not Correction: LLMs Fail to Let Go",
+  "authors": [
+    "Jianzhe Lin",
+    "Xiaolin Li",
+    "Fei Wang",
+    "Robert Douglas",
+    "Rajeshkumar Golani",
+    "Jubin Chheda"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/abs/2609.25337",
+  "doi": "10.48550/arXiv.2609.25337",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "在最终任务信息相当时，早期歧义形成的旧假设会污染后续行为，显示记住或承认澄清不等于撤销旧解释。",
+  "problem": "多轮模型失败是遗忘，还是过早承诺后未能让旧状态失效？",
+  "method": "在writing、planning与coding的受控短对话中操纵信息顺序，比较Gemini 2.5 Pro/Flash及summary、CoT、state-ledger等策略，并以rollback/two-phase小实验检查state invalidation。",
+  "findings": [
+    "相同信息的顺序改变会导致成功率与old-hypothesis contamination差异。",
+    "常见memory/prompt策略未稳定修复；显式rollback在小型受控实验中改善结果。"
+  ],
+  "real_contribution": "把remembering、acknowledging与revising分离，并使旧假设失效成为可测的interaction failure。",
+  "biggest_weakness": "仅两种Gemini、生成任务与model judge；不能完全排除位置、近因和instruction-following效应，干预规模小。",
+  "claim_boundary": "early posterior collapse是解释性类比而非测得的内部posterior；prompt intervention不是通用解决方案。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
+  "amsc": {
+    "mainline_fit": "high",
+    "buckets": [
+      "B",
+      "C",
+      "E"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "state invalidation",
+      "order-sensitive clarification"
+    ],
+    "gap_ids": [
+      "GAP-03",
+      "GAP-04"
+    ],
+    "master_list_decision": "Candidate — Must Read / state-invalidation diagnostic"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "公开全文已核查设计、结果、干预与作者限制；未复现实验。",
+    "不研究真实recipient、visual feedback或背景effect prediction。"
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2609.25337v1",
+      "accessed_at": "2026-09-28",
+      "scope": "全文实验、干预和限制"
+    }
+  ],
+  "provenance": "amsc-radar-2026-09-28",
+  "updated_at": "2026-09-28",
+  "program_membership": {
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+  }
+}

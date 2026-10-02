@@ -1,0 +1,1657 @@
+{
+  "version": "2.2",
+  "last_updated": "2026-09-28",
+  "update_contract": "Paper Investigation、Literature Investigation、Research Radar、Idea Development 与 Study Design 的持久化结果首先更新长期 AMSC research program；只有直接改变考试主题、anchor、写作论点或口试问题的子集才进入 Comprehensive Exam 下游视图。",
+  "next_scheduled_run": {
+    "name": "AMSC 每周完整 Research Radar",
+    "scheduled_for": "2026-10-05T03:00:00-04:00",
+    "scope": "Every Monday at 03:00 America/New_York: full retrieval, deduplication, triage, investigation, red-team review, state integration, report generation, and validation.",
+    "automation_id": "amsc-research-radar",
+    "status": "ACTIVE"
+  },
+  "field_map": {
+    "coverage_note": "55篇活动论文；本轮7篇窗口内新增完成正文审查。context matters视为已知前提，RQ-FT-01保留为真实recipient的异质反事实效应预测。不同审查深度与来源边界见论文页。",
+    "status_definitions": {
+      "STILL_HOLDS": "新证据没有推翻原结论，且其边界仍可辩护。",
+      "STRENGTHENED": "新增独立证据提高了结论可信度或扩展了适用范围。",
+      "CONTESTED": "存在合理的理论、方法或实证冲突。",
+      "PARTIALLY_ADDRESSED": "已有工作直接回答部分问题，但核心机制或范围仍开放。",
+      "NO_LONGER_CLAIMABLE": "旧表述已被明确反例或领域进展削弱，不能继续作为 novelty claim。",
+      "NEW_CORE": "新增证据使某一问题成为研究主线的核心，而非边缘 future work。"
+    },
+    "claims": [
+      {
+        "id": "SOF-01",
+        "statement": "在 repeated human-human drawing reference game 中，visual resemblance 与 interaction history 共同约束 pictorial meaning，且互动形成的表达仍保留 diagnostic visual features。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "c6-visual-resemblance-interaction-history"
+        ],
+        "boundary": "单一 object category 的 controlled human drawing；yoked-vs-shuffled 主要隔离 same-producer sequence exposure，不识别 mutual common ground、original-dyad partner specificity、embodied AI 或 long-term transfer。",
+        "cumulative_change": "STILL_HOLDS"
+      },
+      {
+        "id": "SOF-02",
+        "statement": "在受限 repeated reference games 中，artificial communicator 可通过 continual adaptation 或 success×cost post-training 获得更高的 communicative success 与 efficiency。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "e3-continual-adaptation-machine-communication",
+          "x8-success-cost-convention-formation"
+        ],
+        "boundary": "E3 的主要 human evidence 是 fixed visual-reference contexts 中 one-sided adaptive listening；无 online non-adaptive control、partner swap、reciprocal repair 或 embodiment。",
+        "cumulative_change": "STRENGTHENED"
+      },
+      {
+        "id": "SOF-03",
+        "statement": "Controlled human-robot visual reference tasks 能产生稳定的 task-specific linguistic conventions，但其效率轨迹与 human-human interaction 不完全相同。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x1-spotter-human-robot-conventions"
+        ],
+        "boundary": "受控 Dutch pilots 与 verbal referring expressions 不证明开放式、跨模态或长期 convention。",
+        "cumulative_change": "PARTIALLY_ADDRESSED"
+      },
+      {
+        "id": "SOF-04",
+        "statement": "Current LVLM convention/grounding behavior is interaction-regime dependent：post-trained one-way 或 same-model dyads 可出现 convention-like efficiency/signatures，但 mixed human–AI、history-severed pseudo-dyads 与更复杂 role-asymmetric tasks 暴露可靠性和 partner-specificity 缺口。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x2-lvlms-humans-ground-differently",
+          "x8-success-cost-convention-formation",
+          "x9-aligned-not-partner-specific",
+          "x10-llms-people-conventions"
+        ],
+        "boundary": "不同研究使用不同 training objective、角色结构、模型和任务；它们不构成单一总体效应，也不能外推所有 LVLM。",
+        "cumulative_change": "REDEFINED"
+      },
+      {
+        "id": "SOF-05",
+        "statement": "Eye2Eye整套AR系统减少错误和澄清需求；正文不支持显著缩短任务时间，组件混杂也不允许把收益单独归因于共享记忆。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x3-seeing-eye-to-eye"
+        ],
+        "boundary": "短期整套系统收益；没有history severing、partner swap、角色互换或新表达协商。对象卡表示不等于双方确认的共同信念。 消融同时改变memory/reflection和trigger，无法识别memory单独因果贡献。",
+        "cumulative_change": "NO_LONGER_CLAIMABLE"
+      },
+      {
+        "id": "SOF-07",
+        "statement": "Human convention theory already models partner-specific common ground and its transfer toward population-level conventions; partner-specific origin and subsequent transfer are complementary, not mutually exclusive.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x12-partners-to-populations"
+        ],
+        "boundary": "CHAI evidence concerns human linguistic coordination and simulation; it does not solve online embodied human–AI convention inference.",
+        "cumulative_change": "NEW_CORE"
+      },
+      {
+        "id": "SOF-08",
+        "statement": "在受控 human–human repeated verbal reference tasks 中，reference 通过 presentation、positive evidence、repair 与 partner-specific history 形成；随后压缩稳定，partner change 可触发 elaboration 或回退到更通用表达。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "c1-referring-as-collaborative-process",
+          "c3-conceptual-pacts"
+        ],
+        "boundary": "小样本 spoken laboratory reference tasks；不是 multimodal、longitudinal 或 embodied-AI evidence。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-09",
+        "statement": "RSA 为 context-sensitive production/interpretation 提供 formal tools，且已有 adaptation/convention extensions；但 basic/full-utterance RSA 与 incremental、multimodal、mutually grounded interaction 之间仍有 validation gap。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "b1-pragmatic-language-interpretation",
+          "b2-rational-speech-act-framework"
+        ],
+        "boundary": "Narrative framework reviews and heterogeneous modeling tasks do not establish one cognitive process or embodied-agent capability.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-10",
+        "statement": "在受控 one-shot human drawing reference games 中，communicators 会按 distractor similarity 在 diagnosticity 与 production cost 间调节视觉细节。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "b3-pragmatic-inference-visual-abstraction"
+        ],
+        "boundary": "32 objects/4 categories，prototype-choice model；无 repeated history、partner-specificity 或 embodiment。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-11",
+        "statement": "在受控 repeated human text reference games 中，labels 的缩短受 listener feedback 与 local discriminability 影响，并表现 within-dyad stabilization 与 between-dyad divergence。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "c4-repeated-reference-games"
+        ],
+        "boundary": "Text Tangram task、六 repetitions；dialogue 被 collapse，且无 partner swap/history ablation。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-12",
+        "statement": "在一项受控 online human assembly task 中，重复协作伴随更短、更多 tower-level referring expressions；combined library-learning/pragmatic model 可定性再现该 shift。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "c7-shared-procedural-abstractions"
+        ],
+        "boundary": "未直接测量 shared internal abstractions；Builder 无语言反馈，模型假设 shared DSL 与同步学习。",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-13",
+        "statement": "在 controlled repeated human–human physical assembly 中，dyads 提高 accuracy/efficiency，并复用 speech/gesture abstractions；modality allocation 与 vocabulary across dyads diverge。",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "c8-gesturing-toward-abstraction"
+        ],
+        "boundary": "20 dyads、3 towers、4 repetitions、fixed roles；无 Agent、history-severing、repair perturbation 或 transfer。",
+        "cumulative_change": "NEW_CORE"
+      },
+      {
+        "id": "SOF-18",
+        "statement": "Textual paralanguage provides five broad categories and is frequently observed in sampled 2010s social-media posts, with platform-dependent distributions and context-dependent meaning.",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "a2-textual-paralanguage"
+        ],
+        "boundary": "Descriptive convenience samples, coder inconsistency/no reliability statistic, and no causal evidence for warmth, rapport or trust.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-19",
+        "statement": "Modality presence, grammatical structure and semantic dominance offer a usable theoretical lens for verbal, bodily and graphic multimodal interaction.",
+        "claim_kind": "theoretical_lens",
+        "status": "CONTESTED",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "a5-multimodal-parallel-architecture"
+        ],
+        "boundary": "Single static architecture with underspecified component mechanisms; illustrative coding does not validate cognitive truth.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-20",
+        "statement": "same-producer exposure、style familiarity、independent task learning 与 mutually grounded convention remain causally under-separated across much of the audited multimodal convention evidence.",
+        "claim_kind": "agent_synthesis",
+        "status": "OPEN",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "c3-conceptual-pacts",
+          "c4-repeated-reference-games",
+          "c5-graphical-convention-formation",
+          "c6-visual-resemblance-interaction-history",
+          "c7-shared-procedural-abstractions",
+          "c8-gesturing-toward-abstraction",
+          "e3-continual-adaptation-machine-communication",
+          "x20-passing-the-pact",
+          "x22-banana-man-pragmatic-interpretation"
+        ],
+        "boundary": "Cross-paper causal audit, not any paper original claim; C5 and C6 count as one empirical lineage. X20 is abstract-only; X22 studies naïve interpreters of archived human games, not reciprocal dyads.",
+        "cumulative_change": "NEW_CORE"
+      },
+      {
+        "id": "SOF-21",
+        "statement": "Contextualized emoji、visual lexicon、dyadic action scaffolds 与 graded reference models 共同表明：signal form 本身不足以决定 meaning；local context、task discriminability、relationship 与 interaction history 会改变解释和表达成本。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "a3-interpreting-emoji-pragmatics",
+          "a4-a-visual-lexicon",
+          "a6-puppetchat",
+          "b4-when-redundancy-is-useful"
+        ],
+        "boundary": "证据横跨第三方 emoji interpretation、理论 visual lexicon、11 个 close dyads 的短期 deployment 与 verbal reference games；不能合并为单一 causal mechanism，也不是 embodied human–AI convention evidence。",
+        "cumulative_change": "STRENGTHENED"
+      },
+      {
+        "id": "SOF-24",
+        "statement": "LLM naming-game convergence can be a false-positive mechanism claim: a shared pretrained label prior and apparatus presentation can accelerate or determine convergence, while per-agent label-pool permutation reveals slower interaction-driven negotiation.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x13-silica-agent-societies"
+        ],
+        "boundary": "Single-author preprint using artificial agent populations; shuffled agents still share pretrained label semantics, and results do not establish human-equivalent convention.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-27",
+        "statement": "Long-term conversational memory availability and elicited retrieval are empirically distinct from naturally integrating relevant shared history during interaction.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x16-memuse-natural-integration"
+        ],
+        "boundary": "One text-only deployment; Natural Integration–satisfaction association is observational and based on 48 sessions/16 users, not evidence of mutual belief or convention.",
+        "cumulative_change": "STRENGTHENED"
+      },
+      {
+        "id": "SOF-28",
+        "statement": "Under character pressure, explicitly prompted AI–AI postmortem coordination can produce efficient dyad-specific shorthand, partial productivity, clarification behavior, and limited newcomer uptake.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x17-glossogen-emergent-language"
+        ],
+        "boundary": "Agents were told to develop shorthand, postmortems allowed free code definition, linguistic analysis partly used LLM judges, and one replacement generation does not establish cumulative cultural evolution or human-like common ground.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-31",
+        "statement": "Abstract-level evidence from one multiparty Tangram task reports that speakers reuse prior conceptual pacts with less-knowledgeable human and agent interlocutors while showing stronger knowledge-sensitive elaboration in human–human communication; pact reuse and audience design therefore require separate measurement.",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x20-passing-the-pact"
+        ],
+        "boundary": "Sample, agent implementation, knowledge manipulation, coding reliability, effect sizes and analysis remain unavailable; the observed speaker behavior does not establish agent learning, mutual belief, equivalence or shared-history causality.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-32",
+        "statement": "In a purposefully sampled 4,735-item Chinese-language social-pragmatics benchmark, removing reconstructed interaction context reduced tested-model mean accuracy by 39.07 percentage points, demonstrating task-specific situated-context dependence.",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x21-social-pragmatic-chinese-comments"
+        ],
+        "boundary": "Selection conditioned on context dependence; a 343-item revised hard subset had only 64.14% human accuracy and kappa .53. This is not evidence about Chinese culture, prevalence, original speaker intent, dyadic grounding or embodiment.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-33",
+        "statement": "In archived iterated Tangram games, tested VLMs could exploit externally supplied correct game-specific mappings but struggled to accumulate relevant context or recover from their own errors under limited feedback, separating convention retrieval from endogenous construction and repair.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x22-banana-man-pragmatic-interpretation"
+        ],
+        "boundary": "Models were naïve interpreters of human dialogue rather than reciprocal partners; the result is task/model specific and does not prove general incapacity to form conventions.",
+        "cumulative_change": "NEW_CORE"
+      },
+      {
+        "id": "SOF-34",
+        "statement": "On 200 IndiRef questions over human situated-dialogue traces, incremental image/text externalization outperformed full-dialog reasoning with the same VLM, and hybrid artifacts best preserved complementary depictable and propositional state.",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x23-machine-mental-imagery-common-ground"
+        ],
+        "boundary": "Single benchmark and LLM judge; the pipeline still missed negation, indirect requests and cross-frame relations. A system-side state representation is not evidence of mutually established common ground.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-35",
+        "statement": "Conversation-Analysis-grounded visual features improved other-initiated-repair detection and type classification beyond text plus audio across two human dyadic corpora, with the size and kind of benefit differing by interaction setting.",
+        "claim_kind": "source_says",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x24-multimodal-repair-detection"
+        ],
+        "boundary": "Human–human French and Dutch corpora, only 47 OIR cases in NOXI, and no real-time agent response or repair outcome; detecting trouble is not performing successful grounding repair.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-36",
+        "statement": "Some VLMs conflate available task content with established referential alignment in MapTask overhearer judgments.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x25-seeing-is-not-sharing"
+        ],
+        "boundary": "Model-specific responses; one corpus and no interactive grounding.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-37",
+        "statement": "A literal-posterior residual measures beyond-literal Hanabi cooperation but does not identify jointly formed conventions.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x26-convention-gap"
+        ],
+        "boundary": "Retrospective measurement; unilateral adaptation and shared convention remain separable hypotheses.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-38",
+        "statement": "English Dixit clue coding provides a method for examining useful ambiguity and cultural allusion.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x27-calibrated-ambiguity"
+        ],
+        "boundary": "Asymmetric card/decoy selection, author coders, no cross-cultural or live recipient validation.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-39",
+        "statement": "In-turn content uptake is distinguishable from unchanged continuation and yielding.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x28-continue-adapt-yield"
+        ],
+        "boundary": "Outcome-informed cue labels and conditional coverage preclude an unbiased general human–model gap.",
+        "cumulative_change": "NEW"
+      },
+      {
+        "id": "SOF-40",
+        "statement": "Role-matched swaps provide intervention evidence that formed notebook-equipped LLM dyads are not fully interchangeable in coordination cost.",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x29-testing-interchangeability"
+        ],
+        "boundary": "Formation-order/task-note differences remain; four swap pairs per setting, no human partners or mutual-meaning test; recovery arithmetic requires clarification.",
+        "cumulative_change": "REDEFINED"
+      },
+      {
+        "id": "SOF-41",
+        "statement": "视觉语用评估已存在直接方法先例：RefOI中自动指标与人的指称定位不能互换，CMPM中原序展示高分不能证明打乱后的顺序恢复。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "MODERATE",
+        "evidence": [
+          "x30-refoi-pragmatic-generation",
+          "x31-cmpm-order-matters"
+        ],
+        "boundary": "不同任务的结果不能合成同一能力分数；CMPM为预印本、小规模解释评价。",
+        "cumulative_change": "REDEFINED"
+      },
+      {
+        "id": "SOF-42",
+        "statement": "花字沟通系统、文化meme理解资源和meme语用建模已有实质先例；新主线的研究空间需要在具体机制、模型能力或评价效度上定位。",
+        "claim_kind": "source_grounded_synthesis",
+        "status": "EMERGING",
+        "evidence_strength": "PRELIMINARY",
+        "evidence": [
+          "x32-intent-projection",
+          "x33-speechcap",
+          "x34-memebridge",
+          "x35-mgmc-fusion"
+        ],
+        "boundary": "综合不构成新颖性结论，也不证明这些方法解决真实互动中的理解；各研究样本、任务和证据不同。",
+        "cumulative_change": "REDEFINED"
+      }
+    ],
+    "gaps": [
+      {
+        "id": "GAP-01",
+        "status": "REDEFINED",
+        "statement": "How AI detects and updates interaction-dependent multimodal meanings; a long-term candidate requiring a concrete task and mechanism.",
+        "priority": "LOW",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "长期保留，不作为首项研究的必经步骤。"
+      },
+      {
+        "id": "GAP-02",
+        "status": "PARTIALLY_ADDRESSED",
+        "statement": "Mutual human–AI conventions whose formation is counterfactually dependent on shared interaction history, followed by repair and transfer tests",
+        "priority": "LOW",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "长期保留，不作为首项研究的必经步骤。"
+      },
+      {
+        "id": "GAP-03",
+        "status": "PARTIALLY_ADDRESSED",
+        "statement": "Convention lifecycle: establishment, maintenance, repair/revision, context-sensitive retirement, partner/context transfer, and renegotiation after breakdown",
+        "priority": "LOW",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "长期保留，不作为首项研究的必经步骤。"
+      },
+      {
+        "id": "GAP-04",
+        "status": "REDEFINED",
+        "statement": "What evidence distinguishes expression recognition, pragmatic understanding, appropriate response, memory use, felt understanding and shared meaning for a specified research claim?",
+        "priority": "MEDIUM",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "RefOI已展示自动指标与人的指称理解不一致；SpeechCap的表达体验、MemeBridge的解释和误解预测、CMPM的顺序与解释评分也有不同测量对象。不能宣称没有评价方法；需证明具体指标的新增效度。"
+      },
+      {
+        "id": "GAP-05",
+        "status": "REDEFINED",
+        "statement": "Which relations among text, visual expression and interaction context make social-pragmatic interpretation difficult for AI, and what evaluation or modeling advances address those difficulties?",
+        "priority": "MEDIUM",
+        "evidence_strength": "PRELIMINARY",
+        "research_implication": "花字互动系统、中文多格meme/评论评估、文化meme误解资源和多粒度融合/字面语用分离模型均有先例。新增模态、上下文或模型不自动构成新贡献；应定位尚未解决的具体能力、泛化或评价机制。"
+      }
+    ]
+  },
+  "exam": {
+    "title": "Multimodal Social Meaning, Understanding, and Adaptive Communication: Pragmatics, Evaluation, Shared Meaning and Adaptation",
+    "core_question": "人和AI如何在具体情境中表达、理解与协商多模态社会意义？这些过程如何受到模型能力、文化知识、关系与持续互动的影响？",
+    "written_target": "30篇支撑一组开放问题；以下仅是约9页的论证骨架，可按实际题目调整顺序、篇幅与取舍。8–10页仍为历史准备目标。",
+    "top20": [
+      {
+        "order": 1,
+        "id": "A2",
+        "slug": "a2-textual-paralanguage",
+        "theme": 1,
+        "themes": [
+          1,
+          2
+        ],
+        "reading_group": "expression"
+      },
+      {
+        "order": 2,
+        "id": "A3",
+        "slug": "a3-interpreting-emoji-pragmatics",
+        "theme": 1,
+        "themes": [
+          1,
+          2,
+          6
+        ],
+        "reading_group": "expression"
+      },
+      {
+        "order": 3,
+        "id": "A4",
+        "slug": "a4-a-visual-lexicon",
+        "theme": 1,
+        "themes": [
+          1,
+          3
+        ],
+        "reading_group": "expression"
+      },
+      {
+        "order": 4,
+        "id": "A5",
+        "slug": "a5-multimodal-parallel-architecture",
+        "theme": 1,
+        "themes": [
+          1,
+          2
+        ],
+        "reading_group": "expression"
+      },
+      {
+        "order": 5,
+        "id": "X33",
+        "slug": "x33-speechcap",
+        "theme": 1,
+        "themes": [
+          1,
+          6
+        ],
+        "reading_group": "expression"
+      },
+      {
+        "order": 6,
+        "id": "X21",
+        "slug": "x21-social-pragmatic-chinese-comments",
+        "theme": 2,
+        "themes": [
+          2,
+          4,
+          6
+        ],
+        "reading_group": "interpretation"
+      },
+      {
+        "order": 7,
+        "id": "B1",
+        "slug": "b1-pragmatic-language-interpretation",
+        "theme": 2,
+        "themes": [
+          2,
+          4
+        ],
+        "reading_group": "interpretation"
+      },
+      {
+        "order": 8,
+        "id": "B2",
+        "slug": "b2-rational-speech-act-framework",
+        "theme": 2,
+        "themes": [
+          2,
+          4
+        ],
+        "reading_group": "interpretation"
+      },
+      {
+        "order": 9,
+        "id": "B3",
+        "slug": "b3-pragmatic-inference-visual-abstraction",
+        "theme": 2,
+        "themes": [
+          2,
+          1
+        ],
+        "reading_group": "interpretation"
+      },
+      {
+        "order": 10,
+        "id": "B4",
+        "slug": "b4-when-redundancy-is-useful",
+        "theme": 2,
+        "themes": [
+          2,
+          4
+        ],
+        "reading_group": "interpretation"
+      },
+      {
+        "order": 11,
+        "id": "X30",
+        "slug": "x30-refoi-pragmatic-generation",
+        "theme": 4,
+        "themes": [
+          4,
+          2
+        ],
+        "reading_group": "evaluation"
+      },
+      {
+        "order": 12,
+        "id": "X31",
+        "slug": "x31-cmpm-order-matters",
+        "theme": 4,
+        "themes": [
+          4,
+          1,
+          2
+        ],
+        "reading_group": "evaluation"
+      },
+      {
+        "order": 13,
+        "id": "X32",
+        "slug": "x32-intent-projection",
+        "theme": 4,
+        "themes": [
+          4,
+          2
+        ],
+        "reading_group": "evaluation"
+      },
+      {
+        "order": 14,
+        "id": "X35",
+        "slug": "x35-mgmc-fusion",
+        "theme": 4,
+        "themes": [
+          4,
+          2
+        ],
+        "reading_group": "evaluation"
+      },
+      {
+        "order": 15,
+        "id": "X24",
+        "slug": "x24-multimodal-repair-detection",
+        "theme": 4,
+        "themes": [
+          4,
+          3
+        ],
+        "reading_group": "evaluation"
+      },
+      {
+        "order": 16,
+        "id": "A1",
+        "slug": "a1-ai-mediated-communication",
+        "theme": 1,
+        "themes": [
+          1,
+          6
+        ],
+        "reading_group": "social_context"
+      },
+      {
+        "order": 17,
+        "id": "A6",
+        "slug": "a6-puppetchat",
+        "theme": 1,
+        "themes": [
+          1,
+          5,
+          6
+        ],
+        "reading_group": "social_context"
+      },
+      {
+        "order": 18,
+        "id": "X34",
+        "slug": "x34-memebridge",
+        "theme": 6,
+        "themes": [
+          6,
+          4,
+          2
+        ],
+        "reading_group": "social_context"
+      },
+      {
+        "order": 19,
+        "id": "X27",
+        "slug": "x27-calibrated-ambiguity",
+        "theme": 6,
+        "themes": [
+          6,
+          1,
+          2,
+          4
+        ],
+        "reading_group": "social_context"
+      },
+      {
+        "order": 20,
+        "id": "X12",
+        "slug": "x12-partners-to-populations",
+        "theme": 3,
+        "themes": [
+          3,
+          5,
+          6
+        ],
+        "reading_group": "social_context"
+      },
+      {
+        "order": 21,
+        "id": "C1",
+        "slug": "c1-referring-as-collaborative-process",
+        "theme": 3,
+        "themes": [
+          3,
+          2
+        ],
+        "reading_group": "shared_meaning"
+      },
+      {
+        "order": 22,
+        "id": "C2",
+        "slug": "c2-grounding-in-communication",
+        "theme": 3,
+        "themes": [
+          3,
+          1
+        ],
+        "reading_group": "shared_meaning"
+      },
+      {
+        "order": 23,
+        "id": "C3",
+        "slug": "c3-conceptual-pacts",
+        "theme": 3,
+        "themes": [
+          3,
+          5
+        ],
+        "reading_group": "shared_meaning"
+      },
+      {
+        "order": 24,
+        "id": "C6",
+        "slug": "c6-visual-resemblance-interaction-history",
+        "theme": 3,
+        "themes": [
+          3,
+          1
+        ],
+        "reading_group": "shared_meaning"
+      },
+      {
+        "order": 25,
+        "id": "C8",
+        "slug": "c8-gesturing-toward-abstraction",
+        "theme": 3,
+        "themes": [
+          3,
+          1,
+          5
+        ],
+        "reading_group": "shared_meaning"
+      },
+      {
+        "order": 26,
+        "id": "E3",
+        "slug": "e3-continual-adaptation-machine-communication",
+        "theme": 5,
+        "themes": [
+          5,
+          4,
+          3
+        ],
+        "reading_group": "adaptation"
+      },
+      {
+        "order": 27,
+        "id": "X8",
+        "slug": "x8-success-cost-convention-formation",
+        "theme": 5,
+        "themes": [
+          5,
+          4,
+          3
+        ],
+        "reading_group": "adaptation"
+      },
+      {
+        "order": 28,
+        "id": "X9",
+        "slug": "x9-aligned-not-partner-specific",
+        "theme": 3,
+        "themes": [
+          3,
+          4,
+          5
+        ],
+        "reading_group": "adaptation"
+      },
+      {
+        "order": 29,
+        "id": "X16",
+        "slug": "x16-memuse-natural-integration",
+        "theme": 5,
+        "themes": [
+          5,
+          4
+        ],
+        "reading_group": "adaptation"
+      },
+      {
+        "order": 30,
+        "id": "X22",
+        "slug": "x22-banana-man-pragmatic-interpretation",
+        "theme": 2,
+        "themes": [
+          2,
+          3,
+          5
+        ],
+        "reading_group": "adaptation"
+      }
+    ],
+    "themes": [
+      {
+        "id": 1,
+        "name": "社会意义与多模态表达",
+        "question": "文字、图像、emoji和花字怎样共同表达态度、用意与关系？",
+        "concepts": [
+          "multimodal meaning",
+          "textual paralanguage",
+          "pragmatic function",
+          "AI-mediated communication"
+        ],
+        "anchors": [
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "X33",
+          "B3",
+          "X31",
+          "A1",
+          "A6",
+          "X27",
+          "C2",
+          "C6",
+          "C8"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "语用推理与情境化理解",
+        "question": "AI能否从具体情境推断对象、立场和言外之意？解释正确的标准是什么？",
+        "concepts": [
+          "pragmatic inference",
+          "RSA",
+          "speaker intention",
+          "context dependence",
+          "plausible misreading"
+        ],
+        "anchors": [
+          "A2",
+          "A3",
+          "A5",
+          "X21",
+          "B1",
+          "B2",
+          "B3",
+          "B4",
+          "X30",
+          "X31",
+          "X32",
+          "X35",
+          "X34",
+          "X27",
+          "C1",
+          "X22"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "共同基础、理解确认与沟通惯例",
+        "question": "怎样区分已有上下文、双方确认的理解和互动形成的表达惯例？",
+        "concepts": [
+          "common ground",
+          "grounding",
+          "conceptual pact",
+          "partner specificity"
+        ],
+        "anchors": [
+          "A4",
+          "X24",
+          "X12",
+          "C1",
+          "C2",
+          "C3",
+          "C6",
+          "C8",
+          "E3",
+          "X8",
+          "X9",
+          "X22"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "模型、数据集与评估效度",
+        "question": "怎样判断模型改善了语用能力，而非仅提高特定标签或自动指标？",
+        "concepts": [
+          "construct validity",
+          "context ablation",
+          "annotation ambiguity",
+          "generalization",
+          "model ablation"
+        ],
+        "anchors": [
+          "X21",
+          "B1",
+          "B2",
+          "B4",
+          "X30",
+          "X31",
+          "X32",
+          "X35",
+          "X24",
+          "X34",
+          "X27",
+          "E3",
+          "X8",
+          "X9",
+          "X16"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "记忆、适应与持续互动",
+        "question": "记住信息、自然使用历史和适应某个伙伴分别需要什么证据？",
+        "concepts": [
+          "memory retrieval",
+          "natural integration",
+          "continual adaptation",
+          "shared meaning"
+        ],
+        "anchors": [
+          "A6",
+          "X12",
+          "C3",
+          "C8",
+          "E3",
+          "X8",
+          "X9",
+          "X16",
+          "X22"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "文化知识、关系与社会实践",
+        "question": "文化知识、伙伴关系、平台实践与群体预期如何塑造表达和解释？",
+        "concepts": [
+          "shared knowledge",
+          "social practice",
+          "within-group variation",
+          "recipient interpretation"
+        ],
+        "anchors": [
+          "A3",
+          "X33",
+          "X21",
+          "A1",
+          "A6",
+          "X34",
+          "X27",
+          "X12"
+        ]
+      }
+    ],
+    "writing_plan": [
+      {
+        "section": "提出现象与核心问题",
+        "pages": "约1",
+        "goal": "从具体表达或沟通情境切入，说明为何值得解释；可从X21、花字、meme或关系沟通开始。"
+      },
+      {
+        "section": "组织概念与理论对话",
+        "pages": "约2",
+        "goal": "按题目选择语用、视觉/多模态结构、grounding或社会实践视角，比较解释单位与假设。"
+      },
+      {
+        "section": "比较跨方法的证据",
+        "pages": "约3",
+        "goal": "围绕2–3个问题比较人类研究、模型方法、benchmark及系统实践；不按30篇逐篇摘要。"
+      },
+      {
+        "section": "展开张力、边界与替代解释",
+        "pages": "约2",
+        "goal": "从歧义/准确、效率/表达、个体/群体、单次/持续等讨论线索中选取，不要求全部覆盖。"
+      },
+      {
+        "section": "综合与开放问题",
+        "pages": "约1",
+        "goal": "提出仍可辩护的认识与多个可能方向；区分证据空白、测量局限与候选研究机会。"
+      }
+    ],
+    "checklists": [
+      {
+        "name": "定义与比较",
+        "items": [
+          "用自己的例子区分识别、语用解释、恰当回应、被理解感与共享意义。",
+          "比较RSA、结构性多模态理论与互动grounding的解释单位。"
+        ]
+      },
+      {
+        "name": "证据与批判",
+        "items": [
+          "逐篇说明任务、样本、比较条件、发现与外推边界。",
+          "解释X21难例歧义、X30指标效度与X31顺序任务边界。",
+          "比较X32与X35的技术机制、基线和消融，不把性能提升等同真实意图恢复。"
+        ]
+      },
+      {
+        "name": "连接与综合",
+        "items": [
+          "区分AI作为伙伴与AI支持人际沟通，并用X33/A1举例。",
+          "区分信息记忆、自然使用历史、单方适应与共享意义。",
+          "解释文化知识、平台实践及群体内差异，避免国籍等同文化。"
+        ]
+      },
+      {
+        "name": "推导研究问题",
+        "items": [
+          "从已有研究提出具体问题，说明新增贡献与可能反例。",
+          "分别说明计算评估、行为证据或解释性材料何时能支持所作主张。",
+          "保留候选问题状态；不将考试提纲当作已批准研究项目。"
+        ]
+      },
+      {
+        "name": "跨主题开放讨论",
+        "items": [
+          "任选一个现象，从至少两个理论视角提出不同解释。",
+          "比较一种计算证据和一种行为、体验或实践证据，说明各自能回答什么。",
+          "为自己的解释提出合理反例，并说明什么观察会使你修改判断。",
+          "提出两个可行的后续方向，不把阅读清单锁成单一RQ或技术路线。"
+        ]
+      }
+    ],
+    "agent_readiness": {
+      "active_queue_count": 30,
+      "researcher_top20_read": null,
+      "researcher_top20_mastered": null,
+      "researcher_status": "UNTRACKED",
+      "warning": "30篇已按当前持久证据组织；阅读顺序和讨论范围可调整，个人进度保持原记录。"
+    },
+    "reading_groups": [
+      {
+        "id": "expression",
+        "name": "表达形式如何承载社会意义",
+        "papers": [
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "X33"
+        ],
+        "question": "从文字副语言、emoji、视觉词汇到花字，哪些意义来自形式，哪些来自情境和使用？",
+        "bridge": "先认识表达资源，再追问同一形式为什么能被理解成不同用意。"
+      },
+      {
+        "id": "interpretation",
+        "name": "人和AI如何推断用意",
+        "papers": [
+          "X21",
+          "B1",
+          "B2",
+          "B3",
+          "B4"
+        ],
+        "question": "人怎样结合目标、语境与不确定性解释表达？简洁和信息充分是否总是一致？",
+        "bridge": "把表达现象连接到可比较的推理解释；X21是问题入口，不限定所有后续讨论。"
+      },
+      {
+        "id": "evaluation",
+        "name": "如何建模与获得可信的能力证据",
+        "papers": [
+          "X30",
+          "X31",
+          "X32",
+          "X35",
+          "X24"
+        ],
+        "question": "定位、排序、解释、分类及修复信号检测各自揭示了什么？模型改善怎样获得证据支持？",
+        "bridge": "从理论转向模型、数据与测量，再追问测试中的能力如何联系实际沟通。"
+      },
+      {
+        "id": "social_context",
+        "name": "文化知识、关系与沟通实践",
+        "papers": [
+          "A1",
+          "A6",
+          "X34",
+          "X27",
+          "X12"
+        ],
+        "question": "谁在与谁沟通、共享哪些经历、为什么要这样表达？关系体验、有用歧义与群体惯例如何进入讨论？",
+        "bridge": "把单次任务放回伙伴、关系与群体；X12连接个人经验和群体预期，不作为文化差异的直接实证。"
+      },
+      {
+        "id": "shared_meaning",
+        "name": "理解如何在互动中得到确认和形成",
+        "papers": [
+          "C1",
+          "C2",
+          "C3",
+          "C6",
+          "C8"
+        ],
+        "question": "双方怎样确认足够的理解，并形成可复用的语言、绘画或手势表达？",
+        "bridge": "比较单次推断与协作过程；多模态物理任务只是一个观察窗口。"
+      },
+      {
+        "id": "adaptation",
+        "name": "持续沟通中的记忆、学习与适应",
+        "papers": [
+          "E3",
+          "X8",
+          "X9",
+          "X16",
+          "X22"
+        ],
+        "question": "模型能学到什么、历史怎样被使用、何时只是表面协调？哪些改善值得保留，哪些解释仍需检验？",
+        "bridge": "让训练、在线适应、记忆使用与多轮解释互相对照，再回到最初的理解与表达问题。"
+      }
+    ],
+    "discussion_questions": [
+      {
+        "question": "沟通的好坏，是否只有准确理解这一项标准？",
+        "papers": [
+          "X21",
+          "X30",
+          "X33",
+          "A6"
+        ],
+        "discussion": "比较任务正确率、表达机会、关系体验与参与者解释；不同研究目的可以采用不同证据，不能自动相互替代。"
+      },
+      {
+        "question": "表达应该更简洁、更明确，还是允许冗余和歧义？",
+        "papers": [
+          "B3",
+          "B4",
+          "X27",
+          "A3"
+        ],
+        "discussion": "讨论辨别需要、噪声、受众知识、幽默和关系功能；不预设一种表达策略在所有场景最好。"
+      },
+      {
+        "question": "模型改善和共同意义之间是什么关系？",
+        "papers": [
+          "X32",
+          "X35",
+          "X8",
+          "X9",
+          "C2"
+        ],
+        "discussion": "模型与训练收益具有独立价值；是否支持共同意义取决于任务和主张。X8/X9设计不同，不能当作同一实验的正反结果。"
+      },
+      {
+        "question": "文化、关系和共同经历应当放在哪个解释层次？",
+        "papers": [
+          "X34",
+          "A6",
+          "X12",
+          "X21"
+        ],
+        "discussion": "比较个体经验、伙伴关系、平台实践及群体预期，讨论群体内差异；X12是跨层理论连接，不是文化群体比较。"
+      },
+      {
+        "question": "从静态材料走向互动，会多出什么问题？",
+        "papers": [
+          "X31",
+          "X24",
+          "C8",
+          "X16",
+          "X22"
+        ],
+        "discussion": "讨论时间顺序、声音/手势、反馈、记忆相关性和理解确认；互动研究是可选问题路径，不是所有计算贡献的门槛。"
+      },
+      {
+        "question": "我们怎样知道一项解释比替代解释更好？",
+        "papers": [
+          "B2",
+          "X30",
+          "X9",
+          "C3"
+        ],
+        "discussion": "比较理论拟合、消融、行为结果与反事实对照；解释性或设计研究还应讨论情境、参与者意义和分析过程，方法随问题选择。"
+      }
+    ],
+    "organization_policy": "六组是可交叉的阅读入口，不是六章固定目录或先后依赖；可从现象、理论、计算或互动进入，按考试题目选取跨组证据。",
+    "reading_depth_policy": "30篇均进入准备池，但无需同等深读。先用每篇的问题、方法、发现和边界完成全景阅读；再按实际考试问题选择理论锚点及相互补充或冲突的实证做深读。未指定固定深读名额。"
+  },
+  "research_line": {
+    "identity": "我研究人和 AI 如何理解情境中的多模态表达、在哪里产生理解分歧，以及如何通过人类证据校准的模型预测和支持有效澄清，并在持续互动中形成共享语境。",
+    "core_question": "How can human-calibrated models explain differences in multimodal interpretation and predict effective clarification and shared-context adaptation?",
+    "nodes": [
+      {
+        "id": "meaning",
+        "label": "Social Meaning",
+        "label_zh": "社会意义",
+        "question": "这个表达在此刻想做什么？",
+        "detail": "区分对象、立场、幽默与互动用意；允许文化与关系影响解释。",
+        "buckets": [
+          "A",
+          "B",
+          "F"
+        ],
+        "gaps": [
+          "GAP-05",
+          "GAP-04"
+        ]
+      },
+      {
+        "id": "understanding",
+        "label": "Pragmatic Understanding",
+        "label_zh": "情境化理解",
+        "question": "AI依据什么理解言外之意？",
+        "detail": "近期重点：跨文字、图像和情境的理解；评估、数据、模型与方法都是独立贡献路径。",
+        "buckets": [
+          "A",
+          "B",
+          "D"
+        ],
+        "gaps": [
+          "GAP-05",
+          "GAP-04"
+        ]
+      },
+      {
+        "id": "grounding",
+        "label": "Grounding",
+        "label_zh": "理解确认与修复",
+        "question": "如何知道对方理解到位？",
+        "detail": "记录理解确认与澄清过程，预测干预是否帮助真实接收者；合理解释差异不自动是错误。",
+        "buckets": [
+          "C",
+          "G"
+        ],
+        "gaps": [
+          "GAP-01",
+          "GAP-04"
+        ]
+      },
+      {
+        "id": "convention",
+        "label": "Shared Conventions",
+        "label_zh": "共享表达与惯例",
+        "question": "表达何时成为我们的说法？",
+        "detail": "保留长期兴趣，考察共同经历、文化资源与伙伴差异，不能只凭表达重复认定惯例。",
+        "buckets": [
+          "C",
+          "F"
+        ],
+        "gaps": [
+          "GAP-02"
+        ]
+      },
+      {
+        "id": "adaptation",
+        "label": "Adaptation",
+        "label_zh": "适应与持续互动",
+        "question": "理解与表达如何随经历调整？",
+        "detail": "人机交流与AI支持人际沟通均可；机器人、AR与手势按问题需要加入。",
+        "buckets": [
+          "E",
+          "G"
+        ],
+        "gaps": [
+          "GAP-03",
+          "GAP-04"
+        ]
+      }
+    ],
+    "scope": {
+      "core": [
+        "情境化社会语用理解与多模态表达",
+        "AI / CV / NLP 的模型、方法、数据与评估",
+        "人与AI及AI支持的人际沟通",
+        "共同理解、惯例与适应",
+        "人类证据校准的解释分布、澄清效果预测与可复现artifact"
+      ],
+      "adjacent": [
+        "机器人与具身沟通：延后、按实质问题选用",
+        "AR、手势与空间交互：可选载体",
+        "认知机制和社会实践：解释沟通现象"
+      ],
+      "out_of_scope": [
+        "只因关键词或设备可用而设题",
+        "把国家标签直接当文化",
+        "未经证据把偏好或记忆等同于共同理解"
+      ]
+    },
+    "next_questions": [
+      "RQ-FT-01"
+    ],
+    "foundation_paper": "x21-social-pragmatic-chinese-comments",
+    "communities": [
+      "HCI",
+      "CSCW",
+      "AI",
+      "CV",
+      "NLP",
+      "Cognitive science"
+    ],
+    "resources": {
+      "robot_available": false,
+      "virtual_character_available": false,
+      "existing_interaction_platform": false,
+      "devices": [
+        "several Meta Aria Gen 2",
+        "one Meta Quest 3"
+      ],
+      "device_capabilities": "Not verified; do not assume live sensing, output or multiuser support.",
+      "budget": "limited; no robot purchase planned",
+      "technical_development": "User reports able to build a system; actual workload still requires scoping",
+      "participants": "Campus adults, often students as general users; off-campus recruitment possible",
+      "interaction_duration": "One-off or repeated participation possible",
+      "first_followup_target_months": [
+        3,
+        6
+      ]
+    },
+    "next_step": "优先实施MeaningTrace Studio的材料与测量验证，建立最小评测协议。",
+    "roadmap_source": "research-programs/amsc/program.yaml#artifact_roadmap"
+  },
+  "workflow_runs": [
+    {
+      "id": "baseline-import-2026-08-26",
+      "workflow": "Literature Investigation",
+      "status": "COMPLETE",
+      "date": "2026-08-26",
+      "summary": "核验并导入 41 篇 baseline，新增 5 篇独立候选，生成 46 个论文页面。"
+    },
+    {
+      "id": "top20-2026-08-27",
+      "workflow": "Paper Investigation + Literature Investigation + downstream Comprehensive Exam",
+      "status": "COMPLETE",
+      "date": "2026-08-27T03:34:05-04:00",
+      "summary": "20/20 full-text investigations integrated upstream; exam projection updated only for direct Top-20 anchors; researcher mastery unchanged.",
+      "provenance_ref": "provenance.run_id"
+    },
+    {
+      "id": "radar-mainline-2026-08-27",
+      "workflow": "Research Radar + Literature Investigation",
+      "status": "COMPLETE_WITH_RECOVERY",
+      "date": "2026-08-27",
+      "summary": "核验并整合 X6–X12，更新 Current State、Gap Registry 与 research graph；自动任务在收尾阶段中断，主任务完成状态恢复。"
+    },
+    {
+      "id": "baseline41-2026-08-27",
+      "workflow": "Paper Investigation + Research Program Guardrail",
+      "status": "COMPLETE_WITH_ONE_DEGRADED_SOURCE",
+      "date": "2026-08-27T09:18:00-04:00",
+      "summary": "41/41 baseline 页面完成证据级更新：40 篇 full-paper audit，F6 因全文不可得完成 abstract-level audit；researcher reading/mastery 保持未记录。"
+    },
+    {
+      "id": "amsc-radar-2026-08-31",
+      "workflow": "Research Radar + Paper Investigation + Gap Red Team",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-08-31T08:50:30-04:00",
+      "summary": "精确七日窗新增 X13–X16；X6 去重；GAP-04/07 保持 PARTIALLY_ADDRESSED 并收窄到 discriminant-valid integrated diagnostics；researcher mastery 未改。"
+    },
+    {
+      "id": "amsc-radar-2026-09-03",
+      "workflow": "Research Radar + Paper Investigation + Missing-Paper Attack + Gap Red Team",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-09-03T10:00:00-04:00",
+      "summary": "覆盖 2026-08-27 至 2026-09-03；新增 X17–X19，X19 合并其 2024 arXiv/AAMAS lineage；GAP 状态不变但 novelty 收窄到 mutual human–embodied-AI shared-history convention；researcher mastery 未改。"
+    },
+    {
+      "id": "amsc-radar-2026-09-07",
+      "workflow": "Research Radar + Paper Investigation + Missing-Paper Attack + Novelty/Gap/Method/Culture/Theory Review",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-09-07T03:35:21-04:00",
+      "summary": "覆盖最新七日窗并恢复漏检/新 venue-index 条目；新增 X20–X24，GAP-07 重构为 linked modular protocol family；researcher mastery 未改。"
+    },
+    {
+      "id": "backlog-audit-2026-09-12",
+      "workflow": "Paper Investigation",
+      "status": "PARTIAL",
+      "date": "2026-09-12",
+      "summary": "X1–X5全文补审及独立反方复核完成；F6/X20等待可读全文。论文、Gap、问题验证同步更新。"
+    },
+    {
+      "id": "amsc-radar-2026-09-14",
+      "workflow": "Research Radar + Paper Investigation + independent missing-paper, quantitative and culture audits",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-09-14T11:05:45-04:00",
+      "verification": "70 papers; 117 HTML pages; workspace 7/7; Chinese reading 2/2; validate-install and diff-check passed.",
+      "summary": "X25–X29 added; broad no-partner-specificity claim narrowed; five full-text audits, three new and two recovered. Priorities unchanged; no researcher mastery inference."
+    },
+    {
+      "id": "mainline-realignment-2026-09-18",
+      "workflow": "User-directed program and workspace migration",
+      "status": "COMPLETE",
+      "date": "2026-09-18",
+      "summary": "42 active papers; 28 deferred; X21 user research foundation; old RQs/studies archived; no new RQ or project promotion.",
+      "verification": "90-page validation, 12 tests, 8 skill validators and install checks passed; desktop/mobile layout and foundation filter checked."
+    },
+    {
+      "id": "amsc-radar-2026-09-18",
+      "workflow": "Research Radar",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-09-18",
+      "summary": "新主线首次运行：6篇历史补回（X30–X35），0篇核实的窗口内新增；同步GAP04/05和领域状态，无RQ升级。",
+      "report": "reports/radar/2026-09-18-amsc-mainline-v2.md"
+    },
+    {
+      "id": "amsc-failuretrace-roadmap-2026-09-18",
+      "workflow": "Mainline integration + artifact roadmap",
+      "status": "COMPLETE",
+      "date": "2026-09-18",
+      "summary": "用户批准一条整合主线与逐阶段artifact路线；五个研究artifact均为计划中，尚无新颖性或效果结论。"
+    },
+    {
+      "id": "amsc-radar-2026-09-28",
+      "workflow": "Research Radar + Paper Investigation + Missing-Paper Attack + Novelty/Gap/Method/Culture Review",
+      "status": "COMPLETE_WITH_ACCESS_LIMITATIONS",
+      "date": "2026-09-28",
+      "summary": "覆盖2026-09-21至28；新增X36–X42并将GAP-05收窄为真实recipient、item与timing异质的help/harm/no-change预测；RQ-FT-01保持DRAFT，考试视图未改。",
+      "report": "reports/radar/2026-09-28-amsc-mainline.md"
+    }
+  ],
+  "provenance": {
+    "run_id": "top20-2026-08-27",
+    "automation_id": "amsc-top-20-paper-investigation",
+    "completed_at": "2026-08-27T03:34:05-04:00",
+    "ordered_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "B1",
+      "B2",
+      "B3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "A5",
+      "A2",
+      "A1",
+      "D5",
+      "D6",
+      "D7",
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "completed_count": 20,
+    "blocked": [],
+    "mode": "deep/full-text baseline investigation",
+    "sources": [
+      {
+        "id": "C1",
+        "slug": "c1-referring-as-collaborative-process",
+        "source_url": "https://web.stanford.edu/~clark/1980s/Clark%2C%20H.H.%20_%20Wilkes-Gibbs%2C%20D.%20_Referring%20as%20a%20collaborative%20process_%201986.pdf",
+        "doi": "10.1016/0010-0277(86)90010-7",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "C2",
+        "slug": "c2-grounding-in-communication",
+        "source_url": "https://www.cs.cmu.edu/~illah/CLASSDOCS/Clark91.pdf",
+        "doi": "10.1037/10096-006",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "C3",
+        "slug": "c3-conceptual-pacts",
+        "source_url": "https://web.stanford.edu/~clark/1990s/Brennan%2C%20S.E.%20_%20Clark%2C%20H.H.%20_Conceptual%20pacts%20and%20lexical%20choice%20in%20conversation_%201996.pdf",
+        "doi": "10.1037/0278-7393.22.6.1482",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "B1",
+        "slug": "b1-pragmatic-language-interpretation",
+        "source_url": "https://langcog.stanford.edu/papers_new/goodman-2016-tics.pdf",
+        "doi": "10.1016/j.tics.2016.08.005",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "B2",
+        "slug": "b2-rational-speech-act-framework",
+        "source_url": "https://alpslab.stanford.edu/papers/2023Degen.pdf",
+        "doi": "10.1146/annurev-linguistics-031220-010811",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "B3",
+        "slug": "b3-pragmatic-inference-visual-abstraction",
+        "source_url": "https://cogtoolslab.github.io/pdf/fan_cbb_2019.pdf",
+        "doi": "10.1007/s42113-019-00058-7",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "C4",
+        "slug": "c4-repeated-reference-games",
+        "source_url": "https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12845",
+        "doi": "10.1111/cogs.12845",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "C5",
+        "slug": "c5-graphical-convention-formation",
+        "source_url": "https://escholarship.org/uc/item/6408z76h",
+        "doi": null,
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "C6",
+        "slug": "c6-visual-resemblance-interaction-history",
+        "source_url": "https://www.nature.com/articles/s41467-023-37737-w",
+        "doi": "10.1038/s41467-023-37737-w",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "C7",
+        "slug": "c7-shared-procedural-abstractions",
+        "source_url": "https://repositories.cdlib.org/uc/item/3vs8285x",
+        "doi": null,
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "C8",
+        "slug": "c8-gesturing-toward-abstraction",
+        "source_url": "https://arxiv.org/abs/2602.08914",
+        "doi": "10.1145/3772318.3790618",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "A5",
+        "slug": "a5-multimodal-parallel-architecture",
+        "source_url": "https://www.visuallanguagelab.com/P/NC_multimodality.pdf",
+        "doi": "10.1016/j.cognition.2015.10.007",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "A2",
+        "slug": "a2-textual-paralanguage",
+        "source_url": "https://arxiv.org/abs/1605.06799",
+        "doi": "10.1016/j.jcps.2016.05.002",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "A1",
+        "slug": "a1-ai-mediated-communication",
+        "source_url": "https://academic.oup.com/jcmc/article/25/1/89/5714020",
+        "doi": "10.1093/jcmc/zmz022",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "D5",
+        "slug": "d5-legibility-and-predictability",
+        "source_url": "https://publications.ri.cmu.edu/legibility-and-predictability-of-robot-motion",
+        "doi": "10.1109/HRI.2013.6483603",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "D6",
+        "slug": "d6-designing-robots-with-movement",
+        "source_url": "https://hrc2.io/assets/pdfs/papers/HoffmanJuJHRI14.pdf",
+        "doi": "10.5898/JHRI.3.1.Hoffman",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "D7",
+        "slug": "d7-social-eye-gaze-review",
+        "source_url": "https://www.ri.cmu.edu/app/uploads/2018/01/admoni2017jhri.pdf",
+        "doi": "10.5898/JHRI.6.1.Admoni",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "E1",
+        "slug": "e1-long-term-social-robots-survey",
+        "source_url": "https://viterbik12.usc.edu/wp-content/uploads/2018/06/Social-Robots-for-Long-Term-Interaction-A-Survey.pdf",
+        "doi": "10.1007/s12369-013-0178-y",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "E2",
+        "slug": "e2-human-robot-mutual-adaptation",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7449140/",
+        "doi": "10.1177/0278364917690593",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      },
+      {
+        "id": "E3",
+        "slug": "e3-continual-adaptation-machine-communication",
+        "source_url": "https://aclanthology.org/2020.conll-1.33/",
+        "doi": "10.18653/v1/2020.conll-1.33",
+        "access_status": "full_text",
+        "investigation_status": "full_paper_investigation",
+        "degraded": false
+      }
+    ],
+    "evidence_independence_notes": [
+      "C5 and C6 are one empirical lineage; C5 does not count as an independent source.",
+      "No Top-20-derived new field claim was promoted directly to ESTABLISHED."
+    ],
+    "protected_fields_unchanged": [
+      "researcher.top20_read",
+      "researcher.top20_mastered",
+      "researcher.status"
+    ],
+    "continuation": {
+      "run_id": "baseline41-2026-08-27",
+      "completed_at": "2026-08-27T09:18:00-04:00",
+      "baseline_total": 41,
+      "full_paper_investigations": 40,
+      "abstract_evidence_investigations": 1,
+      "degraded_ids": [
+        "F6"
+      ],
+      "publication_status_caveats": [
+        "D8",
+        "D9"
+      ],
+      "metadata_corrections": [
+        "E4"
+      ],
+      "researcher_progress_changed": false
+    }
+  }
+}

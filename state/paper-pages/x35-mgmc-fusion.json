@@ -27,16 +27,14 @@
   "real_contribution": "新模型研究需比较已有融合方法，技术贡献本身有效，无须附加不相关人机实验。",
   "biggest_weakness": "证据限于受测标签任务；分类准确率不等于具体情境用意解释或共享意义，泛化与泄漏需进一步审计。",
   "claim_boundary": "证据限于受测标签任务；分类准确率不等于具体情境用意解释或共享意义，泛化与泄漏需进一步审计。",
-  "why_researcher_should_care": "新模型研究需比较已有融合方法，技术贡献本身有效，无须附加不相关人机实验。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": null,
     "buckets": [
       "B",
       "D"
     ],
-    "stages": [
-      "Social meaning/pragmatics"
-    ],
+    "stages": [],
     "mechanisms": [
       "细粒度视觉线索与较弱的图文联系如何进入meme模型？"
     ],
@@ -60,9 +58,9 @@
   "provenance": "amsc-radar-2026-09-18",
   "updated_at": "2026-09-18",
   "program_membership": {
-    "status": "ACTIVE",
-    "program_version": "2.0",
-    "reviewed_at": "2026-09-18",
-    "reason": "新模型研究需比较已有融合方法，技术贡献本身有效，无须附加不相关人机实验。"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   }
 }

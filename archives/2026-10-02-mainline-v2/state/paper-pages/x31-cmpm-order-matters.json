@@ -1,0 +1,65 @@
+{
+  "id": "X31",
+  "slug": "x31-cmpm-order-matters",
+  "title": "Order Matters: A Chinese Multi-Panel Meme Benchmark for Vision-Language Reasoning",
+  "authors": [
+    "Haihan Li",
+    "Haihao Li",
+    "Zhenfei Xu",
+    "Jize Qian"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint, 27 August 2026",
+  "source_url": "https://arxiv.org/abs/2608.26866",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "按原顺序展示的高分不能代表排序推理；评论收益较小且有正负差异。",
+  "problem": "模型能否恢复多格meme的阅读顺序，并正确解释图文及评论的关系？",
+  "method": "1,214条中文多格meme；五个模型，868条强顺序样本用于打乱排序；252条做顺序×评论对照。解释主评价仅64条，另有31对上下文消融。",
+  "findings": [
+    "按原顺序展示的高分不能代表排序推理；评论收益较小且有正负差异。"
+  ],
+  "real_contribution": "直接否定中文多格meme与评论上下文尚无benchmark的泛化空白；为X21后续提供必须比较的邻近资源。",
+  "biggest_weakness": "预印本；解释评价是精选小样本，一致性中等；数据代码待接收后释放。排序与幽默理解相关但不能等同。",
+  "claim_boundary": "预印本；解释评价是精选小样本，一致性中等；数据代码待接收后释放。排序与幽默理解相关但不能等同。",
+  "why_researcher_should_care": "直接否定中文多格meme与评论上下文尚无benchmark的泛化空白；为X21后续提供必须比较的邻近资源。",
+  "amsc": {
+    "mainline_fit": null,
+    "buckets": [
+      "A",
+      "B",
+      "D"
+    ],
+    "stages": [
+      "Social meaning/pragmatics"
+    ],
+    "mechanisms": [
+      "模型能否恢复多格meme的阅读顺序，并正确解释图文及评论的关系？"
+    ],
+    "gap_ids": [
+      "GAP-04",
+      "GAP-05"
+    ],
+    "master_list_decision": "Candidate — Must Read / recovered under program v2"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "正文§4–7协议、表4/6/8与局限核查；注意parseable输出分母及非独立评分。",
+    "Historical recovery outside 2026-09-11–18 window; normal audit, not deep replication."
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2608.26866v1",
+      "accessed_at": "2026-09-18",
+      "scope": "正文§4–7协议、表4/6/8与局限核查；注意parseable输出分母及非独立评分。"
+    }
+  ],
+  "provenance": "amsc-radar-2026-09-18",
+  "updated_at": "2026-09-18",
+  "program_membership": {
+    "status": "ACTIVE",
+    "program_version": "2.0",
+    "reviewed_at": "2026-09-18",
+    "reason": "直接否定中文多格meme与评论上下文尚无benchmark的泛化空白；为X21后续提供必须比较的邻近资源。"
+  }
+}

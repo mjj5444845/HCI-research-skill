@@ -1,10 +1,10 @@
 {
-  "version": "2.0",
+  "version": "3.0",
   "questions": [
     {
       "id": "RQ-FT-01",
       "statement": "在视觉作品的间接反馈中，模型能否依据接收者可获得的背景与初始解释，预测补充相关沟通背景对理解的影响，并在留出的交流材料上优于简单基线？",
-      "status": "DRAFT",
+      "status": "INCUBATE",
       "value": "连接情境化用意理解与真实接收者的干预响应，形成可复现评估与轻量沟通支持原型。",
       "boundary": "单场景、单类间接反馈、单一背景补充；首轮允许使用原条件的人类解释作校准，不宣称零样本部署、未见干预类型泛化或长期共享意义。",
       "assumptions": "真实用意及合理歧义能够区分；材料有权限；干预效应存在可估计的差异；新颖性须进一步全文核验。",
@@ -17,11 +17,295 @@
         "x34-memebridge",
         "b2-rational-speech-act-framework"
       ],
-      "updated_at": "2026-09-18",
-      "provenance": "2026-09-18用户要求整合AMSC与FailureTrace；主审结合amsc_skeptic和method_efficiency_advocate独立意见提出。详见reports/amsc-failuretrace-integration-2026-09-18.md；尚非研究者选定首项RQ。 2026-09-18后续用户批准整合主线与artifact路线；具体问题保持DRAFT以完成测量和文献验证。"
+      "updated_at": "2026-10-02",
+      "provenance": "2026-09-18用户要求整合AMSC与FailureTrace；主审结合amsc_skeptic和method_efficiency_advocate独立意见提出。详见reports/amsc-failuretrace-integration-2026-09-18.md；尚非研究者选定首项RQ。 2026-09-18后续用户批准整合主线与artifact路线；具体问题保持DRAFT以完成测量和文献验证。 2026-10-02主线改变后暂缓，保留原表述与历史决定；不表示科学问题被否定。"
+    },
+    {
+      "id": "RQ-RC-01",
+      "statement": "同一视觉/动作线索在不同情境中，如何分别影响意图识别、判断确信及能力预期？",
+      "status": "DRAFT",
+      "value": "表达何时传对意思、何时只提高确信？；可产生实证、可复用artifact或经证据支持的理论贡献。",
+      "boundary": "表达增加吸引力不等于准确理解；视频不能证明实体或关系效应。",
+      "assumptions": "最近工作及操纵有效性仍需进一步核实；资源以最后确认记录为准。",
+      "gap_ids": [
+        "GAP-RC-01"
+      ],
+      "paper_slugs": [
+        "d4-expressing-thought",
+        "d5-legibility-and-predictability",
+        "x43-elegnt",
+        "x44-expressive-motion-timing"
+      ],
+      "updated_at": "2026-10-02",
+      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。"
+    },
+    {
+      "id": "RQ-RC-02",
+      "statement": "角色约束如何跨动作、视觉反馈和主动性保持可感知的一致性，同时适应任务与设备能力？",
+      "status": "DRAFT",
+      "value": "角色设定如何变成情境合适的行为？；可产生实证、可复用artifact或经证据支持的理论贡献。",
+      "boundary": "技术一致分数不等于用户感知一致；已有情境动作生成不能被忽略。",
+      "assumptions": "最近工作及操纵有效性仍需进一步核实；资源以最后确认记录为准。",
+      "gap_ids": [
+        "GAP-RC-02"
+      ],
+      "paper_slugs": [
+        "x45-appearance-behavior-task",
+        "x46-companion-behavior-consistency",
+        "x51-empathetic-companions-personality",
+        "g4-context-aware-expressive-motion"
+      ],
+      "updated_at": "2026-10-02",
+      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。"
+    },
+    {
+      "id": "RQ-RC-03",
+      "statement": "变化幅度、变化理由和互动历史分别怎样影响用户对同一companion成长、适应或性格漂移的判断？",
+      "status": "DRAFT",
+      "value": "个性何时在成长，何时在漂移？；可产生实证、可复用artifact或经证据支持的理论贡献。",
+      "boundary": "本轮人格演变覆盖有限，gap未确认；叙述时间流逝不等于实际长期经验。",
+      "assumptions": "最近工作及操纵有效性仍需进一步核实；资源以最后确认记录为准。",
+      "gap_ids": [
+        "GAP-RC-03"
+      ],
+      "paper_slugs": [
+        "x51-empathetic-companions-personality",
+        "e1-long-term-social-robots-survey",
+        "x4-making-memories-together"
+      ],
+      "updated_at": "2026-10-02",
+      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。"
+    },
+    {
+      "id": "RQ-RC-04",
+      "statement": "跨能力不对称设备时，表面身份、表达风格、记忆与任务连续性分别怎样影响身份识别、行为预期和责任归属？",
+      "status": "DRAFT",
+      "value": "不同设备何时仍像同一个伙伴？；可产生实证、可复用artifact或经证据支持的理论贡献。",
+      "boundary": "迁移概念已有先例；身份识别不等于关系迁移；LIREC同谱系不当独立重复。",
+      "assumptions": "最近工作及操纵有效性仍需进一步核实；资源以最后确认记录为准。",
+      "gap_ids": [
+        "GAP-RC-04"
+      ],
+      "paper_slugs": [
+        "x47-migrating-artificial-companions",
+        "x48-memory-identity-embodiments",
+        "x49-long-term-agent-migration",
+        "x52-meet-my-sidekick"
+      ],
+      "updated_at": "2026-10-02",
+      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。"
+    },
+    {
+      "id": "RQ-RC-05",
+      "statement": "表达和行为一致性如何改变重复互动中的期待、信任校准、再次使用及失配后的关系理解？",
+      "status": "DRAFT",
+      "value": "表达如何影响真实的持续关系？；可产生实证、可复用artifact或经证据支持的理论贡献。",
+      "boundary": "留存、好感和重用意愿都不能单独证明关系质量；不预设更亲密就是更好。",
+      "assumptions": "最近工作及操纵有效性仍需进一步核实；资源以最后确认记录为准。",
+      "gap_ids": [
+        "GAP-RC-05"
+      ],
+      "paper_slugs": [
+        "x50-computer-patient-alliance",
+        "e4-designing-robots-long-term",
+        "f3-robotic-products-social-products",
+        "x49-long-term-agent-migration"
+      ],
+      "updated_at": "2026-10-02",
+      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。"
     }
   ],
-  "validations": [],
+  "validations": [
+    {
+      "id": "VAL-RC-06",
+      "question_id": "RQ-RC-01",
+      "checked_at": "2026-10-02",
+      "search_scope": "Focused source audit + historical library review; expressive motion, migrating agents, relational agents, personality and embodiment; not exhaustive.",
+      "paper_slugs": [
+        "d4-expressing-thought",
+        "d5-legibility-and-predictability",
+        "x43-elegnt",
+        "x44-expressive-motion-timing"
+      ],
+      "closest_work": "Expressing Thought: Improving Robot Readability with Animation Principles; Legibility and Predictability of Robot Motion; ELEGNT: Expressive and Functional Movement Design for Non-Anthropomorphic Robot; Expressive Robot Motion Timing",
+      "support": "已有文献为构念、设计与测量提供先例；具体剩余问题待验证。",
+      "counterevidence": "表达增加吸引力不等于准确理解；视频不能证明实体或关系效应。",
+      "precise_statement": "同一视觉/动作线索在不同情境中，如何分别影响意图识别、判断确信及能力预期？",
+      "recommendation": "DRAFT；下一步比较最近工作并做针对测量/操纵的pilot，未选PURSUE。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Expressing Thought: Improving Robot Readability with Animation Principles",
+          "url": "https://www.leilatakayama.org/downloads/Takayama.Animation_HRI2011_prepress.pdf"
+        },
+        {
+          "kind": "paper",
+          "title": "Legibility and Predictability of Robot Motion",
+          "url": "https://publications.ri.cmu.edu/legibility-and-predictability-of-robot-motion"
+        },
+        {
+          "kind": "paper",
+          "title": "ELEGNT: Expressive and Functional Movement Design for Non-Anthropomorphic Robot",
+          "url": "https://arxiv.org/html/2501.12493v1"
+        },
+        {
+          "kind": "paper",
+          "title": "Expressive Robot Motion Timing",
+          "url": "https://people.eecs.berkeley.edu/~anca/papers/HRI17_timing.pdf"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-07",
+      "question_id": "RQ-RC-02",
+      "checked_at": "2026-10-02",
+      "search_scope": "Focused source audit + historical library review; expressive motion, migrating agents, relational agents, personality and embodiment; not exhaustive.",
+      "paper_slugs": [
+        "x45-appearance-behavior-task",
+        "x46-companion-behavior-consistency",
+        "x51-empathetic-companions-personality",
+        "g4-context-aware-expressive-motion"
+      ],
+      "closest_work": "Matching Robot Appearance and Behavior to Tasks to Improve Human-Robot Cooperation; Avoiding the uncanny valley: robot appearance, personality and consistency of behavior in an attention-seeking home scenario for a robot companion; Designing Empathetic Companions: Exploring Personality, Emotion, and Trust in Social Robots; Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models",
+      "support": "已有文献为构念、设计与测量提供先例；具体剩余问题待验证。",
+      "counterevidence": "技术一致分数不等于用户感知一致；已有情境动作生成不能被忽略。",
+      "precise_statement": "角色约束如何跨动作、视觉反馈和主动性保持可感知的一致性，同时适应任务与设备能力？",
+      "recommendation": "DRAFT；下一步比较最近工作并做针对测量/操纵的pilot，未选PURSUE。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Matching Robot Appearance and Behavior to Tasks to Improve Human-Robot Cooperation",
+          "url": "https://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/kiesler/publications/2003pdfs/2003_matching-robot-appear-coop.pdf"
+        },
+        {
+          "kind": "paper",
+          "title": "Avoiding the uncanny valley: robot appearance, personality and consistency of behavior in an attention-seeking home scenario for a robot companion",
+          "url": "https://link.springer.com/article/10.1007/s10514-007-9058-3"
+        },
+        {
+          "kind": "paper",
+          "title": "Designing Empathetic Companions: Exploring Personality, Emotion, and Trust in Social Robots",
+          "url": "https://arxiv.org/html/2504.13964v1"
+        },
+        {
+          "kind": "paper",
+          "title": "Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models",
+          "url": "https://gen-mod-expressive-motion-behavior.github.io/"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-08",
+      "question_id": "RQ-RC-03",
+      "checked_at": "2026-10-02",
+      "search_scope": "Focused source audit + historical library review; expressive motion, migrating agents, relational agents, personality and embodiment; not exhaustive.",
+      "paper_slugs": [
+        "x51-empathetic-companions-personality",
+        "e1-long-term-social-robots-survey",
+        "x4-making-memories-together"
+      ],
+      "closest_work": "Designing Empathetic Companions: Exploring Personality, Emotion, and Trust in Social Robots; Social Robots for Long-Term Interaction: A Survey; Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction",
+      "support": "已有文献为构念、设计与测量提供先例；具体剩余问题待验证。",
+      "counterevidence": "本轮人格演变覆盖有限，gap未确认；叙述时间流逝不等于实际长期经验。",
+      "precise_statement": "变化幅度、变化理由和互动历史分别怎样影响用户对同一companion成长、适应或性格漂移的判断？",
+      "recommendation": "DRAFT；下一步比较最近工作并做针对测量/操纵的pilot，未选PURSUE。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Designing Empathetic Companions: Exploring Personality, Emotion, and Trust in Social Robots",
+          "url": "https://arxiv.org/html/2504.13964v1"
+        },
+        {
+          "kind": "paper",
+          "title": "Social Robots for Long-Term Interaction: A Survey",
+          "url": "https://viterbik12.usc.edu/wp-content/uploads/2018/06/Social-Robots-for-Long-Term-Interaction-A-Survey.pdf"
+        },
+        {
+          "kind": "paper",
+          "title": "Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction",
+          "url": "https://research.utwente.nl/en/publications/making-memories-together-toward-transparent-and-co-constructed-ro/"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-09",
+      "question_id": "RQ-RC-04",
+      "checked_at": "2026-10-02",
+      "search_scope": "Focused source audit + historical library review; expressive motion, migrating agents, relational agents, personality and embodiment; not exhaustive.",
+      "paper_slugs": [
+        "x47-migrating-artificial-companions",
+        "x48-memory-identity-embodiments",
+        "x49-long-term-agent-migration",
+        "x52-meet-my-sidekick"
+      ],
+      "closest_work": "Migrating Artificial Companions (Demonstration); Do I remember you? Memory and identity in multiple embodiments; Prototyping Realistic Long-term Human-Robot Interaction for the Study of Agent Migration; “Meet My Sidekick!”: Effects of Separate Identities and Control of a Single Robot in HRI",
+      "support": "已有文献为构念、设计与测量提供先例；具体剩余问题待验证。",
+      "counterevidence": "迁移概念已有先例；身份识别不等于关系迁移；LIREC同谱系不当独立重复。",
+      "precise_statement": "跨能力不对称设备时，表面身份、表达风格、记忆与任务连续性分别怎样影响身份识别、行为预期和责任归属？",
+      "recommendation": "DRAFT；下一步比较最近工作并做针对测量/操纵的pilot，未选PURSUE。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Migrating Artificial Companions (Demonstration)",
+          "url": "https://researchportal.hw.ac.uk/en/publications/migrating-artificial-companions-demonstration/"
+        },
+        {
+          "kind": "paper",
+          "title": "Do I remember you? Memory and identity in multiple embodiments",
+          "url": "https://www.macs.hw.ac.uk/~ruth/Papers/planning/AylettEtAl-RoMan2013v6.pdf"
+        },
+        {
+          "kind": "paper",
+          "title": "Prototyping Realistic Long-term Human-Robot Interaction for the Study of Agent Migration",
+          "url": "https://uhra.herts.ac.uk/id/eprint/15163/1/PrototypingRealisticLong_termHRIMigration_ROMAN2016_v1.4_CameraReady.pdf"
+        },
+        {
+          "kind": "paper",
+          "title": "“Meet My Sidekick!”: Effects of Separate Identities and Control of a Single Robot in HRI",
+          "url": "https://arxiv.org/abs/2602.07598"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-10",
+      "question_id": "RQ-RC-05",
+      "checked_at": "2026-10-02",
+      "search_scope": "Focused source audit + historical library review; expressive motion, migrating agents, relational agents, personality and embodiment; not exhaustive.",
+      "paper_slugs": [
+        "x50-computer-patient-alliance",
+        "e4-designing-robots-long-term",
+        "f3-robotic-products-social-products",
+        "x49-long-term-agent-migration"
+      ],
+      "closest_work": "Establishing the computer-patient working alliance in automated health behavior change interventions; Designing Robots for Long-Term Social Interaction; How Robotic Products Become Social Products: An Ethnographic Study of Cleaning in the Home; Prototyping Realistic Long-term Human-Robot Interaction for the Study of Agent Migration",
+      "support": "已有文献为构念、设计与测量提供先例；具体剩余问题待验证。",
+      "counterevidence": "留存、好感和重用意愿都不能单独证明关系质量；不预设更亲密就是更好。",
+      "precise_statement": "表达和行为一致性如何改变重复互动中的期待、信任校准、再次使用及失配后的关系理解？",
+      "recommendation": "DRAFT；下一步比较最近工作并做针对测量/操纵的pilot，未选PURSUE。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Establishing the computer-patient working alliance in automated health behavior change interventions",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16198215/"
+        },
+        {
+          "kind": "paper",
+          "title": "Designing Robots for Long-Term Social Interaction",
+          "url": "https://www.cs.cmu.edu/afs/cs/usr/reids/www/papers/Valerie-IROS2005-final.pdf"
+        },
+        {
+          "kind": "paper",
+          "title": "How Robotic Products Become Social Products: An Ethnographic Study of Cleaning in the Home",
+          "url": "https://hcii.s3.amazonaws.com/ppr/papers/p129-forlizzi.pdf"
+        },
+        {
+          "kind": "paper",
+          "title": "Prototyping Realistic Long-term Human-Robot Interaction for the Study of Agent Migration",
+          "url": "https://uhra.herts.ac.uk/id/eprint/15163/1/PrototypingRealisticLong_termHRIMigration_ROMAN2016_v1.4_CameraReady.pdf"
+        }
+      ]
+    }
+  ],
   "studies": [],
   "pilots": [],
   "decisions": [
@@ -42,6 +326,15 @@
       "date": "2026-09-18",
       "rationale": "用户明确要求“更新一下，做成一条主线”，每阶段有界面或数据/benchmark等artifact，强调前沿实验室相关能力，并更新网站。批准主线和交付方向，不表示新颖性或实验结果已验证。",
       "provenance": "本任务2026-09-18最新用户消息；program.yaml artifact_roadmap为当前路线来源。"
+    },
+    {
+      "id": "DEC-RC-SCOPE-01",
+      "question_id": "RQ-FT-01",
+      "actor": "researcher",
+      "decision": "APPROVE_SCOPE_MIGRATION",
+      "date": "2026-10-02",
+      "rationale": "用户明确授权新主线、三个库、skills与agents更新及检查后push；不等于选定新RQ。",
+      "provenance": "本任务用户消息；SOURCE_USER_SPEC.md 2026-10-02条目。"
     }
   ]
 }

@@ -1,0 +1,59 @@
+{
+  "id": "X43",
+  "slug": "x43-elegnt",
+  "title": "ELEGNT: Expressive and Functional Movement Design for Non-Anthropomorphic Robot",
+  "authors": [
+    "Yuhan Hu",
+    "Peide Huang",
+    "Mouli Sivapurapu",
+    "Jian Zhang"
+  ],
+  "year": 2025,
+  "venue": "arXiv preprint",
+  "source_url": "https://arxiv.org/html/2501.12493v1",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "灯形机器人的表达性与功能性动作",
+  "problem": "灯形机器人的表达性与功能性动作",
+  "method": "研究以灯形机器人探索功能与表达目标，并让21名参与者观看六种情境视频。",
+  "findings": [
+    "作者报告表达条件改善部分感知指标，社会任务效果更明显。"
+  ],
+  "real_contribution": "灯形机器人的表达性与功能性动作",
+  "biggest_weakness": "视频评分不证明长期关系；重复测量设计与多组Welch检验、多重比较需要进一步审计。",
+  "claim_boundary": "视频评分不证明长期关系；重复测量设计与多组Welch检验、多重比较需要进一步审计。",
+  "why_researcher_should_care": "提供新主线的直接先例与反证边界；组合已有设计不自动构成新颖性。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "A",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "灯形机器人的表达性与功能性动作"
+    ],
+    "gap_ids": [
+      "GAP-RC-01"
+    ],
+    "master_list_decision": "Added after independent focused audit"
+  },
+  "investigation_status": "focused_source_audit",
+  "evidence_notes": [
+    "2026-10-02独立文献代理核查；全文可访问与完整深度调查分开，未复现实验。",
+    "视频评分不证明长期关系；重复测量设计与多组Welch检验、多重比较需要进一步审计。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/html/2501.12493v1"
+    ]
+  },
+  "updated_at": "2026-10-02",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "灯形机器人的表达性与功能性动作"
+  }
+}

@@ -118,32 +118,11 @@ Agent 可以说：
 
 ---
 
-# Current Mainline — AMSC v2.0
+# Current Mainline — AMSC v3.0
 
-The active program is:
+我研究如何设计机器人与 AI companion 的视觉和具身表达，人们如何理解这些表达及其与角色一致的行为，以及这些互动如何影响持续的人机关系；其中包括通过多种机器人或电子设备形成物理外延的 companion。
 
-> **Multimodal Social Meaning, Understanding, and Adaptive Communication**
-
-Research identity:
-
-> **I study how AI understands, participates in, and supports expressive multimodal communication in context, and how humans and AI develop shared meanings and adapt their communication.**
-
-New components:
-- `research-programs/amsc/PROGRAM.md`
-- `research-programs/amsc/program.yaml`
-- persistent Master Literature List state
-- persistent Gap Registry
-- persistent Current State of Field
-- downstream Comprehensive Exam KB (filtered from the long-term program state)
-- persistent Research Graph
-- `research-program-guardrail`
-- `comprehensive-exam`
-- AMSC-specific Research Radar behavior
-- AMSC-specific paper/idea/study mappings
-- program-specific Scout / Theory Mapper / Gap Curator / Exam Curator / Current-State Curator agents
-
-The Senior Researcher OS remains general-purpose.
-AMSC is the active personal research-program layer, not a replacement for the general research workflows.
+方向、资源和候选工作包以 research-programs/amsc/PROGRAM.md 与 program.yaml 为准。三个库、领域状态、图谱及中文展示同步；首项RQ未选择。
 
 ## 当前工作区部署
 
@@ -169,7 +148,7 @@ npm run preview
 
 站点包含 Skill/Agent 独立详情页、TOML 与 orchestration 架构可视化，以及由 `state/paper-pages/*.json` 驱动的一篇论文一个页面。论文 JSON 必须符合 `schemas/paper-page.schema.json`；没有足够证据时明确显示 `Insufficient Evidence`，不从标题推断 findings。
 
-AMSC 还有三个数据驱动页面：`/field-map/` 展示 cumulative field claims 与 Gap Registry，`/exam/` 展示 comprehensive exam 的六主题、Top 20 与写作准备，`/program/` 展示 Social Meaning · Pragmatic Understanding · Grounding · Convention · Adaptation 研究主线及反馈关系。它们读取 `research-programs/amsc/state/workflow_dashboard.json`；相关 research workflow 完成后必须同步这一状态，但不得自动推断研究者已经阅读或掌握论文。
+AMSC 还有三个数据驱动页面：`/field-map/` 展示 cumulative field claims 与 Gap Registry，`/exam/` 展示 comprehensive exam 的六主题、Top 20 与写作准备，`/program/` 展示 Expression · Coherence · Evolution · Extensions · Relationship 研究主线及反馈关系。它们读取 `research-programs/amsc/state/workflow_dashboard.json`；相关 research workflow 完成后必须同步这一状态，但不得自动推断研究者已经阅读或掌握论文。
 
 AMSC 的长期研究主线是 source of truth：Research Radar、Paper/Literature Investigation、Idea Development 与 Study Design 先更新论文、领域状态、Gap、Research Graph 和下一步研究问题；Comprehensive Exam 只筛选与当前六主题、anchor、写作或口试直接相关的部分。41 篇 `Master Literature List v1.0` 原文保存在 `research-programs/amsc/imports/`。历史导入器已对v2状态禁用，防止覆盖当前研究库；恢复历史需显式迁移。
 
@@ -179,6 +158,6 @@ AMSC 的长期研究主线是 source of truth：Research Radar、Paper/Literatur
 
 Codex 通常会自动检测 skill 变更；如果当前会话未显示新 skills，请重启 Codex 或开启一个新任务。
 
-## Current program v2.0
+## Current program v3.0
 
-See research-programs/amsc/PROGRAM.md and program.yaml. X21 is the user’s existing second-author foundation. The 2026-09-18 migration retains 42 active papers and archives 28 temporarily peripheral works. Prior questions and draft studies remain in archives/2026-09-18-mainline-v1; the first follow-up RQ is not yet selected. Historical baseline imports must not overwrite current state.
+2026-10-02迁移保留55篇、恢复11篇、新增10篇，共76篇记录。五个新gap为候选，五个新问题为DRAFT；RQ-FT-01暂缓。迁移前状态保存在 archives/2026-10-02-mainline-v2。

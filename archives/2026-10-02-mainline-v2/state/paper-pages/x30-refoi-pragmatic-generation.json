@@ -1,0 +1,68 @@
+{
+  "id": "X30",
+  "slug": "x30-refoi-pragmatic-generation",
+  "title": "Vision-Language Models Are Not Pragmatically Competent in Referring Expression Generation",
+  "authors": [
+    "Ziqiao Ma",
+    "Jing Ding",
+    "Xuejun Zhang",
+    "Dezhi Luo",
+    "Jiahe Ding",
+    "Sihan Xu",
+    "Yuchen Huang",
+    "Run Peng",
+    "Joyce Chai"
+  ],
+  "year": 2025,
+  "venue": "COLM 2025",
+  "source_url": "https://arxiv.org/abs/2504.16060",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "受测模型的指称表现落后于人类表达；常用自动指标不能可靠反映人的定位表现。",
+  "problem": "如何分别评价指称的可辨认性、简洁性和人的表达偏好？",
+  "method": "RefOI含1,485张图像，每个目标有3条书面和2条口头表达；比较模型输出、人类定位和自动指标，并操纵合成图像中的视觉线索。",
+  "findings": [
+    "受测模型的指称表现落后于人类表达；常用自动指标不能可靠反映人的定位表现。"
+  ],
+  "real_contribution": "为GAP04提供明确的评价效度先例，连接Ziqiao Ma的研究风格；后续应明确自己增加的能力或测量贡献。",
+  "biggest_weakness": "结论限于所测模型和指称任务；模型听者不是人类理解的替代，不能推广到全部社会语用能力。",
+  "claim_boundary": "结论限于所测模型和指称任务；模型听者不是人类理解的替代，不能推广到全部社会语用能力。",
+  "why_researcher_should_care": "为GAP04提供明确的评价效度先例，连接Ziqiao Ma的研究风格；后续应明确自己增加的能力或测量贡献。",
+  "amsc": {
+    "mainline_fit": null,
+    "buckets": [
+      "B",
+      "D"
+    ],
+    "stages": [
+      "Social meaning/pragmatics"
+    ],
+    "mechanisms": [
+      "如何分别评价指称的可辨认性、简洁性和人的表达偏好？"
+    ],
+    "gap_ids": [
+      "GAP-04"
+    ],
+    "master_list_decision": "Candidate — Must Read / recovered under program v2"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "正文§3–5方法、结果与指标分析核查；未复现实验。",
+    "Historical recovery outside 2026-09-11–18 window; normal audit, not deep replication."
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2504.16060v3",
+      "accessed_at": "2026-09-18",
+      "scope": "正文§3–5方法、结果与指标分析核查；未复现实验。"
+    }
+  ],
+  "provenance": "amsc-radar-2026-09-18",
+  "updated_at": "2026-09-18",
+  "program_membership": {
+    "status": "ACTIVE",
+    "program_version": "2.0",
+    "reviewed_at": "2026-09-18",
+    "reason": "为GAP04提供明确的评价效度先例，连接Ziqiao Ma的研究风格；后续应明确自己增加的能力或测量贡献。"
+  }
+}

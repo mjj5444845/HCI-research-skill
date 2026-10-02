@@ -24,18 +24,14 @@
   "real_contribution": "把 convention formation 转成可干预的 training-objective problem，并提供 human-listener behavioral validation。",
   "biggest_weakness": "固定单向 speaker→listener；全 history 位于 context window，未测 role reversal、repair、mutual belief、partner swap 或 physical embodiment。",
   "claim_boundary": "证明 convention-like efficient reference policy 可被训练，不证明双方共同协商或 interaction-history-specific mutual convention 已形成。",
-  "why_researcher_should_care": "直接削弱‘AI 不能形成 convention-like adaptation’的宽泛表述，并指出 success×cost 是值得因果检验的 selection pressure。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9.6,
     "buckets": [
       "C",
       "D"
     ],
-    "stages": [
-      "Grounding",
-      "Convention",
-      "Adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "communicative success",
       "message cost",
@@ -55,10 +51,10 @@
   "provenance": "amsc_radar_2026-08-27_recovery",
   "updated_at": "2026-08-27",
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

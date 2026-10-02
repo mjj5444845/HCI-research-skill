@@ -1,0 +1,62 @@
+{
+  "id": "X48",
+  "slug": "x48-memory-identity-embodiments",
+  "title": "Do I remember you? Memory and identity in multiple embodiments",
+  "authors": [
+    "Ruth Aylett",
+    "Michael Kriegel",
+    "Iain Wallace",
+    "Elena Márquez Segura",
+    "Johanna Mercurio",
+    "Stina Nylander",
+    "Patrícia Amâncio Vargas"
+  ],
+  "year": 2013,
+  "venue": "RO-MAN 2013",
+  "source_url": "https://www.macs.hw.ac.uk/~ruth/Papers/planning/AylettEtAl-RoMan2013v6.pdf",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "记忆与跨载体身份感可以分离",
+  "problem": "记忆与跨载体身份感可以分离",
+  "method": "45名参与者完成屏幕与手机寻宝任务，比较三种记忆迁移条件，角色外观与声音相同。",
+  "findings": [
+    "作者报告所有人最终认为是同一角色；记忆条件影响能力感知但未改变强身份连续性感知。"
+  ],
+  "real_contribution": "记忆与跨载体身份感可以分离",
+  "biggest_weakness": "存在身份判断天花板；不能推断记忆对身份普遍无关，也不证明关系持续。",
+  "claim_boundary": "存在身份判断天花板；不能推断记忆对身份普遍无关，也不证明关系持续。",
+  "why_researcher_should_care": "提供新主线的直接先例与反证边界；组合已有设计不自动构成新颖性。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "A",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "记忆与跨载体身份感可以分离"
+    ],
+    "gap_ids": [
+      "GAP-RC-04"
+    ],
+    "master_list_decision": "Added after independent focused audit"
+  },
+  "investigation_status": "focused_source_audit",
+  "evidence_notes": [
+    "2026-10-02独立文献代理核查；全文可访问与完整深度调查分开，未复现实验。",
+    "存在身份判断天花板；不能推断记忆对身份普遍无关，也不证明关系持续。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://www.macs.hw.ac.uk/~ruth/Papers/planning/AylettEtAl-RoMan2013v6.pdf"
+    ]
+  },
+  "updated_at": "2026-10-02",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "记忆与跨载体身份感可以分离"
+  }
+}

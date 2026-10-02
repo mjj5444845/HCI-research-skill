@@ -20,7 +20,7 @@
   "real_contribution": "A diagnostic separating perceptual availability from grounded interpretation.",
   "biggest_weakness": "Single corpus, imbalanced labels, only 239 misunderstood cases; overhearer judgments rather than interaction.",
   "claim_boundary": "Does not establish universal VLM over-alignment, mutual belief, or failure of live repair.",
-  "why_researcher_should_care": "Add alignment-specific errors and perspective controls before interpreting successful reference as common ground.",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9.4,
     "buckets": [
@@ -28,9 +28,7 @@
       "C",
       "D"
     ],
-    "stages": [
-      "Grounding/common ground"
-    ],
+    "stages": [],
     "mechanisms": [
       "perspective asymmetry",
       "epistemic calibration"
@@ -51,10 +49,10 @@
   "provenance": "amsc_radar_2026-09-14",
   "updated_at": "2026-09-14",
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

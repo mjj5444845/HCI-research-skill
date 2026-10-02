@@ -27,17 +27,14 @@
   "real_contribution": "将 mismatch、accumulated uncertainty、preservation 与 revision 分离为可操纵的 grounding-system design assumptions。",
   "biggest_weakness": "无新 human experiment；PhotoChat repair 稀疏，selectivity 又部分由强 rate regularization 和 target revision rate 设定。",
   "claim_boundary": "只能作为 uncertainty-gated revision 的计算假说；不证明人类 listener 使用该机制，也不构成 conceptual-pact theory 的新实证确认。",
-  "why_researcher_should_care": "为 convention lifecycle 中的 maintain/revise 决策提供可实现组件，也示范 task retrieval 与 grounding dynamics 应分开评估。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 7.2,
     "buckets": [
       "D",
       "E"
     ],
-    "stages": [
-      "Grounding",
-      "Adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "belief revision",
       "grounding maintenance"
@@ -56,10 +53,10 @@
   "provenance": "amsc_radar_2026-08-27",
   "updated_at": "2026-08-27",
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Adjacent method or mechanism precedent; not a first-project requirement"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

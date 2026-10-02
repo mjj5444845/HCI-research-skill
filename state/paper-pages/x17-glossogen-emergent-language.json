@@ -28,18 +28,14 @@
   "real_contribution": "Provides a richer protocol-development testbed than fixed-role reference games by combining asymmetric roles, explicit meta-coordination, action consequences, partner replacement, history dosage, and repair-like queries.",
   "biggest_weakness": "The system prompt explicitly tells agents to develop shorthand, postmortems permit free code definition, several linguistic measures depend on LLM judges, and one swap cannot establish cumulative cultural evolution.",
   "claim_boundary": "Supports prompted AI–AI protocol negotiation and partial newcomer uptake, not spontaneous convention, human-like common ground, human–AI interaction, physical embodiment, or cumulative cultural evolution.",
-  "why_researcher_should_care": "It supplies concrete lifecycle components—explicit negotiation, history dosage, partner swap, active clarification, and transfer—that can be adapted into stricter human–embodied-AI experiments with counterfactual history controls.",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 8.9,
     "buckets": [
       "C",
       "D"
     ],
-    "stages": [
-      "Grounding/common ground",
-      "Convention formation",
-      "Personalization/co-adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "communication pressure",
       "explicit meta-coordination",
@@ -63,10 +59,10 @@
   "provenance": "amsc_radar_2026-09-03",
   "updated_at": "2026-09-03",
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Adjacent method or mechanism precedent; not a first-project requirement"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

@@ -178,4 +178,9 @@ After an AMSC run changes the literature landscape, synchronize evidence-backed 
 
 ## Current program contract
 
-For AMSC work, load `research-programs/amsc/PROGRAM.md` and `program.yaml`; their current version overrides historical framing. HCI, AI, CV and NLP are equal routes. X21/arXiv:2609.04384 is user-confirmed second-author work and the near-term foundation. Do not require robots, user studies, embodied settings or convention formation for a valid mainline contribution. Choose human evidence when the claim concerns human behavior or interpretation. Understanding is the current focus, not a mandatory sequence of papers. Archived v1 content is not an active priority.
+For AMSC work, load current PROGRAM.md and program.yaml (v3.0, 2026-10-02). The mainline is robot visual/embodied expression, user interpretation, character–behavior coherence and relationships, including an AI companion with robotic/electronic extensions. One companion and separate characters are alternatives, not selected winners. Devices need not converse or carry independent personas. Persistence is not fixed behavior; evolution is not random drift. Empirical, artifact and evidence-supported theoretical contributions are valid; computational work must state its substantive bridge. Human perception and relationship claims need appropriate human evidence; short-term liking is not long-term relationship. X21 remains user-confirmed foundation, not a required starting point. No first RQ or new hardware access is approved. Preserve archives and human edits; reactivation needs item-level review.
+
+
+## Robot expression and companion evidence
+
+Check movement-centric design, legibility, appearance-task matching, relational agents and migrating companions. A multi-device or LLM combination alone is not novelty.

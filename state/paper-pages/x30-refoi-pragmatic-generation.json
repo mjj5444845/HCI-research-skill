@@ -27,16 +27,14 @@
   "real_contribution": "为GAP04提供明确的评价效度先例，连接Ziqiao Ma的研究风格；后续应明确自己增加的能力或测量贡献。",
   "biggest_weakness": "结论限于所测模型和指称任务；模型听者不是人类理解的替代，不能推广到全部社会语用能力。",
   "claim_boundary": "结论限于所测模型和指称任务；模型听者不是人类理解的替代，不能推广到全部社会语用能力。",
-  "why_researcher_should_care": "为GAP04提供明确的评价效度先例，连接Ziqiao Ma的研究风格；后续应明确自己增加的能力或测量贡献。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": null,
     "buckets": [
       "B",
       "D"
     ],
-    "stages": [
-      "Social meaning/pragmatics"
-    ],
+    "stages": [],
     "mechanisms": [
       "如何分别评价指称的可辨认性、简洁性和人的表达偏好？"
     ],
@@ -60,9 +58,9 @@
   "provenance": "amsc-radar-2026-09-18",
   "updated_at": "2026-09-18",
   "program_membership": {
-    "status": "ACTIVE",
-    "program_version": "2.0",
-    "reviewed_at": "2026-09-18",
-    "reason": "为GAP04提供明确的评价效度先例，连接Ziqiao Ma的研究风格；后续应明确自己增加的能力或测量贡献。"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   }
 }

@@ -28,16 +28,13 @@
   "real_contribution": "不是简单证明‘冗余有用’，而是重定义 informativeness：当词项到对象的适用性有噪声/graded 时，额外 feature 能降低误指风险，因此 minimal Boolean sufficiency 不是 communicative sufficiency。该形式化统一 modifier type、scene variation、typicality 与 taxonomic-level choice，为 AMSC 设计 WHAT/how-much-to-signal 的 robustness–cost baseline。",
   "biggest_weakness": "实证域集中在短时、英语、屏幕静态 objects 的 referential production；没有 multimodal signal、embodiment、social meaning、interaction history 或 convention learning。三个 best models 为不同 datasets 调整 lexicon/alternative set/semantics/cost，主要以同一 production data 的 posterior fit/marginal likelihood 评估，未展示 held-out cross-domain prediction；因此 unified architecture 的心理过程与跨模态外推仍未被建立。",
   "claim_boundary": "可支持：在这些 reference games 中，graded semantics+context/typicality能解释 speakers 的系统性 redundancy 与 abstraction choices。不可支持：所有冗余都提升理解；cost 在一般 communication 中不重要；cs-RSA 是实际 cognitive algorithm；verbal object reference 的参数可直接规定 robot multimodal output；该研究解释 shared meaning/conventions 如何随互动形成。",
-  "why_researcher_should_care": "提醒你不要简单假设“越少越好”。communication 需要权衡 information cost 与 robustness；未来研究 multimodal redundancy 时非常重要。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9,
     "buckets": [
       "B"
     ],
-    "stages": [
-      "Social meaning / pragmatics",
-      "Grounding / common ground"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning",
       "Grounding"
@@ -69,7 +66,7 @@
   "gap_impact": [
     "GAP-01 在 efficiency layer 被重构：fixed-signal effectiveness 应结合 graded semantic fit 与 communicative robustness 评价，但本文没有观察 meaning formation 本身。",
     "GAP-03 作为 boundary 被强化：模型高度 current-context-aware，却没有 interaction history、partner-model update 或 learned convention。",
-    "GAP-06 在概念上被部分处理：论文为 informative/robust signaling 提供共同 utility language，但 social meaning 与 embodied robot-state communication 尚未整合。"
+    "historical-v1:GAP-06 在概念上被部分处理：论文为 informative/robust signaling 提供共同 utility language，但 social meaning 与 embodied robot-state communication 尚未整合。"
   ],
   "agent_readiness": "FULL_TEXT_DEEP_AUDITED",
   "readiness": {
@@ -89,10 +86,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

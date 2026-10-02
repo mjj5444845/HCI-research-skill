@@ -24,18 +24,14 @@
   "real_contribution": "提供一个跨粒度 visual lexicon vocabulary，尤其把 conventional visual symbols 与 productive iconic schemata 区分，并把 panel 从“视觉词/句子”重构为 attention window。对 AMSC 的真实价值是为 signal inventory、compositionality 与 conventionalization 提供表示层框架，而不是直接证明任何 shared convention 如何形成。",
   "biggest_weakness": "核心分类主要由作者挑选的 examples 与 linguistic analogy 推导；没有预注册的 corpus sampling、coder reliability、behavioral comprehension/production data 或跨文化比较来验证 LRM、morphological status 与 construction entrenchment。作者也承认尚不知道足够多的 visual grammar 来确认 visual-only constructions。",
   "claim_boundary": "可作为 visual-language representation 的 conceptual framework 与可检验 hypotheses 来源；不可把其 categories 当作已验证的 cognitive universals、把 comics/sand narratives 的对比当作媒介因果证据，或据此声称 emoji/robot signals 已构成 lexicon、grammar 或共同 convention。",
-  "why_researcher_should_care": "建立“视觉表达也可以存在 lexical units”的理论基础，对 emoji、impact symbols、emanata、漫画视觉符号尤其重要。",
+  "why_researcher_should_care": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。",
   "amsc": {
     "mainline_fit": 7.3,
     "buckets": [
       "A",
       "B"
     ],
-    "stages": [
-      "Informal visual expression",
-      "Social meaning / pragmatics",
-      "Convention formation"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning",
       "Convention"
@@ -87,10 +83,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
   },
   "scope_updated_at": "2026-09-18"
 }

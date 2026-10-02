@@ -26,7 +26,7 @@
   "claim_boundary": "支持固定 visual reference contexts 中 online listener adaptation；accuracy/shortening 不足以证明 reciprocal、counterfactually partner-specific convention 或 mutual belief。",
   "priority": "Must Read",
   "one_sentence": "目前整个 list 中与你“agent 随着 interaction history 学习 partner-specific convention”最接近的 computational work 之一。它直接让 artificial agent 在 repeated reference interaction 中持续适应沟通伙伴。",
-  "why_researcher_should_care": "目前整个 list 中与你“agent 随着 interaction history 学习 partner-specific convention”最接近的 computational work 之一。它直接让 artificial agent 在 repeated reference interaction 中持续适应沟通伙伴。",
+  "why_researcher_should_care": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。",
   "amsc": {
     "mainline_fit": 9.4,
     "buckets": [
@@ -34,11 +34,7 @@
       "D",
       "E"
     ],
-    "stages": [
-      "Grounding / Common Ground",
-      "Convention Formation",
-      "Personalization / Co-adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning",
       "Grounding",
@@ -88,10 +84,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "SUPPORTING",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
   },
   "scope_updated_at": "2026-09-18"
 }

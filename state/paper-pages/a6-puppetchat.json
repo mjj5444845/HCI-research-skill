@@ -27,7 +27,7 @@
   "real_contribution": "最强贡献不是“AI 提升 intimacy”，而是一个可复用的 interaction architecture：用 complementary response constraints 把 signal 变成 invitational turn，用 editable micronarrative 给 embodied metaphor 增加 dyad-specific context，再以 persistence 构成 shared-history substrate。它提供了贴近 AMSC 的 human–human mediated evidence，显示 designer-provided/AI-suggested units 可被 dyads appropriated，但尚未证明 stable convention formation。",
   "biggest_weakness": "22 名已亲密、主要 university-community participants 的 10 天 single-system deployment 没有 comparison/ablation，无法把 self-report/qualitative patterns归因于 complementary recommendations、puppet embodiment、micronarratives、novelty、dedicated-room attention 或研究要求中的每日聊天。自建 16-item scale 只在 N=22 上报告 internal consistency，未验证 construct validity；另有 SUS confidence interval 不包含 reported mean 的明显统计不一致。",
   "claim_boundary": "可支持：这 11 个 close dyads 在短期、结构化 deployment 中实际使用、编辑并有时 appropriated reciprocal action+micronarrative scaffolds，且主观报告 presence、disclosure、continuity 与 shared meaning。不可支持：PuppetChat 因果提升 intimacy；任何单一 feature 是机制；10 天内形成了稳定/新颖 convention；效果可推广到 non-intimate、intercultural、neurodivergent 或 human–embodied-AI interaction。",
-  "why_researcher_should_care": "与你老板的研究线连接最明显。尤其关注 embodied actions、personal history、shared memories、social presence 与 intimate communication。未来可以从 human–human mediated expression 推向 human–embodied-AI shared expression。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 8.7,
     "buckets": [
@@ -35,12 +35,7 @@
       "F",
       "G"
     ],
-    "stages": [
-      "Social meaning / pragmatics",
-      "Convention formation",
-      "Personalization / co-adaptation",
-      "Situated adaptive communication"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning",
       "Convention",
@@ -105,10 +100,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

@@ -1,0 +1,29 @@
+ M .gitignore
+ M research-programs/amsc/state/comprehensive_exam.yaml
+ M research-programs/amsc/state/gap_registry.yaml
+ M research-programs/amsc/state/master_literature.yaml
+ M research-programs/amsc/state/research_graph.yaml
+ M research-programs/amsc/state/state_of_field.yaml
+ M research-programs/amsc/state/workflow_dashboard.json
+ M scripts/build-site.mjs
+ M scripts/content-archive.mjs
+ M scripts/serve-site.mjs
+ M scripts/validate-site.mjs
+ M state/reading_zh.json
+?? .tmp/
+?? archives/2026-10-02-mainline-v2/
+?? reports/chi-cscw-selection-2021/
+?? reports/meaningtrace-game-culture-discussion-2026-09-18.md
+?? reports/radar/2026-09-21-provisional-source-scan.md
+?? reports/radar/2026-09-28-amsc-mainline.md
+?? research-programs/amsc/exam-preparation-v2.md
+?? scripts/meaningtrace-api.mjs
+?? site-src/assets/meaningtrace/
+?? state/paper-pages/x36-polite-but-misaligned.json
+?? state/paper-pages/x37-clarification-not-correction.json
+?? state/paper-pages/x38-user-model-belief-distillation.json
+?? state/paper-pages/x39-live-assistant.json
+?? state/paper-pages/x40-msi-bench.json
+?? state/paper-pages/x41-ai-email-cultural-style.json
+?? state/paper-pages/x42-memecf-pivotal-cues.json
+?? tests/meaningtrace.test.mjs

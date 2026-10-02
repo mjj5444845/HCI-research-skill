@@ -29,7 +29,7 @@
   "real_contribution": "提供受控 human–human physical task 中 multimodal abstraction/convention evidence、公开 dataset/tool 与可扩展 computational scaffold，是 AMSC 最接近的 baseline anchor。",
   "biggest_weakness": "human–human only；无 partner swap/pseudo-dyad/history ablation、role reversal、controlled breakdown/repair 或 transfer。小 tower domain、four repetitions、fixed roles，模型部分参数 in-sample fitted 且假设 perfect alignment/uniform priors。",
   "claim_boundary": "支持 controlled human–human physical assembly 中 multimodal abstractions 的形成与复用；不证明 mutually negotiated human–AI convention、counterfactual history dependence 或 open-world lifelong interaction。",
-  "why_researcher_should_care": "目前与你未来方向最接近的 anchor paper。它把 repeated collaboration、speech、gesture、physical assembly、AR 和 convention model 连起来，并明确指向 **convention-aware situated intelligent agents**。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9.8,
     "buckets": [
@@ -37,11 +37,7 @@
       "C",
       "G"
     ],
-    "stages": [
-      "Grounding / Common Ground",
-      "Convention Formation",
-      "Situated Adaptive Communication"
-    ],
+    "stages": [],
     "mechanisms": [
       "Meaning",
       "Grounding",
@@ -93,10 +89,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

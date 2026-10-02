@@ -24,18 +24,14 @@
   "real_contribution": "提供开放 repeated-reference corpus 与高分辨率 measurement，把 convention dynamics 描述为 path-dependent、feedback-sensitive、locally informative 的 pruning process。",
   "biggest_weakness": "把一 trial 内多轮 dialogue collapse 为单 utterance，丢失 grounding/repair sequence；人工清洗与 GloVe 表示有偏差；无 partner swap/history ablation。",
   "claim_boundary": "支持 human text Tangram reference 六次重复中的 feedback-sensitive stabilization；不能外推 multimodal/embodied/long-term，也不独立证明 partner-specific transfer。",
-  "why_researcher_should_care": "直接研究 repeated interaction 中表达如何逐渐变短、稳定且具有 dyad-specificity，是你未来 longitudinal convention experiment 的方法学模板之一。",
+  "why_researcher_should_care": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。",
   "amsc": {
     "mainline_fit": 9.5,
     "buckets": [
       "C",
       "E"
     ],
-    "stages": [
-      "Grounding / Common Ground",
-      "Convention Formation",
-      "Personalization / Co-adaptation"
-    ],
+    "stages": [],
     "mechanisms": [
       "Grounding",
       "Convention",
@@ -84,10 +80,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "ACTIVE",
-    "reviewed_at": "2026-09-18",
-    "program_version": "2.0",
-    "reason": "Relevant expression, pragmatics, grounding, adaptation, evaluation or system evidence"
+    "status": "BACKGROUND",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
   },
   "scope_updated_at": "2026-09-18"
 }

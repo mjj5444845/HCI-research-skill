@@ -1,17 +1,16 @@
-version: "2.0"
+version: "2.2"
 updated_at: 2026-09-18
-title: "Multimodal Social Meaning, Understanding, and Adaptive Communication: Pragmatics, Evaluation,
-  Shared Meaning and Adaptation"
-core_review_question: How does AI understand and participate in situated multimodal social meaning, and
-  how can shared meanings develop through interaction?
-source_plan: research-programs/amsc/imports/comprehensive-exam-plan-v1.md
+title: "Multimodal Social Meaning, Understanding, and Adaptive Communication: Pragmatics, Evaluation, Shared
+  Meaning and Adaptation"
+core_review_question: 人和AI如何在具体情境中表达、理解与协商多模态社会意义？这些过程如何受到模型能力、文化知识、关系与持续互动的影响？
+source_plan: research-programs/amsc/exam-preparation-v2.md
 target_pages:
   min: 8
   max: 10
 readiness:
   source_availability:
     active_papers: 48
-    active_queue_count: 15
+    active_queue_count: 30
   agent_evidence:
     full_paper_investigation: 23
     radar_full_text_audit: 24
@@ -21,47 +20,89 @@ readiness:
     top20_mastered: null
     status: UNTRACKED
   warnings:
-    - 当前阅读队列沿用保留文献，未自动补足20篇。
-    - 历史41篇baseline及机器人专题准备见迁移快照。
-    - Agent调查深度不代表研究者阅读或掌握；新考试结构待确认。
+    - 本轮依据截至2026-09-18的持久证据整理，未重新复现实验或提升论文调查深度。
+    - 8–10页沿用历史准备目标；正式考试规则、日期和评分要求尚未记录。
+    - Agent调查不代表研究者已阅读或掌握；个人进度原样保留。
 themes:
-  - Social and expressive multimodal communication
-  - Pragmatics and contextual understanding
-  - Common ground and conventions
-  - Models, evaluation and research resources
-  - Memory and adaptation
-  - Culture, relationships and social practices
+  - 社会意义与多模态表达
+  - 语用推理与情境化理解
+  - 共同基础、理解确认与沟通惯例
+  - 模型、数据集与评估效度
+  - 记忆、适应与持续互动
+  - 文化知识、关系与社会实践
 top20_order:
-  - C1
-  - C2
-  - C3
+  - A2
+  - A3
+  - A4
+  - A5
+  - X33
+  - X21
   - B1
   - B2
   - B3
-  - C4
-  - C5
-  - C6
-  - C7
-  - C8
-  - A5
-  - A2
+  - B4
+  - X30
+  - X31
+  - X32
+  - X35
+  - X24
   - A1
+  - A6
+  - X34
+  - X27
+  - X12
+  - C1
+  - C2
+  - C3
+  - C6
+  - C8
   - E3
+  - X8
+  - X9
+  - X16
+  - X22
 second_round_evidence:
-  note: 旧具身专题与准备快照归档；当前考试结构待按新主线复核，不推断个人掌握。
+  note: 30篇构成当前工作清单，后续可按考试问题替换或增补。扩展材料用于追问与反例，不要求全部读完。C5/C6按同一实证谱系处理。
+  groups:
+    - topic: 惯例机制与跨尺度背景
+      papers:
+        - C4
+        - C5
+        - C7
+        - F1
+    - topic: 不同人机组合与反例核对
+      papers:
+        - X2
+        - X10
+        - X25
+        - X29
+    - topic: 更细的互动与系统组件
+      papers:
+        - X23
+        - X28
+        - X3
 candidate_anchor_review:
   foundation:
     candidates:
       - X21
-    status: USER_RESEARCH_FOUNDATION
-    rationale: 用户二作主线起点；考试重点与个人掌握另行确认。
-  guardrail: 保留已有个人阅读记录；方向更新不表示已掌握新增主题。
+    status: EXAM_CORE
+    rationale: 用户二作已有基础，核心复习入口；作者身份不自动记作掌握。
+  extensions:
+    candidates:
+      - X2
+      - X10
+      - X25
+      - X29
+      - F1
+    status: EXTENSION
+    rationale: 用于比较互动条件、伙伴特定性的正反证据与群体尺度；当前30篇并非封闭边界。
+  guardrail: 考试选入不改变Master List的candidate状态、Gap结论或研究者掌握。
 radar_oral_questions:
   - id: RQ-2026-09-07-1
     themes:
       - 3
-    question: Why is conceptual-pact reuse insufficient evidence of partner-specific common ground, and how
-      can reuse persist while audience design differs across human and agent addressees?
+    question: Why is conceptual-pact reuse insufficient evidence of partner-specific common ground, and how can
+      reuse persist while audience design differs across human and agent addressees?
     evidence:
       - X20
       - C3
@@ -70,12 +111,11 @@ radar_oral_questions:
     themes:
       - 2
       - 6
-    question: What does a 39.07-point full-context advantage establish about pragmatic inference, and why
-      does it not establish cultural competence, common ground, or dyadic grounding?
+    question: What does a 39.07-point full-context advantage establish about pragmatic inference, and why does it
+      not establish cultural competence, common ground, or dyadic grounding?
     evidence:
       - X21
-    boundary: Purposefully sampled Chinese-language platform episodes are not a representative cultural
-      comparison.
+    boundary: Purposefully sampled Chinese-language platform episodes are not a representative cultural comparison.
   - id: RQ-2026-09-07-3
     themes:
       - 3
@@ -87,8 +127,7 @@ radar_oral_questions:
       - X23
       - X24
       - C2
-    boundary: The three candidate systems occupy different stages and none alone demonstrates reciprocal
-      embodied repair.
+    boundary: 这些研究分别涉及映射检索、状态表示与困难检测；单独一项不足以证明双方完成理解确认或修复，是否需要具身证据取决于具体主张。
   - id: RQ-2026-09-18-measurement
     themes:
       - 2
@@ -114,12 +153,11 @@ reading_matrix:
       - principle of least collaborative effort
     method: 8 对 Stanford undergraduate dyads 在 opaque screen 两侧完成 12 个 Tangram 排列任务，共 6 trials；固定
       director/matcher，可自由交谈；分析 576 placements、9,792 transcript words 及 exchange/repair/acceptance 结构。
-    finding: 每图 director words 从 trial 1 约 41 降至 trial 6 约 8，director turns 从约 3.7 降至约 1。 basic exchanges 从早期
-      18% 升至后期约 84%；reference 常经 presentation、verdict、repair/expansion/replacement 的递归 acceptance cycle。
+    finding: 每图 director words 从 trial 1 约 41 降至 trial 6 约 8，director turns 从约 3.7 降至约 1。 basic exchanges 从早期 18%
+      升至后期约 84%；reference 常经 presentation、verdict、repair/expansion/replacement 的递归 acceptance cycle。
     limitation: 仅 8 对学生、单一 spoken Tangram task、固定角色；无 partner swap、history ablation、非语言或具身条件，表达缩短本身不足以证明
       partner-specific convention。
-    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation; mechanisms: Meaning,
-      Grounding, Convention"
+    relation_to_mainline: 作为共享意义的理论基础；按问题调用，不规定首项研究必须研究惯例形成。
     gap_supported_challenged:
       - GAP-01
       - GAP-02
@@ -139,13 +177,22 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/c1-referring-as-collaborative-process.json
+    source_checked_at: 2026-09-18
+    source_sha256: e2ce5e23d4d10873ccfe1cf376fa2ec5e2d199b9e886d17044d1a2ad4de8cf22
+    exam_themes:
+      - 3
+      - 2
+    reading_group: shared_meaning
   - id: C2
     citation: Herbert H. Clark, Susan E. Brennan (1991). Grounding in Communication. Perspectives on Socially
       Shared Cognition, 127–149
     source_url: https://www.cs.cmu.edu/~illah/CLASSDOCS/Clark91.pdf
     exam_theme: 3
-    rq: 如何统一描述 contribution、evidence of understanding、grounding criterion，以及 purpose/medium 对 grounding
-      techniques 的约束？
+    rq: 如何统一描述 contribution、evidence of understanding、grounding criterion，以及 purpose/medium 对 grounding techniques
+      的约束？
     theory:
       - common ground
       - grounding criterion
@@ -155,12 +202,11 @@ reading_matrix:
       - medium constraints
     method: 理论/概念综合，使用自然会话例子与既有 face-to-face、telephone、keyboard、email 研究；没有新招募样本或原创实验。
     finding: 该文没有新的单一实验 finding；其综合主张是 grounding technique 随 purpose 与 medium 改变。 medium 的
-      copresence、visibility、audibility、cotemporality、simultaneity、sequentiality、reviewability 与
-      revisability 会改变 formulation、reception、delay、fault 与 repair 成本。
-    limitation: mutual belief 难以直接观测；框架依赖 cooperative coordination，媒介 taxonomy 源自 1991 年 ecology，且无 embodied
-      AI 或 causal comparison。
-    relation_to_mainline: "Stages: Grounding / Common Ground → Situated Adaptive Communication; mechanisms:
-      Grounding, Situated multimodal communication"
+      copresence、visibility、audibility、cotemporality、simultaneity、sequentiality、reviewability 与 revisability
+      会改变 formulation、reception、delay、fault 与 repair 成本。
+    limitation: mutual belief 难以直接观测；框架依赖 cooperative coordination，媒介 taxonomy 源自 1991 年 ecology，且无 embodied AI 或
+      causal comparison。
+    relation_to_mainline: 作为共享意义的理论基础；按问题调用，不规定首项研究必须研究惯例形成。
     gap_supported_challenged:
       - GAP-03
       - GAP-04
@@ -178,10 +224,18 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/c2-grounding-in-communication.json
+    source_checked_at: 2026-09-18
+    source_sha256: 7f464c19380271c56dfb4d9c7340de1b7c18a9b68a9ad6434251c44bad34a004
+    exam_themes:
+      - 3
+      - 1
+    reading_group: shared_meaning
   - id: C3
-    citation: "Susan E. Brennan, Herbert H. Clark (1996). Conceptual Pacts and Lexical Choice in
-      Conversation. Journal of Experimental Psychology: Learning, Memory, and Cognition, 22(6),
-      1482–1493"
+    citation: "Susan E. Brennan, Herbert H. Clark (1996). Conceptual Pacts and Lexical Choice in Conversation.
+      Journal of Experimental Psychology: Learning, Memory, and Cognition, 22(6), 1482–1493"
     source_url: https://web.stanford.edu/~clark/1990s/Brennan%2C%20S.E.%20_%20Clark%2C%20H.H.%20_Conceptual%20pacts%20and%20lexical%20choice%20in%20conversation_%201996.pdf
     exam_theme: 3
     rq: lexical reuse 是否由当前 informativeness、frequency/recency history、provisionality 与 partner identity 共同决定？
@@ -190,17 +244,15 @@ reading_matrix:
       - lexical entrainment
       - partner-specific precedent
       - provisionality and hedging
-    method: 三个 human picture-card matching experiments：Exp1 48 students/24 pairs；Exp2 72/36 pairs 并交替角色；Exp3
-      50 students，比较 10 same-partner 与 10 switch-partner groups。测 lexical/verbatim
-      equivalence、basic-level terms 与 hedging。
-    finding: frequency 加 recency 比 recency 或当前 informativeness 更好解释 lexical reuse；谁最初提出 conceptualization
-      不决定后续 entrainment。 uncertainty 较高时 hedging 更多，随 grounding 增强而消失。 Exp3 同一 terms 的 B4→C1 保留为 same
-      partner 48% vs switch partner 18%；关键 item-level test 仅 marginal，p=.08，switch condition 也更常回退至
-      basic-level terms。
+    method: 三个 human picture-card matching experiments：Exp1 48 students/24 pairs；Exp2 72/36 pairs 并交替角色；Exp3 50
+      students，比较 10 same-partner 与 10 switch-partner groups。测 lexical/verbatim equivalence、basic-level terms
+      与 hedging。
+    finding: frequency 加 recency 比 recency 或当前 informativeness 更好解释 lexical reuse；谁最初提出 conceptualization 不决定后续
+      entrainment。 uncertainty 较高时 hedging 更多，随 grounding 增强而消失。 Exp3 同一 terms 的 B4→C1 保留为 same partner 48% vs
+      switch partner 18%；关键 item-level test 仅 marginal，p=.08，switch condition 也更常回退至 basic-level terms。
     limitation: 只有四个关键 target items，关键 partner effect 的 item-level test marginal；partner switch 同时改变 memory
       cue、feedback 与 expectations，不能单独识别内部 representation。
-    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation → Personalization /
-      Co-adaptation; mechanisms: Grounding, Convention, Adaptation"
+    relation_to_mainline: 作为共享意义的理论基础；按问题调用，不规定首项研究必须研究惯例形成。
     gap_supported_challenged:
       - GAP-02
       - GAP-03
@@ -219,6 +271,15 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/c3-conceptual-pacts.json
+    source_checked_at: 2026-09-18
+    source_sha256: ebc3d82203789036d12abc51492ee0ecd2416df881857108bf2576a9d82d3eef
+    exam_themes:
+      - 3
+      - 5
+    reading_group: shared_meaning
   - id: B1
     citation: Noah D. Goodman, Michael C. Frank (2016). Pragmatic Language Interpretation as Probabilistic
       Inference. Trends in Cognitive Sciences, 20(11), 818–829
@@ -230,14 +291,14 @@ reading_matrix:
       - uncertain RSA
       - probabilistic inverse planning
       - speaker utility and utterance cost
-    method: 非系统性理论综述与计算建模综合；重建 basic RSA，并汇总 signaling-game、judgment、reference、figurative language 与
-      vagueness 研究；没有原创实验样本。
-    finding: RSA 在若干受限 signaling/reference tasks 中可量化拟合 human judgments，并可纳入 utterance cost、speaker
-      uncertainty 与不同 utilities。 深层 social recursion 的 evidence mixed；论文把 dialogue、partner
-      utilities/goals、social goals、learning/language change 与 scalability 列为开放问题。
+    method: 非系统性理论综述与计算建模综合；重建 basic RSA，并汇总 signaling-game、judgment、reference、figurative language 与 vagueness
+      研究；没有原创实验样本。
+    finding: RSA 在若干受限 signaling/reference tasks 中可量化拟合 human judgments，并可纳入 utterance cost、speaker uncertainty
+      与不同 utilities。 深层 social recursion 的 evidence mixed；论文把 dialogue、partner utilities/goals、social
+      goals、learning/language change 与 scalability 列为开放问题。
     limitation: narrative review 来自框架主要提出者；basic RSA 常预设 alternatives、utility、literal semantics 与 rational
       speaker，主要解释受限 listener judgments，而非在线 production/repair。
-    relation_to_mainline: "Stages: Social Meaning / Pragmatics → Grounding / Common Ground; mechanisms: Meaning, Grounding"
+    relation_to_mainline: 服务近期情境化语用理解，检验信号、上下文、用意与解释之间的关系。
     gap_supported_challenged:
       - GAP-01
       - GAP-02
@@ -257,6 +318,15 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/b1-pragmatic-language-interpretation.json
+    source_checked_at: 2026-09-18
+    source_sha256: d39acaddf0d42e0fdfd41b2eb9105c6cdd3c3ef510ed3bf73cf5e74e5cd7872b
+    exam_themes:
+      - 2
+      - 4
+    reading_group: interpretation
   - id: B2
     citation: Judith Degen (2023). The Rational Speech Act Framework. Annual Review of Linguistics, 9, 519–540
     source_url: https://alpslab.stanford.edu/papers/2023Degen.pdf
@@ -274,8 +344,7 @@ reading_matrix:
       exposure；主要挑战是 scalability、bounded cognition、incrementality/compositionality。
     limitation: 非系统综述且以 scalar implicature 组织；开放式 multimodal joint action 距离大，alternative set、prior、utility 与
       linking hypothesis 存在 underidentification。
-    relation_to_mainline: "Stages: Social Meaning / Pragmatics → Grounding / Common Ground → Convention
-      Formation; mechanisms: Meaning, Grounding, Convention"
+    relation_to_mainline: 服务近期情境化语用理解，检验信号、上下文、用意与解释之间的关系。
     gap_supported_challenged:
       - GAP-01
       - GAP-02
@@ -295,28 +364,37 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/b2-rational-speech-act-framework.json
+    source_checked_at: 2026-09-18
+    source_sha256: efa1d62dd739fc3d136679b3757ad89129298f809a76e2abfc7040d174b0bf75
+    exam_themes:
+      - 2
+      - 4
+    reading_group: interpretation
   - id: B3
-    citation: Judith E. Fan, Robert D. Hawkins, Mike Wu, Noah D. Goodman (2020). Pragmatic Inference and
-      Visual Abstraction Enable Contextual Flexibility During Visual Communication. Computational Brain &
-      Behavior, 3(1), 86–101
+    citation: Judith E. Fan, Robert D. Hawkins, Mike Wu, Noah D. Goodman (2020). Pragmatic Inference and Visual
+      Abstraction Enable Contextual Flexibility During Visual Communication. Computational Brain & Behavior,
+      3(1), 86–101
     source_url: https://cogtoolslab.github.io/pdf/fan_cbb_2019.pdf
     exam_theme: 2
-    rq: 能否用 algorithmically explicit account 联结 visual abstraction、pragmatic diagnosticity 与 production
-      cost，并检验 context、cost、visual features 是否都必要？
+    rq: 能否用 algorithmically explicit account 联结 visual abstraction、pragmatic diagnosticity 与 production cost，并检验
+      context、cost、visual features 是否都必要？
     theory:
       - Gricean informativeness
       - Rational Speech Act
       - decision-theoretic utility
       - visual abstraction as context-relative diagnosticity
-    method: 192 AMT participants/96 pairs 完成 online drawing reference game，32 objects/4 categories，close vs
-      far distractors；另 112 人做 naive recognition。human recognition 与 VGG-19 features 进入 probabilistic
-      sketcher model，使用 5-fold CV 与 Bayes-factor lesion comparisons。
+    method: 192 AMT participants/96 pairs 完成 online drawing reference game，32 objects/4 categories，close vs far
+      distractors；另 112 人做 naive recognition。human recognition 与 VGG-19 features 进入 probabilistic sketcher
+      model，使用 5-fold CV 与 Bayes-factor lesion comparisons。
     finding: viewer overall accuracy 93.8%；far context 以更少 time/strokes/ink 达到近 ceiling，close sketches 的
-      out-of-context recognition 为 54.2% vs far 37.5%。 full human-recognition model 优于 no-context 与
-      no-cost lesions；high-level visual features 优于 mid/low features。
-    limitation: 模型只在参与者已生成的 prototype sketch categories 中选择，不生成 strokes；visual encoder 需 supervision，drawing
-      time 只是 cost proxy；无 repeated history/convention manipulation。
-    relation_to_mainline: "Stages: Social Meaning / Pragmatics → Grounding / Common Ground; mechanisms: Meaning, Grounding"
+      out-of-context recognition 为 54.2% vs far 37.5%。 full human-recognition model 优于 no-context 与 no-cost
+      lesions；high-level visual features 优于 mid/low features。
+    limitation: 模型只在参与者已生成的 prototype sketch categories 中选择，不生成 strokes；visual encoder 需 supervision，drawing time
+      只是 cost proxy；无 repeated history/convention manipulation。
+    relation_to_mainline: 服务近期情境化语用理解，检验信号、上下文、用意与解释之间的关系。
     gap_supported_challenged:
       - GAP-01
       - GAP-05
@@ -334,9 +412,18 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/b3-pragmatic-inference-visual-abstraction.json
+    source_checked_at: 2026-09-18
+    source_sha256: fa414ddf43ca427520109d36e8848c60186cabde069f13c24e8e97027ef77b9f
+    exam_themes:
+      - 2
+      - 1
+    reading_group: interpretation
   - id: C4
-    citation: Robert D. Hawkins, Michael C. Frank, Noah D. Goodman (2020). Characterizing the Dynamics of
-      Learning in Repeated Reference Games. Cognitive Science, 44(6), e12845
+    citation: Robert D. Hawkins, Michael C. Frank, Noah D. Goodman (2020). Characterizing the Dynamics of Learning
+      in Repeated Reference Games. Cognitive Science, 44(6), e12845
     source_url: https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.12845
     exam_theme: 3
     rq: reduction 的 syntax/feedback dynamics、convention 的 stability/arbitrariness 与 context discriminability
@@ -347,16 +434,15 @@ reading_matrix:
       - stability and arbitrariness
       - Gricean informativity
       - cross-situational distinctiveness
-    method: 480 AMT participants；free-matching pilot 218 人、confirmatory 262 人；exclusions 后 56 pilot games 与
-      83 dyads/7,867 messages。12 tangrams×6 blocks，双向 text chat 与即时 feedback；confirmatory analyses
+    method: 480 AMT participants；free-matching pilot 218 人、confirmatory 262 人；exclusions 后 56 pilot games 与 83
+      dyads/7,867 messages。12 tangrams×6 blocks，双向 text chat 与即时 feedback；confirmatory analyses
       preregistered，结合 dependency parsing、mixed models、GloVe/token analyses 与 permutation checks。
-    finding: descriptions 缩短，matcher backchannel 从首 block 75% 的 matchers 发言降到末 block 4%。 speaker 按同一 tangram
-      上轮正负 feedback 调节下一次长度；closed-class words 更易被成簇删除，initially distinctive words 更可能保留。 within-dyad
-      successive expressions 更相似，between-dyad 表达更分歧且逐渐稳定。
+    finding: descriptions 缩短，matcher backchannel 从首 block 75% 的 matchers 发言降到末 block 4%。 speaker 按同一 tangram 上轮正负
+      feedback 调节下一次长度；closed-class words 更易被成簇删除，initially distinctive words 更可能保留。 within-dyad successive
+      expressions 更相似，between-dyad 表达更分歧且逐渐稳定。
     limitation: 把一 trial 内多轮 dialogue collapse 为单 utterance，丢失 grounding/repair sequence；人工清洗与 GloVe 表示有偏差；无
       partner swap/history ablation。
-    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation → Personalization /
-      Co-adaptation; mechanisms: Grounding, Convention, Adaptation"
+    relation_to_mainline: 作为共享意义的理论基础；按问题调用，不规定首项研究必须研究惯例形成。
     gap_supported_challenged:
       - GAP-02
       - GAP-03
@@ -375,10 +461,12 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: EXTENSION
+    exam_selection_reason: 保留作惯例或多模态协作专题拓展，近期不先于语用理解与评估核心阅读。
   - id: C5
     citation: Robert X. D. Hawkins, Megumi Sano, Noah D. Goodman, Judith E. Fan (2019). Disentangling
-      contributions of visual information and interaction history in the formation of graphical
-      conventions. Proceedings of the 41st Annual Meeting of the Cognitive Science Society
+      contributions of visual information and interaction history in the formation of graphical conventions.
+      Proceedings of the 41st Annual Meeting of the Cognitive Science Society
     source_url: https://escholarship.org/uc/item/6408z76h
     exam_theme: 3
     rq: 重复绘图是否产生 object-/interaction-specific efficiency，same-producer history sequence 是否优于 shuffled
@@ -389,14 +477,13 @@ reading_matrix:
       - visual resemblance
       - socially mediated history
     method: 138 AMT participants/69 dyads，固定 sketcher/viewer；4 repeated ShapeNet chairs×8 次、4 control chairs
-      pre/post。245 naive recognizers，223 retained，比较 yoked same-sketcher sequence 与 shuffled
-      sequence；mixed models、BIS 与 VGG-19 similarity。
+      pre/post。245 naive recognizers，223 retained，比较 yoked same-sketcher sequence 与 shuffled sequence；mixed
+      models、BIS 与 VGG-19 similarity。
     finding: repeated objects 的 efficiency/accuracy improvement 大于 controls；yoked recognition improvement 大于
       shuffled，stroke count 下降。 drawings 偏离各自初始形式、within interaction 更一致，并在不同 interactions 间适度分化。
     limitation: yoked observers 不是原 partner；manipulation 隔离的是 same-producer sequence continuity，不是 reciprocal
       common ground。单一 chair category、固定角色，部分结果在 C6 replication 中修正。
-    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation; mechanisms: Meaning,
-      Grounding, Convention"
+    relation_to_mainline: 作为共享意义的理论基础；按问题调用，不规定首项研究必须研究惯例形成。
     gap_supported_challenged:
       - GAP-01
       - GAP-02
@@ -414,28 +501,29 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: EXTENSION
+    exam_selection_reason: C6为规范实证锚点；C5保留作同一研究谱系对读，不计独立证据。
   - id: C6
     citation: Robert D. Hawkins, Megumi Sano, Noah D. Goodman, Judith E. Fan (2023). Visual Resemblance and
       Interaction History Jointly Constrain Pictorial Meaning. Nature Communications, 14, Article 2199
     source_url: https://www.nature.com/articles/s41467-023-37737-w
     exam_theme: 3
-    rq: 如何分离 task practice、item repetition、same-producer history 与 diagnostic visual content，并检验 resemblance
-      和 history 如何联合约束 meaning？
+    rq: 如何分离 task practice、item repetition、same-producer history 与 diagnostic visual content，并检验 resemblance 和
+      history 如何联合约束 meaning？
     theory:
       - icon–symbol continuum
       - visual resemblance
       - graphical convention
       - interaction history
-    method: 主 communication study 138 participants/69 dyads；internal replication 130/66 dyads。4 repeated
-      ShapeNet chairs×8 与 4 controls；recognition 主样本 223、replication 225，比较 yoked same-producer sequences
-      与 shuffled；VGG-19 analyses，443 annotators 映射 strokes，117 annotators 提供 diagnosticity heatmaps。
+    method: 主 communication study 138 participants/69 dyads；internal replication 130/66 dyads。4 repeated ShapeNet
+      chairs×8 与 4 controls；recognition 主样本 223、replication 225，比较 yoked same-producer sequences 与
+      shuffled；VGG-19 analyses，443 annotators 映射 strokes，117 annotators 提供 diagnosticity heatmaps。
     finding: communication efficiency/accuracy 提高且 repeated>control；within-dyad drawings 稳定、between-dyad 同物
-      drawings 分歧；yoked sequence improvement > shuffled，replication 排除 viewer interrupt confound。
-      repeated drawings 变稀疏，但相对 controls 更集中于 object-diagnostic regions，反驳纯 arbitrary-symbol reading。
+      drawings 分歧；yoked sequence improvement > shuffled，replication 排除 viewer interrupt confound。 repeated
+      drawings 变稀疏，但相对 controls 更集中于 object-diagnostic regions，反驳纯 arbitrary-symbol reading。
     limitation: yoked-vs-shuffled 仍主要操作 same-producer exposure，不是在原 dyad 做 partner swap；style familiarity
       可能是机制之一。单一 chairs、fixed roles、AMT 与 post-hoc exclusions 限制泛化。
-    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation; mechanisms: Meaning,
-      Grounding, Convention"
+    relation_to_mainline: 作为共享意义的理论基础；按问题调用，不规定首项研究必须研究惯例形成。
     gap_supported_challenged:
       - GAP-01
       - GAP-02
@@ -453,10 +541,19 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/c6-visual-resemblance-interaction-history.json
+    source_checked_at: 2026-09-18
+    source_sha256: 17f3e46744bc8be72e4d73ce480c849bd5bb698d18c47ae679ae20fc081b2b12
+    exam_themes:
+      - 3
+      - 1
+    reading_group: shared_meaning
   - id: C7
     citation: William P. McCarthy, Robert D. Hawkins, Haoliang Wang, Cameron Holdaway, Judith E. Fan (2021).
-      Learning to Communicate about Shared Procedural Abstractions. Proceedings of the 43rd Annual
-      Meeting of the Cognitive Science Society, 77–83
+      Learning to Communicate about Shared Procedural Abstractions. Proceedings of the 43rd Annual Meeting of
+      the Cognitive Science Society, 77–83
     source_url: https://repositories.cdlib.org/uc/item/3vs8285x
     exam_theme: 3
     rq: lexical mappings 与 hierarchical procedural abstractions 能否在 repeated physical assembly 中共同形成？
@@ -466,14 +563,13 @@ reading_matrix:
       - RSA-like lexical inference
       - efficiency–informativity trade-off
     method: 98 AMT participants/49 architect–builder dyads 完成 12 online block-assembly trials，3 towers×4
-      repetitions；Architect 发送不超过 100 字符的 stepwise messages，Builder 不可回话。测
-      F1、words/messages、block-vs-tower references、JSD；DSL/library learner 做定性 simulation。
+      repetitions；Architect 发送不超过 100 字符的 stepwise messages，Builder 不可回话。测 F1、words/messages、block-vs-tower
+      references、JSD；DSL/library learner 做定性 simulation。
     finding: 初始 F1=.876 并继续提高，words/messages 下降；language 从 block-level 转向 tower-level terms，dyads 的 lexical
       solutions 分化。 library learner 可发现 tower fragments，并在中等 cost 下定性再现 abstraction shift。
     limitation: shared procedural abstraction 未直接测量；Builder 无语言反馈，model 假设双方同速学习同一 DSL，未 fit individual
       trajectories；coding 无 reliability，初始 high accuracy 弱化 necessity claim。
-    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation → Situated Adaptive
-      Communication; mechanisms: Grounding, Convention, Situated multimodal communication"
+    relation_to_mainline: 作为共享意义的理论基础；按问题调用，不规定首项研究必须研究惯例形成。
     gap_supported_challenged:
       - GAP-03
       - GAP-04
@@ -491,10 +587,12 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: EXTENSION
+    exam_selection_reason: 保留作惯例或多模态协作专题拓展，近期不先于语用理解与评估核心阅读。
   - id: C8
-    citation: "Kiyosu Maeda, William P. McCarthy, Ching-Yi Tsai, Jeffrey Mu, Haoliang Wang, Robert D.
-      Hawkins, Judith E. Fan, Parastoo Abtahi (2026). Gesturing Toward Abstraction: Multimodal Convention
-      Formation in Collaborative Physical Tasks. CHI 2026"
+    citation: "Kiyosu Maeda, William P. McCarthy, Ching-Yi Tsai, Jeffrey Mu, Haoliang Wang, Robert D. Hawkins,
+      Judith E. Fan, Parastoo Abtahi (2026). Gesturing Toward Abstraction: Multimodal Convention Formation in
+      Collaborative Physical Tasks. CHI 2026"
     source_url: https://arxiv.org/abs/2602.08914
     exam_theme: 3
     rq: How do multimodal signals, procedural abstractions, and modality allocation evolve across repeated
@@ -505,22 +603,19 @@ reading_matrix:
       - procedural abstraction and chunking
       - multimodal redundancy and complementarity
       - multimodal RSA
-    method: Study 1 recruited 146 MTurkers/73 dyads; after exclusions 98 people/49 dyads completed 3 tower
-      pairs×4 text repetitions. Study 2 used 40 people/20 dyads in separated Meta Quest 3 AR rooms with
-      speech and 24-joint hand keypoints across 12 physical LEGO trials. Mixed models, permutation tests,
-      coded speech/gesture, and a DSL plus multimodal RSA simulation were used.
-    finding: Online task F1 rose .88→.98 while words/messages declined; block references fell 7.3→3.6 and
-      tower references rose .6→1.1; between-dyad vocabulary divergence increased. Lab success rose
-      74.03%→98.36%; instruction/build time fell, tower abstractions appeared earlier, gestural
-      abstractions were already present from round 1, and later redundancy often marked changed
-      position/orientation. A fitted simulation descriptively reproduced shorter instructions and
-      modality shifts.
+    method: Study 1 recruited 146 MTurkers/73 dyads; after exclusions 98 people/49 dyads completed 3 tower pairs×4
+      text repetitions. Study 2 used 40 people/20 dyads in separated Meta Quest 3 AR rooms with speech and
+      24-joint hand keypoints across 12 physical LEGO trials. Mixed models, permutation tests, coded
+      speech/gesture, and a DSL plus multimodal RSA simulation were used.
+    finding: Online task F1 rose .88→.98 while words/messages declined; block references fell 7.3→3.6 and tower
+      references rose .6→1.1; between-dyad vocabulary divergence increased. Lab success rose 74.03%→98.36%;
+      instruction/build time fell, tower abstractions appeared earlier, gestural abstractions were already
+      present from round 1, and later redundancy often marked changed position/orientation. A fitted
+      simulation descriptively reproduced shorter instructions and modality shifts.
     limitation: human–human only；无 partner swap/pseudo-dyad/history ablation、role reversal、controlled
       breakdown/repair 或 transfer。小 tower domain、four repetitions、fixed roles，模型部分参数 in-sample fitted 且假设
       perfect alignment/uniform priors。
-    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation → Situated Adaptive
-      Communication; mechanisms: Meaning, Grounding, Convention, Adaptation, Situated multimodal
-      communication"
+    relation_to_mainline: 比较语言、手势与协作中的多模态抽象。
     gap_supported_challenged:
       - GAP-01
       - GAP-02
@@ -532,21 +627,28 @@ reading_matrix:
     researcher_reading: null
     researcher_mastery: null
     oral_questions:
-      definition: Define ad-hoc convention and state its observable evidence.
-      comparison: How does this paper differ from C6/C7 verbal-graphical and procedural precedents?
-      critical: Which assumption or evidentiary step may fail when this account is transferred to human–AI
-        communication or model-based pragmatic inference?
-      connection: How could its mechanism explain or design multimodal communication without overstating common
-        ground or convention?
-      research: What concrete question about contextual understanding, multimodal expression, evaluation or
-        interaction follows from this paper, and what evidence would answer it?
+      definition: 多模态抽象和模态分工分别是什么？
+      comparison: C8的手势/语言与C6的绘画有什么共同点和差别？
+      critical: 效率轨迹和拟合模型能否说明共同表征形成机制？
+      connection: 多模态协作如何扩展而不取代在线社会表达研究？
+      research: 怎样根据问题选择模态与场景，而不由设备决定题目？
+    exam_priority: CORE
+    exam_selection_reason: 比较语言、手势与协作中的多模态抽象。
+    exam_themes:
+      - 3
+      - 1
+      - 5
+    reading_group: shared_meaning
+    source_object: state/paper-pages/c8-gesturing-toward-abstraction.json
+    source_checked_at: 2026-09-18
+    source_sha256: a15bd9b2e7fd04f602e0ed5297264866542bba656e755bd08153b8ffbc915811
   - id: A5
     citation: "Neil Cohn (2016). A Multimodal Parallel Architecture: A Cognitive Framework for Multimodal
       Interactions. Cognition, 146, 304–323"
     source_url: https://www.visuallanguagelab.com/P/NC_multimodality.pdf
     exam_theme: 1
-    rq: How can grammatical and conceptual structures be integrated across verbal, bodily, and graphic
-      domains without treating every multimodal combination as equivalent?
+    rq: How can grammatical and conceptual structures be integrated across verbal, bodily, and graphic domains
+      without treating every multimodal combination as equivalent?
     theory:
       - Jackendoff parallel architecture
       - phonological, bodily and graphic structures
@@ -560,7 +662,7 @@ reading_matrix:
       illustrative coding 支持该分类可被一致应用，但不验证整个 architecture 的 cognitive truth。
     limitation: 类型 coarse/discrete，偏 comics/visual narrative 且结构静态；component-level interactions 未充分指定，无
       history、grounding、social negotiation、agent 或 causal test。
-    relation_to_mainline: "Stages: Informal Visual Expression → Social Meaning / Pragmatics; mechanisms: Meaning"
+    relation_to_mainline: 解释多模态表达如何承载社会意义，并区分AI支持人际沟通与AI作为沟通伙伴。
     gap_supported_challenged:
       - GAP-05
     priority: Must Read
@@ -577,6 +679,15 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/a5-multimodal-parallel-architecture.json
+    source_checked_at: 2026-09-18
+    source_sha256: 5444f60b635245ca4efcfcd8b9e9850b5a59c90ab63281c9f4e5bff3a08e66c2
+    exam_themes:
+      - 1
+      - 2
+    reading_group: expression
   - id: A2
     citation: Andrea Webb Luangrath, Joann Peck, Victor A. Barger (2017). Textual Paralanguage and Its
       Implications for Marketing Communications. Journal of Consumer Psychology, 27(1), 98–107
@@ -593,12 +704,12 @@ reading_matrix:
     method: 概念 framework 加 exploratory manual content analysis：4,608 valid consumer tweets、4,168 brand
       tweets、2,943 brand replies、3,749 Facebook posts、1,550 Instagram posts。appendix 称 four coders，正文称
       three；discrepancies by discussion，无 chance-corrected reliability。
-    finding: TPL 出现在 40.3% valid consumer tweets、20.6% brand tweets、34.8% brand replies、19.1% Facebook
-      posts、31.3% Instagram posts；五类均出现且分布随 platform 变化。 warmth、competence、rapport、trust 等后果只是 conceptual
-      propositions，不是 tested findings；meaning 被明确描述为 context-dependent。
-    limitation: convenience/recent-post brand samples、coder count 不一致、无 reliability statistic；无 receiver
-      study 或 causal consequence evidence，categories 有歧义。
-    relation_to_mainline: "Stages: Informal Visual Expression → Social Meaning / Pragmatics; mechanisms: Meaning"
+    finding: TPL 出现在 40.3% valid consumer tweets、20.6% brand tweets、34.8% brand replies、19.1% Facebook posts、31.3%
+      Instagram posts；五类均出现且分布随 platform 变化。 warmth、competence、rapport、trust 等后果只是 conceptual propositions，不是
+      tested findings；meaning 被明确描述为 context-dependent。
+    limitation: convenience/recent-post brand samples、coder count 不一致、无 reliability statistic；无 receiver study 或
+      causal consequence evidence，categories 有歧义。
+    relation_to_mainline: 补足副语言与表达形式的概念词汇。
     gap_supported_challenged:
       - GAP-05
     priority: Must Read
@@ -607,22 +718,26 @@ reading_matrix:
     researcher_reading: null
     researcher_mastery: null
     oral_questions:
-      definition: Define textual paralanguage and state its observable evidence.
-      comparison: How does this paper differ from face-to-face paralanguage?
-      critical: Which assumption or evidentiary step may fail when this account is transferred to human–AI
-        communication or model-based pragmatic inference?
-      connection: How could its mechanism explain or design multimodal communication without overstating common
-        ground or convention?
-      research: What concrete question about contextual understanding, multimodal expression, evaluation or
-        interaction follows from this paper, and what evidence would answer it?
+      definition: textual paralanguage包括哪些表达资源？
+      comparison: 副语言分类和接收者解释分别研究什么？
+      critical: 描述性频率能否证明信任或亲密度变化？
+      connection: 花字如何连接文字副语言、语用功能与表达体验？
+      research: 如何研究不同平台实践中的表达资源，而不预设单一效果？
+    exam_priority: CORE
+    exam_selection_reason: 补足副语言与表达形式的概念词汇。
+    source_object: state/paper-pages/a2-textual-paralanguage.json
+    source_checked_at: 2026-09-18
+    source_sha256: 634ebd7aaeae381c98379addc2f7006087ebd93bc1ed06b5ba038115de784671
+    exam_themes:
+      - 1
+      - 2
+    reading_group: expression
   - id: A1
-    citation: "Jeffrey T. Hancock, Mor Naaman, Karen Levy (2020). AI-Mediated Communication: Definition,
-      Research Agenda, and Ethical Considerations. Journal of Computer-Mediated Communication, 25(1),
-      89–100"
+    citation: "Jeffrey T. Hancock, Mor Naaman, Karen Levy (2020). AI-Mediated Communication: Definition, Research
+      Agenda, and Ethical Considerations. Journal of Computer-Mediated Communication, 25(1), 89–100"
     source_url: https://academic.oup.com/jcmc/article/25/1/89/5714020
     exam_theme: 1
-    rq: 如何定义 AI-mediated communication，并组织其 design、language、interpersonal、relational 与 ethical research
-      agenda？
+    rq: 如何定义 AI-mediated communication，并组织其 design、language、interpersonal、relational 与 ethical research agenda？
     theory:
       - AI-mediated communication
       - agency
@@ -635,9 +750,9 @@ reading_matrix:
       algorithms。
     finding: 该文没有原创 findings；它整理
       agency/autonomy/orientation、disclosure、alignment/adaptation、trust、relationship、bias 等研究问题。
-    limitation: 不属于 direct embodied HAI/HRI，且是 pre-generative-AI landscape；illustrative synthesis 不能作为
-      specific effects 或 current field gaps 的证据。
-    relation_to_mainline: "Stages: Social Meaning / Pragmatics; mechanisms: Meaning"
+    limitation: 不属于 direct embodied HAI/HRI，且是 pre-generative-AI landscape；illustrative synthesis 不能作为 specific
+      effects 或 current field gaps 的证据。
+    relation_to_mainline: 解释多模态表达如何承载社会意义，并区分AI支持人际沟通与AI作为沟通伙伴。
     gap_supported_challenged: []
     priority: Important
     source_availability: full_text
@@ -653,13 +768,22 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/a1-ai-mediated-communication.json
+    source_checked_at: 2026-09-18
+    source_sha256: 7e5a952b5e334c36cb793f71104f2265b4d2188676f94f852455c8017eef3abd
+    exam_themes:
+      - 1
+      - 6
+    reading_group: social_context
   - id: E3
-    citation: Robert Hawkins, Minae Kwon, Dorsa Sadigh, Noah Goodman (2020). Continual Adaptation for
-      Efficient Machine Communication. CoNLL 2020, 408–419
+    citation: Robert Hawkins, Minae Kwon, Dorsa Sadigh, Noah Goodman (2020). Continual Adaptation for Efficient
+      Machine Communication. CoNLL 2020, 408–419
     source_url: https://aclanthology.org/2020.conll-1.33/
     exam_theme: 5
-    rq: 人工 listener 如何从 shared interaction history 在线更新 partner-specific semantics，同时保留 population knowledge
-      并允许 compositional shortening？
+    rq: 人工 listener 如何从 shared interaction history 在线更新 partner-specific semantics，同时保留 population knowledge 并允许
+      compositional shortening？
     theory:
       - Lewisian convention
       - Gricean pragmatics
@@ -669,17 +793,15 @@ reading_matrix:
     method: Repeated reference game with four similar COCO images, each target repeated six times, 24 trials.
       ResNet-152 plus LSTM captioner is adapted online using likelihood, pragmatic contrast, KL
       regularization, compositional augmentation and local rehearsal. Human baseline 108 participants/54
-      dyads; adaptive-listener study 57 additional human speakers; ablations and 52 easier-context
-      forgetting analyses.
+      dyads; adaptive-listener study 57 additional human speakers; ablations and 52 easier-context forgetting
+      analyses.
     finding: human dyads maintained near-ceiling accuracy while utterances shortened, t=25.8,p<.001.
-      adaptive-listener accuracy rose roughly 37%→93%, z=12.6,p<.001; offline non-adaptive baseline did
-      not improve over time. without KL, unseen-context accuracy fell about 10% vs 2% for full model;
-      removing rehearsal or pragmatic objective significantly hurt performance.
-    limitation: 主 human study 是 human speaker→adaptive listener 的 one-sided role；无 repair、role
-      reversal、partner swap/pseudo-dyad、retention/transfer 或 embodiment，且 non-adaptive comparator 是
-      offline。
-    relation_to_mainline: "Stages: Grounding / Common Ground → Convention Formation → Personalization /
-      Co-adaptation; mechanisms: Meaning, Grounding, Convention, Adaptation"
+      adaptive-listener accuracy rose roughly 37%→93%, z=12.6,p<.001; offline non-adaptive baseline did not
+      improve over time. without KL, unseen-context accuracy fell about 10% vs 2% for full model; removing
+      rehearsal or pragmatic objective significantly hurt performance.
+    limitation: 主 human study 是 human speaker→adaptive listener 的 one-sided role；无 repair、role reversal、partner
+      swap/pseudo-dyad、retention/transfer 或 embodiment，且 non-adaptive comparator 是 offline。
+    relation_to_mainline: 连接长期持续互动；区分记忆、单方适应与共同意义。
     gap_supported_challenged:
       - GAP-01
       - GAP-02
@@ -699,6 +821,836 @@ reading_matrix:
         ground or convention?
       research: What concrete question about contextual understanding, multimodal expression, evaluation or
         interaction follows from this paper, and what evidence would answer it?
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/e3-continual-adaptation-machine-communication.json
+    source_checked_at: 2026-09-18
+    source_sha256: 4698a35a0fecf2849b3de7b6d4ce6c68ace50c0bc728277978aaf5397716a5aa
+    exam_themes:
+      - 5
+      - 4
+      - 3
+    reading_group: adaptation
+  - id: X21
+    citation: Shiwei Hong, Junjie Ma, Emma Jiren Wang, Ethan Z. Rong, Siying Hu, Haichang Li, Ziying Wang, Zhicong
+      Lu (2026). You Really Didn’t Get That? Benchmarking Social Pragmatic Inference for Indirect and Playful
+      Chinese Online Comments. EMNLP 2026 Main Conference; arXiv preprint
+    source_url: https://arxiv.org/abs/2609.04384
+    exam_theme: 2
+    rq: Can current language models recover the target, stance, wordplay mechanism, and interactional force of
+      indirect or playful comments embedded in Chinese-language online interaction?
+    theory: []
+    method: The authors purposefully sampled public interaction episodes from Zhihu, Tieba, Douban, and
+      Xiaohongshu, screened more than 12,000 examples to retain 3,200 episodes, and generated 4,735
+      five-choice items with eight writer models and seven trained native-Chinese, high-frequency social-media
+      users. They report three 200-item reliability audits, leave-writer-out solver accuracy, a random
+      300-item human audit, context ablations, and qualitative error cases.
+    finding: >-
+      Across the tested model versions, reported leave-writer-out accuracy averaged 68.70%, while a random
+      300-item human audit reported 90.8% accuracy and kappa .85; these are not paired estimates on identical
+      item sets.
+
+      Removing the reconstructed interaction context reduced mean model accuracy from 68.70% to 29.63%, a
+      39.07-point drop within this deliberately context-dependent benchmark.
+
+      The 343 human-revised difficult items produced only 64.14% human accuracy and kappa .53, revealing a
+      meaningful ambiguity/gold-stability boundary.
+    limitation: Supports context sensitivity within a purposefully sampled Chinese-language benchmark, not a claim
+      about Chinese culture, all Chinese speakers, general cultural competence, dyadic common ground, or
+      embodied adaptation.
+    relation_to_mainline: 服务近期情境化语用理解，检验信号、上下文、用意与解释之间的关系。
+    gap_supported_challenged:
+      - GAP-04
+      - GAP-05
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: 目标、立场、文字游戏机制和互动功能分别是什么？
+      comparison: 上下文敏感的选择题正确率与恢复原作者用意有什么区别？
+      critical: 有目的选取依赖上下文的材料，怎样限制对总体上下文效应的外推？
+      connection: 如何把X21连接到多模态表达，同时保留歧义与标签不稳定性？
+      research: 什么新增能力或评价问题超出X21已研究的上下文影响？
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/x21-social-pragmatic-chinese-comments.json
+    source_checked_at: 2026-09-18
+    source_sha256: f66e1d8fc648291eb81044ad393fab583eb1acbbdbc26988afb326017aa23c17
+    exam_themes:
+      - 2
+      - 4
+      - 6
+    reading_group: interpretation
+  - id: A3
+    citation: "Ashley R. Dainas, Susan C. Herring (2021). Interpreting Emoji Pragmatics. Approaches to Internet
+      Pragmatics: Theory and Practice, 107–144"
+    source_url: https://homes.luddy.indiana.edu/herring/Interpreting_Emoji_Pragmatics.pdf
+    exam_theme: 1
+    rq: 社交媒体用户如何在 discourse context 中解释 emoji 的 pragmatic functions？具体追问哪些功能对应哪些 emoji types、用户彼此同意到什么程度，以及 lay
+      interpretations 与 researcher codes 多大程度一致。
+    theory:
+      - 语用学与言外之力（pragmatics / illocutionary force）
+      - Graphicon pragmatic-function taxonomy（图形符号语用功能分类）
+      - 副语言（paralanguage）
+      - 语境依赖意义（context-dependent meaning）
+    method: 在线 Understanding Emoji Survey。作者从 14 个 graphicon-rich public Facebook groups 选取 46 个自然发生的
+      emoji-containing comments 及其最相关的先行话语；有目的地纳入先前难编码案例，再补齐 13 类 emoji 与功能覆盖，并对消息匿名化、简化，部分 multimodal prompts
+      改为文字描述。14 人 pilot 后，以 Qualtrics 发布四个平衡版本：每人先做 sample，再评 12 个 items；原 45 个非 sample messages 中有 3
+      个难例重复一次，合计 49 item instances。658 份问卷中，523 份满足最低纳入标准；样本平均 28.6 岁，74.2% native English、75% 居住美国。参与者从基于
+      Herring & Dainas (2017) taxonomy 的功能选项中选择；作者比较 function frequencies、emoji-type patterns、inter-respondent
+      agreement 与 user–researcher agreement，并粗略 content-analyze open responses。
+    finding: >-
+      Tone modification 占全部功能选择的 52.6%，并在 49 个 item instances 中的 39 个成为首选；virtual action 为第二常见功能（13.4%），其后是
+      mention（7.8%）、softening（6.3%）与 reaction（5.5%）。
+
+      同一 rendering（如三个 heart items）在不同 local discourse contexts 中分别以 action、tone、mention 为首选；相反，一些 rendering
+      有变化的 emoji types 仍一致以 tone 为首选，支持 context 对 function interpretation 的作用可超过 rendering，且有时超过孤立 semantics。
+
+      用户首选功能的一致性高于随机水平，但总体 agreement 未超过 60%，且随 emoji type/function 变化；tone 的一致性最高，reaction 与 mention 最低，因此提供
+      local context 并未消除 ambiguity/misconstrual。
+
+      当把用户第一与第二常见选择都计入时，用户对研究者的多数分类达成一致；结果总体支持原 taxonomy，但显示 lay users 比研究者更强烈地默认选择 tone modification。
+
+      作者据此主张 emoji 是 online language 的 pragmatic component / illocutionary-force marker，但明确不主张 emoji 构成独立完整语言。
+    limitation: 可支持：在这组 contextualized public-Facebook examples 中，emoji 常被解释为 tone modifier，且 local discourse
+      context 会改变 perceived pragmatic function。不可支持：所有平台/文化/关系中的 emoji 都以 tone 为基本功能；context
+      保证正确理解；该研究观察到共同意义如何形成；这些结果可直接迁移到 robot-authored signals。
+    relation_to_mainline: 解释多模态表达如何承载社会意义，并区分AI支持人际沟通与AI作为沟通伙伴。
+    gap_supported_challenged:
+      - GAP-01
+      - GAP-05
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: full_paper_investigation
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: emoji的语义与语用功能有什么区别？
+      comparison: 第三方解释与原发送者意图有什么区别？
+      critical: 有目的抽取难例如何影响外推？
+      connection: 该研究怎样连接X21中的语境和解释歧义？
+      research: 如何区分图形本身、局部话语与关系知识的作用？
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/a3-interpreting-emoji-pragmatics.json
+    source_checked_at: 2026-09-18
+    source_sha256: 5b72b03ef9fb42eaed176f267922233b853cc5a685681ba07b244138fef647e5
+    exam_themes:
+      - 1
+      - 2
+      - 6
+    reading_group: expression
+  - id: X30
+    citation: Ziqiao Ma, Jing Ding, Xuejun Zhang, Dezhi Luo, Jiahe Ding, Sihan Xu, Yuchen Huang, Run Peng, Joyce
+      Chai (2025). Vision-Language Models Are Not Pragmatically Competent in Referring Expression Generation.
+      COLM 2025
+    source_url: https://arxiv.org/abs/2504.16060
+    exam_theme: 4
+    rq: 如何分别评价指称的可辨认性、简洁性和人的表达偏好？
+    theory: []
+    method: RefOI含1,485张图像，每个目标有3条书面和2条口头表达；比较模型输出、人类定位和自动指标，并操纵合成图像中的视觉线索。
+    finding: 受测模型的指称表现落后于人类表达；常用自动指标不能可靠反映人的定位表现。
+    limitation: 结论限于所测模型和指称任务；模型听者不是人类理解的替代，不能推广到全部社会语用能力。
+    relation_to_mainline: 计算模型、评估和数据资源是独立贡献路径；结论须限定于所测能力。
+    gap_supported_challenged:
+      - GAP-04
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: 可辨认性、简洁性与表达偏好分别测量什么？
+      comparison: 自动文本指标与人类定位表现为何不能互换？
+      critical: 模型听者的表现能否代替人类理解？
+      connection: 指称评估能为社会语用理解提供哪些方法，又不能覆盖哪些能力？
+      research: 怎样用任务相关的行为结果验证一个新的自动评价指标？
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/x30-refoi-pragmatic-generation.json
+    source_checked_at: 2026-09-18
+    source_sha256: 4af64c16eddf1e9ac67a45e1bc8bb3510701e047763aed96b9ee285ffe591bcd
+    exam_themes:
+      - 4
+      - 2
+    reading_group: evaluation
+  - id: X31
+    citation: "Haihan Li, Haihao Li, Zhenfei Xu, Jize Qian (2026). Order Matters: A Chinese Multi-Panel Meme
+      Benchmark for Vision-Language Reasoning. arXiv preprint, 27 August 2026"
+    source_url: https://arxiv.org/abs/2608.26866
+    exam_theme: 4
+    rq: 模型能否恢复多格meme的阅读顺序，并正确解释图文及评论的关系？
+    theory: []
+    method: 1,214条中文多格meme；五个模型，868条强顺序样本用于打乱排序；252条做顺序×评论对照。解释主评价仅64条，另有31对上下文消融。
+    finding: 按原顺序展示的高分不能代表排序推理；评论收益较小且有正负差异。
+    limitation: 预印本；解释评价是精选小样本，一致性中等；数据代码待接收后释放。排序与幽默理解相关但不能等同。
+    relation_to_mainline: 计算模型、评估和数据资源是独立贡献路径；结论须限定于所测能力。
+    gap_supported_challenged:
+      - GAP-04
+      - GAP-05
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: 阅读顺序恢复与meme用意解释分别是什么任务？
+      comparison: 原序展示与打乱排序比较能排除哪些替代解释？
+      critical: 精选小样本解释评价和输出可解析性会怎样影响结论？
+      connection: 多格图文与评论如何扩展X21的问题范围？
+      research: 什么新增任务超出已有中文多格meme benchmark？
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/x31-cmpm-order-matters.json
+    source_checked_at: 2026-09-18
+    source_sha256: 5003981d5abc0722210bdb047a480ea7213cfe60653fe991165bfe8497472075
+    exam_themes:
+      - 4
+      - 1
+      - 2
+    reading_group: evaluation
+  - id: X32
+    citation: "Zhengyi Zhao, Shubo Zhang, Zezhong Wang, Luyao Ye, Huimin Wang, Hanqi Yan, Binyang Li, Kam-Fai
+      Wong, Yulan He (2026). Beyond the Literal: Decomposing Pragmatic Intent in Multimodal Meme
+      Understanding. arXiv preprint, 2 June 2026"
+    source_url: https://arxiv.org/abs/2606.03604
+    exam_theme: 4
+    rq: 如何减少模型用画面描述代替meme用意解释的倾向？
+    theory: []
+    method: Intent Projection结合表征投影、结构化解释、自蒸馏和奖励训练；在多个meme与讽刺任务上比较基线及消融。
+    finding: 作者报告多个骨干的生成和分类指标改善，尤其在字面内容与用意差异较大的材料上。
+    limitation: 预印本，未独立复现；主要英语/西方平台数据，自蒸馏可能复制错误；指标提升不证明恢复真实作者意图。
+    relation_to_mainline: 计算模型、评估和数据资源是独立贡献路径；结论须限定于所测能力。
+    gap_supported_challenged:
+      - GAP-04
+      - GAP-05
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: 字面内容与语用用意怎样区分？
+      comparison: 结构化解释、表征投影和自蒸馏各自承担什么功能？
+      critical: 指标改善为何不能证明恢复真实作者意图？
+      connection: 模型方法怎样成为独立主线贡献？
+      research: 如何检验跨平台泛化并排除自蒸馏复制错误？
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/x32-intent-projection.json
+    source_checked_at: 2026-09-18
+    source_sha256: d41db15263c59a9f9ca1e29da01e44df34acb1180ae95bbe0887c893e7c4f81a
+    exam_themes:
+      - 4
+      - 2
+    reading_group: evaluation
+  - id: X35
+    citation: Li Zheng, Hao Fei, Ting Dai, Zuquan Peng, Fei Li, Huisheng Ma, Chong Teng, Donghong Ji (2025).
+      Multi-Granular Multimodal Clue Fusion for Meme Understanding. AAAI 2025
+    source_url: https://arxiv.org/abs/2503.12560
+    exam_theme: 4
+    rq: 细粒度视觉线索与较弱的图文联系如何进入meme模型？
+    theory: []
+    method: 对象级语义挖掘、全局与局部跨模态交互及双语义训练；在MET-MEME中英文任务上比较基线与组件消融。
+    finding: 作者报告隐喻、情感、意图及冒犯检测上的性能改善。
+    limitation: 证据限于受测标签任务；分类准确率不等于具体情境用意解释或共享意义，泛化与泄漏需进一步审计。
+    relation_to_mainline: 计算模型、评估和数据资源是独立贡献路径；结论须限定于所测能力。
+    gap_supported_challenged:
+      - GAP-05
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: 对象级线索与全局图文联系分别是什么？
+      comparison: 多粒度融合与用意分解有何不同？
+      critical: 标签准确率能否支持情境化解释能力？
+      connection: 如何把组件消融连接到具体语用现象？
+      research: 什么跨分布测试能检验收益是否超出数据集线索？
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/x35-mgmc-fusion.json
+    source_checked_at: 2026-09-18
+    source_sha256: 5cba1a72ba117a012ba01ac4010915b757806c018c358c00ece7aaafed3bee37
+    exam_themes:
+      - 4
+      - 2
+    reading_group: evaluation
+  - id: X34
+    citation: "Hangxiao Zhu, Suliu Qin, Zhuoyan Li, Ming Jiang, Yu Zhang, Meng Xia (2026). MemeBridge: A Dataset
+      for Benchmarking and Mitigating the Bidirectional Cultural Gap in Meme Interpretation. KDD 2026"
+    source_url: https://arxiv.org/abs/2609.00491
+    exam_theme: 6
+    rq: 人们预测的跨文化误解与接收者实际解释是否一致，模型能否处理这种差异？
+    theory: []
+    method: 621个美国来源meme；美国参与者预测误解、中国参与者提供解释，多阶段众包与模型评测。
+    finding: 作者发现预测误解与实际解释存在不匹配；提供文化知识和解释评价资源。
+    limitation: 双向视角不等于双向meme来源；群体内差异、评分和模板污染仍需审查，不能把国籍直接等同文化。
+    relation_to_mainline: 以知识、实践、关系及经历解释差异，避免把国籍直接当作文化。
+    gap_supported_challenged:
+      - GAP-04
+      - GAP-05
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: 实际解释与预测他人误解是什么不同构念？
+      comparison: 双向解释视角与双向meme来源有什么区别？
+      critical: 国籍分组、来源单向性和群体内差异怎样限制文化结论？
+      connection: 怎样把文化知识问题与X21的平台语境连接？
+      research: 如何分离共享知识、语言熟悉度与模板接触经历？
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/x34-memebridge.json
+    source_checked_at: 2026-09-18
+    source_sha256: d7cbafba10f9b29e57adf52a200a0841bcb66c3cb51b16111ad42037e4f47796
+    exam_themes:
+      - 6
+      - 4
+      - 2
+    reading_group: social_context
+  - id: X33
+    citation: "Yu Zhang, Yi Wen, Siying Hu, Zhicong Lu (2025). SpeechCap: Leveraging Playful Impact Captions to
+      Facilitate Interpersonal Communication in Social Virtual Reality. Proceedings of the ACM on
+      Human-Computer Interaction 9(7), Article CSCW246; CSCW 2025"
+    source_url: https://arxiv.org/abs/2502.10736
+    exam_theme: 1
+    rq: 花字如何成为实时人际交流中的表达资源？
+    theory: []
+    method: 内容分析、4名专家共同设计和14名参与者原型研究；核查正文相关方法、体验与歧义章节。
+    finding: 花字提供视觉修辞和互动表达机会，也出现歧义与误解。
+    limitation: 探索性原型研究不能证明花字普遍提高理解正确率；研究的是支持人际交流，不是AI理解测试。
+    relation_to_mainline: 解释多模态表达如何承载社会意义，并区分AI支持人际沟通与AI作为沟通伙伴。
+    gap_supported_challenged:
+      - GAP-04
+      - GAP-05
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: 花字作为视觉修辞资源是什么意思？
+      comparison: 表达丰富、好玩与准确理解有什么区别？
+      critical: 探索性原型研究能够支持哪些结论？
+      connection: 该系统属于AI支持人际沟通，还是AI自身理解评估？
+      research: 如何提出不同于已有花字系统的机制或能力问题？
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/x33-speechcap.json
+    source_checked_at: 2026-09-18
+    source_sha256: 6f9840d1e2ca93cee7dcfccfe1b6a549f185c397647cb0093e4dd723ee4191fd
+    exam_themes:
+      - 1
+      - 6
+    reading_group: expression
+  - id: X16
+    citation: "Ryuichi Sumida, Koji Inoue, Tatsuya Kawahara (2026). MemUse: Moving Memory Evaluation from Direct
+      QA to Natural Integration in Long-Term Human-AI Conversation. EMNLP 2026 Main"
+    source_url: https://arxiv.org/abs/2608.24189
+    exam_theme: 5
+    rq: Does Direct QA measure whether a conversational agent uses memory in the way that matters during long-term
+      interaction?
+    theory: []
+    method: Four-month deployment with 40 users, 1,872 sessions, seven rotating memory conditions, Direct-QA
+      comparisons, and a MemUse set of naturally cued memory moments.
+    finding: >-
+      Existing-benchmark Direct QA varied from 19.7% to 70.1% without corresponding satisfaction differences.
+
+      For the same model and context, 78.8% of facts were answerable under Direct QA but only 7.9% were
+      referenced naturally; Natural Integration, not Direct QA, was associated with satisfaction in the
+      observed cue moments.
+    limitation: Does not demonstrate mutual belief, convention, reciprocal adaptation, embodiment, or that natural
+      memory use causes satisfaction.
+    relation_to_mainline: 连接长期持续互动；区分记忆、单方适应与共同意义。
+    gap_supported_challenged:
+      - GAP-04
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    oral_questions:
+      definition: 记忆可检索性与自然融入对话分别是什么？
+      comparison: Direct QA与自然历史使用为何可能不同？
+      critical: 观察到满意度关联是否支持因果关系？
+      connection: 为什么记忆使用还不足以建立共同意义？
+      research: 如何分离历史可用、相关性判断与实际使用？
+    exam_priority: CORE
+    exam_selection_reason: 按program v2.0的理解、表达、评估与长期理论覆盖选入考试；不改变上游收录决策。
+    source_object: state/paper-pages/x16-memuse-natural-integration.json
+    source_checked_at: 2026-09-18
+    source_sha256: 169b924bf8df8ba814c46e630b7e77b61229f39738f349fa084c26e16d015011
+    exam_themes:
+      - 5
+      - 4
+    reading_group: adaptation
+  - id: X22
+    citation: Alvin W. M. Tan, Ben Prystawski, Veronica Boyce (2026). Which one is banana man? Evaluating
+      vision–language models in multi-turn pragmatic interpretation. arXiv preprint
+    source_url: https://arxiv.org/abs/2608.29571
+    exam_theme: 2
+    theory:
+      - pragmatic interpretation
+      - convention retrieval
+      - context relevance
+      - feedback and error recovery
+    rq: Can vision-language models pragmatically interpret conventionalized descriptions across multiple turns,
+      and how do context amount, order, relevance, and feedback quality affect that ability relative to
+      humans?
+    method: Using ten 2–6-player, six-round Tangram games and naïve human matcher data, the study evaluates five
+      open-weight VLMs across eight context conditions and three feedback regimes. New human samples cover
+      backward and random order; model analyses compare interactive limited feedback, human-yoked limited
+      feedback, and full feedback, with bootstrap intervals and additional frontier-model checks.
+    finding: >-
+      Models improved substantially when correct, relevant prior mappings were supplied and could approach
+      human or near-ceiling performance under human-yoked or full feedback.
+
+      With their own guesses plus only correct/incorrect feedback, models improved little and performed at or
+      below chance after a prior mistake, while naïve humans corrected roughly half of prior errors.
+
+      Context from the same game and prior instances of the same tangram mattered most; other-game or
+      target-ablated context produced much lower performance, supporting retrieval of convention-specific
+      mappings more than general task learning.
+
+      Images helped most early or when contextual mappings were sparse; later performance was often similar
+      without images, and trial-level model-human correspondence remained weak.
+    limitation: Shows that tested VLMs can retrieve externally available mappings yet struggle to bootstrap and
+      repair them in this constrained overhearer task; it does not establish that all models cannot form
+      conventions or that retrieval alone is grounding.
+    relation_to_mainline: 以多轮解释连接近期理解与长期互动，区分外部映射检索、形成和修复。
+    gap_supported_challenged:
+      - GAP-02
+      - GAP-03
+      - GAP-04
+    priority: Must Read
+    exam_priority: CORE
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    source_object: state/paper-pages/x22-banana-man-pragmatic-interpretation.json
+    source_checked_at: 2026-09-18
+    oral_questions:
+      definition: 什么是检索已有惯例，与形成惯例有何不同？
+      comparison: 正确映射、有限反馈和完整反馈分别提供什么信息？
+      critical: 旁观者解释任务能否证明互惠grounding？
+      connection: 如何把多轮上下文使用与X21及X16比较？
+      research: 如何检验模型是在利用相关历史，还是仅重复先前错误？
+    exam_themes:
+      - 2
+      - 3
+      - 5
+    reading_group: adaptation
+    source_sha256: ecf095d0ff0beda3b883b6c2dec9b45b02517c8fc12910bc355b2bfe84578be7
+  - id: A4
+    citation: Neil Cohn (2007). A Visual Lexicon. Public Journal of Semiotics, 1(1), 35–56
+    source_url: https://journals.lub.lu.se/pjos/article/view/8814
+    rq: 当有意义的 form–meaning pairings 可大于或小于 panel 时，什么构成 visual lexical item？如何依据功能结构而非表层等同，把 visual language 与
+      verbal lexicon、morphology、syntax、constructions 比较？
+    theory:
+      - 视觉语言理论（Visual Language Theory）
+      - Jackendoff 的平行架构（Parallel Architecture）
+      - 构式语法（Construction Grammar）
+      - 形态学与开放/封闭词类（morphology; open/closed lexical classes）
+      - 图形/背景（Figure/Ground）
+      - 注意窗口化（windowing of attention）
+    method: 理论建模与比较性 semiotic/linguistic analysis，没有原创实验或系统 corpus。作者借用 Jackendoff 的 Parallel
+      Architecture、construction grammar、morphology、open/closed lexical classes、Figure/Ground 与 windowing of
+      attention，以自绘例子和选取的 comics、Australian sand narratives、Wally Wood panel schemas、heart/speed-line/balloon
+      conventions、advertising strips 作 analytical illustrations；提出 Lexical Representational
+      Matrix（Polymorphic/Macro/Mono/Micro/Amorphic）、attention units、E-Conjunction、visual morphology 与 possible
+      constructions。
+    finding: >-
+      该文没有原创 empirical findings；以下是其理论论证与 illustrative analyses。
+
+      Panel 是 visual sequence 中聚焦信息的 attention unit，而不是稳定、可直接等同于 word/sentence 的最小 lexical 或 syntactic unit：多个
+      panels 可通过 E-Conjunction 形成一个 constituent，一个 Polymorphic panel 也可容纳完整事件结构。
+
+      多数 panel representations 在线组合自较小的、储存在 long-term memory 的 productive schemata；与此同时，hearts、speed
+      lines、thought balloons 等较封闭且 conventionalized 的 signs 可作为 visual morphology 依附、替换或修改 productive roots。
+
+      Visual lexical items 可跨多个粒度：小于 panel 的 productive/conventional signs、某些稳定 panel schemas，以及大于 panel 的
+      potential constructions；决定性标准是 form–meaning pairing，而非与 verbal word 的表层相似性。
+
+      媒介与 interaction ecology 可能塑造 visual lexicon：作者对比实时、沙地绘制的 Arrernte signs 与非实时 print comics，提出速度/材料约束与
+      conventionality/productivity 的关系，但这只是理论性解释而非经检验因果结果。
+    limitation: 可作为 visual-language representation 的 conceptual framework 与可检验 hypotheses 来源；不可把其 categories
+      当作已验证的 cognitive universals、把 comics/sand narratives 的对比当作媒介因果证据，或据此声称 emoji/robot signals 已构成
+      lexicon、grammar 或共同 convention。
+    gap_supported_challenged:
+      - GAP-02
+      - GAP-05
+    priority: Important
+    source_availability: full_text
+    agent_readiness: full_paper_investigation
+    researcher_reading: null
+    researcher_mastery: null
+    exam_priority: CORE
+    exam_themes:
+      - 1
+      - 3
+    exam_theme: 1
+    reading_group: expression
+    exam_selection_reason: 加入视觉表示与组合性的理论视角。
+    relation_to_mainline: 加入视觉表示与组合性的理论视角。
+    oral_questions:
+      definition: 视觉词汇的form–meaning pairing是什么？
+      comparison: panel作为注意单位与作为视觉词有何区别？
+      critical: 理论分类需要什么证据才能成为认知机制解释？
+      connection: 视觉词汇如何帮助讨论meme组合与互动惯例？
+      research: 如何检验某类表达的组合性或学习过程？
+    source_object: state/paper-pages/a4-a-visual-lexicon.json
+    source_checked_at: 2026-09-18
+    source_sha256: e30ab99382dc5697dec6ba65f60dd1c00e69b976e8c5c2fc68070b6cb342f080
+  - id: B4
+    citation: "Judith Degen, Robert D. Hawkins, Caroline Graf, Elisa Kreiss, Noah D. Goodman (2020). When
+      Redundancy Is Useful: A Bayesian Approach to ‘Overinformative’ Referring Expressions. Psychological
+      Review, 127(4), 591–621"
+    source_url: https://arxiv.org/abs/1903.08237
+    rq: 把确定性的 Boolean semantics 改为 continuous/noisy semantics 后，Rational Speech Act production model 能否统一量化解释
+      modifier-type 与 scene-variation redundancy、atypical-feature mention，以及 taxonomic-level choice？
+    theory:
+      - 理性言语行为框架（Rational Speech Act）
+      - Gricean informativeness 与 cost
+      - 连续/有噪语义（continuous/noisy semantics）
+      - 典型性与 basic-level categorization
+      - Bayesian pragmatics 建模
+    method: 理论+实验+Bayesian computational modeling。作者提出 continuous-semantics RSA（cs-RSA），speaker 在 utterance cost
+      与相对于 noisy/graded literal-listener semantics 的 informativeness 间优化。三个 interactive web reference-game
+      datasets：Exp.1 用 MTurk 58 个有偿 pairs（另纳入 7 个中途退出 pairs 的已有 data），自由文本指称同类但 color/size 不同的 arrays；36
+      critical+36 filler trials，操纵 sufficient feature、2–4 distractors 与 scene variation，2076 critical cases
+      入分析。Exp.2 用 61 pairs、42 trials、7 类 color-diagnostic foods 的 typical/mid/atypical colors，1827 utterances
+      入分析，并以三个独立 norming studies 获得 utterance–object typicality。Exp.3 使用 Exp.1 同一 58 pairs 的另外 36 filler
+      trials作为 nominal-choice critical data，跨 9 domains 操纵 subordinate/basic/superordinate sufficiency，1872
+      cases 入分析，另做 typicality norms。Behavior 用 mixed-effects models；cs-RSA 以 Bayesian inference、posterior
+      predictive fit 与 Bayes-factor/marginal-likelihood model comparisons 评估不同 semantics/cost specifications。
+    finding: >-
+      Exp.1 replicated redundant color > redundant size，并复现 scene variation 增加 redundant color；同时发现 scene
+      variation 也增加 redundant size，但幅度较小。cs-RSA 通过把 size 估为比 color 更 noisy（MAP semantic value .79 vs
+      .88）拟合该不对称；modifier cost posterior 接近零。
+
+      Exp.2 replicated color-typicality effect：对象越不符合 unmodified noun 的典型性，speaker 越可能加 color；contextual
+      utility 仍有独立作用。整合 type-level noise 与独立 elicited object-level typicality、且无 cost term 的模型最佳，其 item-level
+      predicted 与 empirical proportions correlation 为 r=.94（in-sample fit）。
+
+      Exp.2 还显示典型性可强到使 speaker 在 color 原则上有辨别价值时仍把典型 yellow banana 简称 banana，而 atypical blue banana 的 color
+      会被明示；这说明‘必要信息’本身依赖 graded semantic expectations。
+
+      Exp.3 replicated basic-level preference：superordinate mentions 少于 2%，subordinate terms 主要在必须区分同
+      basic-category distractor 时占优；即便 subordinate necessary，仍有 28% basic-level expressions（其中多数含额外 modifying
+      material）。context、typicality 与 word length共同预测 choice，cs-RSA 延伸到 nominal abstraction level。
+
+      作者的最大可辩护结论是：在受控英文视觉指称任务中，continuous semantic fit 使多个看似 overinformative patterns 能在同一 rational production
+      architecture 下被解释为 useful redundancy；模型仍对真实心理算法及是否显式以 listener needs 为导向保持 agnostic。
+    limitation: 可支持：在这些 reference games 中，graded semantics+context/typicality能解释 speakers 的系统性 redundancy 与
+      abstraction choices。不可支持：所有冗余都提升理解；cost 在一般 communication 中不重要；cs-RSA 是实际 cognitive algorithm；verbal
+      object reference 的参数可直接规定 robot multimodal output；该研究解释 shared meaning/conventions 如何随互动形成。
+    gap_supported_challenged:
+      - GAP-01
+      - GAP-03
+    priority: Important
+    source_availability: full_text
+    agent_readiness: full_paper_investigation
+    researcher_reading: null
+    researcher_mastery: null
+    exam_priority: CORE
+    exam_themes:
+      - 2
+      - 4
+    exam_theme: 2
+    reading_group: interpretation
+    exam_selection_reason: 用有用冗余讨论效率、噪声与稳健性的张力。
+    relation_to_mainline: 用有用冗余讨论效率、噪声与稳健性的张力。
+    oral_questions:
+      definition: 有用冗余在连续或有噪语义中如何解释？
+      comparison: 简洁、信息充分与稳健性何时不一致？
+      critical: 模型拟合是否说明人使用同样的心理算法？
+      connection: 把B4与B3/X27比较：何时多说、少说或保留歧义？
+      research: 怎样比较冗余的认知、情境与关系解释？
+    source_object: state/paper-pages/b4-when-redundancy-is-useful.json
+    source_checked_at: 2026-09-18
+    source_sha256: 963e00726b86ed8f750d3249aa2a721b6a585f48c0a91c73777c9a7702457d18
+  - id: X24
+    citation: Anh Ngo, Nicolas Rollet, Catherine Pelachaud, Chloé Clavel (2026). Do Visual Features Improve
+      Other-Initiated Repair Detection? A Dyadic Multimodal Approach. Proceedings of ACM ICMI 2026
+    source_url: https://arxiv.org/abs/2607.23845
+    rq: Do visual behaviors improve automatic detection and classification of other-initiated repair, and do
+      useful cues differ across language and interaction setting?
+    theory: []
+    method: A hierarchical text-audio-visual classifier is evaluated with session-level five-fold cross-validation
+      on French screen-mediated NOXI (47 OIR instances in seven hours) and Dutch face-to-face task-oriented
+      CABB-S (378 instances in eight hours). Handcrafted, Conversation-Analysis-grounded visual features cover
+      both participants' gaze, facial action units, head, body, holds, gesture, and dyadic coordination.
+    finding: >-
+      Adding visual features to text and audio increased detection macro-F1 by 4.1 points on NOXI and 12.9
+      points on CABB-S.
+
+      For repair-type classification, visual features added 13.2 points on NOXI but only 2.4 points on CABB-S,
+      indicating strong setting dependence.
+
+      NOXI estimates were unstable because OIR instances and restricted offers were sparse; visual-only
+      features lacked sufficient specificity.
+    limitation: Supports multimodal detection of human OIR signals in two corpora; it does not show that an agent
+      can choose, execute, or learn an effective repair policy or build common ground.
+    gap_supported_challenged:
+      - GAP-03
+      - GAP-04
+    priority: Important
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    exam_priority: CORE
+    exam_themes:
+      - 4
+      - 3
+    exam_theme: 4
+    reading_group: evaluation
+    exam_selection_reason: 补充声音、视觉行为与互动困难检测，拓宽静态图文任务范围。
+    relation_to_mainline: 补充声音、视觉行为与互动困难检测，拓宽静态图文任务范围。
+    oral_questions:
+      definition: 检测other-initiated repair信号与成功修复有什么区别？
+      comparison: 两种互动环境中视觉线索的作用是否相同？
+      critical: 稀少事件、特征差异和跨语料评估怎样限制结论？
+      connection: 如何把声音、手势和注视连接到对话理解，而不只看静态图像？
+      research: 在哪些沟通场景中困难检测足够有价值，哪些还需实际修复证据？
+    source_object: state/paper-pages/x24-multimodal-repair-detection.json
+    source_checked_at: 2026-09-18
+    source_sha256: 45c56a84efccab7bd20eac571b9f19b3e9677406926b08a9ac1137fb26d6c8c0
+  - id: A6
+    citation: "Emma Jiren Wang, Siying Hu, Zhicong Lu (2026). PuppetChat: Fostering Intimate Communication through
+      Bidirectional Actions and Micronarratives. CHI 2026, Article 1295, 1–19"
+    source_url: https://arxiv.org/abs/2602.19463
+    rq: 日常 dyadic IM 如何通过 reciprocal embodied actions、轻量 personalized micronarratives、user control 与可回访 shared
+      traces，超越 terminal reactions 和 generic symbols？close partners 会怎样在真实使用中采用并体验这种设计？
+    theory:
+      - 社会临场理论（Social Presence Theory）
+      - 联合行动与人际协调（joint action / interpersonal coordination）
+      - 可解释歧义（interpretable ambiguity）
+      - 叙事性自我披露（narrative self-disclosure）
+      - AI-mediated communication 中的 agency 与 control
+      - 关系维持与 shared memory
+    method: Research-through-design 加两阶段混合方法评估。Formative phase：5 名 frequent IM users 与早期 12-action demo 互动 30–40
+      分钟，随后 semi-structured interviews；两位作者独立生成 codes、讨论达成一致，形成 reciprocity、personal narrative、editability 与
+      persistence 四个 design goals。System phase：实现 one-to-one PuppetChat，含 42-action library、关键词/情绪/embedding
+      scoring、ReactionCandidates 与 responsive-role bias、基于 user story+action+conversation context 的 Azure
+      OpenAI micronarrative generation、编辑/重生成、action-only ephemerality 与 persistent replay。Field phase：11 个既有
+      close dyads（N=22；6 best-friend、5 couple；21–28 岁）连续使用 10 天；Days 1–6 每天选 topic 交谈至少 15 分钟，Days 7–10
+      可自由聊。资料包括 interaction logs、每日两题 micro-survey、post-study 自建 16-item four-dimension scale、SUS、NASA–TLX，以及每
+      dyad 40–60 分钟访谈；定量仅作 descriptive/reliability summaries，访谈与开放题采用 reflexive thematic analysis。
+    finding: >-
+      日志显示每位参与者平均触发 Actions 18.0 次、发送 14.5 个 actions（约 80% trigger-to-send）；约 57% sent actions 附
+      micronarrative（M=8.2），每人平均 13.2 次 edits，说明 participants 并非只被动接受生成结果。
+
+      自建量表四维均值为 5.1–5.4/7（Co-presence & Affective Intimacy 5.3、Reciprocal Interaction 5.1、Personalized
+      Micronarratives 5.2、Agency & Persistence 5.4）；这些是无对照的使用后描述，不能证明系统造成提升。
+
+      访谈中，complementary/mirrored replies 被体验为 asynchronous co-performance；参与者把 action+caption exchanges 描述为
+      togetherness、shared routines 与期待被回应，而非孤立 sticker reactions。
+
+      可编辑 micronarratives 支持 indirect/face-saving disclosure 与 playful appropriation；部分 dyads 将 generic
+      prompts 改造成 inside jokes 或 private shorthand，但不同参与者对 personalization effort 的意愿明显不同。
+
+      对 personal history 的直接连接并不稳固：Connection item 是全量表最低（M=4.27），作者因此承认 generic generation 未必能承载 relational
+      history，即便 participants 有时用编辑把它变成 relationship-specific meaning。
+
+      Participants 强烈偏好保留互动记录（reverse-coded Ephemeral item M=6.27）；SUS 报告 M=86.59、NASA–TLX RTLX M=31.72，但论文给出的
+      SUS 95% CI [68.71, 84.47] 不包含其均值，属于需要核对的内部统计报告错误。
+    limitation: 可支持：这 11 个 close dyads 在短期、结构化 deployment 中实际使用、编辑并有时 appropriated reciprocal
+      action+micronarrative scaffolds，且主观报告 presence、disclosure、continuity 与 shared meaning。不可支持：PuppetChat
+      因果提升 intimacy；任何单一 feature 是机制；10 天内形成了稳定/新颖 convention；效果可推广到 non-intimate、intercultural、neurodivergent
+      或 human–embodied-AI interaction。
+    gap_supported_challenged:
+      - GAP-01
+      - GAP-02
+      - GAP-03
+      - GAP-04
+      - GAP-05
+    priority: Important
+    source_availability: full_text
+    agent_readiness: full_paper_investigation
+    researcher_reading: null
+    researcher_mastery: null
+    exam_priority: CORE
+    exam_themes:
+      - 1
+      - 5
+      - 6
+    exam_theme: 1
+    reading_group: social_context
+    exam_selection_reason: 补充亲密关系、用户编辑和日常沟通实践。
+    relation_to_mainline: 补充亲密关系、用户编辑和日常沟通实践。
+    oral_questions:
+      definition: 表达挪用、回应性与关系线索分别指什么？
+      comparison: 设计提供的表达资源与用户形成的私人用法有何不同？
+      critical: 无对照部署中的体验与日志能支持哪些结论？
+      connection: 把A6与X33比较：系统怎样扩展表达，而不仅是减少误解？
+      research: 如何探索不同关系中的使用实践，同时保留意外发现空间？
+    source_object: state/paper-pages/a6-puppetchat.json
+    source_checked_at: 2026-09-18
+    source_sha256: 153293c93d8d5114cedec1a0f8167915f46a3c046c0f3fe3a68d19993e2a5140
+  - id: X27
+    citation: "Cody Kommers, Mingrui Ye, Evelyn Gius, Daniela Mihai, Hoyt Long, Zheng Yuan, Drew Hemment (2026).
+      Calibrated Ambiguity in Multimodal Language Models: Humans reach for cultural references, while models
+      describe the picture. arXiv preprint, 11 September 2026"
+    source_url: https://arxiv.org/abs/2609.12575
+    rq: Can generated clues remain interpretable while allowing multiple plausible readings?
+    theory: []
+    method: 350 English Dixit boards, six open-weight VLMs and two prompts; author-coded rubric validation and
+      model-assisted large-scale scoring.
+    finding: |-
+      Under minimal prompting, model clues were generally overspecified and less culturally allusive.
+      Prompt changes helped some models; near-human rubric performance occurred in some conditions.
+    limitation: Does not demonstrate cross-cultural flattening, audience comprehension, or history-dependent
+      social meaning.
+    gap_supported_challenged:
+      - GAP-05
+    priority: Important
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    exam_priority: CORE
+    exam_themes:
+      - 6
+      - 1
+      - 2
+      - 4
+    exam_theme: 6
+    reading_group: social_context
+    exam_selection_reason: 把歧义作为可能的表达资源，而不只视为错误。
+    relation_to_mainline: 把歧义作为可能的表达资源，而不只视为错误。
+    oral_questions:
+      definition: 何谓对特定受众有用的歧义？
+      comparison: 图像描述正确与线索表达有效是否相同？
+      critical: 选卡和干扰项不对称怎样影响人机比较？
+      connection: X27与B4分别如何挑战表达越短或越明确越好的假设？
+      research: 怎样研究幽默、暗示或文化引用的功能与理解分歧？
+    source_object: state/paper-pages/x27-calibrated-ambiguity.json
+    source_checked_at: 2026-09-18
+    source_sha256: 9c186f893c60a0214b81050350aaf6076f1955bf41d27e2b090b0e2dc6deb24c
+  - id: X12
+    citation: "Robert D. Hawkins, Michael Franke, Michael C. Frank, Adele E. Goldberg, Kenny Smith, Thomas L.
+      Griffiths, Noah D. Goodman (2023). From Partners to Populations: A Hierarchical Bayesian Account of
+      Coordination and Convention. Psychological Review, 130(4), 977–1016"
+    source_url: https://arxiv.org/abs/2104.05857
+    rq: Dyad-specific flexibility 如何与 population-wide stable conventions 共存，且局部互动经验如何向陌生伙伴泛化？
+    theory: []
+    method: 提出 Continual Hierarchical Adaptation through Inference (CHAI)，结合 repeated natural-language
+      communication experiments 与 hierarchical Bayesian simulations。
+    finding: 模型与实验覆盖同伴内 referring efficiency、partner-specific knowledge 向 strangers 的渐进 transfer，以及 communicative
+      context 对最终 convention 的影响。
+    limitation: 解决 generic human convention transfer 的理论缺口，不解决 embodied human–AI 中如何在线检测、协商、修复或迁移 mapping。
+    gap_supported_challenged:
+      - GAP-01
+      - GAP-02
+      - GAP-03
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    exam_priority: CORE
+    exam_themes:
+      - 3
+      - 5
+      - 6
+    exam_theme: 3
+    reading_group: social_context
+    exam_selection_reason: 把伙伴特定经验连接到群体预期和迁移。
+    relation_to_mainline: 把伙伴特定经验连接到群体预期和迁移。
+    oral_questions:
+      definition: 伙伴特定知识与群体惯例分别处在哪个层次？
+      comparison: 可迁移惯例为何仍可能起源于特定伙伴？
+      critical: 人类实验和层级模型能支持哪些AI结论？
+      connection: 如何把关系内表达与更广社群实践相连接？
+      research: 什么证据能区分伙伴学习、群体先验及跨伙伴迁移？
+    source_object: state/paper-pages/x12-partners-to-populations.json
+    source_checked_at: 2026-09-18
+    source_sha256: 643ff009fa1b791e6d83287531ed9ea4f6e2806d8cd450409267637a102caace
+  - id: X8
+    citation: Saujas Vaduguru, Yilun Hua, Yoav Artzi, Daniel Fried (2026). Success and Cost Elicit Convention
+      Formation for Efficient Communication. ACL 2026, 42033–42050
+    source_url: https://aclanthology.org/2026.acl-long.1946/
+    rq: 能否在没有新增 human demonstration data 的情况下训练 LMM 随互动形成更短且更成功的 referring expressions？
+    theory: []
+    method: 以 simulated photo/tangram reference games 生成 success+cost preference pairs，进行 DPO-style
+      post-training，再以 model-speaker→human-listener games 比较 baselines。
+    finding: |-
+      来源报告 message length 最高下降 41%，success 随互动最高提高约 15%，human listeners 反应更快。
+      success-only 或 cost-only 均不足，联合目标才产生 efficiency trajectory。
+    limitation: 证明 convention-like efficient reference policy 可被训练，不证明双方共同协商或 interaction-history-specific mutual
+      convention 已形成。
+    gap_supported_challenged:
+      - GAP-02
+      - GAP-04
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    exam_priority: CORE
+    exam_themes:
+      - 5
+      - 4
+      - 3
+    exam_theme: 5
+    reading_group: adaptation
+    exam_selection_reason: 提供训练能改善沟通的积极证据，与诊断性结果对读。
+    relation_to_mainline: 提供训练能改善沟通的积极证据，与诊断性结果对读。
+    oral_questions:
+      definition: success和message cost在训练中各是什么？
+      comparison: 训练后表达效率与双方形成共享意义有什么区别？
+      critical: 固定speaker角色如何限制对互惠沟通的解释？
+      connection: 与E3/X9对读，何时性能改善和机制证据可以同时成立？
+      research: 什么模型或训练贡献值得独立研究，如何验证增益？
+    source_object: state/paper-pages/x8-success-cost-convention-formation.json
+    source_checked_at: 2026-09-18
+    source_sha256: 299745d77fc3e701007c012cbd0c00ef4cdfb4900e08513ee474ae831885e038
+  - id: X9
+    citation: "Po-Ya Angela Wang, Chinmaya Mishra, Aslı Özyürek, Paula Rubio-Fernández, Esam Ghaleb (2026).
+      Aligned but Not Partner-Specific: Distinguishing How Multimodal LLM Agents Succeed in Reference Games
+      Without Human-Like Conventions. arXiv preprint"
+    source_url: https://arxiv.org/abs/2606.08081
+    rq: MLLM reference-game alignment 来自具体 dyad 的 shared history，还是共享任务 vocabulary、pretrained priors 与 verbosity？
+    theory: []
+    method: 比较 45 个 GPT-5 MLLM dyads/905 rounds 与 42 个 human dyads/3,288 rounds，并构造匹配 referent、round、turn count 与
+      success 的 pseudo-dyads。
+    finding: |-
+      Humans 随互动压缩表达，real dyads 相对 pseudo-dyads 显示 interaction-dependent reuse。
+      Agents 保持冗长；real/pseudo overlap 近 ceiling 且无可靠差异，说明 coordination 可不依赖具体 partner history。
+    limitation: 支持‘alignment/coordination 不足以证明 convention’，但不能推出所有模型或所有 training regimes 都缺乏 partner-specific grounding。
+    gap_supported_challenged:
+      - GAP-04
+    priority: Must Read
+    source_availability: full_text
+    agent_readiness: radar_full_text_audit
+    researcher_reading: null
+    researcher_mastery: null
+    exam_priority: CORE
+    exam_themes:
+      - 3
+      - 4
+      - 5
+    exam_theme: 3
+    reading_group: adaptation
+    exam_selection_reason: 加入表面协调与伙伴历史作用的替代解释。
+    relation_to_mainline: 加入表面协调与伙伴历史作用的替代解释。
+    oral_questions:
+      definition: 伙伴特定性与表达重合分别是什么？
+      comparison: 真实dyad和匹配pseudo-dyad比较检验什么？
+      critical: 单一模型配置的结果能否否定所有AI惯例？
+      connection: 与X8及拓展X29比较：哪些差异来自训练、角色和测量？
+      research: 何种对照能够区分共同历史与共享先验？
+    source_object: state/paper-pages/x9-aligned-not-partner-specific.json
+    source_checked_at: 2026-09-18
+    source_sha256: b4670ca58452079a405dbc7f621ab30a34ed468fdc55bf67d89cbb3dd6a02c1f
 oral_question_types:
   - Definition
   - Comparison
@@ -711,10 +1663,9 @@ update_policy:
     - Paper Investigation upserts the Exam Card and Agent readiness, but never edits researcher progress.
     - Literature Investigation updates theme landscape, controversies, and evidence-backed writing claims.
     - Research Radar adds candidates to a queue; only accepted anchors enter the core exam corpus.
-    - Gap or State-of-Field changes mark dependent exam claims/questions stale rather than silently
-      rewriting them.
-    - Comprehensive Exam sessions update researcher progress only from explicit researcher actions or
-      answers.
+    - Gap or State-of-Field changes mark dependent exam claims/questions stale rather than silently rewriting
+      them.
+    - Comprehensive Exam sessions update researcher progress only from explicit researcher actions or answers.
   protected_fields:
     - human_notes
     - human_answers
@@ -733,23 +1684,382 @@ workflow_history:
   - id: baseline41-2026-08-27
     status: COMPLETE_WITH_ONE_DEGRADED_SOURCE
     completed_at: 2026-08-27T09:18:00-04:00
-    summary: "41/41 baseline pages evidence-audited: 40 full-text, F6 abstract-only; Theme 6 second-round
-      anchors now ready for synthesis; researcher reading/mastery unchanged."
+    summary: "41/41 baseline pages evidence-audited: 40 full-text, F6 abstract-only; Theme 6 second-round anchors
+      now ready for synthesis; researcher reading/mastery unchanged."
   - id: amsc-radar-2026-08-31
     status: COMPLETE_WITH_ACCESS_LIMITATIONS
     completed_at: 2026-08-31T08:50:30-04:00
-    summary: X13 and X16 sharpen Theme 3 diagnostic questions; X14 is queued as a convention-mechanism
-      neighbor; none was promoted to a core exam anchor and researcher mastery remains unchanged.
+    summary: X13 and X16 sharpen Theme 3 diagnostic questions; X14 is queued as a convention-mechanism neighbor;
+      none was promoted to a core exam anchor and researcher mastery remains unchanged.
   - id: amsc-radar-2026-09-03
     status: COMPLETE_WITH_ACCESS_LIMITATIONS
     completed_at: 2026-09-03T10:00:00-04:00
-    summary: X17 and recovered method anchor X19 sharpen Theme 3 lifecycle and false-positive boundaries;
-      neither was automatically promoted to the core corpus, and researcher reading/mastery remains
-      unchanged.
+    summary: X17 and recovered method anchor X19 sharpen Theme 3 lifecycle and false-positive boundaries; neither
+      was automatically promoted to the core corpus, and researcher reading/mastery remains unchanged.
   - id: amsc-radar-2026-09-07
     status: COMPLETE_WITH_ACCESS_LIMITATIONS
     completed_at: 2026-09-07T03:35:21-04:00
-    summary: X20–X24 sharpen Theme 2/3/6 diagnostics for pact reuse, situated meaning, convention retrieval,
-      state representation and multimodal repair detection; no candidate was auto-promoted and researcher
-      mastery remains unchanged.
-scope_status: PROVISIONAL_REALIGNMENT
+    summary: X20–X24 sharpen Theme 2/3/6 diagnostics for pact reuse, situated meaning, convention retrieval, state
+      representation and multimodal repair detection; no candidate was auto-promoted and researcher mastery
+      remains unchanged.
+  - id: exam-realignment-2026-09-18
+    status: COMPLETE
+    summary: 依据program v2和当前48篇活动库重排20篇考试核心阅读、6主题、9页笔试提纲与口试；保留旧卡片和个人进度。
+    sources:
+      - research-programs/amsc/program.yaml
+      - research-programs/amsc/state/master_literature.yaml
+      - research-programs/amsc/state/state_of_field.yaml
+      - research-programs/amsc/state/gap_registry.yaml
+    independent_review: amsc_exam_curator只读复核；采纳A2转概念补充、X22进入核心及移除具身作为通用门槛。
+    previous_order:
+      - C1
+      - C2
+      - C3
+      - B1
+      - B2
+      - B3
+      - C4
+      - C5
+      - C6
+      - C7
+      - C8
+      - A5
+      - A2
+      - A1
+      - E3
+  - id: exam-expansion-30-2026-09-18
+    status: COMPLETE
+    previous_order:
+      - X21
+      - B1
+      - B2
+      - B3
+      - A3
+      - A5
+      - X30
+      - X31
+      - X32
+      - X35
+      - X34
+      - X33
+      - A1
+      - C1
+      - C2
+      - C3
+      - C6
+      - E3
+      - X16
+      - X22
+    added_papers:
+      - A2
+      - A4
+      - A6
+      - B4
+      - C8
+      - X12
+      - X27
+      - X9
+      - X8
+      - X24
+    summary: 依用户要求保留原20篇并新增10篇；六组阅读入口与六条跨主题讨论，放宽固定章节和顺序，不改变研究者进度、上游证据或RQ决策。
+    independent_review: amsc_exam_curator复核：接受新增10篇；X8/X9对读，文化/关系/群体分层，不设统一深读要求。
+    upstream_review_notes:
+      - A2旧相关性文字仍偏向embodied agents；本轮未采用。
+      - A6旧相关性文字含未核实导师关系；本轮未采用，保留上游待单独复核。
+scope_status: ALIGNED_WITH_PROGRAM_V2
+theme_details:
+  - id: 1
+    name: 社会意义与多模态表达
+    question: 文字、图像、emoji和花字怎样共同表达态度、用意与关系？
+    concepts:
+      - multimodal meaning
+      - textual paralanguage
+      - pragmatic function
+      - AI-mediated communication
+    anchors:
+      - A2
+      - A3
+      - A4
+      - A5
+      - X33
+      - B3
+      - X31
+      - A1
+      - A6
+      - X27
+      - C2
+      - C6
+      - C8
+  - id: 2
+    name: 语用推理与情境化理解
+    question: AI能否从具体情境推断对象、立场和言外之意？解释正确的标准是什么？
+    concepts:
+      - pragmatic inference
+      - RSA
+      - speaker intention
+      - context dependence
+      - plausible misreading
+    anchors:
+      - A2
+      - A3
+      - A5
+      - X21
+      - B1
+      - B2
+      - B3
+      - B4
+      - X30
+      - X31
+      - X32
+      - X35
+      - X34
+      - X27
+      - C1
+      - X22
+  - id: 3
+    name: 共同基础、理解确认与沟通惯例
+    question: 怎样区分已有上下文、双方确认的理解和互动形成的表达惯例？
+    concepts:
+      - common ground
+      - grounding
+      - conceptual pact
+      - partner specificity
+    anchors:
+      - A4
+      - X24
+      - X12
+      - C1
+      - C2
+      - C3
+      - C6
+      - C8
+      - E3
+      - X8
+      - X9
+      - X22
+  - id: 4
+    name: 模型、数据集与评估效度
+    question: 怎样判断模型改善了语用能力，而非仅提高特定标签或自动指标？
+    concepts:
+      - construct validity
+      - context ablation
+      - annotation ambiguity
+      - generalization
+      - model ablation
+    anchors:
+      - X21
+      - B1
+      - B2
+      - B4
+      - X30
+      - X31
+      - X32
+      - X35
+      - X24
+      - X34
+      - X27
+      - E3
+      - X8
+      - X9
+      - X16
+  - id: 5
+    name: 记忆、适应与持续互动
+    question: 记住信息、自然使用历史和适应某个伙伴分别需要什么证据？
+    concepts:
+      - memory retrieval
+      - natural integration
+      - continual adaptation
+      - shared meaning
+    anchors:
+      - A6
+      - X12
+      - C3
+      - C8
+      - E3
+      - X8
+      - X9
+      - X16
+      - X22
+  - id: 6
+    name: 文化知识、关系与社会实践
+    question: 文化知识、伙伴关系、平台实践与群体预期如何塑造表达和解释？
+    concepts:
+      - shared knowledge
+      - social practice
+      - within-group variation
+      - recipient interpretation
+    anchors:
+      - A3
+      - X33
+      - X21
+      - A1
+      - A6
+      - X34
+      - X27
+      - X12
+writing_plan:
+  - section: 提出现象与核心问题
+    pages: 约1
+    goal: 从具体表达或沟通情境切入，说明为何值得解释；可从X21、花字、meme或关系沟通开始。
+  - section: 组织概念与理论对话
+    pages: 约2
+    goal: 按题目选择语用、视觉/多模态结构、grounding或社会实践视角，比较解释单位与假设。
+  - section: 比较跨方法的证据
+    pages: 约3
+    goal: 围绕2–3个问题比较人类研究、模型方法、benchmark及系统实践；不按30篇逐篇摘要。
+  - section: 展开张力、边界与替代解释
+    pages: 约2
+    goal: 从歧义/准确、效率/表达、个体/群体、单次/持续等讨论线索中选取，不要求全部覆盖。
+  - section: 综合与开放问题
+    pages: 约1
+    goal: 提出仍可辩护的认识与多个可能方向；区分证据空白、测量局限与候选研究机会。
+checklists:
+  - name: 定义与比较
+    items:
+      - 用自己的例子区分识别、语用解释、恰当回应、被理解感与共享意义。
+      - 比较RSA、结构性多模态理论与互动grounding的解释单位。
+  - name: 证据与批判
+    items:
+      - 逐篇说明任务、样本、比较条件、发现与外推边界。
+      - 解释X21难例歧义、X30指标效度与X31顺序任务边界。
+      - 比较X32与X35的技术机制、基线和消融，不把性能提升等同真实意图恢复。
+  - name: 连接与综合
+    items:
+      - 区分AI作为伙伴与AI支持人际沟通，并用X33/A1举例。
+      - 区分信息记忆、自然使用历史、单方适应与共享意义。
+      - 解释文化知识、平台实践及群体内差异，避免国籍等同文化。
+  - name: 推导研究问题
+    items:
+      - 从已有研究提出具体问题，说明新增贡献与可能反例。
+      - 分别说明计算评估、行为证据或解释性材料何时能支持所作主张。
+      - 保留候选问题状态；不将考试提纲当作已批准研究项目。
+  - name: 跨主题开放讨论
+    items:
+      - 任选一个现象，从至少两个理论视角提出不同解释。
+      - 比较一种计算证据和一种行为、体验或实践证据，说明各自能回答什么。
+      - 为自己的解释提出合理反例，并说明什么观察会使你修改判断。
+      - 提出两个可行的后续方向，不把阅读清单锁成单一RQ或技术路线。
+reading_queue_note: top20_order为兼容现有消费者保留的字段名；当前含30篇，历史20篇顺序保存在workflow_history。
+reading_groups:
+  - id: expression
+    name: 表达形式如何承载社会意义
+    papers:
+      - A2
+      - A3
+      - A4
+      - A5
+      - X33
+    question: 从文字副语言、emoji、视觉词汇到花字，哪些意义来自形式，哪些来自情境和使用？
+    bridge: 先认识表达资源，再追问同一形式为什么能被理解成不同用意。
+  - id: interpretation
+    name: 人和AI如何推断用意
+    papers:
+      - X21
+      - B1
+      - B2
+      - B3
+      - B4
+    question: 人怎样结合目标、语境与不确定性解释表达？简洁和信息充分是否总是一致？
+    bridge: 把表达现象连接到可比较的推理解释；X21是问题入口，不限定所有后续讨论。
+  - id: evaluation
+    name: 如何建模与获得可信的能力证据
+    papers:
+      - X30
+      - X31
+      - X32
+      - X35
+      - X24
+    question: 定位、排序、解释、分类及修复信号检测各自揭示了什么？模型改善怎样获得证据支持？
+    bridge: 从理论转向模型、数据与测量，再追问测试中的能力如何联系实际沟通。
+  - id: social_context
+    name: 文化知识、关系与沟通实践
+    papers:
+      - A1
+      - A6
+      - X34
+      - X27
+      - X12
+    question: 谁在与谁沟通、共享哪些经历、为什么要这样表达？关系体验、有用歧义与群体惯例如何进入讨论？
+    bridge: 把单次任务放回伙伴、关系与群体；X12连接个人经验和群体预期，不作为文化差异的直接实证。
+  - id: shared_meaning
+    name: 理解如何在互动中得到确认和形成
+    papers:
+      - C1
+      - C2
+      - C3
+      - C6
+      - C8
+    question: 双方怎样确认足够的理解，并形成可复用的语言、绘画或手势表达？
+    bridge: 比较单次推断与协作过程；多模态物理任务只是一个观察窗口。
+  - id: adaptation
+    name: 持续沟通中的记忆、学习与适应
+    papers:
+      - E3
+      - X8
+      - X9
+      - X16
+      - X22
+    question: 模型能学到什么、历史怎样被使用、何时只是表面协调？哪些改善值得保留，哪些解释仍需检验？
+    bridge: 让训练、在线适应、记忆使用与多轮解释互相对照，再回到最初的理解与表达问题。
+discussion_questions:
+  - question: 沟通的好坏，是否只有准确理解这一项标准？
+    papers:
+      - X21
+      - X30
+      - X33
+      - A6
+    discussion: 比较任务正确率、表达机会、关系体验与参与者解释；不同研究目的可以采用不同证据，不能自动相互替代。
+  - question: 表达应该更简洁、更明确，还是允许冗余和歧义？
+    papers:
+      - B3
+      - B4
+      - X27
+      - A3
+    discussion: 讨论辨别需要、噪声、受众知识、幽默和关系功能；不预设一种表达策略在所有场景最好。
+  - question: 模型改善和共同意义之间是什么关系？
+    papers:
+      - X32
+      - X35
+      - X8
+      - X9
+      - C2
+    discussion: 模型与训练收益具有独立价值；是否支持共同意义取决于任务和主张。X8/X9设计不同，不能当作同一实验的正反结果。
+  - question: 文化、关系和共同经历应当放在哪个解释层次？
+    papers:
+      - X34
+      - A6
+      - X12
+      - X21
+    discussion: 比较个体经验、伙伴关系、平台实践及群体预期，讨论群体内差异；X12是跨层理论连接，不是文化群体比较。
+  - question: 从静态材料走向互动，会多出什么问题？
+    papers:
+      - X31
+      - X24
+      - C8
+      - X16
+      - X22
+    discussion: 讨论时间顺序、声音/手势、反馈、记忆相关性和理解确认；互动研究是可选问题路径，不是所有计算贡献的门槛。
+  - question: 我们怎样知道一项解释比替代解释更好？
+    papers:
+      - B2
+      - X30
+      - X9
+      - C3
+    discussion: 比较理论拟合、消融、行为结果与反事实对照；解释性或设计研究还应讨论情境、参与者意义和分析过程，方法随问题选择。
+organization_policy: 六组是可交叉的阅读入口，不是六章固定目录或先后依赖；可从现象、理论、计算或互动进入，按考试题目选取跨组证据。
+reading_depth_policy: 30篇均进入准备池，但无需同等深读。先用每篇的问题、方法、发现和边界完成全景阅读；再按实际考试问题选择理论锚点及相互补充或冲突的实证做深读。未指定固定深读名额。
+upstream_scope_review:
+  date: 2026-10-02
+  status: REVIEW_NEEDED
+  reason: 新主线涉及表达、角色与关系；原考试范围与个人阅读掌握保留，未授权改考纲。
+  candidate_papers:
+    - D4
+    - D5
+    - D6
+    - E1
+    - E4
+    - F3
+    - X43
+    - X48
+    - X51
+  action: 按考试实际要求确认是否更新anchor或口试题；本次不重设考试。
