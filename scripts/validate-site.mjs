@@ -49,12 +49,29 @@ for (const file of htmlFiles) {
 }
 
 const catalog = JSON.parse(fs.readFileSync(path.join(site, "data", "catalog.json"), "utf8"));
-const expectedHtml = (catalog.workspaceRoutes?.length || 0) + 8 + catalog.skills.length + catalog.agents.length + catalog.papers.length + 1;
-if (htmlFiles.length !== expectedHtml) failures.push(`Expected ${expectedHtml} HTML files; found ${htmlFiles.length}.`);
+for (const route of catalog.routes || []) {
+  const target = path.join(site, route, "index.html");
+  if (!fs.existsSync(target)) failures.push(`Public route is missing: ${route || "/"}`);
+}
+
+const publicIndexes = ["index.html", "program/index.html", "papers/index.html", "gaps/index.html", "questions/index.html"]
+  .map(relative => fs.readFileSync(path.join(site, relative), "utf8"))
+  .join("\n");
+for (const forbidden of ["研究风格参照", "Zhicong Lu（最偏好）", "当前42篇活动文献", "28篇暂缓材料"]) {
+  if (publicIndexes.includes(forbidden)) failures.push(`Public pages expose removed content: ${forbidden}`);
+}
+
+const catalogText = JSON.stringify(catalog);
+for (const forbidden of ["second_author", "human_confirmed", "Meta Aria", "Quest 3", "budget", "developer_instructions"]) {
+  if (catalogText.includes(forbidden)) failures.push(`Public catalog exposes internal field: ${forbidden}`);
+}
+if (!/value="featured" selected/.test(fs.readFileSync(path.join(site, "papers", "index.html"), "utf8"))) {
+  failures.push("Paper library does not default to the featured evidence set.");
+}
 
 if (failures.length) {
   console.error(failures.join("\n"));
   process.exit(1);
 }
 
-console.log(`Site validation passed: ${htmlFiles.length} HTML pages, ${catalog.skills.length} skills, ${catalog.agents.length} agents, ${catalog.papers.length} papers.`);
+console.log(`Site validation passed: ${catalog.routes.length} public routes, ${catalog.counts.featured_papers}/${catalog.counts.papers} papers shown by default.`);

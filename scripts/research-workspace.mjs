@@ -1,4 +1,3 @@
-import { renderRoadmapOverview } from "./artifact-roadmap.mjs";
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse } from 'yaml';
@@ -89,19 +88,13 @@ export function renderWorkspace({page, write, papers, dashboard, workspace}) {
   const intro = (kicker, title, description) => `<section class="page-hero compact-hero"><div class="container"><span class="eyebrow">${kicker}</span><h1>${title}</h1><p>${description}</p></div></section>`;
   const routes = ['gaps/', 'questions/', 'validation/', 'studies/', 'writing/'];
   const save = (route, title, body) => write(`${route}/index.html`, page({title, description: title, current: route, depth: 1, body}));
-  const stages = [
-    ['papers','01','论文库','发现、拆解并按主题积累文献',papers.length],
-    ['gaps','02','Gap 库','聚合证据，辨认仍然开放的问题',dashboard.field_map.gaps.length],
-    ['questions','03','潜在研究问题','把未知转化为值得回答的问题',pipeline.questions.length],
-    ['validation','04','验证与筛选','检查已有解答、价值和可行性',pipeline.validations.length],
-    ['studies','05','研究方案与报告','计算、实证与系统研究的设计及验证',pipeline.studies.length]
-  ];
+  const activeQuestions = pipeline.questions.filter(q => !['INCUBATE', 'CLOSED'].includes(q.status));
+  const candidateStages = programDefinition.artifact_roadmap?.stages || [];
   write('index.html', page({title:'AMSC · 研究主线', description:dashboard.research_line.identity, current:'home', body:`
-    <div class="container"><section class="hero research-hero"><div><span class="eyebrow">Adaptive Multimodal Social Communication</span><h1>看见误解，<br>让<span class="accent-text">澄清有据可循。</span></h1><p class="hero-copy">${text(programDefinition.artifact_roadmap?.identity || dashboard.research_line.identity)}</p><p>从真实误解的记录，到数据集、模型评估与沟通支持，让每一阶段留下可检验、可复用的研究成果。</p><div class="button-row"><a class="button primary" href="#artifact-roadmap">探索落地路线 ↓</a><a class="button" href="papers/">进入论文库</a></div></div>
-    <figure class="communication-scene"><svg viewBox="0 0 480 310" role="img" aria-labelledby="scene-title scene-desc"><title id="scene-title">情境化多模态沟通</title><desc id="scene-desc">文字、图像和情境共同构成表达，AI需要理解其用意；共享意义是长期问题。</desc><rect x="12" y="12" width="456" height="286" rx="24" fill="#e3ede6"/><rect x="38" y="48" width="270" height="66" rx="18" fill="white"/><text x="62" y="89" fill="#315f78" font-size="22">这次真有你的！</text><rect x="184" y="133" width="250" height="67" rx="18" fill="#176b5b"/><text x="207" y="174" fill="white" font-size="20">赞赏？调侃？共同梗？</text><path d="M113 122 L113 165 L166 165" fill="none" stroke="#315f78" stroke-width="3"/><text x="240" y="250" text-anchor="middle" fill="#174b3f" font-size="17">文字 · 图像 · 情境 · 共同经历</text></svg><figcaption>解释性示例：同一句表达，在不同情境中可能具有不同用意。</figcaption></figure></section></div>
-    ${renderRoadmapOverview()}
-    <section class="section tinted" id="research-map"><div class="container"><div class="section-head"><div><span class="eyebrow">研究核心</span><h2>五个相互关联的问题</h2></div><p>社会语用与多模态意义是近期重心；共同理解、惯例与适应保留为相互关联的研究视角。</p></div><div class="concept-grid">${list(dashboard.research_line.nodes,(n,i)=>`<article class="concept-card" id="${text(n.id)}"><span class="node-number">0${i+1}</span><h3>${text(n.label_zh || n.label)}</h3><span class="concept-en">${text(n.label)}</span><p>${text(n.question)}</p><details><summary>这一部分研究什么</summary><p>${text(n.detail)}</p><div class="tag-row">${list(n.buckets,b=>`<a class="tag" href="papers/?topic=${b}">${text(topics[b])}</a>`)}</div><p>${list(n.gaps,id=>`<a href="gaps/#${slug(id)}">${text(id)}</a>`).split('</a>').join('</a> ')}</p></details></article>`)}</div><p class="map-note">互动反馈会重新塑造意义、共同理解与惯例；这些节点是研究视角，箭头不代表已证实的因果顺序。</p></div></section>
-    ${section('沿着证据，推进研究',`<div class="workspace-path">${list(stages,([route,num,title,desc,count])=>`<a class="stage-link" href="${route}/"><span>${num} / ${count} 项</span><h3>${title}</h3><p>${desc}</p><strong>进入 →</strong></a>`)}</div><div class="support-links"><span>独立工作区</span><a href="exam/">考试准备 ↗</a><a href="writing/">论文写作 ↗</a><small>从主线获取材料，独立维护笔记与进度。</small></div>`)}` }));
+    <div class="container"><section class="hero research-hero"><div><span class="eyebrow">AMSC · 当前研究主线</span><h1>让机器人的表达被准确理解，<br>也经得起<span class="accent-text">关系的时间。</span></h1><p class="hero-copy">研究视觉与具身表达如何传达意图，人们如何理解角色一致的行为，以及这些互动如何塑造持续关系与跨设备 companion。</p><div class="button-row"><a class="button primary" href="questions/">查看 ${activeQuestions.length} 个候选问题</a><a class="button" href="papers/">阅读核心论文</a></div></div>
+    <aside class="focus-panel" aria-label="当前研究状态"><span class="eyebrow">Current decision</span><h2>首项研究问题尚未选择</h2><p>五个方向都是候选，不代表固定顺序。下一步是核验真实表达现象、最近工作与可用载体，再由研究者决定。</p><dl><div><dt>已批准</dt><dd>长期研究范围</dd></div><div><dt>未批准</dt><dd>首项 RQ、架构优胜者与新硬件</dd></div><div><dt>当前入口</dt><dd>问题 → Gap → 论文证据</dd></div></dl></aside></section></div>
+    <section class="section compact" id="candidate-directions"><div class="container"><div class="section-head"><div><span class="eyebrow">Candidate directions</span><h2>五个并列候选方向</h2></div><p>这些方向共同构成研究空间，但任何一个都尚未被选为首项研究。</p></div><div class="direction-grid">${list(candidateStages,s=>`<a class="direction-card" href="program/#stage-${slug(s.id)}"><span>候选</span><div><h3>${text(s.title)}</h3><p>${text(s.artifact_name)} · ${text(labels[s.status] || s.status)}</p></div><strong>查看边界 →</strong></a>`)}</div></div></section>
+    <section class="section tinted"><div class="container"><div class="section-head"><div><span class="eyebrow">Reading path</span><h2>按决策需要阅读，而不是从数据库数量开始。</h2></div><p>先看我们正在问什么，再检查 Gap 是否成立，最后进入最相关的论文证据。</p></div><div class="reading-path"><a href="questions/"><span>01</span><h3>研究问题</h3><p>${activeQuestions.length} 个当前候选；搁置问题不进入默认视图。</p></a><a href="gaps/"><span>02</span><h3>关键 Gap</h3><p>优先显示与当前五个方向直接相连的候选 Gap。</p></a><a href="papers/"><span>03</span><h3>核心论文</h3><p>默认只展示当前主线核心，完整记录按需展开。</p></a></div><p class="map-note">内部偏好、历史迁移记录、Agent 配置与考试材料继续保留在研究系统中，但不占据主要阅读流程。</p></div></section>` }));
 
   const gaps = workspace.gapRegistry.gaps;
   save('gaps','Gap 库',intro('02 / Evidence synthesis','从文献中的未知，到值得追问的空白。','按研究主线整理已有 Gap，保留证据边界与相互关系。论文数量提示关注程度，不代表问题已被验证。')+
@@ -128,4 +121,3 @@ export function renderWorkspace({page, write, papers, dashboard, workspace}) {
     section('材料收集箱',writing.materials.some(m=>!m.project_id)?`<div data-filter-root><div class="filter-bar"><label>搜索材料 <input type="search" data-filter-search placeholder="论点、主题、论文或来源"></label><span data-filter-count aria-live="polite"></span></div><div class="workspace-list">${list(writing.materials.filter(m=>!m.project_id),material)}</div><p hidden data-filter-empty>没有匹配的材料。</p></div>`: '<div class="workspace-empty"><p>暂时没有未归档材料。材料可以先收集，之后再分配到项目与章节。</p></div>'));
   return routes;
 }
-

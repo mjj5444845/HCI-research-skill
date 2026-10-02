@@ -1,6 +1,5 @@
 import { renderArtifactRoadmap } from "./artifact-roadmap.mjs";
 import {readChinese, localizePapers, renderChineseReading} from "./chinese-reading.mjs";
-import { renderArchive } from "./content-archive.mjs";
 import fs from "node:fs";
 import { topics, readWorkspace, validateWorkspace, renderWorkspace } from "./research-workspace.mjs";
 import path from "node:path";
@@ -209,9 +208,9 @@ const rel = (depth, target = "") => `${"../".repeat(depth)}${target}`;
 
 function nav(depth, current) {
   const links = [
-    ["home", "", "研究主线"], ["papers", "papers/", "论文库"],
-    ["gaps", "gaps/", "研究空白库"], ["questions", "questions/", "潜在研究问题"],
-    ["validation", "validation/", "验证与筛选"], ["studies", "studies/", "研究方案与报告"]
+    ["home", "", "首页"], ["program", "program/", "研究主线"],
+    ["questions", "questions/", "研究问题"], ["gaps", "gaps/", "关键 Gap"],
+    ["papers", "papers/", "核心论文"]
   ];
   return `
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -224,12 +223,11 @@ function nav(depth, current) {
           ${links.map(([id, target, label]) => `<a href="${rel(depth, target)}" ${current === id ? 'aria-current="page"' : ""}>${label}</a>`).join("")}
         </nav>
       </div>
-    <nav class="aux-nav" aria-label="辅助工作区"><span>独立工作区</span><a href="${rel(depth, "exam/")}" ${current === "exam" ? 'aria-current="page"' : ""}>考试准备</a><a href="${rel(depth, "writing/")}" ${current === "writing" ? 'aria-current="page"' : ""}>论文写作</a><a href="${rel(depth, "field-map/")}">领域状态</a><a href="${rel(depth, "skills/")}">工作流与系统</a></nav>
     </header>`;
 }
 
 function footer(depth) {
-  return `<footer class="site-footer"><div class="container footer-grid"><div><strong>AMSC Research OS</strong><br>围绕长期研究主线维护论文、证据、研究空白与研究决策。</div><div class="footer-links"><a href="${rel(depth, "program/")}">研究主线</a><a href="${rel(depth, "field-map/")}">领域状态</a><a href="${rel(depth, "skills/")}">工作流</a><a href="${rel(depth, "exam/")}">考试准备</a></div></div></footer>`;
+  return `<footer class="site-footer"><div class="container footer-grid"><div><strong>AMSC Research OS</strong><br>只把当前研究决策需要的信息放在前面；历史与系统状态继续保留。</div><div class="footer-links"><a href="${rel(depth)}">首页</a><a href="${rel(depth, "program/")}">研究主线</a><a href="${rel(depth, "questions/")}">研究问题</a><a href="${rel(depth, "gaps/")}">关键 Gap</a><a href="${rel(depth, "papers/")}">核心论文</a></div></div></footer>`;
 }
 
 function page({ title, description, current, depth = 0, body }) {
@@ -343,15 +341,8 @@ const evidenceLinks = slugs => (slugs || []).map(slug => {
   return paper ? `<a class="evidence-chip" href="../papers/${escapeHtml(slug)}/">${escapeHtml(paper.source_list_id || paper.id || paper.year)} · ${escapeHtml(paper.title)}</a>` : `<span class="evidence-chip muted">${escapeHtml(slug)}</span>`;
 }).join("");
 
-const investigationCounts = papers.reduce((counts, paper) => {
-  const key = paper.investigation_status || "untracked";
-  counts[key] = (counts[key] || 0) + 1;
-  return counts;
-}, {});
 const fieldClaims = dashboard.field_map.claims;
-const dashboardGaps = dashboard.field_map.gaps.map(g => ({...g, statement:chineseReading.gaps[g.id]?.title || g.statement, research_implication:chineseReading.gaps[g.id]?.known || g.research_implication}));
-const claimableGaps = dashboardGaps.filter(gap => gap.claimability !== "CANNOT_CLAIM");
-const provisionalGaps = dashboardGaps.filter(gap => gap.claimability === "CANNOT_CLAIM");
+const currentFieldClaims = fieldClaims.filter(claim => /^SOF-(49|50|51|52|53)$/.test(claim.id));
 const evidenceLabel = value => ({
   STRONG: "强", MODERATE: "中等", PRELIMINARY: "初步", SPECULATIVE: "推测",
   AGENT_SYNTHESIS: "综合判断", SYNTHESIS: "综合判断", SYNTHESIS_REQUIRES_VALIDATION: "待验证综合",
@@ -360,15 +351,11 @@ const evidenceLabel = value => ({
 
 write("field-map/index.html", page({
   title: "领域状态与 Gap",
-  description: "持续维护 AMSC 领域结论、证据强度、Gap 演化与当前不可声称内容。",
+  description: "当前 AMSC 主线最相关的五项领域判断与证据边界。",
   current: "field-map",
   depth: 1,
-  body: `<section class="page-hero compact-hero"><div class="container"><span class="eyebrow">Current field state</span><h1>当前证据支持什么，哪些问题仍然值得研究。</h1><p>这是长期研究主线的证据层，不是考试笔记。页面将来源覆盖、调查深度、跨论文综合和研究机会分开，避免把“收录了论文”误写成“领域已经知道”。</p><div class="button-row"><a class="button" href="../program/">返回研究主线</a><a class="button" href="../papers/">查看论文证据</a></div></div></section>
-  <section class="section compact"><div class="container"><div class="evidence-summary" data-reveal><article class="summary-note"><strong>当前证据快照</strong><span>${escapeHtml(dashboard.field_map.coverage_note)}</span></article><article><strong>${papers.filter(p => /^[A-G]\d+$/.test(p.id) && p.investigation_status === "full_paper_investigation").length}/${papers.filter(p => /^[A-G]\d+$/.test(p.id)).length}</strong><span>Baseline 全文审计</span></article><article><strong>${investigationCounts.abstract_evidence_investigation || 0}</strong><span>Baseline 摘要级审计</span></article><article><strong>${(investigationCounts.radar_full_text_audit || 0) + (investigationCounts.abstract_reviewed || 0) + (investigationCounts.source_verified_candidate || 0)}</strong><span>监测与搜索候选</span></article></div>
-  <div class="section-head"><div><span class="eyebrow">Cumulative claims</span><h2>领域判断的当前版本</h2></div><p>卡片只展示结论与状态；来源和边界折叠在“证据说明”中。跨论文 synthesis 不会伪装成单篇论文结论。</p></div>
-  <div class="claim-list">${fieldClaims.map(claim => `<article class="claim-item" data-reveal><div class="claim-top"><strong>${escapeHtml(claim.id)}</strong><span class="status-pill ${statusClass(claim.status)}">${escapeHtml(fieldStatusZh[claim.status] || claim.status)}</span></div><h3>${escapeHtml(claim.statement)}</h3><div class="claim-meta"><span class="tag">证据：${escapeHtml(evidenceLabel(claim.evidence_strength))}</span></div><details class="disclosure"><summary>查看证据、边界与来源</summary><p><strong>适用边界：</strong>${escapeHtml(claim.boundary)}</p><div>${evidenceLinks(claim.evidence)}</div></details></article>`).join("")}</div></div></section>
-  <section class="section tinted"><div class="container"><div class="section-head"><div><span class="eyebrow">Gap registry</span><h2>仍在审查的研究问题</h2></div><p>Gap 是可被新证据削弱、重定义或删除的主张。候选问题不会自动成为 novelty claim。</p></div><div class="gap-columns"><div><h3>当前主线 Gap</h3><div class="gap-stack">${claimableGaps.map(gap => `<article id="${slugify(gap.id)}" class="gap-card" data-reveal><div class="claim-top"><strong>${escapeHtml(gap.id)}</strong><span class="status-pill ${statusClass(gap.status)}">${escapeHtml(fieldStatusZh[gap.status] || gap.status)}</span></div><h3>${escapeHtml(gap.statement)}</h3><details class="disclosure"><summary>为什么仍值得研究</summary><p>${escapeHtml(gap.research_implication)}</p><div class="claim-meta"><span class="tag">优先级：${escapeHtml(gap.priority || "待定")}</span><span class="tag">证据：${escapeHtml(evidenceLabel(gap.evidence_strength))}</span></div></details></article>`).join("")}</div></div><aside><h3>尚不能作为 Gap 声称</h3><div class="gap-stack">${provisionalGaps.map(gap => `<article id="${slugify(gap.id)}" class="gap-card cannot-claim"><div class="claim-top"><strong>${escapeHtml(gap.id)}</strong><span class="status-pill status-cannot-claim">待验证</span></div><h3>${escapeHtml(gap.statement)}</h3><p>${escapeHtml(gap.research_implication)}</p></article>`).join("")}</div></aside></div></div></section>
-  <section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Provenance</span><h2>状态如何被更新</h2></div><p>工作流先更新长期研究状态；只有与考试范围相关的变化才进入考试页。自动化不会替研究者标记“已读”或“已掌握”。</p></div><div class="timeline">${dashboard.workflow_runs.slice().reverse().slice(0, 6).map(run => `<article><time>${escapeHtml(run.date)}</time><div><span class="status-pill">${escapeHtml(run.status)}</span><h3>${escapeHtml(run.workflow)}</h3><p>${escapeHtml(run.summary)}</p></div></article>`).join("")}</div></div></section>`
+  body: `<section class="page-hero compact-hero"><div class="container"><span class="eyebrow">Current field state</span><h1>当前证据真正支持什么。</h1><p>这里只保留与机器人表达、角色一致性、跨设备身份和持续关系直接相关的五项领域判断。它们是跨论文综合，不是单篇论文的原始结论。</p><div class="button-row"><a class="button primary" href="../gaps/">查看仍待验证的 Gap</a><a class="button" href="../papers/">进入论文证据</a></div></div></section>
+  <section class="section compact"><div class="container"><div class="claim-list">${currentFieldClaims.map(claim => `<article class="claim-item" data-reveal><div class="claim-top"><strong>${escapeHtml(claim.id)}</strong><span class="status-pill ${statusClass(claim.status)}">${escapeHtml(fieldStatusZh[claim.status] || claim.status)}</span></div><h3>${escapeHtml(claim.statement)}</h3><div class="claim-meta"><span class="tag">证据：${escapeHtml(evidenceLabel(claim.evidence_strength))}</span></div><details class="disclosure"><summary>查看证据边界与关键来源</summary><p><strong>适用边界：</strong>${escapeHtml(claim.boundary)}</p><div>${evidenceLinks(claim.evidence)}</div></details></article>`).join("")}</div><details class="archive-panel"><summary>关于历史领域判断</summary><p>旧判断继续保留在持久研究状态中，但不进入当前默认阅读流。方向迁移不表示旧问题已解决。</p></details></div></section>`
 }));
 
 const top20 = dashboard.exam.top20.map(item => ({ ...item, paper: paperBySlug.get(item.slug) })).filter(item => item.paper);
@@ -398,37 +385,43 @@ write("exam/index.html", page({
   <section class="section tinted"><div class="container"><div class="section-head"><div><span class="eyebrow">Readiness</span><h2>考试能力检查</h2></div><p>Definition、Comparison、Critical、Connection 与 Research question 需要分别练习。详细 checklist 默认折叠，避免把准备页变成信息墙。</p></div><div class="checklist-grid">${dashboard.exam.checklists.map(group => `<details><summary>${escapeHtml(group.name)}</summary><ul>${group.items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></details>`).join("")}</div></div></section>`
 }));
 
-const programNodes = dashboard.research_line.nodes;
 write("program/index.html", page({
   title: "AMSC 研究主线",
   description: "机器人表达、角色行为一致性与具有物理外延的AI companion。",
   current: "program",
   depth: 1,
-  body: `${renderArtifactRoadmap()}
-  <section class="section compact"><div class="container"><div class="grid three"><article class="surface-card"><h2>可复用的已有研究基础</h2><p>X21 是用户作为二作参与的 EMNLP 研究。延续社会语用理解与诊断方法，明确后续新增贡献。</p><a href="../papers/x21-social-pragmatic-chinese-comments/">阅读已有研究 →</a></article><article class="surface-card"><h2>跨社区贡献</h2><p>HRI / HCI / CSCW / AI / CV / NLP。模型、方法、数据集、benchmark、理论、实证和系统均可独立贡献；人类证据按主张需要选择。</p></article><article class="surface-card"><h2>近期资源与选择</h2><p>资源沿用2026-09-18最后确认记录，设备能力待核实。机器人与companion已进入主线；尚未选定首项问题或确认新增硬件。</p></article></div><p>研究风格参照：Zhicong Lu（最偏好）、Judith Fan、Ziqiao Ma、Parastoo Abtahi、Ryo Suzuki。</p></div></section><section class="section compact"><div class="container"><div class="section-head"><div><span class="eyebrow">Conceptual spine</span><h2>Expression · Coherence · Evolution · Extensions · Relationship</h2></div><p>五个节点是分析透镜，不是线性成熟阶段。选择节点可查看它在主线中的问题、证据范围与关联 Gap。</p></div><div class="program-map" data-program-map data-reveal><div class="research-chain">${programNodes.map((node, index) => `<button id="${escapeHtml(node.id)}" type="button" class="chain-node" data-program-node="${escapeHtml(node.id)}" aria-pressed="${index === 0 ? "true" : "false"}"><span>0${index + 1}</span><strong>${escapeHtml(node.label)}</strong><small>${escapeHtml(node.question)}</small></button>`).join("")}</div>${programNodes.map((node, index) => `<article class="chain-detail" data-program-detail="${escapeHtml(node.id)}" ${index === 0 ? "" : "hidden"}><div><span class="eyebrow">${escapeHtml(node.label)}</span><h2>${escapeHtml(node.question)}</h2><p>${escapeHtml(node.detail)}</p></div><dl><dt>Literature buckets</dt><dd>${escapeHtml(node.buckets.join(" · "))}</dd><dt>Related gaps</dt><dd>${node.gaps.map(gap => `<a href="../field-map/#${slugify(gap)}">${escapeHtml(gap)}</a>`).join(" · ")}</dd></dl></article>`).join("")}</div><p class="map-note">五个方向可以独立或并行；不要求每个设备对话、有独立角色，也不要求每项研究覆盖长期关系。</p></div></section>
-  <section class="section tinted"><div class="container"><div class="section-head"><div><span class="eyebrow">Operating model</span><h2>工作流如何服务这条长期主线</h2></div><p>所有工作流输出先进入长期研究状态。考试、论文写作或单个项目只能读取和筛选，不反向定义整条研究主线。</p></div><div class="system-relationship"><article class="relationship-card"><span>Observe</span><h3>发现与调查</h3><p>Research Radar、Paper Investigation 与 Literature Investigation 获取新证据。</p></article><div class="relationship-arrow" aria-hidden="true">→</div><article class="relationship-card primary"><span>Update</span><h3>修正长期状态</h3><p>更新 paper、field claims、gaps、research graph 与 next questions。</p></article><div class="relationship-arrow" aria-hidden="true">→</div><article class="relationship-card"><span>Act</span><h3>形成研究行动</h3><p>Idea Development 与 Study Design 把仍存活的问题变成可检验项目。</p></article></div><div class="button-row"><a class="button" href="../architecture/">查看完整系统架构</a><a class="button" href="../exam/">查看考试如何筛选主线状态</a></div></div></section>
-  <section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Research boundary</span><h2>主线、邻近与非主线</h2></div><p>关键词重叠不构成 relevance。主线工作可推进社会意义理解、多模态模型、评价与资源，或沟通中的共同理解和适应；无需同时覆盖全部层次。</p></div><div class="grid three scope-grid"><article><span>MAINLINE</span><h3>推进理解、能力与沟通知识</h3><ul>${dashboard.research_line.scope.core.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article><article><span>ADJACENT</span><h3>需要明确的 substantive bridge</h3><ul>${dashboard.research_line.scope.adjacent.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article><article><span>OUT OF SCOPE</span><h3>只有 artifact 或关键词重叠</h3><ul>${dashboard.research_line.scope.out_of_scope.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article></div></div></section>`
+  body: renderArtifactRoadmap()
 }));
 
 const isBaselinePaper = paper => /^[A-G]\d+$/.test(String(paper.source_list_id || paper.id || ""));
+const featuredPaperIds = new Set(["D4", "D5", "G4", "X45", "E1", "X4", "X48", "X49", "E4", "F3"]);
+const membershipCounts = papers.reduce((counts, paper) => {
+  const key = paper.program_membership?.status || "BACKGROUND";
+  counts[key] = (counts[key] || 0) + 1;
+  return counts;
+}, {});
+const paperDepthLabel = status => ({
+  full_paper_investigation: "全文审查",
+  radar_full_text_audit: "全文审查",
+  focused_source_audit: "聚焦来源审查",
+  abstract_evidence_investigation: "摘要层证据"
+}[status] || "来源已核验");
 
 function paperCard(paper) {
-  const collection = paper.researcher_relationship ? "已有成果 · 二作" : isBaselinePaper(paper) ? `基础文献 ${paper.source_list_id || paper.id}` : "搜索候选";
-  const summary = paper.investigation_status === "full_paper_investigation"
-    ? (paper.real_contribution || paper.problem || paper.one_sentence)
-    : paper.one_sentence;
-  return `<article class="paper-card" data-reveal data-filter-item data-topic="${escapeHtml((paper.amsc?.buckets || []).join(' '))}" data-collection="${paper.researcher_relationship ? 'foundation' : isBaselinePaper(paper) ? 'baseline' : 'radar'}"><div class="paper-year">${escapeHtml(paper.year)}</div><div><div class="paper-meta">${escapeHtml((paper.authors || []).join(", "))}${paper.venue ? ` · ${escapeHtml(paper.venue)}` : ""}</div><h3>${escapeHtml(paper.title)}</h3><details><summary>英文原标题</summary><p>${escapeHtml(paper.original_title)}</p></details><p>${inlineMarkdown(summary)}</p><div class="tag-row"><span class="priority">${escapeHtml(({"Must Read":"优先阅读","Important":"重要","Optional":"按需阅读"})[paper.priority] || paper.priority)}</span><span class="tag">${escapeHtml(collection)}</span><span class="tag">${escapeHtml(investigationLabel(paper.investigation_status))}</span></div><div class="tag-row">${(paper.amsc?.buckets || []).map(b => `<span class="tag">${escapeHtml(topics[b] || b)}</span>`).join("")}</div><a class="card-link" href="${escapeHtml(paper.slug)}/">查看拆解与证据 →</a></div></article>`;
+  const membership = paper.program_membership?.status || "BACKGROUND";
+  const featured = featuredPaperIds.has(paper.id);
+  const scope = `${featured ? "featured " : ""}${membership.toLowerCase()}`;
+  const directions = (paper.amsc?.gap_ids || []).filter(id => /^GAP-RC-0[1-5]$/.test(id));
+  return `<article class="paper-card compact-paper" data-reveal data-filter-item data-scope="${escapeHtml(scope)}" data-direction="${escapeHtml(directions.map(id => id.toLowerCase()).join(" "))}"${featured ? "" : " hidden"}><div class="paper-year">${escapeHtml(paper.year)}</div><div><div class="paper-meta">${escapeHtml((paper.authors || []).slice(0, 3).join(", "))}${(paper.authors || []).length > 3 ? " et al." : ""}${paper.venue ? ` · ${escapeHtml(paper.venue)}` : ""}</div><h3>${escapeHtml(paper.title)}</h3><p>${inlineMarkdown(paper.one_sentence)}</p><div class="tag-row"><span class="tag">${escapeHtml(paperDepthLabel(paper.investigation_status))}</span>${directions.slice(0, 2).map(id => `<span class="tag">${escapeHtml(id.replace("GAP-", ""))}</span>`).join("")}</div><a class="card-link" href="${escapeHtml(paper.slug)}/">阅读证据与边界 →</a></div></article>`;
 }
 
-const baselinePapers = papers.filter(isBaselinePaper);
-const candidatePapers = papers.filter(paper => !isBaselinePaper(paper));
-const papersBody = `<div data-filter-root><div class="filter-bar"><label>研究主题 <select data-filter="topic"><option value="">全部主题</option>${Object.entries(topics).map(([id,label]) => `<option value="${id}">${id} · ${label}</option>`).join("")}</select></label><label>来源 <select data-filter="collection"><option value="">全部论文</option><option value="foundation">已有研究成果</option><option value="baseline">基础文献</option><option value="radar">Radar / 搜索候选</option></select></label><label>搜索 <input type="search" data-filter-search placeholder="标题、作者、机制或主题"></label><span data-filter-count aria-live="polite"></span></div><div class="grid two">${papers.map(paperCard).join("")}</div><p hidden data-filter-empty>没有匹配的论文，请调整筛选。</p></div>`;
+const papersBody = `<div data-filter-root><div class="filter-bar"><label>显示范围 <select data-filter="scope"><option value="featured" selected>导航精选 · ${featuredPaperIds.size} 篇</option><option value="core">当前主线核心 · ${membershipCounts.CORE || 0} 篇</option><option value="supporting">补充证据 · ${membershipCounts.SUPPORTING || 0} 篇</option><option value="background">完整背景档案 · ${membershipCounts.BACKGROUND || 0} 篇</option><option value="">全部记录 · ${papers.length} 篇</option></select></label><label>候选方向 <select data-filter="direction"><option value="">全部方向</option>${[1,2,3,4,5].map(index => `<option value="gap-rc-0${index}">RC-0${index}</option>`).join("")}</select></label><label>搜索 <input type="search" data-filter-search placeholder="标题、作者或研究内容"></label><span data-filter-count aria-live="polite"></span></div><p class="collection-note">默认精选为每个候选方向提供两个证据入口，用于导航，不代表研究者已经批准论文优先级。切换“当前主线核心”可查看全部 24 篇核心记录。</p><div class="grid two">${papers.map(paperCard).join("")}</div><p hidden data-filter-empty>没有匹配的论文，请调整筛选。</p></div>`;
 write("papers/index.html", page({
   title: "论文库",
   description: "可追踪证据的论文知识界面：每篇已核验论文拥有独立页面，并明确区分 metadata、abstract 与 full-text 证据。",
   current: "papers",
   depth: 1,
-  body: `<section class="page-hero compact-hero"><div class="container"><span class="eyebrow">论文解读</span><h1>先读懂这篇论文，再决定怎样用它。</h1><p>当前42篇活动文献按新主线分类；28篇暂缓材料已移入历史快照。X21是用户已有研究基础。每篇先用中文讲清做法、发现和局限，再说明与你的研究有什么关系。英文原标题可展开查看，也可直接搜索。仅有摘要的论文会明确标出。</p><div class="button-row"><a class="button" href="../program/">返回研究主线</a><a class="button" href="../field-map/">查看跨论文综合</a></div></div></section><section class="section compact"><div class="container">${papersBody}</div></section>`
+  body: `<section class="page-hero compact-hero"><div class="container"><span class="eyebrow">Evidence library</span><h1>先看最相关的证据，再按需进入完整档案。</h1><p>论文事实与历史分类全部保留，但默认只展示覆盖五个候选方向的 10 篇导航精选。每篇用中文说明做法、发现、证据边界和主线关系；“进入精选”不表示研究者已经阅读或批准优先级。</p><div class="button-row"><a class="button" href="../questions/">从研究问题开始</a><a class="button" href="../gaps/">查看候选 Gap</a></div></div></section><section class="section compact"><div class="container">${papersBody}</div></section>`
 }));
 
 for (const paper of papers) {
@@ -469,17 +462,28 @@ write("404.html", page({
   body: `<section class="page-hero"><div class="container"><span class="eyebrow">404 / 缺失节点</span><h1>这个研究节点还不存在。</h1><p>链接可能已改变，或对应论文尚未进入持久知识状态。</p><div class="button-row"><a class="button primary" href="./">返回首页</a><a class="button" href="papers/">查看论文</a></div></div></section>`
 }));
 
-const workspaceRoutes = renderWorkspace({page, write, papers, dashboard, workspace});
+renderWorkspace({page, write, papers, dashboard, workspace});
 renderChineseReading({page,write,papers,workspace,data:chineseReading});
-workspaceRoutes.push(...renderArchive({root,out,page,write,renderMarkdown,papers}));
-write("data/catalog.json", JSON.stringify({ workspaceRoutes, version: manifest.version, generated_at: new Date().toISOString(), skills: skills.map(({ body, ...skill }) => skill), agents: agents.map(({ instructions, ...agent }) => agent), papers, dashboard }, null, 2));
+const publicRoutes = ["", "program/", "questions/", "gaps/", "papers/", "field-map/", ...papers.map(item => `papers/${item.slug}/`)];
+write("data/catalog.json", JSON.stringify({
+  version: manifest.version,
+  generated_at: new Date().toISOString(),
+  routes: publicRoutes,
+  counts: {
+    papers: papers.length,
+    featured_papers: featuredPaperIds.size,
+    core_papers: membershipCounts.CORE || 0,
+    supporting_papers: membershipCounts.SUPPORTING || 0,
+    background_papers: membershipCounts.BACKGROUND || 0,
+    active_questions: workspace.pipeline.questions.filter(item => !["INCUBATE", "CLOSED"].includes(item.status)).length,
+    candidate_gaps: workspace.gapRegistry.gaps.filter(item => /^GAP-RC-0[1-5]$/.test(item.id)).length
+  }
+}, null, 2));
 write("schemas/paper-page.schema.json", fs.readFileSync(path.join(root, "schemas", "paper-page.schema.json"), "utf8"));
 write("schemas/workflow-dashboard.schema.json", fs.readFileSync(path.join(root, "schemas", "workflow-dashboard.schema.json"), "utf8"));
 write("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${canonicalBase}sitemap.xml\n`);
-const urls = [...workspaceRoutes, "", "skills/", "agents/", "architecture/", "papers/", "field-map/", "exam/", "program/", ...skills.map(item => `skills/${item.slug}/`), ...agents.map(item => `agents/${item.slug}/`), ...papers.map(item => `papers/${item.slug}/`)];
-write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(url => `<url><loc>${canonicalBase}${url}</loc></url>`).join("")}</urlset>`);
+write("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${publicRoutes.map(url => `<url><loc>${canonicalBase}${url}</loc></url>`).join("")}</urlset>`);
 write(".nojekyll", "");
 
 console.log(`Built Senior Researcher OS site: ${skills.length} skills, ${agents.length} agents, ${papers.length} papers.`);
 console.log(`Output: ${out}`);
-
