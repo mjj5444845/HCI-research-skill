@@ -1,0 +1,40 @@
+{
+  "id": "X90",
+  "slug": "x90-joint-action-review",
+  "title": "Understanding Human-Robot Collaboration through Joint Action",
+  "authors": ["Chengwen Zhang", "Jianyang Wang", "Chang Liu", "Yukun Wang", "Yuan Xu", "Zhoutong Ye", "Jie Cai", "Chun Yu", "Yuanchun Shi"],
+  "year": 2026,
+  "venue": "arXiv systematic-review preprint",
+  "doi": "10.48550/arXiv.2610.37298",
+  "source_url": "https://arxiv.org/abs/2610.37298",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "PRISMA 2020 review以Representation–Prediction–Integration组织2021–2026年的83篇HRC实证论文，提供joint-action构念地图，并强化‘流畅执行不等于shared intention、grounding、commitment或relationship’的证据边界。",
+  "problem": "joint-action理论中的表征、预测和整合能力如何在当前human-robot collaboration实证研究中被操作化与组合。",
+  "method": "PRISMA 2020 systematic review，纳入2021–2026年的83篇HRC empirical papers；使用theory-driven framework analysis，将九个construct组织为Representation、Prediction和Integration三类能力，并分析分布与共现。",
+  "findings": [
+    "现有HRC研究在若干可观察协调构念上集中，但共同表征、预测与整合并未被均衡组合。",
+    "intent recognition不能自动等同shared intention，information provision不能自动等同grounding，顺利task execution也不能证明mutual understanding或joint agency。",
+    "该框架提供理论和测量审计工具，而不是companion relationship的直接实证。"
+  ],
+  "real_contribution": "把分散的HRC构念组织成可用于claim–evidence审计的joint-action地图，帮助防止从coordination performance跳到shared understanding或relationship。",
+  "biggest_weakness": "数据库与venue范围可能漏掉psychology、communication和CSCW工作；隐含construct编码依赖作者解释，joint-action lens偏向任务协作。",
+  "claim_boundary": "支持2021–2026所纳入HRC研究的理论映射与证据分布；不可称task fluency证明共同意图、承诺、关系形成或普遍适用于companion场景。",
+  "why_researcher_should_care": "RC01/RC05需要把intent recognition、coordination、grounding、commitment和relationship outcomes分开；它适合更新theory/current-state，不是新的companion anchor。",
+  "amsc": {
+    "mainline_fit": 7,
+    "buckets": ["B", "C", "F"],
+    "stages": ["表达与理解", "持续关系与使用实践"],
+    "mechanisms": ["joint action", "representation", "prediction", "integration"],
+    "gap_ids": ["GAP-RC-01", "GAP-RC-05"],
+    "master_list_decision": "Formal-window theory and evidence-boundary review"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "综述检索截至2026-08-10；本记录不把review gap直接转写为AMSC novelty claim。",
+    "HRC task collaboration与AI companion relationship是邻接而非同一研究对象。"
+  ],
+  "last_verified": "2026-11-02",
+  "updated_at": "2026-11-02",
+  "program_membership": {"status": "SUPPORTING", "program_version": "3.0", "reviewed_at": "2026-11-02", "reason": "joint-action构念与claim边界的系统综述先例"}
+}

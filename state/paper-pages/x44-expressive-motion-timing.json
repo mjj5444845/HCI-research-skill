@@ -52,8 +52,26 @@
   "updated_at": "2026-10-02",
   "program_membership": {
     "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "动作节奏如何改变人对机器人的判断"
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "运动路径和节奏的区分直接连接动作时间组织与人的解释。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "动作节奏如何改变人对机器人的判断"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "运动路径和节奏的区分直接连接动作时间组织与人的解释。"
   }
 }

@@ -1,0 +1,61 @@
+{
+  "id": "X52",
+  "slug": "x52-meet-my-sidekick",
+  "title": "“Meet My Sidekick!”: Effects of Separate Identities and Control of a Single Robot in HRI",
+  "authors": [
+    "Drake Moore",
+    "Arushi Aggarwal",
+    "Emily Taylor",
+    "Sarah Zhang",
+    "Taskin Padir",
+    "Xiang Zhi Tan"
+  ],
+  "year": 2026,
+  "venue": "arXiv author version; final proceedings not checked",
+  "source_url": "https://arxiv.org/abs/2602.07598",
+  "access_status": "abstract_only",
+  "priority": "Important",
+  "one_sentence": "一台机器人也可以承载多个身份",
+  "problem": "一台机器人也可以承载多个身份",
+  "method": "作者摘要比较单身份、双身份共享整机控制、双身份分控头与夹爪。",
+  "findings": [
+    "摘要报告用户能将身份关联到控制区域，并把失败归因于相应身份。"
+  ],
+  "real_contribution": "一台机器人也可以承载多个身份",
+  "biggest_weakness": "摘要级，不证明任何架构普遍更优；最终会议版本未独立核对。",
+  "claim_boundary": "摘要级，不证明任何架构普遍更优；最终会议版本未独立核对。",
+  "why_researcher_should_care": "提供新主线的直接先例与反证边界；组合已有设计不自动构成新颖性。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "A",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "一台机器人也可以承载多个身份"
+    ],
+    "gap_ids": [
+      "GAP-RC-04"
+    ],
+    "master_list_decision": "Added after independent focused audit"
+  },
+  "investigation_status": "abstract_evidence_investigation",
+  "evidence_notes": [
+    "2026-10-02仅核验原始摘要与元数据，未核验全文；未复现实验。",
+    "摘要级，不证明任何架构普遍更优；最终会议版本未独立核对。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/abs/2602.07598"
+    ]
+  },
+  "updated_at": "2026-10-02",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "一台机器人也可以承载多个身份"
+  }
+}

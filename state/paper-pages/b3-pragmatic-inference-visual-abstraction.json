@@ -81,10 +81,28 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "SUPPORTING",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+    "status": "CORE",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "绘图指称实验直接检验视觉细节和辨别情境如何影响表达与理解。"
   },
-  "scope_updated_at": "2026-09-18"
+  "scope_updated_at": "2026-09-18",
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "SUPPORTING",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "绘图指称实验直接检验视觉细节和辨别情境如何影响表达与理解。"
+  }
 }

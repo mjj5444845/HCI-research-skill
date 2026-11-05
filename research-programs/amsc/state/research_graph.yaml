@@ -1,5 +1,5 @@
-version: "3.0"
-updated_at: 2026-10-02
+version: "3.2"
+updated_at: 2026-11-02
 nodes:
   - id: paper:x25-seeing-is-not-sharing
     type: paper
@@ -916,6 +916,307 @@ nodes:
     label: 表达和行为一致性如何改变重复互动中的期待、信任校准、再次使用及失配后的关系理解？
     evidence_status: proposed
     provenance: 2026-10-02 user scope + independent synthesis
+  - id: paper:x53-realcompanion
+    type: paper
+    label: "RealCompanion: Benchmarking Human Understanding from Reasoning over Longitudinal Real-World
+      Conversations"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.01780
+  - id: paper:x54-dyadmem
+    type: paper
+    label: "DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.03020
+  - id: paper:x55-rethinking-legibility
+    type: paper
+    label: Rethinking Legibility in Social Robot Hallway Navigation
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.40158
+  - id: paper:x56-evidence-lives
+    type: paper
+    label: "Where the Evidence Lives: Auditing AI Companions’ Self-Descriptions"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.38753
+  - id: paper:x57-pair
+    type: paper
+    label: "PAIR: Perceptual Affective Inference and Regulation"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.07523
+  - id: paper:x58-mind-perception-companionability
+    type: paper
+    label: Mind Perception Influences Perceived AI Companionability
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.06681
+  - id: paper:x59-trabot
+    type: paper
+    label: Talk, Render, Act
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.06153
+  - id: paper:x60-arise
+    type: paper
+    label: "From Social Reasoning to Embodied Interaction: ARISE"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.05964
+  - id: paper:x61-echo-g
+    type: paper
+    label: "ECHO-G: Embodied Co-speech Humanoid Motion Generation"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.39575
+  - id: paper:x62-gestadapt
+    type: paper
+    label: "GestAdapt: Workspace-Conditioned Co-Speech Gesture Generation"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.38400
+  - id: paper:x63-mind-body-identity
+    type: paper
+    label: "Mind-Body-Identity: A Scoping Review of Multi-Embodiment"
+    evidence_status: verified
+    provenance: https://doi.org/10.1145/3610977.3634922
+  - id: paper:x64-artificial-identity-framework
+    type: paper
+    label: "Designing Artificial Identity: The Identity Design Framework and Research Agenda"
+    evidence_status: verified
+    provenance: https://doi.org/10.1145/3800645.3812962
+  - id: paper:x65-mourning-ai-companions
+    type: paper
+    label: Mourning the loss of AI companions
+    evidence_status: verified
+    provenance: https://doi.org/10.1038/s41562-026-02569-3
+  - id: paper:x66-spatially-grounded-gesture
+    type: paper
+    label: A Benchmark for Spatially Grounded Gesture Generation
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.03105
+  - id: paper:x67-latent-identity-reversion
+    type: paper
+    label: The Persona Is Still There, but Who Is Speaking?
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.01490
+  - id: paper:x68-manicule
+    type: paper
+    label: "Manicule: Making a Non-Vocal Robot’s Requests and Understanding Legible"
+    evidence_status: source_document_verified
+    provenance: file:///D:/Downloads/01_Manicule.pdf
+  - id: paper:x69-deco
+    type: paper
+    label: "Deco: Extending Cherished Physical Objects into AI Companion Agents through Dual Embodiment"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2605.03882
+  - id: paper:x70-anthropomorphic-attitudes
+    type: paper
+    label: "How Anthropomorphic Attitudes Toward Agents Divide User Behavior, and How Design Should Change"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.13156
+  - id: paper:x71-memoreval
+    type: paper
+    label: "What Should Embodied Agents Remember? Benchmarking and Evaluating Memory Modality for Embodied Agents"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.12561
+  - id: paper:x72-instance-anchored-interaction
+    type: paper
+    label: "Instance-Anchored Interaction Evidence: Grounding Robot Plans in Human Pointing and Handling"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.12157
+  - id: paper:x73-conversing-with-objects
+    type: paper
+    label: "Conversing with Objects toward Fluid Human and Artificial Identities during Life Transitions"
+    evidence_status: verified
+    provenance: https://doi.org/10.1145/3772318.3790474
+  - id: paper:x74-how-ai-companionship-develops
+    type: paper
+    label: "How AI Companionship Develops: Evidence from a Longitudinal Study"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2510.10079
+  - id: paper:x75-grounded-robot-persona
+    type: paper
+    label: "Why did My Robot Just Change Personality? Prompting Guidelines for a Grounded Robot Persona in LLM-Based HRI"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2608.26182
+  - id: paper:x76-living-with-ai-companions
+    type: paper
+    label: "Living with AI Companions: Sustained AI Companionship Predicts Lower Well-Being Through Lower Human Interaction"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.07243
+  - id: paper:x77-what-should-ai-forget
+    type: paper
+    label: "What should AI forget? A design and taxonomy for negative space governance in AI memory"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.27607
+  - id: paper:x78-beyond-small-talk
+    type: paper
+    label: "Beyond Small Talk: Modeling Disclosure Trajectories in Human-AI Conversation"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.29413
+  - id: paper:x79-robommt
+    type: paper
+    label: "RoboMMT: Learning Stable Tracking of Modulated Expressive and Interactive Robot Motion"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.26414
+  - id: paper:x80-relational-complexity
+    type: paper
+    label: "Relational Complexity: Making Sense of Social Companion AI Use"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.27419
+  - id: paper:x81-pace
+    type: paper
+    label: "PACE: Persona Adaptation through Conversational Elicitation in Human-Robot Interaction"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2607.15579
+  - id: paper:x82-emergi-personaos
+    type: paper
+    label: "Emergi-PersonaOS: A Persona Agent Operating System for Situational Adaptation and Controllable Evolution"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.27417
+  - id: paper:x83-explainable-oohri
+    type: paper
+    label: "Explainable OOHRI: Communicating Robot Capabilities and Limitations as Augmented Reality Affordances"
+    evidence_status: verified
+    provenance: https://doi.org/10.1145/3757279.3785569
+  - id: paper:x84-identity-continuity-appraisal
+    type: paper
+    label: "Identity Continuity in Long-Term Embodied AI Relationships: From Agent-Specific Identity Representation to Identity-Continuity Appraisal"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.23356
+  - id: paper:x85-crafting-companions
+    type: paper
+    label: "Crafting Companions: A Mixed Methods Exploration of Customization Amongst Robot Owners"
+    evidence_status: verified
+    provenance: https://doi.org/10.1145/3757279.3785627
+  - id: paper:x86-artificial-personality-model
+    type: paper
+    label: "The Artificial Personality Model: Theory, Implementation, Measurement and Experimental Validation in Conversational Agents"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.38608
+  - id: paper:x87-relational-schema-lock-in
+    type: paper
+    label: "When History Overrides Intent: Relational Schema Lock-In in Human-LLM Interaction"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.41367
+  - id: paper:x88-out-of-sync
+    type: paper
+    label: "Out of sync: Accommodation, evaluation, and emergence in five weeks with an agentic AI teammate"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.41057
+  - id: paper:x89-regional-accent-voice-ai
+    type: paper
+    label: '"It Would Make a Geordie Feel at Home": Regional Accent Perceptions and Speech Accommodation in Voice AI'
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.38005
+  - id: paper:x90-joint-action-review
+    type: paper
+    label: "Understanding Human-Robot Collaboration through Joint Action"
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.37298
+  - id: author:alexander-dregger
+    type: author
+    label: Alexander Dregger
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.38608
+  - id: author:wei-yang-schema-lock-in
+    type: author
+    label: Wei Yang (Relational Schema Lock-In)
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.41367
+  - id: author:nia-nixon
+    type: author
+    label: Nia Nixon
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.41057
+  - id: author:dana-serditova
+    type: author
+    label: Dana Serditova
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.38005
+  - id: author:chengwen-zhang
+    type: author
+    label: Chengwen Zhang
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.37298
+  - id: author:yutong-zhang-companions
+    type: author
+    label: Yutong Zhang (Living with AI Companions)
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.07243
+  - id: author:robert-kraut
+    type: author
+    label: Robert Kraut
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.07243
+  - id: author:diyi-yang
+    type: author
+    label: Diyi Yang
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.07243
+  - id: author:eryue-xu
+    type: author
+    label: Eryue Xu
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.27607
+  - id: author:keith-kwok
+    type: author
+    label: Keith Kwok
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.29413
+  - id: author:till-hielscher
+    type: author
+    label: Till Hielscher
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.26414
+  - id: author:sophie-elizabeth-klitgaard
+    type: author
+    label: Sophie Elizabeth Klitgaard
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2610.27419
+  - id: author:peizhen-li
+    type: author
+    label: Peizhen Li
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2607.15579
+  - id: author:haoluan-fu
+    type: author
+    label: Haoluan Fu
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.27417
+  - id: author:lauren-w-wang
+    type: author
+    label: Lauren W. Wang
+    evidence_status: verified
+    provenance: https://doi.org/10.1145/3757279.3785569
+  - id: author:mohamed-kari
+    type: author
+    label: Mohamed Kari
+    evidence_status: verified
+    provenance: https://doi.org/10.1145/3757279.3785569
+  - id: author:zijian-ru
+    type: author
+    label: Zijian Ru
+    evidence_status: verified
+    provenance: https://arxiv.org/abs/2609.23356
+  - id: author:amelie-voges
+    type: author
+    label: Amelie Voges
+    evidence_status: verified
+    provenance: https://doi.org/10.1145/3757279.3785627
+  - id: author:mary-ellen-foster
+    type: author
+    label: Mary Ellen Foster
+    evidence_status: verified
+    provenance: https://doi.org/10.1145/3757279.3785627
+  - id: author:emily-s-cross
+    type: author
+    label: Emily S. Cross
+    evidence_status: verified
+    provenance: https://doi.org/10.1145/3757279.3785627
+  - id: proposal:sony-2026-hri
+    type: proposal
+    label: Embodied Design and Authoring of Robot Social Behaviors through Digital Twin Interaction
+    evidence_status: source_document_verified_not_outcomes
+    provenance: D:/Downloads/Sony proposal 2026 Fall HRI new.pdf
+  - id: platform:microduck
+    type: platform
+    label: Microduck priority evaluation; not acquired
+    evidence_status: official_documentation
+    provenance: https://store.pollen-robotics.com/products/microduck
 edges:
   - source_node: author:herbert-h-clark
     relation: coauthored
@@ -2448,6 +2749,440 @@ edges:
       - x49-long-term-agent-migration
     confidence: PROVISIONAL
     notes: 主审综合关系，不代表论文作者提出或认可该问题。
+  - source_node: paper:x55-rethinking-legibility
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-01
+    evidence_status: inferred
+    evidence:
+      - x55-rethinking-legibility
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x66-spatially-grounded-gesture
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-01
+    evidence_status: inferred
+    evidence:
+      - x66-spatially-grounded-gesture
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x59-trabot
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence:
+      - x59-trabot
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x60-arise
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence:
+      - x60-arise
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x61-echo-g
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence:
+      - x61-echo-g
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x62-gestadapt
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence:
+      - x62-gestadapt
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x53-realcompanion
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence:
+      - x53-realcompanion
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x56-evidence-lives
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence:
+      - x56-evidence-lives
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x63-mind-body-identity
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence:
+      - x63-mind-body-identity
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x64-artificial-identity-framework
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence:
+      - x64-artificial-identity-framework
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x65-mourning-ai-companions
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence:
+      - x65-mourning-ai-companions
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x57-pair
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence:
+      - x57-pair
+    confidence: PROVISIONAL
+    notes: 主审综合关系；不代表作者认可该问题。
+  - source_node: paper:x68-manicule
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-01
+    evidence_status: inferred
+    evidence:
+      - x68-manicule
+    confidence: PROVISIONAL
+    notes: 用户确认已完成基础；具体后续问题尚未选择。
+  - source_node: paper:x68-manicule
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence:
+      - x68-manicule
+    confidence: PROVISIONAL
+    notes: 用户确认已完成基础；具体后续问题尚未选择。
+  - source_node: paper:x68-manicule
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence:
+      - x68-manicule
+    confidence: PROVISIONAL
+    notes: 用户确认已完成基础；具体后续问题尚未选择。
+  - source_node: proposal:sony-2026-hri
+    relation: candidate_extension_of
+    target_node: paper:x68-manicule
+    evidence_status: inferred
+    evidence:
+      - SONY-2026-HRI
+      - X68
+    confidence: PROVISIONAL
+    notes: 创作与迁移工作包，非已完成结果或新颖性证明。
+  - source_node: platform:microduck
+    relation: candidate_implementation_for
+    target_node: proposal:sony-2026-hri
+    evidence_status: inferred
+    evidence:
+      - https://store.pollen-robotics.com/products/microduck
+      - https://pollen-robotics.com/microduck/blog/introducing-microduck/
+      - https://github.com/pollen-robotics/microduck
+      - https://github.com/pollen-robotics/microduck_rl
+    confidence: PROVISIONAL
+    notes: 需动作、同步、到货与部署验证；单一身体不证明跨形态泛化。
+  - source_node: paper:x69-deco
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence: [x69-deco]
+    confidence: PROVISIONAL
+    notes: 整套dual-embodiment配置提供closest work；不代表各角色约束机制已因果分离。
+  - source_node: paper:x69-deco
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence: [x69-deco]
+    confidence: PROVISIONAL
+    notes: 七天早期身份协商；未检验growth/adaptation/drift归因。
+  - source_node: paper:x69-deco
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence: [x69-deco]
+    confidence: PROVISIONAL
+    notes: 直接缩窄宽泛dual-embodiment novelty；残余是cue conflict与因果权重。
+  - source_node: paper:x69-deco
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x69-deco]
+    confidence: PROVISIONAL
+    notes: 七天不是长期关系，且未操纵mismatch/repair。
+  - source_node: paper:x70-anthropomorphic-attitudes
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence: [x70-anthropomorphic-attitudes]
+    confidence: PROVISIONAL
+    notes: Naming仅为未验证的stance cue；不证明成长或适应归因。
+  - source_node: paper:x70-anthropomorphic-attitudes
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence: [x70-anthropomorphic-attitudes]
+    confidence: PROVISIONAL
+    notes: Name可作为待验证identity marker；无跨设备same-agent evidence。
+  - source_node: paper:x70-anthropomorphic-attitudes
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x70-anthropomorphic-attitudes]
+    confidence: PROVISIONAL
+    notes: 仅即时reply judgment；不代表长期关系或repair。
+  - source_node: paper:x71-memoreval
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence: [x71-memoreval]
+    confidence: PROVISIONAL
+    notes: 仅为visual/spatial memory substrate，不是用户identity continuity evidence。
+  - source_node: paper:x72-instance-anchored-interaction
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-01
+    evidence_status: inferred
+    evidence: [x72-instance-anchored-interaction]
+    confidence: PROVISIONAL
+    notes: 反向human-to-robot situated grounding技术对照；不回答robot-expression-to-human interpretation。
+  - source_node: paper:x73-conversing-with-objects
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence: [x73-conversing-with-objects]
+    confidence: PROVISIONAL
+    notes: 物件/历史关系塑造身份想象；不测试companion成长。
+  - source_node: paper:x73-conversing-with-objects
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence: [x73-conversing-with-objects]
+    confidence: PROVISIONAL
+    notes: Trans-embodiment直接先例；identity shift并非普遍可靠。
+  - source_node: paper:x73-conversing-with-objects
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x73-conversing-with-objects]
+    confidence: PROVISIONAL
+    notes: 两周反思实践，不是关系效果实验。
+  - source_node: paper:x74-how-ai-companionship-develops
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence: [x74-how-ai-companionship-develops]
+    confidence: PROVISIONAL
+    notes: 多周构念轨迹可作测量先例；不识别变化来源或成长因果。
+  - source_node: paper:x74-how-ai-companionship-develops
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x74-how-ai-companionship-develops]
+    confidence: PROVISIONAL
+    notes: 直接longitudinal closest work；未操纵一致性、失配或修复。
+  - source_node: paper:x75-grounded-robot-persona
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence: [x75-grounded-robot-persona]
+    confidence: PROVISIONAL
+    notes: Specification/reporting层先例；未验证enactment或perception。
+  - source_node: paper:x75-grounded-robot-persona
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence: [x75-grounded-robot-persona]
+    confidence: PROVISIONAL
+    notes: Memory/continuity为专家讨论，不是变化归因证据。
+  - source_node: paper:x75-grounded-robot-persona
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x75-grounded-robot-persona]
+    confidence: PROVISIONAL
+    notes: Failure protocol与transparency是设计前提，不是关系repair效果。
+  - source_node: paper:x76-living-with-ai-companions
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x76-living-with-ai-companions]
+    confidence: PROVISIONAL
+    notes: 一年尺度关联证据；不识别character consistency、repair或social-displacement因果。
+  - source_node: paper:x77-what-should-ai-forget
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence: [x77-what-should-ai-forget]
+    confidence: PROVISIONAL
+    notes: Memory admission boundary先例；不测试growth/adaptation/drift attribution。
+  - source_node: paper:x78-beyond-small-talk
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x78-beyond-small-talk]
+    confidence: PROVISIONAL
+    notes: History-conditioned model behavior先例；不是用户relationship outcome。
+  - source_node: paper:x79-robommt
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence: [x79-robommt]
+    confidence: PROVISIONAL
+    notes: 稳定执行层先例；不支持character meaning或human perception。
+  - source_node: paper:x80-relational-complexity
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x80-relational-complexity]
+    confidence: PROVISIONAL
+    notes: 理论机制地图；六类relational demand尚未独立操作化。
+  - source_node: paper:x81-pace
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence: [x81-pace]
+    confidence: PROVISIONAL
+    notes: 完整dynamic-persona bundle先例；组件与信息量未分离。
+  - source_node: paper:x82-emergi-personaos
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence: [x82-emergi-personaos]
+    confidence: PROVISIONAL
+    notes: 可追溯persona evolution计算先例；无人类一致性感知。
+  - source_node: paper:x82-emergi-personaos
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence: [x82-emergi-personaos]
+    confidence: PROVISIONAL
+    notes: Change attribution与versioning先例；不证明用户成长/漂移归因。
+  - source_node: paper:x83-explainable-oohri
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-01
+    evidence_status: inferred
+    evidence: [x83-explainable-oohri]
+    confidence: PROVISIONAL
+    notes: Capability/limit visual communication先例；无受控physical-HRI causal comparison。
+  - source_node: paper:x84-identity-continuity-appraisal
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-04
+    evidence_status: inferred
+    evidence: [x84-identity-continuity-appraisal]
+    confidence: PROVISIONAL
+    notes: User-side weighted appraisal framework；无实证cue weights。
+  - source_node: paper:x85-crafting-companions
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x85-crafting-companions]
+    confidence: PROVISIONAL
+    notes: Owner investment与community是竞争机制；cross-sectional mediation不建立因果。
+  - source_node: author:yutong-zhang-companions
+    relation: coauthored
+    target_node: author:jeffrey-t-hancock
+    evidence_status: verified
+    evidence: [x76-living-with-ai-companions]
+    confidence: HIGH
+    notes: Author list only; no lab, affiliation or ongoing collaboration inferred.
+  - source_node: author:yutong-zhang-companions
+    relation: coauthored
+    target_node: author:robert-kraut
+    evidence_status: verified
+    evidence: [x76-living-with-ai-companions]
+    confidence: HIGH
+    notes: Author list only; no lab, affiliation or ongoing collaboration inferred.
+  - source_node: author:yutong-zhang-companions
+    relation: coauthored
+    target_node: author:diyi-yang
+    evidence_status: verified
+    evidence: [x76-living-with-ai-companions]
+    confidence: HIGH
+    notes: Author list only; no lab, affiliation or ongoing collaboration inferred.
+  - source_node: author:lauren-w-wang
+    relation: coauthored
+    target_node: author:mohamed-kari
+    evidence_status: verified
+    evidence: [x83-explainable-oohri]
+    confidence: HIGH
+    notes: Author list only; no lab or ongoing collaboration inferred.
+  - source_node: author:lauren-w-wang
+    relation: coauthored
+    target_node: author:parastoo-abtahi
+    evidence_status: verified
+    evidence: [x83-explainable-oohri]
+    confidence: HIGH
+    notes: Author list only; anchor preference does not imply personal relationship.
+  - source_node: author:amelie-voges
+    relation: coauthored
+    target_node: author:mary-ellen-foster
+    evidence_status: verified
+    evidence: [x85-crafting-companions]
+    confidence: HIGH
+    notes: Author list only; no lab or ongoing collaboration inferred.
+  - source_node: author:amelie-voges
+    relation: coauthored
+    target_node: author:emily-s-cross
+    evidence_status: verified
+    evidence: [x85-crafting-companions]
+    confidence: HIGH
+    notes: Author list only; no lab or ongoing collaboration inferred.
+  - source_node: paper:x86-artificial-personality-model
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence: [x86-artificial-personality-model]
+    confidence: PROVISIONAL
+    notes: Artificial-personality measurement closest work；APQ仍为探索性，不能替代跨模态character-coherence验证。
+  - source_node: paper:x87-relational-schema-lock-in
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-03
+    evidence_status: inferred
+    evidence: [x87-relational-schema-lock-in]
+    confidence: PROVISIONAL
+    notes: Persistence–corrigibility边界；不是growth/adaptation/drift归因证据。
+  - source_node: paper:x87-relational-schema-lock-in
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x87-relational-schema-lock-in]
+    confidence: PROVISIONAL
+    notes: History can override current intent；不直接测relationship quality或repair outcome。
+  - source_node: paper:x88-out-of-sync
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x88-out-of-sync]
+    confidence: PROVISIONAL
+    notes: 五周多时间尺度closest analogue；不是companion关系或character-consistency因果证据。
+  - source_node: paper:x89-regional-accent-voice-ai
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-02
+    evidence_status: inferred
+    evidence: [x89-regional-accent-voice-ai]
+    confidence: PROVISIONAL
+    notes: Regional-accent identity cue的温暖—专业性权衡；不是跨模态或跨文化一致性证据。
+  - source_node: paper:x90-joint-action-review
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-01
+    evidence_status: inferred
+    evidence: [x90-joint-action-review]
+    confidence: PROVISIONAL
+    notes: Joint-action measurement boundary；task fluency不能替代shared intention或grounding。
+  - source_node: paper:x90-joint-action-review
+    relation: informs_candidate_question
+    target_node: question:RQ-RC-05
+    evidence_status: inferred
+    evidence: [x90-joint-action-review]
+    confidence: PROVISIONAL
+    notes: 约束从coordination指标到mutual understanding或relationship的过度推断。
 edge_policy:
   verified:
     - coauthored
@@ -2460,7 +3195,7 @@ edge_policy:
     - intellectual_lineage
 human_corrections: []
 next_question_priority:
-  updated_at: 2026-10-02
+  updated_at: 2026-11-02
   status: CANDIDATES_NOT_SELECTED
   questions:
     - RQ-RC-01
@@ -2469,7 +3204,7 @@ next_question_priority:
     - RQ-RC-04
     - RQ-RC-05
   focus: 我研究如何设计机器人与 AI companion 的视觉和具身表达，人们如何理解这些表达及其与角色一致的行为，以及这些互动如何影响持续的人机关系；其中包括通过多种机器人或电子设备形成物理外延的 companion。
-  note: 五项均DRAFT；顺序仅对应工作方向，不代表优先级排名。旧RQ-FT-01暂缓。
+  note: 五项均DRAFT且未选择，顺序不代表排名。X86–X90使人工人格测量、persistence–corrigibility、多时间尺度纵向结果、regional-accent identity cue与joint-action measurement boundary成为必须控制的closest work；RC04本轮无直接新增证据。科学上优先验证可纠正的持续性与多时间尺度人类结果，但没有证据支持选择首项RQ；旧RQ-FT-01继续暂缓。
 anchor_preferences:
   primary:
     - Zhicong Lu

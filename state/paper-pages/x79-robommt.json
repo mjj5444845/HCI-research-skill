@@ -1,0 +1,76 @@
+{
+  "id": "X79",
+  "slug": "x79-robommt",
+  "title": "RoboMMT: Learning Stable Tracking of Modulated Expressive and Interactive Robot Motion",
+  "authors": [
+    "Till Hielscher",
+    "Kai O. Arras"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.26414",
+  "source_url": "https://arxiv.org/abs/2610.26414",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "RoboMMT把参数化表达动作、物理控制与交互目标调制联结起来，并在多机器人及Go2实体部署中验证稳定执行；作者明确不主张表达生成质量或人类感知。",
+  "problem": "动态不稳定机器人如何在线调制表达动作并响应空间交互目标，同时维持平衡和reference tracking。",
+  "method": "在Go2、OP3与G1上训练reference-conditioned tracking policy及轻量goal-modulation policies；仿真比较domain coverage和ablation，并在Go2上做zero-shot sim-to-real扰动序列。",
+  "findings": [
+    "覆盖完整modulation domain的tracker在所测平台保持高稳定与低tracking error，无域覆盖ablation显著更易失衡或失真。",
+    "facing/pointing goal adaptation可在tracker闭环中执行，Go2完成多次长序列实体扰动部署。"
+  ],
+  "real_contribution": "直接解决可调表达动作的物理执行feasibility，为RC02和authoring/transfer artifact提供控制层先例。",
+  "biggest_weakness": "无用户研究、无meaning preservation、character coherence、identity或relationship outcome。",
+  "claim_boundary": "支持所测控制架构的稳定追踪和交互调制；不支持动作被理解为预期表达或改善naturalness、likability、intent recognition。",
+  "why_researcher_should_care": "宽泛的‘表达变化无法稳定执行’已不成立；AMSC增量应在固定任务性能下测试意义、角色约束和用户判断。",
+  "amsc": {
+    "mainline_fit": 8,
+    "buckets": [
+      "A",
+      "C"
+    ],
+    "stages": [
+      "视觉/具身表达",
+      "角色一致性"
+    ],
+    "mechanisms": [
+      "expressive motion modulation",
+      "physics-based tracking",
+      "interactive facing and pointing"
+    ],
+    "gap_ids": [
+      "GAP-RC-02"
+    ],
+    "master_list_decision": "Formal-window technical supporting paper"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "作者明确声明不对expressivity generation或perception作claim，后者需要user study。",
+    "跨platform execution不等于跨platform expressive meaning保持。"
+  ],
+  "updated_at": "2026-10-26",
+  "program_membership": {
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "可调表达动作的稳定控制影响实现可行性，不提供意义理解证据。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "SUPPORTING",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-26",
+        "reason": "可执行参数化具身表达的直接技术先例"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "可调表达动作的稳定控制影响实现可行性，不提供意义理解证据。"
+  }
+}

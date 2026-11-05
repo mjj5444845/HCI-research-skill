@@ -1,0 +1,40 @@
+{
+  "id": "X89",
+  "slug": "x89-regional-accent-voice-ai",
+  "title": "\"It Would Make a Geordie Feel at Home\": Regional Accent Perceptions and Speech Accommodation in Voice AI",
+  "authors": ["Dana Serditova", "Kevin Tang", "Jochen Steffens"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.38005",
+  "source_url": "https://arxiv.org/abs/2610.38005",
+  "access_status": "full_text",
+  "priority": "Worth Reading",
+  "one_sentence": "Newcastle English speakers把Geordie voice与熟悉、温暖、personality和地方归属联系，也担心其专业性与权威；同一文化化表达线索可同时触发affiliation与status stigma，但访谈和自报不能建立口音的因果效应或长期关系。",
+  "problem": "区域口音如何作为voice-AI的社会与地方身份线索被解释，以及用户如何因预期的识别能力调整自己的语言。",
+  "method": "58名Newcastle English speakers与模拟voice assistant互动，随机听Geordie或Standard Southern British English；随后完成semi-structured interviews，讨论实验体验、既往voice-technology使用、口音态度、语言实践与place orientation；accommodation分析N=57。",
+  "findings": [
+    "Geordie voice较常被描述为familiar、warm、personal和locally belonging，SSBE较常被描述为neutral、clear和professional。",
+    "部分参与者同时把强化的地方特征听成stereotypical、exaggerated或performed；地方匹配并非一致获益。",
+    "参与者自述在识别失败后会标准化、放慢或更清楚地说话，但研究未测本实验中的实际speech production变化。"
+  ],
+  "real_contribution": "提供一个具体sociolinguistic-cultural机制：文化索引表达可以同时承载persona、belonging、authenticity、caricature与authority trade-off。",
+  "biggest_weakness": "两种accent可能连带prosody/voice quality变化；参与者预先知道研究Geordie VA，authority问题带方向性；第一作者操控WoZ并独立编码，未报告positionality或独立分析挑战。",
+  "claim_boundary": "支持这批Newcastle speakers的社会意义联想与self-reported accommodation；不可称accent导致warmth/authority变化、所有Geordies同质偏好、形成长期信任，或直接迁移到视觉/具身机器人。",
+  "why_researcher_should_care": "文化设计不应简化为nationality matching；任何地方化视觉、动作或声音cue都可能同时产生recognition、affiliation、caricature与status trade-off，应测within-group variation。",
+  "amsc": {
+    "mainline_fit": 6,
+    "buckets": ["A", "F"],
+    "stages": ["表达与理解", "角色与行为一致性"],
+    "mechanisms": ["regional accent", "place identity", "perceived intelligibility pressure", "status stigma"],
+    "gap_ids": ["GAP-RC-02"],
+    "master_list_decision": "Formal-window adjacent auditory/cultural mechanism evidence"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "构念是regional/social variety与place identity，不是英国文化整体；SSBE也不是无文化的中性基线。",
+    "Zenodo prompts/scripts本轮未能打开，不声称审计了附加材料。"
+  ],
+  "last_verified": "2026-11-02",
+  "updated_at": "2026-11-02",
+  "program_membership": {"status": "SUPPORTING", "program_version": "3.0", "reviewed_at": "2026-11-02", "reason": "文化索引表达如何塑造persona与status判断的邻接机制证据"}
+}

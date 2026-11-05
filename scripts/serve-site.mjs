@@ -4,9 +4,9 @@ import path from "node:path";
 
 const root = path.resolve("site");
 const port = Number(process.argv[2] || process.env.PORT || 4173);
-const types = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".svg": "image/svg+xml", ".json": "application/json; charset=utf-8" };
+const types = { ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".svg": "image/svg+xml", ".json": "application/json; charset=utf-8", ".png": "image/png", ".jpg": "image/jpeg", ".webp": "image/webp" };
 
-const server = http.createServer((request, response) => {
+const server = http.createServer(async (request, response) => {
   const pathname = decodeURIComponent(new URL(request.url, `http://${request.headers.host}`).pathname);
   let target = path.join(root, pathname);
   if (pathname.endsWith("/")) target = path.join(target, "index.html");

@@ -1,0 +1,106 @@
+{
+  "id": "X68",
+  "slug": "x68-manicule",
+  "title": "Manicule: Making a Non-Vocal Robot’s Requests and Understanding Legible",
+  "authors": [
+    "Anonymous Author(s); user confirms own completed work"
+  ],
+  "year": "Unpublished manuscript; CHI 2027 submission formatting",
+  "venue": "Unpublished manuscript; acceptance not established",
+  "doi": null,
+  "source_url": "file:///D:/Downloads/01_Manicule.pdf",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "已完成VR研究把机器人表达拆为措辞、语气、位置和持续性，并揭示回应要求、理解证据与社会压力。",
+  "problem": "可识别的状态表达仍可能使人不确定是否要回应，以及机器人是否理解了具体内容。",
+  "method": "12人VR送餐体验；固定Body→LED→Screen→Manicule顺序；半结构访谈与reflexive thematic analysis。参与者熟悉覆盖文字/动态字幕视频。",
+  "findings": [
+    "四个表达维度帮助参与者定位信息损失。",
+    "回应要求主要通过措辞判断；理解证据区分receipt、reference与action，多数最终依赖行动。",
+    "社会表达对不同参与者可能意味着愉悦或等待产生的回应压力。"
+  ],
+  "real_contribution": "可运行Manicule原型、四维表达设计空间、有边界的理解证据分析与社会成本质性发现。",
+  "biggest_weakness": "固定顺序与多因素条件混杂，不支持配置性能排名或各元素的独立因果效应。",
+  "claim_boundary": "VR、特定任务和样本；不证明AR原型效果、跨形态意义保持、长期关系或普遍模态优越。",
+  "why_researcher_should_care": "用户确认的已完成主线基础；发表状态不影响其研究积累地位。后续推进表达创作、迁移和角色关系。",
+  "amsc": {
+    "mainline_fit": 10,
+    "buckets": [
+      "A",
+      "B",
+      "C",
+      "G"
+    ],
+    "stages": [
+      "表达与理解"
+    ],
+    "mechanisms": [
+      "response requirements",
+      "evidence of understanding",
+      "social obligation"
+    ],
+    "gap_ids": [
+      "GAP-RC-01",
+      "GAP-RC-02",
+      "GAP-RC-05"
+    ],
+    "master_list_decision": "User-confirmed completed foundation; publication tracked separately"
+  },
+  "investigation_status": "source_document_audit",
+  "evidence_notes": [
+    "2026-10-07用户确认已完成；仅核对上传原稿，未重新分析原始访谈数据。",
+    "pp.5–11实现与方法，pp.14–18发现/讨论，p.19局限。",
+    "Sony proposal的AR preliminary声明不是该VR研究结果。",
+    "匿名作者信息保留；不从团队proposal推断作者排序。",
+    "2026-11-04重读用户提供的23页PDF，核对全部正文和附录，并视觉检查关键系统图、表与流程。详见reports/mainline/2026-11-04-manicule-system-review.json；未取得代码、原始访谈或逐事件日志。",
+    "pp.8–10已有有限意图校验、任务控制及版本化动作回调，参与者语音驱动任务；原稿不描述WoZ，也未实现运行时生图或个性学习。",
+    "pp.7–8屏幕probe滚动、恢复表情及故障黑屏，与Manicule完整文字、保留问题和区分故障同时变化；探索性解释可保留，不能据此支持媒介优越性。",
+    "pp.10–11数据明确为访谈录音与转录；理解标准和回应速度相关叙述须与实测行为区别。pp.13–16音符与等待安排的解释差异、图形错误标记和P11压力案例不支持普遍用户类型或装饰无用的结论。",
+    "2026-11-04用户确认稿件被拒并提供决定／评审摘要；匿名CHI2027格式与占位DOI仍不作为录用证据。计划Quest3 AR及实验室实体机器人重构，机器人未定。"
+  ],
+  "updated_at": "2026-11-04",
+  "remember_when": [
+    "设计需要同时保留明确任务安排与开放的图形／角色表达时，区分两者的持续和替换规则。",
+    "用户确认、指称复述与实际行动可能是不同的理解证据，不能默认普遍层级。",
+    "探针缺失与提出系统的补全完全对应时，应核查比较目的及结论，而非仅靠声明不排名。"
+  ],
+  "system_redesign_audit": "reports/mainline/2026-11-04-manicule-system-review.json",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "用户已完成的VR原型和质性研究，是新版Manicule直接基础；被拒与完成状态分开。"
+  },
+  "publication_status": "REJECTED_USER_REPORTED",
+  "publication_history": [
+    {
+      "date": "2026-10-07",
+      "status": "UNCONFIRMED_ACCEPTANCE",
+      "evidence": "User-confirmed completed manuscript; acceptance not established."
+    },
+    {
+      "date": "2026-11-04",
+      "status": "REJECTED_USER_REPORTED",
+      "evidence": "User statement and supplied decision/review excerpt; no venue or rejection round inferred."
+    }
+  ],
+  "research_status": "COMPLETED_USER_CONFIRMED",
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-07",
+        "reason": "已完成的机器人视觉表达、回应要求及理解证据研究"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "FOUNDATION",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "用户已完成的VR原型和质性研究，是新版Manicule直接基础；被拒与完成状态分开。"
+  }
+}

@@ -53,9 +53,27 @@
   },
   "updated_at": "2026-10-02",
   "program_membership": {
-    "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "一台机器人也可以承载多个身份"
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "单机器人多身份与控制架构是当前未选择分支。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "一台机器人也可以承载多个身份"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "单机器人多身份与控制架构是当前未选择分支。"
   }
 }

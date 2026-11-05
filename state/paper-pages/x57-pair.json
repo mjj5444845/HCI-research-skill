@@ -1,0 +1,85 @@
+{
+  "id": "X57",
+  "slug": "x57-pair",
+  "title": "PAIR: Perceptual Affective Inference and Regulation in a Real-Time Multimodal Conversational Agent",
+  "authors": [
+    "Kexin Quan",
+    "Zijian Ding",
+    "Jiaye Yong",
+    "Qinshi Zhang",
+    "Dong Wang",
+    "Jessie Chin"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.07523",
+  "source_url": "https://arxiv.org/html/2610.07523v1",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "PAIR 把 affective inference、speech/color/avatar expression、rolling memory 与14天第一人称评估连成一条链，但仍只能说明 early adaptation。",
+  "problem": "情感陪伴系统常把情绪识别、调节、表达和跨会话连续性分开评估，且很少以用户自身状态为参照。",
+  "method": "19名美国成人完成14天部署与1,093个会话；每个事件以未锚定SAM自评配对系统的前后估计，结合日志、反馈、混合模型与离场访谈。",
+  "findings": [
+    "初始valence MAE 1.196、r=.681，dominance MAE 1.299，而arousal相关较弱（r=.236）。",
+    "两周内helpfulness上升、输入变短；访谈把personalization/companionship联系到相关回忆、情境更新和熟悉对话。"
+  ],
+  "real_contribution": "提供 per-event first-person affect reference，并连接瞬时理解、协调多模态表达与跨会话连续性。",
+  "biggest_weakness": "single-group diary study无法隔离自然情绪变化、书写本身、回归均值或具体系统组件；无memory/text-only ablation，样本小、年轻且AI熟悉。",
+  "claim_boundary": "支持两周早期适应与用户报告的关联，不证明 memory/表达导致更好关系、临床效益或长期依恋。",
+  "why_researcher_should_care": "是本周少数跨越 expression—interpretation—adaptation 的人类部署，也清楚标出 RC-05 尚缺的因果对照。",
+  "amsc": {
+    "mainline_fit": 10,
+    "buckets": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "appraisal inference",
+      "multimodal affective delivery",
+      "rolling memory"
+    ],
+    "gap_ids": [
+      "GAP-RC-01",
+      "GAP-RC-03",
+      "GAP-RC-05"
+    ],
+    "master_list_decision": "Added by weekly radar after full-text audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-07全文审查；作者明确称two-week early adaptation。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/html/2610.07523v1"
+    ]
+  },
+  "updated_at": "2026-10-07",
+  "program_membership": {
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "以用户自身状态为参照的持续部署，可为表达适应与评价提供方法。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-07",
+        "reason": "具身多模态表达、第一人称情感校验与短期连续性"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "以用户自身状态为参照的持续部署，可为表达适应与评价提供方法。"
+  }
+}

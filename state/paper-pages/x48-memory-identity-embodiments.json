@@ -54,9 +54,27 @@
   },
   "updated_at": "2026-10-02",
   "program_membership": {
-    "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "记忆与跨载体身份感可以分离"
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "跨载体记忆身份判断不是当前选定研究问题。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "记忆与跨载体身份感可以分离"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "跨载体记忆身份判断不是当前选定研究问题。"
   }
 }

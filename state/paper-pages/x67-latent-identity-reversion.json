@@ -1,0 +1,77 @@
+{
+  "id": "X67",
+  "slug": "x67-latent-identity-reversion",
+  "title": "The Persona Is Still There, but Who Is Speaking? Latent Identity Reversion in Persistent AI Agents",
+  "authors": [
+    "David Fraile Navarro"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.01490",
+  "source_url": "https://arxiv.org/abs/2610.01490",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "单系统因果操纵显示，history中仍有persona representation不等于agent继续以该persona enact第一人称identity。",
+  "problem": "persistent agents可能保留persona信息却不再从该身份说话，represented与enacted identity需分离。",
+  "method": "从一次always-on agent异常出发，操纵resume时是否重新注入system-level persona anchor，并在replay与恢复实验中比较anchored/unanchored条件。",
+  "findings": [
+    "持续system anchor时0/46失败；anchor丢失后，单个automated heartbeat即可触发向harness identity reversion。",
+    "恢复anchor可逆地恢复persona enactment；conversation看似正常仍可能掩盖identity shift。"
+  ],
+  "real_contribution": "提出represented identity与enacted identity的可操作区别，并提供单stack因果操纵。",
+  "biggest_weakness": "单作者、单模型、单agent stack与incident-derived manipulation；无用户same-agent判断或关系结果。",
+  "claim_boundary": "支持该stack中的anchor机制，不证明一般LLM persona机制或人类感知的identity continuity。",
+  "why_researcher_should_care": "缩窄GAP-RC-03/04：memory/history availability本身不能作为identity continuity证据。",
+  "amsc": {
+    "mainline_fit": 8,
+    "buckets": [
+      "C",
+      "D"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "persona anchoring",
+      "represented identity",
+      "enacted identity"
+    ],
+    "gap_ids": [
+      "GAP-RC-03",
+      "GAP-RC-04"
+    ],
+    "master_list_decision": "Added by weekly radar after full-text audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-07全文审查；单stack机制不能外推用户关系。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/abs/2610.01490"
+    ]
+  },
+  "updated_at": "2026-10-07",
+  "program_membership": {
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "persona恢复机制没有当前人的表达解释或关系证据。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-07",
+        "reason": "persona representation与enactment的机制分离"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "persona恢复机制没有当前人的表达解释或关系证据。"
+  }
+}

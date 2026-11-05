@@ -50,9 +50,27 @@
   },
   "updated_at": "2026-10-02",
   "program_membership": {
-    "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "关系型代理与三十天的工作联盟"
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "关系行为的持续干预提供远期关系证据路径，不外推实体表达效果。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "关系型代理与三十天的工作联盟"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "关系行为的持续干预提供远期关系证据路径，不外推实体表达效果。"
   }
 }

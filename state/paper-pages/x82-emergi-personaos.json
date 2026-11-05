@@ -1,0 +1,81 @@
+{
+  "id": "X82",
+  "slug": "x82-emergi-personaos",
+  "title": "Emergi-PersonaOS: A Persona Agent Operating System for Situational Adaptation and Controllable Evolution",
+  "authors": [
+    "Haoluan Fu",
+    "Keni Chen",
+    "Xinyu Jia",
+    "Jinpeng Wang",
+    "Yuyu Yin",
+    "Yubiao Hu"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2609.27417",
+  "source_url": "https://arxiv.org/abs/2609.27417",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "Emergi-PersonaOS实现enduring belief与current state分离、证据门控、版本记录和可拒绝更新，但正式评价依赖LLM、单一虚构角色且无人类identity或relationship证据。",
+  "problem": "Persona agents如何在保持身份连续性的同时进行情境适应，并以可审计、可回退方式随经验演变。",
+  "method": "三层persona representation与模块化执行/反思/evolution系统；以Young Sheldon全部141集作材料，在48个预定evaluation nodes和revision-specific tests上比较ablation与baselines。",
+  "findings": [
+    "系统把dispositional traits、characteristic adaptations与narrative identity区分，并记录change attribution、evidence、behavioral test及version commit。",
+    "一般response ratings中full system与static persona/no-cross-episode-memory差异很小；全部正式评分由模型产生，无human calibration。"
+  ],
+  "real_contribution": "给RC02/RC03提供traceable、versioned、rejectable persona evolution与enduring/current separation的具体计算先例。",
+  "biggest_weakness": "单一fictional character、同类模型参与生成与评价、无人类评价；真实用户数据、伦理与event-level revision均未验证。",
+  "claim_boundary": "支持该架构可按设计运行及计算评价；不支持人们感知同一identity、把变化体验为growth而非drift或形成长期关系。",
+  "why_researcher_should_care": "宽泛的‘可追溯persona evolution尚无实现’不再成立；真正gap是人类如何解释来源、幅度、解释与跨身体表现。",
+  "amsc": {
+    "mainline_fit": 8,
+    "buckets": [
+      "C",
+      "D"
+    ],
+    "stages": [
+      "角色一致性",
+      "身份与适应"
+    ],
+    "mechanisms": [
+      "controllable persona evolution",
+      "evidence-gated update",
+      "versioned identity"
+    ],
+    "gap_ids": [
+      "GAP-RC-02",
+      "GAP-RC-03"
+    ],
+    "master_list_decision": "Historical recovery after full-text audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "48 nodes覆盖六个评估season；formal ratings全部来自固定设置的模型evaluators。",
+    "作者明确人类评价尚未进入正式procedure。"
+  ],
+  "updated_at": "2026-10-26",
+  "program_membership": {
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "persona架构及剧本计算评价不直接证明人的表达感知或关系。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-26",
+        "reason": "RC02/RC03的直接计算prior art"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "persona架构及剧本计算评价不直接证明人的表达感知或关系。"
+  }
+}

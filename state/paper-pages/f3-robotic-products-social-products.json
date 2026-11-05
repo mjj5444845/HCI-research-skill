@@ -117,9 +117,9 @@
   "updated_at": "2026-08-27",
   "program_membership": {
     "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "家庭机器人长期实践直接支持社会归因、持续使用及关系意义的情境化理解。"
   },
   "historical_gap_links": {
     "program_version": "1.0",
@@ -134,5 +134,23 @@
     "recorded_before": "2026-10-02",
     "gap_impact": "为 GAP-01 提供 situated meaning/appropriation 的中等强度前例，为 GAP-03 提供 maintenance 与 household adaptation 的背景证据，并强化 GAP-06 必须同时评估 instrumental function 与 social meaning；它没有识别 interaction-history-dependent convention，也不关闭这些缺口。",
     "next_project_priority": "在 field deployment 中加入 per-partner meaning trajectories、negative cases、history interruption 与 matched non-social/autonomy controls。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "家庭机器人长期实践直接支持社会归因、持续使用及关系意义的情境化理解。"
   }
 }

@@ -59,10 +59,28 @@
   "provenance": "amsc-radar-2026-09-18",
   "updated_at": "2026-09-18",
   "program_membership": {
-    "status": "BACKGROUND",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    "status": "CORE",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "导师的先行研究：花字成为社交VR人际表达资源，是Manicule直接设计基础；不推定用户作者身份。"
   },
-  "doi": "10.1145/3757427"
+  "doi": "10.1145/3757427",
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "BACKGROUND",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "FOUNDATION",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "导师的先行研究：花字成为社交VR人际表达资源，是Manicule直接设计基础；不推定用户作者身份。"
+  }
 }

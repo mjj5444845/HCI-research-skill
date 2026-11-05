@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-05",
+  "status": "LOCAL_VERIFIED_READY_TO_PUBLISH",
+  "authorization": "用户确认主路径、工具二级入口、从当前网站移除旧内容并归档，以及系统流程为草案、配送仅为示例、贡献为候选。",
+  "archive": "archives/2026-11-05-mainline-rebuild",
+  "counts": {
+    "FOUNDATION": 2,
+    "CORE": 24,
+    "SUPPORT": 40,
+    "ARCHIVE": 48
+  },
+  "publication_source": "research-programs/amsc/state/site_publication.json",
+  "plan_source": "research-programs/amsc/state/current_plan.json",
+  "considered": {
+    "master": "All 114 records individually reviewed; facts preserved.",
+    "field": "No new scientific claim promoted; existing claim authority retained.",
+    "gaps": "Old gap objects preserved; no longer automatic live priorities.",
+    "graph": "Original source graph retained; live view filtered to published evidence.",
+    "questions": "No formal first RQ selected; old records retained but removed from current projection.",
+    "exam": "Original mastery and source records preserved; live reading subset follows current relevance."
+  },
+  "verification": {
+    "research_tests": 19,
+    "site": "85 routes; all links checked",
+    "install": "passed",
+    "browser": "Chrome desktop and 390px viewport; flow switching, two-foundation filtering and archived-paper absence checked",
+    "published_papers": 66,
+    "archived_papers": 48,
+    "source_facts_preserved": true
+  }
+}

@@ -78,10 +78,10 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "任务策略适应的方法有助区分适应意愿、策略改变与表达个性化。"
   },
   "historical_gap_links": {
     "program_version": "1.0",
@@ -92,5 +92,23 @@
       "GAP-07"
     ],
     "source": "archives/2026-09-18-mainline-v1"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "任务策略适应的方法有助区分适应意愿、策略改变与表达个性化。"
   }
 }

@@ -1,6 +1,6 @@
 # Senior Researcher OS — Starter Kit v0.1
 
-这是一个跨 HCI / CSCW / AI / CV / NLP / 认知科学的科研协作工作区。当前主线为情境化多模态社会意义理解与沟通；机器人延后，计算模型、方法、数据集和评估均可独立贡献。
+这是一个跨 HCI / CSCW / AI / CV / NLP / 认知科学的科研协作工作区。当前主线为机器人视觉与具身表达、人的理解、面向个人及情境的适应，以及持续互动中的期待与关系。现有基础仅为导师的 SpeechCap 与用户的 Manicule；新版 Manicule 计划以 Quest 3 AR 和待联系的实验室机器人重构。
 
 目标不是“让 AI 帮忙总结论文”，而是把 AI 组织成一个 **Senior Faculty Collaborator**：
 

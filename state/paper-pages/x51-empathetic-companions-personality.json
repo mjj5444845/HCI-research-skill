@@ -51,8 +51,26 @@
   "updated_at": "2026-10-02",
   "program_membership": {
     "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "机器人个性如何联系情绪、动作与信任"
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "实体机器人的情绪凝视语言动作配置直接连接表达与用户判断。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "机器人个性如何联系情绪、动作与信任"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "实体机器人的情绪凝视语言动作配置直接连接表达与用户判断。"
   }
 }

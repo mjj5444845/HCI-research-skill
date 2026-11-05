@@ -1,0 +1,40 @@
+{
+  "id": "X88",
+  "slug": "x88-out-of-sync",
+  "title": "Out of sync: Accommodation, evaluation, and emergence in five weeks with an agentic AI teammate",
+  "authors": ["Nia Nixon", "Jaeyoon Choi", "Pedro Martins de Bastos", "Mohammad Amin Samadi"],
+  "year": 2026,
+  "venue": "arXiv preprint; submitted to British Journal of Educational Technology",
+  "doi": "10.48550/arXiv.2610.41057",
+  "source_url": "https://arxiv.org/abs/2610.41057",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "17个团队、48名学生与同一agent连续五周互动，语言accommodation、helpfulness校准和协作/positive-affect轨迹不同步；它支持多时间尺度测量设计，但小cluster数、中途配置变更和无episodic memory使关系机制仍属探索性。",
+  "problem": "持续参与的agentic teammate中，用户语言、即时评价与团队过程是否沿同一时间尺度变化。",
+  "method": "17个稳定学生团队、N=48，team-level随机分为Cognitive或Supportive角色，与同名LLM teammate完成五周课程任务；结合chat LIWC、post-session surveys和spoken reflections，使用mixed models及17个随机化单位的10,000次permutation inference。",
+  "findings": [
+    "Supportive条件从首次session即出现更多social language，但team-level随机化检验仅为方向性证据。",
+    "Supportive agent持续被评为较不helpful，评价随当次行为和verbosity校准，而非固定在先验AI态度。",
+    "collaboration process与positive-affect出现较慢crossover，但shared adversity、任务熟悉和回归均值仍是竞争解释。"
+  ],
+  "real_contribution": "把即时accommodation、session-level行为评价和较慢团队过程放进同一repeated-interaction design，说明单次liking/helpfulness不能代表长期轨迹。",
+  "biggest_weakness": "有效随机化单位只有17个团队；session 1后配置改变，session 3/6排除；collaboration composite alpha=.64，同一数据用于发现与检验多项pattern。",
+  "claim_boundary": "可称小型单课程五周部署中不同指标呈不同探索性时间轨迹；不可称supportive agent导致协作改善、证明relationship emergence、episodic memory或长期companion关系。",
+  "why_researcher_should_care": "RC05应至少分开即时accommodation、session calibration与较慢关系/角色解释，并冻结版本、增加cluster和加入role-change或removal阶段。",
+  "amsc": {
+    "mainline_fit": 8,
+    "buckets": ["E", "F"],
+    "stages": ["角色与行为一致性", "持续关系与使用实践"],
+    "mechanisms": ["linguistic accommodation", "evaluation calibration", "multi-timescale emergence"],
+    "gap_ids": ["GAP-RC-05"],
+    "master_list_decision": "Formal-window longitudinal method closest analogue"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "该agent的persistence是稳定角色与重复参与，不是episodic memory。",
+    "accommodation的team-level随机化结果p=.095，不能写成确认性显著效应。"
+  ],
+  "last_verified": "2026-11-02",
+  "updated_at": "2026-11-02",
+  "program_membership": {"status": "CORE", "program_version": "3.0", "reviewed_at": "2026-11-02", "reason": "重复互动中不同结果时间尺度的直接方法先例"}
+}

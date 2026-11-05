@@ -1,0 +1,75 @@
+{
+  "id": "X84",
+  "slug": "x84-identity-continuity-appraisal",
+  "title": "Identity Continuity in Long-Term Embodied AI Relationships: From Agent-Specific Identity Representation to Identity-Continuity Appraisal",
+  "authors": [
+    "Zijian Ru"
+  ],
+  "year": 2026,
+  "venue": "arXiv conceptual preprint",
+  "doi": "10.48550/arXiv.2609.23356",
+  "source_url": "https://arxiv.org/abs/2609.23356",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "该框架把具身AI身份连续性组织为embodied-perceptual、psychological-behavioral与relational-autobiographical三域的非等权appraisal，但尚无用户数据验证权重或连续谱判断。",
+  "problem": "当长期具身AI经历学习、更新、压缩、维修或跨身体迁移后，用户如何判断它是否仍是同一特定agent。",
+  "method": "理论整合与user-side framework；区分三类identity-content domains，并提出diagnostic weighting、continuity/discontinuity evidence integration及provenance和user participation的contextual作用。",
+  "findings": [
+    "身份线索被提出为非等权证据，shared history、relational role和contingent responsiveness可能具有更高diagnosticity。",
+    "identity continuity被建模为从强连续、模糊/部分连续到明确不连续的连续谱，而非二元判断。"
+  ],
+  "real_contribution": "为RC04提供最直接的user-side weighted-appraisal框架，取消‘提出identity cue domains本身’的宽概念novelty。",
+  "biggest_weakness": "单作者概念稿、无新用户数据；权重、cue conflict、provenance和user participation尚未形成validated cognitive model。",
+  "claim_boundary": "支持明确的理论先例；不支持任何线索普遍更重要、跨文化泛化或identity continuity必然带来relationship continuity。",
+  "why_researcher_should_care": "RC04的贡献应是实证估计cue weights、conflict/compensation、capability asymmetry、provenance与responsibility，而不是再列identity dimensions。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "D",
+      "F"
+    ],
+    "stages": [
+      "身份与适应",
+      "持续关系与使用实践"
+    ],
+    "mechanisms": [
+      "identity-continuity appraisal",
+      "weighted cue integration",
+      "causal-historical provenance"
+    ],
+    "gap_ids": [
+      "GAP-RC-04"
+    ],
+    "master_list_decision": "Historical recovery after mainline-specific missing-paper attack"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "Framework proposition不是已验证的心理模型。",
+    "与X63/X64构成理论邻接，但更直接规定user-side appraisal与identity domains。"
+  ],
+  "updated_at": "2026-10-26",
+  "program_membership": {
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "身份连续性主要对应跨身体迁移，当前为可选远期研究。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-26",
+        "reason": "RC04最直接的user-side identity continuity框架"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "身份连续性主要对应跨身体迁移，当前为可选远期研究。"
+  }
+}

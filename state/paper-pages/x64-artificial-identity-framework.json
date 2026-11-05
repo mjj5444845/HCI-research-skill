@@ -1,0 +1,94 @@
+{
+  "id": "X64",
+  "slug": "x64-artificial-identity-framework",
+  "title": "Designing Artificial Identity: The Identity Design Framework and Research Agenda",
+  "authors": [
+    "Karla Bransky",
+    "Penny Sweetser",
+    "Patrick Holthaus",
+    "Guy Laban",
+    "Katie Winkle",
+    "Neziha Akalin",
+    "Ashita Ashok",
+    "Jihye Lee",
+    "Rucha Khot",
+    "Alexandra Bejarano",
+    "Jorrit Thijn",
+    "Roger K. Moore",
+    "Minsu Jang",
+    "Joel E. Fischer",
+    "Minha Lee"
+  ],
+  "year": 2026,
+  "venue": "ACM DIS 2026",
+  "doi": "10.1145/3800645.3812962",
+  "source_url": "https://researchportalplus.anu.edu.au/en/publications/designing-artificial-identity-the-identity-design-framework-and-r/",
+  "access_status": "abstract_only",
+  "priority": "Must Read",
+  "one_sentence": "ID Framework已把recognisability、behavioral consistency、identity continuity、memory与persistent goals组织成12项原则，AMSC不能把提出这些维度本身当novelty。",
+  "problem": "人工identity在机器人、virtual与multi-embodied agents中日益重要，但设计需要跨个体、群体与社会层次组织。",
+  "method": "基于跨学科与HRI文献提出Identity Design Framework及research agenda；本轮仅核验开放机构页、作者列表、摘要与DOI。",
+  "findings": [
+    "十二项原则覆盖individual、group、societal三个层次。",
+    "individual层已直接包含recognisability、behavioural consistency、identity continuity、memory和persistent goals。"
+  ],
+  "real_contribution": "提供AMSC RC02–RC04几乎一一对应的概念框架与研究议程。",
+  "biggest_weakness": "本轮未取得可核验主文全文；框架是evidence-informed conceptual work，不是已验证量表或因果模型。",
+  "claim_boundary": "只能把维度与议程视为直接先例，不能声称原则已被实证验证或在所有文化/设备中有效。",
+  "why_researcher_should_care": "剩余贡献必须转向operationalization、measurement与causal evidence，而非再列一套身份原则。",
+  "amsc": {
+    "mainline_fit": 10,
+    "buckets": [
+      "C",
+      "D",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "identity design",
+      "behavioral consistency",
+      "identity continuity"
+    ],
+    "gap_ids": [
+      "GAP-RC-02",
+      "GAP-RC-03",
+      "GAP-RC-04"
+    ],
+    "master_list_decision": "Historical recovery at abstract evidence level"
+  },
+  "investigation_status": "abstract_evidence_investigation",
+  "evidence_notes": [
+    "2026-10-07仅核验机构页摘要、作者与DOI；不得写成已全文通读。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://researchportalplus.anu.edu.au/en/publications/designing-artificial-identity-the-identity-design-framework-and-r/"
+    ]
+  },
+  "updated_at": "2026-10-07",
+  "program_membership": {
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "宏观人工身份框架暂非当前表达项目的必要依赖。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-07",
+        "reason": "character coherence、identity continuity与memory的直接设计框架"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "宏观人工身份框架暂非当前表达项目的必要依赖。"
+  }
+}

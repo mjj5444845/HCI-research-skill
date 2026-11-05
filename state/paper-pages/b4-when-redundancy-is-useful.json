@@ -86,10 +86,28 @@
   },
   "worth_sharing": false,
   "program_membership": {
-    "status": "BACKGROUND",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "冗余与误指风险的证据可用于判断表达简化何时损害理解。"
   },
-  "scope_updated_at": "2026-09-18"
+  "scope_updated_at": "2026-09-18",
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "BACKGROUND",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "冗余与误指风险的证据可用于判断表达简化何时损害理解。"
+  }
 }

@@ -1,0 +1,76 @@
+{
+  "id": "X58",
+  "slug": "x58-mind-perception-companionability",
+  "title": "Mind Perception Influences Perceived AI Companionability",
+  "authors": [
+    "Jaime Banks",
+    "Zhixin Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.06681",
+  "source_url": "https://arxiv.org/html/2610.06681v1",
+  "access_status": "full_text",
+  "priority": "Worth Reading",
+  "one_sentence": "首次接触研究提示 agency 与 experience mind perception 可能对应不同 companionability 维度，但操纵失败且不能外推长期关系。",
+  "problem": "人们把AI看作有何种心智，可能影响其成为 companion 的潜力，但 agency/experience 与 companionability 各维度的关系未被清楚拆分。",
+  "method": "46名field convenience参与者随机进入minded或mindless prime（各23人），与Replika 1.0互动15分钟并完成mind perception和companionability测量。",
+  "findings": [
+    "计划的开放式manipulation check失败（p=.75, V=.05）；主要双路径信号来自后续检查与post-hoc关联。",
+    "prime仅轻微提高connective coordination，未提高eudaimonic exchange；先验agency/experience信念分别关联不同companionability维度。"
+  ],
+  "real_contribution": "把agency/experience和eudaimonic exchange/connective coordination作维度化理论连接。",
+  "biggest_weakness": "样本小、单次15分钟、非定制系统、操纵检查失败且若干关键分析为post hoc。",
+  "claim_boundary": "只能作为first-impression theory signal；不支持关系形成、长期companion成效或因果路径。",
+  "why_researcher_should_care": "为GAP-RC-05提供可检验的social-perception构念，但应降级为初步机制候选。",
+  "amsc": {
+    "mainline_fit": 7,
+    "buckets": [
+      "B",
+      "E"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "mind perception",
+      "companionability"
+    ],
+    "gap_ids": [
+      "GAP-RC-05"
+    ],
+    "master_list_decision": "Added by weekly radar with preliminary-evidence label"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-07全文审查；planned manipulation check failed。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/html/2610.06681v1"
+    ]
+  },
+  "updated_at": "2026-10-07",
+  "program_membership": {
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "区分心智感知与companionability，为即时社会印象提供构念参照。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-07",
+        "reason": "mind perception与companionability的候选理论机制"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "区分心智感知与companionability，为即时社会印象提供构念参照。"
+  }
+}

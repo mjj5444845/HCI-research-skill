@@ -1,0 +1,79 @@
+{
+  "id": "X53",
+  "slug": "x53-realcompanion",
+  "title": "RealCompanion: Benchmarking Human Understanding from Reasoning over Longitudinal Real-World Conversations",
+  "authors": [
+    "Arman Behnam",
+    "Sunglyoung Kim",
+    "Liangwei Yang"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.01780",
+  "source_url": "https://arxiv.org/html/2610.01780v2",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "真实 companion 日志表明，长期理解的关键不是尽量调用历史，而是识别何时需要、检索哪一段并避免越界推断。",
+  "problem": "现有长期记忆评测多为合成或高记忆需求任务，难以衡量真实陪伴对话中的 restraint、retrieval 与 application。",
+  "method": "作者基于10段真实 AI-companion 关系的27,218条消息（最长120天）构造1,533个 chat items 与3,235个 question items，并把 persona、profile 与问答追溯到证据消息。",
+  "findings": [
+    "只有3.4%的抽样用户消息需要线程外历史；所需证据中位数可追溯到2,157条消息之前。",
+    "受测检测器仅略高于随机，提示中明确使用 memories 会使不必要历史调用增加10–14个百分点；persona 重建约0.71 F1但存在 over-inference。"
+  ],
+  "real_contribution": "把长期 companion memory 从‘能否记住’推进到真实低基率环境中的选择性、证据追溯与克制评估。",
+  "biggest_weakness": "仅10名自选用户、单一应用，且两名用户贡献73%消息；文本经重写匿名化，部分判断由单一读者完成。",
+  "claim_boundary": "支持真实日志中的 memory-demand 分布与系统失败；不证明记忆改善关系质量、身份连续性或长期陪伴成效。",
+  "why_researcher_should_care": "直接重定义 GAP-RC-03/05 的测量边界：成长与关系主张必须区分相关历史、越界推断和可追溯更新。",
+  "amsc": {
+    "mainline_fit": 10,
+    "buckets": [
+      "D",
+      "E"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "selective longitudinal memory",
+      "persona inference",
+      "evidence traceability"
+    ],
+    "gap_ids": [
+      "GAP-RC-03",
+      "GAP-RC-05"
+    ],
+    "master_list_decision": "Added by weekly radar after full-text audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-07全文审查；real-world logs 不等于代表性长期关系样本。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/html/2610.01780v2"
+    ]
+  },
+  "updated_at": "2026-10-07",
+  "program_membership": {
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "companion日志记忆评测不能直接支撑视觉表达设计或关系效果。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-07",
+        "reason": "真实长期 companion 对话中的选择性记忆、人格推断与证据追溯"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "companion日志记忆评测不能直接支撑视觉表达设计或关系效果。"
+  }
+}

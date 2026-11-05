@@ -51,8 +51,26 @@
   "updated_at": "2026-10-02",
   "program_membership": {
     "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "机器人外观和行为要与任务匹配"
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "外观、行为和任务匹配直接连接表达设计、期待及合作。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "机器人外观和行为要与任务匹配"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "外观、行为和任务匹配直接连接表达设计、期待及合作。"
   }
 }

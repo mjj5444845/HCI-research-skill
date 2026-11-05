@@ -68,6 +68,8 @@ $requiredPaths = @(
     'state\writing_workspace.json',
     'schemas\research-pipeline.schema.json',
     'schemas\writing-workspace.schema.json'
+    'research-programs\amsc\state\current_plan.json'
+    'research-programs\amsc\state\site_publication.json'
 )
 foreach ($relativePath in $requiredPaths) {
     if (-not (Test-Path -LiteralPath (Join-Path $ProjectRoot $relativePath))) {

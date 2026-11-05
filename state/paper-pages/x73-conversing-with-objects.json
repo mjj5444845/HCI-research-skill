@@ -1,0 +1,88 @@
+{
+  "id": "X73",
+  "slug": "x73-conversing-with-objects",
+  "title": "Conversing with Objects toward Fluid Human and Artificial Identities during Life Transitions",
+  "authors": [
+    "Yuhui Xu",
+    "Minha Lee",
+    "Stephan Wensveen",
+    "Mahla Alizadeh",
+    "Mathias Funk"
+  ],
+  "year": 2026,
+  "venue": "CHI 2026",
+  "doi": "10.1145/3772318.3790474",
+  "source_url": "https://doi.org/10.1145/3772318.3790474",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "一项两周technology-probe deployment显示，chatbot可以临时承接日常物件的身份并触发情绪披露与身份反思，但这是一种scripted、异步的trans-embodiment，不是稳定同一companion或关系效果实验。",
+  "problem": "处于生活迁移中的人如何通过日常物件及其数字对话代理反思人类、物件和人工身份。",
+  "method": "Research-through-design technology probe；12名刚到荷兰的国际学生连续两周在Telegram中选择物件，chatbot用脚本化提示自称为该物件。共146次对话、713分钟访谈，采用abductive thematic analysis。",
+  "findings": [
+    "参与者并非总能把chatbot想成物件；体验依赖物件记忆、象征和人际联系，形成perceptual、contextual与relational三类trans-embodied identity。",
+    "物件—chatbot互动为部分参与者提供较私密的情绪披露与身份反思空间，同时也会被scripted prompts打断；作者未观察到人际替代或稳定伴侣关系。"
+  ],
+  "real_contribution": "在Deco之前提供经同行评审的trans-embodiment直接先例，把真实物件、数字代理和人类身份放入同一triadic framework。",
+  "biggest_weakness": "单校12名国际学生、无对照、脚本化Telegram probe且无视觉avatar；身份迁移是否发生主要依赖访谈解释，不能归因于特定cue或推广到AI companion。",
+  "claim_boundary": "支持特定life-transition情境中的物件身份想象和反思实践；不证明同一companion跨设备的稳定identity、长期关系或临床支持。",
+  "why_researcher_should_care": "它与Deco共同取消‘物件身份通过数字代理延展尚无用户研究’的宽泛主张，并把RC04收窄到cue conflict、能力预期和责任归属。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "C",
+      "D",
+      "E"
+    ],
+    "stages": [
+      "身份与适应",
+      "持续关系"
+    ],
+    "mechanisms": [
+      "trans-embodiment",
+      "object identity",
+      "life-transition reflection"
+    ],
+    "gap_ids": [
+      "GAP-RC-03",
+      "GAP-RC-04",
+      "GAP-RC-05"
+    ],
+    "master_list_decision": "Historical recovery added after full-text audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-12全文审查；CHI 2026正式论文，CC BY 4.0。",
+    "研究强调international-student life transition，不代表普遍跨文化效应。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://doi.org/10.1145/3772318.3790474",
+      "https://arxiv.org/abs/2601.12589"
+    ]
+  },
+  "updated_at": "2026-10-12",
+  "program_membership": {
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "生活迁移中的物件身份主要服务跨具身议程，超出当前布局。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-12",
+        "reason": "物件—数字代理trans-embodiment与身份实践的直接人类证据"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "生活迁移中的物件身份主要服务跨具身议程，超出当前布局。"
+  }
+}

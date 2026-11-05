@@ -79,9 +79,27 @@
   "worth_sharing": false,
   "program_membership": {
     "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "重复绘图及朴素识别者对照直接区分视觉相似性和互动历史。"
   },
-  "scope_updated_at": "2026-09-18"
+  "scope_updated_at": "2026-09-18",
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "重复绘图及朴素识别者对照直接区分视觉相似性和互动历史。"
+  }
 }

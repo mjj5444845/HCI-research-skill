@@ -18,7 +18,9 @@ const failures = [];
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   const relative = path.relative(site, file);
-  for (const required of ["<title>", "<main", "<nav", "assets/styles.css", "assets/app.js"]) {
+  const isStudio = relative.split(path.sep).join("/") === "assets/meaningtrace/index.html";
+  const requiredParts = isStudio ? ["<title>", "<main", "<nav", "studio.css", "studio.js"] : ["<title>", "<main", "<nav", "assets/styles.css", "assets/app.js"];
+  for (const required of requiredParts) {
     if (!html.includes(required)) failures.push(`${relative}: missing ${required}`);
   }
   if (/(?:>|=")(?:undefined|null)(?:<|")/i.test(html.replace(/Insufficient Evidence \/ 尚未记录。/g, ""))) {
@@ -42,6 +44,7 @@ for (const file of htmlFiles) {
       continue;
     }
     if (fragment && target.endsWith(".html")) {
+      if (isStudio && !clean && ["user", "research", "overview"].includes(fragment)) continue;
       const targetHtml = fs.readFileSync(target, "utf8");
       if (!targetHtml.includes(`id="${fragment}"`)) failures.push(`${relative}: missing fragment target ${reference}`);
     }

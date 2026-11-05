@@ -1,0 +1,7 @@
+version: 0.1
+updated_at: null
+deduplication:
+  primary_key: doi
+  fallback: normalized_title_and_year
+papers: []
+change_log: []

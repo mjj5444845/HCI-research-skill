@@ -17,12 +17,11 @@ interests:
     - NLP
     - Cognitive science
   semantic_descriptions:
-    - robot visual and nonverbal expression; motion, timing, light, character and communicative function
-    - user perception versus longitudinal human-robot relationships
-    - character-personality and robot behavior consistency; persistence versus evolution
-    - AI companions with physical extensions; migrating agents, cross embodiment identity and distributed
-      agency
-    - user habits, preferences, adaptation and controllable relational behavior
+    - robot visual and embodied expression; typography, graphics, motion and spatial communication
+    - human interpretation of requests, understanding feedback, response requirements and actual actions
+    - "personalized robot expression: user control, preferences, context and interaction history"
+    - "ongoing interaction: expectations, social burden, trust and relationship evidence"
+    - AR expression linked to physical robots; expression creation and meaningful evaluation
   exclusions:
     - pure application papers with no meaningful research contribution
     - AI wrapper papers with only obvious user preference outcomes
@@ -65,6 +64,8 @@ program_sources:
   state_of_field: research-programs/amsc/state/state_of_field.yaml
   exam_kb: research-programs/amsc/state/comprehensive_exam.yaml
   research_graph: research-programs/amsc/state/research_graph.yaml
+  current_plan: research-programs/amsc/state/current_plan.json
+  site_publication: research-programs/amsc/state/site_publication.json
 amsc:
   mechanism_based_search: true
   track_anchor_researchers: true
@@ -86,8 +87,10 @@ amsc:
     - Ziqiao Ma
     - Parastoo Abtahi
     - Ryo Suzuki
-  foundation_paper: "2609.04384"
-  program_version: "3.0"
+  program_version: "3.1"
   robot_requirement: false
   contribution_policy: Computational, resource, theoretical, empirical and system contributions are equal
     routes; human studies only when the claim needs them.
+  foundation_papers:
+    - x33-speechcap
+    - x68-manicule

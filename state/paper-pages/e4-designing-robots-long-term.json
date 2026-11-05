@@ -130,9 +130,9 @@
   "updated_at": "2026-08-27",
   "program_membership": {
     "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "角色故事和实用功能并存的长期机器人部署提供直接设计与观察先例。"
   },
   "historical_gap_links": {
     "program_version": "1.0",
@@ -147,5 +147,23 @@
     "recorded_before": "2026-10-02",
     "gap_impact": "强化 GAP-04 对诊断区分与纵向身份 instrumentation 的需求；仅为 GAP-03 提供初步 maintenance 证据，不关闭 interaction-history-dependent meaning 或 convention 缺口。",
     "next_project_priority": "在声称 relationship 或 convention 前，必须加入持续身份、逐人轨迹、history-severed controls、repair events 与直接 meaning measures。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "角色故事和实用功能并存的长期机器人部署提供直接设计与观察先例。"
   }
 }

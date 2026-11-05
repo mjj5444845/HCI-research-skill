@@ -1,0 +1,58 @@
+{
+  "id": "X45",
+  "slug": "x45-appearance-behavior-task",
+  "title": "Matching Robot Appearance and Behavior to Tasks to Improve Human-Robot Cooperation",
+  "authors": [
+    "Jennifer Goetz",
+    "Sara Kiesler",
+    "Aaron Powers"
+  ],
+  "year": 2003,
+  "venue": "RO-MAN 2003",
+  "source_url": "https://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/kiesler/publications/2003pdfs/2003_matching-robot-appear-coop.pdf",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "机器人外观和行为要与任务匹配",
+  "problem": "机器人外观和行为要与任务匹配",
+  "method": "三项实验研究外观与任务、行为风格与任务严肃性及配合行为。",
+  "findings": [
+    "任务匹配是评价机器人行为的既有研究方向，恒定友好不是普遍设计结论。"
+  ],
+  "real_contribution": "机器人外观和行为要与任务匹配",
+  "biggest_weakness": "未研究长期人格演化或跨设备身份连续性。",
+  "claim_boundary": "未研究长期人格演化或跨设备身份连续性。",
+  "why_researcher_should_care": "提供新主线的直接先例与反证边界；组合已有设计不自动构成新颖性。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "A",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "机器人外观和行为要与任务匹配"
+    ],
+    "gap_ids": [
+      "GAP-RC-02"
+    ],
+    "master_list_decision": "Added after independent focused audit"
+  },
+  "investigation_status": "focused_source_audit",
+  "evidence_notes": [
+    "2026-10-02独立文献代理核查；全文可访问与完整深度调查分开，未复现实验。",
+    "未研究长期人格演化或跨设备身份连续性。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/kiesler/publications/2003pdfs/2003_matching-robot-appear-coop.pdf"
+    ]
+  },
+  "updated_at": "2026-10-02",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "机器人外观和行为要与任务匹配"
+  }
+}

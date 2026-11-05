@@ -1,0 +1,83 @@
+{
+  "id": "X86",
+  "slug": "x86-artificial-personality-model",
+  "title": "The Artificial Personality Model: Theory, Implementation, Measurement and Experimental Validation in Conversational Agents",
+  "authors": [
+    "Alexander Dregger",
+    "Barbarella Petz",
+    "Erik Kuhn",
+    "Pia Volk",
+    "Andreas Oberweis",
+    "Stefan Hillmann",
+    "Jannik Strötgen"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.38608",
+  "source_url": "https://arxiv.org/abs/2610.38608",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "三个短期文本实验提出APM/APQ并显示人工人格cue可改变特质判断与部分UX，但跨实验因子结构不稳定、样本相对item数过小且没有独立CFA，APQ只能视为探索性候选量表。",
+  "problem": "人类人格框架能否直接用于人工代理，以及如何测量用户感知到的人工人格与机器特有维度。",
+  "method": "三个between-subject实验，总N=395：humor N=172、service orientation N=88、artificiality N=135；操纵文本或视频化agent cues，使用多次EFA、MANOVA/ANOVA及UX、满意度、使用意愿和social presence测量。",
+  "findings": [
+    "部分人类人格维度可迁移，但extraversion等维度未稳定出现；machine-specific维度在不同实验中出现。",
+    "具体humor与service-orientation cue bundles改变了部分人格判断及即时满意度、使用意愿或social presence；artificiality操纵未产生一般UX效应。",
+    "APQ的因素结构未跨实验稳定复制，BFI-2在Experiment 3也未形成可解释结构。"
+  ],
+  "real_contribution": "提供人工人格构念与item pool，并把人格cue、被感知特质和即时UX放入同一探索性测量框架；它部分收窄‘完全没有人工人格测量工具’的宽gap。",
+  "biggest_weakness": "约89–90 items只配N=135–172做EFA，Exp2仅N=88；无独立CFA、holdout、measurement invariance、test–retest或跨模态验证，且人格、能力、可用性与治理item存在构念污染。",
+  "claim_boundary": "可称APM/APQ是text-only exploratory candidate且Big Five不可未经验证直接移植；不可称APQ已验证、五维结构已确立，或能测量机器人、跨设备、跨文化及长期character–behavior coherence。",
+  "why_researcher_should_care": "RC02不应再声称完全缺乏人工人格测量；真正开放的是构念分离、独立psychometric confirmation，以及语言、视觉、动作、设备和时间上的跨模态一致性验证。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "D",
+      "F"
+    ],
+    "stages": [
+      "角色与行为一致性",
+      "个性持续与变化"
+    ],
+    "mechanisms": [
+      "perceived artificial personality",
+      "trait cue intensity",
+      "character measurement"
+    ],
+    "gap_ids": [
+      "GAP-RC-02"
+    ],
+    "master_list_decision": "Formal-window measurement closest work"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "三个实验均为短期、task-oriented、German-speaking且以高教育样本为主；英文回译版未独立验证。",
+    "作者称initial psychometric evidence；本记录不将其升级为validated scale。"
+  ],
+  "last_verified": "2026-11-02",
+  "updated_at": "2026-11-02",
+  "program_membership": {
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "人格线索与被感知特质的探索性测量可作参照，不能直接当机器人量表。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-11-02",
+        "reason": "人工人格测量与character–behavior coherence的直接closest work"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "人格线索与被感知特质的探索性测量可作参照，不能直接当机器人量表。"
+  }
+}

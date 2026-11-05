@@ -119,10 +119,28 @@
     "data_reanalysis": false
   },
   "program_membership": {
-    "status": "BACKGROUND",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "不同人机配对的重复参照比较，为持续表达的成功与轮次轨迹提供方法。"
   },
-  "scope_updated_at": "2026-09-18"
+  "scope_updated_at": "2026-09-18",
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "BACKGROUND",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "不同人机配对的重复参照比较，为持续表达的成功与轮次轨迹提供方法。"
+  }
 }

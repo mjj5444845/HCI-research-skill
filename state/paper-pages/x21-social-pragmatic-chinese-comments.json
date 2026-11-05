@@ -59,10 +59,10 @@
   "provenance": "amsc_radar_2026-09-07",
   "updated_at": "2026-09-07",
   "program_membership": {
-    "status": "SUPPORTING",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "中文评论语用benchmark是历史研究资产，当前未连接机器人表达；保留作者事实，不列为基础。"
   },
   "researcher_relationship": {
     "role": "second_author",
@@ -70,5 +70,23 @@
     "source": "research-programs/amsc/SOURCE_USER_SPEC.md",
     "confirmed_at": "2026-09-18"
   },
-  "scope_updated_at": "2026-09-18"
+  "scope_updated_at": "2026-09-18",
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "SUPPORTING",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "中文评论语用benchmark是历史研究资产，当前未连接机器人表达；保留作者事实，不列为基础。"
+  }
 }

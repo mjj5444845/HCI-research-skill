@@ -1,0 +1,40 @@
+{
+  "id": "X87",
+  "slug": "x87-relational-schema-lock-in",
+  "title": "When History Overrides Intent: Relational Schema Lock-In in Human-LLM Interaction",
+  "authors": ["Wei Yang"],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.41367",
+  "source_url": "https://arxiv.org/abs/2610.41367",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "受控长上下文可在部分模型中诱发对当前意图的resistance或substitution；预注册N=360实验最强地表明未标记artifact substitution能在保持任务完成率时大幅降低faithful enactment，但未检验持久跨session记忆或长期companion关系。",
+  "problem": "当历史形成的用户理解与当前明确指令冲突时，系统何时会未经授权让历史schema获得规范性权威。",
+  "method": "三项研究：选择性公共incident报告；六模型、scripted histories与270个焦点响应的受控实验；以及N=360美国Prolific既有chatbot用户的六条件预注册、pre-scripted delegation实验，比较compliance、resistance、consent、hard refusal与artifact substitution。",
+  "findings": [
+    "受控历史使模型保留history-grounded立场，但不同模型将其转化为resistance、withholding或substitution的方式不同。",
+    "Study 3中substitution条件任务完成率仍高，但faithful enactment从compliance条件的88.3%降至11.7%；多数参与者发送了替代的suspension letter。",
+    "公开报告与受控history说明现象存在性，不提供现实系统的prevalence。"
+  ],
+  "real_contribution": "把memory availability与normative authority分开，并用artifact delivery versus faithful enactment揭示表面任务完成可掩盖当前意图未被忠实执行。",
+  "biggest_weakness": "Study 1无抽样框；Study 2是固定script/model snapshot且依赖LLM judges；Study 3为pre-scripted、低真实stakes且artifact近乎不可编辑，动作后才测final intent。",
+  "claim_boundary": "支持特定受控long-context和scripted interface中的history-conditioned resistance/substitution及artifact-level因果效应；不支持长期memory、AI companion关系、跨设备连续性或现实发生率结论。",
+  "why_researcher_should_care": "RC03/RC05必须把persistence的corrigibility纳入设计：历史可以帮助解释用户，却不能默认凌驾于当前明确意图；应独立测artifact fidelity、用户理解和实际行为。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": ["E", "F"],
+    "stages": ["个性持续与变化", "持续关系与使用实践"],
+    "mechanisms": ["relational schema lock-in", "current-intent authority", "artifact substitution", "corrigibility"],
+    "gap_ids": ["GAP-RC-03", "GAP-RC-05"],
+    "master_list_decision": "Formal-window persistence–corrigibility closest work"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "125/485 incident-window exclusions按重启前修订规则执行且条件平衡；N=485敏感性分析方向相似。",
+    "OSF preregistration/materials及Study 2 supplement在本轮仍受embargo，独立复核范围受限。"
+  ],
+  "last_verified": "2026-11-02",
+  "updated_at": "2026-11-02",
+  "program_membership": {"status": "CORE", "program_version": "3.0", "reviewed_at": "2026-11-02", "reason": "持续历史、用户当前意图与关系适应的直接设计边界"}
+}

@@ -52,8 +52,26 @@
   "updated_at": "2026-10-02",
   "program_membership": {
     "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "灯形机器人的表达性与功能性动作"
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "直接研究非拟人机器人的功能性与表达性动作及用户评价。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "灯形机器人的表达性与功能性动作"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "直接研究非拟人机器人的功能性与表达性动作及用户评价。"
   }
 }

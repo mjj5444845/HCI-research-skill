@@ -71,10 +71,28 @@
     "needed": "Full manuscript including methods, results and appendices"
   },
   "program_membership": {
-    "status": "BACKGROUND",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "摘要层证据尚不足以提供当前可执行的方法桥，保留后续核验来源。"
   },
-  "scope_updated_at": "2026-09-18"
+  "scope_updated_at": "2026-09-18",
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "BACKGROUND",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "摘要层证据尚不足以提供当前可执行的方法桥，保留后续核验来源。"
+  }
 }

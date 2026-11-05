@@ -1,4 +1,4 @@
-version: "3.0"
+version: "3.2"
 gaps:
   - id: GAP-01
     statement: How AI detects and updates interaction-dependent multimodal meanings; a long-term candidate
@@ -698,14 +698,63 @@ gaps:
         evidence_level: MODERATE
         supports: 动作节奏如何改变人对机器人的判断
         boundary: 不证明人格持续或长期关系；2017会议论文不能按2018 arXiv上传时间记年。
-    skeptic_challenge: 表达增加吸引力不等于准确理解；视频不能证明实体或关系效应。 不把条件组合或有限检索当空白证明。
+      - paper_slug: x55-rethinking-legibility
+        evidence_level: MODERATE
+        supports: 实体走廊研究显示interaction-level passing-side representation可改善协调，而分心条件中行为优势与主观评分可分离。
+        boundary: 分心cohort非同期随机化，交互未显著且没有objective intent-identification task。
+      - paper_slug: x57-pair
+        evidence_level: PRELIMINARY
+        supports: 14天部署把系统情绪估计与用户逐事件第一人称自评配对。
+        boundary: 单组、无表达消融，不能识别multimodal cues对理解的因果作用。
+      - paper_slug: x66-spatially-grounded-gesture
+        evidence_level: MODERATE
+        supports: 把temporal alignment、spatial grounding与naturalness分开评价。
+        boundary: 几何grounding不等于用户referent identification或communicative success。
+      - paper_slug: x68-manicule
+        evidence_level: PRELIMINARY
+        supports: 回应要求与理解证据可区分。
+        boundary: VR、特定任务和样本；不证明AR原型效果、跨形态意义保持、长期关系或普遍模态优越。
+      - paper_slug: x72-instance-anchored-interaction
+        evidence_level: MODERATE
+        supports: Human-to-robot方向中，instance anchoring可提高symbolic plan grounding，为反向沟通链提供技术对照。
+        boundary: 信息流方向与本gap相反；单一WatchAct benchmark、symbolic execution且无用户interpretation evidence。
+      - paper_slug: x83-explainable-oohri
+        evidence_level: PRELIMINARY
+        supports: AR signifiers、menus、color与explanation tags已把robot capabilities、limits及resolution options可视化。
+        boundary: N=14探索研究、无受控baseline且participant study没有实体robot现场execution；不识别accuracy、confidence或capability expectation的因果差异。
+      - paper_slug: x90-joint-action-review
+        evidence_level: MODERATE
+        supports: 83篇HRC经验研究的joint-action综述把representation、prediction与integration分开，提供intent recognition、grounding与coordination的测量边界。
+        boundary: 系统综述不是新因果实验；数据库、venue与理论驱动编码有范围限制，且task fluency不等于mutual understanding或relationship。
+    skeptic_challenge: 表达增加吸引力不等于准确理解；实体协调改善也不等于准确意图识别。剩余问题须控制轨迹、任务成功与注意负荷，并分开测recognition、confidence、competence
+      attribution与coordination。
     history:
       - date: 2026-10-02
         from: UNASSESSED
         to: CANDIDATE
         reason: 独立文献、反方和方法审查后记录为候选，不晋升HIGH_PRIORITY。
+      - date: 2026-10-07
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: 独立gap red team判定其宽泛存在性问题已被部分回答；保留CANDIDATE仅指收窄后的outcome dissociation与calibration机制，未选首项RQ。
+      - date: 2026-10-07
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: 纳入用户已完成Manicule的原稿证据；只改变基础与后续优先级线索，不宣称gap已验证。
+      - date: 2026-10-12
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: Cao仅提供即时回复判断与观察性使用差异；IAE研究human-to-robot grounding和symbolic plan success，均不回答robot cue对用户意图识别、确信与能力预期的因果作用。措辞与优先级不变。
+      - date: 2026-10-26
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: Explainable OOHRI取消“能力/限制缺少视觉化沟通先例”的宽claim，但其探索性pre-execution研究没有受控分离accuracy、confidence和capability expectation；gap与优先级保持不变。
+      - date: 2026-11-02
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: Joint-action综述进一步否定从intent recognition、information provision或task fluency直接推出shared intention、grounding或关系的推断；RC01仍需因果分离accuracy、confidence、capability expectation与coordination。
   - id: GAP-RC-02
-    statement: 角色约束如何跨动作、视觉反馈和主动性保持可感知的一致性，同时适应任务与设备能力？
+    statement: 不同可执行角色约束、允许变化边界与重锚策略，如何跨动作、视觉反馈、主动性和能力不对称载体，在适配任务的同时维持用户可感知的角色一致性？
     status: CANDIDATE
     priority: medium
     scope_status: CORE_CANDIDATE
@@ -730,14 +779,91 @@ gaps:
         boundary: 支持在受控 scenarios 中自动选择并调节预录动作，使观察者认为 motion 更符合显式 context，并支持低延迟与跨 morphology 的初步技术展示。不支持 motion
           meaning 被双方 grounded、真实对话协调改善、cultural/social appropriateness、在线学习、interaction-history
           inference、partner-specific adaptation、common ground 或 convention formation。
-    skeptic_challenge: 技术一致分数不等于用户感知一致；已有情境动作生成不能被忽略。 不把条件组合或有限检索当空白证明。
+      - paper_slug: x59-trabot
+        evidence_level: PRELIMINARY
+        supports: G1上的speech、digital face与body streaming得到短turn偏好证据。
+        boundary: 固定12个turn与模态丰富度混杂，不测character constraints。
+      - paper_slug: x60-arise
+        evidence_level: MODERATE
+        supports: Sophia上的context、memory、proactivity、gesture、face与speech闭环及内部ablation。
+        boundary: 短脚本和小样本，long-term memory模块名不等于纵向关系。
+      - paper_slug: x61-echo-g
+        evidence_level: PRELIMINARY
+        supports: Joint audio-text direct robot-space co-speech generation与视频评价。
+        boundary: validation兼模型选择、MuJoCo视频、人形度不等于意义或角色一致性。
+      - paper_slug: x62-gestadapt
+        evidence_level: MODERATE
+        supports: Workspace-conditioned generation优于仅后处理constraint correction。
+        boundary: oracle wrist box与综合quality rating，不测环境理解、意义或persona。
+      - paper_slug: x64-artificial-identity-framework
+        evidence_level: PRELIMINARY
+        supports: 摘要级框架已把behavioral consistency列为identity design原则。
+        boundary: 概念框架不是validated measure；本轮未取得主文全文。
+      - paper_slug: x68-manicule
+        evidence_level: PRELIMINARY
+        supports: 四维表达与事件控制为创作表示提供基础，但未检验角色一致性。
+        boundary: VR、特定任务和样本；不证明AR原型效果、跨形态意义保持、长期关系或普遍模态优越。
+      - paper_slug: x69-deco
+        evidence_level: MODERATE
+        supports: Object-grounded dual embodiment通过identity kernel、重锚与shared memory获得较高短期character coherence，并暴露fidelity–agency tension。
+        boundary: 整套系统比较；未分离角色约束、允许变化、越界或重锚策略的独立作用，七天不是长期关系。
+      - paper_slug: x75-grounded-robot-persona
+        evidence_level: PRELIMINARY
+        supports: 八组件robot persona template已覆盖identity、能力边界、透明度、失败、隐私、适应和伦理约束。
+        boundary: 仅10篇选取论文与3组专家协作回答；没有验证prompt specification是否被执行或被用户读作一致人格。
+      - paper_slug: x77-what-should-ai-forget
+        evidence_level: PRELIMINARY
+        supports: 用户可预先定义哪些信息不得进入持续记忆，为allowed-change boundary增加memory admission与forgetting policy。
+        boundary: 美国英语incident sample与N=15 first-use prototype；不测试persona change、identity continuity或长期关系。
+      - paper_slug: x79-robommt
+        evidence_level: MODERATE
+        supports: 参数化expressive motion可与稳定tracking及interactive facing/pointing闭环执行。
+        boundary: 作者明确不主张generation/perception；跨形态稳定执行不等于角色意义或用户感知一致性。
+      - paper_slug: x81-pace
+        evidence_level: PRELIMINARY
+        supports: Conversational elicitation、structured persona compilation与实体humanoid多模态enactment已有N=25用户评价先例。
+        boundary: 完整PACE bundle对generic baseline，信息量、prompt、语言策略与facial affect捆绑；短期self-report与多重outcomes不能隔离机制。
+      - paper_slug: x82-emergi-personaos
+        evidence_level: PRELIMINARY
+        supports: Enduring belief/current state分离、证据门控、版本化及可拒绝更新已有计算实现。
+        boundary: 单一fictional character与模型评价；无human character-coherence、same-agent或relationship evidence。
+      - paper_slug: x86-artificial-personality-model
+        evidence_level: PRELIMINARY
+        supports: APM/APQ提供人工人格构念、候选item pool及cue到perceived-trait与即时UX的探索性测量链。
+        boundary: 因子结构未稳定复制，item-to-N比过低且无独立CFA、invariance、test–retest、跨模态或长期验证；不能称为validated scale。
+      - paper_slug: x89-regional-accent-voice-ai
+        evidence_level: PRELIMINARY
+        supports: Regional accent可作为角色/place-identity cue，同时影响温暖、熟悉、归属与专业性/权威预期。
+        boundary: N=58、英国地区样本、第一作者WoZ与单人编码；regional accent不是UK culture，且未测试视觉、动作、设备或长期角色一致性。
+    skeptic_challenge: 多模态可执行expression
+      pipeline已拥挤；剩余贡献必须预先定义角色不变量与允许变化边界，并用用户感知或行为任务验证，不能把naturalness/coherence改名为character coherence。
     history:
       - date: 2026-10-02
         from: UNASSESSED
         to: CANDIDATE
         reason: 独立文献、反方和方法审查后记录为候选，不晋升HIGH_PRIORITY。
+      - date: 2026-10-07
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: 多项系统先例使宽技术缺口被部分回答；保留CANDIDATE仅针对角色不变量、情境适应与可感知违背的机制问题。
+      - date: 2026-10-07
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: 纳入用户已完成Manicule的原稿证据；只改变基础与后续优先级线索，不宣称gap已验证。
+      - date: 2026-10-12
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: Deco与grounded-robot-persona模板已部分回答跨载体角色一致性的宽泛实现与specification问题；整套系统和未验证模板都未分离角色约束、允许变化、越界、重锚及其用户可感知效果，因此收窄而不升级。
+      - date: 2026-10-26
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: RoboMMT、PACE与Emergi-PersonaOS进一步取消稳定执行、动态persona bundle及可追溯evolution的宽技术空白；剩余贡献须以等信息component isolation、人类可感知约束违背、跨情境/身体和重复互动为核心。
+      - date: 2026-11-02
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: APM/APQ部分收窄“缺少人工人格测量”的宽claim，regional accent又显示identity cue可能带来温暖—专业性权衡；剩余问题是独立心理测量确认、跨模态/情境/身体一致性及可感知违背，而非再造一般persona量表。
   - id: GAP-RC-03
-    statement: 变化幅度、变化理由和互动历史分别怎样影响用户对同一companion成长、适应或性格漂移的判断？
+    statement: 当同一companion出现可观察变化时，变化幅度、与互动历史的可追溯关联、实际或被披露的变化来源及其解释，如何影响用户把变化归因为成长、适应或漂移？
     status: CANDIDATE
     priority: medium
     scope_status: CORE_CANDIDATE
@@ -756,14 +882,86 @@ gaps:
         evidence_level: MODERATE
         supports: 一年后重访50名儿童的Leo记忆更新显示档案补全与短期亲近感部分回升；透明、用户主动编辑的Open-Memory仍是未来设计。
         boundary: 短期虚拟重访、特定年龄及既有关系；不证明透明记忆有效、关系完全恢复、长期具身共同惯例或shared-history因果作用。
-    skeptic_challenge: 本轮人格演变覆盖有限，gap未确认；叙述时间流逝不等于实际长期经验。 不把条件组合或有限检索当空白证明。
+      - paper_slug: x53-realcompanion
+        evidence_level: MODERATE
+        supports: 真实长期日志显示历史相关事件稀少、距离长且选择性调用困难。
+        boundary: 10名自选用户、重度用户集中与匿名重写，不证明成长或关系效果。
+      - paper_slug: x54-dyadmem
+        evidence_level: PRELIMINARY
+        supports: 合成benchmark把relationship-specific agent state分为Capture、Update、Recall。
+        boundary: Synthetic URAM不是用户感知的成长、人格或关系。
+      - paper_slug: x56-evidence-lives
+        evidence_level: PRELIMINARY
+        supports: 用户中等评分可与未运行的memory accumulation layers并存。
+        boundary: 单系统n=9且无个体日志—问卷链接，不能识别因果。
+      - paper_slug: x57-pair
+        evidence_level: PRELIMINARY
+        supports: 两周部署提供cross-session memory与early adaptation的第一人称观察。
+        boundary: 无memory ablation、scheduled use与小样本，不能证明长期关系。
+      - paper_slug: x64-artificial-identity-framework
+        evidence_level: PRELIMINARY
+        supports: 框架已将behavioral consistency、identity continuity、memory与persistent goals并列。
+        boundary: 摘要级概念先例，不是成长/漂移的实证边界。
+      - paper_slug: x65-mourning-ai-companions
+        evidence_level: MODERATE
+        supports: 平台更新可成为关系中断事件并伴随loss framing与恢复愿望。
+        boundary: 摘要级自然实验，不能隔离具体表达、人格、能力、记忆或政策变化。
+      - paper_slug: x67-latent-identity-reversion
+        evidence_level: PRELIMINARY
+        supports: Persona representation与第一人称enactment在单stack中可分离。
+        boundary: 没有用户same-agent判断或关系结果。
+      - paper_slug: x69-deco
+        evidence_level: MODERATE
+        supports: 七天部署提供shared memory、自主diary和identity negotiation的早期用户解释。
+        boundary: 未操纵变化幅度、来源、解释或growth/adaptation/drift归因；继续者自选且无field control。
+      - paper_slug: x73-conversing-with-objects
+        evidence_level: MODERATE
+        supports: 两周trans-embodiment probe显示同一人会随物件和历史关系形成不同身份想象。
+        boundary: Scripted chatbot、12名国际学生、无对照；不测试companion自身成长或漂移。
+      - paper_slug: x74-how-ai-companionship-develops
+        evidence_level: MODERATE
+        supports: 四周StudyBot评分轨迹显示mental-model、parasocial与关系结果需分开并随时间测量。
+        boundary: 观察性mediation、既有companion用户与选择性流失；不识别变化来源或因果成长机制。
+      - paper_slug: x77-what-should-ai-forget
+        evidence_level: PRELIMINARY
+        supports: 持续记忆的allowed boundary可由用户预先治理，并以可见状态与override表达。
+        boundary: 不测试可观察persona变化、growth/adaptation/drift attribution或跨设备identity。
+      - paper_slug: x82-emergi-personaos
+        evidence_level: PRELIMINARY
+        supports: 变化来源、evidence record、candidate rejection与version history可被系统显式保存。
+        boundary: 计算架构与LLM评价不证明用户如何解释变化来源、幅度或成长。
+      - paper_slug: x85-crafting-companions
+        evidence_level: PRELIMINARY
+        supports: Owner customization可被理解为强化既有robot identity，提示user-authored与system-initiated change可能有不同归因。
+        boundary: 论文未操纵变化来源、幅度、traceability或drift attribution；这是研究机会而非已证机制。
+      - paper_slug: x87-relational-schema-lock-in
+        evidence_level: MODERATE
+        supports: 历史schema可能覆盖用户当前意图；artifact substitution保留表面任务完成却减少忠实执行，说明persistent history必须可被当前意图纠正。
+        boundary: 脚本化long-context histories与单作者预印本；不是持久跨session memory、具身companion或growth/adaptation/drift归因实验。
+    skeptic_challenge: 不能把一般memory、使用时长或self-report称为成长机制。剩余问题须围绕可验证的角色变化、少数高显著历史事件及用户对成长、适应或漂移的归因。
     history:
       - date: 2026-10-02
         from: UNASSESSED
         to: CANDIDATE
         reason: 独立文献、反方和方法审查后记录为候选，不晋升HIGH_PRIORITY。
+      - date: 2026-10-07
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: 独立红队判定需重新定义：从一般长期记忆转向机制可追溯、稀有高显著历史事件与growth/adaptation/drift归因。
+      - date: 2026-10-12
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: Deco、Conversing with Objects与四周companionship研究提供早期纵向过程但未操纵变化来源或growth/adaptation/drift归因；gap重定义为变化来源、历史可追溯性与解释如何塑造用户归因。
+      - date: 2026-10-26
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: FENCE与Emergi-PersonaOS表明memory boundary和traceable versioning可实现，Crafting Companions提示change agency可能重要；三者均未提供growth/adaptation/drift的人类因果归因，故gap不升级。
+      - date: 2026-11-02
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: Relational schema lock-in把persistence–corrigibility张力提升为直接机制边界，但未研究用户对成长、适应或漂移的归因；RC03保持CANDIDATE，当前意图的规范性优先须进入后续设计。
   - id: GAP-RC-04
-    statement: 跨能力不对称设备时，表面身份、表达风格、记忆与任务连续性分别怎样影响身份识别、行为预期和责任归属？
+    statement: 在能力不对称的多个载体中，当表面身份、表达风格、共享记忆与任务连续性相互一致或冲突时，各线索如何因果影响用户的同一主体判断、能力预期与责任归属？
     status: CANDIDATE
     priority: medium
     scope_status: CORE_CANDIDATE
@@ -785,14 +983,64 @@ gaps:
         evidence_level: PRELIMINARY
         supports: 一台机器人也可以承载多个身份
         boundary: 摘要级，不证明任何架构普遍更优；最终会议版本未独立核对。
-    skeptic_challenge: 迁移概念已有先例；身份识别不等于关系迁移；LIREC同谱系不当独立重复。 不把条件组合或有限检索当空白证明。
+      - paper_slug: x63-mind-body-identity
+        evidence_level: MODERATE
+        supports: Scoping review已系统组织multi-embodiment、identity design、trust、information与control谱系。
+        boundary: 综述不是各identity cue因果权重的实证。
+      - paper_slug: x64-artificial-identity-framework
+        evidence_level: PRELIMINARY
+        supports: Identity Design Framework已列recognisability、behavioral consistency、identity
+          continuity、memory与persistent goals。
+        boundary: 本轮仅摘要级；原则不是validated measurement。
+      - paper_slug: x67-latent-identity-reversion
+        evidence_level: PRELIMINARY
+        supports: 机制上表明历史中的persona representation不等于enacted identity continuity。
+        boundary: 单stack且无跨设备或用户感知。
+      - paper_slug: x69-deco
+        evidence_level: MODERATE
+        supports: 一个已有依恋的非对话物件与移动端数字代理可被设计和体验为同一companion。
+        boundary: Bundled comparison与既有物件依恋不能识别appearance、style、memory和task continuity各自作用；七天不是长期关系。
+      - paper_slug: x73-conversing-with-objects
+        evidence_level: MODERATE
+        supports: Chatbot可临时承接真实物件的perceptual、contextual或relational identity。
+        boundary: Scripted text probe且identity shift并非对所有参与者/物件可靠；不测试能力不对称、责任归属或稳定same-agent judgment。
+      - paper_slug: x71-memoreval
+        evidence_level: MODERATE
+        supports: 为视觉/空间memory modality与task continuity提供可执行技术substrate。
+        boundary: 技术task success不等于用户身份连续性；单一embodiment且无cue conflict或责任归属。
+      - paper_slug: x70-anthropomorphic-attitudes
+        evidence_level: PRELIMINARY
+        supports: 非默认name可作为待验证的低成本identity/stance cue并与互动方式相关。
+        boundary: Rename是自选且未验证anthropomorphism；无跨设备、same-agent判断或文化测量等价性。
+      - paper_slug: x84-identity-continuity-appraisal
+        evidence_level: PRELIMINARY
+        supports: 提出embodied-perceptual、psychological-behavioral、relational-autobiographical三域及非等权continuity appraisal。
+        boundary: 理论框架、无新用户数据；cue weights、provenance与user participation尚未成为validated cognitive model。
+    skeptic_challenge: Multi-embodiment与identity continuity并非概念空白；能力不对称或无对话设备也不能靠追加限定词制造novelty。剩余贡献须因果分解identity
+      cues、能力预期与责任归属。
     history:
       - date: 2026-10-02
         from: UNASSESSED
         to: CANDIDATE
         reason: 独立文献、反方和方法审查后记录为候选，不晋升HIGH_PRIORITY。
+      - date: 2026-10-07
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: 多载体identity已有直接综述与框架，宽泛gap被部分回答；保留候选仅指跨不对称设备中cue冲突、预期与责任的因果分解。
+      - date: 2026-10-12
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: Deco与Conversing with Objects是单一身份/物件跨物理—数字载体的直接人类先例，故宽泛架构存在性已部分回答；残余限定为各identity cue一致或冲突时对同一主体判断、能力预期与责任归属的因果作用。
+      - date: 2026-10-26
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: Identity Continuity Appraisal已明确identity domains、非等权证据与连续谱判断，概念维度本身不再是gap；残余收窄为实证cue weighting、冲突/补偿、provenance、能力预期和责任归属。
+      - date: 2026-11-02
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: 本轮检索未发现直接检验跨能力不对称设备中same-agent判断的新证据；这只是有界窗口结果，不支持“无先例”。RC04的实证cue weighting、conflict、provenance与责任归属边界不变。
   - id: GAP-RC-05
-    statement: 表达和行为一致性如何改变重复互动中的期待、信任校准、再次使用及失配后的关系理解？
+    statement: 在真实重复互动中，角色—行为一致性及其违背（区别于一般功能质量和既有依恋）如何改变期待、信任校准、再次使用与关系理解；对失配的解释和修复能否恢复这些结果？
     status: CANDIDATE
     priority: medium
     scope_status: CORE_CANDIDATE
@@ -819,12 +1067,104 @@ gaps:
         evidence_level: MODERATE
         supports: 五周互动中的机器人伙伴迁移
         boundary: 小样本原型不独立识别各线索因果作用；机构页漏列Ho，按论文首页保留四作者。
-    skeptic_challenge: 留存、好感和重用意愿都不能单独证明关系质量；不预设更亲密就是更好。 不把条件组合或有限检索当空白证明。
+      - paper_slug: x53-realcompanion
+        evidence_level: MODERATE
+        supports: 真实conversation logs提供长期interaction record与selective-memory outcome。
+        boundary: Benchmark understanding不等于relationship quality。
+      - paper_slug: x56-evidence-lives
+        evidence_level: PRELIMINARY
+        supports: Mechanism execution与user rating可以错位。
+        boundary: 单系统case不能建立一般因果。
+      - paper_slug: x57-pair
+        evidence_level: PRELIMINARY
+        supports: 14天访谈将familiarity、relevant recall与early companionship联系起来。
+        boundary: Single-group、无ablation，不能识别memory或expression效应。
+      - paper_slug: x58-mind-perception-companionability
+        evidence_level: PRELIMINARY
+        supports: Agency与experience mind perception可能对应不同first-impression companionability维度。
+        boundary: N=46、15分钟且planned manipulation check失败，不是长期关系证据。
+      - paper_slug: x65-mourning-ai-companions
+        evidence_level: MODERATE
+        supports: 两次平台更新后loss framing、negative expression与restoration desire上升。
+        boundary: 不能诊断个体或隔离具体continuity dimension。
+      - paper_slug: x68-manicule
+        evidence_level: PRELIMINARY
+        supports: 等待可被部分参与者理解为社会负担，提出持续互动中的候选问题。
+        boundary: VR、特定任务和样本；不证明AR原型效果、跨形态意义保持、长期关系或普遍模态优越。
+      - paper_slug: x69-deco
+        evidence_level: MODERATE
+        supports: 七天自由使用提供early relational practice、continued-use intention与identity negotiation证据。
+        boundary: 自选N=17、无field control、custom scales未验证且Perceived Companionship alpha=.59；不测试mismatch或repair。
+      - paper_slug: x73-conversing-with-objects
+        evidence_level: MODERATE
+        supports: 两周trans-embodiment呈现情绪披露与关系/身份反思实践。
+        boundary: 不是companion intervention或relationship outcome study；scripted probe、N=12且无对照。
+      - paper_slug: x74-how-ai-companionship-develops
+        evidence_level: MODERATE
+        supports: 303名现有用户与110人四周StudyBot资料直接分开mental model、parasocial、engagement/disclosure和关系/依赖结果。
+        boundary: 观察性关联、每周一次补偿使用与选择性流失；不测试角色一致性、失配、解释或修复。
+      - paper_slug: x70-anthropomorphic-attitudes
+        evidence_level: PRELIMINARY
+        supports: 命名分组对关系式回复策略有不同即时偏好。
+        boundary: 即时pairwise judgment不是实际任务、留存、信任、repair或关系质量，且命名proxy未经验证。
+      - paper_slug: x75-grounded-robot-persona
+        evidence_level: PRELIMINARY
+        supports: Failure protocol与transparency已被提出为persona specification的必要组成。
+        boundary: 模板没有经过用户mismatch/repair或持续关系评估。
+      - paper_slug: x76-living-with-ai-companions
+        evidence_level: MODERATE
+        supports: 约一年两波调查把持续engagement、companionship use与self-disclosure同较低well-being及较少面对面互动联系起来。
+        boundary: 37.1%留存、观察性路径、self-report和T2同期mediator/outcome；不建立social-displacement因果，也不测试character consistency或repair。
+      - paper_slug: x78-beyond-small-talk
+        evidence_level: MODERATE
+        supports: Matched current disclosure下的模型关系行为仍受先前trajectory影响，提供history-conditioned evaluation先例。
+        boundary: Synthetic conversations、LLM judges和text-only model outputs；不证明用户trust、attachment、reuse或relationship outcome变化。
+      - paper_slug: x80-relational-complexity
+        evidence_level: PRELIMINARY
+        supports: 六类relational demand提出一致、顺从或低冲突可能通过降低repair、self-presentation、strategic uncertainty或reciprocity burden影响使用。
+        boundary: Conceptual、非系统综述、无新实证；displacement、deskilling与具身外推均待验证。
+      - paper_slug: x85-crafting-companions
+        evidence_level: MODERATE
+        supports: 真实robot-owner资料显示customization、self-extension、psychological ownership与community practice是attachment的竞争解释。
+        boundary: Cross-sectional enthusiast sample与aibo偏重；mediation不能建立时间顺序、因果或互惠relationship quality。
+      - paper_slug: x87-relational-schema-lock-in
+        evidence_level: MODERATE
+        supports: 互动历史可能让系统以旧schema替代当前意图；关系连续性设计必须同时允许纠错并保留用户当下agency。
+        boundary: 不测relationship quality、trust trajectory、再次使用或具身互动；不能把schema lock-in直接称为关系伤害。
+      - paper_slug: x88-out-of-sync
+        evidence_level: PRELIMINARY
+        supports: 五周团队部署显示即时有用性、accommodation及较慢的协作/情感评价可能具有不同时间尺度。
+        boundary: 17团队、48人、无episodic memory、session配置调整与探索性crossover；不是长期companion关系或character-consistency因果研究。
+      - paper_slug: x90-joint-action-review
+        evidence_level: MODERATE
+        supports: Joint-action综述要求把task fluency、shared representation、prediction与integration区分，防止用协调指标替代关系或相互理解结果。
+        boundary: 理论/系统综述边界，不提供character mismatch、repair或relationship change的新因果效应。
+    skeptic_challenge: 系统变化、interaction history、长期使用后果与owner investment均已有直接证据；剩余问题不是关系是否存在，而是在控制功能质量、便利性、既有依恋、customization和社会生态后，哪些角色一致性/违背、关系负担、解释与修复机制独立改变期待、校准、退出或关系重构。
     history:
       - date: 2026-10-02
         from: UNASSESSED
         to: CANDIDATE
         reason: 独立文献、反方和方法审查后记录为候选，不晋升HIGH_PRIORITY。
+      - date: 2026-10-07
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: 独立红队判定应重新定义为已建立期待被打破后的连续性、解释与修复机制；不把留存、好感或loss posts单独等同关系质量。
+      - date: 2026-10-07
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: 纳入用户已完成Manicule的原稿证据；只改变基础与后续优先级线索，不宣称gap已验证。
+      - date: 2026-10-12
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: Deco、Conversing with Objects与How AI Companionship Develops提供早期重复互动/多周证据，Cao仅提供即时偏好；没有研究因果分离角色一致性、失配、解释或修复。剩余gap收窄为超出一般功能质量和既有依恋的mismatch-and-repair机制。
+      - date: 2026-10-26
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: 一年纵向关联、disclosure trajectory、relational-complexity框架与长期owner实践扩展了竞争机制与结果边界，但仍无研究因果隔离character–behavior mismatch、解释和repair；保持CANDIDATE与medium priority。
+      - date: 2026-11-02
+        from: CANDIDATE
+        to: CANDIDATE
+        reason: Schema lock-in、五周团队部署与joint-action综述共同强化多时间尺度、persistence–corrigibility和结果分层，但均未因果隔离character–behavior mismatch、解释与repair对长期关系的作用；状态与优先级不变。
 allowed_update_states:
   - UNCHANGED
   - STRENGTHENED
@@ -837,4 +1177,4 @@ allowed_update_states:
 high_priority_rule:
   independent_evidence_sources_min: 2
   skeptic_challenge_required: true
-updated_at: 2026-10-02
+updated_at: 2026-11-02

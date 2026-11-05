@@ -1,0 +1,154 @@
+{
+  "record_type": "research_project_and_literature_screen_proposal",
+  "checked_at": "2026-11-04",
+  "status": "DRAFT_COMPARISON_NO_PROJECT_SELECTED",
+  "user_evidence": {
+    "rejected_work": "User identifies Manicule as the rejected paper; review text has not been supplied.",
+    "core_interest": "设计机器人传达信息的视觉语言，研究用户如何理解，以及对human-robot relationship的影响。",
+    "advisor_expectation": "Personalized HRI; concrete deliverables and acceptable contribution types remain unconfirmed.",
+    "current_need": "User asks for concrete candidate directions and guided assessment, without being asked to select before developing judgment.",
+    "preference": "Prioritize understandable examples, explicit reasoning, feasible evidence and support for building research judgment. Do not equate rejection with direction failure or attribute rejection to reviewer preference without review evidence."
+  },
+  "research_project": {
+    "phenomenon": "机器人视觉表达的含义、显著性和互动要求可能对不同用户或同一用户的不同情境不适合。",
+    "real_world_significance": "Candidate value concerns communicating actionable information while respecting attention, choice and the costs of adaptation; no benefit established.",
+    "research_problem": "Compare tractable directions before selecting a first research question.",
+    "candidate_framings": ["HRI/HCI empirical communication and adaptation", "HCI/HRI expression authoring and end-user control"],
+    "literature_refs": ["P01", "P02", "P03", "P04", "P05", "P06", "P07"],
+    "gaps": [],
+    "research_questions": [],
+    "constructs": ["Interpretation accuracy", "Response obligation", "Personal versus situational variation", "Partner-specific convention", "Adaptation repair", "Author intent versus recipient interpretation"],
+    "study_blueprints": [],
+    "contributions": ["Potential bounded empirical findings", "Potential expression design methods", "Potential authoring capability"],
+    "claims": [],
+    "risks": {
+      "novelty": ["All broad directions have related precedents. No validated gap or absence claim follows from this scan."],
+      "methodology": ["Preference is not understanding; familiarization is not co-constructed convention; context adaptation is not necessarily personalization."],
+      "validity": ["Existing platform reuse, recruitment, deadline and robot access are not currently verified.", "Short-term social impressions do not establish relationship change."],
+      "ethics": ["Any study with participants needs the applicable institutional process; no participant study is executed or approved by this record."]
+    },
+    "positioning": "Communication/interaction contribution requires a credible connection between robot expression and human interpretation. An authoring contribution can stand independently if it demonstrably enables a valuable capability.",
+    "status": "DRAFT_COMPARISON"
+  },
+  "resource_assumptions": {
+    "confirmed_foundation": "Manicule completed VR prototype and 12-participant qualitative study, recorded as user-confirmed foundation in program.yaml.",
+    "reuse_unverified": "Current code execution, logging and change effort are unknown.",
+    "physical_robot": "No current ownership or reliable access confirmed; no acquisition assumed.",
+    "participants": "Campus adults were previously feasible; current recruitment and repeat participation unconfirmed.",
+    "deadline": "Unknown. No total duration, sample size, acceptance probability or hardware availability is promised."
+  },
+  "candidates": [
+    {
+      "id": "C01",
+      "working_question": "机器人应该对这个人说多详细，什么时候可以简化？",
+      "example_status": "HYPOTHETICAL",
+      "example": "请求被重复使用后，具体文字和指向动画逐渐简化为图形；遇到容易混淆的新请求时是否应恢复细节。",
+      "personalization_target": "Individual demonstrated interpretation and interaction history, not age/nationality proxies or only self-reported expertise.",
+      "potential_value": "Identify when brevity reduces burden while preserving actionable distinctions, and when apparent familiarity is misleading.",
+      "weak_version": "Novices like more explanation, experienced users like less.",
+      "prior_work": ["P01", "P02"],
+      "minimum_evidence": "Interactive repeated task, equal learning opportunity, held-out requests/context, interpretation/action measures separate from liking.",
+      "baselines_to_consider": ["Carefully designed fixed expression", "User-selected detail", "Personalized policy with a justified learning signal"],
+      "fast_check": "Does individual history predict interpretation of new instances beyond current context and a good fixed design?",
+      "stop_or_reframe": "If simple fixed or user-selected detail solves the problem and no substantive boundary remains, avoid building an adaptive system solely for personalization.",
+      "feasibility": "Relatively high conditional on reusable interactive platform; material validity remains a substantial cost.",
+      "relationship_boundary": "Supports interpretation and short-term expectations; no relationship improvement inference."
+    },
+    {
+      "id": "C02",
+      "working_question": "机器人没有得到回应时，应该继续提醒，还是退让？",
+      "example_status": "HYPOTHETICAL",
+      "example": "机器人请求挪开物品；用户没有回应，可能没注意、误解、正在忙或选择不回应。",
+      "personalization_target": "Individual response preferences and habits distinguished from experimentally controlled urgency and current workload.",
+      "potential_value": "Resolve the trade-off between noticeable, understandable requests and unwanted response pressure; study the costs of treating silence as a learning signal.",
+      "weak_version": "People prefer fewer interruptions when busy.",
+      "prior_work": ["P03"],
+      "existing_foundation": "Manicule records suggest response obligation/social pressure as a qualitative lead; no review text or raw-data reanalysis performed here.",
+      "minimum_evidence": "Real main task plus robot requests with reliable timing; record missed requests, appropriate response, deliberate deferral, main-task cost and perceived pressure.",
+      "baselines_to_consider": ["Context-sensitive common policy", "User-controlled deferral or settings", "Personal policy where history adds justified information"],
+      "fast_check": "Can observed behavior distinguish failed communication from deliberate nonresponse? Does personal history add useful information beyond the situation?",
+      "stop_or_reframe": "If effects are entirely workload/urgency effects, reframe as contextual expression design rather than claiming individual personalization.",
+      "feasibility": "Relatively high to medium with interactive VR/desktop; automatic sensing is not needed to first establish the phenomenon.",
+      "relationship_boundary": "Short-term pressure, autonomy and expectations are measurable; persistent respect or relationship change requires further appropriate repeated-use evidence."
+    },
+    {
+      "id": "C03",
+      "working_question": "人和机器人能否形成双方逐渐约定的视觉简写？",
+      "example_status": "HYPOTHETICAL",
+      "example": "多次共同任务后，一段完整动画被双方确认的短动作替代；新任务或换搭档时检验它是否仍被理解。",
+      "personalization_target": "Dyad-specific agreed meaning and shared interaction history, rather than aesthetic preference alone.",
+      "potential_value": "Separate shared-history effects from mere repeated exposure and examine the trade-off between local efficiency and transferability.",
+      "weak_version": "Repeatedly teach assigned icons and show faster recognition.",
+      "prior_work": ["P04", "P05"],
+      "minimum_evidence": "Actual negotiation/confirmation/repair, matched-exposure comparison, and transfer or partner manipulation when partner specificity is claimed.",
+      "baselines_to_consider": ["Fixed standard expression", "Equally practiced assigned shorthand", "Negotiated expression"],
+      "fast_check": "Do participants actually negotiate and reuse expressions, or only memorize assigned cues?",
+      "stop_or_reframe": "If the task only elicits memorization, do not describe it as co-constructed convention.",
+      "feasibility": "Medium to lower: controlled repetition is possible, but interaction design, exposure matching and repeated participation add cost.",
+      "relationship_boundary": "Efficient dyad communication or perceived familiarity is not by itself attachment or relationship quality."
+    },
+    {
+      "id": "C04",
+      "working_question": "机器人个性化错了，怎样让用户看得出来并纠正？",
+      "example_status": "HYPOTHETICAL",
+      "example": "用户今天没回应，机器人把它学成永久少提醒；用户需要说明只限今天或撤销这次学习。",
+      "personalization_target": "Scope, duration and correction of learned visual-expression preferences.",
+      "potential_value": "Study how users recognize and repair a robot's mistaken interpretation of their behavior, including temporary versus durable updates.",
+      "weak_version": "Add a settings button and show higher perceived control.",
+      "prior_work": ["P06", "P07"],
+      "minimum_evidence": "Plausible bounded adaptation errors; compare fair recovery mechanisms and assess error recurrence, recovery effort and subsequent interaction.",
+      "baselines_to_consider": ["Explicit user settings", "Correctable automatic update", "A credible automatic policy with matched performance"],
+      "fast_check": "Can users identify what changed and correct the intended scope without excessive work?",
+      "stop_or_reframe": "If a generic notification/settings UI answers the whole question, strengthen or reconsider the substantive robot-expression bridge.",
+      "feasibility": "Medium: a small inspectable state model can suffice before a complex learning system.",
+      "relationship_boundary": "Recovery and control can be studied directly; restored trust or relationship quality requires its own evidence."
+    },
+    {
+      "id": "C05",
+      "working_question": "怎样帮助用户或设计者创作适合特定人的机器人表达？",
+      "example_status": "HYPOTHETICAL",
+      "example": "创作者希望表达一个不紧急、可以稍后处理的请求，工具支持预览与检查，而不只是选择颜色和动画。",
+      "personalization_target": "Explicit recipient-specific communication constraints and creative intent; creator and target recipient must be distinguished.",
+      "potential_value": "Enable valuable expressions that creators cannot currently produce or verify efficiently, with separate recipient interpretation checks when communicative success is claimed.",
+      "weak_version": "Build an editor or LLM generator and collect satisfaction ratings.",
+      "prior_work": ["P07", "P08"],
+      "minimum_evidence": "Actual creator need and task; credible simple-tool comparison; effort, errors and achieved capability; independent target-recipient evidence for intended meaning claims.",
+      "baselines_to_consider": ["Templates or parameter controls", "Existing programming/animation workflow appropriate to the task"],
+      "fast_check": "Identify repeated real creation failures before implementing a complete editor.",
+      "stop_or_reframe": "If no recurring creator difficulty exists or simple templates already solve it, defer the full tool.",
+      "feasibility": "Conditional medium; high development-overrun risk without a bounded validated need.",
+      "relationship_boundary": "Creator investment, aesthetics and recipient interpretation must not be conflated with relationship improvement."
+    }
+  ],
+  "sources": [
+    {"id":"P01","title":"Adaptive Interaction of Persistent Robots to User Temporal Preferences","year":2015,"url":"https://www.cs.cmu.edu/afs/cs/user/mmv/www/papers/15icsr-BarVel.pdf","access":"Full PDF available; targeted abstract/introduction and method framing checked, not a full audit","source_says":"Models temporal preferences and learning over fixed interaction options; light animations on CoBot motivate personalization.","boundary":"Does not establish that personalized communicative meaning or long-term relationships improve."},
+    {"id":"P02","title":"Learning to Communicate Functional States with Nonverbal Expressions for Improved Human-Robot Collaboration","year":2024,"url":"https://arxiv.org/abs/2404.19253","access":"Author abstract","source_says":"Learns nonverbal auditory expression parameters from human feedback; reports a 24-participant study.","boundary":"AUDITORY, not visual: cross-modal method precedent only; no causal relationship claim."},
+    {"id":"P03","title":"How People Envision Robot Interruption Behaviors","year":2026,"url":"https://ieeexplore.ieee.org/abstract/document/11714853","access":"Publisher abstract indexed by search; direct open failed","source_says":"18-participant embodied elicitation/interview study across task and urgency scenarios; reports differing expectations for low-urgency interruption and robot role.","boundary":"Elicited expectations do not establish adaptive-policy benefit or stable personal preferences."},
+    {"id":"P04","title":"SPOTTER: A Framework for Investigating Convention Formation in a Visually Grounded Human-Robot Reference Task","year":2024,"url":"https://aclanthology.org/2024.lrec-main.1322/","access":"Official paper abstract and targeted PDF abstract/introduction; also existing local paper object x1-spotter-human-robot-conventions","source_says":"Exploratory Dutch reference tasks yield stable conventions without shortening referring-expression length in HRI.","boundary":"Spoken referring expressions over visual scenes, not robot visual-output shorthand; no absence or automatic transfer claim."},
+    {"id":"P05","title":"Communicating Robot Conventions through Shared Autonomy","year":2022,"url":"https://arxiv.org/abs/2202.11140","access":"Author/publisher abstracts","source_says":"Robot motion reveals its chosen control convention; comparisons include unaided learning and written instructions.","boundary":"Control convention demonstration is not equivalent to jointly negotiated visual language."},
+    {"id":"P06","title":"Nonverbal Robot Feedback for Human Teachers","year":2019,"url":"https://arxiv.org/abs/1911.02320","access":"Author abstract","source_says":"Robot nonverbal feedback exposes its current estimate of human preferences to aid human teaching and understanding of the learner.","boundary":"Visibility of learned preferences has precedent; candidate correction-scope question still needs closest-work validation."},
+    {"id":"P07","title":"Balancing User Control and Perceived Robot Social Agency through the Design of End-User Robot Programming Interfaces","year":2025,"url":"https://hri.cs.uchicago.edu/publications/HRI_2025_Zhang_Balancing_User_Control_and_Perceived_Robot_Social_Agency_through_the_Design_of_End_User_Robot_Programming_Interfaces.pdf","access":"Indexed author PDF abstract; direct PDF open failed. Author/lab publication listing verified.","source_says":"Examines granularity of end-user programming and trade-offs between user control and perceived social agency.","boundary":"Do not infer that customization universally improves relationships or that a new settings interface alone is novel."},
+    {"id":"P08","title":"End-User Puppeteering of Expressive Movements","year":2022,"url":"https://arxiv.org/abs/2207.12544","access":"Author abstract; workshop extended abstract, latest revision 2023","source_says":"Explores end-user puppeteering of expressive movement with immediate feedback.","boundary":"Preliminary authoring precedent, not definitive evaluation of recipient-specific semantic authoring."}
+  ],
+  "independent_review": {
+    "method_efficiency_advocate": "C01/C02 easiest to make controlled and interpretable, C04 another bounded option. C03 needs matched learning and genuine negotiation, C05 needs an actual creator problem.",
+    "amsc_skeptic": "C02 strongest immediate substantive tension; C03 potentially richest knowledge; C01 may merely confirm novice/expert intuition. C05 defer before validating creator needs.",
+    "missing_paper_attacker": "Every broad direction has precedents. Shift attention to actual unresolved decision, without manufacturing novelty through arbitrary added constraints.",
+    "synthesis": "Prioritize checking C02 for meaningfulness and C01 for a low-cost controlled alternative; keep C04 as a bounded repair route, C03 as more demanding and C05 conditional. This is an agent-recommended investigation order, not a researcher decision to pursue."
+  },
+  "coverage": {
+    "mode": "Focused initial screen for candidate comparison, not deep or review-grade investigation",
+    "paths": ["Personalized expressive lights and earlier temporal-preference work", "Feedback learning for nonverbal communication", "Interruption and nonresponse", "Shared conventions and reference games", "Human feedback and end-user expression authoring"],
+    "confidence": "Moderate for broad precedents; low to moderate for exact residual gaps.",
+    "remaining": ["Full-text comparisons for close 2024-2026 work", "Forward/backward citation search for exact shortlisted questions", "Direct visual-output convention studies", "Actual review texts", "Current resources and advisor criteria"],
+    "stopping_rationale": "Enough evidence for a novice-facing candidate comparison, not enough to claim saturation or promote a gap."
+  },
+  "integration_review": {
+    "master_literature_list": "New sources are screening candidates here; P04 already has a local paper record. No reviewed master-list entries overwritten.",
+    "current_field_state": "No new established field claim promoted from this initial screen.",
+    "gap_registry": "No gap created or promoted; broad novelty assumptions explicitly challenged.",
+    "research_graph": "No author/lab relationship inferred; source authorship retained via source pages.",
+    "question_priority": "Investigation order only, recorded above. No first RQ, PURSUE decision or architecture choice.",
+    "exam": "No direct upstream exam claim change established."
+  }
+}

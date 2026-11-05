@@ -51,9 +51,27 @@
   },
   "updated_at": "2026-10-02",
   "program_membership": {
-    "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "五周互动中的机器人伙伴迁移"
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "长期agent迁移的中心是跨载体架构，不能仅因重复互动保留。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "五周互动中的机器人伙伴迁移"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "长期agent迁移的中心是跨载体架构，不能仅因重复互动保留。"
   }
 }

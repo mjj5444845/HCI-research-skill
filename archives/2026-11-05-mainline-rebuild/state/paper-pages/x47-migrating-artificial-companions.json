@@ -1,0 +1,59 @@
+{
+  "id": "X47",
+  "slug": "x47-migrating-artificial-companions",
+  "title": "Migrating Artificial Companions (Demonstration)",
+  "authors": [
+    "Iain Wallace",
+    "Michael Kriegel",
+    "Ruth Aylett"
+  ],
+  "year": 2012,
+  "venue": "AAMAS 2012 demonstration",
+  "source_url": "https://researchportal.hw.ac.uk/en/publications/migrating-artificial-companions-demonstration/",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "跨屏幕与手机迁移的人工伙伴",
+  "problem": "跨屏幕与手机迁移的人工伙伴",
+  "method": "LIREC展示affective companion迁移，正式proceedings文本及机构元数据已审查。",
+  "findings": [
+    "系统谱系已经涉及人格、行为、外观和记忆跨载体迁移。"
+  ],
+  "real_contribution": "跨屏幕与手机迁移的人工伙伴",
+  "biggest_weakness": "Demo不是关系效果实验；与X48、X49属于同一研究谱系，不能简单当独立重复。",
+  "claim_boundary": "Demo不是关系效果实验；与X48、X49属于同一研究谱系，不能简单当独立重复。",
+  "why_researcher_should_care": "提供新主线的直接先例与反证边界；组合已有设计不自动构成新颖性。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "A",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "跨屏幕与手机迁移的人工伙伴"
+    ],
+    "gap_ids": [
+      "GAP-RC-04"
+    ],
+    "master_list_decision": "Added after independent focused audit"
+  },
+  "investigation_status": "focused_source_audit",
+  "evidence_notes": [
+    "2026-10-02独立文献代理核查；全文可访问与完整深度调查分开，未复现实验。",
+    "Demo不是关系效果实验；与X48、X49属于同一研究谱系，不能简单当独立重复。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://researchportal.hw.ac.uk/en/publications/migrating-artificial-companions-demonstration/",
+      "https://www.ifaamas.org/Proceedings/aamas2012/print/volume3.pdf"
+    ]
+  },
+  "updated_at": "2026-10-02",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "跨屏幕与手机迁移的人工伙伴"
+  }
+}

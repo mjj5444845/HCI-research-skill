@@ -37,23 +37,23 @@ test('Chinese validation renders a new question date from its evidence, not hist
 
 test('approved artifact roadmap preserves dependency and evidence boundaries',()=>{
  const p=read('research-programs/amsc/program.yaml'),r=p.artifact_roadmap;
- assert.equal(r.status,'APPROVED_DIRECTION');assert.equal(r.stages.length,5);
+ assert.equal(r.status,'APPROVED_DIRECTION');assert.equal(r.stages.length,4);
  const stageIds=new Set(r.stages.map(s=>s.id));assert.equal(stageIds.size,r.stages.length);
- const refs=new Set(r.sources.map(s=>s.id));
  const visited=new Set(),active=new Set();
  const visit=id=>{assert.ok(stageIds.has(id),'unknown stage '+id);assert.ok(!active.has(id),'cyclic stage dependency '+id);if(visited.has(id))return;active.add(id);for(const d of r.stages.find(s=>s.id===id).depends_on)visit(d);active.delete(id);visited.add(id);};
- for(const s of r.stages){visit(s.id);assert.ok(s.interface_panels.length);assert.ok(s.deliverables.length);assert.ok(s.evidence.length);assert.ok(s.gate&&s.stop);assert.equal(s.status,'PLANNED');for(const id of s.industry_refs)assert.ok(refs.has(id),'unknown source '+id);}
- for(const s of r.sources){assert.match(s.url,/^https:\/\//);assert.ok(s.observed&&s.relevance&&s.caveat);}
+ for(const s of r.stages){visit(s.id);assert.ok(s.deliverables.length);assert.equal(s.status,'DRAFT');assert.ok(s.contribution);}
+ assert.deepEqual(p.foundation_works.map(x=>x.id),['X33','X68']);
+ const plan=read(p.current_plan_source);assert.match(plan.project.status,/草案/);assert.match(plan.project.example.status,/未/);
  const pipeline=read('research-programs/amsc/state/research_pipeline.json');assert.equal(r.first_question_id,null,'scope approval must not select a first RQ');assert.equal(pipeline.questions.filter(q=>q.id.startsWith('RQ-RC-')).length,5);assert.ok(pipeline.questions.filter(q=>q.id.startsWith('RQ-RC-')).every(q=>q.status==='DRAFT'));assert.equal(pipeline.questions.find(q=>q.id==='RQ-FT-01').status,'INCUBATE');
  assert.ok(pipeline.decisions.some(d=>d.actor==='researcher'&&d.decision==='APPROVE_INTEGRATED_ROADMAP'));
  assert.equal(read('research-programs/amsc/state/workflow_dashboard.json').research_line.identity,p.research_identity_zh);
 });
 
- test('v3 scope migration preserves facts and records all membership decisions',()=>{
-const manifest=read('reports/mainline/2026-10-02-migration.json');assert.equal(manifest.paper_scope_reviews.length,papers.length);
-for(const p of papers){assert.equal(p.program_membership.program_version,'3.0');assert.ok(p.program_membership.reason);const prior=new URL('archives/2026-10-02-mainline-v2/state/paper-pages/'+p.slug+'.json',root);if(fs.existsSync(prior)){const old=read('archives/2026-10-02-mainline-v2/state/paper-pages/'+p.slug+'.json');for(const k of ['title','authors','year','source_url','method','findings','claim_boundary','investigation_status'])assert.deepEqual(p[k],old[k],p.id+': '+k);}}
+test('v3 scope migration preserves facts and records all migration-time membership decisions',()=>{
+const manifest=read('reports/mainline/2026-10-02-migration.json'),reviewed=new Set(manifest.paper_scope_reviews.map(p=>p.slug));assert.equal(reviewed.size,manifest.paper_scope_reviews.length);
+for(const p of papers){assert.equal(p.program_membership.program_version,'3.1');assert.ok(p.program_membership.reason);if(!reviewed.has(p.slug))assert.ok((p.updated_at||'')>'2026-10-02',p.id+': unreviewed paper must postdate migration');const prior=new URL('archives/2026-10-02-mainline-v2/state/paper-pages/'+p.slug+'.json',root);if(fs.existsSync(prior)){const old=read('archives/2026-10-02-mainline-v2/state/paper-pages/'+p.slug+'.json');for(const k of ['title','authors','year','source_url','method','findings','claim_boundary','investigation_status'])assert.deepEqual(p[k],old[k],p.id+': '+k);}}
 const gs=read('research-programs/amsc/state/gap_registry.yaml').gaps;assert.ok(gs.filter(g=>g.id.startsWith('GAP-RC-')).every(g=>g.status==='CANDIDATE'));
-const p=read('research-programs/amsc/program.yaml');assert.equal(p.design_space.architecture_status,'OPEN');assert.equal(p.resources.robot_available,false);assert.equal(p.resources.last_confirmed_at,'2026-09-18');
+const p=read('research-programs/amsc/program.yaml');assert.equal(p.design_space.architecture_status,'OPEN');assert.equal(p.resources.robot_available,false);assert.equal(p.resources.last_confirmed_at,'2026-11-05');assert.equal(p.resources.ar_development_device,'Meta Quest 3');
 });
 
 test('new gap namespace cannot collide with archived scientific questions',()=>{const current=read('research-programs/amsc/state/gap_registry.yaml').gaps;const old=new Set(read('archives/2026-09-18-mainline-v1/research-programs/amsc/state/gap_registry.yaml').gaps.map(g=>g.id));for(const g of current.filter(g=>g.id.startsWith('GAP-RC-')))assert.ok(!old.has(g.id));});

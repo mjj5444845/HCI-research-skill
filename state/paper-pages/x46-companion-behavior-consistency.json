@@ -53,8 +53,26 @@
   "updated_at": "2026-10-02",
   "program_membership": {
     "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "机器人外观、个性与行为一致性的早期研究"
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "请求注意场景中的外观行为一致性连接角色期待；保留摘要证据边界。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "机器人外观、个性与行为一致性的早期研究"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "请求注意场景中的外观行为一致性连接角色期待；保留摘要证据边界。"
   }
 }

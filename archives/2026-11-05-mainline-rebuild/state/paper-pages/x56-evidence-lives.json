@@ -1,0 +1,14 @@
+{
+  "id": "X56", "slug": "x56-evidence-lives", "title": "Where the Evidence Lives: Auditing AI Companions’ Self-Descriptions",
+  "authors": ["Seiya Ikeda", "Shin-nosuke Ishikawa"], "year": 2026, "venue": "arXiv preprint", "doi": "10.48550/arXiv.2609.38753", "source_url": "https://arxiv.org/html/2609.38753v1", "access_status": "full_text", "priority": "Must Read",
+  "one_sentence": "一个月部署显示，companion 的自我叙述、用户中等评价与底层记忆机制是否真正运行是三个不能互相替代的证据对象。",
+  "problem": "AI companions 会描述自己的记忆与关系能力，但现有评估很少逐项对齐 self-claim、user judgement 与 runtime implementation。",
+  "method": "在日本团队Slack中部署主动 companion Lita 一个月，分析9名同事与第一作者pilot账户；把自我描述与匿名问卷、日志和实现记录三方对账。",
+  "findings": ["审美类自我主张获得72%同意，关系类仅22%；8/9名参与者把关系类主张选为最不代表系统。", "用户对记忆/一致性的评分仍接近中点以上，但三层记忆中的两层从未执行 accumulation。"],
+  "real_contribution": "提出可追溯的 self-description—user judgement—runtime mechanism 审计结构。",
+  "biggest_weakness": "n=9同事、单一日语Slack系统、无对照；匿名问卷不能链接个体日志，机制编码的coder agreement接近零。",
+  "claim_boundary": "支持该部署中的 claim-mechanism mismatch；不能推广为 companion self-narrative 普遍失败或证明关系效果。",
+  "why_researcher_should_care": "GAP-RC-03/05 的成长、理解与关系主张需要机制证据，不能由自述或满意度单独背书。",
+  "amsc": {"mainline_fit": 9, "buckets": ["D", "E"], "stages": [], "mechanisms": ["mechanism audit", "self-description", "memory traceability"], "gap_ids": ["GAP-RC-03", "GAP-RC-05"], "master_list_decision": "Added by weekly radar after full-text audit"},
+  "investigation_status": "radar_full_text_audit", "evidence_notes": ["2026-10-07全文审查；故障既是发现也是confound。"], "investigation_provenance": {"sources": ["https://arxiv.org/html/2609.38753v1"]}, "updated_at": "2026-10-07", "program_membership": {"status": "CORE", "program_version": "3.0", "reviewed_at": "2026-10-07", "reason": "长期 companion 自我主张与实际机制的证据审计"}
+}

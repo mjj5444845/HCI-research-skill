@@ -1,0 +1,79 @@
+{
+  "id": "X62",
+  "slug": "x62-gestadapt",
+  "title": "GestAdapt: Workspace-Conditioned Co-Speech Gesture Generation for Humanoid Robots",
+  "authors": [
+    "Bosong Ding",
+    "Xianglin Zhang",
+    "Miao Xin",
+    "Murat Kirtay",
+    "Giacomo Spigler"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2609.38400",
+  "source_url": "https://arxiv.org/abs/2609.38400",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "GestAdapt显示co-speech gesture可在生成阶段适应workspace与embodiment constraints，而非事后裁剪，但仍未验证人是否读对意义。",
+  "problem": "不受workspace约束生成再修正的gesture可能不自然或不可执行。",
+  "method": "从六个co-speech corpora学习共享motion representation，以预设wrist workspace条件生成并跨机器人retarget；含用户评分和Reachy2 pairwise实体评价。",
+  "findings": [
+    "modified-workspace gestures均分3.24/5，高于no-workspace 2.43、低于reference 3.68。",
+    "在Reachy2相同约束下，该方法69.7%的比较排名第一。"
+  ],
+  "real_contribution": "把环境可用空间作为gesture generation条件，并展示跨embodiment可执行性。",
+  "biggest_weakness": "未测referent/intent识别、角色风格、身份连续性或开放互动。",
+  "claim_boundary": "支持constraint-aware generation和perceived quality，不证明communicative success。",
+  "why_researcher_should_care": "作为9月29日边缘补录，进一步缩窄GAP-RC-02的宽技术缺口。",
+  "amsc": {
+    "mainline_fit": 8,
+    "buckets": [
+      "A",
+      "C"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "workspace-conditioned gesture",
+      "cross-embodiment retargeting"
+    ],
+    "gap_ids": [
+      "GAP-RC-02"
+    ],
+    "master_list_decision": "Recovered edge candidate after full-text audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "首次公开2026-09-29，标为last-run edge recovery，不算正式7天窗口新作。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/abs/2609.38400"
+    ]
+  },
+  "updated_at": "2026-10-07",
+  "program_membership": {
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "工作空间约束下手势生成提供表达实现的技术边界。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-07",
+        "reason": "受workspace与本体约束的co-speech gesture生成"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "工作空间约束下手势生成提供表达实现的技术边界。"
+  }
+}

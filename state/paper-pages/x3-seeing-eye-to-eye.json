@@ -115,10 +115,28 @@
     "data_reanalysis": false
   },
   "program_membership": {
-    "status": "BACKGROUND",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    "status": "CORE",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "AR共享视角、对象和反馈的真人任务直接支持空间表达与理解，组件效果须分开。"
   },
-  "scope_updated_at": "2026-09-18"
+  "scope_updated_at": "2026-09-18",
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "BACKGROUND",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "AR共享视角、对象和反馈的真人任务直接支持空间表达与理解，组件效果须分开。"
+  }
 }

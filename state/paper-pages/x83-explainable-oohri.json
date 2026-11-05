@@ -1,0 +1,77 @@
+{
+  "id": "X83",
+  "slug": "x83-explainable-oohri",
+  "title": "Explainable OOHRI: Communicating Robot Capabilities and Limitations as Augmented Reality Affordances",
+  "authors": [
+    "Lauren W. Wang",
+    "Mohamed Kari",
+    "Parastoo Abtahi"
+  ],
+  "year": 2026,
+  "venue": "ACM/IEEE HRI 2026",
+  "doi": "10.1145/3757279.3785569",
+  "source_url": "https://arxiv.org/abs/2601.14587",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "X-OOHRI用AR signifiers、radial menus、color与explanation tags表达机器人能力和限制；N=14探索研究无受控baseline且参与者未与实体机器人现场交互。",
+  "problem": "如何在用户发出对象中心指令前，让机器人行动可能性、约束与resolution options可见并可操作。",
+  "method": "VLM驱动的object-oriented AR interface与physical-robot integration demonstration；N=14、约40分钟AR exploratory study，含think-aloud、任务、理解/可用性量表和访谈。",
+  "findings": [
+    "参与者可使用AR affordances发出object-oriented commands并讨论机器人limitations与mixed-initiative resolutions。",
+    "用户研究发生在execution前，physical robot属于系统integration/demo；无comparable no-explanation baseline。"
+  ],
+  "real_contribution": "为RC01提供能力/限制的视觉化解释与对象中心mixed-initiative HRI直接先例。",
+  "biggest_weakness": "小样本探索、无受控比较、无实体共处participant interaction；理解和mental-model改善的因果性未识别。",
+  "claim_boundary": "支持AR affordance的可行实例和初步使用证据；不支持优于baseline、实体共处、trust或relationship效果。",
+  "why_researcher_should_care": "RC01仍可分离accuracy、confidence与capability expectation，但不能再声称机器人能力边界缺少视觉化沟通先例。",
+  "amsc": {
+    "mainline_fit": 8,
+    "buckets": [
+      "A",
+      "B"
+    ],
+    "stages": [
+      "视觉/具身表达",
+      "表达与理解"
+    ],
+    "mechanisms": [
+      "AR affordances",
+      "capability communication",
+      "mixed-initiative resolution"
+    ],
+    "gap_ids": [
+      "GAP-RC-01"
+    ],
+    "master_list_decision": "Historical recovery after anchor and citation scan"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "参与者年龄18–25，N=14；不支持广泛人群外推。",
+    "physical integration demonstration不能替代live physical execution condition。"
+  ],
+  "updated_at": "2026-10-26",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "AR affordances呈现机器人能力限制和可执行选项，直接连接空间表达与理解。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-26",
+        "reason": "RC01 capability/limitation communication closest work"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "AR affordances呈现机器人能力限制和可执行选项，直接连接空间表达与理解。"
+  }
+}

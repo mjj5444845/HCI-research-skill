@@ -124,15 +124,33 @@
   "worth_sharing": false,
   "updated_at": "2026-08-27",
   "program_membership": {
-    "status": "BACKGROUND",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "宏观规范和人口尺度惯例超出当前表达布局，无具体依赖。"
   },
   "scope_updated_at": "2026-09-18",
   "historical_program_analysis": {
     "recorded_before": "2026-10-02",
     "gap_impact": "重定义 GAP-01/02，使其不再声称 generic convention emergence 缺失；可辩护的剩余问题是 embodied human–AI interaction 中跨 partner、context 与 population 的因果推断及 lifecycle control。并强化 GAP-03 的 transfer/retirement 与 GAP-04 的区分测量要求。",
     "next_project_priority": "将 partner↔population transfer 提升为主线设计轴，但必须提出明确的 cross-level predictions，不能仅以三层图充当解释。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "BACKGROUND",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "宏观规范和人口尺度惯例超出当前表达布局，无具体依赖。"
   }
 }

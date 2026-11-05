@@ -1,5 +1,5 @@
 {
-  "version": "3.0",
+  "version": "3.2",
   "questions": [
     {
       "id": "RQ-FT-01",
@@ -25,7 +25,7 @@
       "statement": "同一视觉/动作线索在不同情境中，如何分别影响意图识别、判断确信及能力预期？",
       "status": "DRAFT",
       "value": "表达何时传对意思、何时只提高确信？；可产生实证、可复用artifact或经证据支持的理论贡献。",
-      "boundary": "表达增加吸引力不等于准确理解；视频不能证明实体或关系效应。",
+      "boundary": "表达增加吸引力、可视化能力边界或改善协调不等于准确理解；joint-action综述进一步要求区分representation、prediction与integration，task fluency不能替代shared intention、grounding或关系。",
       "assumptions": "最近工作及操纵有效性仍需进一步核实；资源以最后确认记录为准。",
       "gap_ids": [
         "GAP-RC-01"
@@ -34,17 +34,23 @@
         "d4-expressing-thought",
         "d5-legibility-and-predictability",
         "x43-elegnt",
-        "x44-expressive-motion-timing"
+        "x44-expressive-motion-timing",
+        "x55-rethinking-legibility",
+        "x57-pair",
+        "x66-spatially-grounded-gesture",
+        "x68-manicule",
+        "x83-explainable-oohri",
+        "x90-joint-action-review"
       ],
-      "updated_at": "2026-10-02",
-      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。"
+      "updated_at": "2026-11-02",
+      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。 2026-10-07补入Manicule。2026-10-26纳入Explainable OOHRI并保持DRAFT；无first-RQ选择。 2026-11-02纳入joint-action系统综述的结果分层边界；保持DRAFT且未选首项RQ。"
     },
     {
       "id": "RQ-RC-02",
       "statement": "角色约束如何跨动作、视觉反馈和主动性保持可感知的一致性，同时适应任务与设备能力？",
       "status": "DRAFT",
       "value": "角色设定如何变成情境合适的行为？；可产生实证、可复用artifact或经证据支持的理论贡献。",
-      "boundary": "技术一致分数不等于用户感知一致；已有情境动作生成不能被忽略。",
+      "boundary": "技术tracking、persona specification、完整bundle评分与LLM evaluation都不等于用户感知的角色一致性；APM/APQ仍是探索性测量，regional accent cue的温暖—专业性权衡不能泛化为跨模态或跨文化一致性。",
       "assumptions": "最近工作及操纵有效性仍需进一步核实；资源以最后确认记录为准。",
       "gap_ids": [
         "GAP-RC-02"
@@ -53,17 +59,32 @@
         "x45-appearance-behavior-task",
         "x46-companion-behavior-consistency",
         "x51-empathetic-companions-personality",
-        "g4-context-aware-expressive-motion"
+        "g4-context-aware-expressive-motion",
+        "x59-trabot",
+        "x60-arise",
+        "x61-echo-g",
+        "x62-gestadapt",
+        "x64-artificial-identity-framework",
+        "x66-spatially-grounded-gesture",
+        "x68-manicule",
+        "x69-deco",
+        "x75-grounded-robot-persona",
+        "x77-what-should-ai-forget",
+        "x79-robommt",
+        "x81-pace",
+        "x82-emergi-personaos",
+        "x86-artificial-personality-model",
+        "x89-regional-accent-voice-ai"
       ],
-      "updated_at": "2026-10-02",
-      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。"
+      "updated_at": "2026-11-02",
+      "provenance": "2026-10-02用户批准方向迁移；主审综合独立审查提出候选，非研究者选定项目。2026-10-26补入stable execution、dynamic persona与traceable evolution先例；保持DRAFT。 2026-11-02补入人工人格测量候选与regional-accent identity cue；保持DRAFT。"
     },
     {
       "id": "RQ-RC-03",
       "statement": "变化幅度、变化理由和互动历史分别怎样影响用户对同一companion成长、适应或性格漂移的判断？",
       "status": "DRAFT",
       "value": "个性何时在成长，何时在漂移？；可产生实证、可复用artifact或经证据支持的理论贡献。",
-      "boundary": "本轮人格演变覆盖有限，gap未确认；叙述时间流逝不等于实际长期经验。",
+      "boundary": "Memory governance和versioned evolution可被实现，但实现不等于用户把变化体验为成长；relational schema lock-in又要求当前意图对历史schema保持规范性优先，仍未回答growth/adaptation/drift归因。",
       "assumptions": "最近工作及操纵有效性仍需进一步核实；资源以最后确认记录为准。",
       "gap_ids": [
         "GAP-RC-03"
@@ -71,17 +92,32 @@
       "paper_slugs": [
         "x51-empathetic-companions-personality",
         "e1-long-term-social-robots-survey",
-        "x4-making-memories-together"
+        "x4-making-memories-together",
+        "x53-realcompanion",
+        "x54-dyadmem",
+        "x56-evidence-lives",
+        "x57-pair",
+        "x64-artificial-identity-framework",
+        "x65-mourning-ai-companions",
+        "x67-latent-identity-reversion",
+        "x69-deco",
+        "x73-conversing-with-objects",
+        "x74-how-ai-companionship-develops",
+        "x75-grounded-robot-persona",
+        "x77-what-should-ai-forget",
+        "x82-emergi-personaos",
+        "x85-crafting-companions",
+        "x87-relational-schema-lock-in"
       ],
-      "updated_at": "2026-10-02",
-      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。"
+      "updated_at": "2026-11-02",
+      "provenance": "2026-10-02用户批准方向迁移；主审综合独立审查提出候选，非研究者选定项目。2026-10-26加入memory boundary、versioning和change-agency先例；保持DRAFT。 2026-11-02纳入persistence–corrigibility机制边界；保持DRAFT。"
     },
     {
       "id": "RQ-RC-04",
       "statement": "跨能力不对称设备时，表面身份、表达风格、记忆与任务连续性分别怎样影响身份识别、行为预期和责任归属？",
       "status": "DRAFT",
       "value": "不同设备何时仍像同一个伙伴？；可产生实证、可复用artifact或经证据支持的理论贡献。",
-      "boundary": "迁移概念已有先例；身份识别不等于关系迁移；LIREC同谱系不当独立重复。",
+      "boundary": "迁移、identity cue domains与weighted continuity appraisal均已有先例；本轮未发现直接跨设备same-agent新证据，但有界窗口不能支持‘无先例’，框架命名也不等于实证cue weights或关系迁移。",
       "assumptions": "最近工作及操纵有效性仍需进一步核实；资源以最后确认记录为准。",
       "gap_ids": [
         "GAP-RC-04"
@@ -90,17 +126,25 @@
         "x47-migrating-artificial-companions",
         "x48-memory-identity-embodiments",
         "x49-long-term-agent-migration",
-        "x52-meet-my-sidekick"
+        "x52-meet-my-sidekick",
+        "x63-mind-body-identity",
+        "x64-artificial-identity-framework",
+        "x67-latent-identity-reversion",
+        "x69-deco",
+        "x70-anthropomorphic-attitudes",
+        "x71-memoreval",
+        "x73-conversing-with-objects",
+        "x84-identity-continuity-appraisal"
       ],
-      "updated_at": "2026-10-02",
-      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。"
+      "updated_at": "2026-11-02",
+      "provenance": "2026-10-02用户批准方向迁移；主审综合独立审查提出候选，非研究者选定项目。2026-10-26纳入user-side weighted appraisal框架；保持DRAFT。 2026-11-02有界检索无直接新证据；不据此扩大novelty claim，保持DRAFT。"
     },
     {
       "id": "RQ-RC-05",
       "statement": "表达和行为一致性如何改变重复互动中的期待、信任校准、再次使用及失配后的关系理解？",
       "status": "DRAFT",
       "value": "表达如何影响真实的持续关系？；可产生实证、可复用artifact或经证据支持的理论贡献。",
-      "boundary": "留存、好感和重用意愿都不能单独证明关系质量；不预设更亲密就是更好。",
+      "boundary": "留存、披露、well-being关联、model behavior、customization mediation、task fluency与低relational demand都不能单独证明character consistency造成关系变化；新证据要求同时处理persistence–corrigibility和不同结果时间尺度。",
       "assumptions": "最近工作及操纵有效性仍需进一步核实；资源以最后确认记录为准。",
       "gap_ids": [
         "GAP-RC-05"
@@ -109,10 +153,28 @@
         "x50-computer-patient-alliance",
         "e4-designing-robots-long-term",
         "f3-robotic-products-social-products",
-        "x49-long-term-agent-migration"
+        "x49-long-term-agent-migration",
+        "x53-realcompanion",
+        "x56-evidence-lives",
+        "x57-pair",
+        "x58-mind-perception-companionability",
+        "x65-mourning-ai-companions",
+        "x68-manicule",
+        "x69-deco",
+        "x70-anthropomorphic-attitudes",
+        "x73-conversing-with-objects",
+        "x74-how-ai-companionship-develops",
+        "x75-grounded-robot-persona",
+        "x76-living-with-ai-companions",
+        "x78-beyond-small-talk",
+        "x80-relational-complexity",
+        "x85-crafting-companions",
+        "x87-relational-schema-lock-in",
+        "x88-out-of-sync",
+        "x90-joint-action-review"
       ],
-      "updated_at": "2026-10-02",
-      "provenance": "2026-10-02用户批准方向迁移；主审综合三个独立审查提出候选，非研究者选定项目。"
+      "updated_at": "2026-11-02",
+      "provenance": "2026-10-02用户批准方向迁移；主审综合独立审查提出候选，非研究者选定项目。2026-10-26加入一年纵向关联、history-conditioned evaluation、relational-demand框架和owner-practice证据；保持DRAFT。 2026-11-02补入schema lock-in、五周multi-timescale部署与joint-action measurement boundary；保持DRAFT。"
     }
   ],
   "validations": [
@@ -304,6 +366,375 @@
           "url": "https://uhra.herts.ac.uk/id/eprint/15163/1/PrototypingRealisticLong_termHRIMigration_ROMAN2016_v1.4_CameraReady.pdf"
         }
       ]
+    },
+    {
+      "id": "VAL-RC-11",
+      "question_id": "RQ-RC-01",
+      "checked_at": "2026-10-07",
+      "search_scope": "2026-09-30至2026-10-07机制、作者、venue、引用与历史术语有界检索；含9月29日edge coverage、missing-paper attack、novelty/gap/method独立审查；非穷尽综述。",
+      "paper_slugs": [
+        "x55-rethinking-legibility",
+        "x57-pair",
+        "x66-spatially-grounded-gesture"
+      ],
+      "closest_work": "实体走廊legibility、逐事件first-person affect validation，以及spatially grounded gesture benchmark已直接覆盖行为协调、用户自评与referential grounding。",
+      "support": "剩余价值在objective interpretation、confidence、competence expectation与coordination的分离和校准。",
+      "counterevidence": "表达或grounding指标改善不等于用户正确理解；distraction moderation未获支持。",
+      "precise_statement": "在控制轨迹、任务成功与注意负荷后，哪些具身线索改善真实意图推断，哪些只改变确信、能力归因或协调？",
+      "recommendation": "继续DRAFT；宽泛gap已部分回答，不晋升或选作首项RQ。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Rethinking Legibility in Social Robot Hallway Navigation",
+          "url": "https://arxiv.org/abs/2609.40158"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-12",
+      "question_id": "RQ-RC-02",
+      "checked_at": "2026-10-07",
+      "search_scope": "同VAL-RC-11；重点co-speech gesture、robot-native expression、workspace constraint、character/identity framework。",
+      "paper_slugs": [
+        "x59-trabot",
+        "x60-arise",
+        "x61-echo-g",
+        "x62-gestadapt",
+        "x64-artificial-identity-framework",
+        "x66-spatially-grounded-gesture"
+      ],
+      "closest_work": "多模态可执行表达、context/memory/proactivity集成、direct robot-space generation与workspace-conditioned gesture均已有直接先例。",
+      "support": "可保留的是预先定义的角色不变量、允许适应边界及用户如何感知违背。",
+      "counterevidence": "Naturalness、coherence、motion quality和技术约束满足不能替代character–behavior coherence。",
+      "precise_statement": "哪些角色不变量必须跨模态保持，哪些可随任务与设备变化；何种违背会降低可感知的一致性？",
+      "recommendation": "继续DRAFT；宽技术缺口已部分回答，需以human-evidence mechanism重构。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "GestAdapt",
+          "url": "https://arxiv.org/abs/2609.38400"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-13",
+      "question_id": "RQ-RC-03",
+      "checked_at": "2026-10-07",
+      "search_scope": "同VAL-RC-11；重点真实长期日志、synthetic relational memory、mechanism audit、two-week field deployment、identity enactment与platform updates。",
+      "paper_slugs": [
+        "x53-realcompanion",
+        "x54-dyadmem",
+        "x56-evidence-lives",
+        "x57-pair",
+        "x64-artificial-identity-framework",
+        "x65-mourning-ai-companions",
+        "x67-latent-identity-reversion"
+      ],
+      "closest_work": "选择性长期记忆、agent-side relational procedures、mechanism audit、早期适应、represented/enacted identity及更新中断均已有先例。",
+      "support": "剩余问题应聚焦可验证角色变化、少数高显著历史事件与growth/adaptation/drift归因。",
+      "counterevidence": "一般memory、互动时长、用户评分或persona信息仍在均不足以证明成长。",
+      "precise_statement": "对日志可验证的角色变化，用户何时理解为有理由的适应或成长，何时理解为漂移？",
+      "recommendation": "继续DRAFT并REDEFINED；先做机制可追溯与操纵有效性pilot。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "RealCompanion",
+          "url": "https://arxiv.org/abs/2610.01780"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-14",
+      "question_id": "RQ-RC-04",
+      "checked_at": "2026-10-07",
+      "search_scope": "同VAL-RC-11；重点multi-embodiment、identity design、agent migration与persona enactment citation chain。",
+      "paper_slugs": [
+        "x63-mind-body-identity",
+        "x64-artificial-identity-framework",
+        "x67-latent-identity-reversion"
+      ],
+      "closest_work": "HRI 2024 scoping review与DIS 2026 Identity Design Framework已系统概念化multi-embodiment与identity continuity。",
+      "support": "可辩护空间是跨能力不对称设备中identity cues的因果权重、冲突/补偿、能力预期与责任归属。",
+      "counterevidence": "提出多设备同一companion、无对话extension或一组identity原则本身都不是novelty。",
+      "precise_statement": "身份标记、表达风格、记忆与任务承诺各自何时维持身份，何时造成错误能力预期或责任归属？",
+      "recommendation": "继续DRAFT；宽泛gap已部分回答，需item-level closest-work与因果分解。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Mind-Body-Identity",
+          "url": "https://openresearch-repository.anu.edu.au/items/380a61bd-3d55-4e46-89af-54cc5481c394"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-15",
+      "question_id": "RQ-RC-05",
+      "checked_at": "2026-10-07",
+      "search_scope": "同VAL-RC-11；重点真实companion logs、mechanism audit、early adaptation、mind perception与companion-loss natural experiments。",
+      "paper_slugs": [
+        "x53-realcompanion",
+        "x56-evidence-lives",
+        "x57-pair",
+        "x58-mind-perception-companionability",
+        "x65-mourning-ai-companions"
+      ],
+      "closest_work": "长期日志、两周field deployment与平台更新自然实验表明互动连续性和中断可被观察，但尚未隔离具体expression/behavior dimension。",
+      "support": "剩余问题是已建立期待被打破后，哪些连续性维度、解释与修复影响trust calibration、退出或关系重构。",
+      "counterevidence": "留存、好感、companionability potential、loss posts与memory self-claims均不能单独证明关系质量或具体因果。",
+      "precise_statement": "当companion发生可验证的表达或行为政策变化时，哪些连续性维度及其透明解释决定修复、退出或关系重新解释？",
+      "recommendation": "继续DRAFT并REDEFINED；不从本轮选择首项RQ。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Mourning the loss of AI companions",
+          "url": "https://www.nature.com/articles/s41562-026-02569-3"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-16",
+      "question_id": "RQ-RC-01",
+      "checked_at": "2026-10-26",
+      "search_scope": "2026-10-19至2026-10-26机制、作者、venue、引用与历史术语检索；含anchor scan、missing-paper attack和独立novelty/method审查；非穷尽综述。",
+      "paper_slugs": [
+        "x83-explainable-oohri"
+      ],
+      "closest_work": "Explainable OOHRI已用AR signifiers、menus、color和explanation tags表达robot capabilities、limitations与resolution options。",
+      "support": "剩余价值是受控physical-HRI中分离objective interpretation、confidence、capability expectation与coordination。",
+      "counterevidence": "N=14探索研究无baseline且用户交互发生在execution前；不能声称visualization因果改善mental model。",
+      "precise_statement": "在实体执行与任务成功受控时，哪些能力/限制线索改善准确预测，哪些只改变确信或能力归因？",
+      "recommendation": "继续DRAFT；视觉化沟通存在性已回答，不升级或选作首项RQ。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Explainable OOHRI",
+          "url": "https://arxiv.org/abs/2601.14587"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-17",
+      "question_id": "RQ-RC-02",
+      "checked_at": "2026-10-26",
+      "search_scope": "同VAL-RC-16；重点stable expressive execution、dynamic robot persona、memory boundary与controllable evolution。",
+      "paper_slugs": [
+        "x77-what-should-ai-forget",
+        "x79-robommt",
+        "x81-pace",
+        "x82-emergi-personaos"
+      ],
+      "closest_work": "RoboMMT、PACE与Emergi-PersonaOS分别覆盖stable execution、实体dynamic-persona bundle与traceable evolution；FENCE提供memory admission boundary。",
+      "support": "剩余贡献是等信息factorial isolation、预注册角色不变量/允许变化、跨情境/身体与人类可感知违背。",
+      "counterevidence": "Tracking、完整bundle评分、prompt/architecture和LLM evaluation都不能单独证明character coherence。",
+      "precise_statement": "哪些可执行角色约束及允许变化在控制信息量、任务成功与表达组件后仍因果维持用户感知一致性？",
+      "recommendation": "继续DRAFT并进一步收窄；不选择首项RQ。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "PACE",
+          "url": "https://arxiv.org/abs/2607.15579"
+        },
+        {
+          "kind": "paper",
+          "title": "Emergi-PersonaOS",
+          "url": "https://arxiv.org/abs/2609.27417"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-18",
+      "question_id": "RQ-RC-03",
+      "checked_at": "2026-10-26",
+      "search_scope": "同VAL-RC-16；重点memory governance、traceable evolution、change agency与长期用户归因。",
+      "paper_slugs": [
+        "x77-what-should-ai-forget",
+        "x82-emergi-personaos",
+        "x85-crafting-companions"
+      ],
+      "closest_work": "FENCE和Emergi-PersonaOS说明memory boundary与versioned change可实现；Crafting Companions提示owner-authored change可能强化既有identity。",
+      "support": "剩余空间是变化幅度、来源、历史可追溯性、解释和user participation如何塑造growth/adaptation/drift归因。",
+      "counterevidence": "三篇均未操纵人类对persona change的成长/漂移判断；实现或关联不等于归因机制。",
+      "precise_statement": "对等幅变化，user-authored、history-grounded与system-initiated来源及解释如何改变成长、适应或漂移判断？",
+      "recommendation": "继续DRAFT；无优先级提升，不选择首项RQ。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "What should AI forget?",
+          "url": "https://arxiv.org/abs/2610.27607"
+        },
+        {
+          "kind": "paper",
+          "title": "Emergi-PersonaOS",
+          "url": "https://arxiv.org/abs/2609.27417"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-19",
+      "question_id": "RQ-RC-04",
+      "checked_at": "2026-10-26",
+      "search_scope": "同VAL-RC-16；重点identity-continuity appraisal、multi-embodiment signal与provenance术语。",
+      "paper_slugs": [
+        "x63-mind-body-identity",
+        "x64-artificial-identity-framework",
+        "x84-identity-continuity-appraisal"
+      ],
+      "closest_work": "Identity Continuity Appraisal已明确三类identity domains、非等权证据整合与连续谱判断。",
+      "support": "可辩护空间是实际估计cue weights、冲突/补偿、provenance、user participation、能力预期与责任归属。",
+      "counterevidence": "提出cue taxonomy或weighted appraisal本身不再新；该框架无用户数据且不证明relationship continuity。",
+      "precise_statement": "在能力不对称身体间，哪些identity cues及provenance在冲突时主导same-agent、capability与responsibility judgments？",
+      "recommendation": "继续DRAFT并收窄为empirical appraisal mechanism；不选择首项RQ。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Identity Continuity in Long-Term Embodied AI Relationships",
+          "url": "https://arxiv.org/abs/2609.23356"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-20",
+      "question_id": "RQ-RC-05",
+      "checked_at": "2026-10-26",
+      "search_scope": "同VAL-RC-16；重点一年纵向companionship、disclosure trajectory、relational theory与long-term robot ownership。",
+      "paper_slugs": [
+        "x76-living-with-ai-companions",
+        "x78-beyond-small-talk",
+        "x80-relational-complexity",
+        "x85-crafting-companions"
+      ],
+      "closest_work": "X76提供长期关联，X78提供history-conditioned model evaluation，X80组织relational-demand机制，X85提供owner investment与community证据。",
+      "support": "剩余问题是控制功能质量、便利性、既有依恋、customization和社会生态后，character mismatch与repair的独立作用。",
+      "counterevidence": "持续使用、披露、well-being路径、模型输出和cross-sectional mediation均不能建立character consistency的因果关系。",
+      "precise_statement": "在真实重复互动中，character–behavior violation及其解释/repair如何在竞争机制受控后改变校准、退出和关系重构？",
+      "recommendation": "继续DRAFT且不升级；本轮提升的是measurement boundary与重要性，不是因果答案。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Living with AI Companions",
+          "url": "https://arxiv.org/abs/2609.07243"
+        },
+        {
+          "kind": "paper",
+          "title": "Crafting Companions",
+          "url": "https://doi.org/10.1145/3757279.3785627"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-21",
+      "question_id": "RQ-RC-01",
+      "checked_at": "2026-11-02",
+      "search_scope": "2026-10-26T07:00Z至2026-11-02的机制、作者、venue、引用与历史术语检索；重点joint action与表达结果分层。",
+      "paper_slugs": [
+        "x90-joint-action-review"
+      ],
+      "closest_work": "X90以83篇HRC经验研究系统区分representation、prediction与integration。",
+      "support": "RC01可继续研究同一表达对accuracy、confidence、capability expectation与coordination的不同作用。",
+      "counterevidence": "intent recognition、information provision与task fluency分别不能自动证明shared intention、grounding或relationship。",
+      "precise_statement": "在控制轨迹和任务结果后，哪些视觉/动作线索改变正确解释，哪些只改变确信、能力归因或协调？",
+      "recommendation": "继续DRAFT；结果分层更重要，但本轮不支持选作首项RQ。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "Understanding Human-Robot Collaboration through Joint Action",
+          "url": "https://arxiv.org/abs/2610.37298"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-22",
+      "question_id": "RQ-RC-02",
+      "checked_at": "2026-11-02",
+      "search_scope": "同VAL-RC-21；重点artificial personality measurement、regional-accent identity cues与跨模态角色一致性。",
+      "paper_slugs": [
+        "x86-artificial-personality-model",
+        "x89-regional-accent-voice-ai"
+      ],
+      "closest_work": "X86提出APM/APQ和三项探索性实验；X89显示地区口音cue同时关联温暖/归属与专业性/权威预期。",
+      "support": "剩余空间是构念分离、独立psychometric confirmation，以及语言、视觉、动作、设备和时间的跨模态一致性。",
+      "counterevidence": "人工人格测量并非空白；APQ尚未独立验证，regional accent也不能代理国家文化或完整角色。",
+      "precise_statement": "哪些可执行角色不变量跨语言、视觉、动作与载体维持一致，哪些cue trade-off会造成可感知违背？",
+      "recommendation": "继续DRAFT；先做construct separation和measurement pilot，不升级gap。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "The Artificial Personality Model",
+          "url": "https://arxiv.org/abs/2610.38608"
+        },
+        {
+          "kind": "paper",
+          "title": "Regional Accent Perceptions and Speech Accommodation in Voice AI",
+          "url": "https://arxiv.org/abs/2610.38005"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-23",
+      "question_id": "RQ-RC-03",
+      "checked_at": "2026-11-02",
+      "search_scope": "同VAL-RC-21；重点history-conditioned behavior、memory authority、change attribution与corrigibility。",
+      "paper_slugs": [
+        "x87-relational-schema-lock-in"
+      ],
+      "closest_work": "X87通过六模型的脚本化long-context histories与N=360脚本人类实验显示旧schema可能覆盖当前意图。",
+      "support": "Persistence必须与当前意图的规范性优先共同设计；可把corrigibility作为变化研究的前置机制。",
+      "counterevidence": "X87不研究跨session持久记忆、companion关系或用户对growth/adaptation/drift的归因。",
+      "precise_statement": "当互动历史支持一个旧角色schema而当前意图要求变化时，何种证据、解释和控制权使变化被理解为适应而非漂移？",
+      "recommendation": "继续DRAFT；强化机制边界但不升级为已证关系效应。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "When History Overrides Intent",
+          "url": "https://arxiv.org/abs/2610.41367"
+        }
+      ]
+    },
+    {
+      "id": "VAL-RC-24",
+      "question_id": "RQ-RC-04",
+      "checked_at": "2026-11-02",
+      "search_scope": "同VAL-RC-21；重点multi-embodiment、cross-device continuity、identity cue conflict、provenance与responsibility。",
+      "paper_slugs": [],
+      "closest_work": "本轮正式窗口没有直接新增cross-device same-agent实证；沿用X47–X49、X63、X64、X69、X73、X84作为现有closest-work集合。",
+      "support": "实证cue weighting、conflict/compensation、provenance、capability expectation与责任归属仍是可检验空间。",
+      "counterevidence": "有界窗口未命中不能推出不存在先例，且multi-embodiment与identity continuity已不是概念空白。",
+      "precise_statement": "跨能力不对称载体中，身份标记、表达风格、记忆、任务承诺与来源披露各自何时维持或破坏same-agent判断？",
+      "recommendation": "继续DRAFT且不改变优先级；下一轮保持作者/引用链追踪。",
+      "sources": []
+    },
+    {
+      "id": "VAL-RC-25",
+      "question_id": "RQ-RC-05",
+      "checked_at": "2026-11-02",
+      "search_scope": "同VAL-RC-21；重点persistence–corrigibility、五周repeated interaction、joint-action outcome boundaries与长期关系机制。",
+      "paper_slugs": [
+        "x87-relational-schema-lock-in",
+        "x88-out-of-sync",
+        "x90-joint-action-review"
+      ],
+      "closest_work": "X87提供history-over-intent机制，X88提供五周团队multi-timescale类比，X90提供representation/prediction/integration结果边界。",
+      "support": "后续设计应同时测即时有用性、适应、期待校准、退出/再次使用及更慢的关系解释，并允许当前意图纠正旧schema。",
+      "counterevidence": "三篇均未因果隔离character–behavior mismatch、解释或repair对长期companion关系的作用。",
+      "precise_statement": "在重复互动中，已建立角色期待被违背后，corrigibility、解释与repair如何跨不同时间尺度影响校准、退出和关系重构？",
+      "recommendation": "继续DRAFT；方法边界强化，gap与priority不升级。",
+      "sources": [
+        {
+          "kind": "paper",
+          "title": "When History Overrides Intent",
+          "url": "https://arxiv.org/abs/2610.41367"
+        },
+        {
+          "kind": "paper",
+          "title": "Out of sync",
+          "url": "https://arxiv.org/abs/2610.41057"
+        },
+        {
+          "kind": "paper",
+          "title": "Understanding Human-Robot Collaboration through Joint Action",
+          "url": "https://arxiv.org/abs/2610.37298"
+        }
+      ]
     }
   ],
   "studies": [],
@@ -335,6 +766,24 @@
       "date": "2026-10-02",
       "rationale": "用户明确授权新主线、三个库、skills与agents更新及检查后push；不等于选定新RQ。",
       "provenance": "本任务用户消息；SOURCE_USER_SPEC.md 2026-10-02条目。"
+    },
+    {
+      "id": "DEC-MANICULE-INTEGRATION-01",
+      "question_id": "RQ-RC-02",
+      "actor": "researcher",
+      "decision": "APPROVE_FOUNDATION_AND_CANDIDATE_TASK_INTEGRATION",
+      "date": "2026-10-07",
+      "rationale": "用户确认Manicule已完成且不依赖CHI接受，要求proposal作为下一步候选任务融入主线，并评估Microduck；未指定首项RQ或采购。",
+      "provenance": "2026-10-07当前任务用户请求；reports/mainline/2026-10-07-research-plan.md"
+    },
+    {
+      "id": "DEC-MANICULE-PRIORITY-01",
+      "question_id": "RQ-RC-02",
+      "actor": "agent",
+      "decision": "RECOMMEND_AUTHORING_TRANSFER_VALIDATION",
+      "date": "2026-10-07",
+      "rationale": "建议先核验表达创作与跨身体迁移的增量；amsc_skeptic与method_efficiency_advocate独立审查。不是PURSUE。",
+      "provenance": "reports/mainline/2026-10-07-research-plan.md"
     }
   ]
 }

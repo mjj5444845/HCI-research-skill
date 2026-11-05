@@ -1,0 +1,89 @@
+{
+  "id": "X71",
+  "slug": "x71-memoreval",
+  "title": "What Should Embodied Agents Remember? Benchmarking and Evaluating Memory Modality for Embodied Agents",
+  "authors": [
+    "Junxiang Wang",
+    "Yuchen Liu",
+    "Yi Wu",
+    "Guofei Chen",
+    "Nir Pechuk",
+    "Tao Chen",
+    "Zackory Erickson",
+    "Yuzhe Qin",
+    "Tianyu Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.12561",
+  "source_url": "https://arxiv.org/abs/2610.12561",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "MeMoREval把embodied memory的存储模态、后端、任务成功与推理成本拆开评测；这收窄了技术性memory空白，却完全不回答用户如何理解成长、身份或关系。",
+  "problem": "在未来请求未知时，embodied agent应保留text、descriptions、frames、scene graphs中的哪些证据，以及成功率和成本如何权衡。",
+  "method": "53个作者设计的simulated tasks、4个indoor scenes、7类记忆需求；六种memory conditions乘五个backends。主模型Gemini 3.7 Flash每格3 seeds，另测GPT-5.6 Sol与GLM-5.3 Flash；附两次实体机器人示范。",
+  "findings": [
+    "在主模型汇总中text为39%、最长description为60%、frames为70%、frames+graph为75% task success；三个所测模型中frames+graph aggregate最高。",
+    "Selective frame retention降低存储量也降低成功率；stacked histories对不同backend影响不同。两次实体demo只验证protocol可实例化，不是模态比较。"
+  ],
+  "real_contribution": "提供一个控制experience→fresh-context request的embodied-memory benchmark，把信息/行动请求、模态、backend与write/read cost分开。",
+  "biggest_weakness": "固定作者任务与GT simulator IDs/scene graphs回避真实perception和identity-switch问题；request阶段open-loop，成本不含storage、latency、energy或physical recovery，实体证据仅两次demo。",
+  "claim_boundary": "支持该benchmark内memory modality影响recall/open-loop planning和inference cost；不证明真实长期记忆、identity continuity、关系适应或用户感知。",
+  "why_researcher_should_care": "技术实现层可据此区分存储证据类型，但AMSC仍需独立的人类归因与跨设备身份研究。",
+  "amsc": {
+    "mainline_fit": 7,
+    "buckets": [
+      "D",
+      "E",
+      "G"
+    ],
+    "stages": [
+      "身份与适应"
+    ],
+    "mechanisms": [
+      "memory modality",
+      "evidence retention",
+      "embodied recall"
+    ],
+    "gap_ids": [
+      "GAP-RC-03",
+      "GAP-RC-04"
+    ],
+    "master_list_decision": "Added as supporting technical benchmark after full-text audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-12全文审查；未外部运行代码或核验仓库license。",
+    "两次physical demonstrations不支持reliability或modality ranking。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/abs/2610.12561"
+    ]
+  },
+  "updated_at": "2026-10-12",
+  "program_membership": {
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "具身记忆benchmark评回忆规划，不研究机器人视觉表达或人的理解。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "SUPPORTING",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-12",
+        "reason": "为embodied companion memory提供可复用技术评测，但无人类identity/relationship evidence"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "具身记忆benchmark评回忆规划，不研究机器人视觉表达或人的理解。"
+  }
+}

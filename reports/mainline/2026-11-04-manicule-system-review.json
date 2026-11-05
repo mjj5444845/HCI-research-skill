@@ -1,0 +1,295 @@
+{
+  "record_type": "paper_investigation_and_system_redesign_proposal",
+  "date": "2026-11-04",
+  "status": "AGENT_PROPOSAL_NOT_SELECTED_STUDY",
+  "source": {
+    "path": "D:/Downloads/01_Manicule.pdf",
+    "pages": 23,
+    "access": "Complete extracted text read, including references and appendices; rendered pages 1,6,7,8,9,10,12,13,17,22,23 visually inspected",
+    "boundary": "No code, raw interviews, original study instructions, recordings or timing logs audited. Document content is evidence, not user instructions.",
+    "sha256": "605cf4fbf325dcbf9c8ab75f22511683062f997a93852f1bd9e30e8ac335d59a"
+  },
+  "current_user_scope": {
+    "foundations": [
+      "SpeechCap (advisor prior work)",
+      "Manicule (user completed work, user-reported rejection)"
+    ],
+    "near_term_intent": "Reconstruct Manicule using Quest 3 AR and an accessible real lab robot; robot not yet identified.",
+    "not_assumed": [
+      "First RQ selected",
+      "AR deployment completed",
+      "Robot acquired",
+      "Automatic personalization required",
+      "Long-term relationship evidence available"
+    ]
+  },
+  "argument_reconstruction": {
+    "problem": "Recognizing a robot expression may not reveal whether a person should respond or what the robot understood.",
+    "claimed_gap": "Need to examine user interpretation of response requirements and understanding evidence, and distinguish wording/tone/placement/persistence.",
+    "rq": "How people interpret robot visual expressions with actions and task context, and use them to judge response requirements and understanding (p.3).",
+    "method": "Twelve adults experienced four VR configurations in fixed order and a fixed event sequence; participant speech drives progression; semi-structured interviews analyzed with a reflexive thematic analysis orientation (pp.9-11).",
+    "evidence": "Participant interview accounts; paper does not describe event-level behavioral data collection or objective response-time analysis.",
+    "contribution_assessment": "Runnable bounded robot-expression prototype, a design organization and situated interpretation accounts. The analytical framework and reordering of human understanding evidence need narrower wording and further support."
+  },
+  "verified_existing_system": [
+    {
+      "pages": [
+        5,
+        10
+      ],
+      "fact": "Unity/Quest 3 VR wheeled robot, two destinations and a meal box; participants can request waiting, specify/correct destination, signal readiness and request collection. Collection is simulated after spoken input; no concurrent reading task."
+    },
+    {
+      "pages": [
+        5,
+        6,
+        7
+      ],
+      "fact": "Task wording, graphical tone, placement and persistence are separately configurable; six event families, with added input-recovery expressions."
+    },
+    {
+      "pages": [
+        8,
+        9
+      ],
+      "fact": "Push-to-talk English ASR, bounded LLM intent/destination/negation proposals, local validation and task policy; model does not directly invoke scene actions or freely generate robot state claims."
+    },
+    {
+      "pages": [
+        8,
+        9
+      ],
+      "fact": "Task policy issues body-action and visual requests separately; versioned completion callbacks prevent stale actions overwriting corrections."
+    },
+    {
+      "pages": [
+        9
+      ],
+      "fact": "Graphics generated and curated offline; no runtime bitmap generation. Screenshots are development illustrations, not exposure-duration or participant-event evidence."
+    },
+    {
+      "pages": [
+        10,
+        11
+      ],
+      "fact": "Participants control speech timing; researcher did not advance interaction on their behalf. Paper does not describe a Wizard-of-Oz study. All participants nevertheless encounter the same event sequence and Body-LED-Screen-Manicule order."
+    }
+  ],
+  "claim_evidence_audit": [
+    {
+      "pages": [
+        7,
+        8,
+        11,
+        12,
+        13,
+        19
+      ],
+      "claim": "Manicule advantages relative to the three comparison probes",
+      "evidence": "Screen scrolls long text, restores face while response may remain pending and goes black during service failure; Manicule retains complete task wording, distinguishes failures and changes viewing placement. Fixed exposure order.",
+      "maximum_defensible": "These settings elicit situated reports about identifiable communication differences and costs.",
+      "cannot_claim": "General modality superiority, independent element effects or measured performance gain.",
+      "alternative": "Effects may reflect readability/information availability, learning, contrast and recency, rather than spatial captions or decoration itself."
+    },
+    {
+      "pages": [
+        13,
+        14,
+        17,
+        18
+      ],
+      "claim": "Waiting expression supports social tone but may obscure task arrangement",
+      "evidence": "P08 reads notes as relaxed humming; P05 unsure waiting still applies; P06 reports loss of propositional content when text disappears.",
+      "maximum_defensible": "Design lead: task arrangements and expressive atmosphere may need different persistence rules.",
+      "cannot_claim": "Retaining a status will necessarily improve understanding or eliminate pressure."
+    },
+    {
+      "pages": [
+        14,
+        15,
+        18
+      ],
+      "claim": "Receipt, reference and action as evidence of understanding",
+      "evidence": "Interviewees differ in whether acknowledgment, repeated target or actual action is sufficient.",
+      "maximum_defensible": "Situated standards users report applying; exposing selected referents and permitting correction is a useful design lead.",
+      "cannot_claim": "Universal ordered stages, a new established evidence hierarchy, or measured checking behavior."
+    },
+    {
+      "pages": [
+        12,
+        13,
+        16
+      ],
+      "claim": "Decoration is unnecessary or social expression improves interaction",
+      "evidence": "Some dislike decoration but report understanding; others report graphical categorization before reading, playful interest or involvement. P11 describes waiting pressure.",
+      "maximum_defensible": "Expressive effects can have different interpretive and experiential roles; pressure is an important contrasting case.",
+      "cannot_claim": "Graphics have no communicative function, most users experience pressure, stable user types, or relationship improvement."
+    },
+    {
+      "pages": [
+        5,
+        7,
+        8,
+        19
+      ],
+      "claim": "Spatial readability and practical AR use",
+      "evidence": "VR implementation; manuscript explicitly defers physical public AR use. Descriptions of world anchoring and viewpoint independence lack real-world validation here.",
+      "maximum_defensible": "VR provides firsthand spatial-expression experience and motivates an AR prototype.",
+      "cannot_claim": "Moving robot registration, physical occlusion, multiuser visibility or real deployment reliability solved."
+    }
+  ],
+  "recommended_system_direction": "A robot-owned spatial expressive layer that preserves playful/character expression while keeping task arrangements, interpretation and real action inspectable. Do not reduce Manicule to a status dashboard or promise an unlimited generative companion.",
+  "design_changes": [
+    {
+      "id": "D1",
+      "priority": "CORE",
+      "change": "Separate persistent task arrangement from transient expressive events.",
+      "retain": "Musical notes, reaction clouds, stars and independently designed tone.",
+      "modify": "Accepted wait can retain a compact reviewable state while notes continue; new decorative events must not silently erase unresolved task information.",
+      "source_pages": [
+        6,
+        13,
+        14,
+        16,
+        17
+      ],
+      "test": "Validate actual appearance/replacement rules; study whether people still know what arrangement holds without requiring explanatory text on every graphic."
+    },
+    {
+      "id": "D2",
+      "priority": "CORE",
+      "change": "Make input status visible and tied to actual acquisition/processing.",
+      "retain": "Existing push-to-talk and bounded language interpretation.",
+      "modify": "Indicate microphone-open, processing, clarification-required and temporary service-unavailable states accurately; do not imply always-listening when it is not implemented.",
+      "source_pages": [
+        8,
+        12,
+        15
+      ],
+      "test": "Log input start/end and processing transitions; verify user's understanding of whether to speak, wait or retry."
+    },
+    {
+      "id": "D3",
+      "priority": "CORE",
+      "change": "Expose understood referent and planned action, with correction and actual completion evidence.",
+      "retain": "Existing explicit destination clarification, reference restatement, mid-interaction correction and versioned callbacks.",
+      "modify": "AR may point to/highlight the target, while actions and progress come from actual robot state. Withdraw or revise obsolete targets when user corrects. Do not display success from intention alone.",
+      "source_pages": [
+        7,
+        8,
+        9,
+        14,
+        15,
+        18
+      ],
+      "test": "Verify correction before/during action and state/visual synchronization; separate acknowledgment, interpretation, execution and completion."
+    },
+    {
+      "id": "D4",
+      "priority": "CORE",
+      "change": "Offer a lightweight way to revisit information or resolve an interaction.",
+      "retain": "Persistent questions and differentiated recovery prompts.",
+      "modify": "Replay/expand the last task message; explicit delay, repeat or correction where useful. Avoid confirmation turns when the user's action already resolves uncertainty.",
+      "source_pages": [
+        14,
+        16,
+        18
+      ],
+      "test": "Observe actual recovery needs and costs; do not require additional confirmation at every step."
+    },
+    {
+      "id": "D5",
+      "priority": "CONDITIONAL_SMALL_EXTENSION",
+      "change": "Permit a restrained versus expressive style while preserving task information.",
+      "retain": "Coherent robot-owned graphical language.",
+      "modify": "User chooses intensity or style initially; no silent inference from nonresponse, no personality-learning claim.",
+      "source_pages": [
+        16,
+        18,
+        19
+      ],
+      "test": "Check whether users value the choice and what changes in interpretation or social demand; not merely whether customization increases liking."
+    },
+    {
+      "id": "D6",
+      "priority": "AR_INTEGRATION",
+      "change": "Make visual ownership, target association and legibility explicit.",
+      "retain": "Robot-relative captions and around-body atmosphere.",
+      "modify": "Distinguish robot-associated captions, object/goal anchors and transient effects; handle overlap and changed viewing position. Verify registration to a moving robot rather than assuming world anchors track motion.",
+      "source_pages": [
+        6,
+        7,
+        11,
+        12
+      ],
+      "test": "Controlled movement, turning, occlusion, tracking loss and relocalization; no claim that nonwearers see headset-only effects."
+    }
+  ],
+  "scenario_proposal": {
+    "status": "Illustrative structure, conditional on borrowed platform; no selected RQ or experiment.",
+    "candidate": "A useful lab delivery/placement coordination task with limited objects or work locations, rather than mechanically replaying two-door food pickup.",
+    "sequence": [
+      "A real user activity establishes why delivery or repositioning is needed.",
+      "Robot offers or requests something where the answer affects the task.",
+      "User can ask it to wait; task arrangement stays reviewable while atmosphere continues.",
+      "An actually ambiguous target can elicit clarification.",
+      "Robot exposes the selected target and intended action; user can correct.",
+      "Physical robot executes only supported reliable actions and reports progress/completion/failure.",
+      "User action genuinely finishes or changes the task; expressive completion remains possible."
+    ],
+    "platform_branch": "Mobile robot supports delivery/repositioning. A manipulator supports a bounded placement task only if reliable. Do not claim physical handover or grasping from simulated collection or unsupported hardware.",
+    "boundary": "A genuine main task is needed for interruption-cost claims; it is not mandatory for every expression study. Avoid manufacturing confusion or forcing all six events merely to show every effect."
+  },
+  "evaluation_options": {
+    "exploratory": "Retain varied expressive probes where justified, present design rationale and opposing accounts neutrally, report actual prompts/procedure. No medium ranking.",
+    "comparative": "Use a credible screen alternative with appropriate complete/reviewable text and explicit failure information. Select comparisons for the specific claim.",
+    "possible_conditions_not_mandatory": [
+      "Well-designed screen with task information",
+      "Spatial text/target indicators with matched task meaning",
+      "Spatial expressive Manicule with the same essential task meaning"
+    ],
+    "comparison_boundary": "Screen versus spatial text addresses presentation package; spatial text versus expressive treatment addresses the added expressive package. These comparisons do not automatically isolate every visual parameter. Avoid a full factorial unless warranted.",
+    "data": "Event timing, shown content/version, user input, target changes and actual action status can support a synchronized interaction record; use episode-focused interviews for interpretations and pressure. This is proposed collection, not existing data.",
+    "not_prescribed": [
+      "Sample size",
+      "Full quantitative versus qualitative choice",
+      "Longitudinal relationship outcome",
+      "AR universally better than screen"
+    ]
+  },
+  "alternative_system_shape": {
+    "candidate": "An authoring/preview tool for robot expression fragments across channels.",
+    "value": "Could turn four design dimensions into a reusable creator capability.",
+    "reason_to_defer": "Requires actual creator difficulties and comparative capability evidence. Risks delaying a bounded physical/AR reconstruction; not necessary for the first revised system."
+  },
+  "closest_work_screen": [
+    {
+      "title": "GenComUI",
+      "url": "https://arxiv.org/abs/2502.10678",
+      "access": "Author abstract, with indexed author PDF excerpt",
+      "source_says": "Dynamic contextual visual aids for multi-turn verbal robot task specification and verification.",
+      "implication": "Task visualization and correction already have precedent; a proposed new spatial expressive system needs an explicit increment."
+    },
+    {
+      "title": "GenFaceUI",
+      "url": "https://arxiv.org/abs/2602.11055",
+      "access": "Author abstract",
+      "source_says": "Designer templates, semantic tags, rules and testing for generative personalized facial expressions.",
+      "implication": "An expression configuration/generation tool is not automatically novel; full closest-work comparison remains pending."
+    }
+  ],
+  "independent_disagreement": {
+    "method_efficiency": "Retain task architecture and strengthen synchronization, task clarity and comparisons; minimal physical action can anchor the study.",
+    "skeptic": "A reliable task loop alone may erase the identity of Manicule; keep graphic agency, atmosphere and meaningful ambiguity as legitimate design values.",
+    "human_evidence": "Participant interpretations and actual actions complement each other. Old interviews are not event-level measurements; avoid retroactive behavioral claims or automatic preference/personality inference.",
+    "synthesis": "Prioritize a reliable but expressive robot-owned layer. Mandatory semantic clarity is scoped to consequential task decisions; allow interpretive openness elsewhere."
+  },
+  "program_integration": {
+    "paper": "Append this audit and user-reported publication status to X68; preserve prior manuscript facts and records.",
+    "master_literature": "Keep X68 a completed foundation; update investigation date only.",
+    "field_and_gaps": "No new general field claim or validated gap; findings and questions remain bounded by the existing study.",
+    "graph": "No new authorship, lab or collaboration inference.",
+    "next_question": "User-endorsed reconstruction intent remains; this review does not select a formal RQ or PURSUE decision.",
+    "exam": "No mastery or exam update."
+  }
+}

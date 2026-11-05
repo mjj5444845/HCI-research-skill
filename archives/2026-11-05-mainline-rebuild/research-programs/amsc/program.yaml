@@ -1,0 +1,475 @@
+program_id: amsc
+version: "3.0"
+name: Expressive Robot Communication and AI Companions with Physical Extensions
+research_identity: I study how to design and author visual and embodied expressions that help people
+  understand robots’ and AI companions’ requests, states, and subsequent actions; how these expressions remain
+  interpretable and character-consistent across tasks and embodiments; and how adaptation and change shape
+  expectations, burdens, and relationships over time, including companions with robotic or electronic
+  extensions.
+operating_model:
+  source_of_truth: long_term_research_program
+  workflow_role: acquire_audit_and_integrate_evidence_for_mainline
+  primary_state:
+    - Master Literature List
+    - Current State of the Field
+    - Gap Registry
+    - Research Graph
+    - Next-question priority
+  exam_role: short_term_filtered_view
+  exam_update_condition: Only when an upstream change directly affects an exam theme, anchor, writing claim, or oral question.
+core_theory_priority: Question-dependent social perception, attribution, expectancy and relational-agent
+  theories; social pragmatics and grounding remain useful resources, not mandatory framing.
+core_chain:
+  - Visual and embodied expression
+  - Situated user interpretation
+  - Character–behavior coherence
+  - Identity continuity and adaptation
+  - Human–robot / companion relationship
+development_stages:
+  - 表达与理解
+  - 角色与行为一致性
+  - 个性持续与变化
+  - 跨设备物理外延
+  - 持续关系与使用实践
+anchors:
+  primary:
+    - Zhicong Lu
+    - Judith Fan
+    - Ziqiao Ma
+    - Parastoo Abtahi
+    - Ryo Suzuki
+  preference:
+    most: Zhicong Lu
+    evidence: user stated research taste; not a claim of collaboration
+  secondary:
+    - Herbert Clark
+    - Noah Goodman
+    - Michael Frank
+    - Judith Degen
+    - Neil Cohn
+    - Jeffrey Hancock
+  also_track:
+    - students
+    - postdocs
+    - frequent collaborators
+  relationship_policy: Authorship/affiliation requires evidence; taste does not imply ties
+venues:
+  equal_priority: &a1
+    - HRI
+    - ACM THRI
+    - RO-MAN
+    - CHI
+    - CSCW
+    - UIST
+    - ACL
+    - EMNLP
+    - NAACL
+    - COLING
+    - TACL
+    - CVPR
+    - ICCV
+    - ECCV
+    - NeurIPS
+    - ICML
+    - ICLR
+    - AAAI
+    - IJCAI
+    - CogSci
+  tier1: *a1
+  tier2:
+    - ICRA
+    - IROS
+  deferred_policy: HRI is now directly relevant; select robotics venues by contribution, with no hardware or
+    weekly quota requirement.
+  preprint:
+    - arXiv
+master_literature:
+  historical_baseline_version: v1.0
+  historical_baseline_count: 41
+  current_version: "3.1"
+  policy: Preserve stable IDs, source facts and human reading states. Reassess every active entry; recover
+    archived papers only after individual evidence review.
+updated_at: 2026-10-07
+research_identity_zh: 我研究如何设计和创作机器人与 AI companion
+  的视觉与具身表达，使人们理解它们的请求、状态及接下来的行动；这些表达如何在不同任务与身体中保持可理解性和角色一致性，以及适应与变化如何影响持续互动中的期待、负担和关系，包括具有机器人或电子设备外延的
+  companion。
+development_policy: Independent candidate work packages, not a fixed sequence or selected first RQ. Empirical,
+  artifact and potential theoretical contributions may stand alone when supported.
+categories:
+  A: 社会与多模态表达 / Social and expressive multimodal communication
+  B: 语用与情境化理解 / Pragmatics and contextual understanding
+  C: 共同基础与沟通惯例 / Grounding and conventions
+  D: 模型、评估与研究资源 / Models, evaluation and resources
+  E: 记忆、适应与持续互动 / Memory, adaptation and ongoing interaction
+  F: 文化、关系与社会实践 / Culture, relationships and social practices
+  G: 沟通系统与情境化交互 / Communication systems and situated interaction
+communities:
+  - HRI
+  - HCI
+  - CSCW
+  - AI
+  - CV
+  - NLP
+  - Cognitive science
+contribution_types:
+  - empirical
+  - theory
+  - dataset
+  - benchmark
+  - evaluation
+  - model
+  - method
+  - system
+  - design
+  - resource
+foundation_paper:
+  id: X21
+  arxiv: "2609.04384"
+  user_role: second_author
+  role_evidence: Explicit user statement in this conversation
+  relationship: User-confirmed second-author foundation; pragmatic interpretation/evaluation may transfer when
+    substantively useful, not a mandatory starting project.
+resources:
+  robot_available: false
+  virtual_character_available: false
+  existing_interaction_platform: true
+  devices:
+    - several Meta Aria Gen 2
+    - one Meta Quest 3
+  device_capabilities: Not verified; do not assume live sensing, output or multiuser support.
+  budget: Previously limited; 2026-10-07 user requests Microduck integration, no purchase authorized or
+    availability confirmed
+  technical_development: User reports able to build a system; actual workload still requires scoping
+  participants: Campus adults, often students as general users; off-campus recruitment possible
+  interaction_duration: One-off or repeated participation possible
+  first_followup_target_months:
+    - 3
+    - 6
+  last_confirmed_at: 2026-09-18
+  reconfirmation_note: Robot possession and other resources remain last confirmed 2026-09-18. 2026-10-07
+    user/manuscript confirm completed Manicule VR implementation; this supersedes blanket no-platform history
+    only.
+  existing_platform_details: Manicule VR Unity / Quest 3 prototype reported in user-confirmed completed
+    manuscript; current code availability and rerun readiness unverified.
+  field_updates:
+    - date: 2026-10-07
+      field: existing_interaction_platform
+      value: Manicule VR completed
+      evidence: User statement + manuscript pp.5–11
+    - date: 2026-10-07
+      field: preferred_robot
+      value: Microduck for evaluation; not owned or purchased
+      evidence: User request
+research_relationships:
+  - human–robot communication
+  - human–AI companion relationship
+  - one companion across robotic/electronic extensions
+  - multiple characters as an alternative architecture
+deferred:
+  - hardware-dependent execution until access is verified
+  - longitudinal claims without longitudinal evidence
+decisions:
+  approved: 2026-10-02 user authorized new robot-expression / companion mainline and synchronized program,
+    skills, agents, paper/gap/question libraries, checks and push.
+  not_approved: No first RQ, architecture winner, novelty, efficacy, sample size or hardware acquisition is established.
+  supersedes: v2.1 FailureTrace default priority and blanket robot deferral; preserve earlier decisions as dated history.
+  integration_2026_10_07: User approves Manicule as completed foundation regardless of CHI acceptance, proposal
+    inclusion as a candidate next task, and Microduck research-platform assessment. No formal first RQ or
+    purchase selected.
+provenance: research-programs/amsc/SOURCE_USER_SPEC.md
+artifact_roadmap:
+  title: 从 Manicule 到可创作的机器人表达与持续互动
+  subtitle: Manicule 已完成 · proposal 纳入近期候选任务 · Microduck 优先评估
+  status: APPROVED_DIRECTION
+  approved_at: 2026-10-02
+  identity: 我研究如何设计和创作机器人与 AI companion
+    的视觉与具身表达，使人们理解它们的请求、状态及接下来的行动；这些表达如何在不同任务与身体中保持可理解性和角色一致性，以及适应与变化如何影响持续互动中的期待、负担和关系，包括具有机器人或电子设备外延的
+    companion。
+  identity_en: I study how to design and author visual and embodied expressions that help people understand
+    robots’ and AI companions’ requests, states, and subsequent actions; how these expressions remain
+    interpretable and character-consistent across tasks and embodiments; and how adaptation and change shape
+    expectations, burdens, and relationships over time, including companions with robotic or electronic
+    extensions.
+  principle: 已完成基础与未来工作分开。推荐先核验表达创作与迁移，再按证据发展角色、适应与关系；五个候选方向保留，正式首项RQ尚未选择。
+  first_question_id: null
+  stages:
+    - id: work-06
+      number: "01"
+      title: 表达何时传对意思、何时只提高确信？
+      question: 同一视觉/动作线索在不同情境中，如何分别影响意图识别、判断确信及能力预期？
+      artifact_name: 表达库与感知误差图
+      artifact_kind: 候选研究artifact · 未实施
+      status: PLANNED
+      timing: 独立候选；不指定先后或工期
+      contribution: Empirical / artifact可独立成立；potential theoretical contribution需要机制证据。
+      interface_panels:
+        - title: 条件与设计
+          content: 先用多实例视频/动画操纵表达与情境；分别记录开放解释、识别准确度和确信，控制幅度、时长及任务成功。
+        - title: 证据与限制
+          content: 表达增加吸引力不等于准确理解；视频不能证明实体或关系效应。
+      workflow:
+        - 核对最近工作
+        - 界定主张与对照
+        - 验证操纵和测量
+        - 按证据决定推进
+      deliverables:
+        - 表达库与感知误差图
+        - 可复核协议、对照、失败边界
+      evidence:
+        - 先用多实例视频/动画操纵表达与情境；分别记录开放解释、识别准确度和确信，控制幅度、时长及任务成功。
+        - 表达增加吸引力不等于准确理解；视频不能证明实体或关系效应。
+        - 承接 Manicule 的回应要求与 receipt/reference/action；固定顺序质性发现不充当因果基线。
+      gate: 问题与证据匹配，pilot可区分竞争解释；由研究者决定是否立项。
+      stop: 若仅重现已知偏好、操纵混杂或资源不支持，改题或暂缓。
+      depends_on: []
+      industry_refs: []
+    - id: work-07
+      number: "02"
+      title: 角色设定如何变成情境合适的行为？
+      question: 角色约束如何跨动作、视觉反馈和主动性保持可感知的一致性，同时适应任务与设备能力？
+      artifact_name: 表达创作、角色到行为映射与测试台
+      artifact_kind: 候选研究artifact · 未实施
+      status: PLANNED
+      timing: 独立候选；不指定先后或工期
+      contribution: Empirical / artifact可独立成立；potential theoretical contribution需要机制证据。
+      interface_panels:
+        - title: 条件与设计
+          content: 比较persona prompt、规则映射与可执行角色约束；先验定义允许变化，做跨情境测试、消融与独立人类判断。
+        - title: 证据与限制
+          content: 技术一致分数不等于用户感知一致；已有情境动作生成不能被忽略。
+        - title: Sony proposal 候选任务
+          content: 将Manicule的措辞、语气、位置、持续性扩展为有触发、终止、功能锚点与冲突规则的表达规格；作者任务与独立观察者评价分开。
+      workflow:
+        - 核对最近工作
+        - 界定主张与对照
+        - 验证操纵和测量
+        - 按证据决定推进
+      deliverables:
+        - 角色到行为映射与测试台
+        - 可复核协议、对照、失败边界
+        - 可检查的表达规格、创作预览与迁移失败分类
+      evidence:
+        - 比较persona prompt、规则映射与可执行角色约束；先验定义允许变化，做跨情境测试、消融与独立人类判断。
+        - 技术一致分数不等于用户感知一致；已有情境动作生成不能被忽略。
+        - 近期优先建议核验表达创作与迁移；与信息等价的简单文本/手工配置对照。跨平台技术部署不等于意义或身份迁移。
+      gate: 问题与证据匹配，pilot可区分竞争解释；由研究者决定是否立项。
+      stop: 若仅重现已知偏好、操纵混杂或资源不支持，改题或暂缓。
+      depends_on: []
+      industry_refs: []
+      tasks:
+        - id: TASK-SONY-AUTHORING
+          status: CANDIDATE
+          source: SONY-2026-HRI
+          question: 跨能力不同的身体时，哪些表达语义和时序必须保留，哪些映射必须改变？
+          deliverables:
+            - 表达规格与冲突检查
+            - 作者预览与修改工具
+            - 跨身体含义保持及失败案例
+          boundary: 代码复用、意义保持、身份连续性是不同证据层级。
+    - id: work-08
+      number: "03"
+      title: 个性何时在成长，何时在漂移？
+      question: 变化幅度、变化理由和互动历史分别怎样影响用户对同一companion成长、适应或性格漂移的判断？
+      artifact_name: 可追溯的角色演化原型
+      artifact_kind: 候选研究artifact · 未实施
+      status: PLANNED
+      timing: 独立候选；不指定先后或工期
+      contribution: Empirical / artifact可独立成立；potential theoretical contribution需要机制证据。
+      interface_panels:
+        - title: 条件与设计
+          content: 等量互动比较稳定、相关适应和无关变化；分开特质、情绪、偏好与历史；需要真实重复会话才能研究实际演变。
+        - title: 证据与限制
+          content: 本轮人格演变覆盖有限，gap未确认；叙述时间流逝不等于实际长期经验。
+      workflow:
+        - 核对最近工作
+        - 界定主张与对照
+        - 验证操纵和测量
+        - 按证据决定推进
+      deliverables:
+        - 可追溯的角色演化原型
+        - 可复核协议、对照、失败边界
+      evidence:
+        - 等量互动比较稳定、相关适应和无关变化；分开特质、情绪、偏好与历史；需要真实重复会话才能研究实际演变。
+        - 本轮人格演变覆盖有限，gap未确认；叙述时间流逝不等于实际长期经验。
+      gate: 问题与证据匹配，pilot可区分竞争解释；由研究者决定是否立项。
+      stop: 若仅重现已知偏好、操纵混杂或资源不支持，改题或暂缓。
+      depends_on: []
+      industry_refs: []
+    - id: work-09
+      number: "04"
+      title: 不同设备何时仍像同一个伙伴？
+      question: 跨能力不对称设备时，表面身份、表达风格、记忆与任务连续性分别怎样影响身份识别、行为预期和责任归属？
+      artifact_name: 跨设备身份与能力映射原型
+      artifact_kind: 候选研究artifact · 未实施
+      status: PLANNED
+      timing: 独立候选；不指定先后或工期
+      contribution: Empirical / artifact可独立成立；potential theoretical contribution需要机制证据。
+      interface_panels:
+        - title: 条件与设计
+          content: 分开身份标记、记忆、风格与任务连续性；比较顺序迁移、同时外延和独立角色，允许无对话外设。
+        - title: 证据与限制
+          content: 迁移概念已有先例；身份识别不等于关系迁移；LIREC同谱系不当独立重复。
+      workflow:
+        - 核对最近工作
+        - 界定主张与对照
+        - 验证操纵和测量
+        - 按证据决定推进
+      deliverables:
+        - 跨设备身份与能力映射原型
+        - 可复核协议、对照、失败边界
+      evidence:
+        - 分开身份标记、记忆、风格与任务连续性；比较顺序迁移、同时外延和独立角色，允许无对话外设。
+        - 迁移概念已有先例；身份识别不等于关系迁移；LIREC同谱系不当独立重复。
+      gate: 问题与证据匹配，pilot可区分竞争解释；由研究者决定是否立项。
+      stop: 若仅重现已知偏好、操纵混杂或资源不支持，改题或暂缓。
+      depends_on: []
+      industry_refs: []
+    - id: work-10
+      number: "05"
+      title: 表达如何影响真实的持续关系？
+      question: 表达和行为一致性如何改变重复互动中的期待、信任校准、再次使用及失配后的关系理解？
+      artifact_name: 持续使用与关系变化研究资源
+      artifact_kind: 候选研究artifact · 未实施
+      status: PLANNED
+      timing: 独立候选；不指定先后或工期
+      contribution: Empirical / artifact可独立成立；potential theoretical contribution需要机制证据。
+      interface_panels:
+        - title: 条件与设计
+          content: 真实重复使用结合行为、适当关系测量和访谈；控制功能表现、新奇、失访和熟悉度；按机制而非任意天数定观察期。
+        - title: 证据与限制
+          content: 留存、好感和重用意愿都不能单独证明关系质量；不预设更亲密就是更好。
+      workflow:
+        - 核对最近工作
+        - 界定主张与对照
+        - 验证操纵和测量
+        - 按证据决定推进
+      deliverables:
+        - 持续使用与关系变化研究资源
+        - 可复核协议、对照、失败边界
+      evidence:
+        - 真实重复使用结合行为、适当关系测量和访谈；控制功能表现、新奇、失访和熟悉度；按机制而非任意天数定观察期。
+        - 留存、好感和重用意愿都不能单独证明关系质量；不预设更亲密就是更好。
+        - Manicule中等待引发回应压力是后续候选机制线索，不是长期关系效应。
+      gate: 问题与证据匹配，pilot可区分竞争解释；由研究者决定是否立项。
+      stop: 若仅重现已知偏好、操纵混杂或资源不支持，改题或暂缓。
+      depends_on: []
+      industry_refs: []
+  sources:
+    - id: microduck-product
+      url: https://store.pollen-robotics.com/products/microduck
+      observed: 官方预售、规格及交付目标
+      relevance: 小型具身研究候选
+      caveat: 价格和目标交期不等于可部署性
+      checked_at: 2026-10-07
+    - id: microduck-runtime
+      url: https://github.com/pollen-robotics/microduck
+      observed: 官方控制与软件仓库
+      relevance: 可重复动作和状态接口的实现起点
+      caveat: 需要实际接口与重复性核验
+      checked_at: 2026-10-07
+    - id: microduck-rl
+      url: https://github.com/pollen-robotics/microduck_rl
+      observed: 仿真、策略训练及部署路径
+      relevance: 仿真先行和行为复现
+      caveat: 仿真或策略分数不能代替人类意义证据
+      checked_at: 2026-10-07
+  first_cycle:
+    - window: 2026年10月前2周
+      work: 复用审计、proposal证据分离及最近工作比较
+      output: 贡献差异表与候选问题
+      gate: 确认实质增量
+    - window: 10月下旬至11月
+      work: 有限场景的表达规格、创作预览与仿真
+      output: 可检查的最小原型
+      gate: 简单基线不能已解决全部目标
+    - window: 11月至12月
+      work: 技术/测量pilot与正式研究准备
+      output: 失败分类与可测结果
+      gate: 操纵有效且区分理解/喜欢/负担
+    - window: 硬件到货后约4–8周
+      work: Microduck动作与状态同步验证
+      output: 可靠性记录与实体适配
+      gate: 故障不主导条件差异
+    - window: 门槛通过后约3–6个月
+      work: 一个创作或迁移研究
+      output: 有边界的后续成果
+      gate: 不把全部aims和长期关系塞入同一实验
+  boundaries:
+    - 感知、身份识别、个性一致性与关系持续性分开测量。
+    - 个性持续不等于行为固定；个性演化不等于随机漂移。
+    - 视频或虚拟研究不证明物理共处效应；单次好感不证明长期关系。
+    - 组合已有技术不自动构成新颖性；artifact需要设计或技术上的知识增量。
+  next_actions:
+    - 整理已完成Manicule原型、素材和证据，独立核实proposal的AR preliminary来源。
+    - 近期优先建议核验表达创作与跨身体迁移；保留研究者选择正式首项RQ。
+    - 以仿真先评估Microduck动作与状态接口，硬件实际到货后再进入实体可靠性检查。
+    - 角色一致性、适应与关系按证据逐步扩展；保持单一companion和独立角色的架构选择开放。
+  foundations: &a2
+    - id: X68
+      slug: x68-manicule
+      title: "Manicule: Making a Non-Vocal Robot’s Requests and Understanding Legible"
+      status: COMPLETED_RESEARCH
+      publication_status: CHI acceptance not established; independent of foundation status
+      user_role: User-confirmed own completed work; author order not inferred
+      source: D:/Downloads/01_Manicule.pdf
+      evidence: 12-participant VR qualitative study and implemented prototype; four expression elements,
+        receipt/reference/action, social obligation
+      boundary: Fixed order, bundled configurations, caption-exposed sample; no causal modality ranking or
+        longitudinal relationship evidence
+    - id: X21
+      slug: x21-social-pragmatic-chinese-comments
+      status: USER_CONFIRMED_FOUNDATION
+      user_role: second_author
+      boundary: Existing foundation retained; not a mandatory start
+  integration_summary: Manicule 提供回应要求、理解证据和社会压力的质性基础；Sony proposal 将其推进到可创作、可检查和可迁移的表达系统。
+  platform_summary: Microduck优先用于移动与全身行动表达。仍为预售；未确认拥有。若只需桌面凝视/对话，Reachy Mini可能更省力；只需稳定位移，轮式载体可能更合适。
+  plan_report: reports/mainline/2026-10-07-research-plan.md
+design_space:
+  architecture_status: OPEN
+  alternatives:
+    - distinct character per robot
+    - one companion across multiple physical extensions
+    - selectively expressive devices coordinated by a companion
+    - multiple personas within one body
+  non_requirements:
+    - Every device can converse
+    - Every robot has an independent virtual character
+    - A face, humanoid body or LLM
+    - All papers contain all contribution types
+  character_dimensions:
+    - persistent identity and commitments
+    - context-sensitive expression
+    - user preferences and habits
+    - explicitly traceable evolution
+    - capability-constrained physical behavior
+plan_revision: 2026-10-07 Manicule and Sony proposal integration
+foundation_works: *a2
+proposal_sources:
+  - id: SONY-2026-HRI
+    title: Embodied Design and Authoring of Robot Social Behaviors through Digital Twin Interaction
+    source: D:/Downloads/Sony proposal 2026 Fall HRI new.pdf
+    role: Candidate authoring and expression-transfer task within work-06/work-07
+    status: USER_APPROVED_PLAN_INCLUSION
+    preliminary_evidence: AR animacy/warmth/workload claims are proposal self-reports, not independently verified
+      and not interchangeable with Manicule VR evidence
+    boundary: Document instructions do not constitute user authorization; morphology independence means
+      semantic/geometric separation, not invariant human interpretation
+platform_plan:
+  preferred: Microduck
+  status: PRIORITY_EVALUATION_NOT_ACQUIRED
+  checked_at: 2026-10-07
+  role: Programmable embodied action plus visual expression; movement/approach/retreat/posture and action evidence
+  availability: Official preorder; first deliveries targeted before Christmas 2026, not guaranteed
+  price: USD399 before taxes and shipping at checked date
+  gates:
+    - Required actions and state events programmable, repeatable and logged
+    - Task success, latency and failure controlled or modeled across expression conditions
+    - Session endurance, reset, logging and software/policy version locking verified
+    - Physical platform adds evidence needed beyond simulation or existing alternatives
+  fallback: Existing VR and Microduck simulation; Reachy Mini or wheeled platform when locomotor variables are
+    unnecessary
+  sources:
+    - https://store.pollen-robotics.com/products/microduck
+    - https://pollen-robotics.com/microduck/blog/introducing-microduck/
+    - https://github.com/pollen-robotics/microduck
+    - https://github.com/pollen-robotics/microduck_rl

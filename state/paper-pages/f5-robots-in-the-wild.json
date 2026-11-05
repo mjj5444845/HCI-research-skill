@@ -123,10 +123,10 @@
   "worth_sharing": false,
   "updated_at": "2026-08-27",
   "program_membership": {
-    "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "现场HRI理论提醒检查旁观者、工作流程与部署情境。"
   },
   "historical_gap_links": {
     "program_version": "1.0",
@@ -143,5 +143,23 @@
     "recorded_before": "2026-10-02",
     "gap_impact": "强化 GAP-01/03 的跨 context、时间与 group boundary，强化 GAP-04/07 需要把 controlled diagnostics 与 field validation 组合，也支持 GAP-06 同时评估 direct user 与 social-environment outcomes；它是 agenda/synthesis evidence，不关闭任何具体机制缺口。",
     "next_project_priority": "采用 staged program：controlled history/partner/repair manipulation → longitudinal deployment → pre-specified cross-context replication 与 group-level outcomes。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "现场HRI理论提醒检查旁观者、工作流程与部署情境。"
   }
 }

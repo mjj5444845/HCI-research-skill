@@ -4,3 +4,4 @@
 *.jpg binary
 *.jpeg binary
 *.zip binary
+/archives/2026-11-05-mainline-rebuild/** -text

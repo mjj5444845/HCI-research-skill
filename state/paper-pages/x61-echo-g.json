@@ -1,0 +1,80 @@
+{
+  "id": "X61",
+  "slug": "x61-echo-g",
+  "title": "ECHO-G: Embodied Co-speech Humanoid Motion Generation",
+  "authors": [
+    "Yizhao Li",
+    "Pusen Gao",
+    "Ming Wang",
+    "Shaojie Shen",
+    "Shuo Yang",
+    "Hao Xu"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2609.39575",
+  "source_url": "https://arxiv.org/html/2609.39575v1",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "ECHO-G把audio与timed transcript直接映射到robot-space全身动作，证明可执行co-speech generation已前进，但人评只覆盖视频中的human-likeness与节奏。",
+  "problem": "人类动作生成后retarget到机器人容易违反本体约束并造成physical drift。",
+  "method": "以BEAT2人类动作retarget构造audio-text-robot数据，训练direct robot-space rectified-flow模型并实体部署；45人观看MuJoCo渲染，每人评价9个来自33段话语的trial。",
+  "findings": [
+    "joint audio-text conditioning在human-likeness、rhythm和motion quality均取得最高均值。",
+    "论文提供数据、benchmark、代码与实体部署示范。"
+  ],
+  "real_contribution": "direct robot-space co-speech generation与配套resource，是GAP-RC-02的重要technical precedent。",
+  "biggest_weakness": "训练源仍来自人类动作retarget；人类研究是渲染视频而非实体互动，显式deictic/intent gestures有限。",
+  "claim_boundary": "不能从video human-likeness推断meaning accuracy、identity、character continuity或关系效果。",
+  "why_researcher_should_care": "技术层面压缩‘缺少可执行动作生成’的空间，并强调用户解释指标必须另测。",
+  "amsc": {
+    "mainline_fit": 8,
+    "buckets": [
+      "A",
+      "C"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "co-speech motion generation",
+      "audio-text conditioning"
+    ],
+    "gap_ids": [
+      "GAP-RC-02"
+    ],
+    "master_list_decision": "Added by weekly radar after full-text audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-07全文审查；MuJoCo video ratings不作实体HRI证据。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/html/2609.39575v1"
+    ]
+  },
+  "updated_at": "2026-10-07",
+  "program_membership": {
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "机器人动作生成提供可执行性方法，不能替代人的意义理解证据。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-07",
+        "reason": "机器人空间中的可执行co-speech动作生成"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "机器人动作生成提供可执行性方法，不能替代人的意义理解证据。"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "record_type": "research_program_story_proposal",
+  "date": "2026-11-04",
+  "latest_user_clarification": {
+    "date": "2026-11-04",
+    "active_foundations": [
+      {"id":"X33","slug":"x33-speechcap","role":"Advisor-authored prior work; do not infer user's authorship."},
+      {"id":"X68","slug":"x68-manicule","role":"User's completed work; user reports rejection. One decision/review excerpt supplied; complete reviews remain unavailable."}
+    ],
+    "supersedes_for_current_foundation_scope": "Earlier X21 foundation designation; preserve historical second-author fact but do not count it as current mainline foundation.",
+    "near_term_intent": "Introduce AR, seek access to a real laboratory robot, redesign the task/scenario and reconstruct Manicule as a foundation for subsequent studies.",
+    "resource_boundary": "User plans Quest 3 for AR development; robot remains unidentified. No demonstrated robot integration, AR capability verification, formal first RQ/protocol or purchase authorization. Do not assume historical Microduck preference selects the current execution platform.",
+    "contribution_check": "Identify what AR and physical action enable or reveal beyond SpeechCap and existing Manicule; neither hardware substitution nor an AR superiority claim is assumed.",
+    "critical_unknowns": ["Complete reviews and manuscript-to-review claim audit", "Robot access and stable capabilities", "Quest 3 AR implementation and tracking/state synchronization", "Code reuse", "Time and recruitment"],
+    "source_of_user_intent": "research-programs/amsc/SOURCE_USER_SPEC.md#2026-11-04"
+  },
+  "review_excerpt_and_triage": {
+    "source": "User-provided decision/review excerpt, 2026-11-04; not an independent whole-paper audit.",
+    "verbatim": "Specifically, the submission is below the acceptable criteria for presentation clarity and validity, leading to concerns about the paper's significance. As a result of its overly complex and dense writing, the underlying contribution is neither understandable nor convincing as a CHI paper. Furthermore, the evaluation lacks critical details such as comprehensive task description, and the comparison probes seem designed in a way that favors the proposed system rather than serving as fair and comparable baseline alternatives. Given that much of the system seems to rely on augmented reality, it is further unclear how the system would work in practice.",
+    "reviewer_concerns": ["Dense writing obscures contribution and significance", "Insufficient task/evaluation detail", "Comparison probes appear favorable to the proposed system rather than fair alternatives", "Practical AR implementation and use unclear"],
+    "agent_synthesis": "These are actionable clarity, reporting, comparison and deployment concerns, not evidence that the entire direction is worthless. The excerpt alone does not establish that every criticism is correct or that reviewer preference explains rejection.",
+    "probe_baseline_distinction": "Exploratory probes may intentionally differ when used to elicit interpretations, provided rationale and claim limits are clear. Comparative superiority claims require credible, appropriately matched baselines and attention to order, learning and bundled differences. Do not retroactively relabel the executed study.",
+    "vr_ar_ambiguity": "Local records describe a VR evaluation; the excerpt discusses reliance on AR. Audit manuscript descriptions of implemented prototype, evaluation and deployment vision before attributing misunderstanding to either author or reviewer.",
+    "repair_order": ["Map claims to existing evidence", "Describe complete task and interaction sequence", "Determine whether conditions serve exploration or effectiveness comparison", "Define what Quest 3 AR and physical robot action must enable", "Verify technical and measurement feasibility before formal study design"],
+    "source_checked_for_device_path": "https://docs.unity.com/en-us/engine/6000.6/manual/xr/support/vroverview",
+    "device_evidence_boundary": "Official documentation supports Quest 3 passthrough MR as a development route; it does not verify the user's application, robot tracking or synchronization."
+  },
+  "status": "MAINLINE_FRAMING_USER_ENDORSED_WORKPACKAGES_DRAFT",
+  "researcher_endorsement": {
+    "date": "2026-11-04",
+    "source_quote": "这个主线感觉是可以的，也比较清晰。",
+    "scope": "User endorses the clarity and acceptability of the overall research framing: visual/embodied expression, human interpretation, person/context/history-sensitive adaptation, and consequences for ongoing expectations and relationships.",
+    "decision_boundary": "Work packages remain proposed. No first RQ, formal PURSUE decision, full platform build, study protocol, theoretical claim, architecture or hardware acquisition selected."
+  },
+  "provenance": "User requests an early big-picture story and layout of needed work, with empirical, artifact and potentially theoretical contributions jointly possible. This supersedes the agent's conversational framing of contribution types as alternative routes, not the approved program state.",
+  "user_confirmed_preferences": [
+    "The five preceding candidates are branches of one mainline.",
+    "Plan the overall research story before assigning individual projects and supporting elements.",
+    "Empirical and artifact contributions can coexist; theoretical contribution is a potential outcome."
+  ],
+  "research_project": {
+    "phenomenon": "机器人通过视觉与具身表达传递请求、状态和行动意图；具体的人如何理解及回应，以及互动经验如何影响后续沟通。",
+    "real_world_significance": "Design communication that is interpretable and appropriate to the person and situation, while testing adaptation costs and consequences for ongoing expectations and relationships.",
+    "research_problem": "机器人如何通过视觉与具身表达，与具体的人建立可理解、可调整、可持续使用的沟通方式？",
+    "candidate_framings": ["Designing robot visual communication for personalized and ongoing human-robot interaction"],
+    "literature_refs": ["reports/mainline/2026-11-04-personalized-visual-expression-candidates.json"],
+    "gaps": [],
+    "research_questions": [],
+    "constructs": ["Expression design", "Situated interpretation", "Personal and contextual differences", "Adaptation", "Expectations", "Ongoing interaction and relationship"],
+    "study_blueprints": [],
+    "contributions": ["Empirical accounts of interpretation, adaptation and expectations", "Reusable expression capabilities or design methods", "Potential explanatory propositions conditional on repeated evidence"],
+    "claims": [],
+    "risks": {
+      "novelty": ["This is a program organizing question, not a validated literature gap or novelty claim."],
+      "methodology": ["Communication accuracy, preference, response pressure and relationship outcomes require distinct evidence."],
+      "validity": ["Personalization need, useful learning signal, reusable platform and current resources are unverified."],
+      "ethics": []
+    },
+    "venue_framings": ["Venue follows the actual contribution and evidence; no venue selected."],
+    "status": "DRAFT_FOR_DELIBERATION"
+  },
+  "organizing_tension": "视觉表达需要稳定到足以理解，也可能需要随人、情境和互动历史调整；是否调整、由谁决定、如何保持合适期待，是待研究的选择。",
+  "conceptual_map_status": "Question map; arrows are candidate relationships, not demonstrated causal effects.",
+  "conceptual_map": ["Communicative goal and robot capability", "Visual/embodied expression", "Human interpretation and response", "Interaction history and expectations", "Selection or adjustment of subsequent expression"],
+  "work_packages": [
+    {
+      "id": "WP-A",
+      "role": "建立表达与理解的经验和设计基础",
+      "questions": ["What can people infer from the expression?", "Which distinctions or response expectations break down?"],
+      "possible_outputs": ["Bounded expression design space", "Interpretable examples and failure cases", "Reusable interaction materials"],
+      "possible_contributions": ["Empirical", "Artifact/design"],
+      "existing_foundation": "Manicule provides a completed prototype and bounded qualitative foundation; review text is unavailable and targeted repairs remain undetermined."
+    },
+    {
+      "id": "WP-B",
+      "role": "建立支持表达比较与调整的最小可复用artifact",
+      "questions": ["Which expressions and adjustment decisions can be specified, executed and inspected?", "Which creation or modification difficulty, if any, requires a new tool?"],
+      "possible_outputs": ["Reusable expression/interaction prototype", "A small configurable expression repertoire", "Feedback, correction and history records as needed"],
+      "possible_contributions": ["Artifact/method", "Empirical evidence of capability and limits"],
+      "boundary": "A complete authoring platform is conditional on an actual creator problem. Useful research infrastructure alone is not automatically a publishable artifact contribution."
+    },
+    {
+      "id": "WP-C",
+      "role": "检验何时及如何适应具体的人",
+      "questions": ["When do personal differences or history justify adaptation beyond a good shared/contextual design?", "When should adaptation be user-controlled or automatic?"],
+      "possible_outputs": ["A bounded adaptive or user-controlled expression mechanism", "Comparisons identifying useful or harmful adaptation", "Conditions for stable versus changing expression"],
+      "possible_contributions": ["Empirical", "Artifact", "Potential explanatory boundary conditions"],
+      "candidate_branches": ["Request persistence", "Expression detail", "Joint shorthand", "Adaptation correction"],
+      "boundary": "Branches are alternatives for a project, not required modules of one experiment."
+    },
+    {
+      "id": "WP-D",
+      "role": "研究持续互动中的变化、期待与关系",
+      "questions": ["How are expression changes interpreted across repeated interaction?", "What persists, breaks down or needs repair, and with what consequences?"],
+      "possible_outputs": ["Repeated-use evidence on expectations and adaptation", "A capable bounded deployment artifact", "Cross-study synthesis and candidate explanatory model"],
+      "possible_contributions": ["Empirical", "Artifact refinement", "Potential theoretical"],
+      "boundary": "Relationship claims need appropriate actual repeated-use evidence. Greater liking, fluency or study attendance do not by themselves establish relationship quality."
+    }
+  ],
+  "dependencies": {
+    "partial_order": ["WP-A and a minimal WP-B can inform each other.", "WP-C requires a concrete communication difficulty, credible comparison and usable prototype, not completion of a universal editor.", "WP-D requires stable interaction and meaningful repeated use; it need not await every WP-C branch.", "Theoretical synthesis develops across work packages rather than serving as a guaranteed final paper."],
+    "not_a_contract": "Work packages are a provisional program layout, not four selected papers, approved experiments, fixed sequence or guaranteed outcomes."
+  },
+  "critical_alternatives": [
+    "A good common expression may be sufficient.",
+    "Current context may matter more than stable personal differences.",
+    "User configuration or explicit asking may outperform automatic inference.",
+    "Shared history may create misleading expectations rather than improve communication.",
+    "More accurate communication may reduce closeness while improving appropriate expectations.",
+    "Negotiation or correction may cost more effort than it saves."
+  ],
+  "theory_gate": "A conceptual chain or named framework is not itself a theoretical contribution. Seek evidence-supported explanations and discriminating predictions or boundary conditions, compared against relevant existing theory; retain disconfirming evidence.",
+  "open_decisions": ["Specific recurring use setting", "First project/RQ", "Advisor's concrete success criteria", "Current platform/recruitment/time limits", "Whether automatic learning is needed", "Whether and how to extend to physical or multiple devices"],
+  "state_integration": "Preserve PROGRAM.md/program.yaml and prior user decisions. User endorsed the overall mainline framing on 2026-11-04; the research_project and work-package proposals remain DRAFT. This record does not select PURSUE, change gap status, claim new field knowledge, update exam mastery or authorize hardware."
+}

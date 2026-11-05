@@ -91,9 +91,9 @@
   "updated_at": "2026-08-27",
   "program_membership": {
     "status": "CORE",
-    "program_version": "3.0",
-    "reviewed_at": "2026-10-02",
-    "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "情境驱动动作选择与动画调节，直接连接表达生成及人的适切性评价。"
   },
   "historical_gap_links": {
     "program_version": "1.0",
@@ -113,5 +113,23 @@
       "GAP-04": "强化 adaptation 不等于 convention formation：prompt-conditioned modulation 是 system adaptation，并非双方形成稳定 shared shorthand。",
       "GAP-06": "PARTIALLY_ADDRESSES social expressivity 与 embodied output 的技术桥接，但没有把 expressive social meaning 与 robot functional-state communication 放在同一研究中。"
     }
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-02",
+        "reason": "直接支撑表达、行为或持续使用研究；保留原证据及适用条件。"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "情境驱动动作选择与动画调节，直接连接表达生成及人的适切性评价。"
   }
 }

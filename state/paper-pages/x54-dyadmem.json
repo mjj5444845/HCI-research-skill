@@ -1,0 +1,83 @@
+{
+  "id": "X54",
+  "slug": "x54-dyadmem",
+  "title": "DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users",
+  "authors": [
+    "Yifei Tao",
+    "Xinyu Zhong",
+    "Henry Hengyuan Zhao",
+    "Fanyi Wang",
+    "Tengda Guo",
+    "Wentao Qiu",
+    "Ying Wang",
+    "Liujian Tang"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.03020",
+  "source_url": "https://arxiv.org/abs/2610.03020",
+  "access_status": "full_text",
+  "priority": "Important",
+  "one_sentence": "DyadMem 将用户事实与关系特定的 agent-side procedures 分开，并显示 capture、update、recall 的 full pipeline 仍远弱于 gold-memory QA。",
+  "problem": "长期 agent benchmark 常把 relational memory 简化为用户事实检索，忽略 agent 如何与特定用户协作的程序性知识。",
+  "method": "构造3,065个episode、50,961个session和61,210个QA，覆盖六类记忆，分别评估 Capture、Update、Recall，并比较 Gold-Memory 与 Full-Pipeline。对话为 plan-guided synthetic/dialogue-first 数据并经九名质检标注者核查。",
+  "findings": [
+    "Gold-memory QA达到78.7–96.3%，但 full-pipeline 平均约47.7%（开放模型）与57.4%（闭源模型）。",
+    "最优系统的 unsafe deletion 率仍为62.55%，最差达98.51%，瓶颈同时存在于 capture 与 recall。"
+  ],
+  "real_contribution": "把 User-conditioned Relational Agent Memory 明确为用户侧知识与 agent-side relationship procedures 的双侧状态，并提供分阶段监督。",
+  "biggest_weakness": "轨迹是合成的；relational 主要指协作规则，不是用户感知的关系、身份或情感联结。",
+  "claim_boundary": "可支持关系特定 agent state 的 computational evaluation；不能支持真实关系演化、感知成长或陪伴质量。",
+  "why_researcher_should_care": "为 GAP-RC-03 提供可实现的状态分解，但提醒不能把 synthetic memory benchmark 等同 human relationship evidence。",
+  "amsc": {
+    "mainline_fit": 8,
+    "buckets": [
+      "D",
+      "E"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "user-conditioned relational memory",
+      "capture-update-recall"
+    ],
+    "gap_ids": [
+      "GAP-RC-03",
+      "GAP-RC-05"
+    ],
+    "master_list_decision": "Added by weekly radar after PDF audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-07 PDF全文审查；synthetic trajectories 不作真实关系证据。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/abs/2610.03020"
+    ]
+  },
+  "updated_at": "2026-10-07",
+  "program_membership": {
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "合成长期记忆benchmark缺少人对机器人表达的解释证据。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-07",
+        "reason": "关系特定记忆状态与分阶段评估"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "合成长期记忆benchmark缺少人对机器人表达的解释证据。"
+  }
+}

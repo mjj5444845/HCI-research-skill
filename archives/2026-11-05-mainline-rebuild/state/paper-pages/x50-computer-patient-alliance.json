@@ -1,0 +1,58 @@
+{
+  "id": "X50",
+  "slug": "x50-computer-patient-alliance",
+  "title": "Establishing the computer-patient working alliance in automated health behavior change interventions",
+  "authors": [
+    "Timothy Bickmore",
+    "Amanda Gruber",
+    "Rosalind Picard"
+  ],
+  "year": 2005,
+  "venue": "Patient Education and Counseling 59(1):21–30",
+  "source_url": "https://pubmed.ncbi.nlm.nih.gov/16198215/",
+  "access_status": "abstract_only",
+  "priority": "Important",
+  "one_sentence": "关系型代理与三十天的工作联盟",
+  "problem": "关系型代理与三十天的工作联盟",
+  "method": "原始摘要报告30天近每日互动：关系行为33人、消融关系行为27人、另31人控制。",
+  "findings": [
+    "摘要报告关系行为提高working alliance与继续互动意愿。"
+  ],
+  "real_contribution": "关系型代理与三十天的工作联盟",
+  "biggest_weakness": "未全文审计；健康干预中的working alliance不等同所有companion关系，也不证明物理外延增益。",
+  "claim_boundary": "未全文审计；健康干预中的working alliance不等同所有companion关系，也不证明物理外延增益。",
+  "why_researcher_should_care": "提供新主线的直接先例与反证边界；组合已有设计不自动构成新颖性。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "A",
+      "E",
+      "G"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "关系型代理与三十天的工作联盟"
+    ],
+    "gap_ids": [
+      "GAP-RC-05"
+    ],
+    "master_list_decision": "Added after independent focused audit"
+  },
+  "investigation_status": "abstract_evidence_investigation",
+  "evidence_notes": [
+    "2026-10-02仅核验原始摘要与元数据，未核验全文；未复现实验。",
+    "未全文审计；健康干预中的working alliance不等同所有companion关系，也不证明物理外延增益。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/16198215/"
+    ]
+  },
+  "updated_at": "2026-10-02",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.0",
+    "reviewed_at": "2026-10-02",
+    "reason": "关系型代理与三十天的工作联盟"
+  }
+}

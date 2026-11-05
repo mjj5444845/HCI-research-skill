@@ -1,0 +1,79 @@
+{
+  "id": "X76",
+  "slug": "x76-living-with-ai-companions",
+  "title": "Living with AI Companions: Sustained AI Companionship Predicts Lower Well-Being Through Lower Human Interaction",
+  "authors": [
+    "Yutong Zhang",
+    "Dora Zhao",
+    "Yixin Wang",
+    "Rebecca Anselmetti",
+    "Jeffrey T. Hancock",
+    "Robert Kraut",
+    "Diyi Yang"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint v3 (window revision)",
+  "doi": "10.48550/arXiv.2609.07243",
+  "source_url": "https://arxiv.org/abs/2609.07243",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "两波Character.AI调查把约一年尺度的持续陪伴使用与较低well-being、较少面对面互动联系起来，但37.1%留存率与观察性路径模型不支持因果social-displacement结论。",
+  "problem": "AI companionship如何随时间延续，以及持续互动、陪伴用途和自我披露如何与后续well-being和人际互动关联。",
+  "method": "美国native-English Character.AI活跃用户两波纵向调查；T1 N=1,182，平均362.5天后T2 N=439；使用结构方程路径、Heckman selection correction及continued-user robustness check。",
+  "findings": [
+    "三类social engagement表现出跨波延续，且较高T1互动强度预测后续互动、陪伴用途与自我披露。",
+    "在返回样本中，持续social engagement与较低well-being相关，路径结果与较少in-person interaction的social-displacement解释相容。"
+  ],
+  "real_contribution": "为RC05提供目前较强的真实使用纵向关联证据，并迫使关系结果从短期liking、使用强度和披露中分离。",
+  "biggest_weakness": "仅两波、62.9%失访、关键mediator与outcome在T2同期测量，Heckman无法排除未观测失访、反向因果与时间变化混杂。",
+  "claim_boundary": "可称纵向关联及与displacement pathway相容；不可称AI companionship导致较低well-being或跨平台、跨文化普遍成立。",
+  "why_researcher_should_care": "RC05必须测人际关系生态与well-being，而不能把持续使用、披露或关系强度默认成正向结果。",
+  "amsc": {
+    "mainline_fit": 9,
+    "buckets": [
+      "F"
+    ],
+    "stages": [
+      "持续关系与使用实践"
+    ],
+    "mechanisms": [
+      "sustained engagement",
+      "social displacement",
+      "self-disclosure"
+    ],
+    "gap_ids": [
+      "GAP-RC-05"
+    ],
+    "master_list_decision": "Window revision recovery; not a new submission"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "v1于2026-09-07提交；v3于2026-10-20修订，按窗口修订而非新稿记录。",
+    "样本限于美国、native-English、Prolific和Character.AI；无文化比较或measurement invariance证据。"
+  ],
+  "updated_at": "2026-10-26",
+  "program_membership": {
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "真实使用纵向关联帮助区分使用强度、人际互动与远期关系结果。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-26",
+        "reason": "长期AI companionship后果与RC05直接相关"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "真实使用纵向关联帮助区分使用强度、人际互动与远期关系结果。"
+  }
+}

@@ -1,0 +1,690 @@
+{
+  "date": "2026-11-05",
+  "reason": "User approved mainline/site reorganization; preserve complete pre-edit records, including uncommitted human and agent changes.",
+  "files": [
+    {
+      "path": "research-programs/amsc/ARTIFACT_ROADMAP.md",
+      "sha256": "c9d228c0c17d54f3f33fa065292ac06cd55f271b313eb59c547bdd4f812ca88a"
+    },
+    {
+      "path": "research-programs/amsc/exam-preparation-v2.md",
+      "sha256": "d4cbd0396dd7affdcdb294fe94514b9ac8ed3ea6975922262a6d33ea017333f9"
+    },
+    {
+      "path": "research-programs/amsc/imports/comprehensive-exam-plan-v1.md",
+      "sha256": "94800aa02c1431c10649c0b285d617e1a47525d839048c99002429926b28511d"
+    },
+    {
+      "path": "research-programs/amsc/imports/master-literature-v1.0.md",
+      "sha256": "5907d1c54081bccb37d7cb521e1589b417e548da6cc4c1203e5112d235777f6f"
+    },
+    {
+      "path": "research-programs/amsc/PROGRAM.md",
+      "sha256": "e18978279142d56890104a8c864daebf0ec6911074cbd4fe2de1d351dbb43c5d"
+    },
+    {
+      "path": "research-programs/amsc/program.yaml",
+      "sha256": "9b81b929ba980d3584195fb846c3aba75ec42d8cd62095b4fa978f3c9fc28890"
+    },
+    {
+      "path": "research-programs/amsc/SOURCE_USER_SPEC.md",
+      "sha256": "0259bdfbe8add4e99cddf01d80a3905672e35f29c70532632c30be366a644fdd"
+    },
+    {
+      "path": "research-programs/amsc/state/comprehensive_exam.yaml",
+      "sha256": "25b6659053e4375dd00f121c391cd61e4b0bc591a7594d3916ababb50e82a409"
+    },
+    {
+      "path": "research-programs/amsc/state/gap_registry.yaml",
+      "sha256": "75720d79e0a7b4ae692c1e02f45a2bfb3d46f60b9bc86078e93ea8624e0797b7"
+    },
+    {
+      "path": "research-programs/amsc/state/master_literature.yaml",
+      "sha256": "c10257e111e87b2236738ad102ee742a8093a1b493b179a972c8aa38b11c1815"
+    },
+    {
+      "path": "research-programs/amsc/state/research_graph.yaml",
+      "sha256": "3725c604f57fab8f0c2499429f7cdd470c09f8121407e88dfa6c562c71c95f02"
+    },
+    {
+      "path": "research-programs/amsc/state/research_pipeline.json",
+      "sha256": "fa7fced92d7fd1c969c019988574c00da13ae200e9fdb94f91144e7360bb7277"
+    },
+    {
+      "path": "research-programs/amsc/state/state_of_field.yaml",
+      "sha256": "fb09e23539aa126702b3b2ef673dff7c554f9cc5e51dc48d7db0816de973b0e1"
+    },
+    {
+      "path": "research-programs/amsc/state/workflow_dashboard.json",
+      "sha256": "69ec33c9de0c4763e566eddab72bf6acc0250b4757c2e89847eb88f3dbb44bbc"
+    },
+    {
+      "path": "research-programs/amsc/templates/weekly_report.md",
+      "sha256": "9c7fac23420349d4f7528d7ddba65641954071a08fcc57f2baaa170fa8062b8a"
+    },
+    {
+      "path": "state/claims_evidence.yaml",
+      "sha256": "413c3d09a0a8ecee79d1e2416d9428d8bd9a4948fb7f3a9f1940d12a1133a384"
+    },
+    {
+      "path": "state/literature_maps.yaml",
+      "sha256": "a4e9f80b5045df021a28dde7433f90564689319e3c9b0d8a086e7af50a254e1c"
+    },
+    {
+      "path": "state/paper-pages/.gitkeep",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "state/paper-pages/a1-ai-mediated-communication.json",
+      "sha256": "f5d5400dfc8cd44b449b56f6c001918beadb7394515190885a0a880913aa38fc"
+    },
+    {
+      "path": "state/paper-pages/a2-textual-paralanguage.json",
+      "sha256": "ce01c53a19a040dfdb9b7de9ace5ccb166d6acc0e59194ff78954d0632ebe1cb"
+    },
+    {
+      "path": "state/paper-pages/a3-interpreting-emoji-pragmatics.json",
+      "sha256": "0f33a20d26280944cf719fffcc9bfb1149dd858143d2179938d65ebc54575747"
+    },
+    {
+      "path": "state/paper-pages/a4-a-visual-lexicon.json",
+      "sha256": "3b90d1855946d129fad483c3a026f31a3af4b9e5aac78518c9207f31903bceb6"
+    },
+    {
+      "path": "state/paper-pages/a5-multimodal-parallel-architecture.json",
+      "sha256": "95430ad282984f7fcdc3de685ca3b1e9be792059db29a7b6ada9e1bff606ca61"
+    },
+    {
+      "path": "state/paper-pages/a6-puppetchat.json",
+      "sha256": "6454b42deed26c1b7998fa2fed1f6fda004f9d233331b20efc85c71c876dc195"
+    },
+    {
+      "path": "state/paper-pages/b1-pragmatic-language-interpretation.json",
+      "sha256": "605881e987db21c0059844794c74a983a3e4477d4c584ff3d4b4d17e696d694b"
+    },
+    {
+      "path": "state/paper-pages/b2-rational-speech-act-framework.json",
+      "sha256": "6989f2f1bc0c4f4aadce0d3bc8e9b17627ba42e2e76745f619bdc7c19e5ab182"
+    },
+    {
+      "path": "state/paper-pages/b3-pragmatic-inference-visual-abstraction.json",
+      "sha256": "86d9c16849b5b7bfa3572dcf4ee72348d5d672519e42482e02ad120aec2b1774"
+    },
+    {
+      "path": "state/paper-pages/b4-when-redundancy-is-useful.json",
+      "sha256": "d711242536e2f999a3a32b9fb92ab6f5f36dcbe86b88c0d8cfbe7bb20bf492ac"
+    },
+    {
+      "path": "state/paper-pages/c1-referring-as-collaborative-process.json",
+      "sha256": "ea8ec47a8f1fb090a0c0413f2a46e53be3f5836c25c6b0690939580e2e012e51"
+    },
+    {
+      "path": "state/paper-pages/c2-grounding-in-communication.json",
+      "sha256": "8b0d7614838392ece34939b350cb34b15fad8657718488a474592922a2d226ae"
+    },
+    {
+      "path": "state/paper-pages/c3-conceptual-pacts.json",
+      "sha256": "8b5ac8456006f59a859fc6fb7e323e96d8f6c55ea6ff4cfda717880f9e98a037"
+    },
+    {
+      "path": "state/paper-pages/c4-repeated-reference-games.json",
+      "sha256": "ccb67db56210d85990d10f954e7381e62cfbe998cc9a51559b65737d0496b43c"
+    },
+    {
+      "path": "state/paper-pages/c5-graphical-convention-formation.json",
+      "sha256": "2dc1376bd987ed5c0075d966b467d5cb0f104afe9b88c4cd87742673f92794e6"
+    },
+    {
+      "path": "state/paper-pages/c6-visual-resemblance-interaction-history.json",
+      "sha256": "3dd4e45445323c8be6a9eef297f3eb0e384fa38c269523ea753e3dd78ab065b4"
+    },
+    {
+      "path": "state/paper-pages/c7-shared-procedural-abstractions.json",
+      "sha256": "55ec61bb5d84d10a1c625ae7550d12cb4bfafff3b7d63d4da3ec9448a413bc26"
+    },
+    {
+      "path": "state/paper-pages/c8-gesturing-toward-abstraction.json",
+      "sha256": "d7d39a176fc28fa2b1aec3df6ec3da3a6c9580801cb886a122e7c08cea3b78a0"
+    },
+    {
+      "path": "state/paper-pages/d4-expressing-thought.json",
+      "sha256": "7baceb6a7bde29982a8ef8f7d946cf864fac8ff83135dc9f907f6d2443281511"
+    },
+    {
+      "path": "state/paper-pages/d5-legibility-and-predictability.json",
+      "sha256": "3075fb44b52acb9b65abdcda88cc5826239cdf00786e2c1159e68f990f616c96"
+    },
+    {
+      "path": "state/paper-pages/d6-designing-robots-with-movement.json",
+      "sha256": "6fe71aa750bd6cbe55cace2533ef12e8e16bbb81c60dc258b3cb6ca1a016c8b5"
+    },
+    {
+      "path": "state/paper-pages/d7-social-eye-gaze-review.json",
+      "sha256": "6d230b1091703f81abb90a29308b7be922808f95cf1f342ca338f01196f73c91"
+    },
+    {
+      "path": "state/paper-pages/e1-long-term-social-robots-survey.json",
+      "sha256": "d2031284893aed0a4cb19cbf4199467c85cffe7149e0884be03f86884d3b48f1"
+    },
+    {
+      "path": "state/paper-pages/e2-human-robot-mutual-adaptation.json",
+      "sha256": "7074f662b29269170ca1a2c978eb7959ef6174a481aab037f5722da4ac3c05f2"
+    },
+    {
+      "path": "state/paper-pages/e3-continual-adaptation-machine-communication.json",
+      "sha256": "b07c10d45390ee8ea7b65a90899a0e454970561d520c32e4090a1bc8b73b8a9c"
+    },
+    {
+      "path": "state/paper-pages/e4-designing-robots-long-term.json",
+      "sha256": "d822f9b66ce30d0b1ece33a723860e16b0574e506cc6f1565df009b93316ced2"
+    },
+    {
+      "path": "state/paper-pages/f1-emergence-social-norms-conventions.json",
+      "sha256": "6436b4eb2753695bedf28dab4281f5ec1f3b454d3b81be7874de70fc6bf88a32"
+    },
+    {
+      "path": "state/paper-pages/f3-robotic-products-social-products.json",
+      "sha256": "1da604646778289be8e6e540962d5610f8c2792b73e3a26c3d3c95d20ec11e67"
+    },
+    {
+      "path": "state/paper-pages/f5-robots-in-the-wild.json",
+      "sha256": "520ef66e800c64eab8728b6fa39c8c3e299b0e247f16d8f0a391d57b0a63aac4"
+    },
+    {
+      "path": "state/paper-pages/g4-context-aware-expressive-motion.json",
+      "sha256": "3bd4d85ee8a411df09e1f602f31511ae039003e08b8088010b7d3c424c3e7d2e"
+    },
+    {
+      "path": "state/paper-pages/README.md",
+      "sha256": "5ae19f9ac6816dc5df0eba9e03b40a1b6acbfe712333db1e94dcc1b1a5a11813"
+    },
+    {
+      "path": "state/paper-pages/x1-spotter-human-robot-conventions.json",
+      "sha256": "66c46efb261ddbcab31c57a59272b6f8eaed00aa67ee8bf98c06ab4ca37a440c"
+    },
+    {
+      "path": "state/paper-pages/x10-llms-people-conventions.json",
+      "sha256": "eb7744e05b606edb3d049009de1d2c6dee64604328e7cfbe6bab8c68c7eea643"
+    },
+    {
+      "path": "state/paper-pages/x11-common-ground-benchmark.json",
+      "sha256": "bcaa09c4f32fd9dce1fb5106c94d425222db6fa5a31b3aa27e3491e6d757b40d"
+    },
+    {
+      "path": "state/paper-pages/x12-partners-to-populations.json",
+      "sha256": "6c26a68e99aea91e18484530a45fc887dab1855ffd43afe9638172407a5ac619"
+    },
+    {
+      "path": "state/paper-pages/x13-silica-agent-societies.json",
+      "sha256": "bca6bf344583f6067b2bbac0c59b71b79cb4dce7b02139366b623ca583ff2f7b"
+    },
+    {
+      "path": "state/paper-pages/x16-memuse-natural-integration.json",
+      "sha256": "e9ca1fc19b65600389538ab65f1f10790ad5a0d2e423fe7c03b41e1a33ba070b"
+    },
+    {
+      "path": "state/paper-pages/x17-glossogen-emergent-language.json",
+      "sha256": "d44ddae2c29fbc457197fe6c137db8986137fc8f8a02f4a0a14a7d7ec6559099"
+    },
+    {
+      "path": "state/paper-pages/x2-lvlms-humans-ground-differently.json",
+      "sha256": "e426eaf07e87984838f2f10a0661fd003f0496127c156e72aefc75dee57385f0"
+    },
+    {
+      "path": "state/paper-pages/x20-passing-the-pact.json",
+      "sha256": "418d14d2e13aab7e73809ed850de6a1661c5f26c02efa834759f477c8a62cb67"
+    },
+    {
+      "path": "state/paper-pages/x21-social-pragmatic-chinese-comments.json",
+      "sha256": "8887bae2962758153356ba104af0c64d0ce9d8817b20f38ffbdc2af445b85703"
+    },
+    {
+      "path": "state/paper-pages/x22-banana-man-pragmatic-interpretation.json",
+      "sha256": "7a72b46d0ccaa3b2aa20db63055bab5bc2c7f7be6fdca6632b599cacd711e7ef"
+    },
+    {
+      "path": "state/paper-pages/x23-machine-mental-imagery-common-ground.json",
+      "sha256": "bea4f52ab511fcae5e98aff4c751c9d28d306d48158f398855dc37a060520bb4"
+    },
+    {
+      "path": "state/paper-pages/x24-multimodal-repair-detection.json",
+      "sha256": "732e38aea71a39154c3a691306808c4646307ef81d12fd643daebf88cae9fd83"
+    },
+    {
+      "path": "state/paper-pages/x25-seeing-is-not-sharing.json",
+      "sha256": "2d55743320f1ac32abbb4b32990f6b366e0e076213e1c3fab9b30734423cb8be"
+    },
+    {
+      "path": "state/paper-pages/x26-convention-gap.json",
+      "sha256": "da5a23dbc45311d61dd7f4551bc209263e47422dba3d89564724eed80809e0ff"
+    },
+    {
+      "path": "state/paper-pages/x27-calibrated-ambiguity.json",
+      "sha256": "ff6c04fe84fbb6483c53f36e099bdc38856e9605fbf85c65d5470ddcafe798c6"
+    },
+    {
+      "path": "state/paper-pages/x28-continue-adapt-yield.json",
+      "sha256": "884c4c95be870ae9481486acff258ef1fd0c6c00d0ba02ad5b875844d8e96d2f"
+    },
+    {
+      "path": "state/paper-pages/x29-testing-interchangeability.json",
+      "sha256": "bb659b41e331f8ebc3e9ba0ea5924486e24b1b90cc974aef9a78b5c8479cdaae"
+    },
+    {
+      "path": "state/paper-pages/x3-seeing-eye-to-eye.json",
+      "sha256": "8a60b1cb07b96f0e8a21a195ad0ec44390a876a6f56e2ab1f6737e2d6e9fad21"
+    },
+    {
+      "path": "state/paper-pages/x30-refoi-pragmatic-generation.json",
+      "sha256": "01d0ac0cbdf892eea635d1f6b45785379aa1a09025d427fdce732db3e49f78ff"
+    },
+    {
+      "path": "state/paper-pages/x31-cmpm-order-matters.json",
+      "sha256": "2cf115db59d74991976c9ca7802a3bd6593bc6a49caa9af2ea0d8be47a1c6652"
+    },
+    {
+      "path": "state/paper-pages/x32-intent-projection.json",
+      "sha256": "8df3fbcd020d2a87a401d35b22b9aa64fa4e9f4929088c6fd0283976aa41194b"
+    },
+    {
+      "path": "state/paper-pages/x33-speechcap.json",
+      "sha256": "3af0be4677f7eda6f32898b697caed45d45c372f2d46f883118c586cc4ecf88c"
+    },
+    {
+      "path": "state/paper-pages/x34-memebridge.json",
+      "sha256": "6f1e3b4df4a435603861cc465771f88aa81408aeb475d166a3af5a26b4115804"
+    },
+    {
+      "path": "state/paper-pages/x35-mgmc-fusion.json",
+      "sha256": "aa41ac1d165540243dc523b4da3120f70fc57a0b56c54710430d72b3269067cc"
+    },
+    {
+      "path": "state/paper-pages/x36-polite-but-misaligned.json",
+      "sha256": "4d4d759472a8d585d8e85150a004da4ebd509d616708936b52a073958a6cd82d"
+    },
+    {
+      "path": "state/paper-pages/x37-clarification-not-correction.json",
+      "sha256": "2606d7e3993629e95a4a379ecb9194df7dd8fb57e45e121cd9ba179e9a5f6ba9"
+    },
+    {
+      "path": "state/paper-pages/x38-user-model-belief-distillation.json",
+      "sha256": "ef3a64fb473307af05d27714aab7d6490510bbb32810c37fbf0aa673cd413d6a"
+    },
+    {
+      "path": "state/paper-pages/x39-live-assistant.json",
+      "sha256": "08da4a944d603457a33686f802e07147b51b755f45f73d59948fe517ff35b19e"
+    },
+    {
+      "path": "state/paper-pages/x4-making-memories-together.json",
+      "sha256": "e487ea348c06cd19dd78c155ed303fc2bae3bc17f5be82aa7c25e1e410672a39"
+    },
+    {
+      "path": "state/paper-pages/x40-msi-bench.json",
+      "sha256": "f6d1d10db615d9caa0fe9f8fc5054208db365121309e4330a57822c8e23d3c9c"
+    },
+    {
+      "path": "state/paper-pages/x41-ai-email-cultural-style.json",
+      "sha256": "0c4d43b95e8c83a2320fa8c21ee4483adc849a8f467a374d1d87e86419c3037c"
+    },
+    {
+      "path": "state/paper-pages/x42-memecf-pivotal-cues.json",
+      "sha256": "743bbcce388f968fb4efb4138e03df033ea7f99daaf6b6623777afa6da60b331"
+    },
+    {
+      "path": "state/paper-pages/x43-elegnt.json",
+      "sha256": "056ac5dad692e55878de928bbff8957216e230b8a845c1310d526940d32da33a"
+    },
+    {
+      "path": "state/paper-pages/x44-expressive-motion-timing.json",
+      "sha256": "36fc94b6ae7b8748d66132fe4ab118daa94dd12e338689b615641c1d0e31d7b0"
+    },
+    {
+      "path": "state/paper-pages/x45-appearance-behavior-task.json",
+      "sha256": "ac4e948769ab46d8962346635cb0808d378dcf455000601db43868ea5914c222"
+    },
+    {
+      "path": "state/paper-pages/x46-companion-behavior-consistency.json",
+      "sha256": "c45e5318f573ddb43bf3bf4a5a63647a6a25622ea18204a7349c7a6432393ca9"
+    },
+    {
+      "path": "state/paper-pages/x47-migrating-artificial-companions.json",
+      "sha256": "08e74339f71dea05bcf22fb42d8506c0346fec06c3674a12501b832cbbe2eb2c"
+    },
+    {
+      "path": "state/paper-pages/x48-memory-identity-embodiments.json",
+      "sha256": "9c45fc6a4913a25471cab6b6bda4d8267d027ab63fedab17692967b8337955db"
+    },
+    {
+      "path": "state/paper-pages/x49-long-term-agent-migration.json",
+      "sha256": "c07dd0258d6bc5a22fc9ee09f8a53d9afab8fd89bcada0c5d505ae53e064ad94"
+    },
+    {
+      "path": "state/paper-pages/x50-computer-patient-alliance.json",
+      "sha256": "25c45b9e8d2cd616204978b77b4bf3049795850ea904921fd88a4709d8273154"
+    },
+    {
+      "path": "state/paper-pages/x51-empathetic-companions-personality.json",
+      "sha256": "5391b1ceb36ccee2b8ca0b2668b093dbf425df8b5a03feff0b70cd8c6b373e36"
+    },
+    {
+      "path": "state/paper-pages/x52-meet-my-sidekick.json",
+      "sha256": "8536f048c88448aceea2da4c5c24d67cdad04ec69032f6bc5cbe862056005725"
+    },
+    {
+      "path": "state/paper-pages/x53-realcompanion.json",
+      "sha256": "e5c563bb3c4b60151d85982c91ad4792a8caa0be811a4b96775980041acfecb3"
+    },
+    {
+      "path": "state/paper-pages/x54-dyadmem.json",
+      "sha256": "d2b6ac30a780484e67313fb4a5b043e0e8bf1ac5eb7ed2217d09bdc5d2e3cb30"
+    },
+    {
+      "path": "state/paper-pages/x55-rethinking-legibility.json",
+      "sha256": "db5c85ed10d4b9738a98e8b6c998aaff777df24f1986e173beb6ef666584dba7"
+    },
+    {
+      "path": "state/paper-pages/x56-evidence-lives.json",
+      "sha256": "6c515df7175c289c1e6b6d72c79deefbb574ffb71f2bcc8887ec5f0193f676de"
+    },
+    {
+      "path": "state/paper-pages/x57-pair.json",
+      "sha256": "5697d229ce88b8116c874f9c9279a120bd2ae085a02bbda885a3596afe968bf8"
+    },
+    {
+      "path": "state/paper-pages/x58-mind-perception-companionability.json",
+      "sha256": "5423ba3677f9423229d2f9d6cbca7d7da488d63780632759e0d3e36e237c905f"
+    },
+    {
+      "path": "state/paper-pages/x59-trabot.json",
+      "sha256": "753721828e1ebb8dbf1139167e9b6ee643f8c37fde158e78c53e0f56b5550d8a"
+    },
+    {
+      "path": "state/paper-pages/x6-beyond-local-surprise.json",
+      "sha256": "1f17ae19c92b6cd143104f969efe22064744d48579b4fefb658323053803c744"
+    },
+    {
+      "path": "state/paper-pages/x60-arise.json",
+      "sha256": "fded85d78474b44c43100c506dd8255f62f47c109f3b38f681ef0b9d104fc520"
+    },
+    {
+      "path": "state/paper-pages/x61-echo-g.json",
+      "sha256": "66038d567c628fdf3acb3510faf958e705c49f6afa36241c49fe2c0049364721"
+    },
+    {
+      "path": "state/paper-pages/x62-gestadapt.json",
+      "sha256": "0e9366edd2a47a5bf9f143747a9d2309149918bf5e1d42ded15e0a55cd795a6c"
+    },
+    {
+      "path": "state/paper-pages/x63-mind-body-identity.json",
+      "sha256": "0fd334892e13eeb8eda8bbb25e3805065d706598c85fdea20aa6cfd6e94b89a1"
+    },
+    {
+      "path": "state/paper-pages/x64-artificial-identity-framework.json",
+      "sha256": "198a2a11d4158dd5b960ab86f24bd70b4251acd46ed8407103cac8c64ee2dfdc"
+    },
+    {
+      "path": "state/paper-pages/x65-mourning-ai-companions.json",
+      "sha256": "49fe718dc75702e11ad6bdf860dea48abf9d285cef20a28f78e575e150e1b4f2"
+    },
+    {
+      "path": "state/paper-pages/x66-spatially-grounded-gesture.json",
+      "sha256": "a4c1d57b8fcc284e379ee9177461eb964d3e99badd28f92511b63a5ff928f6d6"
+    },
+    {
+      "path": "state/paper-pages/x67-latent-identity-reversion.json",
+      "sha256": "b1a7a7eb60e1b19f70fb95d62877579f640da175780ba5c2769f0dbbfdcf51cd"
+    },
+    {
+      "path": "state/paper-pages/x68-manicule.json",
+      "sha256": "3c2c7c558cf3f7fa2fb583be5e47065890c12cc3c504eaabcffb6623a53011e1"
+    },
+    {
+      "path": "state/paper-pages/x69-deco.json",
+      "sha256": "9b8b5490296e4b5eaa6b1fcb63835595113cbcb3eccb06b2d781e72a89ac0ba6"
+    },
+    {
+      "path": "state/paper-pages/x70-anthropomorphic-attitudes.json",
+      "sha256": "1fa05e117b9aab4afbd996eac027fc4e3791b553f676ec843625521f60af92cf"
+    },
+    {
+      "path": "state/paper-pages/x71-memoreval.json",
+      "sha256": "dde0fbf3a8053dd1a8d7873595c82884e93487750ecf89204f5bb30796b54d9e"
+    },
+    {
+      "path": "state/paper-pages/x72-instance-anchored-interaction.json",
+      "sha256": "364037095b898630bdc0c5ae3161a7a7d141ce531b846c44873255c18c21acb8"
+    },
+    {
+      "path": "state/paper-pages/x73-conversing-with-objects.json",
+      "sha256": "16a5baefd217762dcc03b528cfb920651a957d7b9b59033b687356d80509517e"
+    },
+    {
+      "path": "state/paper-pages/x74-how-ai-companionship-develops.json",
+      "sha256": "7e78e5d036a026c383a0adef92513079cd3a343303d400c02c339044afc66e37"
+    },
+    {
+      "path": "state/paper-pages/x75-grounded-robot-persona.json",
+      "sha256": "ecfd50285c793d49f4ecde4953063ec268f9a30f1a262ad6ffd5b22da6d1b377"
+    },
+    {
+      "path": "state/paper-pages/x76-living-with-ai-companions.json",
+      "sha256": "8e43e1def1fccebf815075e92ed06ae8382cf83e35410c8889fa2eb0019a71ea"
+    },
+    {
+      "path": "state/paper-pages/x77-what-should-ai-forget.json",
+      "sha256": "e4d7355abc0635e8c81c331fb23be01540f3f74b7c5b64c1335d02d401fd4a2f"
+    },
+    {
+      "path": "state/paper-pages/x78-beyond-small-talk.json",
+      "sha256": "c9bedc856a21ff402240b0371fdd1a448d7ab4ce319158ecfcbe996abd3431e1"
+    },
+    {
+      "path": "state/paper-pages/x79-robommt.json",
+      "sha256": "ef48d64fc25749c4121ad2a72892239b7bbed4eef408c7fd9c8082c0110d1a70"
+    },
+    {
+      "path": "state/paper-pages/x8-success-cost-convention-formation.json",
+      "sha256": "b374fb28f8770474617918d3a95d533015b1824c7baa315f000f445d6ed1c770"
+    },
+    {
+      "path": "state/paper-pages/x80-relational-complexity.json",
+      "sha256": "9b5f11f3844bfb0c47a4e04ec815c2557ac0191ffafaa0c5e9980b46424940c8"
+    },
+    {
+      "path": "state/paper-pages/x81-pace.json",
+      "sha256": "3174364701aef278cbdfb94095d3b6e531e2483fa83489e99f1d747a1dd09488"
+    },
+    {
+      "path": "state/paper-pages/x82-emergi-personaos.json",
+      "sha256": "ab565455ced06ce58e725a8eb34ce2129a92942cbfad6a4ead15324af62759f9"
+    },
+    {
+      "path": "state/paper-pages/x83-explainable-oohri.json",
+      "sha256": "63790a736052d500aae4eb02ad20676c5bba3146d2b1a8b5a8ef8d78b745c765"
+    },
+    {
+      "path": "state/paper-pages/x84-identity-continuity-appraisal.json",
+      "sha256": "cf9c1622fac15be2de9adc11e1412257fde7a98172bdf9323b0c2ed174b97bbd"
+    },
+    {
+      "path": "state/paper-pages/x85-crafting-companions.json",
+      "sha256": "b4690983af1ec63ac67164898c9f85781e8ecf71f1584a4ad6e8dc12f5c30f56"
+    },
+    {
+      "path": "state/paper-pages/x86-artificial-personality-model.json",
+      "sha256": "31d2a571739e0e714159b5c5703c40e254ccdc982fcf63d4de1a018c5bc00b99"
+    },
+    {
+      "path": "state/paper-pages/x87-relational-schema-lock-in.json",
+      "sha256": "d04032b3df9f189d65a33e5541a8c3784b6748f54b43d63bce2638f1889429e0"
+    },
+    {
+      "path": "state/paper-pages/x88-out-of-sync.json",
+      "sha256": "116383108ffe193dea2faa7617a5ef8cb76023b560345e6cf087cb02e4cd6ce5"
+    },
+    {
+      "path": "state/paper-pages/x89-regional-accent-voice-ai.json",
+      "sha256": "a091b7bd11634baba2cff7c3c8fca0e04cfc2cdb42f03a9b75ba7a02d6a413a0"
+    },
+    {
+      "path": "state/paper-pages/x9-aligned-not-partner-specific.json",
+      "sha256": "409a2639b3632d64af9ee587cf07cba7f71bf10094af473c2b446ddcb5c1bb9e"
+    },
+    {
+      "path": "state/paper-pages/x90-joint-action-review.json",
+      "sha256": "32ad33e1c5e8312960f78738b3bcc694c9ecf0628838fb209aafdab697c7ed1a"
+    },
+    {
+      "path": "state/papers.yaml",
+      "sha256": "57ef443444017ff48119bbb8323260b24c828999908c5c58f07d0b586351715f"
+    },
+    {
+      "path": "state/projects.yaml",
+      "sha256": "6f2fc4401999a02a5841b5cd979044a09a174da116dd20752ef13a7cb8f56ccf"
+    },
+    {
+      "path": "state/radar_runs.yaml",
+      "sha256": "bda56dfb5e0b277b9c08b265406a6844026a98b3343c49bc03d815358ba867e6"
+    },
+    {
+      "path": "state/reading_zh.json",
+      "sha256": "606192b538e148cff8d08e2074f0b697db67b49258ea4cd43985d3e07bcd33ad"
+    },
+    {
+      "path": "state/README.md",
+      "sha256": "9ec1bbcd9d2c62e657bd33b356255751a35e7e9fbe649bef15afef9a7fd377da"
+    },
+    {
+      "path": "state/research_graph.yaml",
+      "sha256": "669fd7fb7f8b96ab151ab6b157bd67f5079af370a473b201baf71b868502f89b"
+    },
+    {
+      "path": "state/writing_workspace.json",
+      "sha256": "57dbbabad5dd814467d4a790d993d84d8352ff0607f0dd6781fe2a074f5b77c4"
+    },
+    {
+      "path": "scripts/artifact-roadmap.mjs",
+      "sha256": "5c4845a6720e1a37161fa046b0ad5267fc96b9256d459e88409421a20730087d"
+    },
+    {
+      "path": "scripts/build-site.mjs",
+      "sha256": "6b776af371f21d02888700495c676d8f4cb32ece3fd9e8a1f165f22e39b7b9fa"
+    },
+    {
+      "path": "scripts/chinese-reading.mjs",
+      "sha256": "d9f6d372d39000961e8ad2a21832f2d12d727cc0234b23beb80ccceb83110766"
+    },
+    {
+      "path": "scripts/content-archive.mjs",
+      "sha256": "590771cad3835dc09419c3bf471f9ddfc5e2fdf2873e26cbe09e9002786f6f01"
+    },
+    {
+      "path": "scripts/import-master-literature.mjs",
+      "sha256": "d0d16978fe4f4874b0577faba1bdb084dacc91e769623696208f64020d951d28"
+    },
+    {
+      "path": "scripts/integrate-existing-content.mjs",
+      "sha256": "f6db8514934a2f1d61dfee93d979721318879fa2421afb04168e5ea89ae84a6c"
+    },
+    {
+      "path": "scripts/meaningtrace-api.mjs",
+      "sha256": "b451cb65537cec84b5a64c84514a25b37499db70c9ed970aef71996fdf8aa293"
+    },
+    {
+      "path": "scripts/package-offline-site.mjs",
+      "sha256": "a4a83575b7446d53c4239b2cb8d400e0fd2e8ff295ae20b724e5cd52136ca521"
+    },
+    {
+      "path": "scripts/research-workspace.mjs",
+      "sha256": "63fa0fd1b479c28a3658a389dff495837774fd4d7d1ee00e30c27f487463b79c"
+    },
+    {
+      "path": "scripts/run-research-radar.ps1",
+      "sha256": "4ee98913c8a4afede1593cfdfc29f6c69638b9fdeaf094c3d0ca418134ae2648"
+    },
+    {
+      "path": "scripts/serve-site.mjs",
+      "sha256": "b72a281f3fb550972040ec658d8947548e42287f1dfe49f8152892d9928803bc"
+    },
+    {
+      "path": "scripts/validate-install.ps1",
+      "sha256": "4ff34177207471f5621d2dd3eabc01037958b1d507f91758547215888de64a1e"
+    },
+    {
+      "path": "scripts/validate-site.mjs",
+      "sha256": "003c5c15da150ba2180ff09c9d3ecef44c90ce8ef07de5e528aec81655ddf883"
+    },
+    {
+      "path": "tests/chinese-reading.test.mjs",
+      "sha256": "d1f1b3904effde5acbbddeec84eca35e067a6c9bbb48c3ba6acbee6220464c2c"
+    },
+    {
+      "path": "tests/evaluation-fixtures.yaml",
+      "sha256": "3c1fe473ea042bc5db1511f16b13b605e8d125ca718f892f6a3ba5d462561229"
+    },
+    {
+      "path": "tests/meaningtrace.test.mjs",
+      "sha256": "8a2de27d543d3519c25c8d98fd84da8e82bdc5c4be83716b14966e5ccbde8fe5"
+    },
+    {
+      "path": "tests/program-state.test.mjs",
+      "sha256": "1c8f0e1a06c9a76569fdeafb6d0a2ee22854741423a4733ba099d4dc88598fa6"
+    },
+    {
+      "path": "tests/research-workspace.test.mjs",
+      "sha256": "2bc81d73c79661a91a3ab2c4ca1bcfaf93a074a696e0ce7556d832253fdf5ca0"
+    },
+    {
+      "path": "site-src/assets/app.js",
+      "sha256": "43a596150fe642fbbd05521ff5b550d838895b9fc6cacbc5a33caf1d3aeff0fa"
+    },
+    {
+      "path": "site-src/assets/mark.svg",
+      "sha256": "654175ac8caa427cfcab9a4c79ae17a8bde69d4b640e458ba61a9b3875695837"
+    },
+    {
+      "path": "site-src/assets/meaningtrace/cat.png",
+      "sha256": "ae646600dbd5f1aca90f3db839ce52e57ec8cafeada4c5817bf495d4aea9b58d"
+    },
+    {
+      "path": "site-src/assets/meaningtrace/index.html",
+      "sha256": "0e4d636d0397af2d46c03be80ca21a15ca94a1fba9a96faaa1ab495b4433cc18"
+    },
+    {
+      "path": "site-src/assets/meaningtrace/README.md",
+      "sha256": "bba4f42da0a8302987a22c5a4bc9e271c201f6ab2f89287f9a5628db59189179"
+    },
+    {
+      "path": "site-src/assets/meaningtrace/studio.css",
+      "sha256": "3407bcb4ea71742da91ee51a9a8302620851f21e32010fc9513d619658938565"
+    },
+    {
+      "path": "site-src/assets/meaningtrace/studio.js",
+      "sha256": "3368d9b93b6378c9b994f4a585f91ebf9fa9985d2655968e2ad018ac9ec75038"
+    },
+    {
+      "path": "site-src/assets/roadmap.css",
+      "sha256": "e0b3cac29fd08e09130c599c721ce9d004ca1896a50d60be2ac34483a77146df"
+    },
+    {
+      "path": "site-src/assets/styles.css",
+      "sha256": "188a1e60cffa02b335ca54f807b3df2244d8651d731c3604adc585a9982d6a12"
+    },
+    {
+      "path": "config/research_radar.yaml",
+      "sha256": "09fa6c09a50e002aef8f9e0e8d7daba7249b54095bf887fff82e50b2284fcbf4"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8625cf68e1745e31c6bbbc93a3bcb5edd94528e2facf95d00da1c21869421bac"
+    },
+    {
+      "path": ".github/workflows/offline-release.yml",
+      "sha256": "8bfb249295ddd1dcd9a69eda68679bc70a21bc8a440b1e213f3b52c2f80521f7"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "82f874f7ad50950720f7958ac287a812d3b37ed21c82f6351728127fa05ad541"
+    }
+  ]
+}

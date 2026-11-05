@@ -1,0 +1,92 @@
+{
+  "id": "X70",
+  "slug": "x70-anthropomorphic-attitudes",
+  "title": "How Anthropomorphic Attitudes Toward Agents Divide User Behavior, and How Design Should Change",
+  "authors": [
+    "Tingyu Cao",
+    "Yan Tang",
+    "Keer Hu",
+    "Bomingxuan Zhu",
+    "Ruyi Zou",
+    "Huaze Tang",
+    "Yuanbo Tang",
+    "Shao-Lun Huang",
+    "Yang Li"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint; under review for CHI 2027",
+  "doi": "10.48550/arXiv.2610.13156",
+  "source_url": "https://arxiv.org/abs/2610.13156",
+  "access_status": "full_text",
+  "priority": "Worth Reading",
+  "one_sentence": "单产品日志显示非默认命名者与默认命名者的互动方式及即时回复偏好不同，但命名是未经验证的自选代理，不能推出拟人化造成关系行为。",
+  "problem": "同一agent界面是否应根据用户将其当作person-like或tool-like对象的不同取向调整互动方式。",
+  "method": "三个月desktop-assistant field logs，n=257注册用户、798 sessions、4,943 user questions；以是否改为非默认名字分组，结合SAE profiles、opening lexicon与identity tags。另有n=129用户做1,744次两种回复的重复pairwise judgments。",
+  "findings": [
+    "两组的group-level behavioral profile有弱而有方向性的差异；重命名者更常使用问候或短backchannel，emotional confiding为最大rank gap但未通过128-way BH。",
+    "在即时pairwise判断中，重命名者更偏好包含greeting、affect acknowledgment与talk-or-task choice的回复；该任务并未测真实完成时间、错误、留存或后续关系。"
+  ],
+  "real_contribution": "把真实使用日志与stance-conditioned reply design连接起来，为identity cue、表达匹配与行为分群提供方法性证据。",
+  "biggest_weakness": "renaming没有以问卷或访谈验证为anthropomorphic stance；自选择使因果方向不明，重复judgments的用户内聚类、固定左右位置和lexicon复用也限制统计解释。",
+  "claim_boundary": "可称非默认命名与行为/即时偏好相关；不能称命名导致拟人化、mental model或companion relationship，也不能将未报告语言地区的数据外推为跨文化规律。",
+  "why_researcher_should_care": "提示name、opening behavior与表达策略可作为RC03–05的分层变量，但需要先验证其构念与文化/语言可比性。",
+  "amsc": {
+    "mainline_fit": 7,
+    "buckets": [
+      "C",
+      "D",
+      "E"
+    ],
+    "stages": [
+      "用户解释",
+      "身份与适应",
+      "持续关系"
+    ],
+    "mechanisms": [
+      "naming cue",
+      "anthropomorphic stance proxy",
+      "affect acknowledgment"
+    ],
+    "gap_ids": [
+      "GAP-RC-03",
+      "GAP-RC-04",
+      "GAP-RC-05"
+    ],
+    "master_list_decision": "Added after full-text human-evidence and culture audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-12全文审查；CHI 2027为under review，不写作已接收。",
+    "未报告region、language distribution、translation pipeline或measurement invariance。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/abs/2610.13156"
+    ]
+  },
+  "updated_at": "2026-10-12",
+  "program_membership": {
+    "status": "SUPPORTING",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "person-like与tool-like取向和表达偏好相关，可帮助界定个性化的差异来源。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-12",
+        "reason": "identity cue、真实互动行为与关系式回复设计的直接邻接证据"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "SUPPORT",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "person-like与tool-like取向和表达偏好相关，可帮助界定个性化的差异来源。"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": "X69",
+  "slug": "x69-deco",
+  "title": "Deco: Extending Cherished Physical Objects into AI Companion Agents through Dual Embodiment",
+  "authors": [
+    "Zhihan Jiang",
+    "Mengyuan Millie Wu",
+    "Ruishi Zou",
+    "Shiyu Xu",
+    "Xun Qian",
+    "Emma Macmanus",
+    "Steven Liao",
+    "Ping Zhang",
+    "Bingsheng Yao",
+    "Tingyu Cheng",
+    "James L. David",
+    "Nabila El-Bassel",
+    "Lena Mamykina",
+    "Frances R. Levin",
+    "Ryan Sultan",
+    "Dakuo Wang",
+    "Xuhai Orson Xu"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2605.03882",
+  "source_url": "https://arxiv.org/abs/2605.03882",
+  "access_status": "full_text",
+  "priority": "Must Read",
+  "one_sentence": "一项 object-grounded dual-embodiment 系统研究显示，已有物件依恋可被延展为数字 companion 体验，但整合式设计和短期样本不允许拆出单一机制或长期关系效应。",
+  "problem": "如何让一个数字 companion 延续而不是替代用户与珍视实体物件之间已存在的身份、记忆和情感联系。",
+  "method": "N=9 formative interviews形成四项设计原则；N=25 within-subject lab study比较完整Deco与个性化digital-only companion；其中17人继续自由使用7天，结合日志、问卷和访谈。",
+  "findings": [
+    "实验室中Deco在character coherence、companionship、emotional bond等六项共同关系量表上均高于digital-only condition；两条件共享LLM、聊天界面和核心memory architecture，但物件来源、onboarding与持续physical-digital connection作为整套配置共同变化。",
+    "七天内identity-query下降、life-sharing上升；12/17报告数字活动改变了其对实体物件的感受或互动。使用量与部署后量表不显著相关，参与者更强调情绪投入和自主内容。",
+    "Faithful identity与perceived agency存在张力：物件约束可增强连贯性，也会压缩可被理解为独立生活的行为空间。"
+  ],
+  "real_contribution": "提出并实例化一个物件—数字双重具身的单一companion框架，同时给出短期实验室与field证据，直接连接identity grounding、character coherence、memory和关系解释。",
+  "biggest_weakness": "比较的是多组件整合配置；样本预先具有物件依恋且7天继续者自选，custom scales未完成psychometric validation，无法识别长期关系或单一设计要素的因果作用。",
+  "claim_boundary": "支持特定object-attached样本中完整Deco配置的即时评价优势与七天早期关系实践；不证明所有用户、文化或物件都适用，不证明dual embodiment长期改善福祉或关系质量。",
+  "why_researcher_should_care": "这是RC02、RC04、RC05的直接closest work，也明确削弱‘跨载体companion仍缺少系统与人类证据’的宽泛新颖性主张。",
+  "amsc": {
+    "mainline_fit": 10,
+    "buckets": [
+      "C",
+      "D",
+      "E",
+      "G"
+    ],
+    "stages": [
+      "角色一致性",
+      "身份与适应",
+      "持续关系"
+    ],
+    "mechanisms": [
+      "dual embodiment",
+      "object-grounded identity",
+      "reciprocal memory",
+      "relational negotiation"
+    ],
+    "gap_ids": [
+      "GAP-RC-02",
+      "GAP-RC-03",
+      "GAP-RC-04",
+      "GAP-RC-05"
+    ],
+    "master_list_decision": "Historical recovery added after full-text audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-12全文审查；v2 dated 2026-09-28, recovered through historical terminology search.",
+    "Study I N=25；Study II为17名自选继续者、7天；pre-post well-being无对照，不作因果解释。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/abs/2605.03882"
+    ]
+  },
+  "updated_at": "2026-10-12",
+  "program_membership": {
+    "status": "ARCHIVED",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "物件与数字companion双重具身属于尚未选择的远期架构。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-12",
+        "reason": "双重具身、character coherence、identity continuity与早期关系实践的直接人类证据"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "ARCHIVE",
+    "checked_at": "2026-11-05",
+    "publish": false,
+    "rationale": "物件与数字companion双重具身属于尚未选择的远期架构。"
+  }
+}

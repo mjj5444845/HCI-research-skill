@@ -32,11 +32,11 @@ jobs:
             const body=[
               '## 快捷访问','',
               '**[打开在线研究网站 →](https://mjj5444845.github.io/HCI-research-skill/)**','',
-              '[研究主线与五阶段成果](https://mjj5444845.github.io/HCI-research-skill/program/) · [论文库](https://mjj5444845.github.io/HCI-research-skill/papers/)','',
+              '[研究主线与当前系统方案](https://mjj5444845.github.io/HCI-research-skill/program/) · [论文库](https://mjj5444845.github.io/HCI-research-skill/papers/)','',
               '在线入口跟随网站更新；下方离线包保留本次发布快照。','',
               '**[下载研究网站离线阅读版]('+base+'/releases/download/'+tag+'/AMSC-Research-Site.zip)**','',
               '解压整个压缩包，双击 **打开研究网站.html**，即可进入网站。无需安装软件或启动服务器。','',
-              '不下载也可查看：[主线与五阶段成果]('+base+'/blob/'+context.sha+'/research-programs/amsc/ARTIFACT_ROADMAP.md) · [研究计划]('+base+'/blob/'+context.sha+'/research-programs/amsc/PROGRAM.md)','',
+              '不下载也可查看：[主线与当前系统方案]('+base+'/blob/'+context.sha+'/research-programs/amsc/ARTIFACT_ROADMAP.md) · [研究计划]('+base+'/blob/'+context.sha+'/research-programs/amsc/PROGRAM.md)','',
               '包含主线、阶段蓝图、论文库、搜索筛选及研究工作区的发布快照。外部论文链接需联网。','',
               '本入口不依赖GitHub Pages。Release权限沿用仓库权限；私有仓库需登录获授权账号下载。研究artifact蓝图仍是计划，并非已实现的研究系统。','',
               '来源提交：'+context.sha

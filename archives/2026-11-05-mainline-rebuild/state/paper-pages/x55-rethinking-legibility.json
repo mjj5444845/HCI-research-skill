@@ -1,0 +1,14 @@
+{
+  "id": "X55", "slug": "x55-rethinking-legibility", "title": "Rethinking Legibility in Social Robot Hallway Navigation: Impact of Intent Representation and Human Distraction",
+  "authors": ["Pranav Goyal", "Andrew Stratton", "Christoforos Mavrogiannis"], "year": 2026, "venue": "arXiv preprint", "doi": "10.48550/arXiv.2609.40158", "source_url": "https://arxiv.org/html/2609.40158v1", "access_status": "full_text", "priority": "Must Read",
+  "one_sentence": "走廊实验显示 passing-side intent representation 可改善人的实际协调，而分心时主观量表可能看不出同一效应。",
+  "problem": "social navigation 中 legibility 常用 destination 表示，尚不清楚 passing-side representation 与 human distraction 如何共同影响行为和主观判断。",
+  "method": "在统一 MPC 中比较非legible、destination-based与动态 passing-side representations；两项实体走廊研究各招募45人，第二项把新分心组与第一项非分心数据比较。",
+  "findings": ["adaptive passing-side representation 在第一项研究中带来更平滑的人类运动、更高 perceived competence 与更低 workload。", "分心条件下协调行为收益仍在，但主观评分不再区分条件；预设的 distraction×algorithm 交互假设未获支持。"],
+  "real_contribution": "在实体互动中把 intent representation、行为协调和主观评价并列测量，并揭示行为—量表分离。",
+  "biggest_weakness": "passing-side legibility 与规范遵循未完全分离；仅限低速、单人、受控走廊，且没有独立 objective intent-recognition task。",
+  "claim_boundary": "支持特定走廊条件下的协调改善，不证明一般表达准确性、角色一致性或关系效果。",
+  "why_researcher_should_care": "直接缩窄 GAP-RC-01：应把 objective recognition、confidence、competence expectation 与 coordination behavior 分开。",
+  "amsc": {"mainline_fit": 10, "buckets": ["A", "B", "E"], "stages": [], "mechanisms": ["legible navigation", "intent representation", "divided attention"], "gap_ids": ["GAP-RC-01"], "master_list_decision": "Added by weekly radar after full-text audit"},
+  "investigation_status": "radar_full_text_audit", "evidence_notes": ["2026-10-07全文审查；H4未获支持，不能把分心写成显著调节。"], "investigation_provenance": {"sources": ["https://arxiv.org/html/2609.40158v1"]}, "updated_at": "2026-10-07", "program_membership": {"status": "CORE", "program_version": "3.0", "reviewed_at": "2026-10-07", "reason": "具身意图表达、用户协调与主观判断分离"}
+}

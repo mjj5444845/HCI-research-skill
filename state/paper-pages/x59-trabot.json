@@ -1,0 +1,78 @@
+{
+  "id": "X59",
+  "slug": "x59-trabot",
+  "title": "Talk, Render, Act: Grounding Language in Robot-Native Multimodal Expression",
+  "authors": [
+    "Jin Jiang",
+    "Kun Li",
+    "Jiancong Ma",
+    "Shengcai Liao"
+  ],
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi": "10.48550/arXiv.2610.06153",
+  "source_url": "https://arxiv.org/html/2610.06153v1",
+  "access_status": "full_text",
+  "priority": "Worth Reading",
+  "one_sentence": "TRABot把semantic motion atoms、数字脸、语音与实体身体整合到G1，证明多模态可执行表达已有系统先例，但未测角色持续性。",
+  "problem": "通用LLM输出难以直接变成可执行、时序协调且语义合适的机器人多模态行为。",
+  "method": "构建human-verified semantic motion atoms与受时长/转移约束的composition planner，在G1上同步digital face、speech和body；20名参与者对12个turn的五种条件排序。",
+  "findings": [
+    "完整系统在240个participant-turn judgments中被首选203次（84.58%）。",
+    "评价集中于naturalness、expressiveness、coherence和gesture–speech correspondence。"
+  ],
+  "real_contribution": "提供从语言功能到机器人原生多模态动作的可执行集成与用户评价。",
+  "biggest_weakness": "固定短turn、条件丰富度混杂；没有开放互动、意义识别、persona约束或长期一致性。",
+  "claim_boundary": "支持多模态集成的perceived coherence，不证明character–behavior coherence或关系效果。",
+  "why_researcher_should_care": "削弱GAP-RC-02中宽泛的‘尚无多模态一致表达系统’叙述，迫使剩余贡献聚焦character constraints。",
+  "amsc": {
+    "mainline_fit": 8,
+    "buckets": [
+      "A",
+      "C"
+    ],
+    "stages": [],
+    "mechanisms": [
+      "semantic motion atoms",
+      "multimodal streaming"
+    ],
+    "gap_ids": [
+      "GAP-RC-02"
+    ],
+    "master_list_decision": "Added by weekly radar after full-text audit"
+  },
+  "investigation_status": "radar_full_text_audit",
+  "evidence_notes": [
+    "2026-10-07全文审查；preference不等于角色一致性。"
+  ],
+  "investigation_provenance": {
+    "sources": [
+      "https://arxiv.org/html/2610.06153v1"
+    ]
+  },
+  "updated_at": "2026-10-07",
+  "program_membership": {
+    "status": "CORE",
+    "program_version": "3.1",
+    "reviewed_at": "2026-11-05",
+    "reason": "沟通功能到面部、语言与身体动作的执行组织是直接表达系统先例。"
+  },
+  "membership_history": [
+    {
+      "date": "2026-11-05",
+      "previous": {
+        "status": "CORE",
+        "program_version": "3.0",
+        "reviewed_at": "2026-10-07",
+        "reason": "语言到机器人多模态可执行表达"
+      },
+      "reason": "User-confirmed current site/mainline relevance review; source facts unchanged."
+    }
+  ],
+  "publication_review": {
+    "role": "CORE",
+    "checked_at": "2026-11-05",
+    "publish": true,
+    "rationale": "沟通功能到面部、语言与身体动作的执行组织是直接表达系统先例。"
+  }
+}

@@ -1,7 +1,7 @@
-version: "3.0"
+version: "3.3"
 baseline_count: 41
 verified_at: 2026-09-14
-note: 保留原有55篇，逐篇重评主线关系；单独恢复11篇历史条目，新增10篇核实先例。来源事实与用户掌握记录不因方向改变而重写。
+note: 保留原有55篇，逐篇重评主线关系；单独恢复11篇历史条目，新增10篇核实先例。来源事实与用户掌握记录不因方向改变而重写。 2026-10-07补入Manicule已完成基础，发表状态独立。
 categories:
   A: 社会与多模态表达 / Social and expressive multimodal communication
   B: 语用与情境化理解 / Pragmatics and contextual understanding
@@ -20,10 +20,11 @@ papers:
     scope_review:
       id: A1
       slug: a1-ai-mediated-communication
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: AI代表人改写人际消息，不直接研究机器人自身表达；当前无具体方法依赖。
+    publication_role: ARCHIVE
   - id: A2
     slug: a2-textual-paralanguage
     title: Textual Paralanguage and Its Implications for Marketing Communications
@@ -33,10 +34,11 @@ papers:
     scope_review:
       id: A2
       slug: a2-textual-paralanguage
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 文字副语言分类帮助整理花字资源；社媒证据不直接证明机器人效果。
+    publication_role: SUPPORT
   - id: A3
     slug: a3-interpreting-emoji-pragmatics
     title: Interpreting Emoji Pragmatics
@@ -44,10 +46,11 @@ papers:
     scope_review:
       id: A3
       slug: a3-interpreting-emoji-pragmatics
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 情境中的emoji语用判断可帮助区分语气、请求和回应要求，须在机器人情境检验。
+    publication_role: SUPPORT
   - id: A4
     slug: a4-a-visual-lexicon
     title: A Visual Lexicon
@@ -55,10 +58,11 @@ papers:
     scope_review:
       id: A4
       slug: a4-a-visual-lexicon
-      status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 视觉词汇与图式的概念资源，帮助限定视觉语言主张；不是机器人语法验证。
+    publication_role: SUPPORT
   - id: A5
     slug: a5-multimodal-parallel-architecture
     title: "A Multimodal Parallel Architecture: A Cognitive Framework for Multimodal Interactions"
@@ -68,10 +72,11 @@ papers:
     scope_review:
       id: A5
       slug: a5-multimodal-parallel-architecture
-      status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 多模态架构及删除替换思路可帮助分析文字图形动作的分工，不作为已证实机制。
+    publication_role: SUPPORT
   - id: A6
     slug: a6-puppetchat
     title: "PuppetChat: Fostering Intimate Communication through Bidirectional Actions and Micronarratives"
@@ -79,10 +84,11 @@ papers:
     scope_review:
       id: A6
       slug: a6-puppetchat
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 动作编辑与重播的持续使用研究为表达历史提供设计方法；原对象是亲密人际交流。
+    publication_role: SUPPORT
   - id: B1
     slug: b1-pragmatic-language-interpretation
     title: Pragmatic Language Interpretation as Probabilistic Inference
@@ -93,9 +99,10 @@ papers:
       id: B1
       slug: b1-pragmatic-language-interpretation
       status: SUPPORTING
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 语用推断可帮助构造情境改变解释的竞争假说，不强制采用RSA建模。
+    publication_role: SUPPORT
   - id: B2
     slug: b2-rational-speech-act-framework
     title: The Rational Speech Act Framework
@@ -105,10 +112,11 @@ papers:
     scope_review:
       id: B2
       slug: b2-rational-speech-act-framework
-      status: SUPPORTING
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 与保留的B1理论入口重叠，当前没有需要其特定扩展的建模任务。
+    publication_role: ARCHIVE
   - id: B3
     slug: b3-pragmatic-inference-visual-abstraction
     title: Pragmatic Inference and Visual Abstraction Enable Contextual Flexibility During Visual Communication
@@ -118,10 +126,11 @@ papers:
     scope_review:
       id: B3
       slug: b3-pragmatic-inference-visual-abstraction
-      status: SUPPORTING
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。
+      status: CORE
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 绘图指称实验直接检验视觉细节和辨别情境如何影响表达与理解。
+    publication_role: CORE
   - id: B4
     slug: b4-when-redundancy-is-useful
     title: "When Redundancy Is Useful: A Bayesian Approach to ‘Overinformative’ Referring Expressions"
@@ -129,10 +138,11 @@ papers:
     scope_review:
       id: B4
       slug: b4-when-redundancy-is-useful
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 冗余与误指风险的证据可用于判断表达简化何时损害理解。
+    publication_role: SUPPORT
   - id: C1
     slug: c1-referring-as-collaborative-process
     title: Referring as a Collaborative Process
@@ -143,9 +153,10 @@ papers:
       id: C1
       slug: c1-referring-as-collaborative-process
       status: SUPPORTING
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 协作指称中的接受、修复与互动历史，为理解核查提供分析单位。
+    publication_role: SUPPORT
   - id: C2
     slug: c2-grounding-in-communication
     title: Grounding in Communication
@@ -156,9 +167,10 @@ papers:
       id: C2
       slug: c2-grounding-in-communication
       status: SUPPORTING
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 理解证据、修复与媒介可回看性直接支撑Manicule解释框架。
+    publication_role: SUPPORT
   - id: C3
     slug: c3-conceptual-pacts
     title: Conceptual Pacts and Lexical Choice in Conversation
@@ -169,9 +181,10 @@ papers:
       id: C3
       slug: c3-conceptual-pacts
       status: SUPPORTING
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 伙伴切换方法有助区分表达练习与特定伙伴历史。
+    publication_role: SUPPORT
   - id: C4
     slug: c4-repeated-reference-games
     title: Characterizing the Dynamics of Learning in Repeated Reference Games
@@ -181,10 +194,11 @@ papers:
     scope_review:
       id: C4
       slug: c4-repeated-reference-games
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 重复参照中的反馈与表达稳定化提供分析方法，不能直接等同视觉惯例。
+    publication_role: SUPPORT
   - id: C5
     slug: c5-graphical-convention-formation
     title: Disentangling contributions of visual information and interaction history in the formation of graphical
@@ -198,10 +212,11 @@ papers:
     scope_review:
       id: C5
       slug: c5-graphical-convention-formation
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 与C6属于同一证据谱系的早期子集，保留来源而以C6作为当前入口，避免重复计证。
+    publication_role: ARCHIVE
   - id: C6
     slug: c6-visual-resemblance-interaction-history
     title: Visual Resemblance and Interaction History Jointly Constrain Pictorial Meaning
@@ -212,9 +227,10 @@ papers:
       id: C6
       slug: c6-visual-resemblance-interaction-history
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 重复绘图及朴素识别者对照直接区分视觉相似性和互动历史。
+    publication_role: CORE
   - id: C7
     slug: c7-shared-procedural-abstractions
     title: Learning to Communicate about Shared Procedural Abstractions
@@ -224,10 +240,11 @@ papers:
     scope_review:
       id: C7
       slug: c7-shared-procedural-abstractions
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 单向装配文字指令的程序抽象不是当前重点，相关多模态任务由C8提供更直接入口。
+    publication_role: ARCHIVE
   - id: C8
     slug: c8-gesturing-toward-abstraction
     title: "Gesturing Toward Abstraction: Multimodal Convention Formation in Collaborative Physical Tasks"
@@ -237,10 +254,11 @@ papers:
     scope_review:
       id: C8
       slug: c8-gesturing-toward-abstraction
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: CORE
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: AR实体协作中的语言与手势，直接连接具身表达、重复互动和人的理解。
+    publication_role: CORE
   - id: E3
     slug: e3-continual-adaptation-machine-communication
     title: Continual Adaptation for Efficient Machine Communication
@@ -251,9 +269,10 @@ papers:
       id: E3
       slug: e3-continual-adaptation-machine-communication
       status: SUPPORTING
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 人类说者与机器听者的重复视觉参照提供适应评价方法，不证明共同演化。
+    publication_role: SUPPORT
   - id: F1
     slug: f1-emergence-social-norms-conventions
     title: The Emergence of Social Norms and Conventions
@@ -261,10 +280,11 @@ papers:
     scope_review:
       id: F1
       slug: f1-emergence-social-norms-conventions
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 宏观规范和人口尺度惯例超出当前表达布局，无具体依赖。
+    publication_role: ARCHIVE
   - id: X21
     slug: x21-social-pragmatic-chinese-comments
     title: You Really Didn’t Get That? Benchmarking Social Pragmatic Inference for Indirect and Playful Chinese
@@ -273,10 +293,11 @@ papers:
     scope_review:
       id: X21
       slug: x21-social-pragmatic-chinese-comments
-      status: SUPPORTING
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 作为解释、测量或适应的方法/理论基础；不再自动决定近期项目。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 中文评论语用benchmark是历史研究资产，当前未连接机器人表达；保留作者事实，不列为基础。
+    publication_role: ARCHIVE
   - id: D4
     slug: d4-expressing-thought
     title: "Expressing Thought: Improving Robot Readability with Animation Principles"
@@ -286,9 +307,10 @@ papers:
       id: D4
       slug: d4-expressing-thought
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 动画原则与机器人可读性，帮助区分意图确信、社会评价和客观识别。
+    publication_role: CORE
   - id: D5
     slug: d5-legibility-and-predictability
     title: Legibility and Predictability of Robot Motion
@@ -298,9 +320,10 @@ papers:
       id: D5
       slug: d5-legibility-and-predictability
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 动作可读性与可预测性的区分，直接支持目标传达和理解评价。
+    publication_role: CORE
   - id: D6
     slug: d6-designing-robots-with-movement
     title: Designing Robots with Movement in Mind
@@ -310,9 +333,10 @@ papers:
       id: D6
       slug: d6-designing-robots-with-movement
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 通过动作塑造角色的设计研究，直接支持保留艺术与角色表达价值。
+    publication_role: CORE
   - id: D7
     slug: d7-social-eye-gaze-review
     title: "Social Eye Gaze in Human-Robot Interaction: A Review"
@@ -322,9 +346,10 @@ papers:
       id: D7
       slug: d7-social-eye-gaze-review
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: HRI凝视研究直接组织视觉具身线索的沟通功能与情境依赖。
+    publication_role: CORE
   - id: E1
     slug: e1-long-term-social-robots-survey
     title: "Social Robots for Long-Term Interaction: A Survey"
@@ -334,9 +359,10 @@ papers:
       id: E1
       slug: e1-long-term-social-robots-survey
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 长期机器人互动综述为持续使用条件与观察窗口提供背景。
+    publication_role: CORE
   - id: E2
     slug: e2-human-robot-mutual-adaptation
     title: "Human-Robot Mutual Adaptation in Collaborative Tasks: Models and Experiments"
@@ -345,10 +371,11 @@ papers:
     scope_review:
       id: E2
       slug: e2-human-robot-mutual-adaptation
-      status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 任务策略适应的方法有助区分适应意愿、策略改变与表达个性化。
+    publication_role: SUPPORT
   - id: E4
     slug: e4-designing-robots-long-term
     title: Designing Robots for Long-Term Social Interaction
@@ -358,9 +385,10 @@ papers:
       id: E4
       slug: e4-designing-robots-long-term
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 角色故事和实用功能并存的长期机器人部署提供直接设计与观察先例。
+    publication_role: CORE
   - id: F3
     slug: f3-robotic-products-social-products
     title: "How Robotic Products Become Social Products: An Ethnographic Study of Cleaning in the Home"
@@ -370,9 +398,10 @@ papers:
       id: F3
       slug: f3-robotic-products-social-products
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 家庭机器人长期实践直接支持社会归因、持续使用及关系意义的情境化理解。
+    publication_role: CORE
   - id: F5
     slug: f5-robots-in-the-wild
     title: "Robots in the Wild: A Time for More Robust Theories of Human-Robot Interaction"
@@ -381,10 +410,11 @@ papers:
     scope_review:
       id: F5
       slug: f5-robots-in-the-wild
-      status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 现场HRI理论提醒检查旁观者、工作流程与部署情境。
+    publication_role: SUPPORT
   - id: G4
     slug: g4-context-aware-expressive-motion
     title: Context-Aware Generation and Modulation of Expressive Motion Behavior using Multimodal Foundation Models
@@ -394,9 +424,10 @@ papers:
       id: G4
       slug: g4-context-aware-expressive-motion
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 情境驱动动作选择与动画调节，直接连接表达生成及人的适切性评价。
+    publication_role: CORE
   - id: X4
     slug: x4-making-memories-together
     title: "Making Memories Together: Toward Transparent and Co-constructed Robot Memory in Child-Robot Interaction"
@@ -405,10 +436,25 @@ papers:
     scope_review:
       id: X4
       slug: x4-making-memories-together
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 机器人记忆重访与共创为可见、可修改的互动历史提供方法，不外推长期关系恢复。
+    publication_role: SUPPORT
+  - id: X68
+    slug: x68-manicule
+    title: "Manicule: Making a Non-Vocal Robot’s Requests and Understanding Legible"
+    decision: User-confirmed completed foundation; CHI acceptance independent
+    investigation_status: source_document_audit
+    last_investigated: 2026-11-04
+    scope_review:
+      id: X68
+      slug: x68-manicule
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 直接支撑表达、行为或持续使用研究；保留原证据及适用条件。
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 用户已完成的VR原型和质性研究，是新版Manicule直接基础；被拒与完成状态分开。
+    publication_role: FOUNDATION
 candidates:
   - id: X1
     slug: x1-spotter-human-robot-conventions
@@ -427,10 +473,11 @@ candidates:
     scope_review:
       id: X1
       slug: x1-spotter-human-robot-conventions
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 机器人重复视觉参照协议支持互动历史研究，不能误写为机器人自主学会表达。
+    publication_role: SUPPORT
   - id: X2
     slug: x2-lvlms-humans-ground-differently
     title: LVLMs and Humans Ground Differently in Referential Communication
@@ -450,10 +497,11 @@ candidates:
     scope_review:
       id: X2
       slug: x2-lvlms-humans-ground-differently
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 不同人机配对的重复参照比较，为持续表达的成功与轮次轨迹提供方法。
+    publication_role: SUPPORT
   - id: X3
     slug: x3-seeing-eye-to-eye
     title: "Seeing Eye to Eye: Enabling Cognitive Alignment Through Shared First-Person Perspective in Human–AI
@@ -473,10 +521,11 @@ candidates:
     scope_review:
       id: X3
       slug: x3-seeing-eye-to-eye
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: CORE
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: AR共享视角、对象和反馈的真人任务直接支持空间表达与理解，组件效果须分开。
+    publication_role: CORE
   - id: X6
     slug: x6-beyond-local-surprise
     title: "Beyond Local Surprise: Grounded Dialogue as Selective Belief Revision under Referential Uncertainty"
@@ -484,10 +533,11 @@ candidates:
     scope_review:
       id: X6
       slug: x6-beyond-local-surprise
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 机器信念修订策略未连接当前表达模块，也没有人的解释证据。
+    publication_role: ARCHIVE
   - id: X8
     slug: x8-success-cost-convention-formation
     title: Success and Cost Elicit Convention Formation for Efficient Communication
@@ -495,10 +545,11 @@ candidates:
     scope_review:
       id: X8
       slug: x8-success-cost-convention-formation
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 模型高效指称策略训练没有当前Manicule训练需求或个性化表达证据。
+    publication_role: ARCHIVE
   - id: X9
     slug: x9-aligned-not-partner-specific
     title: "Aligned but Not Partner-Specific: Distinguishing How Multimodal LLM Agents Succeed in Reference Games
@@ -507,10 +558,11 @@ candidates:
     scope_review:
       id: X9
       slug: x9-aligned-not-partner-specific
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: AI之间参照协作不对应当前人的表达体验研究。
+    publication_role: ARCHIVE
   - id: X10
     slug: x10-llms-people-conventions
     title: LLMs and People Both Learn to Form Conventions—Just Not with Each Other
@@ -518,10 +570,11 @@ candidates:
     scope_review:
       id: X10
       slug: x10-llms-people-conventions
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 人机重复参照与伙伴期待操纵，为后续互动历史研究提供比较方法。
+    publication_role: SUPPORT
   - id: X11
     slug: x11-common-ground-benchmark
     title: A Benchmark to Assess Common Ground in Human-AI Collaboration
@@ -529,10 +582,11 @@ candidates:
     scope_review:
       id: X11
       slug: x11-common-ground-benchmark
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 共享视野与角色操纵、分层沟通测量可用于AR理解评价。
+    publication_role: SUPPORT
   - id: X12
     slug: x12-partners-to-populations
     title: "From Partners to Populations: A Hierarchical Bayesian Account of Coordination and Convention"
@@ -540,10 +594,11 @@ candidates:
     scope_review:
       id: X12
       slug: x12-partners-to-populations
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 伙伴经验向群体惯例迁移不是当前已选问题，不因adaptation关键词保留。
+    publication_role: ARCHIVE
   - id: X13
     slug: x13-silica-agent-societies
     title: Benchmarking large language model agent societies against human behavioural distributions
@@ -551,10 +606,11 @@ candidates:
     scope_review:
       id: X13
       slug: x13-silica-agent-societies
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: LLM社会模拟评测没有对应当前机器人表达模块或方法。
+    publication_role: ARCHIVE
   - id: X16
     slug: x16-memuse-natural-integration
     title: "MemUse: Moving Memory Evaluation from Direct QA to Natural Integration in Long-Term Human-AI
@@ -563,10 +619,11 @@ candidates:
     scope_review:
       id: X16
       slug: x16-memuse-natural-integration
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 持续人机部署区分记忆可用与自然使用，为后续表达适应使用历史提供方法。
+    publication_role: SUPPORT
   - id: X17
     slug: x17-glossogen-emergent-language
     title: "GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions"
@@ -574,10 +631,11 @@ candidates:
     scope_review:
       id: X17
       slug: x17-glossogen-emergent-language
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 代理间协议协商没有人的视觉表达解释或关系证据。
+    publication_role: ARCHIVE
   - id: X20
     slug: x20-passing-the-pact
     title: "Passing the Pact: Comparing Common Ground Building and Audience Design In Multiparty Human and
@@ -597,10 +655,11 @@ candidates:
     scope_review:
       id: X20
       slug: x20-passing-the-pact
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 摘要层证据尚不足以提供当前可执行的方法桥，保留后续核验来源。
+    publication_role: ARCHIVE
   - id: X22
     slug: x22-banana-man-pragmatic-interpretation
     title: Which one is banana man? Evaluating vision–language models in multi-turn pragmatic interpretation
@@ -608,10 +667,11 @@ candidates:
     scope_review:
       id: X22
       slug: x22-banana-man-pragmatic-interpretation
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: VLM旁听映射恢复未被当前表达系统采用，无直接用户体验证据。
+    publication_role: ARCHIVE
   - id: X23
     slug: x23-machine-mental-imagery-common-ground
     title: Using Machine Mental Imagery for Representing Common Ground in Situated Dialogue
@@ -619,10 +679,11 @@ candidates:
     scope_review:
       id: X23
       slug: x23-machine-mental-imagery-common-ground
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 内部多模态记忆检索并非面向用户的机器人表达，当前无模块依赖。
+    publication_role: ARCHIVE
   - id: X24
     slug: x24-multimodal-repair-detection
     title: Do Visual Features Improve Other-Initiated Repair Detection? A Dyadic Multimodal Approach
@@ -630,10 +691,11 @@ candidates:
     scope_review:
       id: X24
       slug: x24-multimodal-repair-detection
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 目光姿态与会话修复的观察方法可支持识别用户困惑和表达修复。
+    publication_role: SUPPORT
   - id: X25
     slug: x25-seeing-is-not-sharing
     title: "Seeing Is Not Sharing: Some Vision-Language Models Overestimate Common Ground in Asymmetric Dialogue"
@@ -641,10 +703,11 @@ candidates:
     scope_review:
       id: X25
       slug: x25-seeing-is-not-sharing
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 模型地图旁听诊断没有当前机器人表达或真人AR解释桥。
+    publication_role: ARCHIVE
   - id: X26
     slug: x26-convention-gap
     title: "The Convention Gap: Towards Measuring Implicit Communication in Cooperative AI Evaluation"
@@ -652,10 +715,11 @@ candidates:
     scope_review:
       id: X26
       slug: x26-convention-gap
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 合作游戏中的隐式通信评测未对应当前视觉表达问题。
+    publication_role: ARCHIVE
   - id: X27
     slug: x27-calibrated-ambiguity
     title: "Calibrated Ambiguity in Multimodal Language Models: Humans reach for cultural references, while models
@@ -664,10 +728,11 @@ candidates:
     scope_review:
       id: X27
       slug: x27-calibrated-ambiguity
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 模型线索与编码评分没有受众理解证据，尚不足支撑花字歧义的具体方案。
+    publication_role: ARCHIVE
   - id: X28
     slug: x28-continue-adapt-yield
     title: "Continue, Adapt, or Yield: In-Turn Adaptation to Overlapping Speech in Full-Duplex Agents"
@@ -675,10 +740,11 @@ candidates:
     scope_review:
       id: X28
       slug: x28-continue-adapt-yield
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 全双工语音重叠超出当前非语音视觉表达系统，无具体打断模块依赖。
+    publication_role: ARCHIVE
   - id: X29
     slug: x29-testing-interchangeability
     title: Testing Interchangeability in LLM Agent Teams
@@ -686,10 +752,11 @@ candidates:
     scope_review:
       id: X29
       slug: x29-testing-interchangeability
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: LLM队伍替换是代理协作问题，不作为人机表达历史证据。
+    publication_role: ARCHIVE
   - id: X30
     slug: x30-refoi-pragmatic-generation
     title: Vision-Language Models Are Not Pragmatically Competent in Referring Expression Generation
@@ -699,10 +766,11 @@ candidates:
     scope_review:
       id: X30
       slug: x30-refoi-pragmatic-generation
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 将指称可辨认性、简洁和偏好分开评价，可直接用于表达理解测量。
+    publication_role: SUPPORT
   - id: X31
     slug: x31-cmpm-order-matters
     title: "Order Matters: A Chinese Multi-Panel Meme Benchmark for Vision-Language Reasoning"
@@ -712,10 +780,11 @@ candidates:
     scope_review:
       id: X31
       slug: x31-cmpm-order-matters
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 中文多格meme评测没有机器人表达或真人互动桥，不沿旧X21路线扩展。
+    publication_role: ARCHIVE
   - id: X32
     slug: x32-intent-projection
     title: "Beyond the Literal: Decomposing Pragmatic Intent in Multimodal Meme Understanding"
@@ -725,10 +794,11 @@ candidates:
     scope_review:
       id: X32
       slug: x32-intent-projection
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: meme语用模型训练未连接当前表达生成需求，指标不等于用户解释。
+    publication_role: ARCHIVE
   - id: X33
     slug: x33-speechcap
     title: "SpeechCap: Leveraging Playful Impact Captions to Facilitate Interpersonal Communication in Social
@@ -739,10 +809,11 @@ candidates:
     scope_review:
       id: X33
       slug: x33-speechcap
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: CORE
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 导师的先行研究：花字成为社交VR人际表达资源，是Manicule直接设计基础；不推定用户作者身份。
+    publication_role: FOUNDATION
   - id: X34
     slug: x34-memebridge
     title: "MemeBridge: A Dataset for Benchmarking and Mitigating the Bidirectional Cultural Gap in Meme
@@ -753,10 +824,11 @@ candidates:
     scope_review:
       id: X34
       slug: x34-memebridge
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 跨文化meme评测未直接连接机器人表达设计或用户理解。
+    publication_role: ARCHIVE
   - id: X35
     slug: x35-mgmc-fusion
     title: Multi-Granular Multimodal Clue Fusion for Meme Understanding
@@ -766,10 +838,11 @@ candidates:
     scope_review:
       id: X35
       slug: x35-mgmc-fusion
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: meme分类模型不对应当前机器人沟通问题。
+    publication_role: ARCHIVE
   - id: X36
     slug: x36-polite-but-misaligned
     title: "Polite but Misaligned: Evaluating LLM Politeness Judgments Against Human Pragmatic Norms"
@@ -779,10 +852,11 @@ candidates:
     scope_review:
       id: X36
       slug: x36-polite-but-misaligned
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 区分人的语用判断与模型判断，避免把模型标签直接当用户理解。
+    publication_role: SUPPORT
   - id: X37
     slug: x37-clarification-not-correction
     title: "Clarification Is Not Correction: LLMs Fail to Let Go"
@@ -792,10 +866,11 @@ candidates:
     scope_review:
       id: X37
       slug: x37-clarification-not-correction
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 旧模型状态失效尚未连接具体表达适应或用户解释任务。
+    publication_role: ARCHIVE
   - id: X38
     slug: x38-user-model-belief-distillation
     title: User Model Extraction via Belief Self-Distillation
@@ -805,10 +880,11 @@ candidates:
     scope_review:
       id: X38
       slug: x38-user-model-belief-distillation
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 用户模型提取机制缺少当前视觉表达或人类适应证据桥。
+    publication_role: ARCHIVE
   - id: X39
     slug: x39-live-assistant
     title: "Live Assistant: Learning Whether, When, and Whom to Assist in Real-World Live Social Streams"
@@ -818,10 +894,11 @@ candidates:
     scope_review:
       id: X39
       slug: x39-live-assistant
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 直播助手参与决策未连接当前机器人视觉表达问题。
+    publication_role: ARCHIVE
   - id: X40
     slug: x40-msi-bench
     title: "MSI-Bench: Evaluating Multi-Speaker Voice Interaction for Collaborative AI Agents"
@@ -831,10 +908,11 @@ candidates:
     scope_review:
       id: X40
       slug: x40-msi-bench
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 多方语音agent评测不研究当前机器人视觉表达及其感知。
+    publication_role: ARCHIVE
   - id: X41
     slug: x41-ai-email-cultural-style
     title: AI-Generated Email Drafts Shift Culturally Distinctive Communication Styles in Professional Email
@@ -844,10 +922,11 @@ candidates:
     scope_review:
       id: X41
       slug: x41-ai-email-cultural-style
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 职业邮件风格属于不同场景，当前未承担具体表达研究任务。
+    publication_role: ARCHIVE
   - id: X42
     slug: x42-memecf-pivotal-cues
     title: "Small Cues, Big Consequences: Learning Pivotal Cues for Multimodal Meme Classification"
@@ -857,10 +936,11 @@ candidates:
     scope_review:
       id: X42
       slug: x42-memecf-pivotal-cues
-      status: BACKGROUND
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 保留证据与历史阅读记录；与新主线的具体桥接需按问题说明，不因旧优先级自动进入近期队列。
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: meme反事实分类线索未连接当前表达设计或模块。
+    publication_role: ARCHIVE
   - id: X43
     slug: x43-elegnt
     title: "ELEGNT: Expressive and Functional Movement Design for Non-Anthropomorphic Robot"
@@ -871,9 +951,10 @@ candidates:
       id: X43
       slug: x43-elegnt
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 灯形机器人的表达性与功能性动作
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 直接研究非拟人机器人的功能性与表达性动作及用户评价。
+    publication_role: CORE
   - id: X44
     slug: x44-expressive-motion-timing
     title: Expressive Robot Motion Timing
@@ -884,9 +965,10 @@ candidates:
       id: X44
       slug: x44-expressive-motion-timing
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 动作节奏如何改变人对机器人的判断
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 运动路径和节奏的区分直接连接动作时间组织与人的解释。
+    publication_role: CORE
   - id: X45
     slug: x45-appearance-behavior-task
     title: Matching Robot Appearance and Behavior to Tasks to Improve Human-Robot Cooperation
@@ -897,9 +979,10 @@ candidates:
       id: X45
       slug: x45-appearance-behavior-task
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 机器人外观和行为要与任务匹配
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 外观、行为和任务匹配直接连接表达设计、期待及合作。
+    publication_role: CORE
   - id: X46
     slug: x46-companion-behavior-consistency
     title: "Avoiding the uncanny valley: robot appearance, personality and consistency of behavior in an
@@ -911,9 +994,10 @@ candidates:
       id: X46
       slug: x46-companion-behavior-consistency
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 机器人外观、个性与行为一致性的早期研究
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 请求注意场景中的外观行为一致性连接角色期待；保留摘要证据边界。
+    publication_role: CORE
   - id: X47
     slug: x47-migrating-artificial-companions
     title: Migrating Artificial Companions (Demonstration)
@@ -923,10 +1007,11 @@ candidates:
     scope_review:
       id: X47
       slug: x47-migrating-artificial-companions
-      status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 跨屏幕与手机迁移的人工伙伴
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 跨设备伙伴迁移属于未选择的远期架构，不支撑近期表达重构。
+    publication_role: ARCHIVE
   - id: X48
     slug: x48-memory-identity-embodiments
     title: Do I remember you? Memory and identity in multiple embodiments
@@ -936,10 +1021,11 @@ candidates:
     scope_review:
       id: X48
       slug: x48-memory-identity-embodiments
-      status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 记忆与跨载体身份感可以分离
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 跨载体记忆身份判断不是当前选定研究问题。
+    publication_role: ARCHIVE
   - id: X49
     slug: x49-long-term-agent-migration
     title: Prototyping Realistic Long-term Human-Robot Interaction for the Study of Agent Migration
@@ -949,10 +1035,11 @@ candidates:
     scope_review:
       id: X49
       slug: x49-long-term-agent-migration
-      status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 五周互动中的机器人伙伴迁移
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 长期agent迁移的中心是跨载体架构，不能仅因重复互动保留。
+    publication_role: ARCHIVE
   - id: X50
     slug: x50-computer-patient-alliance
     title: Establishing the computer-patient working alliance in automated health behavior change interventions
@@ -962,10 +1049,11 @@ candidates:
     scope_review:
       id: X50
       slug: x50-computer-patient-alliance
-      status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 关系型代理与三十天的工作联盟
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 关系行为的持续干预提供远期关系证据路径，不外推实体表达效果。
+    publication_role: SUPPORT
   - id: X51
     slug: x51-empathetic-companions-personality
     title: "Designing Empathetic Companions: Exploring Personality, Emotion, and Trust in Social Robots"
@@ -976,9 +1064,10 @@ candidates:
       id: X51
       slug: x51-empathetic-companions-personality
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 机器人个性如何联系情绪、动作与信任
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 实体机器人的情绪凝视语言动作配置直接连接表达与用户判断。
+    publication_role: CORE
   - id: X52
     slug: x52-meet-my-sidekick
     title: "“Meet My Sidekick!”: Effects of Separate Identities and Control of a Single Robot in HRI"
@@ -988,11 +1077,554 @@ candidates:
     scope_review:
       id: X52
       slug: x52-meet-my-sidekick
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 单机器人多身份与控制架构是当前未选择分支。
+    publication_role: ARCHIVE
+  - id: X53
+    slug: x53-realcompanion
+    title: "RealCompanion: Benchmarking Human Understanding from Reasoning over Longitudinal Real-World
+      Conversations"
+    decision: Candidate — Must Read / real longitudinal memory benchmark
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X53
+      slug: x53-realcompanion
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: companion日志记忆评测不能直接支撑视觉表达设计或关系效果。
+    publication_role: ARCHIVE
+  - id: X54
+    slug: x54-dyadmem
+    title: "DyadMem: A Long-Term Memory Benchmark of How Agents Work with Users"
+    decision: Candidate — Important / synthetic relational-memory diagnostic
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X54
+      slug: x54-dyadmem
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 合成长期记忆benchmark缺少人对机器人表达的解释证据。
+    publication_role: ARCHIVE
+  - id: X55
+    slug: x55-rethinking-legibility
+    title: "Rethinking Legibility in Social Robot Hallway Navigation: Impact of Intent Representation and Human
+      Distraction"
+    decision: Candidate — Must Read / embodied legibility and behavioral-subjective divergence
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X55
+      slug: x55-rethinking-legibility
       status: CORE
-      program_version: "3.0"
-      reviewed_at: 2026-10-02
-      reason: 一台机器人也可以承载多个身份
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 导航意图表达结合行为与主观判断，直接支持沟通清晰度的操作化。
+    publication_role: CORE
+  - id: X56
+    slug: x56-evidence-lives
+    title: "Where the Evidence Lives: Auditing AI Companions’ Self-Descriptions"
+    decision: Candidate — Must Read / mechanism-traceability audit
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X56
+      slug: x56-evidence-lives
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 能力声明、实现和用户判断对账，可审查机器人表达造成的能力误解。
+    publication_role: SUPPORT
+  - id: X57
+    slug: x57-pair
+    title: "PAIR: Perceptual Affective Inference and Regulation in a Real-Time Multimodal Conversational Agent"
+    decision: Candidate — Must Read / expression-to-early-adaptation field bridge
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X57
+      slug: x57-pair
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 以用户自身状态为参照的持续部署，可为表达适应与评价提供方法。
+    publication_role: SUPPORT
+  - id: X58
+    slug: x58-mind-perception-companionability
+    title: Mind Perception Influences Perceived AI Companionability
+    decision: Candidate — Worth Reading / preliminary social-perception mechanism
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X58
+      slug: x58-mind-perception-companionability
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 区分心智感知与companionability，为即时社会印象提供构念参照。
+    publication_role: SUPPORT
+  - id: X59
+    slug: x59-trabot
+    title: "Talk, Render, Act: Grounding Language in Robot-Native Multimodal Expression"
+    decision: Candidate — Worth Reading / multimodal system exemplar
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X59
+      slug: x59-trabot
+      status: CORE
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 沟通功能到面部、语言与身体动作的执行组织是直接表达系统先例。
+    publication_role: CORE
+  - id: X60
+    slug: x60-arise
+    title: "From Social Reasoning to Embodied Interaction: An Agentic Framework for Social Robots"
+    decision: Candidate — Important / integrated social-robot system
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X60
+      slug: x60-arise
+      status: CORE
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 具身表达生成及gesture-review有人类评价，可比较表达系统能力。
+    publication_role: CORE
+  - id: X61
+    slug: x61-echo-g
+    title: "ECHO-G: Embodied Co-speech Humanoid Motion Generation"
+    decision: Candidate — Important / robot-space co-speech generation
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X61
+      slug: x61-echo-g
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 机器人动作生成提供可执行性方法，不能替代人的意义理解证据。
+    publication_role: SUPPORT
+  - id: X62
+    slug: x62-gestadapt
+    title: "GestAdapt: Workspace-Conditioned Co-Speech Gesture Generation for Humanoid Robots"
+    decision: Edge recovery — Important / workspace-conditioned gesture generation
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X62
+      slug: x62-gestadapt
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 工作空间约束下手势生成提供表达实现的技术边界。
+    publication_role: SUPPORT
+  - id: X63
+    slug: x63-mind-body-identity
+    title: "Mind-Body-Identity: A Scoping Review of Multi-Embodiment"
+    decision: Historical recovery — Must Read / closest multi-embodiment review
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X63
+      slug: x63-mind-body-identity
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 多具身综述主要服务可选跨载体架构，不是当前默认入口。
+    publication_role: ARCHIVE
+  - id: X64
+    slug: x64-artificial-identity-framework
+    title: "Designing Artificial Identity: The Identity Design Framework and Research Agenda"
+    decision: Historical recovery — Must Read / abstract-level identity framework
+    investigation_status: abstract_evidence_investigation
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X64
+      slug: x64-artificial-identity-framework
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 宏观人工身份框架暂非当前表达项目的必要依赖。
+    publication_role: ARCHIVE
+  - id: X65
+    slug: x65-mourning-ai-companions
+    title: Mourning the loss of AI companions
+    decision: Historical recovery — Must Read / abstract-level relationship disruption evidence
+    investigation_status: abstract_evidence_investigation
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X65
+      slug: x65-mourning-ai-companions
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: companion更新后关系中断可为持续期待提供参照；保持摘要级限制。
+    publication_role: SUPPORT
+  - id: X66
+    slug: x66-spatially-grounded-gesture
+    title: A Benchmark for Spatially Grounded Gesture Generation
+    decision: Candidate — Important / meaning-versus-naturalness benchmark
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X66
+      slug: x66-spatially-grounded-gesture
+      status: CORE
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 空间指向正确性与自然度分离，直接支持表达意义的评价。
+    publication_role: CORE
+  - id: X67
+    slug: x67-latent-identity-reversion
+    title: The Persona Is Still There, but Who Is Speaking? Latent Identity Reversion in Persistent AI Agents
+    decision: Candidate — Important / represented-versus-enacted identity mechanism
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-07
+    scope_review:
+      id: X67
+      slug: x67-latent-identity-reversion
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: persona恢复机制没有当前人的表达解释或关系证据。
+    publication_role: ARCHIVE
+  - id: X69
+    slug: x69-deco
+    title: "Deco: Extending Cherished Physical Objects into AI Companion Agents through Dual Embodiment"
+    decision: Historical recovery — Must Read / full-text dual-embodiment companion evidence
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-12
+    scope_review:
+      id: X69
+      slug: x69-deco
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 物件与数字companion双重具身属于尚未选择的远期架构。
+    publication_role: ARCHIVE
+  - id: X70
+    slug: x70-anthropomorphic-attitudes
+    title: How Anthropomorphic Attitudes Toward Agents Divide User Behavior, and How Design Should Change
+    decision: Candidate — Worth Reading / field-log association with unvalidated stance proxy
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-12
+    scope_review:
+      id: X70
+      slug: x70-anthropomorphic-attitudes
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: person-like与tool-like取向和表达偏好相关，可帮助界定个性化的差异来源。
+    publication_role: SUPPORT
+  - id: X71
+    slug: x71-memoreval
+    title: What Should Embodied Agents Remember? Benchmarking and Evaluating Memory Modality for Embodied Agents
+    decision: Candidate — Important / supporting embodied-memory benchmark
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-12
+    scope_review:
+      id: X71
+      slug: x71-memoreval
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 具身记忆benchmark评回忆规划，不研究机器人视觉表达或人的理解。
+    publication_role: ARCHIVE
+  - id: X72
+    slug: x72-instance-anchored-interaction
+    title: "Instance-Anchored Interaction Evidence: Grounding Robot Plans in Human Pointing and Handling"
+    decision: Candidate — Important / supporting human-to-robot grounding method
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-12
+    scope_review:
+      id: X72
+      slug: x72-instance-anchored-interaction
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 从人的指点恢复计划尚未承担当前机器人向人表达的具体模块，保留以后核验。
+    publication_role: ARCHIVE
+  - id: X73
+    slug: x73-conversing-with-objects
+    title: Conversing with Objects toward Fluid Human and Artificial Identities during Life Transitions
+    decision: Historical recovery — Must Read / CHI 2026 trans-embodiment field study
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-12
+    scope_review:
+      id: X73
+      slug: x73-conversing-with-objects
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 生活迁移中的物件身份主要服务跨具身议程，超出当前布局。
+    publication_role: ARCHIVE
+  - id: X74
+    slug: x74-how-ai-companionship-develops
+    title: "How AI Companionship Develops: Evidence from a Longitudinal Study"
+    decision: Historical recovery — Must Read / multi-week companion-development evidence
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-12
+    scope_review:
+      id: X74
+      slug: x74-how-ai-companionship-develops
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 多周人类证据区分心理模型、披露与companion发展，约束关系主张。
+    publication_role: SUPPORT
+  - id: X75
+    slug: x75-grounded-robot-persona
+    title: Why did My Robot Just Change Personality? Prompting Guidelines for a Grounded Robot Persona in
+      LLM-Based HRI
+    decision: Historical recovery — Important / robot-persona specification prior art
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-12
+    scope_review:
+      id: X75
+      slug: x75-grounded-robot-persona
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: grounded persona的能力与失败边界，可支持表达和实际能力的一致性检查。
+    publication_role: SUPPORT
+  - id: X76
+    slug: x76-living-with-ai-companions
+    title: "Living with AI Companions: Sustained AI Companionship Predicts Lower Well-Being Through Lower Human
+      Interaction"
+    decision: Window revision recovery — Must Read / longitudinal companionship outcomes
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-26
+    scope_review:
+      id: X76
+      slug: x76-living-with-ai-companions
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 真实使用纵向关联帮助区分使用强度、人际互动与远期关系结果。
+    publication_role: SUPPORT
+  - id: X77
+    slug: x77-what-should-ai-forget
+    title: What should AI forget? A design and taxonomy for negative space governance in AI memory
+    decision: Candidate — Important / supporting memory-governance boundary
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-26
+    scope_review:
+      id: X77
+      slug: x77-what-should-ai-forget
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 记忆准入与遗忘治理没有当前视觉表达适应机制的具体依赖。
+    publication_role: ARCHIVE
+  - id: X78
+    slug: x78-beyond-small-talk
+    title: "Beyond Small Talk: Modeling Disclosure Trajectories in Human-AI Conversation"
+    decision: Candidate — Important / history-conditioned relational evaluation
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-26
+    scope_review:
+      id: X78
+      slug: x78-beyond-small-talk
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 合成披露轨迹评模型输出，没有当前视觉表达与真人感知桥。
+    publication_role: ARCHIVE
+  - id: X79
+    slug: x79-robommt
+    title: "RoboMMT: Learning Stable Tracking of Modulated Expressive and Interactive Robot Motion"
+    decision: Candidate — Important / supporting expressive-motion execution method
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-26
+    scope_review:
+      id: X79
+      slug: x79-robommt
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 可调表达动作的稳定控制影响实现可行性，不提供意义理解证据。
+    publication_role: SUPPORT
+  - id: X80
+    slug: x80-relational-complexity
+    title: "Relational Complexity: Making Sense of Social Companion AI Use"
+    decision: Candidate — Important / conceptual relationship-mechanism map
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-26
+    scope_review:
+      id: X80
+      slug: x80-relational-complexity
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 关系负担与互惠解释可用于机器人请求、等待与社会表达代价。
+    publication_role: SUPPORT
+  - id: X81
+    slug: x81-pace
+    title: "PACE: Persona Adaptation through Conversational Elicitation in Human-Robot Interaction"
+    decision: Historical recovery — Important / embodied dynamic-persona bundle
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-26
+    scope_review:
+      id: X81
+      slug: x81-pace
+      status: CORE
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 个人信息提取与实体机器人的语言面部表达执行，是个性化直接先例。
+    publication_role: CORE
+  - id: X82
+    slug: x82-emergi-personaos
+    title: "Emergi-PersonaOS: A Persona Agent Operating System for Situational Adaptation and Controllable
+      Evolution"
+    decision: Historical recovery — Important / controllable persona evolution
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-26
+    scope_review:
+      id: X82
+      slug: x82-emergi-personaos
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: persona架构及剧本计算评价不直接证明人的表达感知或关系。
+    publication_role: ARCHIVE
+  - id: X83
+    slug: x83-explainable-oohri
+    title: "Explainable OOHRI: Communicating Robot Capabilities and Limitations as Augmented Reality Affordances"
+    decision: Historical recovery — Important / visual capability communication
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-26
+    scope_review:
+      id: X83
+      slug: x83-explainable-oohri
+      status: CORE
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: AR affordances呈现机器人能力限制和可执行选项，直接连接空间表达与理解。
+    publication_role: CORE
+  - id: X84
+    slug: x84-identity-continuity-appraisal
+    title: "Identity Continuity in Long-Term Embodied AI Relationships: From Agent-Specific Identity
+      Representation to Identity-Continuity Appraisal"
+    decision: Historical recovery — Important / closest user-side continuity framework
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-26
+    scope_review:
+      id: X84
+      slug: x84-identity-continuity-appraisal
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 身份连续性主要对应跨身体迁移，当前为可选远期研究。
+    publication_role: ARCHIVE
+  - id: X85
+    slug: x85-crafting-companions
+    title: "Crafting Companions: A Mixed Methods Exploration of Customization Amongst Robot Owners"
+    decision: Historical recovery — Must Read / long-term owner practices
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-10-26
+    scope_review:
+      id: X85
+      slug: x85-crafting-companions
+      status: CORE
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 真实机器人拥有者的定制和依恋实践直接连接personalization与持续关系。
+    publication_role: CORE
+  - id: X86
+    slug: x86-artificial-personality-model
+    title: "The Artificial Personality Model: Theory, Implementation, Measurement and Experimental Validation in
+      Conversational Agents"
+    decision: Formal-window — Must Read / exploratory artificial-personality measurement closest work
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-11-02
+    scope_review:
+      id: X86
+      slug: x86-artificial-personality-model
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 人格线索与被感知特质的探索性测量可作参照，不能直接当机器人量表。
+    publication_role: SUPPORT
+  - id: X87
+    slug: x87-relational-schema-lock-in
+    title: "When History Overrides Intent: Relational Schema Lock-In in Human-LLM Interaction"
+    decision: Formal-window — Must Read / persistence–corrigibility mechanism closest work
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-11-02
+    scope_review:
+      id: X87
+      slug: x87-relational-schema-lock-in
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 人类实验区分历史用户模型与当前意图，可支持表达误学覆盖和纠正的判断。
+    publication_role: SUPPORT
+  - id: X88
+    slug: x88-out-of-sync
+    title: "Out of sync: Accommodation, evaluation, and emergence in five weeks with an agentic AI teammate"
+    decision: Formal-window — Must Read / repeated-interaction multi-timescale closest analogue
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-11-02
+    scope_review:
+      id: X88
+      slug: x88-out-of-sync
+      status: ARCHIVED
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 团队agent语言适应尚未建立视觉表达或伙伴关系的具体桥。
+    publication_role: ARCHIVE
+  - id: X89
+    slug: x89-regional-accent-voice-ai
+    title: "It Would Make a Geordie Feel at Home: Regional Accent Perceptions and Speech Accommodation in Voice AI"
+    decision: Formal-window — Worth Reading / cultural-auditory cue trade-off
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-11-02
+    scope_review:
+      id: X89
+      slug: x89-regional-accent-voice-ai
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 声音身份线索的归属真实性与能力期待，为个性化社会意义提供跨模态参照。
+    publication_role: SUPPORT
+  - id: X90
+    slug: x90-joint-action-review
+    title: Understanding Human-Robot Collaboration through Joint Action
+    decision: Formal-window — Important / joint-action theory and measurement boundary review
+    investigation_status: radar_full_text_audit
+    last_investigated: 2026-11-02
+    scope_review:
+      id: X90
+      slug: x90-joint-action-review
+      status: SUPPORTING
+      program_version: "3.1"
+      reviewed_at: 2026-11-05
+      reason: 联合行动框架区分协调、预测与共同理解，避免将流畅误写成关系改善。
+    publication_role: SUPPORT
 change_log:
+  - date: 2026-11-02
+    change: Weekly Radar v3.4 added five full-text formal-window papers (X86–X90). Artificial-personality
+      measurement, persistence–corrigibility, multi-timescale repeated interaction, regional-accent identity
+      cues, and joint-action boundaries narrowed RC01–RC05, but all five gaps remain CANDIDATE, no first RQ
+      was selected, and the Comprehensive Exam downstream view was unchanged.
+  - date: 2026-10-26
+    change: Weekly Radar v3.3 added four full-text formal-window papers (X77–X80), one window revision recovery
+      (X76), and five full-text historical recoveries (X81–X85). Broad RC01–RC05 novelty was narrowed, but all
+      five gaps remain CANDIDATE, no first RQ was selected, and the exam projection was unchanged.
+  - date: 2026-10-12
+    change: Weekly Radar v3.2 added three full-text in-window papers (X70–X72) and four full-text historical
+      recoveries (X69, X73–X75). The stale post-X68 active_count was corrected from 91 to 92 before adding
+      seven records; all core gaps remain CANDIDATE and no first RQ or exam update was made.
+  - date: 2026-10-07
+    change: Weekly Radar v3.1 added 11 in-window papers (X53–X61, X66–X67), one last-run edge recovery (X62), and
+      three item-level historical recoveries (X63–X65). RC01/RC02 closest work narrowed; RC03–RC05 evidence
+      boundaries sharpened; no first RQ or exam update.
   - date: 2026-10-02
     change: "v3.0: 55 reviewed, 11 individually recovered, 10 added; candidate gaps/questions only."
   - date: 2026-09-28
@@ -1036,6 +1668,8 @@ change_log:
       calibration, revision, and repair; no baseline or human correction was changed."
   - date: 2026-09-12
     note: X1–X5全文审查完成；X4/X5作者纠正；F6/X20仍摘要级且记录访问障碍。保留所有收录决策。
-active_count: 76
+active_count: 114
 scope_updated_at: 2026-10-02
-updated_at: 2026-10-02
+updated_at: 2026-11-05
+publication_policy: Current website subset is owned by site_publication.json; archived entries remain evidence
+  records with stable IDs.
