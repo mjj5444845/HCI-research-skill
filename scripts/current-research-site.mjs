@@ -66,5 +66,8 @@ export function renderCurrentSite({root,write,program,plan,publication,papers,re
   save('agents/','专门审查角色',hero('二级系统说明','独立审查，保留分歧。','专门角色审计证据、新颖性和方法，主审综合，研究者决定。')+section('已安装角色',grid(agentFiles.map(f=>{const raw=fs.readFileSync(path.join(root,'.codex/agents',f),'utf8');return card(raw.match(/^name\s*=\s*"([^"]+)"/m)?.[1]||f.slice(0,-5),p(raw.match(/^description\s*=\s*"([^"]+)"/m)?.[1]||'按问题选择独立审查。'));}),'three')));
   save('architecture/','网站与研究记录',hero('二级系统说明','当前发布与历史证据分别维护。','研究事实、研究者决定和系统草案分开保存。旧路线已有完整快照，不从当前网站进入。')+section('记录原则',ul(['主线与布局以本次确认的计划为准。','每篇有相关性理由，原方法与结果不因整理被改写。','功能、场景与贡献按确认程度标记。','考试和写作独立，不改变个人掌握状态。'])));
  }
- write('404.html',page('页面不存在',hero('入口未发布','这个入口不在当前网站中。','内容可能已移入工作区归档。请从当前主线与文献证据重新进入。',`<a class="button" href="./">返回研究主线</a>`)));
+ const fallback=page('页面不存在',hero('入口未发布','这个入口不在当前网站中。','内容可能已移入工作区归档。请从当前主线与文献证据重新进入。',`<a class="button" href="./">返回研究主线</a>`));
+ // Pages keeps the requested URL for custom 404s, including nested archived routes.
+ const base='https://mjj5444845.github.io/HCI-research-skill/';
+ write('404.html',fallback.replace(/\b(href|src)="([^"]*)"/g,(match,attr,url)=>/^(?:https?:|mailto:|data:|#)/.test(url)?match:`${attr}="${new URL(url||'./',base).href}"`));
 }

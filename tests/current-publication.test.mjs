@@ -40,3 +40,7 @@ test('live plan preserves proposal status and separates advisor work from own fo
  assert.equal((system.match(/role="tab"/g)||[]).length,plan.project.flow.length);
  assert.ok(system.includes('非已实现系统截图'));assert.ok(system.includes('配送示例'));
 });
+test('archived deep links get a working 404 navigation independent of requested URL',()=>{
+ const html=fs.readFileSync(new URL('site/404.html',root),'utf8');
+ for(const [,url] of html.matchAll(/(?:href|src)="([^"]*)"/g))assert.match(url,/^(https:\/\/mjj5444845\.github\.io\/HCI-research-skill\/|#)/);
+});
